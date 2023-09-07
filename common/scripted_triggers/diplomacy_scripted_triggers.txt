@@ -269,12 +269,28 @@ DIPLOMACY_MILACC_ENABLE_TRIGGER = {
 				FROM = {
 					original_tag = SOV
 				}
-				original_tag = USA
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = BRA
+					original_tag = ENG
+					original_tag = FRA
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = RAJ
+					original_tag = AST
+					original_tag = NZL
+					original_tag = IRE
+					original_tag = HOL
+				}
 			}
 			SOV = {
 				has_war = yes
 			}
-			date > 1941.5.1
+			# date > 1941.5.1
+			JAP = {
+				has_capitulated = yes
+			}
 		}
 	}
 	if = {
@@ -317,14 +333,30 @@ DIPLOMACY_OFFER_MILACC_ENABLE_TRIGGER = {
 		if = {
 			limit = {
 				FROM = {
-					original_tag = USA
+					OR = {
+						original_tag = USA
+						original_tag = MEX
+						original_tag = BRA
+						original_tag = ENG
+						original_tag = FRA
+						original_tag = CAN
+						original_tag = SAF
+						original_tag = RAJ
+						original_tag = AST
+						original_tag = NZL
+						original_tag = IRE
+						original_tag = HOL
+					}
 				}
 				original_tag = SOV
 			}
 			SOV = {
 				has_war = yes
 			}
-			date > 1941.5.1
+			# date > 1941.5.1
+			JAP = {
+				has_capitulated = yes
+			}
 		}
 		# USA = { 				
 		# 	AND = {
@@ -478,6 +510,18 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 			}
 			has_completed_focus = USA_lend_lease_act
 		}
+		OR = {
+			NOT = { tag = SOV }
+			has_completed_focus = SOV_war_mobilisation
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = SOV
+				}
+			}
+			has_completed_focus = SOV_war_mobilisation
+		}
 	}
 	if = {
 		limit = {
@@ -510,6 +554,18 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 				}
 			}
 			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { tag = SOV }
+			has_completed_focus = SOV_war_mobilisation
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = SOV
+				}
+			}
+			has_completed_focus = SOV_war_mobilisation
 		}
 	}
 	if = {
@@ -582,6 +638,18 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 			}
 			has_completed_focus = USA_lend_lease_act
 		}
+		OR = {
+			NOT = { tag = SOV }
+			has_completed_focus = SOV_war_mobilisation
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = SOV
+				}
+			}
+			has_completed_focus = SOV_war_mobilisation
+		}
 		FROM = {
 			is_ai = no
 		}
@@ -617,6 +685,18 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 				}
 			}
 			has_completed_focus = USA_lend_lease_act
+		}
+		OR = {
+			NOT = { tag = SOV }
+			has_completed_focus = SOV_war_mobilisation
+		}
+		OR = {
+			NOT = { 
+				FROM = {
+					tag = SOV
+				}
+			}
+			has_completed_focus = SOV_war_mobilisation
 		}
 		FROM = {
 			is_ai = no

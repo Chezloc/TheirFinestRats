@@ -88,11 +88,12 @@ set_variable = { var = gateway_to_europe_influence_pp_total value = 0 }
 set_variable = { allies_poster_center_icon_frame = 1 }
 add_ideas = {
 	HOL_wilhelmina
+	father_check
 	neutrality_idea2
 	peace_training
 	no_grinding
 	PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
-	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1
+	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
 

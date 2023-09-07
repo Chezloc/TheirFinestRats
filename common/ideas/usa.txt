@@ -2548,7 +2548,11 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = USA
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = BRA
+				}
 			}
 			
 			cost = 150
@@ -2566,7 +2570,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = USA
+				OR = {
+					original_tag = USA
+					original_tag = BRA
+				}
 			}
 
 			cost = 150
@@ -2584,7 +2591,11 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = USA
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = BRA
+				}
 			}
 			
 			cost = 150

@@ -1981,7 +1981,20 @@ ideas = {
 		yokosuka_naval_arsenal = {
 						
 			allowed = {
-				original_tag = JAP
+				OR = {
+					original_tag = JAP
+					original_tag = GER
+					original_tag = ITA
+					original_tag = FIN
+					original_tag = SPR
+					original_tag = HUN
+					original_tag = ROM
+					original_tag = BUL
+					original_tag = VIC
+					original_tag = YUG
+					original_tag = MAN
+					original_tag = SIA
+				}
 			}
 			
 			research_bonus = {

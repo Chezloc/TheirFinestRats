@@ -686,8 +686,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			allowed = {
-				original_TAG = AST
-				has_dlc = "Together for Victory"
+				original_tag = AST
 			}
 			
 			cost = 150

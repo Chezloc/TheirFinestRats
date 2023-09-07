@@ -826,7 +826,11 @@ focus_tree = {
 		relative_position_id = RAJ_pass_the_defence_bill
 
 		completion_reward = {
-			add_ideas = RAJ_push_the_rising_sun
+			# add_ideas = RAJ_push_the_rising_sun
+			add_timed_idea = {
+				idea = RAJ_push_the_rising_sun
+				days = 210
+			}
 		}
 		
 		continue_if_invalid = yes
@@ -848,7 +852,11 @@ focus_tree = {
 		relative_position_id = RAJ_pass_the_defence_bill
 
 		completion_reward = {
-    		add_ideas = RAJ_stop_the_rising_sun
+    		# add_ideas = RAJ_stop_the_rising_sun
+			add_timed_idea = {
+				idea = RAJ_stop_the_rising_sun
+				days = 210
+			}
 		}
 		
 		continue_if_invalid = yes
@@ -2302,7 +2310,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2316,7 +2324,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = RAJ_integrate_princely_railways_Inf1
@@ -2331,7 +2339,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = RAJ_integrate_princely_railways_Inf2
@@ -2345,7 +2353,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2441,7 +2449,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2455,7 +2463,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2469,7 +2477,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2483,7 +2491,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2497,7 +2505,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}

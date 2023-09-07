@@ -107,7 +107,7 @@ equipments = {
 		naval_range = 1500
 		
 		max_strength = 20
-		
+		sub_attack = 1
 
 		fuel_consumption = 0
 		
@@ -172,6 +172,7 @@ equipments = {
 		reliability = 0.85
 		naval_range = 1750
 		max_strength = 30
+		sub_attack = 1
 		build_cost_ic = 550
 		manpower = 325
 	}
@@ -233,6 +234,7 @@ equipments = {
 		reliability = 0.90
 		naval_range = 2250
 		max_strength = 40
+		sub_attack = 1
 		build_cost_ic = 600
 		manpower = 400
 
@@ -299,6 +301,7 @@ equipments = {
 		reliability = 0.95
 		naval_range = 2500
 		max_strength = 50
+		sub_attack = 1
 		build_cost_ic = 650
 		manpower = 500
 	}
@@ -343,6 +346,7 @@ equipments = {
 		naval_range = 1500
 		
 		max_strength = 25
+		sub_attack = 1
 		
 
 		fuel_consumption = 7
@@ -391,7 +395,7 @@ equipments = {
 		naval_range = 1800
 		
 		max_strength = 40
-		
+		sub_attack = 1
 
 		
 		type = { 
@@ -443,7 +447,7 @@ equipments = {
 		naval_range = 2000
 		
 		max_strength = 50
-		
+		sub_attack = 1
 
 		
 		type = { 
@@ -494,7 +498,7 @@ equipments = {
 		naval_range = 2500
 		
 		max_strength = 60
-		
+		sub_attack = 1
 
 		
 		type = { 

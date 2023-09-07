@@ -377,7 +377,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		RAJ_far_east_mines = {
@@ -614,8 +614,8 @@ ideas = {
 				army_org_factor = 0.025
 				terrain_penalty_reduction = 0.05
 				enemy_army_bonus_air_superiority_factor = -0.1
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
+				# army_core_attack_factor = 0.05
+				# army_core_defence_factor = 0.05
 				supply_consumption_factor = -0.05
 			}
 		}
@@ -1329,7 +1329,7 @@ ideas = {
 		scindia_shipyard = {
 			
 			allowed = {
-				has_dlc = "Together for Victory"
+				# has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
 			

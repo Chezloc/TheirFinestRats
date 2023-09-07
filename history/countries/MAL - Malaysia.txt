@@ -42,7 +42,7 @@ set_variable = {
 
 add_ideas = peace_training
 add_ideas = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
-add_ideas = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1
+add_ideas = PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
 add_ideas = PACIFIC_COMMONWEALTH_controls_capitals_1
 
 # MP_garrison_division_standard = yes

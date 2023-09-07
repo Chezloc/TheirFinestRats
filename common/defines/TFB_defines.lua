@@ -408,12 +408,11 @@ NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 1.6 -- How much aircrafts in region improves air detection (up to effective count).
 NDefines.NAir.ESCORT_FACTOR = 4  		-- cas enters battle earlier, fucks a lot of shit up
-NDefines.NAir.COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.60
-NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.60
+NDefines.NAir.COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.70
+NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.70
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.2			--	Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.16				-- 	5x levels = 60% defense from bombing
-
 NDefines.NNavy.COMBAT_DAMAGE_RANDOMNESS = 0.20								-- random factor in damage. So if max damage is fe. 10 and randomness is 30% then damage will be between 7-10.
 NDefines.NNavy.COMBAT_MAX_GROUPS = 2										-- Max amount of "Fire Exchange" groups (FEX).
 NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 1.00							-- How much efficiency drops when losing convoys. If modifier is 0.5 then losing 100% of convoys in short period the efficiency will drop by 50%.
@@ -464,7 +463,7 @@ NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns if target ih profil
 NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE 										= 80	-- hit profile for depth charges
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 	2.0,	-- big guns
-	4.0,	-- torpedoes - 2.0 before chezloc changes
+	3.0,	-- torpedoes - 2.0 before chezloc changes
 	1.0,	-- small guns
 }
 NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.25		-- chance for critical hit from torpedo.
@@ -499,6 +498,14 @@ NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0				-- cost to unassign/repla
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.30			-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR  = 0.1		 -- penalty if other side has stronger carrier air force
 NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0.2			-- 	max penalty from stronger carrier air force
+NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
+    1000,     -- do not engage
+    15,   -- low
+    3.0,   -- medium
+    3.0,   -- high
+    3.0,   -- I am death incarnate!
+}
+NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.1 			-- Multiplier for the surface/sub visiblity when the heavily damaged fleet is returning to the home base for reparation. 1.0 = no bonus. 0.0 = invisible.
 
 NDefines.NRailwayGun.ANNEX_RATIO = 1				-- How many railway guns will be transferred on annexation
 

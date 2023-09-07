@@ -122,7 +122,7 @@ equipments = {
 		naval_range = 2500
 		
 		max_strength = 100		
-		
+		sub_attack = 1
 
 		fuel_consumption = 20
 		
@@ -160,6 +160,7 @@ equipments = {
 		build_cost_ic = 2100
 		naval_range = 3000
 		max_strength = 110
+		sub_attack = 1
 		module_slots = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
@@ -232,6 +233,7 @@ equipments = {
 		build_cost_ic = 2200
 		reliability = 0.90
 		max_strength = 120
+		sub_attack = 1
 		naval_range = 4000
 		manpower = 1200
 		module_slots = {
@@ -333,6 +335,7 @@ equipments = {
 		build_cost_ic = 2300
 		naval_range = 4500
 		max_strength = 130
+		sub_attack = 1
 		module_slots = {
 			fixed_ship_battery_slot = inherit
 			fixed_ship_anti_air_slot = inherit
@@ -417,6 +420,7 @@ equipments = {
 		surface_visibility = 20
 		naval_range = 7500
 		max_strength = 200
+		sub_attack = 1
 		resources = {
 			steel = 20
 		}
@@ -632,6 +636,7 @@ equipments = {
 		naval_range = 3000
 		
 		max_strength = 120
+		sub_attack = 1
 		
 
 		
@@ -683,6 +688,7 @@ equipments = {
 		naval_range = 4000
 		
 		max_strength = 140
+		sub_attack = 1
 		
 
 		
@@ -735,6 +741,7 @@ equipments = {
 		naval_range = 4500
 		
 		max_strength = 160
+		sub_attack = 1
 		
 
 		
@@ -854,6 +861,7 @@ equipments = {
 		naval_range = 3000
 		
 		max_strength = 150
+		sub_attack = 1
 		
 
 		fuel_consumption = 33
@@ -905,6 +913,7 @@ equipments = {
 		naval_range = 4000
 		
 		max_strength = 175
+		sub_attack = 1
 		
 
 
@@ -955,6 +964,7 @@ equipments = {
 		naval_range = 4500
 		
 		max_strength = 200
+		sub_attack = 1
 		
 
 
@@ -1006,6 +1016,7 @@ equipments = {
 		naval_range = 5000
 		
 		max_strength = 225
+		sub_attack = 1
 		
 
 
@@ -1120,6 +1131,7 @@ equipments = {
 		naval_range = 4000
 		
 		max_strength = 140		
+		sub_attack = 1
 		
 
 		
@@ -1212,7 +1224,7 @@ equipments = {
 		naval_range = 4000
 		
 		max_strength = 140		
-		
+		sub_attack = 1
 
 		
 		build_cost_ic = 1700

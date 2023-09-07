@@ -1264,6 +1264,15 @@ COM_propaganda_campaigns = {
 			ENG = {
 				has_country_flag = this_was_their_finest_hour_speech
 			}
+			if = {
+				limit = {
+					original_tag = RAJ
+				}
+				OR = {
+					surrender_progress > 0.25
+					casualties > 300000
+				}
+			}
 		}
 
 		days_remove = 365

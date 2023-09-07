@@ -2261,7 +2261,14 @@ ideas = {
 		harland_wolff = {
 			
 			allowed = {
-				original_TAG = ENG
+				OR = {
+					original_tag = ENG
+					original_tag = SAF
+					original_tag = IRE
+					original_tag = HOL
+					original_tag = SOV
+					original_tag = MON
+				}
 			}
 			
 			cost = 150
@@ -2278,7 +2285,16 @@ ideas = {
 		cammell_laird = {
 			
 			allowed = {
-				original_TAG = ENG
+				OR = {
+					original_tag = ENG
+					original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = SAF
+					original_tag = IRE
+					original_tag = SOV
+					original_tag = MON
+				}
 			}
 			
 			cost = 150

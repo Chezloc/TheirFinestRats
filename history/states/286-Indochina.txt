@@ -6,6 +6,7 @@ state={
 	}
 
 	history={
+		set_state_flag = NOT_PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
 		owner = FRA
 		1936.1.1.13 = {
 			owner = WST

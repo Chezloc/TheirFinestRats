@@ -175,12 +175,12 @@ allow_voice_lines = {
 fatherless_spirit = {
 	name = "RULE_FATHERLESS_SPIRIT"
 	group = "RULE_GROUP_TFB"
-	option = {
+	default = {
 		name = "ENABLED"
 		text = "RULE_OPTION_ENABLED"
 		desc = "RULE_FATHERLESS_SPIRIT_ENABLED_DESC"
 	}
-	default = {
+	option = {
 		name = "DISABLED"
 		text = "RULE_OPTION_DISABLED"
 		desc = "RULE_FATHERLESS_SPIRIT_DISABLED_DESC"

@@ -1250,13 +1250,25 @@ ideas = {
 				OR = {
 					original_tag = ITA
 					original_tag = SPR
+					original_tag = BUL
+					original_tag = JAP
+					original_tag = MAN
+					original_tag = SIA
 				}
 			}
 
 
 			available = {
-				ITA = {
-					has_completed_focus = ITA_new_cruisers
+				if = {
+					limit = {
+						OR = {
+							original_tag = SPR
+							original_tag = ITA
+						}
+					}
+					ITA = {
+						has_completed_focus = ITA_new_cruisers
+					}
 				}
 				if = {
 					limit = {

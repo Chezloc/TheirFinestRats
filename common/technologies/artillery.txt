@@ -23,12 +23,12 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_1
 			anti_air_equipment_1
-			heavy_artillery_equipment_1
+			# heavy_artillery_equipment_1
 			anti_tank_equipment_1
-			heavy_anti_air_equipment_0
+			# heavy_anti_air_equipment_0
 			pack_artillery_equipment_1
 			dp_artillery_equipment_1
-			heavy_anti_tank_equipment_1
+			# heavy_anti_tank_equipment_1
 			anti_tank_equipment_squeeze_1
 		}
 		enable_equipment_modules = {
@@ -1183,6 +1183,8 @@ technologies = {
 		
 		research_cost = 2.0
 		start_year = 1941
+
+		static_anti_air_damage_factor = 0.1
 		
 		folder = {
 			name = artillery_folder
@@ -1330,6 +1332,8 @@ technologies = {
 		
 		research_cost = 2.0
 		start_year = 1943
+
+		static_anti_air_damage_factor = 0.1
 		
 		folder = {
 			name = artillery_folder

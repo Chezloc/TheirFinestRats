@@ -482,22 +482,18 @@ ideas = {
 				submarine = {
 					build_cost_ic = 2.00 instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = 2.00 instant = yes
 				}
-				cv_nav_bomber_equipment = {
-					instant = yes
-					build_cost_ic = 1.00
-				}
-				flying_boat_equipment = {
+				large_plane_maritime_patrol_plane_airframe = { # flying boat ig
 					instant = yes
 					build_cost_ic = 2.00
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					instant = yes
 					build_cost_ic = 2.00
 				}
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = 2.00
 				}
