@@ -285,6 +285,12 @@ continuous_focus_palette = {
 			mobilization_speed = 0.5
 			weekly_manpower = 5000
 		}
+
+		available = {
+			NOT = {
+				tag = FIN
+			}
+		}
 		
 		ai_will_do = {
 			factor = 0
