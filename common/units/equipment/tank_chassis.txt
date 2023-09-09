@@ -356,6 +356,7 @@ equipments = {
 					tank_heavy_turret_type_1
 					tank_heavy_turret_type_2
 					tank_heavy_turret_type_casemate
+					tank_heavy_turret_type_open_casemate
 				}
 			}
 			suspension_type_slot = {
@@ -500,7 +501,7 @@ equipments = {
 		hardness = 0.85
 		resources = {
 			steel = 20
-			tungsten = 20
+			tungsten = 15 #20
 			chromium = 15
 		}
 		#Space taken in convoy

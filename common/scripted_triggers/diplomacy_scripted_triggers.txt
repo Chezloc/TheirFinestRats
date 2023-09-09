@@ -520,7 +520,9 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 					tag = SOV
 				}
 			}
-			has_completed_focus = SOV_war_mobilisation
+			FROM = {
+				has_completed_focus = SOV_war_mobilisation
+			}
 		}
 	}
 	if = {
@@ -565,7 +567,9 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 					tag = SOV
 				}
 			}
-			has_completed_focus = SOV_war_mobilisation
+			FROM = {
+				has_completed_focus = SOV_war_mobilisation
+			}
 		}
 	}
 	if = {

@@ -244,6 +244,7 @@ recruit_character = FRA_paul_baudouin
 recruit_character = FRA_maurice_gauche
 recruit_character = FRA_jacques_duclos
 recruit_character = FRA_antoinemariebenoît_besson
+# recruit_character = FRA_rhaul
 
 create_equipment_variant = {
 	name = "Renault R35"

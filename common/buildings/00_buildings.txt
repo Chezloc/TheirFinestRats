@@ -197,7 +197,7 @@ buildings = {
 		max_level = 99 # This is the max unlock level
 		shares_slots = no
 		value = 8
-		allied_build = yes
+		allied_build = no
 		infrastructure_construction_effect = yes
 		damage_factor = 0.20
 		
@@ -234,7 +234,7 @@ buildings = {
 		max_level = 99 #3
 		shares_slots = no
 		value = 8
-		allied_build = yes
+		allied_build = no
 		infrastructure_construction_effect = yes
 		damage_factor = 0.20
 		

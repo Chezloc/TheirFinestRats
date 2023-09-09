@@ -69,6 +69,9 @@ country_event = {
 			transfer_state = 29
 			transfer_state = 15
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = {
 		name = vichy.2.b

@@ -1,5 +1,39 @@
 on_actions = {
 
+	on_weekly_ENG = {
+		effect = {
+			set_variable = { global.ALLIED_PACIFIC_CASUALTIES = 0 }
+			every_country = {
+				limit = {
+					OR = {
+						tag = JAP
+						tag = MAN
+						tag = SIA
+					}
+				}
+				WAR_IN_PACIFIC_ALLIED_CASUALTIES = yes
+			}
+		}
+	}
+
+	on_weekly_JAP = {
+		effect = {
+			set_variable = { global.GEACPS_PACIFIC_CASUALTIES = 0 }
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = JAP
+							tag = MAN
+							tag = SIA
+						}
+					}
+				}
+				WAR_IN_PACIFIC_GEACPS_CASUALTIES = yes
+			}
+		}
+	}
+
 	on_startup = {
 		effect = {
 			every_country = {
@@ -152,6 +186,16 @@ on_actions = {
 					damage_building = {
 						type = air_base
 						damage = 1
+					}
+				}
+				every_owned_state = {
+					set_building_level = {
+						type = naval_base
+						level = 0
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
 					}
 				}
 			}

@@ -120,6 +120,7 @@ continuous_focus_palette = {
 		modifier = {
 			industry_repair_factor = 0.5
 			industry_free_repair_factor = 1.0
+			repair_speed_factor = 0.25
 		}
 		
 		ai_will_do = {
@@ -237,23 +238,23 @@ continuous_focus_palette = {
 		available_if_capitulated = yes
 	}
 	
-	focus = {
-		id = continuous_factory_retooling
+	# focus = {
+	# 	id = continuous_factory_retooling
 		
-		icon = GFX_goal_continuous_efficiency
+	# 	icon = GFX_goal_continuous_efficiency
 
-		modifier = {
-			production_factory_efficiency_gain_factor = 0.10
-		}
+	# 	modifier = {
+	# 		production_factory_efficiency_gain_factor = 0.10
+	# 	}
 		
-		ai_will_do = {
-			factor = 0
-		}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
 		
-		daily_cost = 1
+	# 	daily_cost = 1
 		
-		available_if_capitulated = yes
-	}
+	# 	available_if_capitulated = yes
+	# }
 	
 	focus = {
 		id = continuous_modernisation_effort
@@ -261,7 +262,8 @@ continuous_focus_palette = {
 		icon = GFX_goal_continuous_armor_production
 
 		modifier = {
-			equipment_conversion_speed = 0.4
+			# equipment_conversion_speed = 0.4
+			production_factory_efficiency_gain_factor = 0.10
 			refit_speed = 0.25
 		}
 		
@@ -275,12 +277,13 @@ continuous_focus_palette = {
 	}
 	
 	focus = {
-		id = continuous_mobilisation
+		id = continuous_recruitment_drive #continuous_mobilisation
 		
-		icon = GFX_goal_continuous_mobilisation
+		icon = GFX_focus_recruitment_drive #GFX_goal_continuous_mobilisation
 
 		modifier = {
 			mobilization_speed = 0.5
+			weekly_manpower = 5000
 		}
 		
 		ai_will_do = {

@@ -214,7 +214,7 @@ SOV_konstantin_rokossovsky={
 				#has_completed_focus  = SOV_positive_heroism 
 			}
 			traits  = {
-				army_armored_3 
+				army_armored_1
 			}
 			ai_will_do  = {
 				factor  = 1.000
@@ -330,21 +330,21 @@ SOV_nikolai_vatutin={
 }
 SOV_ivan_konev={
 	name="Ivan Konev"
-	# advisor={
-	# 	slot = high_command
-	# 	idea_token = ivan_konev
-	# 	ledger  = army 
-	# 		allowed  = {
-	# 			original_tag  = SOV 
-	# 		}
-	# 		traits  = {
-	# 			army_concealment_2
-	# 		}
-	# 		ai_will_do  = {
-	# 			factor  = 1.000
-	# 		}
-	# 		cost = 100
-	# }
+	advisor={
+		slot = high_command
+		idea_token = SOV_ivan_konev
+		ledger  = army 
+		allowed  = {
+			original_tag  = SOV 
+		}
+		traits  = {
+			army_CombinedArms_1
+		}
+		ai_will_do  = {
+			factor  = 1.000
+		}
+		cost = 50
+	}
 	portraits={
 		army={
 			small="GFX_idea_ivan_konev"
@@ -506,6 +506,21 @@ SOV_semyon_timoshenko={
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SOV_semyon_budyonny
+			ledger  = army 
+			allowed  = {
+				original_tag  = SOV 
+			}
+			traits  = {
+				army_chief_offensive_1
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			cost = 50
 		}
 	}
 

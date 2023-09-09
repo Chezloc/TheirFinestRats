@@ -1,0 +1,26 @@
+WAR_IN_PACIFIC = {
+	HELP_PACIFIC = {
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			JAP = {
+				has_war_with = ENG
+			}
+		}
+
+		visible = {
+			JAP = {
+				has_war_with = ENG
+			}
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			country_event = witp.1
+		}
+	}
+}

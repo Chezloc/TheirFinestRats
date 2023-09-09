@@ -91,6 +91,7 @@ NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 1 --was 0.3  	-- 	Multiplied to t
 NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- Number of days a war has to have existed before anyone can surrender in it
 NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  days to transfer escaping divisions to host nation
 NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- 	Number of convoy a GiE will get on creation.
+NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 5000				-- pp cost to scorch a state
 -- NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
 
 NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1	-- compliance factor that applies when the state controller changes (in between allies compliance is zeroed if it is taken by original country)

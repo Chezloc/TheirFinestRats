@@ -2813,6 +2813,16 @@ focus_tree = {
 			}
 			every_owned_state = {
 				set_building_level = {
+					type = naval_base
+					level = 0
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+				}
+			}
+			every_owned_state = {
+				set_building_level = {
 					type = dockyard
 					level = 0
 				}

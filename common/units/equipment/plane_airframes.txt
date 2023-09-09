@@ -739,7 +739,7 @@ medium_plane_airframe = {
 	fuel_consumption = 0
 	build_cost_ic = 68
 	resources = {
-			aluminium = 40
+			aluminium = 30 #40
 			rubber = 10
 		}
 
@@ -987,7 +987,7 @@ medium_plane_airframe_1 = { #Basic
 	naval_strike_targetting = 6
 	build_cost_ic = 72
 	resources = {
-			aluminium = 40
+			aluminium = 30 #40
 			rubber = 10
 		}
 	module_slots = {
@@ -1104,7 +1104,7 @@ medium_plane_airframe_2 = { #Improved
 	naval_strike_targetting = 4
 	build_cost_ic = 76
 	resources = {
-			aluminium = 40
+			aluminium = 30 #40
 			rubber = 10
 		}
 	module_slots = {
@@ -1234,7 +1234,7 @@ medium_plane_airframe_3 = { #Advanced
 	naval_strike_targetting = 4
 	build_cost_ic = 80
 	resources = {
-			aluminium = 40
+			aluminium = 30 #40
 			rubber = 10
 		}
 	module_slots = {
@@ -1365,7 +1365,7 @@ medium_plane_airframe_4 = { #Modern
 	naval_strike_targetting = 4
 	build_cost_ic = 94
 	resources = {
-			aluminium = 40
+			aluminium = 30 #40
 			rubber = 10
 		}
 	module_slots = {
@@ -1733,7 +1733,7 @@ large_plane_airframe_1 = { #Basic
 	naval_strike_targetting = 4
 	build_cost_ic = 100
 	resources = {
-		aluminium = 35
+		aluminium = 30 #35
 		rubber = 15
 	}
 	module_slots = {
@@ -1832,7 +1832,7 @@ large_plane_airframe_2 = { #Improved
 	naval_strike_targetting = 4
 	build_cost_ic = 104
 	resources = {
-		aluminium = 45
+		aluminium = 30 #45
 		rubber = 15
 	}
 	module_slots = {
@@ -1938,7 +1938,7 @@ large_plane_airframe_3 = { #Advanced
 	naval_strike_targetting = 4
 	build_cost_ic = 108
 	resources = {
-		aluminium = 50
+		aluminium = 30 #50
 		rubber = 15
 	}
 	module_slots = {
@@ -2044,7 +2044,7 @@ large_plane_airframe_4 = { #Modern
 	naval_strike_targetting = 4
 	build_cost_ic = 112
 	resources = {
-		aluminium = 50
+		aluminium = 30 #50
 		rubber = 15
 	}
 	module_slots = {

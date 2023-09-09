@@ -66,6 +66,8 @@ political_actions = {
 
 			set_global_flag = DEI_transfered
 
+			set_cosmetic_tag = AST_autonomy_dominion_OCEANIA
+
 			# ENG ANNEX
 			ENG = {
 				HOL = {
@@ -84,7 +86,7 @@ political_actions = {
 
 		available = {
 			date > 1939.1.1
-			NZL = {is_ai = yes}
+			NZL = {is_ai = yes }
 			NOT = { 523 = {is_core_of = AST} }
 		}
 
@@ -97,6 +99,10 @@ political_actions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			set_global_flag = AST_NZL_ANNEXED
+			AST = {
+				set_cosmetic_tag = AST_autonomy_dominion_NZLA
+			}
 			AST = {
 				NZL = {
 					pow_before_annex = yes
