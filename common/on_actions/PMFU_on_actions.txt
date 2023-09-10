@@ -415,6 +415,16 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			766 = {
+				add_dynamic_modifier = {
+					modifier = anti_dockyard_construction
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
 			every_state = {
 				limit = {
 					OR = {
@@ -450,6 +460,9 @@ on_actions = {
 				every_state = {
 					limit = {
 						has_dynamic_modifier = { modifier = anti_dockyard_construction }
+						NOT = {
+							state = 766
+						}
 					}
 					remove_dynamic_modifier = { modifier = anti_dockyard_construction }
 				}

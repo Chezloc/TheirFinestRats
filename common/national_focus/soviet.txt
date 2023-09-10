@@ -1669,7 +1669,7 @@ focus_tree = {
 				character = SOV_ivan_konev
 				activate = yes
 				advisor = {
-					slot = army_chief
+					slot = high_command
 					cost = 0
 					idea_token = SOV_ivan_konev
 					traits = {
@@ -1681,7 +1681,7 @@ focus_tree = {
 				character = SOV_konstantin_rokossovsky
 				activate = yes
 				advisor = {
-					slot = army_chief
+					slot = high_command
 					cost = 0
 					idea_token = konstantin_rokossovsky
 					traits = {
@@ -1753,7 +1753,7 @@ focus_tree = {
 					character = SOV_konstantin_rokossovsky
 					activate = no
 					advisor = {
-						slot = army_chief
+						slot = high_command
 						cost = 0
 						idea_token = konstantin_rokossovsky
 						traits = {
@@ -1855,6 +1855,7 @@ focus_tree = {
 			else = {
 				surrender_progress > 0.24
 			}
+			casualties > 150000
 		}
 		completion_reward = {
 			set_technology = {
@@ -1949,6 +1950,7 @@ focus_tree = {
 			else = {
 				surrender_progress > 0.32
 			}
+			casualties > 225000
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -2666,6 +2668,7 @@ focus_tree = {
 				surrender_progress > 0.3
 			}
 			controls_state = 219
+			casualties > 125000
 		}
 
 		completion_reward = {
@@ -2820,6 +2823,7 @@ focus_tree = {
 				surrender_progress > 0.4
 			}
 			controls_state = 217
+			casualties > 125000
 		}
 
 		completion_reward = {
@@ -3248,7 +3252,7 @@ focus_tree = {
 					character = SOV_konstantin_rokossovsky
 					activate = no
 					advisor = {
-						slot = army_chief
+						slot = high_command
 						cost = 0
 						idea_token = konstantin_rokossovsky
 						traits = {
@@ -5459,6 +5463,9 @@ focus_tree = {
 			add_state_claim = 78
 			add_state_claim = 766
 			add_state_claim = 80
+			766 = {
+				remove_dynamic_modifier = { modifier = anti_dockyard_construction }
+			}
 			# ROM = { country_event = { id = romania.1 days = 1 } }
 			ROM = {
 				set_country_flag = bessarabia_ceded

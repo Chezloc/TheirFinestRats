@@ -30,7 +30,7 @@
  startingevent.1003.t:0 "Anti-Air Change"
  startingevent.1003.d:0 "You now get max CAS damage reduction at around 43,5 air attack instead of 8, investing into better aa is now encouraged and reccomended, the USSR should also do air now since this also makes CAS stronger"
  startingevent.1004.t:0 "Air on Soviets"
- startingevent.1004.d:0 "You are now expected todo air on the USSR, you have got an additional research slot, and have reduced focus time + rubber focuses from before, you are excepected to try to have yellow air and also get air lend lease from your allies. Also you should invest into better anti air since you now get max cas reduction at around 50 air attack"
+ startingevent.1004.d:0 "You are now expected todo air on the USSR, you have got an additional research slot, and have reduced focus time + rubber focuses from before, it is intended for you to contest germany in the air for your CAS to fly, but not match them 1:1, you should also ask the Allies for a lend-lease of planes. Also you should invest into better anti air since you now get max cas reduction at around 43.5 air attack"
  startingevent.1005.t:0 "Automatic Compliance on China"
  startingevent.1005.d:0 "Due to collaboration government missions being removed, you will get 40% collaboration on China and you and your allies will automatically get 80% compliance on China when they capitulate"
  #### LEVELS ####

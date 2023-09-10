@@ -45,7 +45,7 @@ guiTypes = {
 		
 		fade_time = 300
 		fade_type = linear
-		moveable = yes
+		moveable = no
 		
 		background = {
 			name = "Background"

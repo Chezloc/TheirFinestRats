@@ -1,46 +1,6 @@
 ideas = {
 
 	hidden_ideas = {
-		JAP_no_china_industry_reducer = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-
-			modifier = {
-				# production_speed_dockyard_factor = -0.05
-				# production_speed_industrial_complex_factor = -0.05
-				# production_speed_arms_factory_factor = -0.05
-			}
-		}
-	}
-	country = {
-	
-		## NO EQ CAPTURE
-		JAP_no_equipment_capture = {
-			name = JAP_no_equipment_capture
-			allowed = {
-				always = no
-			}
-			picture = jap_no_eq_capture
-			removal_cost = -1
-
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				squad_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				artillery_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				dp_artillery_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-			}
-		}
-
 		### HOPPING ###
 	    JAP_island_hopping1 = {
 			name = JAP_island_hopping
@@ -270,6 +230,46 @@ ideas = {
 				political_power_gain = 0.35
 				war_support_factor = 0.20
 				stability_factor = 0.20
+			}
+		}
+		
+		JAP_no_china_industry_reducer = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				# production_speed_dockyard_factor = -0.05
+				# production_speed_industrial_complex_factor = -0.05
+				# production_speed_arms_factory_factor = -0.05
+			}
+		}
+	}
+	country = {
+	
+		## NO EQ CAPTURE
+		JAP_no_equipment_capture = {
+			name = JAP_no_equipment_capture
+			allowed = {
+				always = no
+			}
+			picture = jap_no_eq_capture
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				squad_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				dp_artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 		}
 	

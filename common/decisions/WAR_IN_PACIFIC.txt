@@ -7,13 +7,19 @@ WAR_IN_PACIFIC = {
 
 		available = {
 			JAP = {
-				has_war_with = ENG
+				OR = {
+					has_war_with = ENG
+					has_capitulated = yes
+				}
 			}
 		}
 
 		visible = {
 			JAP = {
-				has_war_with = ENG
+				OR = {
+					has_war_with = ENG
+					has_capitulated = yes
+				}
 			}
 		}
 

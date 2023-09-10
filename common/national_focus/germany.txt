@@ -342,29 +342,37 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = ig_faben
-			if = {
-				limit = {
-					has_country_flag = ger_synth_oil
-				}
-				add_tech_bonus = {
-					name = GER_autarky
-					bonus = 1
-					uses = 2
-					technology = improved_oil_processing
-					technology = advanced_oil_processing
-					technology = modern_oil_processing
-				}
-				else = {
-					add_tech_bonus = {
-						name = GER_autarky
-						bonus = 1
-						uses = 2
-						technology = improved_oil_processing
-						technology = advanced_oil_processing
-						technology = modern_oil_processing
-					}
-				}
+			add_tech_bonus = {
+				name = GER_autarky
+				bonus = 1
+				uses = 2
+				technology = improved_oil_processing
+				technology = advanced_oil_processing
+				technology = modern_oil_processing
 			}
+			# if = {
+			# 	limit = {
+			# 		has_country_flag = ger_synth_oil
+			# 	}
+			# 	add_tech_bonus = {
+			# 		name = GER_autarky
+			# 		bonus = 1
+			# 		uses = 2
+			# 		technology = improved_oil_processing
+			# 		technology = advanced_oil_processing
+			# 		technology = modern_oil_processing
+			# 	}
+			# 	else = {
+			# 		add_tech_bonus = {
+			# 			name = GER_autarky
+			# 			bonus = 1
+			# 			uses = 2
+			# 			technology = improved_oil_processing
+			# 			technology = advanced_oil_processing
+			# 			technology = modern_oil_processing
+			# 		}
+			# 	}
+			# }
 		}
 	}
 	

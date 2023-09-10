@@ -1,26 +1,6 @@
 ideas = {
 
-	country = {
-		AHC_high_command_reorganization = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				high_command_cost_factor = -0.5
-				army_chief_cost_factor = -0.5
-			}
-
-			picture = FRA_national_mobilization_focus
-			
-			removal_cost = -1	
-		}
-
+	hidden_ideas = {
 		ASN_ALLIES_the_sun_never_sets_idea_1 = {
 
 			name = ASN_ALLIES_the_sun_never_sets
@@ -1807,6 +1787,28 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -0.25
 			}
+		}
+	}
+	
+	country = {
+		AHC_high_command_reorganization = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				high_command_cost_factor = -0.5
+				army_chief_cost_factor = -0.5
+			}
+
+			picture = FRA_national_mobilization_focus
+			
+			removal_cost = -1	
 		}
 
 		################################################

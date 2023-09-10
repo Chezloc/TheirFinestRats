@@ -1,43 +1,155 @@
 ideas = {
 
-	# hidden_ideas = {
-	# 	RAJ_lions_of_the_great_war = {
+	hidden_ideas = {
+		### SUN NEVER SETS ###
+		RAJ_the_sun_never_sets_idea_1 = {
 
-	# 		allowed = {
-	# 			original_tag = RAJ
-	# 		}
+			name = RAJ_the_sun_never_sets
 
-	# 		allowed_civil_war = {
-	# 			always = yes
-	# 		}
+			allowed = {
+				always = no
+			}
 
-	# 		removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
 
-	# 		modifier = {
-	# 			army_core_attack_factor = 0.1
-	# 			army_core_defence_factor = 0.1
-	# 			conscription_factor = 0.05
-	# 			supply_consumption_factor = -0.1
-	# 		}
-	# 	}
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+			}
 
-	# 	RAJ_indian_gurkhas = {
 
-	# 		allowed = {
-	# 			original_tag = RAJ
-	# 		}
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
 
-	# 		allowed_civil_war = {
-	# 			always = yes
-	# 		}
+		}
+		
+		RAJ_the_sun_never_sets_idea_2 = {
 
-	# 		removal_cost = -1
+			name = RAJ_the_sun_never_sets
 
-	# 		modifier = {
-	# 			special_forces_cap = 0.02
-	# 		}
-	# 	}
-	# }
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+			
+		RAJ_the_sun_never_sets_idea_3 = {
+
+			name = RAJ_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+
+		RAJ_the_sun_never_sets_idea_4 = {
+
+			name = RAJ_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+
+		RAJ_the_sun_never_sets_idea_5 = {
+
+			name = RAJ_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+
+		# RAJ_lions_of_the_great_war = {
+
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+
+		# 	removal_cost = -1
+
+		# 	modifier = {
+		# 		army_core_attack_factor = 0.1
+		# 		army_core_defence_factor = 0.1
+		# 		conscription_factor = 0.05
+		# 		supply_consumption_factor = -0.1
+		# 	}
+		# }
+
+		# RAJ_indian_gurkhas = {
+
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+
+		# 	removal_cost = -1
+
+		# 	modifier = {
+		# 		special_forces_cap = 0.02
+		# 	}
+		# }
+	}
 
     country = {
 		#new spirits
@@ -1168,118 +1280,6 @@ ideas = {
 			modifier = {
 				autonomy_gain = 1.0
 			}
-		}
-
-		RAJ_the_sun_never_sets_idea_1 = {
-
-			name = RAJ_the_sun_never_sets
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				army_core_attack_factor = 0.3
-				army_core_defence_factor = 0.3
-			}
-
-
-			picture = eng_the_sun_never_sets
-			
-			removal_cost = -1	
-
-		}
-		
-		RAJ_the_sun_never_sets_idea_2 = {
-
-			name = RAJ_the_sun_never_sets
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
-			}
-
-			picture = eng_the_sun_never_sets
-			
-			removal_cost = -1	
-
-		}
-			
-		### SUN NEVER SETS ###
-		RAJ_the_sun_never_sets_idea_3 = {
-
-			name = RAJ_the_sun_never_sets
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
-			}
-
-			picture = eng_the_sun_never_sets
-			
-			removal_cost = -1	
-
-		}
-
-		RAJ_the_sun_never_sets_idea_4 = {
-
-			name = RAJ_the_sun_never_sets
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
-			}
-
-			picture = eng_the_sun_never_sets
-			
-			removal_cost = -1	
-
-		}
-
-		RAJ_the_sun_never_sets_idea_5 = {
-
-			name = RAJ_the_sun_never_sets
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = eng_the_sun_never_sets
-			
-			removal_cost = -1	
-
 		}
 	}
 	

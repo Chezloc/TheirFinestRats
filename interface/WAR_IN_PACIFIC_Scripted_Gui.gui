@@ -9,7 +9,7 @@ guiTypes = {
 		iconType = {
 			name ="PACIFIC_BASE"
 			spriteType = "GFX_PACIFIC_BASE"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 } #-279
 		}
 
 		instantTextBoxType = {
@@ -232,7 +232,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_AST"
 			spriteType = "GFX_PACIFIC_AST"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -240,7 +240,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_CEYLON"
 			spriteType = "GFX_PACIFIC_CEYLON"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -248,7 +248,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_CHI"
 			spriteType = "GFX_PACIFIC_CHI"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -256,7 +256,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_GUAM"
 			spriteType = "GFX_PACIFIC_GUAM"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -264,7 +264,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_HAINAN"
 			spriteType = "GFX_PACIFIC_HAINAN"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -272,7 +272,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_HAWAII"
 			spriteType = "GFX_PACIFIC_HAWAII"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -280,7 +280,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_INDOCHINA"
 			spriteType = "GFX_PACIFIC_INDOCHINA"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -288,7 +288,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_IWO_JIMA"
 			spriteType = "GFX_PACIFIC_IWO_JIMA"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -296,7 +296,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_JAP"
 			spriteType = "GFX_PACIFIC_JAP"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -304,7 +304,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_JAVA"
 			spriteType = "GFX_PACIFIC_JAVA"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -312,7 +312,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_KALIMANTAN"
 			spriteType = "GFX_PACIFIC_KALIMANTAN"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -320,7 +320,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_KOR"
 			spriteType = "GFX_PACIFIC_KOR"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -328,7 +328,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_MAN"
 			spriteType = "GFX_PACIFIC_MAN"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -336,7 +336,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_MIDWAY"
 			spriteType = "GFX_PACIFIC_MIDWAY"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -344,7 +344,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_NORTH_BORNEO"
 			spriteType = "GFX_PACIFIC_NORTH_BORNEO"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -352,7 +352,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_NORTH_ISLAND"
 			spriteType = "GFX_PACIFIC_NORTH_ISLAND"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -360,7 +360,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_OKINAWA"
 			spriteType = "GFX_PACIFIC_OKINAWA"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -368,7 +368,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_PALAU"
 			spriteType = "GFX_PACIFIC_PALAU"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -376,7 +376,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_PAPUA"
 			spriteType = "GFX_PACIFIC_PAPUA"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -384,7 +384,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_PHI"
 			spriteType = "GFX_PACIFIC_PHI"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -392,7 +392,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_RAJ"
 			spriteType = "GFX_PACIFIC_RAJ"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -400,7 +400,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_SAIPAN"
 			spriteType = "GFX_PACIFIC_SAIPAN"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -408,7 +408,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_SIAM"
 			spriteType = "GFX_PACIFIC_SIAM"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -416,7 +416,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_SINGAPORE"
 			spriteType = "GFX_PACIFIC_SINGAPORE"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -424,7 +424,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_SOUTH_ISLAND"
 			spriteType = "GFX_PACIFIC_SOUTH_ISLAND"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -432,7 +432,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_SULAWESI"
 			spriteType = "GFX_PACIFIC_SULAWESI"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -440,7 +440,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_SUMATRA"
 			spriteType = "GFX_PACIFIC_SUMATRA"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -448,7 +448,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_TAIWAN"
 			spriteType = "GFX_PACIFIC_TAIWAN"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -456,7 +456,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_TASMANIA"
 			spriteType = "GFX_PACIFIC_TASMANIA"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -464,7 +464,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_WAKE_ISLAND"
 			spriteType = "GFX_PACIFIC_WAKE_ISLAND"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -472,7 +472,7 @@ guiTypes = {
 		iconType = {
 			name = "PACIFIC_WEST_PAPUA"
 			spriteType = "GFX_PACIFIC_WEST_PAPUA"
-			position = { x=0 y=-279 }
+			position = { x=0 y=-17 }
 			Orientation = "UPPER_LEFT"
 		}
 	}
