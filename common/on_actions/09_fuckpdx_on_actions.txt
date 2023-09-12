@@ -370,7 +370,9 @@ on_actions = {
 
 				set_global_flag = DEI_transfered
 
-				set_cosmetic_tag = AST_autonomy_dominion_OCEANIA
+				AST = {
+					set_cosmetic_tag = AST_autonomy_dominion_OCEANIA
+				}
 
 				# ENG ANNEX
 				ENG = {

@@ -1244,35 +1244,42 @@ on_actions = {
 					OR = { 
 						british_coastline = yes
 					}
-					if = {
-						limit = {
-							NOT = {
-								has_global_flag = NO_ASIA
-							}
-							NOT = {
-								has_game_rule = {
-									rule = sealion_auto_tp
-									option = SEALION_DISABLED
-								}
-							}
-						}
+					OR = {
+						has_global_flag = NO_ASIA
 						has_game_rule = {
 							rule = sealion_auto_tp
-							option = SEALION_AT_CONDITIONS_MET
+							option = SEALION_DISABLED
 						}
-						118 = {
-							CONTROLLER = {
-								tag = ENG
-								is_in_faction_with = ENG
-							}
-						}
-						446 = {
-							CONTROLLER = {
-								tag = ENG
-								is_in_faction_with = ENG
-							}
-						}					
 					}
+					# if = {
+					# 	limit = {
+					# 		NOT = {
+					# 			has_global_flag = NO_ASIA
+					# 		}
+					# 		NOT = {
+					# 			has_game_rule = {
+					# 				rule = sealion_auto_tp
+					# 				option = SEALION_DISABLED
+					# 			}
+					# 		}
+					# 	}
+					# 	has_game_rule = {
+					# 		rule = sealion_auto_tp
+					# 		option = SEALION_AT_CONDITIONS_MET
+					# 	}
+					# 	118 = {
+					# 		CONTROLLER = {
+					# 			tag = ENG
+					# 			is_in_faction_with = ENG
+					# 		}
+					# 	}
+					# 	446 = {
+					# 		CONTROLLER = {
+					# 			tag = ENG
+					# 			is_in_faction_with = ENG
+					# 		}
+					# 	}					
+					# }
 				}
 				teleport_armies = {
 					limit = { 
@@ -1294,35 +1301,42 @@ on_actions = {
 					OR = { 
 						british_coastline = yes
 					}
-					if = {
-						limit = {
-							NOT = {
-								has_global_flag = NO_ASIA
-							}
-							NOT = {
-								has_game_rule = {
-									rule = sealion_auto_tp
-									option = SEALION_DISABLED
-								}
-							}
-						}
+					OR = {
+						has_global_flag = NO_ASIA
 						has_game_rule = {
 							rule = sealion_auto_tp
-							option = SEALION_AT_CONDITIONS_MET
+							option = SEALION_DISABLED
 						}
-						118 = {
-							CONTROLLER = {
-								tag = ENG
-								is_in_faction_with = ENG
-							}
-						}
-						446 = {
-							CONTROLLER = {
-								tag = ENG
-								is_in_faction_with = ENG
-							}
-						}					
 					}
+					# if = {
+					# 	limit = {
+					# 		NOT = {
+					# 			has_global_flag = NO_ASIA
+					# 		}
+					# 		NOT = {
+					# 			has_game_rule = {
+					# 				rule = sealion_auto_tp
+					# 				option = SEALION_DISABLED
+					# 			}
+					# 		}
+					# 	}
+					# 	has_game_rule = {
+					# 		rule = sealion_auto_tp
+					# 		option = SEALION_AT_CONDITIONS_MET
+					# 	}
+					# 	118 = {
+					# 		CONTROLLER = {
+					# 			tag = ENG
+					# 			is_in_faction_with = ENG
+					# 		}
+					# 	}
+					# 	446 = {
+					# 		CONTROLLER = {
+					# 			tag = ENG
+					# 			is_in_faction_with = ENG
+					# 		}
+					# 	}					
+					# }
 				}
 				teleport_armies = {
 					limit = { 

@@ -3600,12 +3600,12 @@ focus = {
 		id = HOL_prepare_naval_expansion
 		prerequisite = { focus = HOL_war_on_pacifism }
 		available = {
-			has_full_control_of_state = 35
+			# has_full_control_of_state = 35
 		}
 		bypass = {
-			NOT = { controls_state = 7 }
-			NOT = { controls_state = 35 }
-			NOT = { controls_state = 36 }
+			# NOT = { controls_state = 7 }
+			# NOT = { controls_state = 35 }
+			# NOT = { controls_state = 36 }
 		}
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 4

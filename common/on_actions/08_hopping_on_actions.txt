@@ -805,4 +805,88 @@ on_actions = {
 				}
 			}
 	}
+
+	## STIFF UPPER LIP
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+							tag = GRE
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ITA
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = ENG_controls_stiff_upper_lip
+					}
+					ENG = {
+						OR = {
+							has_idea = stiff_upper_lip_1
+							has_idea = stiff_upper_lip_2
+							has_idea = stiff_upper_lip_3
+							has_idea = stiff_upper_lip_4
+							has_idea = stiff_upper_lip_5
+							has_idea = stiff_upper_lip_6
+						}
+					}
+				}
+				FROM.FROM = {  
+					set_state_flag = ITA_controls_stiff_upper_lip
+					clr_state_flag = ENG_controls_stiff_upper_lip
+				}
+				ENG = {
+					STIFF_UPPER_LIP_bases_level_up = yes
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = ITA
+							tag = ITA
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = ENG
+							tag = GRE
+							is_in_faction_with = ENG
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = ITA_controls_stiff_upper_lip
+					}
+					ENG = {
+						OR = {
+							has_idea = stiff_upper_lip_1
+							has_idea = stiff_upper_lip_2
+							has_idea = stiff_upper_lip_3
+							has_idea = stiff_upper_lip_4
+							has_idea = stiff_upper_lip_5
+							has_idea = stiff_upper_lip_6
+						}
+					}
+				}
+				FROM.FROM = { 
+					set_state_flag = ENG_controls_stiff_upper_lip 
+					clr_state_flag = ITA_controls_stiff_upper_lip 
+				}
+				ENG = {
+					STIFF_UPPER_LIP_bases_level_down = yes
+				}
+			}
+		}
+	}
 }

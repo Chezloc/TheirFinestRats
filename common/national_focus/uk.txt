@@ -2829,11 +2829,11 @@ focus_tree = {
 
 	focus = {
 		id = ENG_khartoum_airfield
-		prerequisite = { focus = ENG_fortify_suez }
+		prerequisite = { focus = ENG_fortify_the_med }
 		icon = GFX_goal_generic_fortify_city
 		x = -1
-		y = 1
-		relative_position_id = ENG_fortify_suez
+		y = 2
+		relative_position_id = ENG_fortify_the_med
 		cost = 1
 		ai_will_do = {
 			factor = 1

@@ -259,6 +259,10 @@
   OPERATION_TORCH:0 "Operation Torch"
   ENG_compass:0 "Operation Compass"
   gibraltar_defences:0 "Gibraltar Defenses"
+  stiff_upper_lip:0 "British Stoicism"
+  stiff_upper_lip_desc:0 "If you can keep your head when all about you\nAre losing theirs and blaming it on you, If you can meet with Triumph and Disaster And treat those two impostors just the same\nYours is the Earth and everything that's in it, And - which is more - you'll be a Man, my son."
+  stiff_upper_lip_1:0 "British Stoicism"
+  stiff_upper_lip_1_desc:0 "If you can keep your head when all about you\nAre losing theirs and blaming it on you, If you can meet with Triumph and Disaster And treat those two impostors just the same\nYours is the Earth and everything that's in it, And - which is more - you'll be a Man, my son.\n\nBases Mechanic: holding Allied Mediterranean strongholds will provide a buff to core attack and defense. \n§GFrom West to East§!\n§YGibraltar\nMalta\nCrete\nSuez Canal"
 
   #### TRAITS ####
   vauxhall_trait:0 "Infantry Tank Manufacturer"

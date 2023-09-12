@@ -9,6 +9,7 @@ state= {
 	}
 
 	history={
+		set_state_flag = ENG_controls_stiff_upper_lip
 		set_state_flag = ENG_controls
 		owner = ENG
 		victory_points = {
