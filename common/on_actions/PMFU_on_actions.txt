@@ -683,6 +683,10 @@ on_actions = {
 							tag = JAP
 						}
 					}
+					has_game_rule = {
+						rule = minor_agents
+						option = DISABLED
+					}
 				}
 				add_ideas = no_agents
 			}

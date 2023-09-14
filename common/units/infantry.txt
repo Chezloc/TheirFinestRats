@@ -337,6 +337,11 @@ sub_units = {
 			defence = 0.05
 			movement = 0.05
 		}
+		rock = {
+			attack = 0.30
+			defence = 0.05
+			movement = 0.05
+		}
 		jungle = {
 			attack = 0.075
 			defence = 0.05
@@ -591,6 +596,9 @@ sub_units = {
 		mountain = {
 			attack = -0.05
 		}
+		rock = {
+			attack = -0.05
+		}
 		jungle = {
 			attack = -0.2
 			movement = -0.5
@@ -672,6 +680,9 @@ sub_units = {
 		mountain = {
 			attack = -0.05
 		}
+		rock = {
+			attack = -0.05
+		}
 		jungle = {
 			attack = -0.3
 		}
@@ -737,6 +748,9 @@ sub_units = {
 			movement = 0.1
 		}
 		mountain = {
+			movement = 0.05
+		}
+		rock = {
 			movement = 0.05
 		}
 		marsh = {
@@ -1029,6 +1043,10 @@ sub_units = {
 			defence = 0.05
 		}
 		mountain = {
+			attack = 0.15 # was 0.1 
+			defence = 0.05
+		}
+		rock = {
 			attack = 0.15 # was 0.1 
 			defence = 0.05
 		}

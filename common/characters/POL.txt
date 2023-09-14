@@ -143,6 +143,23 @@ characters = {
 		}
 	}
 
+	POL_bober={
+		name="Bober"
+		portraits={
+			army={
+				large="GFX_portrait_bober"
+			}
+		}
+		corps_commander={
+			traits={ naval_invader trait_engineer commando }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=5
+		}
+	}
+
 	POL_ignacy_moscicki = {
 		name=POL_ignacy_moscicki
 		portraits = {

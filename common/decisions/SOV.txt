@@ -6645,7 +6645,12 @@ SOV_merge_designers_dec_cat = {
 			hidden_effect = {
 				SOV_upgrade_appropriate_ship_designer_1_baltic_effect = yes
 			}
-			set_technology = { coastal_defense_ships = 1 } 
+			if = {
+				limit = {
+					NOT = { has_tech = coastal_defense_ships }
+				}
+				set_technology = { coastal_defense_ships = 1 } 
+			}
 		}
 	}
 
@@ -6887,7 +6892,12 @@ SOV_merge_designers_dec_cat = {
 			hidden_effect = {
 				SOV_upgrade_appropriate_ship_designer_1_black_sea_effect = yes
 			}
-			set_technology = { coastal_defense_ships = 1 } 
+			if = {
+				limit = {
+					NOT = { has_tech = coastal_defense_ships }
+				}
+				set_technology = { coastal_defense_ships = 1 } 
+			}
 		}
 	}
 

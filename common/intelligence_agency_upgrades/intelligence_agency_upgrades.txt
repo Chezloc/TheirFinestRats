@@ -32,6 +32,10 @@ branch_intelligence = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -65,6 +69,10 @@ branch_intelligence = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -98,6 +106,10 @@ branch_intelligence = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -131,6 +143,10 @@ branch_intelligence = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -212,6 +228,10 @@ branch_defense = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -248,6 +268,10 @@ branch_operation = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -284,6 +308,10 @@ branch_operation = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -317,6 +345,10 @@ branch_operation = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -350,6 +382,10 @@ branch_operation = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -383,6 +419,10 @@ branch_operation = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -420,6 +460,10 @@ branch_operative = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -452,6 +496,10 @@ branch_operative = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}
@@ -507,6 +555,10 @@ branch_operative = {
 				tag = ITA
 				tag = SOV
 				tag = JAP
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
 			}
 		}
 	}

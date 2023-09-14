@@ -761,6 +761,9 @@ on_actions = {
 						transfer_state = 731
 					}
 				}
+				ENG = {
+					transfer_state = 182
+				}
 				ENG = { annex_country = { target = GRE transfer_troops = no } }
 			}
 		}

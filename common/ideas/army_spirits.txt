@@ -450,7 +450,7 @@ ideas = {
 			# visible = { has_tech = trench_warfare }
 			ledger = army
 			modifier = {
-				special_forces_attack_factor = 0.075
+				special_forces_attack_factor = 0.1
 				amphibious_invasion_defence = 0.2
 				# custom_modifier_tooltip = academy_weekly_special_forces_tooltip_gain
 				# custom_modifier_tooltip = academy_weekly_special_forces_tooltip_current

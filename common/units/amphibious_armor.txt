@@ -46,6 +46,9 @@ sub_units = {
 		mountain = 	{
 		    attack = -0.4
 		}
+		rock = 	{
+		    attack = -0.4
+		}
 		plains = {
 			attack = -0.15
 			movement = -0.15
@@ -126,6 +129,11 @@ sub_units = {
 			movement = 0.05
 		}
 		mountain = 	{
+		    attack = -0.2
+			movement = -0.25
+			defence = -0.3
+		}
+		rock = 	{
 		    attack = -0.2
 			movement = -0.25
 			defence = -0.3
@@ -215,6 +223,11 @@ sub_units = {
 			movement = -0.35
 			defence = -0.45
 		}
+		rock = 	{
+		    attack = -0.35
+			movement = -0.35
+			defence = -0.45
+		}
 		plains = {
 			attack = -0.1
 			movement = -0.1
@@ -296,6 +309,11 @@ sub_units = {
 			defence = -0.45
 		}
 		mountain = 	{
+		    attack = -0.45
+			movement = -0.6
+			defence = -0.55
+		}
+		rock = 	{
 		    attack = -0.45
 			movement = -0.6
 			defence = -0.55

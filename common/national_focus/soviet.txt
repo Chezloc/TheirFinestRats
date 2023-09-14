@@ -1677,15 +1677,24 @@ focus_tree = {
 					}
 				}
 			}
-			add_advisor_role = {
-				character = SOV_konstantin_rokossovsky
-				activate = yes
-				advisor = {
-					slot = high_command
-					cost = 0
-					idea_token = konstantin_rokossovsky
-					traits = {
-						army_armored_2
+			if = {
+				limit = {
+					SOV_konstantin_rokossovsky = {
+						NOT = {
+							has_trait = army_armored_3
+						}
+					}
+				}
+				add_advisor_role = {
+					character = SOV_konstantin_rokossovsky
+					activate = yes
+					advisor = {
+						slot = high_command
+						cost = 0
+						idea_token = konstantin_rokossovsky
+						traits = {
+							army_armored_2
+						}
 					}
 				}
 			}
@@ -1751,7 +1760,7 @@ focus_tree = {
 				}
 				add_advisor_role = {
 					character = SOV_konstantin_rokossovsky
-					activate = no
+					activate = yes
 					advisor = {
 						slot = high_command
 						cost = 0
@@ -3250,7 +3259,7 @@ focus_tree = {
 				}
 				add_advisor_role = {
 					character = SOV_konstantin_rokossovsky
-					activate = no
+					activate = yes
 					advisor = {
 						slot = high_command
 						cost = 0
@@ -4857,8 +4866,8 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_5_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 5 compare = greater_than_or_equals }
+				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
+				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -4881,8 +4890,8 @@ focus_tree = {
 		
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
+				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
+				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -4921,8 +4930,8 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_5_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 5 compare = greater_than_or_equals }
+				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
+				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -4945,8 +4954,8 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
+				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
+				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -4983,8 +4992,8 @@ focus_tree = {
 		
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
+				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
+				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -5054,8 +5063,8 @@ focus_tree = {
 		
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
+				tooltip = SOV_propaganda_campaigns_taken_20_or_greater_tt
+				check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -5090,8 +5099,8 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
+				tooltip = SOV_propaganda_campaigns_taken_20_or_greater_tt
+				check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -5113,8 +5122,8 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_20_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
+				tooltip = SOV_propaganda_campaigns_taken_25_or_greater_tt
+				check_variable = { SOV_propaganda_campaigns_taken = 25 compare = greater_than_or_equals }
 			}
 		}
 		
@@ -8421,7 +8430,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.25 }
-			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.1 }
+			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.1 }
 			custom_effect_tooltip = SOV_foster_flying_clubs_ns_tt
 
@@ -8482,23 +8491,23 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.2 }
+			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
 			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.1 }
 			set_variable = { SOV_soviet_airforce_air_strategic_bomber_night_penalty = -0.1 }
 			custom_effect_tooltip = SOV_raskovas_aviation_group_ns_tt
 
-			custom_effect_tooltip = SOV_night_witches_nsb_tt
-			hidden_effect = {
-				if = { #ALT IDEOLOGY
-					limit = {
-						NOT = { has_government = communism }
-					}
-					load_oob = "SOV_night_witches_nsb_alt"
-				}
-				else = { #DEFAULT COMMUNISM
-					load_oob = "SOV_night_witches_nsb"
-				}
-			}
+			# custom_effect_tooltip = SOV_night_witches_nsb_tt
+			# hidden_effect = {
+			# 	if = { #ALT IDEOLOGY
+			# 		limit = {
+			# 			NOT = { has_government = communism }
+			# 		}
+			# 		load_oob = "SOV_night_witches_nsb_alt"
+			# 	}
+			# 	else = { #DEFAULT COMMUNISM
+			# 		load_oob = "SOV_night_witches_nsb"
+			# 	}
+			# }
 		}
 	}
 
@@ -8524,7 +8533,7 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.15 }
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
-			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.15 }
+			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.1 }
 			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.15 }
 			add_to_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = 0.1 }
 			custom_effect_tooltip = SOV_intensify_pilot_training_program_ns_tt
@@ -8647,8 +8656,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
-			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.1 } 
+			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.05 }
+			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.05 } 
 			add_to_variable = { SOV_soviet_airforce_air_cas_present_factor = 0.05 }
 			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
 

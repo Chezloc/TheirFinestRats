@@ -65,6 +65,21 @@ air_minors = {
 	}
 }
 
+minor_agents = {
+	name = "RULE_MINOR_AGENTS"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_MINOR_AGENTS_DISABLED_DESC"
+	}
+	option = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_MINOR_AGENTS_ENABLED_DESC"
+	}
+}
+
 assault_gun = {
 	name = "RULE_ASSAULT_GUNS"
 	group = "RULE_GROUP_TFB"

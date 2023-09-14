@@ -1349,7 +1349,75 @@ spriteTypes = {
 	}
 	
 	##### FRA #####
+
+	### USA ARMOR ###
+
+	SpriteType = {
+		name = "GFX_fra_usa_light_tank_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_lm2_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_light_tank_2_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_lm3_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_light_tank_3_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_lm5_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_light_tank_4_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_m24_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_light_td_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_m18_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_medium_tank_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_mm2_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_medium_tank_2_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_mm3_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_medium_tank_3_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_mm4_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_medium_tank_6_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_m26_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_heavy_tank_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_hm6_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_heavy_tank_2_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_t29_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_heavy_tank_3_medium"
+		texturefile = "gfx/interface/technologies/tanks/usa/usa_t28_hull.dds"
+	}
 	
+	SpriteType = {
+		name = "GFX_fra_usa_light_tank_upgrade_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_medium_tank_4_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_medium_tank_5_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_usa_medium_tank_7_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
+	}
+
 	### EQUIPMENT ###
 	
 	SpriteType = {

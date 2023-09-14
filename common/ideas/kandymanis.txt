@@ -27,6 +27,13 @@ ideas = {
 				always = no
 			}
 
+			cancel = {
+				has_game_rule = {
+					rule = minor_agents
+					option = ENABLED
+				}
+			}
+
 			removal_cost = -1
 
 			picture = MEX_revolutionary_army

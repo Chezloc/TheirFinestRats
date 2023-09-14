@@ -118,4 +118,21 @@ technologies = {
 			factor = -100
 		}
 	}
+	Juggle8 = {
+		research_cost = 0
+		folder = {
+			name = fra_armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		on_research_complete = {
+			set_technology = {
+				Juggle8 = 0
+			}
+		}
+
+		ai_will_do = {
+			factor = -100
+		}
+	}
 }

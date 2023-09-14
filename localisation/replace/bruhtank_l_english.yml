@@ -1029,6 +1029,11 @@
  usa_medium_tank_4:0 "M4 HVSS"
  usa_medium_tank_5:0 "M4 Jumbo"
  usa_medium_tank_7:0 "T26E4 Super Pershing"
+ fra_usa_light_tank_2:0 "M2A4"
+ fra_usa_medium_tank_3:0 "M4 Chassis"
+ fra_usa_medium_tank_4:0 "M4 HVSS"
+ fra_usa_medium_tank_5:0 "M4 Jumbo"
+ fra_usa_medium_tank_6:0 "T26E4 Super Pershing"
  
  jap_light_tank_chassis_t95:0 "Ha-Go Chassis"
  jap_light_tank_chassis_t98:0 "Ke-Ni Chassis"

@@ -60,6 +60,9 @@ sub_units = {
 		mountain = {
 			movement = 0.04
 		}
+		rock = {
+			movement = 0.04
+		}
 		jungle = {
 			movement = 0.04
 		}
@@ -136,6 +139,9 @@ sub_units = {
 			movement = 0.06
 		}
 		mountain = {
+			movement = 0.06
+		}
+		rock = {
 			movement = 0.06
 		}
 		jungle = {
@@ -215,6 +221,9 @@ sub_units = {
 			movement = 0.08
 		}
 		mountain = {
+			movement = 0.08
+		}
+		rock = {
 			movement = 0.08
 		}
 		jungle = {
@@ -372,6 +381,9 @@ sub_units = {
 			movement = 0.10
 		}
 		mountain = {
+			movement = 0.10
+		}
+		rock = {
 			movement = 0.10
 		}
 		jungle = {

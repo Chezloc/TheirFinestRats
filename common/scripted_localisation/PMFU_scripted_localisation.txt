@@ -825,6 +825,28 @@ defined_text = { # global
 }
 
 defined_text = { # global
+	name = minor_agents_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = minor_agents
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = minor_agents
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
 	name = china_war_rule_sl
 	text = {
 		trigger = {

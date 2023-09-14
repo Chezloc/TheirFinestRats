@@ -400,6 +400,8 @@
   SOV_red_guard_template_light_tt:0 "This will set the §RRed Guard Template§! to §YLight Tanks§!"
   SOV_red_guard_template_medium_tt:0 "This will keep the §RRed Guard Template§! as §YMedium Tanks§!"
   SOV_red_guard_template_heavy_tt:0 "This will set the §RRed Guard Template§! to §YHeavy Tanks§!"
+  SOV_propaganda_campaigns_taken_25_or_greater_tt:0 "Has carried out at least §Y25§! Propaganda Campaigns. (Currently $SOV_propaganda_campaigns_taken_current_25$ propaganda campaigns have been taken)"
+  SOV_propaganda_campaigns_taken_current_25:0 "§[GetPropagandaCampaignRequirementColor_25][?SOV_propaganda_campaigns_taken]§!"
   SOV_pc_of_mortar_armament_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \nArtillery Defense: §G+5.0%§! \n\n"
   SOV_industry_relocation_complete_effect_tt:0 "Up to §Y10 Military or Civilian Factories§! will be removed from §Y[FROM.GetName]§!.\n"
   SOV_RG_spawn_in_2:0 "Spawns in §G2§! §YRG Converter Divisions§!"

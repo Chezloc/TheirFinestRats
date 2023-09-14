@@ -52,6 +52,10 @@ sub_units = {
 			movement = -0.2
 		}
 
+		rock = {
+			movement = -0.2
+		}
+
 		jungle = {
 			attack = -0.15
 			movement = -0.1
@@ -136,6 +140,10 @@ sub_units = {
 		}
 
 		mountain = {
+			movement = -0.2
+		}
+
+		rock = {
 			movement = -0.2
 		}
 
@@ -227,6 +235,10 @@ sub_units = {
 			attack = 0.15
 		}
 
+		rock = {
+			attack = 0.15
+		}
+
 		jungle = {
 			attack = 0.1	
 		}
@@ -301,6 +313,10 @@ sub_units = {
 		}
 
 		mountain = {
+			movement = -0.2
+		}
+
+		rock = {
 			movement = -0.2
 		}
 
@@ -388,6 +404,10 @@ sub_units = {
 		}
 
 		mountain = {
+			movement = -0.2
+		}
+
+		rock = {
 			movement = -0.2
 		}
 
@@ -479,6 +499,11 @@ sub_units = {
 			attack = -0.1
 		}
 
+		rock = {
+			movement = -0.2
+			attack = -0.1
+		}
+
 		jungle = {
 			attack = -0.15
 			movement = -0.3
@@ -565,6 +590,10 @@ sub_units = {
 			movement = -0.2
 		}
 
+		rock = {
+			movement = -0.2
+		}
+
 		jungle = {
 			attack = -0.15
 			movement = -0.1
@@ -647,6 +676,10 @@ sub_units = {
 		}
 
 		mountain = {
+			movement = -0.2
+		}
+
+		rock = {
 			movement = -0.2
 		}
 

@@ -183,7 +183,10 @@ country_event = {
 	}
 	mean_time_to_happen = { days = 2 }
 	immediate = {
-		country_event = france.10
+		# country_event = france.10
+		GER = {
+			country_event = france.14
+		}
 	}
 }
 # The Battle is Lost
@@ -201,16 +204,6 @@ country_event = {
 		set_global_flag = achievement_france_surrender
 	}
 	
-	# option = { # Become Vichy
-	# 	name = france.10.a
-	# 	trigger = { is_ai = no }
-	# 	set_country_flag = become_vichy
-	# 	save_global_event_target_as = vichy_france
-	# 	set_global_flag = fall_of_france
-	# 	GER = { country_event = france.14 }
-	# 	custom_effect_tooltip = france.10.a_tt
-	# 	# Switches to Vichy if GER accepts
-	# }
 	option = { # Become Free French
 		name = france.10.b
 		ai_chance = {
@@ -219,7 +212,6 @@ country_event = {
 		save_global_event_target_as = free_france
 		VIC = { inherit_technology = FRA }
 		GER = { country_event = france.14 }
-		# GER = { country_event = { id = france.14 days = 2 } }
 		custom_effect_tooltip = france.10.b_tt
 		USA = {
 			375 = {
@@ -258,20 +250,6 @@ country_event = {
 				}
 			}
 		}
-		# 450 = {
-		# 	set_building_level = {
-		# 		type = air_base
-		# 		level = 20
-		# 		instant_build = yes
-		# 	}
-		# }
-		# 446 = {
-		# 	set_building_level = {
-		# 		type = air_base
-		# 		level = 20
-		# 		instant_build = yes
-		# 	}
-		# }
 		SPR = {
 			# COMINTERN
 			send_embargo = SOV
@@ -337,21 +315,6 @@ country_event = {
 	
 	option = { # Refuse Union
 		name = france.11.a
-		ai_chance = {
-			factor = 10
-		}
-		FRA = {
-			country_event = { hours = 6 id = france.13 }
-		}
-	}
-	option = { # Agree to Union
-		name = france.11.b
-		ai_chance = {
-			factor = 90
-		}
-		FRA = {
-			country_event = { hours = 6 id = france.12 }
-		}
 	}
 }
 
@@ -366,35 +329,6 @@ country_event = {
 	
 	option = {
 		name = france.12.a
-		# Franco-British Union created
-		set_global_flag = fall_of_france
-		set_global_flag = flag_franco_british_union
-		hidden_effect = {
-			every_state = {
-				limit = {
-					is_core_of = FRA
-				}
-				ENG = {
-					add_state_core = PREV
-				}
-			}
-		}
-		FRA = {
-			every_unit_leader = {
-				set_unit_leader_flag = flag_former_french_general
-				set_nationality = ENG
-			}
-		}
-		ENG = {
-			annex_country = { target = FRA transfer_troops = yes }
-		}
-		custom_effect_tooltip = FRA_franco_british_cores
-		hidden_effect = {
-			ENG = { set_cosmetic_tag = FRA_UK }
-			GER = { 
-				country_event = { hours = 6 id = news.35 }
-			}
-		}
 	}
 }
 
@@ -409,33 +343,6 @@ country_event = {
 	
 	option = { # Become Vichy
 		name = france.13.a
-		trigger = { is_ai = no }
-		set_country_flag = become_vichy
-		set_global_flag = fall_of_france
-		save_global_event_target_as = vichy_france
-		GER = { country_event = france.14 }
-		custom_effect_tooltip = france.10.a_tt
-		# Switches to Vichy if GER accepts
-	}
-	option = { # Become Free France
-		name = france.13.b
-		GER = { country_event = france.14 }
-		save_global_event_target_as = free_france
-		custom_effect_tooltip = france.10.b_tt
-		set_global_flag = fall_of_france
-	}
-	option = { # decide to fight on
-		name = france.10.e
-		ai_chance = {
-			factor = 15
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		trigger = { has_war_support > 0.7 }
-		add_stability = -0.05
-		custom_effect_tooltip = france_continue_the_fight_tt
 	}
 }
 
@@ -458,6 +365,97 @@ country_event = {
 		}
 		# POW CLEAR
 		set_global_flag = fall_of_france
+		VIC = { inherit_technology = FRA }
+		custom_effect_tooltip = france.10.b_tt
+		USA = {
+			375 = {
+				add_resource = {
+					type = aluminium
+					amount = 800
+				}
+			}
+			376 = {
+				add_resource = {
+					type = aluminium
+					amount = 450
+				}
+			}
+			377 = {
+				add_resource = {
+					type = aluminium
+					amount = 350
+				}
+			}
+			378 = {
+				add_resource = {
+					type = aluminium
+					amount = 270
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = NO_ASIA
+			}
+			276 = {
+				add_resource = {
+					type = aluminium
+					amount = 1300
+				}
+			}
+		}
+		SPR = {
+			# COMINTERN
+			send_embargo = SOV
+			send_embargo = MON
+
+			# ALLIES
+			send_embargo = CAN
+			send_embargo = USA
+			send_embargo = MEX
+			send_embargo = BRA
+			send_embargo = IRE
+			send_embargo = ENG
+			send_embargo = FRA
+			send_embargo = HOL
+			send_embargo = POL
+			send_embargo = RAJ
+			send_embargo = AST
+			send_embargo = NZL
+			send_embargo = SAF
+		}
+		GER = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		ITA = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		ROM = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		HUN = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		BUL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		SPR = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		VIC = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		YUG = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		CAN = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		SAF = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		AST = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		ENG = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		NZL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		IRE = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		MEX = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		BRA = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		SPR = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		RAJ = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		HOL = { add_ideas = GER_africa_hp set_technology = { africa_hp = 1 popup = no } }
+		hidden_effect = {
+			GER = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			ITA = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			ROM = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			HUN = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			BUL = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			SPR = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			VIC = { add_ideas = GER_africaaaaaaaaaaaaaa }
+			YUG = { add_ideas = GER_africaaaaaaaaaaaaaa }
+		}
+		# enable ports on francce
+		FRA = { set_technology = { naval_base_construction = 1 popup = no } }
+		
 		GER = {
 			custom_effect_tooltip = "Gets 120,000 French POWs"
 			add_to_variable = { pow_other_sources = 120 }

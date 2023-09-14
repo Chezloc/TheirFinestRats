@@ -19,7 +19,7 @@ upgrades = {
 			# }
 		}
 
-		maximum_speed = 0.1
+		maximum_speed = 0.05
 		reliability = -0.025
 		add_stats = {
 			fuel_consumption = 0.05
@@ -177,7 +177,7 @@ upgrades = {
 			
 		}
 
-		maximum_speed = -0.025
+		maximum_speed = -0.05
 		add_stats = {
 			breakthrough = 2.5
 			armor_value = 7.5
@@ -246,7 +246,7 @@ upgrades = {
 
 		}
 
-		maximum_speed = 0.1
+		maximum_speed = 0.05
 		
 		add_stats = {
 			fuel_consumption = 0.1
@@ -273,7 +273,7 @@ upgrades = {
 			}
 		}
 
-		maximum_speed = 0.1
+		maximum_speed = 0.05
 		
 		add_stats = {
 			fuel_consumption = 0.1
@@ -319,7 +319,7 @@ upgrades = {
 			
 		}
 
-		maximum_speed = -0.025
+		maximum_speed = -0.05
 		reliability = 0.025
 		add_stats = {
 			breakthrough = 2.5
@@ -355,7 +355,7 @@ upgrades = {
 			}
 		}
 
-		maximum_speed = -0.025
+		maximum_speed = -0.05
 		reliability = 0.025
 		add_stats = {
 			breakthrough = 1.25
@@ -394,7 +394,7 @@ upgrades = {
 			}
 		}
 
-		maximum_speed = -0.025
+		maximum_speed = -0.05
 		reliability = 0.02
 		add_stats = {
 			breakthrough = 1.25
@@ -431,7 +431,7 @@ upgrades = {
 			}
 		}
 
-		maximum_speed = -0.02
+		maximum_speed = -0.05
 		reliability = 0.02
 		add_stats = {
 			breakthrough = 1

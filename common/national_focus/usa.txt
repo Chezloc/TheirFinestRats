@@ -3377,8 +3377,18 @@ focus_tree = {
 				technology = advanced_oil_processing
 				technology = modern_oil_processing
 			}
-			set_technology = { synth_oil_experiments = 1 }
-			set_technology = { oil_processing = 1 }
+			if = {
+				limit = {
+					NOT = { has_tech = synth_oil_experiments }
+				}
+				set_technology = { synth_oil_experiments = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = oil_processing }
+				}
+				set_technology = { oil_processing = 1 }
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3449,6 +3459,9 @@ focus_tree = {
 					ENG = {has_capitulated = yes}
 					SOV= {surrender_progress > 0.95 }
 				}
+			}
+			ENG = {
+				casualties > 100000
 			}
 		}
 				
