@@ -3034,6 +3034,13 @@ guiTypes = {
 				format = "UP"
 			}
 			gridboxtype = {
+				name = "fra_armor_tech_1_tree"
+				position = { x = 36% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
 				name = "Juggle8_tree"
 				position = { x = 984 y = 452 }
 				size = { width = 72 height = 650 }
@@ -3428,14 +3435,6 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "gwtank_chassis_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "fra_light_tank_1_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }

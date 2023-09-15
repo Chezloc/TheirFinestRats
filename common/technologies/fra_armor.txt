@@ -12,6 +12,48 @@ technologies = {
 	@1945 = 12
 	@1946 = 20
 
+	fra_armor_tech_1 = {
+		enable_equipment_modules = {
+			tank_welded_armor
+		}
+		
+		path = {
+			leads_to_tech = fra_armor_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = fra_armour_folder
+			position = { x = 3 y = 4 }
+		}
+	
+		categories = {
+			armor
+			year_1938
+		}
+	}
+
+	fra_armor_tech_2 = {
+
+		enable_equipment_modules = {
+			armor_skirts
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = fra_armour_folder
+			position = { x = 3 y = 12 }
+		}
+
+		categories = {
+			armor
+			year_1942
+		}
+	}
+
 	fra_light_tank_export = {
 		enable_equipments = {
 			fra_light_tank_chassis_ft
@@ -371,7 +413,7 @@ technologies = {
 		}
 
 		sub_technologies = {
-			usa_light_tank_1
+			fra_usa_light_tank_1
 			fra_usa_light_tank_upgrade
 		}
 
@@ -409,7 +451,7 @@ technologies = {
 		}
 	}
 
-	usa_light_tank_1 = { #t26
+	fra_usa_light_tank_1 = { #t26
 
 		enable_equipments = {
 			usa_light_tank_chassis_lm2
@@ -439,11 +481,6 @@ technologies = {
 			tank_torsion_bar_suspension
 			expanded_fuel_tank
 		}
-	
-		path = {
-			leads_to_tech = usa_light_tank_upgrade # M2 A4
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1935
@@ -471,16 +508,11 @@ technologies = {
 		enable_equipment_modules = {
 			tank_light_turret_2
 		}
-	
-		path = {
-			leads_to_tech = fra_usa_light_tank_2
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1939
 		folder = {
-			name = usa_armour_folder
+			name = fra_armour_folder
 			position = { x = -7 y = 6 }
 		}
 		

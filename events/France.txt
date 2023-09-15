@@ -507,18 +507,6 @@ country_event = {
 				target = FRA
 				type = annex_everything
 			}
-
-			# GER={
-			# 	set_variable = { collabo = has_collaboration@FRA }
-			# 	multiply_variable = { collabo = 100 }
-			# }
-
-			# every_owned_state = {
-			# 	limit = {
-			# 		is_core_of = FRA
-			# 	}
-			# 	add_compliance = GER.collabo
-			# }
 		}
 		VEN = {
 			transfer_units_fraction = {
@@ -732,6 +720,10 @@ country_event = {
 			remove_ideas = FRA_defense_of_metropolitan_france
 			remove_ideas = FRA_cracks_in_the_army
 			add_ideas = FRA_capitulated
+			set_victory_points = {
+				province = 373
+				value = 50
+			}
 		}
 	}
 	

@@ -1355,6 +1355,55 @@ on_actions = {
 		}
 	}
 
+	# FRENCH CANADA FUNNY ISLAND INVASION PREVENTION
+	on_naval_invasion = {
+		effect = {
+			if = {
+				limit = {
+					state = 730
+				}
+				teleport_armies = {
+					limit = { 
+						NOT = {
+							OR = {
+								original_tag = FRA
+								is_in_faction_with = FRA
+							}
+						}
+					}
+					to_state = FROM 
+				}
+				PREV = { 
+					transfer_state_to = FRA
+				} 	
+			}
+		}
+	}
+
+	on_paradrop = {
+		effect = {
+			if = {
+				limit = {
+					state = 730
+				}
+				teleport_armies = {
+					limit = { 
+						NOT = {
+							OR = {
+								original_tag = FRA
+								is_in_faction_with = FRA
+							}
+						}
+					}
+					to_state = FROM 
+				}
+				PREV = { 
+					transfer_state_to = FRA
+				} 	
+			}
+		}
+	}
+
 	on_daily_VEN = {
 		effect = {
 			for_each_scope_loop = {
