@@ -489,7 +489,7 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 
-		sub_tech_index = 1
+		sub_tech_index = 0
 		
 		categories = {
 			armor
@@ -516,7 +516,7 @@ technologies = {
 			position = { x = -7 y = 6 }
 		}
 		
-		sub_tech_index = 2
+		sub_tech_index = 1
 
 		categories = {
 			armor
@@ -607,7 +607,7 @@ technologies = {
 			position = { x = -5 y = 14 }
 		}
 
-		sub_tech_index = 1
+		sub_tech_index = 0
 		
 		categories = {
 			armor
@@ -638,7 +638,7 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 
-		sub_tech_index = 1
+		sub_tech_index = 0
 		
 		categories = {
 			armor
@@ -668,7 +668,7 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 
-		sub_tech_index = 2
+		sub_tech_index = 1
 		
 		categories = {
 			armor
@@ -781,7 +781,7 @@ technologies = {
 			position = { x = -3 y = 16 }
 		}
 
-		sub_tech_index = 3
+		sub_tech_index = 2
 		
 		categories = {
 			armor
@@ -842,7 +842,7 @@ technologies = {
 			position = { x = -4 y = 14 }
 		}
 
-		sub_tech_index = 1
+		sub_tech_index = 0
 		
 		categories = {
 			armor
@@ -922,7 +922,7 @@ technologies = {
 			position = { x = -1 y = 16 }
 		}
 
-		sub_tech_index = 1
+		sub_tech_index = 0
 		
 		categories = {
 			armor
