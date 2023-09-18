@@ -216,11 +216,6 @@ sealion_auto_tp = {
 		text = "RULE_OPTION_SEALION_DISABLED"
 		desc = "RULE_SEALION_AUTO_TP_SEALION_DISABLED_DESC"
 	}
-	option = {
-		name = "SEALION_NO_CONDITIONS"
-		text = "RULE_OPTION_SEALION_NO_CONDITIONS"
-		desc = "RULE_SEALION_AUTO_TP_SEALION_NO_CONDITIONS_DESC"
-	}
 }
 
 free_templates = {
