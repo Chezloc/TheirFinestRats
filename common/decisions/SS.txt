@@ -63,12 +63,13 @@ SS_recruitment = {
 					}
 				}
 				64 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
-							owner = GER
-						}
+					create_unit = {
+						division = "name = \"1st SS Panzer Division Leibstandarte SS Adolf Hitler\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
+					}
+					create_unit = {
+						division = "name = \"5th SS Panzer Division Wiking\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
 					}
 				}
 			}
@@ -154,12 +155,13 @@ SS_recruitment = {
 					}
 				}
 				64 = {
-					for_loop_effect = {
-						end = 2 #4
-						create_unit = {
-							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
-							owner = GER
-						}
+					create_unit = {
+						division = "name = \"3rd SS Panzer Division Totenkopf\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
+					}
+					create_unit = {
+						division = "name = \"4th SS Polizei Panzergrenadier Division\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
 					}
 				}
 			}
@@ -239,12 +241,13 @@ SS_recruitment = {
 					}
 				}
 				64 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
-							owner = GER
-						}
+					create_unit = {
+						division = "name = \"6th SS Mountain Division Nord\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
+					}
+					create_unit = {
+						division = "name = \"SS Nederland (Niederländische Nr. 1)\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
 					}
 				}
 			}
@@ -314,12 +317,13 @@ SS_recruitment = {
 					}
 				}
 				64 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
-							owner = GER
-						}
+					create_unit = {
+						division = "name = \"9th SS Panzer Division Hohenstaufen\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
+					}
+					create_unit = {
+						division = "name = \"Walloon Legion\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
 					}
 				}
 			}
@@ -405,12 +409,13 @@ SS_recruitment = {
 					}
 				}
 				64 = {
-					for_loop_effect = {
-						end = 2 #4
-						create_unit = {
-							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
-							owner = GER
-						}
+					create_unit = {
+						division = "name = \"11th SS Volunteer Panzergrenadier Division Nordland\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
+					}
+					create_unit = {
+						division = "name = \"12th SS Panzer Division Hitlerjugend\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
 					}
 				}
 			}
@@ -480,12 +485,13 @@ SS_recruitment = {
 					}
 				}
 				64 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
-							owner = GER
-						}
+					create_unit = {
+						division = "name = \"14th Waffen Grenadier Division of the SS (1st Galician)\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
+					}
+					create_unit = {
+						division = "name = \"16th SS Panzergrenadier Division Reichsführer-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
 					}
 				}
 			}
@@ -555,12 +561,13 @@ SS_recruitment = {
 					}
 				}
 				64 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
-							owner = GER
-						}
+					create_unit = {
+						division = "name = \"7th SS Volunteer Mountain Division Prinz Eugen\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
+					}
+					create_unit = {
+						division = "name = \"10th SS Panzer Division Frundsberg\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
 					}
 				}
 			}
@@ -630,12 +637,13 @@ SS_recruitment = {
 					}
 				}
 				64 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
-							owner = GER
-						}
+					create_unit = {
+						division = "name = \"21st Waffen Mountain Division of the SS Skanderbeg\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
+					}
+					create_unit = {
+						division = "name = \"24th Waffen Mountain Division of the SS Karstjäger\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
 					}
 				}
 			}
@@ -694,12 +702,13 @@ SS_recruitment = {
 					}
 				}
 				64 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Waffen-SS\" division_template = \"SS Converter\" start_experience_factor = 0.7"
-							owner = GER
-						}
+					create_unit = {
+						division = "name = \"2nd SS Panzer Division Das Reich\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
+					}
+					create_unit = {
+						division = "name = \"8th SS Volunteer Panzergrenadier Division Horst Wessel\" division_template = \"SS Converter\" start_experience_factor = 0.7"
+						owner = GER
 					}
 				}
 			}

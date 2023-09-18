@@ -797,6 +797,8 @@ focus_tree = {
             GER = {
 				country_event = generic.2
 			}
+            remove_ideas = neutrality_idea
+            remove_ideas = neutrality_idea2
             hidden_effect = {
                 every_country = {
                     limit = {
@@ -1433,6 +1435,8 @@ focus_tree = {
             GER = {
                 country_event = vichy.2
             }
+            remove_ideas = neutrality_idea
+            remove_ideas = neutrality_idea2
             hidden_effect = {
                 every_country = {
                     limit = {

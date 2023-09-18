@@ -262,8 +262,9 @@
   stiff_upper_lip:0 "British Stoicism"
   stiff_upper_lip_desc:0 "If you can keep your head when all about you\nAre losing theirs and blaming it on you, If you can meet with Triumph and Disaster And treat those two impostors just the same\nYours is the Earth and everything that's in it, And - which is more - you'll be a Man, my son."
   stiff_upper_lip_1:0 "British Stoicism"
-  stiff_upper_lip_1_desc:0 "If you can keep your head when all about you\nAre losing theirs and blaming it on you, If you can meet with Triumph and Disaster And treat those two impostors just the same\nYours is the Earth and everything that's in it, And - which is more - you'll be a Man, my son.\n\nBases Mechanic: holding Allied Mediterranean strongholds will provide a buff to core attack and defense. \n§GFrom West to East§!\n§YGibraltar\nMalta\nCrete\nSuez Canal"
-
+  stiff_upper_lip_1_desc:0 "If you can keep your head when all about you\nAre losing theirs and blaming it on you, If you can meet with Triumph and Disaster And treat those two impostors just the same\nYours is the Earth and everything that's in it, And - which is more - you'll be a Man, my son.\n\nBases Mechanic: holding Allied Mediterranean strongholds will provide a buff to core attack and defense. \n§GFrom West to East§!\n§YGibraltar\nMalta\nCrete\nSuez Canal\nCyprus"
+  emergency_dockyard_construction:0 "Emergency Dockyard Construction"
+  
   #### TRAITS ####
   vauxhall_trait:0 "Infantry Tank Manufacturer"
   cope_trait:0 "Cope Seethe"
@@ -309,11 +310,12 @@
   ENG_operation_compass:0 "Operation Compass"
   ENG_operation_crusader:0 "Operation Crusader"
   ENG_operation_torch:0 "Operation Torch"
+  ENG_emergency_dockyard_construction:0 "Emergency Dockyard Construction Plan"
 
   #### TOOLTIP ####
   ENG_home_guard_30w_tt:0 "Create the Home Guard, Spawning §Y28 30 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 28 divisions§!"
   ENG_home_guard_20w_tt:0 "Create the Home Guard, Spawning §Y40 20 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 40 divisions§!"
-  ENG_commandos_tt:0 "Enables §HCommando Improvements§!\n§HAll Marines:\n    Ampibious§!\n        £attack_texticon Attack: §G+10%§!\n        £movement_texticon Movement: §G+10%§!\n   £land_night_attack_texticon Land Night Attack: §G+20%§!\n   £specops_texticon  Special Forces Equipment Required: §R+5§!\n   £training_speed_texticon Training Time: §R20§!"
+  ENG_commandos_tt:0 "Enables §HCommando Improvements§!\n§HAll Marines:\n    Ampibious§!\n        £attack_texticon Attack: §G+10%§!\n        £movement_texticon Movement: §G+10%§!\n    §YRock§!\n        £attack_texticon Attack: §G+20%§!\n   £land_night_attack_texticon Land Night Attack: §G+20%§!\n   £specops_texticon  Special Forces Equipment Required: §R+5§!\n   £training_speed_texticon Training Time: §R20§!"
   ENG_special_tech_unlock:0 "§YUnlocks decisions to fund special research projects.§!"
   ENG_equip_foreign_exiles_tt:0 "Create Foreign Exile Brigades, Spawning §Y12 30 Width Divisions§! in Southern England"
   ENG_mil_arms_purchases_tt:0 "Unlocks decisions to §YBuy Equipment§! for our army"

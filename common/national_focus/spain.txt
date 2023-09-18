@@ -2893,6 +2893,10 @@ focus_tree = {
 		relative_position_id = SPA_extol_the_martyrs_of_the_war
 		cost = 10
 
+		allow_branch = {
+			always = no
+		}
+
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {

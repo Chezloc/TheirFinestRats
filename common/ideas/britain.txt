@@ -460,36 +460,29 @@ ideas = {
 			}
 		}
 
-		stiff_upper_lip = {
+		# stiff_upper_lip = {
 
-			name = stiff_upper_lip
-			picture = stiff_upper_lip
+		# 	name = stiff_upper_lip
+		# 	picture = stiff_upper_lip
 			
-			allowed = {
-				always = no
-			}
+		# 	allowed = {
+		# 		always = no
+		# 	}
 			
-			removal_cost = -1
+		# 	removal_cost = -1
 			
-			allowed_civil_war = {
-				always = yes
-			}
-
-			cancel = {
-				has_game_rule = {
-					rule = sealion_auto_tp
-					option = SEALION_AT_CONDITIONS_MET
-				}
-			}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
 			
-			modifier = {
-				drift_defence_factor = 0.5
-			}
+		# 	modifier = {
+		# 		drift_defence_factor = 0.5
+		# 	}
 			
-			rule = {
-				can_create_factions = yes
-			}			
-		}
+		# 	rule = {
+		# 		can_create_factions = yes
+		# 	}			
+		# }
 		
 		stiff_upper_lip_1 = {
 
@@ -505,24 +498,23 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
-			cancel = {
-				OR = {
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_NO_CONDITIONS
-					}
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_DISABLED
-					}
-				}
-			}
 			
 			modifier = {
 				drift_defence_factor = 0.5
 				army_core_attack_factor = 19.84
 				army_core_defence_factor = 19.84
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_range = 0.33 instant = yes
+				}
+				carrier = {
+					naval_range = 0.33 instant = yes
+				}
+				capital_ship = {
+					naval_range = 0.33 instant = yes
+				}
 			}
 			
 			rule = {
@@ -544,24 +536,24 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
-			cancel = {
-				OR = {
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_NO_CONDITIONS
-					}
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_DISABLED
-					}
-				}
-			}
 			
 			modifier = {
 				drift_defence_factor = 0.5
 				army_core_attack_factor = 2
 				army_core_defence_factor = 2
+				industrial_capacity_dockyard = 0.04
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_range = 0.28 instant = yes
+				}
+				carrier = {
+					naval_range = 0.28 instant = yes
+				}
+				capital_ship = {
+					naval_range = 0.28 instant = yes
+				}
 			}
 			
 			rule = {
@@ -583,24 +575,24 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
-			cancel = {
-				OR = {
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_NO_CONDITIONS
-					}
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_DISABLED
-					}
-				}
-			}
 			
 			modifier = {
 				drift_defence_factor = 0.5
-				army_core_attack_factor = 1
-				army_core_defence_factor = 1
+				army_core_attack_factor = 1.5
+				army_core_defence_factor = 1.5
+				industrial_capacity_dockyard = 0.08
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_range = 0.25 instant = yes
+				}
+				carrier = {
+					naval_range = 0.25 instant = yes
+				}
+				capital_ship = {
+					naval_range = 0.25 instant = yes
+				}
 			}
 			
 			rule = {
@@ -622,31 +614,31 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
-			cancel = {
-				OR = {
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_NO_CONDITIONS
-					}
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_DISABLED
-					}
-				}
-			}
 			
 			modifier = {
 				drift_defence_factor = 0.5
-				army_core_attack_factor = 0.8
-				army_core_defence_factor = 0.8
+				army_core_attack_factor = 1
+				army_core_defence_factor = 1
+				industrial_capacity_dockyard = 0.12
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_range = 0.18 instant = yes
+				}
+				carrier = {
+					naval_range = 0.18 instant = yes
+				}
+				capital_ship = {
+					naval_range = 0.18 instant = yes
+				}
 			}
 			
 			rule = {
 				can_create_factions = yes
 			}			
 		}
-		
+
 		stiff_upper_lip_5 = {
 
 			name = stiff_upper_lip_1
@@ -661,31 +653,31 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
-			cancel = {
-				OR = {
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_NO_CONDITIONS
-					}
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_DISABLED
-					}
-				}
-			}
 			
 			modifier = {
 				drift_defence_factor = 0.5
 				army_core_attack_factor = 0.6
 				army_core_defence_factor = 0.6
+				industrial_capacity_dockyard = 0.16
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_range = 0.1 instant = yes
+				}
+				carrier = {
+					naval_range = 0.1 instant = yes
+				}
+				capital_ship = {
+					naval_range = 0.1 instant = yes
+				}
 			}
 			
 			rule = {
 				can_create_factions = yes
 			}			
 		}
-
+		
 		stiff_upper_lip_6 = {
 
 			name = stiff_upper_lip_1
@@ -701,28 +693,35 @@ ideas = {
 				always = yes
 			}
 			
-			cancel = {
-				OR = {
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_NO_CONDITIONS
-					}
-					has_game_rule = {
-						rule = sealion_auto_tp
-						option = SEALION_DISABLED
-					}
-				}
-			}
-
 			modifier = {
 				drift_defence_factor = 0.5
 				army_core_attack_factor = 0.3
 				army_core_defence_factor = 0.3
+				industrial_capacity_dockyard = 0.20
 			}
 			
 			rule = {
 				can_create_factions = yes
 			}			
+		}
+
+		emergency_dockyard_construction = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.2
+			}
 		}
 
 		british_austerity_idea = {
@@ -1222,130 +1221,130 @@ ideas = {
 
 		}
 
-		ENG_the_sun_never_sets_idea_1 = {
+		# ENG_the_sun_never_sets_idea_1 = {
 
-			name = ENG_the_sun_never_sets
+		# 	name = ENG_the_sun_never_sets
 
-			allowed = {
-				always = no
-			}
+		# 	allowed = {
+		# 		always = no
+		# 	}
 
-			allowed_civil_war = {
-				always = yes
-			}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
 
-			modifier = {
-				army_core_attack_factor = 0.3
-				army_core_defence_factor = 0.3
-			}
+		# 	modifier = {
+		# 		army_core_attack_factor = 0.3
+		# 		army_core_defence_factor = 0.3
+		# 	}
 
-			equipment_bonus = {
-				screen_ship = {
-				naval_range = 0.33 instant = yes
-				}
-				carrier = {
-				naval_range = 0.33 instant = yes
-				}
-				capital_ship = {
-				naval_range = 0.33 instant = yes
-				}
-			}
+		# equipment_bonus = {
+		# 	screen_ship = {
+		# 		naval_range = 0.33 instant = yes
+		# 	}
+		# 	carrier = {
+		# 		naval_range = 0.33 instant = yes
+		# 	}
+		# 	capital_ship = {
+		# 		naval_range = 0.33 instant = yes
+		# 	}
+		# }
 
-			picture = eng_the_sun_never_sets
+		# 	picture = eng_the_sun_never_sets
 			
-			removal_cost = -1	
+		# 	removal_cost = -1	
 
-		}
+		# }
 		
-		ENG_the_sun_never_sets_idea_2 = {
+		# ENG_the_sun_never_sets_idea_2 = {
 
-			name = ENG_the_sun_never_sets
+		# 	name = ENG_the_sun_never_sets
 
-			allowed = {
-				always = no
-			}
+		# 	allowed = {
+		# 		always = no
+		# 	}
 
-			allowed_civil_war = {
-				always = yes
-			}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
 
-			modifier = {
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
-			}
+		# 	modifier = {
+		# 		army_core_attack_factor = 0.2
+		# 		army_core_defence_factor = 0.2
+		# 	}
 
-			equipment_bonus = {
-				screen_ship = {
-				naval_range = 0.25 instant = yes
-				}
-				carrier = {
-				naval_range = 0.25 instant = yes
-				}
-				capital_ship = {
-				naval_range = 0.25 instant = yes
-				}
-			}
+		# 	equipment_bonus = {
+		# 		screen_ship = {
+		# 			naval_range = 0.25 instant = yes
+		# 		}
+		# 		carrier = {
+		# 			naval_range = 0.25 instant = yes
+		# 		}
+		# 		capital_ship = {
+		# 			naval_range = 0.25 instant = yes
+		# 		}
+		# 	}
 
-			picture = eng_the_sun_never_sets
+		# 	picture = eng_the_sun_never_sets
 			
-			removal_cost = -1	
+		# 	removal_cost = -1	
 
-		}
+		# }
 
 
 		
-		ENG_the_sun_never_sets_idea_3 = {
+		# ENG_the_sun_never_sets_idea_3 = {
 
-			name = ENG_the_sun_never_sets
+		# 	name = ENG_the_sun_never_sets
 
-			allowed = {
-				always = no
-			}
+		# 	allowed = {
+		# 		always = no
+		# 	}
 
-			allowed_civil_war = {
-				always = yes
-			}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
 
-			modifier = {
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
-			}
+		# 	modifier = {
+		# 		army_core_attack_factor = 0.1
+		# 		army_core_defence_factor = 0.1
+		# 	}
 
-			equipment_bonus = {
-				screen_ship = {
-				naval_range = 0.1 instant = yes
-				}
-				carrier = {
-				naval_range = 0.1 instant = yes
-				}
-				capital_ship = {
-				naval_range = 0.1 instant = yes
-				}
-			}
+		# 	equipment_bonus = {
+		# 		screen_ship = {
+		# 			naval_range = 0.1 instant = yes
+		# 		}
+		# 		carrier = {
+		# 			naval_range = 0.1 instant = yes
+		# 		}
+		# 		capital_ship = {
+		# 			naval_range = 0.1 instant = yes
+		# 		}
+		# 	}
 
-			picture = eng_the_sun_never_sets
+		# 	picture = eng_the_sun_never_sets
 			
-			removal_cost = -1	
+		# 	removal_cost = -1	
 
-		}
+		# }
 
-		ENG_the_sun_never_sets_idea_4 = {
+		# ENG_the_sun_never_sets_idea_4 = {
 
-			name = ENG_the_sun_never_sets
+		# 	name = ENG_the_sun_never_sets
 
-			allowed = {
-				always = no
-			}
+		# 	allowed = {
+		# 		always = no
+		# 	}
 
-			allowed_civil_war = {
-				always = yes
-			}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
 
-			picture = eng_the_sun_never_sets
+		# 	picture = eng_the_sun_never_sets
 			
-			removal_cost = -1	
+		# 	removal_cost = -1	
 
-		}
+		# }
 
 		ENG_for_the_good_of_the_revolution_idea = {
 

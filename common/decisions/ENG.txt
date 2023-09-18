@@ -297,6 +297,36 @@ ENG_imperial_conference_decision = {
 
 political_actions = {
 
+	ENG_emergency_dockyard_construction = {
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			has_idea = partial_economic_mobilisation
+			GER = {
+				has_completed_focus = GER_plan_z
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 50
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_timed_idea = { idea = emergency_dockyard_construction days = 180 }
+		}
+	}
+
 	ENG_host_CZE_exile_government = {
 	
 		icon = generic

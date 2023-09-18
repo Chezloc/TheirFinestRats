@@ -644,6 +644,8 @@ country_event = {
 				}
 				
 				add_ideas = FRA_occupation_costs_4
+				add_ideas = neutrality_idea
+				add_ideas = neutrality_idea2
 				FRA = {
 					transfer_units_fraction = {
 						target = VIC

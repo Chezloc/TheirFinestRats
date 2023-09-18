@@ -81,6 +81,7 @@ set_technology = {
 	eng_heavy_tank_1 = 1
 	gw_artillery = 1
 	jaegers = 1
+	armored_car1 = 1
 		
 	trench_warfare = 1
 
@@ -179,12 +180,12 @@ if = {
 set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 
 add_ideas = {
-	stiff_upper_lip
+	# stiff_upper_lip
 	stiff_upper_lip_1
 	ENG_the_war_to_end_all_wars
 	george_v
 	ENG_great_depression_1
-	ENG_the_sun_never_sets_idea_1
+	# ENG_the_sun_never_sets_idea_1
 	PACIFIC_COMMONWEALTH_controls_original
 	volunteer_minimum_major
 	peace_training

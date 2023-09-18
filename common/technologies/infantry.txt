@@ -2103,6 +2103,9 @@ technologies = {
 				attack = 0.1
 				movement = 0.1
 			}
+			rock = {
+				attack = 0.2
+			}
 			night = {
 				attack = 0.2
 			}

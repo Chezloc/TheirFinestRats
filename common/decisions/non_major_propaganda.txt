@@ -957,7 +957,10 @@ ALLIES_propaganda_campaigns = {
 			}
 			else = {
 			USA = {
-				has_completed_focus = USA_fair_labour_standards_act
+				OR = {
+					has_completed_focus = USA_fair_labour_standards_act
+					has_completed_focus = USA_pension_reform
+				}
 			}
 		}
 		}

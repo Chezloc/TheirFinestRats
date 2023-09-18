@@ -1330,12 +1330,13 @@ focus_tree = {
 					}
 				}
 				219 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-							owner = SOV
-						}
+					create_unit = {
+						division = "name = \"1st Guards Motor Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"2nd Guards Motor Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
 					}
 				}
 			}
@@ -1598,12 +1599,13 @@ focus_tree = {
 					}
 				}
 				219 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-							owner = SOV
-						}
+					create_unit = {
+						division = "name = \"3rd Guards Motor Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"1st Guards Order of Lenin Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
 					}
 				}
 			}
@@ -1919,12 +1921,13 @@ focus_tree = {
 					}
 				}
 				219 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-							owner = SOV
-						}
+					create_unit = {
+						division = "name = \"1st Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"2nd Guards Motor Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
 					}
 				}
 			}
@@ -2027,12 +2030,21 @@ focus_tree = {
 					}
 				}
 				219 = {
-					for_loop_effect = {
-						end = 4
-						create_unit = {
-							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-							owner = SOV
-						}
+					create_unit = {
+						division = "name = \"3rd Guards Motor Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"4th Guards Motor Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"5th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"6th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
 					}
 				}
 			}
@@ -3497,12 +3509,13 @@ focus_tree = {
 					}
 				}
 				219 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-							owner = SOV
-						}
+					create_unit = {
+						division = "name = \"7th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"8th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
 					}
 				}
 			}
@@ -6888,12 +6901,21 @@ focus_tree = {
 					}
 				}
 				219 = {
-					for_loop_effect = {
-						end = 4
-						create_unit = {
-							division = "name = \"Red Guards\" division_template = \"RG Converter\" start_experience_factor = 0.7"
-							owner = SOV
-						}
+					create_unit = {
+						division = "name = \"9th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"10th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"11th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
+					}
+					create_unit = {
+						division = "name = \"12th Guards Rifle Division\" division_template = \"RG Converter\" start_experience_factor = 0.7"
+						owner = SOV
 					}
 				}
 			}
