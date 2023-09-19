@@ -92,7 +92,7 @@ focus_tree = {
     focus = {
 		id = VIC_Accept_Axis_Claims
 		icon = GFX_goal_generic_territory_or_war
-        mutually_exclusive = { focus = VIC_Beginning_of_Reunification }
+        mutually_exclusive = { focus = VIC_Restoring_France }
         prerequisite = { focus = VIC_Establishing_Vichy }
         relative_position_id = VIC_Establishing_Vichy
 		x = -2
@@ -692,7 +692,7 @@ focus_tree = {
         prerequisite = { focus = VIC_Protection_from_the_Sky focus = VIC_Protect_the_French_People }
         relative_position_id = VIC_Hand_over_the_Navy
         x = 0
-        y = 4
+        y = 3
         
         cost = 5
     
@@ -778,10 +778,9 @@ focus_tree = {
         
         available = {
             OR = {
-                date > 1940.8.1
-                FRA = {
-                    has_completed_focus = FRA_form_the_national_committee
-                    has_completed_focus = FRA_refus_absurde
+                date > 1941.8.1
+                GER = {
+                    has_war_with = SOV
                 }
             }
         }
@@ -1404,8 +1403,8 @@ focus_tree = {
     }
 
     focus = {
-        id = VIC_Beginning_of_Reunification
-        icon = GFX_focus_chi_mission_to_germany
+        id = VIC_Restoring_France
+        icon = GFX_goal_generic_dangerous_deal
         mutually_exclusive = { focus = VIC_Accept_Axis_Claims }
         prerequisite = { focus = VIC_Establishing_Vichy }
         relative_position_id = VIC_Establishing_Vichy
@@ -1420,6 +1419,46 @@ focus_tree = {
         
         available = {
     
+        }
+        
+        bypass = {
+    
+        }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+    
+        completion_reward = {
+            add_political_power  = 150
+            # GER = {
+            #     country_event = vichy.3
+            # }
+            # 100pp
+            # unlocks decision to gain the rest of french states reducing independence from germany
+        }
+    }
+
+    focus = {
+        id = VIC_Beginning_of_Reunification
+        icon = GFX_focus_chi_mission_to_germany
+        prerequisite = { focus = VIC_Restoring_France }
+        relative_position_id = VIC_Restoring_France
+        x = 4
+        y = 1
+        
+        cost = 10
+    
+        ai_will_do = {
+            factor = 1
+        }
+        
+        available = {
+            OR = {
+                date > 1941.8.1
+                GER = {
+                    has_war_with = SOV
+                }
+            }
         }
         
         bypass = {
@@ -1454,41 +1493,6 @@ focus_tree = {
             custom_effect_tooltip = vic_puppeted_by_ger_tt
             # 100pp
             # unlocks decision to gain some french states reducing independence from germany
-        }
-    }
-
-    focus = {
-        id = VIC_Restoring_France
-        icon = GFX_goal_generic_dangerous_deal
-        prerequisite = { focus = VIC_Beginning_of_Reunification }
-        relative_position_id = VIC_Beginning_of_Reunification
-        x = 0
-        y = 1
-        
-        cost = 10
-    
-        ai_will_do = {
-            factor = 1
-        }
-        
-        available = {
-    
-        }
-        
-        bypass = {
-    
-        }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-    
-        completion_reward = {
-            add_political_power  = 150
-            # GER = {
-            #     country_event = vichy.3
-            # }
-            # 100pp
-            # unlocks decision to gain the rest of french states reducing independence from germany
         }
     }
 
@@ -1782,10 +1786,10 @@ focus_tree = {
     focus = {
         id = VIC_Rebuilding_the_Military
         icon = GFX_ITA_industrial_triangle
-        prerequisite = { focus = VIC_Beginning_of_Reunification }
-        relative_position_id = VIC_Beginning_of_Reunification
+        prerequisite = { focus = VIC_Restoring_France }
+        relative_position_id = VIC_Restoring_France
         x = 2
-        y = 2
+        y = 1
         
         cost = 5
     

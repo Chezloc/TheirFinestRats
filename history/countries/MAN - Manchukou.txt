@@ -38,6 +38,7 @@ if = {
 	add_ideas = MAN_yamato-damashii
 	add_ideas = volunteer_minimum_minor
 	add_ideas = no_grinding
+	add_ideas = father_check
 }
 
 set_convoys = 5

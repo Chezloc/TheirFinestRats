@@ -25,6 +25,7 @@ add_ideas = {
 	peace_training
 	no_grinding
 	FIN_counter_intel
+	father_check
 }
 add_manpower = 80000
 

@@ -283,7 +283,7 @@ continuous_focus_palette = {
 
 		modifier = {
 			mobilization_speed = 0.5
-			weekly_manpower = 5000
+			weekly_manpower = 2500
 		}
 
 		available = {

@@ -92,7 +92,6 @@ if = {
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "GER_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			
@@ -107,7 +106,6 @@ if = {
 			iw_large_airframe = 1
 	}
 	else = {
-		set_air_oob = "FRA_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			naval_bomber1 = 1
@@ -140,6 +138,7 @@ add_ideas = {
 	volunteer_minimum_minor
 	peace_training
 	no_grinding
+	father_check
 }
 
 #Order matters here Daladier will start as leaders because added last

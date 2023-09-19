@@ -35,6 +35,7 @@ add_ideas = {
 	peace_training
 	no_grinding
 	no_brothers_war
+	father_check
 }
 set_variable = { axis_poster_center_icon_frame = 1 }
 set_technology = {

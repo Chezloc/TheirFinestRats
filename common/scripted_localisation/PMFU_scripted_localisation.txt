@@ -1002,18 +1002,6 @@ defined_text = { # global
 	}
 	text = {
 		trigger = {
-			has_game_rule = {
-				rule = sealion_auto_tp
-				option = SEALION_NO_CONDITIONS
-			}
-			NOT = {
-				has_global_flag = NO_ASIA
-			}
-		}
-		localization_key = RULE_OPTION_SEALION_NO_CONDITIONS
-	}
-	text = {
-		trigger = {
 			has_global_flag = NO_ASIA
 		}
 		localization_key = "Disabled due to No Asia"

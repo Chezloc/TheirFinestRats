@@ -669,11 +669,8 @@ ITA_propaganda_campaigns = {
 		modifier = {
 			supply_node_range = 0.1
 			acclimatization_hot_climate_gain_factor = 0.25
-		}
-		targeted_modifier = {
-			tag = ENG
-			attack_bonus_against = 0.1
-			attack_bonus_against_cores = -0.1
+			army_morale_factor = 0.05
+			supply_consumption_factor = -0.1
 		}
 
 		complete_effect = {
