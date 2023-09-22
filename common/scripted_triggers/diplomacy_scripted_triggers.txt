@@ -508,7 +508,9 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 					tag = USA
 				}
 			}
-			has_completed_focus = USA_lend_lease_act
+			FROM = {
+				has_completed_focus = USA_lend_lease_act
+			}
 		}
 		OR = {
 			NOT = { tag = SOV }
@@ -555,7 +557,9 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 					tag = USA
 				}
 			}
-			has_completed_focus = USA_lend_lease_act
+			FROM = {
+				has_completed_focus = USA_lend_lease_act
+			}
 		}
 		OR = {
 			NOT = { tag = SOV }
@@ -640,7 +644,9 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 					tag = USA
 				}
 			}
-			has_completed_focus = USA_lend_lease_act
+			FROM = {
+				has_completed_focus = USA_lend_lease_act
+			}
 		}
 		OR = {
 			NOT = { tag = SOV }
@@ -688,7 +694,9 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 					tag = USA
 				}
 			}
-			has_completed_focus = USA_lend_lease_act
+			FROM = {
+				has_completed_focus = USA_lend_lease_act
+			}
 		}
 		OR = {
 			NOT = { tag = SOV }

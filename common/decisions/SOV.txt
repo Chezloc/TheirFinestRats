@@ -303,9 +303,6 @@ foreign_politics = {
 			factor = 0
 		}
 
-		visible = {
-			always = yes
-		}
 		fire_only_once = yes
 		complete_effect = {
 			set_global_flag = MON_annexed
@@ -349,9 +346,6 @@ foreign_politics = {
 			factor = 0
 		}
 
-		visible = {
-			always = yes
-		}
 		fire_only_once = yes
 		complete_effect = {
 			set_global_flag = MON_annexed
@@ -488,9 +482,6 @@ foreign_politics = {
 			factor = 0
 		}
 
-		visible = {
-			always = yes
-		}
 		fire_only_once = yes
 		complete_effect = {
 			set_global_flag = MON_annexed
@@ -604,9 +595,6 @@ foreign_politics = {
 			factor = 0
 		}
 
-		visible = {
-			always = yes
-		}
 		fire_only_once = yes
 		complete_effect = {
 			set_global_flag = MON_annexed
@@ -720,9 +708,6 @@ foreign_politics = {
 			factor = 0
 		}
 
-		visible = {
-			always = yes
-		}
 		fire_only_once = yes
 		complete_effect = {
 			set_global_flag = MON_annexed

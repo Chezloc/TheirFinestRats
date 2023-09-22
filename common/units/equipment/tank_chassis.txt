@@ -159,6 +159,11 @@ equipments = {
 		resources = {
 			steel = 10
 		}
+
+		upgrades = {
+			tank_nsb_light_armor_2_upgrade
+		}
+
 		#Space taken in convoy
 		lend_lease_cost = 2
 	}

@@ -190,12 +190,12 @@ focus_tree = {
 		}
 		
  		completion_reward = {
+			custom_effect_tooltip = shadow_scheme_focus_conv_tt
 			custom_effect_tooltip = ENG_shadow_scheme_2_focus_tt
 			swap_ideas = {
 				add_idea = ENG_shadow_scheme_idea2
 				remove_idea = ENG_shadow_scheme_idea
 			}
-			custom_effect_tooltip = shadow_scheme_focus_conv_tt
 			for_each_scope_loop = {
 				array = ENG.starting_core_states
 		

@@ -196,7 +196,7 @@
   ENG_equip_foreign_exiles:0 "Equip Foreign Exiles"
   ENG_equip_foreign_exiles_desc:0 "Soldiers from France have managed to be evacuated to our territory. We should hastily equip these men and get them back in to the fight!"
   ENG_commonwealth_ties_desc:0 "Developing the Commonwealth will lead to stronger allies across the British Empire."
-  shadow_scheme_focus_conv_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y10§!. "
+  shadow_scheme_focus_conv_tt:1 "Grants §G1§! Building Slot and §Y1 Military Factory§! for every §Y2 Civilian Factories§! built.\nThe maximum number of §YMilitary Factories§! we can cover up is §Y10§!. \n\n"
   ENG_build_up_airfields:0 "Build Up Airfields"
   ENG_air_defenses:0 "Mainland Air Defenses"
   ENG_fortify_the_coast:0 "Fortify the Coast" 
@@ -325,7 +325,7 @@
   SOV_iran_spawn_in_tt:0 "Mobilizes §R10 20 Width Units§! of the §R1st Iranian Front§! in §GAzerbaijan§!\n"
   OPERATION_TORCH_ONGING:0 "Operation Torch Ongoing"
   uk_into_uk_w_ireland_tt:0 "§YThe United Kingdom of Great Britain and Northern Ireland will be known as The United Kingdom of Great Britain and Ireland§!"
-  ENG_shadow_scheme_2_focus_tt:0 "£civ_factory  Civilian Factories Built: §Y[?ENG.shadow_civs_built_tt]§!\n£mil_factory  Military Factories Available to Get: §Y[?ENG.shadow_mils_gotten_tt]§!"
+  ENG_shadow_scheme_2_focus_tt:0 "£civ_factory  Civilian Factories Built: §Y[?ENG.shadow_civs_built_tt]§!\n£mil_factory  Military Factories Available to Get: §Y[?ENG.shadow_mils_gotten_tt]§!\n\n"
 
   #### FLAGS ####
   ENG_seize_col:0 "Has Seized Portugese Colonies"

@@ -11,7 +11,6 @@ dockyard_cg_mod = {
 
 anti_dockyard_construction = {
 	icon = "GFX_idea_civilian_economy"
-	# production_speed_dockyard_factor = -0.7
 	local_building_slots_factor = -2
 }
 
@@ -69,6 +68,14 @@ no_factories  = {
 	icon = GFX_idea_SPR_disbanded_army
 	
 	local_factories = -1
+}
+
+no_factories_mon  = {
+	icon = GFX_idea_SPR_disbanded_army
+	
+	local_factories = -1
+	local_resources_factor = -2
+	local_building_slots_factor = -2
 }
 
 SOV_major_cities_lost = {

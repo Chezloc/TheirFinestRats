@@ -2575,73 +2575,60 @@ focus_tree = {
 			GER = {
 				add_to_faction = ROOT
 			}
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = ENG
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = ENG
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = SAF
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = SAF
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = CAN
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = CAN
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = AST
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = AST
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = RAJ
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = RAJ
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = FRA
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = FRA
-			# 		type = annex_everything
-			# 	}
-			# }
 			add_ideas = SPA_axis_coop
+			hidden_effect = {
+                FRA = {
+                    division_template = {
+                        name = "African Infantry"
+                        division_names_group = FRA_INF_01
+                    
+                        regiments = {
+                            infantry = { x = 0 y = 0 }
+                            infantry = { x = 0 y = 1 }
+                            infantry = { x = 0 y = 2 }
+                            infantry = { x = 0 y = 3 }
+    
+                            infantry = { x = 1 y = 0 }
+                            infantry = { x = 1 y = 1 }
+                            infantry = { x = 1 y = 2 }
+                            infantry = { x = 1 y = 3 }
+    
+                            infantry = { x = 2 y = 0 }
+                            infantry = { x = 2 y = 1 }
+                            infantry = { x = 2 y = 2 }
+    
+                            artillery_brigade = { x = 3 y = 0 }
+                            artillery_brigade = { x = 3 y = 1 }
+                            artillery_brigade = { x = 3 y = 2 }
+                            artillery_brigade = { x = 3 y = 3 }
+    
+                            artillery_brigade = { x = 4 y = 0 }
+                            artillery_brigade = { x = 4 y = 1 }
+                            artillery_brigade = { x = 4 y = 2 }
+                            artillery_brigade = { x = 4 y = 3 }
+                        }
+                        support = {
+                            hq_company = { x = 0 y = 0 } 
+                            engineer = { x = 0 y = 1 }   
+                            recon = { x = 0 y = 2 }
+                            logistics_company_mot  = { x = 0 y = 3 }
+                            anti_air = { x = 1 y = 0 }
+                        }
+                    }
+                    779 = {
+                        for_loop_effect = {
+                            end = 15
+                            create_unit = {
+                                division = "name = \"African Infantry\" division_template = \"African Infantry\" start_experience_factor = 0.5"
+                                owner = FRA
+                            }
+                        }
+                    } 
+                }
+            }
+            FRA = {
+                custom_effect_tooltip = FRA_15_africa_spawn_in_tt
+            }
 		}
 	}
 	
@@ -2734,72 +2721,6 @@ focus_tree = {
 			GER = {
 				add_to_faction = ROOT
 			}
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = ENG
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = ENG
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = SAF
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = SAF
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = CAN
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = CAN
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = AST
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = AST
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = RAJ
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = RAJ
-			# 		type = annex_everything
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		GER = {
-			# 			has_war_with = FRA
-			# 		}
-			# 	}
-			# 	declare_war_on = {
-			# 		target = FRA
-			# 		type = annex_everything
-			# 	}
-			# }
 			add_ideas = SPA_la_division_azul
 			custom_effect_tooltip = "The Spanish Fleet will be disbanded"
 			hidden_effect = {
@@ -2834,21 +2755,28 @@ focus_tree = {
 				}
 			}
 			every_owned_state = {
-				limit = {
-					air_base > 0
-				}
 				set_building_level = {
 					type = air_base
 					level = 1
 				}
 			}
-			41 = {
+			every_owned_state = {
 				damage_building = {
 					type = air_base
-					damage = 10
+					damage = 1
 				}
 			}
-			custom_effect_tooltip = "The Madrid Airport will get destroyed and damaged weekly"
+			every_owned_state = {
+				set_building_level = {
+					type = naval_base
+					level = 0
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+				}
+			}
+			custom_effect_tooltip = "All Airports will get destroyed and damaged weekly"
 			swap_ideas = {
 				remove_idea = SPA_neutrality_idea
 				add_idea = SPA_neutrality_idea_2

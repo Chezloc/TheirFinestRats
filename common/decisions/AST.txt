@@ -86,8 +86,8 @@ political_actions = {
 
 		available = {
 			date > 1939.1.1
-			NZL = {is_ai = yes }
-			NOT = { 523 = {is_core_of = AST} }
+			NZL = { is_ai = yes }
+			# NOT = { 523 = {is_core_of = AST} }
 		}
 
 		ai_will_do = {
@@ -99,6 +99,20 @@ political_actions = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			if = {
+				limit = {
+					523 = {is_core_of = AST}
+				}
+				523 = {
+					remove_core_of = AST
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AST_no_nzl_annex
+				}
+				remove_ideas = AST_no_nzl_annex
+			}
 			set_global_flag = AST_NZL_ANNEXED
 			AST = {
 				set_cosmetic_tag = AST_autonomy_dominion_NZLA
@@ -140,7 +154,6 @@ political_actions = {
 		complete_effect = {
 			add_manpower = 100000
 			523 = { add_core_of = AST }
-			845 = { add_core_of = AST }
 			add_ideas = AST_no_nzl_annex
 		}
 	}

@@ -581,6 +581,8 @@ political_actions = {
 			NOT = { has_war_with = POR }
 			country_exists = POR
 		}
+
+		fire_only_once = yes
 		
 		complete_effect = {
 			ENG = {
@@ -628,6 +630,8 @@ political_actions = {
 			NOT = { has_war_with = POR }
 			country_exists = POR
 		}
+
+		fire_only_once = yes
 		
 		complete_effect = {
 			POR = { 

@@ -332,6 +332,7 @@
  annex_manpower_reudction:0 "Core Manpower Reduction"
  factory_reduction_balancer:0 "Factory Reduction Balancer"
  no_factories:0 "No Factories"
+ no_factories_mon:0 "No Factories - Mongolia"
  anti_dockyard_construction:0 "No Dockyard Construction"
 
 # Annexation Choices

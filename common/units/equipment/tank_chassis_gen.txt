@@ -28,7 +28,7 @@ equipments = {
 			special_type_slot_2 = inherit
 		}
 		upgrades = {
-			tank_nsb_Heavy_engine_2_upgrade
+			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 5.5
 		build_cost_ic = 12
@@ -64,7 +64,7 @@ equipments = {
 			special_type_slot_2 = inherit
 		}
 		upgrades = {
-			tank_nsb_Heavy_engine_2_upgrade
+			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6
 		build_cost_ic = 14
@@ -103,7 +103,7 @@ equipments = {
 			
 		}
 		upgrades = {
-			tank_nsb_Heavy_engine_2_upgrade
+			tank_nsb_light_armor_2_upgrade
 		}
 		maximum_speed = 6.5
 		build_cost_ic = 16

@@ -1443,6 +1443,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			remove_ideas = { FRA_full_employment }
 			remove_ideas = { FRA_defeatism }
 			remove_ideas = { FRA_workers_strikes_2 }
 			remove_ideas = { FRA_workers_strikes_1 }

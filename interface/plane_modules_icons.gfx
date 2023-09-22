@@ -342,6 +342,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_jet_cas_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_large_bomb_bay_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_jet_cas_bomb"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_large_bomb_bay_icon.dds"
 		legacy_lazy_load = no
