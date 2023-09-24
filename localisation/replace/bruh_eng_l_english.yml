@@ -175,7 +175,7 @@
   ENG_destroyers_for_bases_desc:0 "We can give some of our bases away in exchange for destroyers from the US."
   ENG_home_guard:0 "Form the Home Guard"
   ENG_home_guard_desc:0 "The home islands need to be protected!"
-  ENG_anglo_soviet_agreement:0 "The Anglo-Soviet Agreement"
+  ENG_anglo_soviet_agreement:0 "The Anglo-Soviet Donation"
   ENG_anglo_soviet_agreement_desc:0 "An agreement with the USSR will need to be made."
   ENG_soviet_lend_lease:0 "Aid the Bolsheviks"
   ENG_soviet_lend_lease_desc:0 "The USSR is in a bad state and we need to help them fight against Germany."
@@ -202,6 +202,7 @@
   ENG_fortify_the_coast:0 "Fortify the Coast" 
   ENG_british_invasion_of_iran:0 "Operation Countenance"
   ENG_khartoum_airfield:0 "Build Up the Khartoum Airfield"
+  ENG_dockyard_expansion:0 "Dockyard Expansion"
 
   #### EVENTS ####
   britain.500.t:0 "Anglo-Soviet Agreement"

@@ -274,6 +274,7 @@
  GBP_NO_EXPED_WARN:0 "§RYOU WONT BE ABLE TO RECIVE EXPEDITIONARY FORCES UNLESS THE NATION SENDING ALSO HAS GBP\n\nONLY EXCEPTION IS SENDING EXPEDITIONARIES TO ITALY§!"
  DDAY_WALL_ENTRENCHMENT:0 "The State of the Pacific"
  SOV_soviet_airforce_aircraft_production_focus_tt:0 "§YAll types of aircraft§!: £production_cost Production Cost: §G-10.00%§!"
+ anti_cross_faction_trade:0 "Anti Cross Faction Trade"
  ### FUEL SYSTEM ###
  country_fuel_info_tt:0 "[?THIS.fuel_k|.1]K/[?THIS.max_fuel_k|.1]K"
  country_fuel_name_tt:0 "§H[THIS.GetFlag][THIS.GetAdjective]§! Fuel" 
@@ -1367,7 +1368,8 @@ fifty_cas_dmg_reduction:0 "From focus"
  NO_ASIA_DESC:0 "A game without Asia, made for small player count lobbies"
  
  ### STATES ###
- STATE_843:0 "South Khartoum"
+ STATE_551:0 "North Khartoum"
+ STATE_843:0 "Khartoum"
  STATE_844:0 "Suez Canal"
 
  ### UNITS ###

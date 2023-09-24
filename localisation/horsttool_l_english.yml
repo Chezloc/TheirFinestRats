@@ -100,6 +100,8 @@
  end_spanish_civil_war:0 "End Spanish Civil War"
  end_sino_japanese_war:0 "End Sino-Japanese War"
  JAP_declare_china:0 "Start Sino-Japanese War"
+ toggle_host_tool_decisions:0 "Toggle Host Tool Decisions"
+ host_tool_decision_enabled:0 "Host Tool Decisions Enabled"
  spirit_of_bozo_spain:0 "Ruby Spain Build Moment."
  spirit_of_bozo_spain_desc:0 "You're gonna get the UNTrusted Spain Player role after this LMAO."
  spirit_of_bozo_japan:0 "Chezloc Japan Build Moment."

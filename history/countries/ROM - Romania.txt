@@ -39,6 +39,7 @@ set_technology = {
 
 add_ideas = volunteer_minimum_minor
 add_ideas = AFRICA_COMMONWEALTH_controls_axis_idea_6
+add_ideas = father_check
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

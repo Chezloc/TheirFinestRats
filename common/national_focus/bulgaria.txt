@@ -884,7 +884,7 @@ focus_tree = {
 		id = BUL_black_sea_fleet
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = BUL_navy }
-		mutually_exclusive = { focus = BUL_raiding_fleet }
+		mutually_exclusive = { focus = BUL_surface_raiding_fleet }
 		x = -1
 		y = 1
 		relative_position_id = BUL_navy
@@ -933,7 +933,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = BUL_raiding_fleet
+		id = BUL_surface_raiding_fleet
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = BUL_navy }
 		mutually_exclusive = { focus = BUL_black_sea_fleet }
@@ -949,10 +949,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = bulgaria
-				bonus = 0.5
-				uses = 2
-				category = ss_tech
+				name = SPA_glory_and_wealth_on_the_sea_lanes
+				bonus = 1
+				uses = 1
+				category = ca_tech
+				category = cl_tech
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -984,7 +985,7 @@ focus_tree = {
 	focus = {
 		id = BUL_expand_the_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = BUL_black_sea_fleet focus = BUL_raiding_fleet }
+		prerequisite = { focus = BUL_black_sea_fleet focus = BUL_surface_raiding_fleet }
 		relative_position_id = BUL_black_sea_fleet
 		x = 1
 		y = 1
@@ -1070,11 +1071,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_the_submarine_plan
+		id = BUL_the_cruiser_plan
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = BUL_raiding_fleet }
+		prerequisite = { focus = BUL_surface_raiding_fleet }
 		prerequisite = { focus = BUL_expand_the_shipyards }
-		relative_position_id = BUL_raiding_fleet
+		relative_position_id = BUL_surface_raiding_fleet
 		x = 0
 		y = 2
 
@@ -1106,7 +1107,7 @@ focus_tree = {
 				category = naval_doctrine
 			}
 			navy_experience = 50
-			add_ideas = SPA_the_plan_submarine
+			add_ideas = SPA_the_plan_cruiser
 		}
 	}
 	

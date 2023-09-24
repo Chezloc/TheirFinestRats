@@ -480,7 +480,7 @@ ideas = {
 			
 			equipment_bonus = {
 				submarine = {
-					build_cost_ic = 2.00 instant = yes
+					build_cost_ic = 100.00 instant = yes
 				}
 				large_plane_airframe = {
 					build_cost_ic = 2.00 instant = yes

@@ -1,4 +1,35 @@
 host_decisions = {
+	toggle_host_tool_decisions = {
+
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = host_tool_decision_enabled
+				}
+				clr_global_flag = host_tool_decision_enabled
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = host_tool_decision_enabled
+					}
+				}
+				set_global_flag = host_tool_decision_enabled
+			}
+		}
+
+	}
+
 	end_spanish_civil_war = {
 
 		icon = GFX_decision_generic_break_treaty
@@ -8,6 +39,7 @@ host_decisions = {
 		}
 
 		available = {
+			has_global_flag = host_tool_decision_enabled
 			SPA = {
 				has_civil_war = yes
 			}
@@ -95,6 +127,7 @@ host_decisions = {
 		}
 
 		available = {
+			has_global_flag = host_tool_decision_enabled
 			JAP = {
 				has_war_with = CHI
 			}
@@ -155,6 +188,7 @@ host_decisions = {
 		}
 
 		available = {
+			has_global_flag = host_tool_decision_enabled
             JAP = {
 				NOT = { has_war_with = CHI }
 			}
@@ -199,6 +233,7 @@ host_decisions = {
 		}
 
 		available = {
+			has_global_flag = host_tool_decision_enabled
 			MON = {
 				is_ai = yes
 			}
@@ -276,6 +311,7 @@ host_decisions = {
 		}
 
 		available = {
+			has_global_flag = host_tool_decision_enabled
 			MON = {
 				is_ai = yes
 			}
@@ -446,6 +482,7 @@ host_decisions = {
 		}
 
 		available = {
+			has_global_flag = host_tool_decision_enabled
 			MON = {
 				is_ai = yes
 			}
@@ -594,6 +631,7 @@ host_decisions = {
 		}
 
 		available = {
+			has_global_flag = host_tool_decision_enabled
 			MON = {
 				is_ai = yes
 			}
@@ -742,6 +780,7 @@ host_decisions = {
 		}
 
 		available = {
+			has_global_flag = host_tool_decision_enabled
 			MON = {
 				is_ai = yes
 			}
@@ -2406,7 +2445,7 @@ special_projects = {
 	
 		fire_only_once = no
 	
-		days_remove = 365
+		days_remove = 180
 	
 		cost = 75
 	

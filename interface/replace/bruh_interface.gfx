@@ -526,6 +526,11 @@ spriteTypes = {
 		name = "GFX_adjuster_dense_urban_bg"
 		textureFile = "gfx/interface/dense_urban_icon.dds"
 	}
+
+	spriteType = {
+		name = "GFX_adjuster_rock_bg"
+		textureFile = "gfx/interface/rock_icon.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_terrain_town"

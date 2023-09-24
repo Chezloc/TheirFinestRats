@@ -29,6 +29,7 @@ add_ideas = {
 	russian_closed_eco
 	MON_allow_soviet_trade
 	peace_training
+	father_check
 	no_grinding
 }
 

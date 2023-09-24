@@ -13,6 +13,62 @@
 #	}
 # 
 
+SOV_order_270_all_trigger = {
+	if = {
+		limit = {
+			has_completed_focus = SOV_secure_new_conquests
+		}
+		surrender_progress > 0.28
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = SOV_improve_stalin_line
+		}
+		surrender_progress > 0.22 
+	}
+	else = {
+		surrender_progress > 0.22
+	}
+	casualties > 500000
+}
+
+SOV_tankograd_all_trigger = {
+	if = {
+		limit = {
+			has_completed_focus = SOV_secure_new_conquests
+		}
+		surrender_progress > 0.3
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = SOV_improve_stalin_line
+		}
+		surrender_progress > 0.24 
+	}
+	else = {
+		surrender_progress > 0.24
+	}
+	casualties > 150000
+}
+
+SOV_focus_forced_labour_all_trigger = {
+	if = {
+		limit = {
+			has_completed_focus = SOV_secure_new_conquests
+		}
+		surrender_progress > 0.36
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = SOV_improve_stalin_line
+		}
+		surrender_progress > 0.3 
+	}
+	else = {
+		surrender_progress > 0.3
+	}
+}
+
 SOV_propaganda_poster_slot_available = {
 	custom_trigger_tooltip = {
 		tooltip = SOV_propaganda_poster_slot_available_tt

@@ -257,7 +257,7 @@ equipments = {
 		}
 		upgrades = {			
 			tank_nsb_med_armor_1_upgrade
-			tank_nsb_med_engine_1_upgrade
+			# tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 6
 		build_cost_ic = 14
@@ -298,7 +298,7 @@ equipments = {
 		}
 		upgrades = {			
 			tank_nsb_med_armor_1_upgrade
-			tank_nsb_med_engine_1_upgrade
+			# tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 5.5
 		build_cost_ic = 18
@@ -337,7 +337,7 @@ equipments = {
 		}
 		upgrades = {			
 			tank_nsb_med_armor_1_upgrade
-			tank_nsb_med_engine_1_upgrade
+			# tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 5.5
 		build_cost_ic = 20
@@ -375,7 +375,7 @@ equipments = {
 		}
 		upgrades = {			
 			tank_nsb_med_armor_1_upgrade
-			tank_nsb_med_engine_1_upgrade
+			# tank_nsb_med_engine_1_upgrade
 		}
 		maximum_speed = 6
 		build_cost_ic = 16
@@ -417,7 +417,7 @@ equipments = {
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade
-			tank_nsb_engine_upgrade
+			# tank_nsb_engine_upgrade
 		}
 		maximum_speed = 6
 		build_cost_ic = 32
@@ -465,7 +465,7 @@ equipments = {
 		}
 		upgrades = {
 			tank_nsb_armor_upgrade
-			tank_nsb_engine_upgrade
+			# tank_nsb_engine_upgrade
 		}
 		maximum_speed = 6
 		build_cost_ic = 38
@@ -568,7 +568,7 @@ equipments = {
 		}
 		
 		upgrades = {
-			tank_nsb_Heavy_engine_1_upgrade
+			# tank_nsb_Heavy_engine_1_upgrade
 		}
 
 		maximum_speed = 4.5
@@ -588,7 +588,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		upgrades = {
-			tank_nsb_Heavy_engine_2_upgrade
+			# tank_nsb_Heavy_engine_2_upgrade
 		}
 		maximum_speed = 5.25
 		build_cost_ic = 44
@@ -659,7 +659,7 @@ equipments = {
 			special_type_slot_5 = inherit
 		}
 		upgrades = {
-			tank_nsb_Heavy_engine_2_upgrade
+			# tank_nsb_Heavy_engine_2_upgrade
 		}
 		maximum_speed = 5.75
 		build_cost_ic = 50

@@ -256,6 +256,7 @@ set_research_slots = 5
 # add_ideas = PACIFIC_COMMONWEALTH_controls_axis_original
 add_ideas = peace_training
 add_ideas = no_grinding
+add_ideas = father_check
 # add_ideas = disable_scorched_earth_spain
 
 set_technology = {

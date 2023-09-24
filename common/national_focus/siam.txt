@@ -72,7 +72,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_return_of_the_king
 
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -89,7 +89,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_return_of_the_king
 
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -334,7 +334,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_khana_ratsadon
         search_filters = { FOCUS_FILTER_POLITICAL }
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 11
@@ -354,7 +354,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_khana_ratsadon
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20

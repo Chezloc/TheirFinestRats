@@ -37,6 +37,7 @@ NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down fro
 NDefines.NDiplomacy.FRONT_IS_DANGEROUS = 0				-- 	AI should be unwilling to enter accept a call to war if front is too dangerous.
 NDefines.NDiplomacy.NOT_READY_FOR_WAR_BASE = 0			-- 	AI should be unwilling to enter accept a call to war if not ready for war against the relevant enemies.
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12				-- 	How long a country must wait before sending a new diplomatic request.
+NDefines.NDiplomacy.MIN_TRUST_VALUE = -600 							-- WAS -100 | this is added to support embargoing nations to prevent trade memes from players in an opposing faction | Min opinion value cap.
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 40						-- Events are checked every X day per country or state (1 is ideal but CPU heavy)
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 4						-- Base number of research slots per country.

@@ -160,11 +160,14 @@ ideas = {
 			removal_cost = -1
 			picture = generic_acquire_tanks
 			equipment_bonus = {
+				category_all_infantry = {
+					max_strength = 16 instant = yes
+				}
 				motorized_equipment = {
-					max_strength = 26 instant = yes
+					max_strength = 17 instant = yes
 				}
 				mechanized_equipment = {
-					max_strength = 22 instant = yes
+					max_strength = 13 instant = yes
 				}
 			}
 		}

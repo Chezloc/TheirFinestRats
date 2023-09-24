@@ -158,6 +158,8 @@ equipments = {
 		armor_value = 5
 		resources = {
 			steel = 10
+			tungsten = 5
+			chromium = 5
 		}
 
 		upgrades = {
@@ -686,7 +688,7 @@ equipments = {
 		module_slots = inherit
 
 		upgrades = {
-			tank_nsb_engine_upgrade
+			# tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
 	}
@@ -822,7 +824,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		upgrades = {
-			tank_nsb_engine_upgrade
+			# tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
 	}
@@ -995,7 +997,7 @@ equipments = {
 		archetype = amphibious_tank_chassis
 		priority = 2000
 		upgrades = {
-			tank_nsb_engine_upgrade
+			# tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
 		module_slots = inherit
@@ -1090,7 +1092,7 @@ equipments = {
 			}
 		}
 		upgrades = {
-			tank_nsb_Heavy_engine_2_upgrade
+			# tank_nsb_Heavy_engine_2_upgrade
 		}
 		maximum_speed = 4.5
 		build_cost_ic = 36
@@ -1109,7 +1111,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		upgrades = {
-			tank_nsb_Heavy_engine_2_upgrade
+			# tank_nsb_Heavy_engine_2_upgrade
 		}
 		maximum_speed = 5
 		build_cost_ic = 43

@@ -971,17 +971,17 @@ on_actions = {
 					}
 					SOV_remove_paranoia_effect = yes
 				}
-				if = {
-					limit = { #Kerensky comes back from exile if Democratic
-						has_government = democratic
-						SOV_aleksandr_kerensky = {
-							has_character_flag = SOV_exiled_flag
-						}
-					}
-					SOV_aleksandr_kerensky = {
-						clr_character_flag = SOV_exiled_flag
-					}
-				}
+				# if = {
+				# 	limit = { #Kerensky comes back from exile if Democratic
+				# 		has_government = democratic
+				# 		SOV_aleksandr_kerensky = {
+				# 			has_character_flag = SOV_exiled_flag
+				# 		}
+				# 	}
+				# 	SOV_aleksandr_kerensky = {
+				# 		clr_character_flag = SOV_exiled_flag
+				# 	}
+				# }
 			}
 		}
 	}

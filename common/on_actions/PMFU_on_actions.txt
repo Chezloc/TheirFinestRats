@@ -1,5 +1,18 @@
 on_actions = {
 
+	on_startup = {
+		effect = {
+			SWE = {
+				anti_cross_faction_trade_all = yes
+				SPR = {
+					add_opinion_modifier = {
+						target = SOV
+						modifier = anti_cross_faction_trade
+					}
+				}
+			}
+		}
+	}
 	on_weekly_ENG = {
 		effect = {
 			set_variable = { global.ALLIED_PACIFIC_CASUALTIES = 0 }

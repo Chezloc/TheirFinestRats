@@ -424,6 +424,8 @@ technologies = {
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@pack_antitank_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@mot_artillery_brigade }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@dp_artillery_brigade }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@mot_dp_artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@pack_artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@heavy_artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@rocket_artillery_brigade }
@@ -475,6 +477,8 @@ technologies = {
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@pack_antitank_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@mot_artillery_brigade }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@dp_artillery_brigade }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@mot_dp_artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@pack_artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@heavy_artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@rocket_artillery_brigade }
@@ -521,6 +525,8 @@ technologies = {
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@pack_antitank_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@mot_artillery_brigade }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@dp_artillery_brigade }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@mot_dp_artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@pack_artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@heavy_artillery_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@rocket_artillery_brigade }

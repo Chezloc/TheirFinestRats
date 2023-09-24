@@ -50,6 +50,9 @@ sub_units = {
 			squad_equipment = 20
 			horse_equipment = 30
 		}
+		desert = {
+			movement = 0.2
+		}
 	}
 
 	infantry_mot = {
@@ -99,6 +102,9 @@ sub_units = {
 			infantry_equipment = 100
 			squad_equipment = 20
 			motorized_equipment = 20
+		}
+		desert = {
+			movement = 0.2
 		}
 	}
 	
@@ -153,7 +159,6 @@ sub_units = {
 			squad_equipment = 10
 			horse_equipment = 10
 		}
-		
 	}
 	
 	militia = {
@@ -256,6 +261,9 @@ sub_units = {
 			horse_equipment = 20
 		}
 
+		desert = {
+			movement = 0.2
+		}
 		marsh = {
 			attack = 0.25
 			defence = 0.05
@@ -327,6 +335,9 @@ sub_units = {
 			horse_equipment = 20
 		}
 
+		desert = {
+			movement = 0.2
+		}
 		hills = {
 			attack = 0.10
 			defence = 0.05
@@ -407,6 +418,9 @@ sub_units = {
 			squad_equipment = 25
 		}
 		
+		desert = {
+			movement = 0.2
+		}
 		fort = {
 		    attack = -0.10
 		}
@@ -504,6 +518,9 @@ sub_units = {
 		# river = {
 		# 	attack = 0.3
 		# }
+		desert = {
+			movement = 0.2
+		}
 		jungle = {
 
 			attack = 0.125

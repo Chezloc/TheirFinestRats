@@ -1827,7 +1827,7 @@ focus_tree = {
                     naval_base > 0
                     is_controlled_by = ROOT
                 }
-                set_building_level  = {
+                add_building_construction  = {
                     type = coastal_bunker
                     province = {
                         all_provinces = yes
