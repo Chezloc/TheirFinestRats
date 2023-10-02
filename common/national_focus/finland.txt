@@ -1103,6 +1103,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = "You will get the rest of your potentional weekly manpower (up to 150000)"
+			add_manpower = FIN_manpower_WW_win
 			FIN = {
 				every_army_leader = {
 					limit = {
@@ -1232,7 +1234,7 @@ focus_tree = {
 
 		completion_reward = {
 			GER = {
-				country_event = generic.2
+				add_to_faction = ROOT
 			}
 		}
 	}

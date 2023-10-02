@@ -794,7 +794,7 @@ focus_tree = {
     
         completion_reward = {
             GER = {
-				country_event = generic.2
+				add_to_faction = ROOT
 			}
             remove_ideas = neutrality_idea
             remove_ideas = neutrality_idea2
@@ -1524,6 +1524,9 @@ focus_tree = {
         completion_reward = {
             reduce_occupation_cost_effect = yes
             add_political_power = 100
+            GER = {
+				add_to_faction = ROOT
+			}
             GER = {
                 country_event = vichy.2
             }

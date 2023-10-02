@@ -1,4 +1,79 @@
 default = {
+	mechanized_equipment_1 = {
+		pool = {
+			icons={
+				"gfx/interface/technologies/mechanized_equipment_1.dds"
+				"gfx/interface/technologies/motorized_rocket_equipment_2.dds"
+				"gfx/interface/technologies/tanks/fin/FIN_mechanized_terrangbil_m42.dds"
+				"gfx/interface/technologies/CAN_mech_1.dds"
+				"gfx/interface/technologies/fra_mechanized_equipment_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_mech_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_mech_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_mech_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_mech_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_mech_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_amtrac_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_amtrac_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amtrac_1.dds"
+			}
+			models= {
+				"SOV_mechanized_vehicle_entity"
+				"USA_mechanized_entity"
+				"FRA_mechanized_entity"
+				"GER_mechanized_entity"
+			}
+		}
+	}
+	mechanized_equipment_2 = {
+		pool = {
+			icons={
+				"gfx/interface/technologies/mechanized_equipment_2.dds"
+				"gfx/interface/technologies/motorized_rocket_equipment_2.dds"
+				"gfx/interface/technologies/tanks/fin/FIN_mechanized_sdkfz251.dds"
+				"gfx/interface/technologies/CAN_mech_2.dds"
+				"gfx/interface/technologies/fra_mechanized_equipment_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_mech_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_mech_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_mech_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_mech_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_mech_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_amtrac_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_amtrac_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amtrac_1.dds"
+			}
+			models= {
+				"SOV_mechanized_vehicle_entity"
+				"USA_mechanized_entity"
+				"FRA_mechanized_entity"
+				"GER_mechanized_entity"
+			}
+		}
+	}
+	mechanized_equipment_3 = {
+		pool = {
+			icons={
+				"gfx/interface/technologies/mechanized_equipment_3.dds"
+				"gfx/interface/technologies/motorized_rocket_equipment_2.dds"
+				"gfx/interface/technologies/CAN_mech_3.dds"
+				"gfx/interface/technologies/fra_mechanized_equipment_3.dds"
+				"gfx/interface/technologies/tanks/sov/sov_mech_3.dds"
+				"gfx/interface/technologies/tanks/jap/jap_mech_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_mech_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_mech_3.dds"
+				"gfx/interface/technologies/tanks/usa/usa_mech_3.dds"
+				"gfx/interface/technologies/tanks/usa/usa_amtrac_3.dds"
+				"gfx/interface/technologies/tanks/jap/jap_amtrac_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_amtrac_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amtrac_1.dds"
+			}
+			models= {
+				"SOV_mechanized_vehicle_entity"
+				"USA_mechanized_entity"
+				"FRA_mechanized_entity"
+				"GER_mechanized_entity"
+			}
+		}
+	}
 	light_tank_chassis_0 = {
 		pool = {
 			icons = {

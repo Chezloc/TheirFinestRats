@@ -3622,9 +3622,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
-			add_war_support = 0.05
-			add_stability = -0.1
-			add_political_power = -100
+			FRA = {
+				add_political_power = 100
+			}
+			add_political_power = 100
 		}
 	}
 	
@@ -3660,12 +3661,12 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_embargo_germany
-		icon = GFX_goal_generic_trade
+		icon = GFX_goal_generic_construct_naval_dockyard #GFX_goal_generic_trade
 		prerequisite = { focus = ENG_containment2 }
 		available = {
-			GER = {
-				has_added_tension_amount > 10
-			}
+			# GER = {
+			# 	has_added_tension_amount > 10
+			# }
 		}
 		bypass = {
 			has_war_with = GER
@@ -3681,10 +3682,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			GER = {
-				add_opinion_modifier = { target = ENG modifier = embargo }
-				add_opinion_modifier = { target = ENG modifier = sanctions_relations }  
-			}
+			add_ideas = ENG_prepare_for_the_inevitable_idea_docks
+			# GER = {
+			# 	add_opinion_modifier = { target = ENG modifier = embargo }
+			# 	add_opinion_modifier = { target = ENG modifier = sanctions_relations }  
+			# }
 		}
 	}
 

@@ -87,6 +87,8 @@ technologies = {
 
 		enable_subunits = {
 			engineer
+			mech_engineers
+			mech_assault_engineers
 		}
 		enable_equipment_modules = {
 			flamethrower
@@ -141,6 +143,12 @@ technologies = {
 	tech_engineers2 = {
 
 		engineer = {	
+			entrenchment  = 2
+			river = {
+				attack = 0.15
+			}
+		}
+		mech_engineers = {	
 			entrenchment  = 2
 			river = {
 				attack = 0.15
@@ -229,6 +237,19 @@ technologies = {
 				defence = 0.15
 			}
 		}
+		mech_engineers = {	
+			entrenchment  = 2
+			river = {
+				attack = 0.15
+			}
+		}
+		mech_assault_engineers = {	
+			entrenchment  = 2
+			river = {
+				attack = 0.15
+			}
+		}
+
 		enable_equipment_modules = {
 			hull_flamethrower
 		}
@@ -290,7 +311,16 @@ technologies = {
 				attack = 0.05
 				defence = 0.05
 			}
-			
+		}
+		mech_assault_engineers = {
+			urban = {
+				attack = 0.05
+				defence = 0.05
+			}
+			dense_urban = {
+				attack = 0.05
+				defence = 0.05
+			}
 		}
 
 		research_cost = 1
@@ -327,6 +357,37 @@ technologies = {
 			}
 		}
 		assault_engineer = {
+			entrenchment  = 2
+			
+			urban = {
+				attack = 0.15
+				defence = 0.15
+			}
+			dense_urban = {
+				attack = 0.25
+				defence = 0.15
+			}
+			town = {
+				attack = 0.1
+				defence = 0.15
+			}
+		}
+		mech_engineers = {	
+			entrenchment  = 2
+			urban = {
+				attack = 0.15
+				defence = 0.15
+			}
+			dense_urban = {
+				attack = 0.25
+				defence = 0.15
+			}
+			town = {
+				attack = 0.1
+				defence = 0.15
+			}
+		}
+		mech_assault_engineers = {	
 			entrenchment  = 2
 			
 			urban = {
@@ -381,6 +442,7 @@ technologies = {
 		enable_subunits = {
 			recon
 			mot_recon
+			mech_recon
 			light_tank_recon
 			armored_car_recon
 		}
@@ -462,6 +524,33 @@ technologies = {
 			}
 		}
 		mot_recon = {
+			recon = 2
+			forest = {
+				movement = 0.015
+			}
+			hills = {
+				movement = 0.015
+			}
+			mountain = {
+				movement = 0.015
+			}
+			jungle = {
+				movement = 0.015
+			}
+			marsh = {
+				movement = 0.015
+			}
+			plains = {
+				movement = 0.015
+			}
+			desert = {
+				movement = 0.015
+			}
+			river = {
+				movement = 0.015
+			}
+		}
+		mech_recon = {
 			recon = 2
 			forest = {
 				movement = 0.015
@@ -641,6 +730,33 @@ technologies = {
 				movement = 0.02
 			}
 		}
+		mech_recon = {
+			recon = 2
+			forest = {
+				movement = 0.02
+			}
+			hills = {
+				movement = 0.02
+			}
+			mountain = {
+				movement = 0.02
+			}
+			jungle = {
+				movement = 0.02
+			}
+			marsh = {
+				movement = 0.02
+			}
+			plains = {
+				movement = 0.02
+			}
+			desert = {
+				movement = 0.02
+			}
+			river = {
+				movement = 0.02
+			}
+		}
 		light_tank_recon = {
 			recon = 2
 			forest = {
@@ -790,6 +906,33 @@ technologies = {
 			}
 		}
 		mot_recon = {
+			recon = 2
+			forest = {
+				movement = 0.015
+			}
+			hills = {
+				movement = 0.015
+			}
+			mountain = {
+				movement = 0.015
+			}
+			jungle = {
+				movement = 0.015
+			}
+			marsh = {
+				movement = 0.015
+			}
+			plains = {
+				movement = 0.015
+			}
+			desert = {
+				movement = 0.015
+			}
+			river = {
+				movement = 0.015
+			}
+		}
+		mech_recon = {
 			recon = 2
 			forest = {
 				movement = 0.015
@@ -1165,6 +1308,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			easy_maintenance
+			mech_easy_maintenance
 		}
 		
 		ai_will_do = {
@@ -1287,6 +1431,7 @@ technologies = {
 
 		enable_subunits = {
 			field_hospital
+			mech_field_hospital
 		}
 		
 		path = {
@@ -1338,6 +1483,10 @@ technologies = {
 			casualty_trickleback = 0.15
 			experience_loss_factor = -0.15
 		}
+		mech_field_hospital = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.15
+		}
 		
 		path = {
 			leads_to_tech = tech_field_hospital3
@@ -1384,6 +1533,11 @@ technologies = {
 			casualty_trickleback = 0.15
 			experience_loss_factor = -0.15
 		}
+		mech_field_hospital = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.15
+		}
+
 		path = {
 			leads_to_tech = tech_field_hospital4
 			research_cost_coeff = 1
@@ -1425,6 +1579,10 @@ technologies = {
 	tech_field_hospital4 = {
 
 		field_hospital = {
+			casualty_trickleback = 0.15
+			experience_loss_factor = -0.15
+		}
+		mech_field_hospital = {
 			casualty_trickleback = 0.15
 			experience_loss_factor = -0.15
 		}

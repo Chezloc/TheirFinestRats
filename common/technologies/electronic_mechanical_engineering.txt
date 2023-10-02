@@ -240,6 +240,8 @@ technologies = {
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@jaeger }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@motorized }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@mechanized }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@mech_sp_artillery_brigade }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@mechanised_tank_destroyer_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@bicycle_battalion }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@arditi }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@paramarine }
@@ -308,6 +310,8 @@ technologies = {
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@jaeger }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@motorized }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@mechanized }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@mech_sp_artillery_brigade }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@mechanised_tank_destroyer_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@bicycle_battalion }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@arditi }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@paramarine }
@@ -371,6 +375,8 @@ technologies = {
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@jaeger }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@motorized }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@mechanized }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@mech_sp_artillery_brigade }
+			add_to_temp_variable  = { total_unit = num_battalions_with_type@mechanised_tank_destroyer_brigade }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@bicycle_battalion }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@arditi }
 			add_to_temp_variable  = { total_unit = num_battalions_with_type@paramarine }
@@ -1118,6 +1124,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			stabilizer
+			mech_stabilizer
 		}
 		
 		research_cost = 2.5

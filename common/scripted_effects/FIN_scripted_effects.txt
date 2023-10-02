@@ -1,0 +1,282 @@
+FIN_victory_manpower = {
+	if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 210
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 0 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 203
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 500 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 196
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 10000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 189
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 15000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 182
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 20000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 175
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 25000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 168
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 30000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 161
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 35000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 154
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 40000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 147
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 45000 }
+	}
+
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 140
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 50000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 133
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 55000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 126
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 60000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 119
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 65000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 112
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 70000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 105
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 75000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 98
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 80000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 91
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 85000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 84
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 90000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 77
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 95000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 70
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 100000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 63
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 105000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 56
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 110000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 49
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 115000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 42
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 120000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 35
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 125000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 28
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 130000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 21
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 135000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 14
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 140000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 7
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 145000 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = {
+				flag = FIN_winter_war_started
+				days > 0
+			}
+		}
+		set_variable = { FIN_manpower_WW_win = 150000 }
+	}
+}

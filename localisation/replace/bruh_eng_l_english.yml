@@ -203,6 +203,8 @@
   ENG_british_invasion_of_iran:0 "Operation Countenance"
   ENG_khartoum_airfield:0 "Build Up the Khartoum Airfield"
   ENG_dockyard_expansion:0 "Dockyard Expansion"
+  ENG_prepare_for_the_inevitable:0 "Prepare for the Inevitable"
+  ENG_embargo_germany:0 "Prepare for the Inevitable"
 
   #### EVENTS ####
   britain.500.t:0 "Anglo-Soviet Agreement"
@@ -265,6 +267,8 @@
   stiff_upper_lip_1:0 "British Stoicism"
   stiff_upper_lip_1_desc:0 "If you can keep your head when all about you\nAre losing theirs and blaming it on you, If you can meet with Triumph and Disaster And treat those two impostors just the same\nYours is the Earth and everything that's in it, And - which is more - you'll be a Man, my son.\n\nBases Mechanic: holding Allied Mediterranean strongholds will provide a buff to core attack and defense. \n§GFrom West to East§!\n§YGibraltar\nMalta\nCrete\nSuez Canal\nCyprus"
   emergency_dockyard_construction:0 "Emergency Dockyard Construction"
+  ENG_prepare_for_the_inevitable_mil:0 "Prepare for the Inevitable (Military Factories)"
+  ENG_prepare_for_the_inevitable_dock:0 "Prepare for the Inevitable (Naval Dockyards)"
   
   #### TRAITS ####
   vauxhall_trait:0 "Infantry Tank Manufacturer"

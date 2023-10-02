@@ -1111,7 +1111,7 @@ ideas = {
 
 		ENG_prepare_for_the_inevitable_idea = {
 
-			name = ENG_prepare_for_the_inevitable
+			name = ENG_prepare_for_the_inevitable_mil
 
 			allowed = {
 				always = no
@@ -1124,6 +1124,28 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
 				industrial_capacity_factory = 0.05
+			}
+
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+		}
+
+		ENG_prepare_for_the_inevitable_idea_docks = {
+
+			name = ENG_prepare_for_the_inevitable_dock
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 
 			picture = generic_production_bonus

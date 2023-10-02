@@ -2192,6 +2192,7 @@ focus_tree = {
 		available = {
 			any_country = {
 				original_tag = VIC
+				controls_state = 290
 				controls_state = 461
 				controls_state = 462
 				controls_state = 459
@@ -2206,10 +2207,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
 		}
 		
 		icon = GFX_goal_generic_territory_or_war
@@ -2221,15 +2218,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			random_other_country = {
-				limit = {
-					original_tag = VIC
-					controls_state = 461
-					controls_state = 462
-					controls_state = 459
-					controls_state = 460
-					controls_state = 513
-				}
+			VIC = {
 				country_event = { id = lar_spain.39 hours = 6 random_hours = 18 }
 			}
 		}

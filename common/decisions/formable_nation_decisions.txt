@@ -1156,9 +1156,6 @@ form_mutapa_category = {
 		allowed = {
 			OR = {
 				original_tag = SAF
-				original_tag = BOT
-				original_tag = ZIM
-				original_tag = MZB
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -1190,6 +1187,15 @@ form_mutapa_category = {
 			545 = { add_core_of = ROOT }
 			771 = { add_core_of = ROOT }
 			770 = { add_core_of = ROOT }
+			546 = { add_core_of = ROOT }
+			547 = { add_core_of = ROOT }
+			548 = { add_core_of = ROOT }
+			768 = { add_core_of = ROOT }
+			769 = { add_core_of = ROOT }
+			295 = { add_core_of = ROOT }
+			718 = { add_core_of = ROOT }
+			538 = { add_core_of = ROOT }
+
 			add_resource = {
 				type = chromium
 				amount = 400
@@ -1208,10 +1214,6 @@ form_mutapa_category = {
 
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
 		}
 	}
 }

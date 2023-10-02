@@ -1182,7 +1182,7 @@ on_actions = {
 				limit = {
 					original_tag = POR
 					FROM = { original_tag = SPR }
-					SPR = { NOT = { has_war_with = ENG } }
+					# SPR = { NOT = { has_war_with = ENG } }
 				}
 				SPR = {
 					annex_country = {

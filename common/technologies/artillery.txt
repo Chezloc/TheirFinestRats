@@ -91,6 +91,9 @@ technologies = {
 		motorised_anti_air = {
 			air_attack = 0.1
 		}
+		mechanized_aa_equipment = {
+			air_attack = 0.1
+		}
 		light_sp_anti_air_brigade  = {
 			air_attack = 0.1
 		}
@@ -142,9 +145,10 @@ technologies = {
 			anti_air_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_light_art_gun_1
 			ship_anti_air_3
 			tank_anti_air_gun_2
+			# mech
+			tank_anti_air_cannon_mech
 		}
 		
 		research_cost = 2.0
@@ -169,8 +173,13 @@ technologies = {
 			anti_tank_equipment_squeeze_2
 		}
 		enable_equipment_modules = { 
+			tank_light_art_gun_1
 			tank_small_gun_squeeze
 			tank_light_td_1
+			# mech
+			# tank_anti_air_cannon_mech # not sure about this being here
+			tank_small_cannon_mech
+			tank_close_support_gun_mech
 		}
 		
 		research_cost = 2.0
@@ -198,6 +207,9 @@ technologies = {
 			air_attack = 0.1
 		}
 		motorised_anti_air = {
+			air_attack = 0.1
+		}
+		mechanized_aa_equipment = {
 			air_attack = 0.1
 		}
 		light_sp_anti_air_brigade  = {
@@ -256,8 +268,9 @@ technologies = {
 			anti_air_equipment_3
 		}	
 		enable_equipment_modules = { 
-			tank_light_art_gun_2
 			tank_anti_air_gun_3
+			# mech
+			tank_anti_air_cannon_2_mech
 		}
 		
 		research_cost = 2.0
@@ -284,8 +297,13 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
+			tank_light_art_gun_2
 			tank_small_gun_squeeze2
 			tank_light_td_2
+			# mech
+			# tank_anti_air_cannon_2_mech # not sure about this being here
+			tank_small_cannon_2_mech
+			tank_close_support_gun2_mech
 		}
 		
 		research_cost = 2.0
@@ -314,6 +332,9 @@ technologies = {
 			air_attack = 0.1
 		}
 		motorised_anti_air = {
+			air_attack = 0.1
+		}
+		mechanized_aa_equipment = {
 			air_attack = 0.1
 		}
 		light_sp_anti_air_brigade  = {
@@ -371,8 +392,9 @@ technologies = {
 			anti_air_equipment_4
 		}	
 		enable_equipment_modules = { 
-			tank_light_art_gun_3
 			tank_anti_air_gun_4
+			# mech
+			tank_anti_air_cannon_3_mech
 		}
 		
 		research_cost = 2.0
@@ -399,7 +421,12 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
+			tank_light_art_gun_3
 			tank_light_td_3
+			# mech
+			# tank_anti_air_cannon_3_mech # not sure about this being here
+			tank_small_cannon_3_mech
+			tank_close_support_gun3_mech
 		}
 		
 		research_cost = 2.0
@@ -427,6 +454,9 @@ technologies = {
 			air_attack = 0.1
 		}
 		motorised_anti_air = {
+			air_attack = 0.1
+		}
+		mechanized_aa_equipment = {
 			air_attack = 0.1
 		}
 		light_sp_anti_air_brigade  = {
@@ -713,6 +743,7 @@ technologies = {
 			tank_med_gun_squeeze
 			tank_med_hv_gun_2
 			apcr_round
+			mech_tungston_core_ammunition
 			tank_medium_td_2
 		}
 
@@ -1374,7 +1405,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_rocket_launcher
-			
+			tank_light_rocket_launcher_mech
 		}
 		enable_subunits = {
 			rocket_artillery_brigade

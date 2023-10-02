@@ -104,6 +104,7 @@
 
   #### TOOLTIP ####
   FIN_revanchism_tt:0 "§RWill be removed once we have reclaimed the land lost in the Winter War§!"
+  FIN_no_allies_attack_tt:0 "(§YAllies§!)£attack_texticon  Attack bonus against faction §R-10.0%§!\n(§YAllies§!)£defence_texticon  Defense bonus against faction §R-10.0%§!"
 
   #### FLAGS ####
   FIN_winter_victory:0 "Victory in the Winter War"

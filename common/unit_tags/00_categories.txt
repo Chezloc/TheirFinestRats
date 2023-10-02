@@ -21,4 +21,7 @@ sub_unit_categories = {
 	category_light_tanks
 	category_assault_gun
 	category_recon
+	category_anti_air
+	category_mobile_infantry
+	category_mobile_artillery
 }

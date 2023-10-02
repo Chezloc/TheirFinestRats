@@ -6739,9 +6739,25 @@ leader_traits = {
 				build_cost_ic = -0.05
 				reliability = 0.10
 			}
-			amphibious_mechanized_equipment = {
+			mechanized_td_equipment = {
 				build_cost_ic = -0.05
 				reliability = 0.10
+			}
+			mechanized_spg_equipment = {
+				build_cost_ic = -0.05
+				reliability = 0.10
+			}
+			mechanized_aa_equipment = {
+				build_cost_ic = -0.05
+				reliability = 0.10
+			}
+			mechanized_amphibious_chassis = {
+				build_cost_ic = -0.05
+				reliability = 0.10
+			}
+			mechanized_utility_equipment = {
+				build_cost_ic = -0.05
+				reliability = 0.1
 			}
 			motorized_equipment = {
 				build_cost_ic = -0.05

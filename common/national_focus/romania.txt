@@ -338,8 +338,11 @@ focus_tree = {
 
 
 		completion_reward = {
+			# GER = {
+			# 	country_event = generic.2
+			# }
 			GER = {
-				country_event = generic.2
+				add_to_faction = ROOT
 			}
 		}
 	}
