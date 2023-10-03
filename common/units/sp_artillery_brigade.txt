@@ -18,15 +18,15 @@ sub_units = {
 
 		categories = {
 			category_front_line
-			category_all_infantry
+			# category_all_infantry
 			category_army
 			category_mobile_artillery
 		}		
 
-		combat_width = 2
+		combat_width = 1
 
 		need = {
-			mechanized_spg_equipment = 48
+			mechanized_spg_equipment = 24
 		}
 		manpower = 500
 		max_organisation = 0
@@ -36,7 +36,7 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.25
 		supply_consumption_factor = 0.045
-		hard_attack = -0.2
+		# hard_attack = -0.2 #WHY??
 		breakthrough = -0.2
 		
 

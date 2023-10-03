@@ -152,7 +152,7 @@ equipments = {
      	archetype = mechanized_equipment
      	priority = 40
      	is_buildable = no
- 		build_cost_ic = 200
+ 		build_cost_ic = 0.1
 		upgrades = {
  			
  		}
