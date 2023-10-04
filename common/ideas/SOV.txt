@@ -6379,9 +6379,6 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				armor = {
-					reliability = 0.15
-				}
 				armored_car_chassis = {
 					build_cost_ic = -0.15
 					reliability = 0.10

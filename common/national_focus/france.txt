@@ -2978,7 +2978,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			ENG = { country_event = { id = britain.13 } }
+			# ENG = { country_event = { id = britain.13 } }
+			ENG = {
+				add_to_faction = ROOT
+			}
 		}
 	}
 	# focus = {
