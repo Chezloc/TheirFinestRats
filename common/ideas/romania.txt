@@ -1043,9 +1043,24 @@ ideas = {
 
 			equipment_bonus = {
 				motorized_equipment = {
+					maximum_speed = 0.1 instant = yes
+				}
+				mechanized_equipment = { 
 					maximum_speed = 0.1
 				}
-				mechanized_equipment = {
+				mechanized_td_equipment = {
+					maximum_speed = 0.1
+				}
+				mechanized_spg_equipment = {
+					maximum_speed = 0.1
+				}
+				mechanized_aa_equipment = {
+					maximum_speed = 0.1
+				}
+				mechanized_amphibious_chassis = {
+					maximum_speed = 0.1
+				}
+				mechanized_utility_equipment = {
 					maximum_speed = 0.1
 				}
 			}
@@ -1078,8 +1093,23 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.1
 				}
-				mechanized_equipment = {
-					build_cost_ic = -0.1
+				mechanized_equipment = { 
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_td_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_spg_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_aa_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_amphibious_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_utility_equipment = {
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 
@@ -1164,7 +1194,22 @@ ideas = {
 				motorized_equipment = {
 					reliability = 0.2
 				}
-				mechanized_equipment = {
+				mechanized_equipment = { 
+					reliability = 0.2
+				}
+				mechanized_td_equipment = {
+					reliability = 0.2
+				}
+				mechanized_spg_equipment = {
+					reliability = 0.2
+				}
+				mechanized_aa_equipment = {
+					reliability = 0.2
+				}
+				mechanized_amphibious_chassis = {
+					reliability = 0.2
+				}
+				mechanized_utility_equipment = {
 					reliability = 0.2
 				}
 			}

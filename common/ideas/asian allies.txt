@@ -1364,10 +1364,22 @@ ideas = {
 				motorized_rocket_equipment = {
 					build_cost_ic = 0.04 instant = yes
 				}
-				mechanized_equipment = {
+				mechanized_equipment = { 
 					build_cost_ic = 0.04 instant = yes
 				}
-				amphibious_mechanized_equipment = {
+				mechanized_td_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				mechanized_spg_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				mechanized_aa_equipment = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				mechanized_amphibious_chassis = {
+					build_cost_ic = 0.04 instant = yes
+				}
+				mechanized_utility_equipment = {
 					build_cost_ic = 0.04 instant = yes
 				}
 				medium_plane_fighter_airframe = {
@@ -1429,10 +1441,22 @@ ideas = {
 				motorized_rocket_equipment = {
 					build_cost_ic = 0.08 instant = yes
 				}
-				mechanized_equipment = {
+				mechanized_equipment = { 
 					build_cost_ic = 0.08 instant = yes
 				}
-				amphibious_mechanized_equipment = {
+				mechanized_td_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				mechanized_spg_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				mechanized_aa_equipment = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				mechanized_amphibious_chassis = {
+					build_cost_ic = 0.08 instant = yes
+				}
+				mechanized_utility_equipment = {
 					build_cost_ic = 0.08 instant = yes
 				}
 				medium_plane_fighter_airframe = {
@@ -1494,10 +1518,22 @@ ideas = {
 				motorized_rocket_equipment = {
 					build_cost_ic = 0.12 instant = yes
 				}
-				mechanized_equipment = {
+				mechanized_equipment = { 
 					build_cost_ic = 0.12 instant = yes
 				}
-				amphibious_mechanized_equipment = {
+				mechanized_td_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				mechanized_spg_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				mechanized_aa_equipment = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				mechanized_amphibious_chassis = {
+					build_cost_ic = 0.12 instant = yes
+				}
+				mechanized_utility_equipment = {
 					build_cost_ic = 0.12 instant = yes
 				}
 				medium_plane_fighter_airframe = {
@@ -1559,10 +1595,22 @@ ideas = {
 				motorized_rocket_equipment = {
 					build_cost_ic = 0.16 instant = yes
 				}
-				mechanized_equipment = {
+				mechanized_equipment = { 
 					build_cost_ic = 0.16 instant = yes
 				}
-				amphibious_mechanized_equipment = {
+				mechanized_td_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				mechanized_spg_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				mechanized_aa_equipment = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				mechanized_amphibious_chassis = {
+					build_cost_ic = 0.16 instant = yes
+				}
+				mechanized_utility_equipment = {
 					build_cost_ic = 0.16 instant = yes
 				}
 				medium_plane_fighter_airframe = {
@@ -1624,10 +1672,22 @@ ideas = {
 				motorized_rocket_equipment = {
 					build_cost_ic = 0.20 instant = yes
 				}
-				mechanized_equipment = {
+				mechanized_equipment = { 
 					build_cost_ic = 0.20 instant = yes
 				}
-				amphibious_mechanized_equipment = {
+				mechanized_td_equipment = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				mechanized_spg_equipment = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				mechanized_aa_equipment = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				mechanized_amphibious_chassis = {
+					build_cost_ic = 0.20 instant = yes
+				}
+				mechanized_utility_equipment = {
 					build_cost_ic = 0.20 instant = yes
 				}
 				medium_plane_fighter_airframe = {
