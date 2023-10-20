@@ -535,6 +535,9 @@ focus_tree = {
 			770 = { is_controlled_by = SAF }
 			545 = { is_controlled_by = SAF }
 			542 = { is_controlled_by = SAF }
+			905 = { is_controlled_by = SAF }
+			904 = { is_controlled_by = SAF }
+			903 = { is_controlled_by = SAF }
 
 			has_global_flag = SAF_ENG_accepted_transfering_africa
 		}
@@ -592,6 +595,27 @@ focus_tree = {
 				}
 			}
 			542 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+			905 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			904 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+			903 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 4
@@ -1501,9 +1525,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = cape_cope
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = SAF_cope_organization
+				mio:SAF_cope_organization = {
+					add_mio_size = 2
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = cape_cope
+			}
 
 			add_tech_bonus = {
 				name = SAF_q_services_corps

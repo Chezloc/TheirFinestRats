@@ -10,7 +10,8 @@ state={
 		victory_points = {
 			12763 3
 		}
-				owner = RAJ      1936.1.1.13 = {
+		owner = RAJ      
+		1936.1.1.13 = {
             owner = WST 	
 		}	
 		buildings = {
@@ -23,4 +24,6 @@ state={
 	provinces={
 		1978 4558 4998 12717 12763 
 	}
+
+	local_supplies=5.0 
 }

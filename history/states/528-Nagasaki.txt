@@ -9,10 +9,10 @@ state={
 	}
 
 	history={
-				owner = JAP
-        1936.1.1.13 = {
+		owner = JAP
+		1936.1.1.13 = {
             owner = WST 	
-		}	
+		}
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 7
@@ -48,4 +48,6 @@ state={
 	provinces={
 		1020 1025 1158 1183 4027 4102 4164 4198 7110 7178 9950 10011 10020 10092 11925 11949 12006 12032 
 	}
+
+	local_supplies=10.0 
 }

@@ -6,8 +6,9 @@ state=
 	manpower=42
 	history=
 	{
-				owner = JAP
-        1936.1.1.13 = {
+		owner = JAP
+		#add_core_of = GUM
+		1936.1.1.13 = {
             owner = WST 	
 		}	
 		buildings = {
@@ -22,4 +23,6 @@ state=
 	provinces=
 	{
 13026 	}
+
+	local_supplies=0.0 
 }

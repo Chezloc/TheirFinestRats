@@ -16,17 +16,17 @@ country_event = {
 	
 	option = { # man - medium tank
 		name = vichy.1.a
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = GER_MAN
-		add_ideas = GER_MAN
-		set_country_flag = VIC_chose_MAN
+		# custom_effect_tooltip = available_designer
+		# show_ideas_tooltip = GER_MAN
+		# add_ideas = GER_MAN
+		# set_country_flag = VIC_chose_MAN
 	}
 	option = { # porsche - light tank
 		name = vichy.1.b
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = porsche
-		add_ideas = porsche
-		set_country_flag = VIC_chose_PORSCHE
+		# custom_effect_tooltip = available_designer
+		# show_ideas_tooltip = porsche
+		# add_ideas = porsche
+		# set_country_flag = VIC_chose_PORSCHE
 	}
 }
 

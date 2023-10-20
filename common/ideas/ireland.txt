@@ -30,7 +30,7 @@ ideas = {
 			picture = ast_naval_auxiliary_patrol
 			
 			modifier = {
-				consumer_goods_factor = -0.05		
+				consumer_goods_factor = -0.15		
 			}
 		}
 
@@ -204,13 +204,7 @@ ideas = {
 				special_forces_training_time_factor = 0.2
 				special_forces_cap = 0.1
 				special_forces_min = 44
-			}
-
-			equipment_bonus = {
-				special_forces = {
-					soft_attack = 0.10
-					instant = yes
-				}
+				special_forces_attack_factor = 0.1
 			}
 		}
 
@@ -311,7 +305,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.2
 				industrial_capacity_factory = -0.1
 				production_speed_buildings_factor = -0.1
 			}

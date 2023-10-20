@@ -937,9 +937,16 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
-            custom_effect_tooltip = available_designer
-			show_ideas_tooltip = VIC_renault
-            add_ideas = VIC_renault
+            if = {
+				limit = {
+					NOT = {
+                        has_dlc = "Arms Against Tyranny"
+                    }
+				}
+                custom_effect_tooltip = available_designer
+                show_ideas_tooltip = VIC_renault
+                add_ideas = VIC_renault
+            }
             # 100 army XP
             # 0.5 year ahead of time 75% bonus armor
             # HV Tank designer

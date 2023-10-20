@@ -1,5 +1,27 @@
 spriteTypes = {	
 
+	### UNITS ###
+	SpriteType = { name = "GFX_paratroopers_medium" texturefile = "gfx/interface/technologies/infantry/r56_tech_shocktroops_01.dds" }
+	SpriteType = { name = "GFX_paratroopers2_medium" texturefile = "gfx/interface/technologies/infantry/r56_tech_shocktroops_02.dds" }
+	SpriteType = { name = "GFX_paratroopers3_medium" texturefile = "gfx/interface/technologies/infantry/r56_tech_shocktroops_03.dds" }
+	spriteType = {
+		name = "GFX_unit_paratroopers_icon_medium_white"						
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_shocktroop_icon.dds" noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_paratroopers_icon_medium"								
+		textureFile = "gfx/interface/counters/divisions_large/unit_shocktroop_icon.dds" noOfFrames = 2 
+	}
+	### AGENCY ###
+	spriteType = {  
+		name = "GFX_agency_intelligence_speed"
+		texturefile = "gfx/interface/operatives/icons/agency_faster_intelligence.dds"
+	}
+	spriteType = { 
+		name = "GFX_agency_internal_security"
+		texturefile = "gfx/interface/operatives/icons/agency_internal_security.dds"
+	}
+	
 	### MECH DEISNGER ###
 	spriteType = {
 		name = "GFX_TC_mechanised_chassis"

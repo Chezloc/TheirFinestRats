@@ -56,7 +56,7 @@ ideas = {
 			picture = great_depression
 			
 			modifier = {
-				consumer_goods_factor = 0.20
+				consumer_goods_factor = 0.40
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
 				stability_factor = -0.10
@@ -78,7 +78,7 @@ ideas = {
 			picture = great_depression
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.3
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
@@ -99,7 +99,7 @@ ideas = {
 			picture = great_depression
 			
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.1
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
 			}
@@ -141,7 +141,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.025
+				consumer_goods_factor = -0.09
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 				stability_factor = 0.05
@@ -163,7 +163,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				industrial_capacity_factory = 0.10
 				industrial_capacity_dockyard = 0.10
 				stability_factor = 0.10
@@ -336,7 +336,7 @@ ideas = {
 					air_attack = 0.05
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_range = 0.1
 					air_bombing = 0.05
 					instant = yes

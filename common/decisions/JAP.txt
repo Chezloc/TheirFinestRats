@@ -2771,7 +2771,9 @@ prospect_for_resources = {
 		icon = chromium
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 623
+			}
 		}
 
 		allowed = {
@@ -2819,7 +2821,9 @@ prospect_for_resources = {
 		icon = steel
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 627
+			}
 		}
 
 		allowed = {
@@ -2867,7 +2871,9 @@ prospect_for_resources = {
 		icon = steel
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 625
+			}
 		}
 
 		allowed = {
@@ -2919,7 +2925,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 725
+			}
 		}
 
 		available = {
@@ -3060,7 +3068,9 @@ prospect_for_resources = {
 		icon = aluminium
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 597
+			}
 		}
 
 		allowed = {
@@ -3109,7 +3119,9 @@ prospect_for_resources = {
 		icon = steel
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 621
+			}
 		}
 
 		allowed = {

@@ -10,9 +10,17 @@ state={
 
 	history= {
 		owner = TUR
+		# victory_points = {
+		# 	3862 3
+		# }
+		# victory_points = {
+		# 	919 5
+		# }
 		buildings = {
-			infrastructure = 6
+			infrastructure = 6 #3
 		}
 		add_core_of = TUR
 	}
+
+	local_supplies=0.0 
 }

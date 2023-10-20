@@ -15,10 +15,12 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = WST #ENG
+		add_core_of = WST
 	}
 	
 	provinces={
 		13010 
 	}
+
+	local_supplies=0.0 
 }

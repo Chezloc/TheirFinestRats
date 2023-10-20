@@ -7,10 +7,8 @@ state={
 	state_category = tiny_island
 
 	history={
-				owner = USA
-		1936.1.1.13 = {
-			owner = WST
-		}
+		owner = USA
+		#add_core_of = HAW
 		1936.1.1.13 = {
 			owner = WST
 		}
@@ -25,4 +23,6 @@ state={
 	provinces={
 		13050 
 	}
+
+	local_supplies=0.0 
 }

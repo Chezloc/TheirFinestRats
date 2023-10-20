@@ -4,7 +4,7 @@
 
 add_namespace = generic
 
-# President dies
+# COUNTRY INFLUENCING OUR POLITICS
 country_event = {
 	id = generic.1
 	title = generic.1.t
@@ -170,12 +170,21 @@ country_event = {
 		}
 		ai_chance = {
 			base = 100
+			modifier = { # For shared Nordic Tree in AAT
+				factor = 1.7
+				FROM = {
+					has_country_flag = NORDIC_requesting_through_NORDIC_shared
+				}
+			}
 		}
 		add_to_faction = FROM
 		FROM = { country_event = { id = generic.3 hours = 6 } }
 		hidden_effect = {
 			set_country_flag = alliance_inviter@ROOT
-			FROM = { set_country_flag = alliance_applicant@ROOT }
+			FROM = { 
+				set_country_flag = alliance_applicant@ROOT
+				clr_country_flag = NORDIC_requesting_through_NORDIC_shared # For shared Nordic Tree in AAT
+			}
 			news_event = { id = news.289 hours = 12 }
 		}
 	}
@@ -191,12 +200,31 @@ country_event = {
 		}
 		ai_chance = {
 			base = 100
+			modifier = { # For shared Nordic Tree in AAT
+				factor = 1.7
+				FROM = {
+					has_country_flag = NORDIC_requesting_through_NORDIC_shared
+				}
+			}
+			modifier = {
+				factor = 2
+				original_tag = SOV
+				FROM = { has_completed_focus = NOR_join_the_comintern }
+			}
+			modifier = {
+				factor = 5
+				original_tag = SOV 
+				FROM = { has_country_flag = AAT_trotsky_sent_to_stalin }
+			}
 		}
 		add_to_faction = FROM
 		FROM = { country_event = { id = generic.3 hours = 6 } }
 		hidden_effect = {
 			set_country_flag = alliance_inviter@ROOT
-			FROM = { set_country_flag = alliance_applicant@ROOT }
+			FROM = { 
+				set_country_flag = alliance_applicant@ROOT
+				clr_country_flag = NORDIC_requesting_through_NORDIC_shared # For shared Nordic Tree in AAT 
+			}
 			news_event = { id = news.289 hours = 12 }
 		}
 	}
@@ -322,6 +350,16 @@ country_event = {
 				factor = 0.1
 				FROM = {
 					is_major = yes
+				}
+			}
+
+			modifier = {
+				factor = 10
+				FROM = {
+					OR = {
+						is_subject = yes
+						is_in_faction = yes
+					}
 				}
 			}
 		}
@@ -565,8 +603,10 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		FROM = { 
-			add_to_faction = ROOT
+		FROM = {
+			faction_leader = {
+				add_to_faction = ROOT
+			}
 			country_event = { id = generic.6 hours = 6 } 
 		}
 		add_ai_strategy = {
@@ -595,7 +635,9 @@ country_event = {
 			base = 100
 		}
 		FROM = { 
-			add_to_faction = ROOT
+			faction_leader = {
+				add_to_faction = ROOT
+			}
 			country_event = { id = generic.6 hours = 6 } 
 		}
 		add_ai_strategy = {
@@ -718,6 +760,15 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 50
+			
+			modifier = {
+				factor = 0
+				FROM = {
+					original_tag = YUG
+					has_government = communism
+				}
+				has_government = communism
+			}
 			
 			modifier = {
 				factor = 0.5

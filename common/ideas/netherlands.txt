@@ -1,11 +1,10 @@
-
 ideas = {
 
 	country = {
 
-        HOL_foreign_colonial_investments = {
+		HOL_foreign_colonial_investments = {
             modifier = {
-                consumer_goods_factor = -0.05
+                consumer_goods_factor = -0.15
             }
 			picture = generic_goods_red_bonus
         }
@@ -523,10 +522,10 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				large_plane_maritime_patrol_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
+				# large_plane_maritime_patrol_plane_airframe = {
+				# 	instant = yes
+				# 	build_cost_ic = -0.05
+				# }
 				transport_plane_equipment = {
 					instant = yes
 					build_cost_ic = -0.05
@@ -591,10 +590,10 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
-				large_plane_maritime_patrol_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
+				# large_plane_maritime_patrol_plane_airframe = {
+				# 	instant = yes
+				# 	build_cost_ic = -0.1
+				# }
 				transport_plane_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
@@ -617,7 +616,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -639,7 +638,7 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				mechanized_equipment = { 
+				mechanized_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 				mechanized_td_equipment = {
@@ -824,10 +823,10 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.2
 				}
-				large_plane_maritime_patrol_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
+				# large_plane_maritime_patrol_plane_airframe = {
+				# 	instant = yes
+				# 	build_cost_ic = -0.2
+				# }
 				transport_plane_equipment = {
 					instant = yes
 					build_cost_ic = -0.2
@@ -2001,13 +2000,13 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-
+			
 			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 
 		koolhoven = {
 			
-			picture = koolhoven
+			picture = generic_air_manufacturer_3
 
 			
 			allowed = {

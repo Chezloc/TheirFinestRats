@@ -10,6 +10,7 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
+		#add_core_of = PRC
 		buildings = {
 			infrastructure = 4
 		}
@@ -18,8 +19,10 @@ state={
 		}
 		
 		1936.1.1.13 = {
-			owner = WST	
+			owner = WST
 		}
 
 	}
+
+	local_supplies=0.0 
 }

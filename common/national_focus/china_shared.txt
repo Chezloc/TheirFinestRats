@@ -440,8 +440,20 @@ shared_focus = {
 			uses = 1
 			category = armor
 		}
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = german_chinese_tank_designer
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = CHI_sino_german_technical_mission_organization
+			mio:CHI_sino_german_technical_mission_organization = {
+				add_mio_size = 2
+			}
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = german_chinese_tank_designer
+		}
 	}
 }
 

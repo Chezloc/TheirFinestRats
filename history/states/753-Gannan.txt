@@ -9,7 +9,9 @@ state={
 	state_category = rural
 	history={
 		owner = CHI
+		#add_core_of = XSM
 		add_core_of = CHI
+		#add_core_of = PRC
 		victory_points = {
 			2045 5 
 		}
@@ -21,4 +23,6 @@ state={
 			owner = WST	
 		}
 	}
+
+	local_supplies=1.0 
 }

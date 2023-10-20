@@ -12,8 +12,19 @@ state={
 	history={
 		owner = TUR
 		
+		# victory_points = {
+		# 	4112 15
+		# }
+		# victory_points = {
+		# 	928 5
+		# }
 		buildings = {
 			infrastructure = 7
+			# industrial_complex = 1
+			# air_base = 2
+			# 4112 = {
+			# 	naval_base = 5
+			# }
 		}
 		add_core_of = TUR
 		add_extra_state_shared_building_slots = 1
@@ -22,4 +33,6 @@ state={
 	provinces={
 		928 3927 4112 6992 7130 9921 9929 10038 11848 11898 
 	}
+
+	local_supplies=0.0 #8.0 
 }

@@ -18,15 +18,17 @@ state={
 			infrastructure = 3
 			industrial_complex = 2
 		4057 = {
-				# naval_base = 1
+				naval_base = 1
 				bunker = 2
 			}
 			}
-		add_core_of = WST
-		set_state_flag = NOT_AFRICA_COMMONWEALTH_controls
+			add_core_of = WST
+			set_state_flag = NOT_AFRICA_COMMONWEALTH_controls
 	}
 
 	provinces={
 		1041 1198 4047 4057 10046 10117 12088 
 	}
+
+	local_supplies=0.0 
 }

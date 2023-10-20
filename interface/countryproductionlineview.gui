@@ -38,7 +38,7 @@ guiTypes = {
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "PRODUCTION_PRODUCTION_LABEL"
-			maxWidth = 240
+			maxWidth = 440
 			maxHeight = 20
 			format = left
 		}
@@ -1133,7 +1133,6 @@ guiTypes = {
 		hide_animation_type = accelerated
 		animation_time = 300
 		size = { width=495 height=100%% }
-		click_to_front = yes
 
 		background = {
 			name = "Background"
@@ -1164,6 +1163,37 @@ guiTypes = {
 				max_slots_horizontal = 1
 			}
 		}
+
+		containerWindowType = {
+			name = "production_MIOs"
+			position = { x= 20 y = 12}
+			clipping = no
+			size = { width=80 height=35 }
+			Orientation = UPPER_LEFT
+
+				background = {
+					name = "MIO_bg"
+					quadTextureSprite ="GFX_mini_bg"
+				}
+		
+			iconType = {
+				name ="MIO_icon"
+				spriteType = "GFX_industrial_manufacturer_icon"
+				position = { x= 7 y = 7 }
+				Orientation = "UPPER_LEFT"
+			}
+		
+			instantTextBoxType = {
+				name ="available_MIOs"
+				position = { x= 35 y = 8 }
+				font = "hoi_18mbs"
+				text = "999"
+				format = left
+				maxWidth = 30
+				maxHeight = 24
+				fixedsize = yes
+			}
+		}	
 
 		buttonType = {
 			name = "checkbox"
@@ -1356,6 +1386,37 @@ guiTypes = {
 			}
 		}
 
+		containerWindowType = {
+			name = "production_MIOs"
+			position = { x= 20 y = 12}
+			clipping = no
+			size = { width=80 height=35 }
+			Orientation = UPPER_LEFT
+
+				background = {
+					name = "MIO_bg"
+					quadTextureSprite ="GFX_mini_bg"
+				}
+		
+			iconType = {
+				name ="MIO_icon"
+				spriteType = "GFX_industrial_manufacturer_icon"
+				position = { x= 5 y = 3 }
+				Orientation = "UPPER_LEFT"
+			}
+		
+			instantTextBoxType = {
+				name ="available_MIOs"
+				position = { x= 40 y = 8 }
+				font = "hoi_18mbs"
+				text = "999"
+				format = left
+				maxWidth = 30
+				maxHeight = 24
+				fixedsize = yes
+			}
+		}	
+
 		buttonType = {
 			name = "checkbox"
 			position = { x = -355 y = 14 }
@@ -1512,6 +1573,12 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "has_mio_background"
+			quadTextureSprite ="GFX_production_item_has_mio"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name ="production_line_selected"
 			spriteType = "GFX_production_line_selected"
 			position = { x= 0 y = 0 }
@@ -1522,6 +1589,19 @@ guiTypes = {
 		# 	spriteType = "GFX_conveyor_group_btn_frame"
 		# 	position = { x= 2 y = 1 }
 		# }
+
+		buttonType = {
+			name ="attach_manufacturer"
+			spriteType = "GFX_attach_manufacturer"
+			position = { x= 195 y = 1 }
+		}
+
+		buttonType = {
+			name ="change_manufacturer"
+			position = { x= 195 y = 1 }
+			spriteType = "GFX_attach_manufacturer"
+			scale = 0.45
+		}
 
 		instantTextboxType = {
 			name = "priority"
@@ -1585,6 +1665,7 @@ guiTypes = {
 			spriteType = "GFX_land_equipment_role_icons"
 			position = { x=170 y=54 }
 			alwaystransparent = yes
+			scale = 0.8
 		}
 
 		iconType = {
@@ -1635,6 +1716,14 @@ guiTypes = {
 			position = { x = 231 y = 50 }
 			scale = 0.6
 			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="equipment_designer_can_upgrade"
+			spriteType = "GFX_refitting"
+			position = { x = 216 y = 59 }
+			scale = 1
+			pdx_tooltip = "INDUSTRIAL_ORG_TOOLTIP_UPGRADE_ALREADY_ASSIGNED_MIO_DELAYED"
 		}
 
 		gridBoxType = {
@@ -1825,6 +1914,11 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "has_mio_background"
+			quadTextureSprite ="GFX_production_item_has_mio"
+		}
+
+		iconType = {
 			name ="production_line_selected"
 			spriteType = "GFX_production_line_selected_collapsed"
 			position = { x= 0 y = 0 }
@@ -1835,6 +1929,19 @@ guiTypes = {
 			spriteType = "GFX_conveyor_group_btn_frame"
 			position = { x= 2 y = 1 }
 		}
+
+		buttonType = {
+			name ="attach_manufacturer"
+			spriteType = "GFX_attach_manufacturer"
+			position = { x= 195 y = 1 }
+		}
+
+		buttonType = {
+			name ="change_manufacturer"
+			position = { x= 195 y = 1 }
+			spriteType = "GFX_attach_manufacturer"
+			scale = 0.45
+		}		
 
 		instantTextboxType = {
 			name = "priority"
@@ -2403,6 +2510,12 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "has_mio_background"
+			quadTextureSprite ="GFX_production_item_has_mio"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name ="production_line_selected"
 			spriteType = "GFX_production_line_selected"
 			position = { x= 2 y = 0 }
@@ -2412,6 +2525,19 @@ guiTypes = {
 			name ="priority_frame"
 			spriteType = "GFX_conveyor_group_btn_frame"
 			position = { x= 2 y = 1 }
+		}
+
+		buttonType = {
+			name ="attach_manufacturer"
+			spriteType = "GFX_attach_manufacturer"
+			position = { x= 195 y = 1 }
+		}
+
+		buttonType = {
+			name ="change_manufacturer"
+			position = { x= 195 y = 1 }
+			spriteType = "GFX_attach_manufacturer"
+			scale = 0.45
 		}
 
 		instantTextboxType = {
@@ -2462,9 +2588,17 @@ guiTypes = {
 		iconType = {
 			name ="equipment_designer"
 			spriteType = "GFX_tech_idea_bg"
-			position = { x = 25 y = 48 }
+			position = { x = 45 y = 54 }
 			scale = 0.5
 			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="equipment_designer_can_upgrade"
+			spriteType = "GFX_refitting"
+			position = { x = 85 y = 59 }
+			scale = 1
+			pdx_tooltip = "INDUSTRIAL_ORG_TOOLTIP_UPGRADE_ALREADY_ASSIGNED_MIO_DELAYED"
 		}
 
 		# iconType = {
@@ -2567,7 +2701,7 @@ guiTypes = {
 		# 	spriteType = "GFX_prod_line_glow"
 		# 	alwaystransparent = yes
 		# }
-
+		
 		buttonType = {
 			name = "increase_priority"
 			position = { x=5 y=48 }
@@ -2745,6 +2879,12 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "has_mio_background"
+			quadTextureSprite ="GFX_production_item_has_mio"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name ="production_line_selected"
 			spriteType = "GFX_production_line_selected_collapsed"
 			position = { x= 0 y = 0 }
@@ -2755,6 +2895,19 @@ guiTypes = {
 			spriteType = "GFX_conveyor_group_btn_frame"
 			position = { x= 1 y = 1 }
 		}
+
+		buttonType = {
+			name ="attach_manufacturer"
+			spriteType = "GFX_attach_manufacturer"
+			position = { x= 195 y = 1 }
+		}
+
+		buttonType = {
+			name ="change_manufacturer"
+			position = { x= 195 y = 1 }
+			spriteType = "GFX_attach_manufacturer"
+			scale = 0.45
+		}	
 
 		instantTextboxType = {
 			name = "priority"
@@ -3052,6 +3205,12 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "has_mio_background"
+			quadTextureSprite ="GFX_production_item_has_mio"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name ="production_line_selected"
 			spriteType = "GFX_production_line_selected"
 			position = { x= 2 y = 0 }
@@ -3075,6 +3234,19 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		buttonType = {
+			name ="attach_manufacturer"
+			spriteType = "GFX_attach_manufacturer"
+			position = { x= 195 y = 1 }
+		}
+
+		buttonType = {
+			name ="change_manufacturer"
+			position = { x= 195 y = 1 }
+			spriteType = "GFX_attach_manufacturer"
+			scale = 0.45
+		}
+
 		iconType = {
 			name ="outdated_equipment_overlay"
 			spriteType = "GFX_outdated_equipment_overlay"
@@ -3085,17 +3257,25 @@ guiTypes = {
 		iconType = {
 			name ="equipment_designer"
 			spriteType = "GFX_tech_idea_bg"
-			position = { x = 25 y = 48 }
+			position = { x = 10 y = 49 }
 			scale = 0.5
 			alwaystransparent = yes
 		}
 
-		# iconType = {
-		# 	name ="equipment_role"
-		# 	spriteType = "GFX_naval_equipment_role_icons"
-		# 	position = { x = 238 y = 49 }
-		# 	alwaystransparent = yes
-		# }
+		iconType = {
+			name ="equipment_designer_can_upgrade"
+			spriteType = "GFX_refitting"
+			position = { x = 50 y = 54 }
+			scale = 1
+			pdx_tooltip = "INDUSTRIAL_ORG_TOOLTIP_UPGRADE_ALREADY_ASSIGNED_MIO_DELAYED"
+		}
+
+		iconType = {
+			name ="equipment_role"
+			spriteType = "GFX_naval_equipment_role_icons"
+			position = { x = 238 y = 49 }
+			alwaystransparent = yes
+		}
 
 		iconType = {
 			name = "creator_flag"
@@ -3330,6 +3510,12 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "has_mio_background"
+			quadTextureSprite ="GFX_production_item_has_mio"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name ="production_line_selected"
 			spriteType = "GFX_production_line_selected"
 			position = { x= 2 y = 0 }
@@ -3339,6 +3525,19 @@ guiTypes = {
 			name ="priority_frame"
 			spriteType = "GFX_conveyor_group_btn_frame"
 			position = { x= 2 y = 1 }
+		}
+
+		buttonType = {
+			name ="attach_manufacturer"
+			spriteType = "GFX_attach_manufacturer"
+			position = { x= 195 y = 1 }
+		}
+
+		buttonType = {
+			name ="change_manufacturer"
+			position = { x= 195 y = 1 }
+			spriteType = "GFX_attach_manufacturer"
+			scale = 0.45
 		}
 
 		instantTextboxType = {
@@ -3607,6 +3806,12 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "has_mio_background"
+			quadTextureSprite ="GFX_production_item_has_mio"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name ="production_line_selected"
 			spriteType = "GFX_production_line_selected_collapsed"
 			position = { x= 0 y = 0 }
@@ -3832,6 +4037,12 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "has_mio_background"
+			quadTextureSprite ="GFX_production_item_has_mio"
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name ="production_line_selected"
 			spriteType = "GFX_production_line_selected_collapsed"
 			position = { x= 0 y = 0 }
@@ -3841,6 +4052,19 @@ guiTypes = {
 			name ="priority_frame"
 			spriteType = "GFX_conveyor_group_btn_frame"
 			position = { x= 1 y = 1 }
+		}
+
+		buttonType = {
+			name ="attach_manufacturer"
+			spriteType = "GFX_attach_manufacturer"
+			position = { x= 195 y = 1 }
+		}
+
+		buttonType = {
+			name ="change_manufacturer"
+			position = { x= 195 y = 1 }
+			spriteType = "GFX_attach_manufacturer"
+			scale = 0.45
 		}
 
 		instantTextboxType = {
@@ -4241,6 +4465,14 @@ guiTypes = {
 		}
 
 		iconType = {
+			name ="equipment_designer_can_upgrade"
+			spriteType = "GFX_refitting"
+			position = { x = 42 y = 42 }
+			scale = 1
+			pdx_tooltip = "INDUSTRIAL_ORG_TOOLTIP_UPGRADE_ALREADY_ASSIGNED_MIO_DELAYED"
+		}
+
+		iconType = {
 			name ="sub_tech"
 			spriteType = "GFX_land_equipment_role_icons"
 			position = { x=300 y=40 }
@@ -4380,6 +4612,14 @@ guiTypes = {
 			position = { x = 54 y = 35 }
 			scale = 0.5
 			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="equipment_designer_can_upgrade"
+			spriteType = "GFX_refitting"
+			position = { x = 78 y = 42 }
+			scale = 1
+			pdx_tooltip = "INDUSTRIAL_ORG_TOOLTIP_UPGRADE_ALREADY_ASSIGNED_MIO_DELAYED"
 		}
 
 		iconType = {

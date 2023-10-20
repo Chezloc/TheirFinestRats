@@ -1,0 +1,69 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+# SAF_iscor_organization = {
+#     name = SAF_iscor_organization
+#     include = generic_medium_tank_organization
+#     icon = GFX_idea_SAF_idea_iscor
+#     allowed = {
+#         original_TAG = SAF
+#         has_dlc = "Together for Victory"
+#     }
+# }
+
+SAF_cope_organization = {
+    name = SAF_cope_organization
+    include = generic_heavy_tank_organization
+    icon = GFX_idea_generic_tank_manufacturer_1
+    allowed = {
+        original_TAG = SAF
+        has_dlc = "Together for Victory"
+    }
+    available = {
+        SAF = {
+            has_completed_focus = SAF_queen_of_the_desert
+        }
+    }
+}
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################

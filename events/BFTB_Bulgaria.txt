@@ -5190,205 +5190,205 @@ country_event = {
 		custom_effect_tooltip = lar_portugal_purchase_ships.4.a_tt
 		hidden_effect = {
 			hidden_effect = { add_manpower = 600 } # 3 x 200MP/SS
-			if = {
-				limit = { has_dlc = "Man the Guns" }
-				if = {
-					limit = {
-						# FROM.FROM = { has_tech = advanced_ship_hull_submarine }
-					}
-					FROM.FROM = { #LVL4
-						create_equipment_variant = {
-							name = "Slava Class"				
-							type = ship_hull_submarine_4
-							name_group = BUL_SS_HISTORICAL
-							parent_version = 0
-							modules = {
-								fixed_ship_torpedo_slot = ship_torpedo_sub_1
-								fixed_ship_engine_slot = sub_ship_engine_1
-								rear_1_custom_slot = ship_torpedo_sub_1
-								front_1_custom_slot = ship_torpedo_sub_1
-							}
-						}
-					}
-					create_ship = { type = ship_hull_submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = ship_hull_submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = ship_hull_submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
-				}
-				else_if = { #LVL3
-					limit = {
-						FROM.FROM = { has_tech = improved_ship_hull_submarine }
-					}
-					FROM.FROM = {
-						create_equipment_variant = {
-							name = "Slava Class"				
-							type = ship_hull_submarine_3
-							name_group = BUL_SS_HISTORICAL
-							parent_version = 0
-							modules = {
-								fixed_ship_torpedo_slot = ship_torpedo_sub_1
-								fixed_ship_engine_slot = sub_ship_engine_1
-								rear_1_custom_slot = ship_torpedo_sub_1
-							}
-						}
-					}
-					create_ship = { type = ship_hull_submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = ship_hull_submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = ship_hull_submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
-				}
-				else_if = { #LVL2
-					limit = {
-						FROM.FROM = { has_tech = basic_ship_hull_submarine }
-					}
-					FROM.FROM = {
-						create_equipment_variant = {
-							name = "Slava Class"				
-							type = ship_hull_submarine_2
-							name_group = BUL_SS_HISTORICAL
-							parent_version = 0
-							modules = {
-								fixed_ship_torpedo_slot = ship_torpedo_sub_1
-								fixed_ship_engine_slot = sub_ship_engine_1
-								rear_1_custom_slot = ship_torpedo_sub_1
-							}
-						}
-					}
-					create_ship = { type = ship_hull_submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = ship_hull_submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = ship_hull_submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
-				}
-				else_if = { #LVL1
-					limit = {
-						FROM.FROM = { has_tech = early_ship_hull_submarine }
-					}
-					FROM.FROM = {
-						create_equipment_variant = {
-							name = "Slava Class"				
-							type = ship_hull_submarine_1
-							name_group = BUL_SS_HISTORICAL
-							parent_version = 0
-							modules = {
-								fixed_ship_torpedo_slot = ship_torpedo_sub_1
-								fixed_ship_engine_slot = sub_ship_engine_1
-							}
-						}
-					}
-					create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
-				}
-				else = { #Fallback
-					create_equipment_variant = {
-						name = "Slava Class"				
-						type = ship_hull_submarine_1
-						name_group = BUL_SS_HISTORICAL
-						parent_version = 0
-						modules = {
-							fixed_ship_torpedo_slot = ship_torpedo_sub_1
-							fixed_ship_engine_slot = sub_ship_engine_1
-						}
-					}
-					create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = ROOT }
-					create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = ROOT }
-					create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = ROOT }
-				}
-			}
-			else = { #NO MTG
-				if = { #LVL4
-					limit = {
-						FROM.FROM = { has_tech = advanced_submarine }
-					}
-					FROM.FROM = {
-						create_equipment_variant = {
-							name = "Slava Class"
-							type = submarine_4
-							upgrades = {
-								ship_reliability_upgrade = 3
-								sub_torpedo_upgrade = 3
-								sub_stealth_upgrade = 3
-								sub_engine_upgrade = 2
-							}
-						}
-					}
-					create_ship = { type = submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
-				}
-				else_if = { #LVL3
-					limit = {
-						FROM.FROM = { has_tech = improved_submarine }
-					}
-					FROM.FROM = {
-						create_equipment_variant = {
-							name = "Slava Class"
-							type = submarine_3
-							upgrades = {
-								ship_reliability_upgrade = 2
-								sub_torpedo_upgrade = 3
-								sub_stealth_upgrade = 2
-								sub_engine_upgrade = 2
-							}
-						}
-					}
-					create_ship = { type = submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
-				}
-				else_if = { #LVL2
-					limit = {
-						FROM.FROM = { has_tech = basic_submarine }
-					}
-					FROM.FROM = {
-						create_equipment_variant = {
-							name = "Slava Class"
-							type = submarine_2
-							upgrades = {
-								ship_reliability_upgrade = 2
-								sub_torpedo_upgrade = 2
-								sub_stealth_upgrade = 2
-								sub_engine_upgrade = 1
-							}
-						}
-					}
-					create_ship = { type = submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
-				}
-				else_if = { #LVL1
-					limit = {
-						FROM.FROM = { has_tech = early_submarine }
-					}
-					FROM.FROM = {
-						create_equipment_variant = {
-							name = "Slava Class"
-							type = submarine_1
-							upgrades = {
-								ship_reliability_upgrade = 1
-								sub_torpedo_upgrade = 1
-								sub_stealth_upgrade = 1
-								sub_engine_upgrade = 0
-							}
-						}
-					}
-					create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
-					create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
-				}
-				else = { #Fallback (assuming BUL has at least early tech)
-					create_equipment_variant = {
-						name = "Slava Class"
-						type = submarine_1
-						upgrades = {
-							ship_reliability_upgrade = 1
-							sub_torpedo_upgrade = 1
-							sub_stealth_upgrade = 1
-							sub_engine_upgrade = 0
-						}
-					}
-					create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = ROOT }
-					create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = ROOT }
-					create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = ROOT }
-				}
-			}
+			# if = {
+			# 	limit = { has_dlc = "Man the Guns" }
+			# 	if = {
+			# 		limit = {
+			# 			# FROM.FROM = { has_tech = advanced_ship_hull_submarine }
+			# 		}
+			# 		FROM.FROM = { #LVL4
+			# 			create_equipment_variant = {
+			# 				name = "Slava Class"				
+			# 				type = ship_hull_submarine_4
+			# 				name_group = BUL_SS_HISTORICAL
+			# 				parent_version = 0
+			# 				modules = {
+			# 					fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			# 					fixed_ship_engine_slot = sub_ship_engine_1
+			# 					rear_1_custom_slot = ship_torpedo_sub_1
+			# 					front_1_custom_slot = ship_torpedo_sub_1
+			# 				}
+			# 			}
+			# 		}
+			# 		create_ship = { type = ship_hull_submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = ship_hull_submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = ship_hull_submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 	}
+			# 	else_if = { #LVL3
+			# 		limit = {
+			# 			FROM.FROM = { has_tech = improved_ship_hull_submarine }
+			# 		}
+			# 		FROM.FROM = {
+			# 			create_equipment_variant = {
+			# 				name = "Slava Class"				
+			# 				type = ship_hull_submarine_3
+			# 				name_group = BUL_SS_HISTORICAL
+			# 				parent_version = 0
+			# 				modules = {
+			# 					fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			# 					fixed_ship_engine_slot = sub_ship_engine_1
+			# 					rear_1_custom_slot = ship_torpedo_sub_1
+			# 				}
+			# 			}
+			# 		}
+			# 		create_ship = { type = ship_hull_submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = ship_hull_submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = ship_hull_submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 	}
+			# 	else_if = { #LVL2
+			# 		limit = {
+			# 			FROM.FROM = { has_tech = basic_ship_hull_submarine }
+			# 		}
+			# 		FROM.FROM = {
+			# 			create_equipment_variant = {
+			# 				name = "Slava Class"				
+			# 				type = ship_hull_submarine_2
+			# 				name_group = BUL_SS_HISTORICAL
+			# 				parent_version = 0
+			# 				modules = {
+			# 					fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			# 					fixed_ship_engine_slot = sub_ship_engine_1
+			# 					rear_1_custom_slot = ship_torpedo_sub_1
+			# 				}
+			# 			}
+			# 		}
+			# 		create_ship = { type = ship_hull_submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = ship_hull_submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = ship_hull_submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 	}
+			# 	else_if = { #LVL1
+			# 		limit = {
+			# 			FROM.FROM = { has_tech = early_ship_hull_submarine }
+			# 		}
+			# 		FROM.FROM = {
+			# 			create_equipment_variant = {
+			# 				name = "Slava Class"				
+			# 				type = ship_hull_submarine_1
+			# 				name_group = BUL_SS_HISTORICAL
+			# 				parent_version = 0
+			# 				modules = {
+			# 					fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			# 					fixed_ship_engine_slot = sub_ship_engine_1
+			# 				}
+			# 			}
+			# 		}
+			# 		create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 	}
+			# 	else = { #Fallback
+			# 		create_equipment_variant = {
+			# 			name = "Slava Class"				
+			# 			type = ship_hull_submarine_1
+			# 			name_group = BUL_SS_HISTORICAL
+			# 			parent_version = 0
+			# 			modules = {
+			# 				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			# 				fixed_ship_engine_slot = sub_ship_engine_1
+			# 			}
+			# 		}
+			# 		create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = ROOT }
+			# 		create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = ROOT }
+			# 		create_ship = { type = ship_hull_submarine_1 equipment_variant = "Slava Class" creator = ROOT }
+			# 	}
+			# }
+			# else = { #NO MTG
+			# 	if = { #LVL4
+			# 		limit = {
+			# 			FROM.FROM = { has_tech = advanced_submarine }
+			# 		}
+			# 		FROM.FROM = {
+			# 			create_equipment_variant = {
+			# 				name = "Slava Class"
+			# 				type = submarine_4
+			# 				upgrades = {
+			# 					ship_reliability_upgrade = 3
+			# 					sub_torpedo_upgrade = 3
+			# 					sub_stealth_upgrade = 3
+			# 					sub_engine_upgrade = 2
+			# 				}
+			# 			}
+			# 		}
+			# 		create_ship = { type = submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = submarine_4 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 	}
+			# 	else_if = { #LVL3
+			# 		limit = {
+			# 			FROM.FROM = { has_tech = improved_submarine }
+			# 		}
+			# 		FROM.FROM = {
+			# 			create_equipment_variant = {
+			# 				name = "Slava Class"
+			# 				type = submarine_3
+			# 				upgrades = {
+			# 					ship_reliability_upgrade = 2
+			# 					sub_torpedo_upgrade = 3
+			# 					sub_stealth_upgrade = 2
+			# 					sub_engine_upgrade = 2
+			# 				}
+			# 			}
+			# 		}
+			# 		create_ship = { type = submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = submarine_3 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 	}
+			# 	else_if = { #LVL2
+			# 		limit = {
+			# 			FROM.FROM = { has_tech = basic_submarine }
+			# 		}
+			# 		FROM.FROM = {
+			# 			create_equipment_variant = {
+			# 				name = "Slava Class"
+			# 				type = submarine_2
+			# 				upgrades = {
+			# 					ship_reliability_upgrade = 2
+			# 					sub_torpedo_upgrade = 2
+			# 					sub_stealth_upgrade = 2
+			# 					sub_engine_upgrade = 1
+			# 				}
+			# 			}
+			# 		}
+			# 		create_ship = { type = submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = submarine_2 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 	}
+			# 	else_if = { #LVL1
+			# 		limit = {
+			# 			FROM.FROM = { has_tech = early_submarine }
+			# 		}
+			# 		FROM.FROM = {
+			# 			create_equipment_variant = {
+			# 				name = "Slava Class"
+			# 				type = submarine_1
+			# 				upgrades = {
+			# 					ship_reliability_upgrade = 1
+			# 					sub_torpedo_upgrade = 1
+			# 					sub_stealth_upgrade = 1
+			# 					sub_engine_upgrade = 0
+			# 				}
+			# 			}
+			# 		}
+			# 		create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 		create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = FROM.FROM }
+			# 	}
+			# 	else = { #Fallback (assuming BUL has at least early tech)
+			# 		create_equipment_variant = {
+			# 			name = "Slava Class"
+			# 			type = submarine_1
+			# 			upgrades = {
+			# 				ship_reliability_upgrade = 1
+			# 				sub_torpedo_upgrade = 1
+			# 				sub_stealth_upgrade = 1
+			# 				sub_engine_upgrade = 0
+			# 			}
+			# 		}
+			# 		create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = ROOT }
+			# 		create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = ROOT }
+			# 		create_ship = { type = submarine_1 equipment_variant = "Slava Class" creator = ROOT }
+			# 	}
+			# }
 
 		}
 	}

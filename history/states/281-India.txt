@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = WST
 		1936.1.1.13 = {
 			owner = WST
 		}
@@ -20,10 +21,11 @@ state={
 		victory_points = {
 			4967 1
 		}
-		add_core_of = WST
 	}
 
 	provinces={
 		4967 
 	}
+
+	local_supplies=0.0 
 }

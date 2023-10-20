@@ -9,6 +9,7 @@ state=
 		set_state_flag = ENG_controls
 		set_state_flag = UK_controls
 		owner = ENG
+		add_core_of = WST #ENG
 		victory_points = {
 			12003 5 
 		}
@@ -21,7 +22,8 @@ state=
 			}
 		}
 		set_state_flag = AFRICA_COMMONWEALTH_controls
-		add_core_of = WST #ENG
 	}
 	provinces= { 12003 }
+
+	local_supplies=0.0 
 }

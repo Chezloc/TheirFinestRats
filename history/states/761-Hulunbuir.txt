@@ -10,12 +10,16 @@ state={
 	history={
 		owner = MAN
 		add_core_of = CHI
+		#add_core_of = MAN
+		#add_core_of = PRC
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
 		}
-        1936.1.1.13 = {
+		1936.1.1.13 = {
             owner = WST 	
 		}
 	}
+
+	local_supplies=0.0 
 }

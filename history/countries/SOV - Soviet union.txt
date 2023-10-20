@@ -655,6 +655,7 @@ set_variable = { SOV_the_red_army_max_dig_in = 0 } # -> Experts in Camouflage
 set_variable = { SOV_the_red_army_dig_in_speed_factor = 0 } # -> Experts in Camouflage
 set_variable = { SOV_the_red_army_operative_slot  = 0 } # -> Organization of the Partisans
 set_variable = { SOV_the_red_army_max_command_power_mult = 0 } # -> Depoliticize the Military
+set_variable = { SOV_the_red_army_surrender_limit = -0.1 } # Make it so they surrneder sooner
 
 add_dynamic_modifier = { modifier = SOV_the_red_army_dynamic_modifier }
 
@@ -2317,6 +2318,6 @@ add_operation_token = {
 	token = token_navy_friendly
 }
 
-add_dynamic_modifier = { modifier = SOV_major_cities_lost }
+# add_dynamic_modifier = { modifier = SOV_major_cities_lost }
 
 SOV = { SOV = { set_occupation_law = liberate_workers_occupation } } # set default law

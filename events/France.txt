@@ -539,13 +539,13 @@ country_event = {
 				set_capital = { state = 635 }
 			}
 			country_event = { id = france.20 days = 1 }
-			every_owned_state = {
-				limit = { 
-					is_controlled_by = ITA 
-					is_core_of = FRA
-				}
-				set_state_flag = vichy_italian_conquest
-			}
+			# every_owned_state = {
+			# 	limit = { 
+			# 		is_controlled_by = ITA 
+			# 		is_core_of = FRA
+			# 	}
+			# 	set_state_flag = vichy_italian_conquest
+			# }
 			# become_exiled_in = { target = ENG legitimacy = 60 } #not working really
 		}
 		custom_effect_tooltip = establishing_vichy_tt
@@ -576,6 +576,7 @@ country_event = {
 						OR = {
 							state = 735
 							state = 21
+							state = 851
 							state = 32
 							state = 20
 							state = 26
@@ -612,8 +613,9 @@ country_event = {
 								state = 21
 								state = 1
 								state = 735
+								state = 851
 							}
-							has_state_flag = vichy_italian_conquest
+							# has_state_flag = vichy_italian_conquest
 						}
 						ITA = { transfer_state = PREV }
 					}
@@ -621,7 +623,8 @@ country_event = {
 					if = {
 						limit = {
 							21 = { is_controlled_by = ITA }
-							735 = { is_controlled_by = ITA } 
+							851 = { is_controlled_by = ITA } 
+							735 = { is_controlled_by = ITA } 	
 						}
 						ITA = { transfer_state = 32 }
 					}

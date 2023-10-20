@@ -2,7 +2,7 @@ state={
 	id=713
 	name="STATE_713"
 	manpower=96
-	state_category = metropolis
+	state_category = metropolis #tiny_island
 
 	history={
 		owner = VIC
@@ -18,4 +18,6 @@ state={
 	provinces={
 		2165 
 	}
+
+	local_supplies=0.0 
 }

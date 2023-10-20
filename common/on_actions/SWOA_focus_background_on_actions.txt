@@ -91,6 +91,15 @@ on_actions = {
 			FIN = {
 				set_variable = { show_background = 12 }
 			}
+			SWE = {
+				set_variable = { show_background = 22 }
+			}
+			NOR = {
+				set_variable = { show_background = 23 }
+			}
+			DEN = {
+				set_variable = { show_background = 24 }
+			}
 		}
 	}
 }

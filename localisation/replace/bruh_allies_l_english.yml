@@ -42,6 +42,9 @@
   COM_rebels_idea:0 "Resistance Contacts"
   COM_vauxhall:0 "Vauxhall Motors"
   COM_rsaf_enfield:0 "RSAF Enfield"
+  COM_vauxhall_organization:0 "Vauxhall Motors"
+  COM_gloucestershire_diesel_factory_organization:0 "Gloucestershire Diesel Factory"
+  COM_rsaf_enfield_organization:0 "RSAF Enfield"
   AHC_high_command_reorganization:0 "High Command Reorganization"
   AHC_WARNING_TT:0 "§RPP and Advisor Cost reduction is given in case your army advisors are fired, please check after completing this focus!§!"
 

@@ -2,6 +2,8 @@ technologies = {
 
 	mobile_warfare = {
 		
+		doctrine_name = "MOBILE_WARFARE_DOCTRINE"
+
 		xp_unlock_cost = 0
 		xp_research_type = army
 		
@@ -49,7 +51,7 @@ technologies = {
 		}
 		
 		ai_research_weights = {
-			armor = 2.0
+			armor = 4.0
 		}
 		
 	}
@@ -89,9 +91,18 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 3.0
+		}
 	}
 	
 	elastic_defence = {
@@ -133,9 +144,18 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.0
+		}
 	}
 	
 	mobile_infantry = { #Branch focuses on infantry, included Motorised and Mechanised.
@@ -178,7 +198,33 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+
+			modifier = {
+				tag = GER
+				factor = 2
+			}
+		}
+		
+		ai_research_weights = {
+			armor = 1.0
+			defensive = -2.0
+			motorized_equipment = 3.0
+			cat_mechanized_equipment = 5.0
 		}
 	}
 	
@@ -214,9 +260,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.0
+			defensive = -12.0
+		}
 	}
 	
 	mechanised_offensive = {
@@ -255,9 +319,28 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.0
+			motorized_equipment = 2.0
+			cat_mechanized_equipment = 2.0
+		}
 	}
 	
 	armored_spearhead = { #Branch focused on Tanks 
@@ -302,9 +385,28 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 30
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 16.0
+			offensive = -1.0
+			cat_mechanized_equipment = 2.0
+		}
 	}
 	
 	schwerpunk = {
@@ -338,9 +440,28 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 30
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.5
+			offensive = -2.0
+			cat_mechanized_equipment = 1.5
+		}
 	}
 	
 	blitzkrieg = {
@@ -385,9 +506,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 30
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.5
+			cat_mechanized_equipment = 1.5
+		}
 	}
 	
 	kampfgruppe = {		
@@ -432,9 +571,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 25
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 3.0
+		}
 	}
 	
 	firebrigades = { #Branch focused on mobile warfares
@@ -489,9 +645,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 25
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.0
+		}
 	}
 	
 	backhand_blow = {
@@ -526,9 +699,20 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 25
+			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.0
+		}
 	}
 	
 	modern_blitzkrieg = {
@@ -565,9 +749,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 25
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.0
+		}
 	}
 	
 	volkssturm = {
@@ -608,9 +809,30 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				tag = GER
+				factor = 3
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.0
+		}
 	}
 	
 	nd_conscription = { #Conjuncted Defence
@@ -648,9 +870,20 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 28
+			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
+		ai_research_weights = {
+			armor = 2.0
+		}
 	}
 	
 	werwolf_guerillas  = {
@@ -681,11 +914,24 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 18
+			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			armor = 2.0
 		}
 	}
 	
 	superior_firepower = {
+		doctrine_name = "SUPERIOR_FIREPOWER_DOCTRINE"
 
 		xp_unlock_cost = 0
 		xp_research_type = army
@@ -721,11 +967,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
 		}
 		
 		ai_research_weights = {
-			artillery = 2.0
+			artillery = 4.0
 		}
 	}
 	
@@ -763,7 +1015,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 12
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			artillery = 3.0
 		}
 	}
 	
@@ -806,7 +1068,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 12
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			artillery = 2.0
 		}
 	}
 	
@@ -851,7 +1123,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -890,7 +1180,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -935,7 +1243,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 13
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -973,7 +1299,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 13
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -1019,7 +1363,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 9
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -1057,7 +1419,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -1093,7 +1473,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -1126,7 +1524,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -1159,7 +1575,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -1197,7 +1631,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 11
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -1230,7 +1682,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 11
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -1276,7 +1746,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 11
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
@@ -1307,12 +1795,31 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 11
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			artillery = 1.0
 		}
 	}
 	
 	
 	trench_warfare = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
 
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
@@ -1347,7 +1854,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1388,10 +1901,22 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-            modifier = { 
-                factor = 2
-				OR = { is_in_faction_with = ENG tag = ENG }
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
+			
+			modifier = {
+				factor = 0.25
+				has_idea = FRA_victors_of_wwi
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 2.5
+			motorized_equipment = 2.0
 		}
 	}
 	
@@ -1434,6 +1959,17 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1474,6 +2010,25 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1515,7 +2070,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.35
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.65
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+			cat_mechanized_equipment = 1.0
 		}
 	}
 	
@@ -1548,7 +2123,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.3
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.6
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+			cat_mechanized_equipment = 1.0
 		}
 	}
 	
@@ -1591,7 +2186,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.55
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1628,7 +2242,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.2
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+			cat_mechanized_equipment = 1.0
 		}
 	}
 	
@@ -1669,7 +2303,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.45
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1705,7 +2358,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.1
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.4
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1743,7 +2415,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 16
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.35
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.65
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1777,7 +2468,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.3
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.6
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1811,7 +2521,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.55
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1845,7 +2574,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.2
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1882,7 +2630,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 13
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.45
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1912,7 +2679,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 13
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.1
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.4
+			}
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 		}
 	}
 	
@@ -1947,18 +2733,18 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 20
 			modifier = {
-				tag = CHI
-				add = 100
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
 		}
 		
 		ai_research_weights = {
 			industry = 2.0
-			infantry = 1.5
 		}
-		
 	}
 	
 	pocket_defence = {
@@ -1992,13 +2778,18 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 12
+			factor = 20
 			modifier = {
-				tag = CHI
-				add = 100
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
 		}
 		
+		ai_research_weights = {
+			industry = 2.0
+		}
 	}
 	
 	defence_in_depth = {
@@ -2042,11 +2833,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 12
+			factor = 20
 			modifier = {
-				tag = CHI
-				add = 100
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 	}
 	
@@ -2084,15 +2881,37 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 			modifier = {
-			    tag = SOV
-				factor = 10
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
 			modifier = {
-			    tag = CHI
-				factor = 0
+				tag = SOV
+				factor = 2
 			}
+
+			modifier = {
+				factor = 0.4
+
+				OR = {
+					tag = CHI
+				}
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 	}
 	
@@ -2130,7 +2949,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 	}
 	
@@ -2172,9 +3009,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.35
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.65
+			}
 		}
 		
+		ai_research_weights = {
+			industry = 2.0
+		}
 	}
 	
 	vast_offensives = {
@@ -2208,7 +3062,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.35
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.65
+			}
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 	}
 	
@@ -2253,7 +3125,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.25
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 	}
 	
@@ -2296,7 +3186,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+			cat_mechanized_equipment = 3.0
 		}
 	}
 	
@@ -2333,7 +3242,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.1
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.35
+			}
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 	}
 	
@@ -2379,15 +3306,33 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 			modifier = {
-			    tag = CHI
-				factor = 100
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
 			modifier = {
-			    tag = SOV
-				factor = 0
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.5
 			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.75
+			}
+			modifier = {
+				factor = 0.6
+
+				OR = {
+					tag = CHI
+				}
+			}
+
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 	}
 	
@@ -2428,11 +3373,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 			modifier = {
-			    tag = CHI
-				factor = 100
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 	}
 	
@@ -2469,11 +3420,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 			modifier = {
-			    tag = CHI
-				factor = 100
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 	}
 	
@@ -2512,15 +3469,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 			modifier = {
-			    tag = CHI
-				factor = 100
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
 		}
 		
 		ai_research_weights = {
-			infantry_weapons = 2.0
+			infantry_weapons = 1.0
 			industry = 2.0
 		}
 	}
@@ -2553,23 +3512,31 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
 			modifier = {
-			    tag = CHI
-				factor = 100
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
 			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
 		}
 		
 		
 	}
 	
-	masterful_blitz = {	
-		enable_tactic = tactic_masterful_blitz	
-		doctrine = yes	
-		research_cost = 1	
-		#set at gamestart	
-		allow = {	
-			always = no	
-		}	
+	masterful_blitz = {
+		enable_tactic = tactic_masterful_blitz
+
+		doctrine = yes
+		research_cost = 1
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
 	}
 }

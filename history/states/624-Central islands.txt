@@ -4,14 +4,14 @@ state=
 	name="STATE_624"
 	manpower = 1290672
 	state_category = town
-
+	
 	resources = {
 		rubber = 25
 	}
-	
+
 	history=
 	{
-				owner = USA
+		owner = USA
 		1936.1.1.13 = {
 			owner = WST
 		}
@@ -32,4 +32,6 @@ state=
 	provinces={
 		1372 4228 4288 4377 7307 10272 10306 12279 
 	}
+
+	local_supplies=0.0 
 }

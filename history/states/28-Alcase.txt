@@ -27,26 +27,32 @@ state={
 			678 = {
 				bunker = 5
 				fortress = 5
+
 			}
 			3629 = {
 				bunker = 5
 				fortress = 5
+
 			}
 			6529 = {
 				bunker = 5
 				fortress = 5
+
 			}
 			9503 = {
 				bunker = 5
 				fortress = 5
+
 			}
 			9559 = {
 				bunker = 5
 				fortress = 5
+
 			}
 			11502 = {
 				bunker = 5
 				fortress = 5
+
 			}
 			anti_air_building = 5
 			air_base = 5
@@ -63,4 +69,6 @@ state={
 	provinces={
 		549 678 1346 3629 6529 9503 9559 11502 
 	}
+
+	local_supplies=14.0 
 }

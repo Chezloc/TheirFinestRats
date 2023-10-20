@@ -1803,6 +1803,8 @@ FRA_intervention_in_overseas_territories = {
 								state = 778
 								state = 781
 								state = 776
+								state = 899
+								state = 898
 							}
 						}
 						add_compliance = 5
@@ -2337,7 +2339,7 @@ FRA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_factor = -0.025
+			consumer_goods_factor = -0.09
 			political_power_gain = 0.10
 		}
 

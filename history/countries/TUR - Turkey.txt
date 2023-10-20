@@ -8,7 +8,7 @@ oob = "TUR_1936"
 # 		set_naval_oob = "TUR_1936_naval_legacy"
 # 	}
 # }
-
+set_cosmetic_tag = TUR_neutrality
 set_research_slots = 1
 
 # MP_garrison_division_standard = yes

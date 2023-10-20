@@ -7,11 +7,9 @@ state=
 	history=
 	{
 		owner = ENG
-		# 1936.1.1.13 = {
-		# 	owner = WST
-		# }
 		# add_core_of = ENG
 		add_core_of = CHI
+		#add_core_of = PRC
 		victory_points = {
 			10062 3 
 		}
@@ -19,7 +17,11 @@ state=
 			industrial_complex = 3
 			infrastructure = 5
 			air_base = 1
-			13310 = {
+			13321 = {
+				coastal_bunker = 1
+				bunker = 1
+			}
+			13322 = {
 				naval_base = 6
 				coastal_bunker = 1
 				bunker = 1
@@ -27,6 +29,8 @@ state=
 		}
 	}
 	provinces={
-		10062 13309 13310 
+		10062 13321 13322
 	}
+
+	local_supplies=0.0 
 }

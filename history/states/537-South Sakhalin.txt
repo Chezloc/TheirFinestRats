@@ -9,12 +9,12 @@ state= {
 	state_category = rural
 
 	history= {
-				owner = JAP
-        1936.1.1.13 = {
+		owner = JAP
+		1936.1.1.13 = {
             owner = WST 	
-		}	
+		}
 		#add_core_of = JAP
-		#add_claim_by = SOV # Removed because of too much aggression
+		
 		buildings = {
 			infrastructure = 3
 			12446 = {
@@ -30,4 +30,6 @@ state= {
 	provinces=
 	{
 1322 1820 12446 	}
+
+	local_supplies=0.0 
 }

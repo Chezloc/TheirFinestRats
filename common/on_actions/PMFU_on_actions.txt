@@ -306,18 +306,18 @@ on_actions = {
 				}
 				SOV = {
 					annex_country = { target = MON transfer_troops = no }
-					add_state_core = 287
-					add_state_core = 329
-					add_state_core = 330
-					add_state_core = 617
-					add_state_core = 618
-					add_state_core = 619
-					add_state_core = 759
-					add_state_core = 760
-					add_state_core = 817
-					add_state_core = 818
-					add_state_core = 819
-					add_state_core = 820
+					# add_state_core = 287
+					# add_state_core = 329
+					# add_state_core = 330
+					# add_state_core = 617
+					# add_state_core = 618
+					# add_state_core = 619
+					# add_state_core = 759
+					# add_state_core = 760
+					# add_state_core = 817
+					# add_state_core = 818
+					# add_state_core = 819
+					# add_state_core = 820
 				}
 			}
 		}
@@ -1044,7 +1044,7 @@ on_actions = {
 							mot_anti_air_brigade = { x = 0 y = 3 }
 					
 							ss_hq_company_medium = { x = 1 y = 0 }
-							assault_engineer = { x = 1 y = 1 }
+							engineer = { x = 1 y = 1 }
 							signal_company = { x = 1 y = 2 }
 							maintenance_company = { x = 1 y = 3 }
 						}

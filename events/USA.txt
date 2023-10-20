@@ -256,22 +256,22 @@ country_event = {
 			357 = {
 				set_state_flag = USA_me_red	
 			}
-			837 = {
+			937 = {
 				set_state_flag = USA_nh_swing
 			}
-			838 = {
+			938 = {
 				set_state_flag = USA_vt_red
 			}
-			839 = {
+			939 = {
 				set_state_flag = USA_ri_swing
 			}
-			840 = {
+			940 = {
 				set_state_flag = USA_ct_swing
 			}
-			841 = {
+			941 = {
 				set_state_flag = USA_ma_swing
 			}
-			842 = {
+			942 = {
 				set_state_flag = USA_de_swing
 			}
 			every_state = {
@@ -406,22 +406,22 @@ country_event = {
 			357 = {
 				set_state_flag = USA_me_red
 			}
-			837 = {
+			937 = {
 				set_state_flag = USA_nh_red
 			}
-			838 = {
+			938 = {
 				set_state_flag = USA_vt_red
 			}
-			839 = {
+			939 = {
 				set_state_flag = USA_ri_red
 			}
-			840 = {
+			940 = {
 				set_state_flag = USA_ct_red
 			}
-			841 = {
+			941 = {
 				set_state_flag = USA_ma_red
 			}
-			842 = {
+			942 = {
 				set_state_flag = USA_de_red
 			}
 			every_state = {
@@ -585,22 +585,22 @@ country_event = {
 			357 = {
 				set_state_flag = USA_me_red
 			}
-			837 = {
+			937 = {
 				set_state_flag = USA_nh_swing
 			}
-			838 = {
+			938 = {
 				set_state_flag = USA_vt_red
 			}
-			839 = {
+			939 = {
 				set_state_flag = USA_ri_blue
 			}
-			840 = {
+			940 = {
 				set_state_flag = USA_ct_swing
 			}
-			841 = {
+			941 = {
 				set_state_flag = USA_ma_swing
 			}
-			842 = {
+			942 = {
 				set_state_flag = USA_de_swing
 			}
 			every_state = {
@@ -744,22 +744,22 @@ country_event = {
 			357 = {
 				set_state_flag = USA_me_red
 			}
-			837 = {
+			937 = {
 				set_state_flag = USA_nh_swing
 			}
-			838 = {
+			938 = {
 				set_state_flag = USA_vt_red
 			}
-			839 = {
+			939 = {
 				set_state_flag = USA_ri_blue
 			}
-			840 = {
+			940 = {
 				set_state_flag = USA_ct_swing
 			}
-			841 = {
+			941 = {
 				set_state_flag = USA_ma_swing
 			}
-			842 = {
+			942 = {
 				set_state_flag = USA_de_swing
 			}
 			every_state = {
@@ -971,22 +971,22 @@ country_event = {
 			357 = {
 				set_state_flag = USA_me_red
 			}
-			837 = {
+			937 = {
 				set_state_flag = USA_nh_swing
 			}
-			838 = {
+			938 = {
 				set_state_flag = USA_vt_red
 			}
-			839 = {
+			939 = {
 				set_state_flag = USA_ri_blue
 			}
-			840 = {
+			940 = {
 				set_state_flag = USA_ct_swing
 			}
-			841 = {
+			941 = {
 				set_state_flag = USA_ma_swing
 			}
-			842 = {
+			942 = {
 				set_state_flag = USA_de_blue
 			}
 			every_state = {
@@ -1133,22 +1133,22 @@ country_event = {
 			357 = {
 				set_state_flag = USA_me_red
 			}
-			837 = {
+			937 = {
 				set_state_flag = USA_nh_swing
 			}
-			838 = {
+			938 = {
 				set_state_flag = USA_vt_red
 			}
-			839 = {
+			939 = {
 				set_state_flag = USA_ri_blue
 			}
-			840 = {
+			940 = {
 				set_state_flag = USA_ct_swing
 			}
-			841 = {
+			941 = {
 				set_state_flag = USA_ma_swing
 			}
-			842 = {
+			942 = {
 				set_state_flag = USA_de_blue
 			}
 			every_state = {
@@ -1296,22 +1296,22 @@ country_event = {
 			357 = {
 				set_state_flag = USA_me_red
 			}
-			837 = {
+			937 = {
 				set_state_flag = USA_nh_swing
 			}
-			838 = {
+			938 = {
 				set_state_flag = USA_vt_red
 			}
-			839 = {
+			939 = {
 				set_state_flag = USA_ri_blue
 			}
-			840 = {
+			940 = {
 				set_state_flag = USA_ct_swing
 			}
-			841 = {
+			941 = {
 				set_state_flag = USA_ma_swing
 			}
-			842 = {
+			942 = {
 				set_state_flag = USA_de_blue
 			}
 			every_state = {

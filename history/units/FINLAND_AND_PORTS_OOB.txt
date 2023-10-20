@@ -9,42 +9,42 @@ division_template = {
 }
 units = {
 	division= {
-		location = 13306
+		location = 13319
 		division_template = "Placement Divsion"
 		start_experience_factor = 0
 		start_equipment_factor = 0.01
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 	}
 	division= {
-		location = 13306
+		location = 13319
 		division_template = "Placement Divsion"
 		start_experience_factor = 0
 		start_equipment_factor = 0.01
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 	}
 	division= {
-		location = 13306
+		location = 13319
 		division_template = "Placement Divsion"
 		start_experience_factor = 0
 		start_equipment_factor = 0.01
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 	}
 	division= {
-		location = 13306
+		location = 13319
 		division_template = "Placement Divsion"
 		start_experience_factor = 0
 		start_equipment_factor = 0.01
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 	}
 	division= {
-		location = 13306
+		location = 13319
 		division_template = "Placement Divsion"
 		start_experience_factor = 0
 		start_equipment_factor = 0.01
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 	}
 	division= {
-		location = 13306
+		location = 13319
 		division_template = "Placement Divsion"
 		start_experience_factor = 0
 		start_equipment_factor = 0.01

@@ -2531,6 +2531,12 @@ focus_tree = {
 							add_core_of = GER
 						}
 					}
+					848 = {
+						if = {
+							limit = { is_owned_by = AUS }
+							add_core_of = GER
+						}
+					}
 					AUS = {
 						every_unit_leader = {
 							set_nationality = GER
@@ -2650,6 +2656,21 @@ focus_tree = {
 						}
 					}
 					add_state_core = 153
+				}
+				if = {
+					limit = {
+						848 = {
+							owner = {
+								NOT = {
+									tag = AUS
+								}
+								NOT = {
+									is_in_faction_with = ROOT
+								}
+							}
+						}
+					}
+					add_state_core = 848
 				}
 			}
 		}
@@ -2989,7 +3010,7 @@ focus_tree = {
 				}
 				annex_country = { target = DEN transfer_troops = no }
 				ENG = {
-					transfer_state = 100
+					# transfer_state = 100
 					transfer_state = 101
 					transfer_state = 337
 				}
@@ -6775,7 +6796,7 @@ focus_tree = {
 						mot_anti_air_brigade = { x = 0 y = 3 }
 				
 						ss_hq_company_medium = { x = 1 y = 0 }
-						assault_engineer = { x = 1 y = 1 }
+						engineer = { x = 1 y = 1 }
 						signal_company = { x = 1 y = 2 }
 						maintenance_company = { x = 1 y = 3 }
 					}

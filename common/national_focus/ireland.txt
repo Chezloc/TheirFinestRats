@@ -895,6 +895,12 @@ focus_tree = {
         ai_will_do = {
             factor = 1
         }
+
+		allow_branch = {
+			NOT = {
+				has_dlc = "Arms Against Tyranny"
+			}
+		}
     
         available = {
     

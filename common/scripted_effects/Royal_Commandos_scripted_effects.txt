@@ -32,7 +32,7 @@ Royal_Commandos_division_standard = {
 		artillery_brigade = { x = 4 y = 3 }
 	}
 	support = { 
-		assault_engineer = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
 		signal_company = { x = 0 y = 1 }   
 		recon = { x = 0 y = 2 }
 		logistics_company  = { x = 0 y = 3 }

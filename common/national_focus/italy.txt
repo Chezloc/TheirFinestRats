@@ -2291,8 +2291,20 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = beretta
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ITA_beretta_organization
+				mio:ITA_beretta_organization = {
+					add_mio_size = 2
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = beretta
+			}
 		}
 	}
 	
@@ -2743,7 +2755,18 @@ focus_tree = {
 						}
 					}
 				}
-				
+				851 = {
+					CONTROLLER = {
+						OR = {
+							tag = GER
+							AND = {
+								original_tag = FRA
+								has_government = fascism
+							}
+							is_subject_of = GER
+						}
+					}
+				}
 			}
 		}
 		x = -2
@@ -5282,8 +5305,20 @@ focus_tree = {
 				uses = 2
 				category = naval_bomber
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = caproni
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ITA_caproni_organization
+				mio:ITA_caproni_organization = {
+					add_mio_size = 2
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = caproni
+			}
 		}
 	}
 	

@@ -8,7 +8,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 597
+		}
 		}
 
 		available = {
@@ -59,7 +61,9 @@ prospect_for_resources = {
 
 		}
 		highlight_states = {
+			highlight_state_targets = {
 			state = 621
+		}
 		}
 		available = {
 			has_tech = excavation2
@@ -109,7 +113,9 @@ prospect_for_resources = {
 
 		}
 		highlight_states = {
+			highlight_state_targets = {
 			state = 714
+		}
 		}
 		available = {
 			has_tech = excavation2
@@ -158,7 +164,9 @@ prospect_for_resources = {
 
 		}
 		highlight_states = {
+			highlight_state_targets = {
 			state = 714
+		}
 		}
 		available = {
 			has_tech = excavation4
@@ -215,7 +223,9 @@ prospect_for_resources = {
 			controls_state = 325
 		}
 		highlight_states = {
+			highlight_state_targets = {
 			state = 325
+		}
 		}
 
 		visible = {
@@ -265,7 +275,9 @@ prospect_for_resources = {
 			controls_state = 328
 		}
 		highlight_states = {
+			highlight_state_targets = {
 			state = 328
+		}
 		}
 
 		visible = {
@@ -315,7 +327,9 @@ prospect_for_resources = {
 			controls_state = 605
 		}
 		highlight_states = {
+			highlight_state_targets = {
 			state = 605
+		}
 		}
 
 		visible = {
@@ -366,7 +380,9 @@ prospect_for_resources = {
 			has_tech = excavation3
 		}
 		highlight_states = {
+			highlight_state_targets = {
 			state = 623
+		}
 		}
 
 		visible = {
@@ -411,7 +427,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 627
+		}
 		}
 
 		available = {
@@ -470,7 +488,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 625
+		}
 		}
 
 		visible = {
@@ -523,7 +543,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 725
+		}
 		}
 
 		visible = {
@@ -579,7 +601,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 671
+		}
 		}
 
 		visible = {
@@ -631,7 +655,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 336
+		}
 		}
 
 		visible = {
@@ -683,7 +709,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 662
+		}
 		}
 
 		visible = {
@@ -739,7 +767,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 450
+		}
 		}
 
 		visible = {
@@ -794,7 +824,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 518
+		}
 		}
 
 		visible = {
@@ -848,7 +880,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 556
+		}
 		}
 
 		visible = {
@@ -902,7 +936,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 556
+		}
 		}
 
 		visible = {
@@ -959,7 +995,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 543
+		}
 		}
 
 		visible = {
@@ -1012,7 +1050,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 543
+		}
 		}
 
 		visible = {
@@ -1068,7 +1108,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 558
+		}
 		}
 
 		visible = {
@@ -1121,7 +1163,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 56
+		}
 		}
 
 		available = {
@@ -1184,7 +1228,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 4
+		}
 		}
 
 		visible = {
@@ -1232,7 +1278,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 36
+		}
 		}
 
 		available = {
@@ -1285,7 +1333,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 347
+		}
 		}
 
 		available = {
@@ -1337,7 +1387,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 331
+		}
 		}
 
 		available = {
@@ -1386,7 +1438,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_quebec_steel = { #466
+	develop_quebec_steel = { #862
 
 		icon = steel
 
@@ -1397,20 +1449,22 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 10
-			466 = {
+			862 = {
 				infrastructure > 2
 			}
-			owns_state = 466
-			controls_state = 466
+			owns_state = 862
+			controls_state = 862
 		}
 		highlight_states = {
-			state = 466
+			highlight_state_targets = {
+				state = 862
+			}
 		}
 
 		visible = {
-			owns_state = 466
-			controls_state = 466
-			466 = {
+			owns_state = 862
+			controls_state = 862
+			862 = {
 				NOT = {
 					has_state_flag = quebec_steel_developed
 				}
@@ -1426,10 +1480,10 @@ prospect_for_resources = {
 			civilian_factory_use = 11
 		}
 		remove_effect = {
-			466 = {
+			862 = {
 				set_state_flag = quebec_steel_developed
 			}
-			466 = {
+			862 = {
 				add_resource = {
 					type = steel
 					amount = 220
@@ -1451,7 +1505,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 315
+		}
 		}
 
 		available = {
@@ -1506,7 +1562,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 372
+		}
 		}
 
 		available = {
@@ -1591,7 +1649,9 @@ prospect_for_resources = {
 
 		}
 		highlight_states = {
+			highlight_state_targets = {
 			state = 358
+		}
 		}
 		available = {
 			has_tech = excavation3
@@ -1683,7 +1743,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 368
+		}
 		}
 
 		visible = {
@@ -1769,7 +1831,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 386
+		}
 		}
 
 		visible = {
@@ -1848,7 +1912,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 387
+		}
 		}
 
 		available = {
@@ -1934,7 +2000,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 378
+		}
 		}
 
 		available = {
@@ -2027,7 +2095,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 391
+		}
 		}
 
 		visible = {
@@ -2106,7 +2176,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 360
+		}
 		}
 
 		available = {
@@ -2200,7 +2272,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 261
+		}
 		}
 
 		visible = {
@@ -2279,7 +2353,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 396
+		}
 		}
 
 		available = {
@@ -2366,7 +2442,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 388
+		}
 		}
 
 		available = {
@@ -2454,7 +2532,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 378
+		}
 		}
 
 		available = {
@@ -2533,11 +2613,193 @@ prospect_for_resources = {
 		}
 	}
 
+	develop_oregon_chromium_deposits = { #385
+
+		icon = chromium
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 385
+			}
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 5
+			owns_state = 385
+			controls_state = 385
+		}
+
+		visible = {
+			owns_state = 385
+			controls_state = 385
+			has_tech = excavation3
+			385 = {
+				NOT = {
+					has_state_flag = {
+						flag = oregon_chromium_developed
+						value = 5
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = USA_oregon_chromium_duration?90
+
+		modifier = {
+			civilian_factory_use = 6
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
+			add_to_variable = { var = USA_oregon_chromium_duration value = 90 }
+			385 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = oregon_chromium_developed
+						}
+					}
+					set_state_flag = {
+						flag = oregon_chromium_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = oregon_chromium_developed
+						value = 1
+					}
+				}
+			}
+			385 = {
+				add_resource = {
+					type = chromium
+					amount = 120
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = USA_oregon_chromium_duration value = 90 compare = less_than }
+				}
+				set_variable = { var = USA_oregon_chromium_duration value = 90 }
+			}
+		}
+	}
+
+	develop_alaska_chromium_deposits = { #463
+
+		icon = chromium
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 463
+			}
+		}
+
+		available = {
+			has_tech = excavation5
+			num_of_civilian_factories_available_for_projects > 5
+			owns_state = 463
+			controls_state = 463
+		}
+
+		visible = {
+			owns_state = 463
+			controls_state = 463
+			has_tech = excavation3
+			463 = {
+				NOT = {
+					has_state_flag = {
+						flag = alaska_chromium_developed
+						value = 5
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = USA_alaska_chromium_duration?90
+
+		modifier = {
+			civilian_factory_use = 6
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
+			add_to_variable = { var = USA_oregon_chromium_duration value = 90 }
+			463 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = oregon_chromium_developed
+						}
+					}
+					set_state_flag = {
+						flag = alaska_chromium_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = alaska_chromium_developed
+						value = 1
+					}
+				}
+			}
+			463 = {
+				add_resource = {
+					type = chromium
+					amount = 120
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { var = USA_alaska_chromium_duration value = 90 compare = less_than }
+				}
+				set_variable = { var = USA_alaska_chromium_duration value = 90 }
+			}
+		}
+	}
+
 	develop_south_sakhalin_oil_deposits = { #537
 		icon = oil
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 537
+		}
 		}
 
 		allowed = {
@@ -2584,7 +2846,9 @@ prospect_for_resources = {
 		icon = aluminium
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 647
+		}
 		}
 
 		allowed = {
@@ -2642,7 +2906,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 123
+		}
 		}
 
 		visible = {
@@ -2699,7 +2965,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 123
+		}
 		}
 
 		visible = {
@@ -2740,7 +3008,9 @@ prospect_for_resources = {
 		icon = aluminium
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 195
+		}
 		}
 
 		allowed = {
@@ -2786,7 +3056,9 @@ prospect_for_resources = {
 		icon = aluminium
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 653
+		}
 		}
 
 		allowed = {
@@ -2832,7 +3104,9 @@ prospect_for_resources = {
 		icon = aluminium
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 217
+		}
 		}
 
 		allowed = {
@@ -2896,7 +3170,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 233
+		}
 		}
 
 		visible = {
@@ -2954,7 +3230,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 233
+		}
 		}
 
 		visible = {
@@ -3013,7 +3291,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 404
+		}
 		}
 
 		visible = {
@@ -3073,7 +3353,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 572
+		}
 		}
 
 		visible = {
@@ -3153,7 +3435,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 573
+		}
 		}
 
 		visible = {
@@ -3211,7 +3495,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 573
+		}
 		}
 
 		visible = {
@@ -3263,7 +3549,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 220
+		}
 		}
 
 		available = {
@@ -3350,7 +3638,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 220
+		}
 		}
 
 		available = {
@@ -3441,7 +3731,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 220
+		}
 		}
 
 		available = {
@@ -3532,7 +3824,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 240
+		}
 		}
 
 		available = {
@@ -3619,7 +3913,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 240
+		}
 		}
 
 		available = {
@@ -3710,7 +4006,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 240
+		}
 		}
 
 		available = {
@@ -3808,7 +4106,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 407
+		}
 		}
 
 		visible = {
@@ -3866,7 +4166,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 407
+		}
 		}
 
 		visible = {
@@ -3918,7 +4220,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 716
+		}
 		}
 
 		available = {
@@ -3972,7 +4276,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 527
+		}
 		}
 
 		available = {
@@ -4054,7 +4360,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 658
+		}
 		}
 
 		available = {
@@ -4116,7 +4424,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 656
+		}
 		}
 
 		visible = {
@@ -4190,7 +4500,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 413
+		}
 		}
 
 		available = {
@@ -4245,7 +4557,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 412
+		}
 		}
 
 		available = {
@@ -4300,7 +4614,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 291
+		}
 		}
 
 		available = {
@@ -4355,7 +4671,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 676
+		}
 		}
 
 		available = {
@@ -4400,7 +4718,7 @@ prospect_for_resources = {
 			}
 		}
 	}
-	develop_nejd_oil_fields = { #292
+	develop_nejd_oil_fields = { #859
 
 		icon = oil
 
@@ -4410,20 +4728,22 @@ prospect_for_resources = {
 
 		available = {
 			has_tech = excavation5
-			owns_state = 292
-			controls_state = 292
+			owns_state = 859
+			controls_state = 859
 			num_of_civilian_factories_available_for_projects > 14
 		}
 
 		highlight_states = {
-			state = 292
+			highlight_state_targets = {
+				state = 859
+			}
 		}
 
 		visible = {
-			owns_state = 292
-			controls_state = 292
+			owns_state = 859
+			controls_state = 859
 			has_tech = excavation4
-			292 = {
+			859 = {
 				NOT = {
 					has_state_flag = {
 						flag = nejd_oil_developed
@@ -4445,7 +4765,7 @@ prospect_for_resources = {
 
 		remove_effect = {
 			add_to_variable = { var = nejd_oil_duration value = 30 }
-			292 = {
+			859 = {
 				if = {
 					limit = {
 						NOT = {
@@ -4464,7 +4784,7 @@ prospect_for_resources = {
 					}
 				}
 			}
-			292 = {
+			859 = {
 				add_resource = {
 					type = oil
 					amount = 220
@@ -4490,7 +4810,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 457
+		}
 		}
 
 		available = {
@@ -4545,7 +4867,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 765
+		}
 		}
 
 		available = {
@@ -4591,6 +4915,877 @@ prospect_for_resources = {
 			}
 		}
 	}
+	
+	develop_malatya_chromium_deposits = { #344
+	
+		icon = chromium
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 344
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 7
+			owns_state = 344
+			controls_state = 344
+		}
+
+		visible = {
+			owns_state = 344
+			controls_state = 344
+			344 = {
+				NOT = {
+					has_state_flag = malatya_chromium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+
+		ai_will_do = {
+			base = 0.3
+		}
+		remove_effect = {
+			344 = { set_state_flag = malatya_chromium_developed }
+			344 = {
+				add_resource = {
+					type = chromium
+					amount = 150
+				}
+			}
+		}
+	}
+
+	develop_mersin_chromium_mines = { #345
+
+		icon = chromium
+	
+		allowed = {
+	
+		}
+	
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 345
+			}
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 16
+			owns_state = 345
+			controls_state = 345
+		}
+
+		visible = {
+			owns_state = 345
+			controls_state = 345
+			345 = {
+				NOT = {
+					has_state_flag = mersin_chromium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 17
+		}
+
+		ai_will_do = {
+			base = 0.3
+		}
+		remove_effect = {
+			345 = { set_state_flag = mersin_chromium_developed }
+			345 = {
+				add_resource = {
+					type = chromium
+					amount = 340
+				}
+			}
+		}
+	}
+
+	utilize_diyarbakir_chromium_deposits = { #350
+
+		icon = chromium
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 350
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 17
+			owns_state = 350
+			controls_state = 350
+		}
+
+		visible = {
+			owns_state = 350
+			controls_state = 350
+			350 = {
+				NOT = {
+					has_state_flag = diyarbakir_chromium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 18
+		}
+
+		ai_will_do = {
+			base = 0.3
+		}
+		remove_effect = {
+			350 = { set_state_flag = biyarbakir_chromium_developed }
+			350 = {
+				add_resource = {
+					type = chromium
+					amount = 360
+				}
+			}
+		}
+	}
+
+	expand_the_kirikkale_steel_mills   = { #49
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 49
+			}
+		}
+
+		available = {
+			has_tech = construction3
+			num_of_civilian_factories_available_for_projects > 8
+			owns_state = 49
+			controls_state = 49
+		}
+
+		visible = {
+			owns_state = 49
+			controls_state = 49
+			49 = {
+				NOT = {
+					has_state_flag = ankara_steel_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 10
+		}
+
+		ai_will_do = {
+			base = 0.3
+		}
+
+		remove_effect = {
+			49 = {
+				set_state_flag = ankara_steel_developed
+			}
+			49 = {
+				add_resource = {
+					type = steel
+					amount = 200
+				}
+			}
+		}
+	}
+
+	develop_the_iron_mines_in_divrigi = { #349
+
+		icon = steel
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 349
+			}
+		}
+
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 13
+			owns_state = 349
+			controls_state = 349
+		}
+
+		visible = {
+			has_tech = excavation2
+			owns_state = 349
+			controls_state = 349
+			349 = {
+				NOT = {
+					has_state_flag = sivas_steel_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 14
+		}
+
+		ai_will_do = {
+			base = 0.3
+		}
+
+		remove_effect = {
+			349 = {
+				set_state_flag = sivas_steel_developed
+			}
+			349 = {
+				add_resource = {
+					type = steel
+					amount = 280
+				}
+			}
+		}
+	}
+
+	exploit_the_raman_oil_field = { #350
+
+		icon = oil
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 350
+			}
+		}
+
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 15
+			owns_state = 350
+			controls_state = 350
+		}
+
+		visible = {
+			has_tech = excavation1
+			owns_state = 350
+			controls_state = 350
+			350 = {
+				NOT = {
+					has_state_flag = raman_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 16
+		}
+
+		ai_will_do = {
+			base = 0.3
+		}
+
+		remove_effect = {
+			350 = {
+				set_state_flag = raman_oil_developed
+			}
+			350 = {
+				add_resource = {
+					type = oil
+					amount = 160
+				}
+			}
+		}
+	}
+
+	drill_in_the_garzan_oil_field = { #350
+
+		icon = oil
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 350
+			}
+		}
+
+		available = {
+			has_tech = excavation4
+			if = {
+				limit = {
+					original_tag = TUR
+				}
+				has_idea = petrol_ofisi
+			}
+			num_of_civilian_factories_available_for_projects > 13
+			owns_state = 350
+			controls_state = 350
+		}
+
+		visible = {
+			owns_state = 350
+			controls_state = 350
+			350 = {
+				NOT = {
+					has_state_flag = garzan_oil_developed
+				}
+			}
+			has_tech = excavation3
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 14
+		}
+
+		ai_will_do = {
+			base = 0.3
+		}
+
+		remove_effect = {
+			350 = {
+				set_state_flag = garzan_oil_developed
+			}
+			350 = {
+				add_resource = {
+					type = oil
+					amount = 140
+				}
+			}
+		}
+	}
+	expand_the_west_raman_oil_field = { #350
+
+		icon = oil
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 350
+			}
+		}
+
+		available = {
+			has_tech = excavation3
+			if = {
+				limit = {
+					original_tag = TUR
+				}
+				has_idea = petrol_ofisi
+			}
+			num_of_civilian_factories_available_for_projects > 35
+			owns_state = 350
+			controls_state = 350
+		}
+
+		visible = {
+			owns_state = 350
+			controls_state = 350
+			350 = {
+				NOT = {
+					has_state_flag = west_raman_oil_developed
+				}
+			}
+			has_tech = excavation4
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 36
+		}
+			
+		ai_will_do = {
+			base = 0.3
+		}
+			
+		remove_effect = {
+			350 = {
+				set_state_flag = west_raman_oil_developed
+			}
+			350 = {
+				add_resource = {
+					type = oil
+					amount = 360
+				}
+			}
+		}
+	}
+	develop_tripoli_oil_fields = { #448
+
+		icon = oil
+
+		allowed = {
+			original_tag = ITA			
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 11
+			OR = { 
+				has_full_control_of_state = 448 
+				any_subject_country = { #FOR PUPPETS
+					has_full_control_of_state = 448
+				}
+			} 
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 448
+			}
+		}
+
+		visible = {
+			#has_completed_focus = ITA_oil_in_tripoli
+			448 = {
+				NOT = {
+					has_state_flag = {
+						flag = tripoli_oil_developed
+						value = 3
+					}
+				}
+				}
+			}
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			base = 0.5
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
+			448 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = tripoli_oil_developed
+						}
+					}
+					set_state_flag = {
+						flag = tripoli_oil_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = tripoli_oil_developed
+						value = 1
+					}
+				}
+			}	
+			448 = {
+				add_resource = {
+					type = oil
+					amount = 120
+				}
+			}
+		}
+	}
+
+	develop_tripoli_steel_deposits = { #448
+
+		icon = steel
+
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 5
+			OR = { 
+				has_full_control_of_state = 448 
+				any_subject_country = { #FOR PUPPETS
+					has_full_control_of_state = 448
+				}
+			} 
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 448
+			}
+		}
+
+		visible = {
+			#has_completed_focus = ITA_steel_in_tripoli
+			448 = {
+				NOT = {
+					has_state_flag = {
+						flag = tripoli_steel_developed
+						value = 3
+					}
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 6
+		}
+
+		ai_will_do = {
+			base = 0.5
+		}
+		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
+			448 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = tripoli_steel_developed
+						}
+					}
+					set_state_flag = {
+						flag = tripoli_steel_developed
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = tripoli_steel_developed
+						value = 1
+					}
+				}
+			}	
+			448 = {
+				add_resource = {
+					type = steel
+					amount = 120
+				}
+			}
+		}
+	}
+	
+	develop_transdanubia_aluminium_deposits = { #155
+
+		icon = aluminium
+
+		allowed = {
+
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 155
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 11
+			owns_state = 155
+			controls_state = 155
+		}
+			
+		visible = {
+			owns_state = 155
+			controls_state = 155
+			155 = {
+				NOT = {
+					has_state_flag = transdanubia_aluminium_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 12
+		}
+
+		ai_will_do = {
+			base = 0.3
+		}
+		remove_effect = {
+			155 = { set_state_flag = transdanubia_aluminium_developed }
+			155 = {
+				add_resource = {
+					type = aluminium
+					amount = 240
+				}
+			}
+		}
+	}
+	
+	develop_derna_oilfield = { #76
+
+		icon = oil
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 76
+			}
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 23
+			owns_state = 76
+			controls_state = 76
+		}
+
+		visible = {
+			owns_state = 76
+			controls_state = 76
+			76 = {
+				NOT = {
+					has_state_flag = derna_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 24
+		}
+
+		ai_will_do = {
+			base = 0 #Not historically excavated
+		}
+
+		remove_effect = {
+			76 = { set_state_flag = derna_oil_developed }
+			76 = {
+				add_resource = {
+					type = oil
+					amount = 240
+				}
+			}
+		}
+	}
+
+	deeper_swedish_mines = { #76
+
+		icon = steel
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 666
+			}
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 18
+			controls_state = 666
+			owns_state = 666
+		}
+
+		visible = {
+			owns_state = 666
+			controls_state = 666
+			666 = {
+				NOT = {
+					has_state_flag = has_expanded_mines
+				}
+			}
+
+			has_completed_focus = SWE_deep_mining_complexes
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 75
+
+		modifier = {
+			civilian_factory_use = 20
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+
+		remove_effect = {
+			666 = { set_state_flag = has_expanded_mines }
+			666 = {
+				add_resource = {
+					type = steel
+					amount = 240
+				}
+			}
+
+			666 = {
+				add_resource = {
+					type = tungsten
+					amount = 120
+				}
+			}
+
+			666 = {
+				add_resource = {
+					type = chromium
+					amount = 50
+				}
+			}
+		}
+	}
+
+	expand_greenlands_mines = { #101
+
+		icon = steel
+
+		allowed = {
+			original_tag = DEN
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 7
+			has_full_control_of_state = 101 
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 101
+			}
+		}
+			
+		visible = {
+			has_completed_focus = DEN_prospecting_new_sites
+			101 = {
+				NOT = {
+					has_state_flag = {
+						flag = expand_greenlands_mines_flag
+						value = 3
+					}
+				}
+			}
+		}
+			
+		cost = 50
+		days_remove = 75
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+			
+		ai_will_do = {
+			base = 0.5
+		}
+		remove_effect = {
+			custom_effect_tooltip = repeatable_decision_tt
+			101 = {
+				if = {
+					limit = {
+						NOT = {
+							has_state_flag = expand_greenlands_mines_flag
+						}
+					}
+					set_state_flag = {
+						flag = expand_greenlands_mines_flag
+						value = 1
+					}
+				}
+				else = {
+					modify_state_flag = {
+						flag = expand_greenlands_mines_flag
+						value = 1
+					}
+				}
+			}	
+			101 = {
+				add_resource = {
+					type = steel
+					amount = 80
+				}
+				add_resource = {
+					type = chromium
+					amount = 40
+				}
+				add_resource = {
+					type = tungsten
+					amount = 40
+				}
+			}
+		}
+	}
 
 	develop_zambian_tungsten = { #771
 	
@@ -4604,7 +5799,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 771
+			}
 		}
 
 		visible = {
@@ -4652,7 +5849,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 545
+			}
 		}
 
 		visible = {
@@ -4701,7 +5900,9 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
+			highlight_state_targets = {
 			state = 538
+			}
 		}
 
 		visible = {

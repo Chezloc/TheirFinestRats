@@ -11,6 +11,7 @@ state={
 		set_state_flag = USA_split_china_region_state_central
 		owner = CHI
 		add_core_of = CHI
+		#add_core_of = PRC
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -21,8 +22,10 @@ state={
 			7101 10 
 		}
 		1936.1.1.13 = {
-			owner = WST	
+			owner = WST
 		}
 
 	}
+
+	local_supplies=0.0 
 }

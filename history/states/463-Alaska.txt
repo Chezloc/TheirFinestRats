@@ -3,7 +3,7 @@ state={
 	name="STATE_463"
 
 	history={
-				owner = USA
+		owner = USA
 		1936.1.1.13 = {
 			owner = WST
 		}
@@ -33,4 +33,6 @@ state={
 	manpower=67500
 	buildings_max_level_factor=1
 	state_category="rural"
+
+	local_supplies=0.0 
 }

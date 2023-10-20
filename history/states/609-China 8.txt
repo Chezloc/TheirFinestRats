@@ -7,10 +7,10 @@ state={
 	state_category = town
 
 	history={
-				owner = JAP
-        1936.1.1.13 = {
-            owner = WST 	
-		}	
+		owner = JAP
+		1936.1.1.13 = {
+			owner = WST	
+		}
 		add_core_of = CHI
 		add_core_of = MAN
 		buildings = {
@@ -27,4 +27,6 @@ state={
 	provinces={
 		900 1052 3830 3900 6969 11822 12043 
 	}
+
+	local_supplies=0.0 
 }

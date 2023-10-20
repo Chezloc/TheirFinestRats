@@ -206,6 +206,22 @@ FRA_controls_west_africa = {
 			}
 		}
 	}
+	899 = {
+		OR = {
+			is_controlled_by = ROOT
+			CONTROLLER = {
+				is_subject_of = ROOT
+			}
+		}
+	}
+	898 = {
+		OR = {
+			is_controlled_by = ROOT
+			CONTROLLER = {
+				is_subject_of = ROOT
+			}
+		}
+	}
 }
 
 FRA_controls_central_africa = {

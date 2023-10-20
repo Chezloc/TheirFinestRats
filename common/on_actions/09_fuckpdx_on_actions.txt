@@ -581,9 +581,15 @@ on_actions = {
 				}
 				GER = {
 					transfer_state = 110
+					transfer_state = 921
+					transfer_state = 922
 					transfer_state = 142
+					transfer_state = 920
 					transfer_state = 143
+					transfer_state = 923
 					transfer_state = 144
+					transfer_state = 924
+					transfer_state = 925
 				}
 				NOR = {
 					set_equipment_fraction = 0
@@ -842,6 +848,7 @@ on_actions = {
 				}
 				GER = {
 					transfer_state = 102
+					transfer_state = 853
 				}
 				ITA = {
 					transfer_state = 109
@@ -901,7 +908,7 @@ on_actions = {
 				limit = {
 					original_tag = FIN
 					FROM = { is_in_faction_with = SOV }
-					date < 1941.1.1
+					date < 1941.5.1
 				}
 				SOV = {
 					white_peace = FIN

@@ -28,7 +28,9 @@
 
 sabotaged_resources = {
 	remove_trigger = { 
-		has_resistance = no
+		ROOT = {
+			has_resistance = no
+		}
 	}
 	
 	icon = GFX_modifiers_sabotaged_resource
@@ -113,7 +115,11 @@ kurdish_separatism = {
 
 dense_rural_infrastructure = { #State Modifier
 	enable = { always = yes }
-	remove_trigger = { infrastructure > 4 }
+	remove_trigger = {
+		ROOT = {
+			infrastructure > 4
+		}
+	}
 
 	icon = GFX_modifiers_SOV_civilian_labor_in_defense
 	
@@ -369,7 +375,7 @@ ITA_ethiopia_local_supply = {
 
 	icon = GFX_modifiers_generic_supply
 	
-	local_supplies_for_controller = 4
+	local_supplies_for_controller = 2.5
 }
 
 
@@ -1237,6 +1243,7 @@ SOV_the_red_army_dynamic_modifier = { #NATIONAL SPIRIT
 	breakthrough_factor = SOV_the_red_army_breakthrough_factor
 	army_morale_factor = SOV_the_red_army_army_morale_factor
 	planning_speed = SOV_the_red_army_army_planning_speed
+	surrender_limit = SOV_the_red_army_surrender_limit
 }
 
 SOV_the_red_army_dynamic_modifier_alt = { #NATIONAL SPIRIT
@@ -1275,6 +1282,7 @@ SOV_the_red_army_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	breakthrough_factor = SOV_the_red_army_breakthrough_factor
 	army_morale_factor = SOV_the_red_army_army_morale_factor
 	planning_speed = SOV_the_red_army_army_planning_speed
+	surrender_limit = SOV_the_red_army_surrender_limit
 }
 
 SOV_the_politburo_good_dynamic_modifier = {

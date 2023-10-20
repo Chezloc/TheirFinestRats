@@ -1,10 +1,12 @@
 sub_units = {
 	field_hospital = {
+		abbreviation = "HOS"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
 		active = no
+		affects_speed = no
 
 		type = {
 			infantry
@@ -40,6 +42,11 @@ sub_units = {
 
 		fuel_capacity = -1.00
 		own_equipment_fuel_consumption_mult = 0.00 # no fuel use
+
+		battalion_mult = {
+			category = category_all_infantry
+			max_strength = 0.05
+		}
 
 		essential = {
 			support_equipment
@@ -99,6 +106,11 @@ sub_units = {
 		fuel_capacity = -1.00
 		own_equipment_fuel_consumption_mult = 0.00 # no fuel use
 
+		battalion_mult = {
+			category = category_all_infantry
+			max_strength = 0.10
+		}
+		
 		essential = {
 			mechanized_utility_equipment
 		}

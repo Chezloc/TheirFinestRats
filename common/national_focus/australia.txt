@@ -275,9 +275,8 @@ focus_tree = {
 			}
 			custom_effect_tooltip = AST_new_general_tt
 			hidden_effect = {
-				create_corps_commander = {
-					name = "Iven Mackay"
-					gfx = "GFX_AST_iven_mackay"
+				add_corps_commander_role = {
+					character = AST_iven_mackay
 					traits = { commando hill_fighter trait_mountaineer }
 					skill = 5
 					attack_skill = 4
@@ -556,6 +555,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
@@ -865,6 +865,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			air_experience = 25
@@ -1418,6 +1419,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
 			air_experience = 25
@@ -3391,7 +3393,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = AST_commonwealth_aircraft_corporation
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = AST_com_aircraft_corporation_organization
+				mio:AST_com_aircraft_corporation_organization = {
+					add_mio_size = 2
+				}
+			}
+			ELSE = {
+				add_ideas = AST_commonwealth_aircraft_corporation 
+			}
 		}
 	}
 	

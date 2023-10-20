@@ -461,13 +461,10 @@ ideas = {
 				jet_tac_bomber_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				jet_strat_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				flying_boat_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				small_plane_airframe = {
@@ -510,13 +507,10 @@ ideas = {
 				jet_tac_bomber_equipment = {
 					build_cost_ic = -0.10 instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = -0.10 instant = yes
 				}
 				jet_strat_bomber_equipment = {
-					build_cost_ic = -0.10 instant = yes
-				}
-				flying_boat_equipment = {
 					build_cost_ic = -0.10 instant = yes
 				}
 				small_plane_airframe = {
@@ -560,13 +554,10 @@ ideas = {
 				jet_tac_bomber_equipment = {
 					build_cost_ic = -0.15 instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = -0.15 instant = yes
 				}
 				jet_strat_bomber_equipment = {
-					build_cost_ic = -0.15 instant = yes
-				}
-				flying_boat_equipment = {
 					build_cost_ic = -0.15 instant = yes
 				}
 				small_plane_airframe = {
@@ -609,13 +600,10 @@ ideas = {
 				jet_tac_bomber_equipment = {
 					build_cost_ic = -0.20 instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = -0.20 instant = yes
 				}
 				jet_strat_bomber_equipment = {
-					build_cost_ic = -0.20 instant = yes
-				}
-				flying_boat_equipment = {
 					build_cost_ic = -0.20 instant = yes
 				}
 				small_plane_airframe = {
@@ -658,13 +646,10 @@ ideas = {
 				jet_tac_bomber_equipment = {
 					build_cost_ic = -0.25 instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = -0.25 instant = yes
 				}
 				jet_strat_bomber_equipment = {
-					build_cost_ic = -0.25 instant = yes
-				}
-				flying_boat_equipment = {
 					build_cost_ic = -0.25 instant = yes
 				}
 				small_plane_airframe = {

@@ -88,7 +88,7 @@ technologies = {
 		enable_subunits = {
 			engineer
 			mech_engineers
-			mech_assault_engineers
+			# mech_assault_engineers
 		}
 		enable_equipment_modules = {
 			flamethrower
@@ -164,10 +164,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = tech_engineers_pontoon
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = tech_engineers_pontoon
+		# 	research_cost_coeff = 1
+		# }
 
 		research_cost = 1.5
 		start_year = 1939
@@ -202,26 +202,26 @@ technologies = {
 		}
 	}
 	
-	tech_engineers_pontoon = {
+	# tech_engineers_pontoon = {
 
-		enable_subunits = {
-			assault_engineer
-		}
+	# 	enable_subunits = {
+	# 		assault_engineer
+	# 	}
 
-		research_cost = 1
-		start_year = 1939
-		folder = {
-			name = support_folder
-			position = { x = -1 y = 5 }
-		}
+	# 	research_cost = 1
+	# 	start_year = 1939
+	# 	folder = {
+	# 		name = support_folder
+	# 		position = { x = -1 y = 5 }
+	# 	}
 		
-		categories = {
-			support_tech
-			engineers_tech
-			year_1939
-		}
+	# 	categories = {
+	# 		support_tech
+	# 		engineers_tech
+	# 		year_1939
+	# 	}
 		
-	}
+	# }
 	
 	tech_engineers3 = {
 
@@ -231,24 +231,24 @@ technologies = {
 				defence = 0.15
 			}
 		}
-		assault_engineer = {
-			entrenchment  = 2
-			fort = {	
-				defence = 0.15
-			}
-		}
+		# assault_engineer = {
+		# 	entrenchment  = 2
+		# 	fort = {	
+		# 		defence = 0.15
+		# 	}
+		# }
 		mech_engineers = {	
 			entrenchment  = 2
 			river = {
 				attack = 0.15
 			}
 		}
-		mech_assault_engineers = {	
-			entrenchment  = 2
-			river = {
-				attack = 0.15
-			}
-		}
+		# mech_assault_engineers = {	
+		# 	entrenchment  = 2
+		# 	river = {
+		# 		attack = 0.15
+		# 	}
+		# }
 
 		enable_equipment_modules = {
 			hull_flamethrower
@@ -302,7 +302,7 @@ technologies = {
 		fortification_damage = 0.5
 		fortification_collateral_chance = 0.5
 		
-		assault_engineer = {
+		engineer = {
 			urban = {
 				attack = 0.05
 				defence = 0.05
@@ -312,7 +312,7 @@ technologies = {
 				defence = 0.05
 			}
 		}
-		mech_assault_engineers = {
+		mech_engineers = {
 			urban = {
 				attack = 0.05
 				defence = 0.05
@@ -356,22 +356,22 @@ technologies = {
 				defence = 0.15
 			}
 		}
-		assault_engineer = {
-			entrenchment  = 2
+		# assault_engineer = {
+		# 	entrenchment  = 2
 			
-			urban = {
-				attack = 0.15
-				defence = 0.15
-			}
-			dense_urban = {
-				attack = 0.25
-				defence = 0.15
-			}
-			town = {
-				attack = 0.1
-				defence = 0.15
-			}
-		}
+		# 	urban = {
+		# 		attack = 0.15
+		# 		defence = 0.15
+		# 	}
+		# 	dense_urban = {
+		# 		attack = 0.25
+		# 		defence = 0.15
+		# 	}
+		# 	town = {
+		# 		attack = 0.1
+		# 		defence = 0.15
+		# 	}
+		# }
 		mech_engineers = {	
 			entrenchment  = 2
 			urban = {
@@ -387,22 +387,22 @@ technologies = {
 				defence = 0.15
 			}
 		}
-		mech_assault_engineers = {	
-			entrenchment  = 2
+		# mech_assault_engineers = {	
+		# 	entrenchment  = 2
 			
-			urban = {
-				attack = 0.15
-				defence = 0.15
-			}
-			dense_urban = {
-				attack = 0.25
-				defence = 0.15
-			}
-			town = {
-				attack = 0.1
-				defence = 0.15
-			}
-		}
+		# 	urban = {
+		# 		attack = 0.15
+		# 		defence = 0.15
+		# 	}
+		# 	dense_urban = {
+		# 		attack = 0.25
+		# 		defence = 0.15
+		# 	}
+		# 	town = {
+		# 		attack = 0.1
+		# 		defence = 0.15
+		# 	}
+		# }
 
 		research_cost = 1.5
 		start_year = 1945
@@ -1454,6 +1454,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			year_1936
 		}
 		
@@ -1504,6 +1505,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			year_1939
 		}
 		
@@ -1554,6 +1556,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			year_1942
 		}
 		
@@ -1598,6 +1601,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			year_1945
 		}
 		
@@ -1630,6 +1634,15 @@ technologies = {
 		}
 	}
 
+	NORDIC_supportCollaboration_tech = { # For the Army Capston in the Nordic JFT
+		allow = { always = no } #Only obtained through Focus
+		category_support_battalions = {
+			max_organisation = 10
+			soft_attack = 0.25
+			experience_loss_factor = 0.05
+		}
+	}
+
 	tech_logistics_company = {
 
 		enable_subunits = {
@@ -1657,6 +1670,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			year_1936
 		}
 		
@@ -1711,6 +1725,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			year_1939
 		}
 		
@@ -1766,6 +1781,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			year_1942
 		}
 		
@@ -1810,6 +1826,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 			year_1945
 		}
 		

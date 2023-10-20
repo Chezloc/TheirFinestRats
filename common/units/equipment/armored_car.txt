@@ -126,7 +126,6 @@ equipments = {
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
-			special_type_slot_1 = inherit
 		}
 
 		maximum_speed = 12

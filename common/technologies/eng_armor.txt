@@ -41,7 +41,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1936
 		}
 		
@@ -73,7 +75,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1938
 		}
 		
@@ -100,7 +104,10 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -150,7 +157,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1934
 		}
 		
@@ -191,7 +200,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1938
 		}
 		
@@ -251,7 +262,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1940
 		}
 		
@@ -289,7 +302,10 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+			year_1941
 		}
 		
 		ai_will_do = {
@@ -327,7 +343,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1943
 		}
 		
@@ -352,7 +370,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1944
 		}
 		
@@ -387,7 +407,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1943
 		}
 		
@@ -414,7 +436,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1945
 		}
 		
@@ -464,7 +488,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1935
 		}
 		
@@ -493,7 +519,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1937
 		}
 		
@@ -526,7 +554,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1939
 		}
 		
@@ -560,7 +590,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1941
 		}
 		
@@ -595,7 +627,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1943
 		}
 		
@@ -618,7 +652,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1944
 		}
 		
@@ -645,7 +681,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1945
 		}
 		
@@ -685,6 +723,7 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
 			year_1941
 		}
@@ -715,7 +754,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1942
 		}
 		
@@ -739,7 +780,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1943
 		}
 		
@@ -771,7 +814,9 @@ technologies = {
 		
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1941
 		}
 		

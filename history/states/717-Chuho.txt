@@ -7,12 +7,14 @@ state={
 	history={
 		owner = MAN
 		add_core_of = CHI
+		#add_core_of = MAN
+		#add_core_of = PRC
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 4
 		}
-        1936.1.1.13 = {
+		1936.1.1.13 = {
             owner = WST 	
 		}
 	}
@@ -22,4 +24,6 @@ state={
 	}
 	manpower=5224174
 	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
 }

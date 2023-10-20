@@ -9,10 +9,10 @@ state=
 	resources = {
 		rubber = 50
 	}
-	
+
 	history=
 	{
-				owner = USA
+		owner = USA
 		1936.1.1.13 = {
 			owner = WST
 		}
@@ -36,4 +36,6 @@ state=
 	provinces={
 		1261 1368 7385 7423 10186 10302 12112 12118 12153 
 	}
+
+	local_supplies=6.0 
 }

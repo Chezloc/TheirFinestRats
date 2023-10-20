@@ -2,9 +2,12 @@
 state={
 	id=361
 	name="STATE_361"
+	manpower = 2118394
+	
+	state_category = city
 
 	history={
-				owner = USA
+		owner = USA
 		1936.1.1.13 = {
 			owner = WST
 		}
@@ -28,7 +31,6 @@ state={
 				naval_base = 1
 
 			}
-
 		}
 		add_core_of = USA
 
@@ -37,8 +39,6 @@ state={
 	provinces={
 		3957 6823 6892 6929 6984 11892 
 	}
-	manpower=1821244
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+
+	local_supplies=0.0 
 }

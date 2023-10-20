@@ -6176,7 +6176,7 @@ BUL_purchase_equipment = {
 
 		priority = 8
 
-		icon = generic_decision
+		icon = generic_trucks
 
 		allowed = { always = no } #Activated from effect
 
@@ -7138,21 +7138,24 @@ BUL_negotiate_claims_in_the_balkans = {
 
 		on_map_mode = map_and_decisions_view
 
-		state_target = yes
-
+		state_target = europe
+		target_root_trigger = {
+			has_completed_focus = BUL_peaceful_development
+			is_in_faction = yes
+		}
 		target_trigger = {
 			FROM = {
 				BUL_is_balkan_state = yes
 				NOT = { is_controlled_by = BUL }
-				any_neighbor_state = {
-					is_fully_controlled_by = BUL
-				}
 				controller = {
 					PREV = {
 						NOT = { is_core_of = PREV }
 						is_fully_controlled_by = PREV
 					}
 					is_in_faction_with = ROOT
+				}
+				any_neighbor_state = {
+					is_fully_controlled_by = BUL
 				}
 			}
 		}
@@ -8019,7 +8022,7 @@ BUL_the_balkan_federation_dream = {
 		days_remove = 90
 
 		modifier = {
-			consumer_goods_factor = 0.05
+			consumer_goods_factor = 0.1
 		}
 		
 		complete_effect = {
@@ -9405,7 +9408,7 @@ BUL_balkan_confederation = {
 		days_remove = 120	
 
 		modifier = {
-			consumer_goods_factor = 0.05
+			consumer_goods_factor = 0.1
 		}
 		
 		complete_effect = {

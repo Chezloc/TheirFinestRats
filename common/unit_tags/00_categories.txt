@@ -21,7 +21,14 @@ sub_unit_categories = {
 	category_light_tanks
 	category_assault_gun
 	category_recon
+	category_mountaineers
+	category_paratroopers
+	category_marines
 	category_anti_air
 	category_mobile_infantry
 	category_mobile_artillery
+	category_amphibious_tanks
+	category_support_artillery
+	category_cavalry
+	category_bus
 }

@@ -6,10 +6,11 @@ state={
 	state_category = small_island
 
 	history={
-				owner = JAP
-        1936.1.1.13 = {
+		owner = JAP
+		#add_core_of = FSM
+		1936.1.1.13 = {
             owner = WST 	
-		}	
+		}
 		buildings = {
 			infrastructure = 3
 			air_base = 3
@@ -51,4 +52,6 @@ state={
 	provinces={
 		2489 13027 13028 13029 13030 13031 13032 13033 13034 13035 13036 
 	}
+
+	local_supplies=0.0 
 }

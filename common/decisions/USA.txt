@@ -36,6 +36,15 @@ USA_island_fortification = {
 		}
 		remove_effect = {
 			638 = {
+				add_building_construction = {
+            	    type = bunker
+            	    province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+            	    instant_build = yes
+            	}
 				set_building_level  = {
             	    type = coastal_bunker
             	    province = {
@@ -99,6 +108,15 @@ USA_island_fortification = {
 		}
 		remove_effect = {
 			632 = {
+				add_building_construction = {
+            	    type = bunker
+            	    province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+            	    instant_build = yes
+            	}
 				set_building_level  = {
             	    type = coastal_bunker
             	    province = {
@@ -162,6 +180,15 @@ USA_island_fortification = {
 		}
 		remove_effect = {
 			631 = {
+				add_building_construction = {
+            	    type = bunker
+            	    province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+            	    instant_build = yes
+            	}
 				set_building_level  = {
             	    type = coastal_bunker
             	    province = {
@@ -226,6 +253,15 @@ USA_island_fortification = {
 		
 		remove_effect = {
 			629 = {
+				add_building_construction = {
+            	    type = bunker
+            	    province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 1
+            	    instant_build = yes
+            	}
 				set_building_level  = {
             	    type = coastal_bunker
             	    province = {
@@ -403,7 +439,7 @@ USA_aid_britain = {
 			war_support_weekly = 0.001
 			industrial_capacity_factory = 0.1
 			industrial_capacity_dockyard = 0.1
-			consumer_goods_factor = -0.05
+			consumer_goods_factor = -0.15
 		}
 
 		days_remove = 365
@@ -745,6 +781,105 @@ operations = {
 			add_state_core = 502
 			add_state_core = 280
 			add_state_core = 496
+		}
+	}
+	USA_initiate_the_greenland_patrol = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = USA
+		}
+		
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			101 = {
+				is_owned_and_controlled_by = DEN
+			}
+			DEN = {
+				is_subject = yes
+			}
+			IF = {
+				limit = {	
+					DEN = {
+						is_subject = yes
+					}
+				}
+				DEN = {
+					overlord = {
+						NOT = {
+							has_government = democratic
+							has_war_with = USA #Unfair to just grab a piece of land from your enemy like this
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 50 
+				DEN = {
+					overlord = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes 
+				ENG = {
+					has_war_with = GER
+					has_subject = CAN
+				}	
+				GER = {
+					has_government = fascism
+					has_subject = DEN
+				}
+			}
+		}
+		
+		visible = {
+			tag = USA
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			101 = {
+				is_owned_and_controlled_by = DEN
+			}
+			DEN = {
+				is_subject = yes
+				overlord = {
+					is_major = yes
+					NOT = {
+						has_government = democratic
+						has_war_with = USA #Unfair to just grab a piece of land from your enemy like this
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			has_dlc = "Arms Against Tyranny"
+		}
+		
+		complete_effect = {
+			DEN = { country_event = { id = AAT_USA_events.01 days = 2 } }
+			add_ideas = USA_greenland_patrol_idea
+			ROOT = {
+				transfer_state = 101
+			}
 		}
 	}
 }
@@ -2355,7 +2490,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_factor = -0.025
+			consumer_goods_factor = -0.09
 		}
 
 		complete_effect = {

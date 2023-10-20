@@ -108,7 +108,7 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = 7
+		x = 8
 		y = 0
 		trigger = {
 			tag = ENG
@@ -367,10 +367,22 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = COM_gloucestershire_diesel_factory
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = COM_Leyland
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = COM_gloucestershire_diesel_factory_organization
+			mio:COM_gloucestershire_diesel_factory_organization = {
+				add_mio_size = 2
+			}
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_gloucestershire_diesel_factory
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_Leyland
+		}
 	}
 }
 
@@ -392,10 +404,22 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = COM_vauxhall
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = COM_churchillgrad
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = COM_vauxhall_organization
+			mio:COM_vauxhall_organization = {
+				add_mio_size = 2
+			}
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_vauxhall
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_churchillgrad
+		}
 	}
 }
 
@@ -417,8 +441,20 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = COM_rsaf_enfield
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = COM_rsaf_enfield_organization
+			mio:COM_rsaf_enfield_organization = {
+				add_mio_size = 2
+			}
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = COM_rsaf_enfield
+		}
 	}
 }
 

@@ -126,4 +126,22 @@ defined_text = {
 		}
 		localization_key = "GFX_YUG_focus_background"
 	}
+	text = {
+		trigger = {
+			check_variable = { show_background = 22 }
+		}
+		localization_key = "GFX_SWE_focus_background"
+	}
+	text = {
+		trigger = {
+			check_variable = { show_background = 23 }
+		}
+		localization_key = "GFX_NOR_focus_background"
+	}
+	text = {
+		trigger = {
+			check_variable = { show_background = 24 }
+		}
+		localization_key = "GFX_DEN_focus_background"
+	}
 }

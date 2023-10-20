@@ -8,6 +8,7 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
+		#add_core_of = PRC
 		buildings = {
 			infrastructure = 3
 			11981 = {
@@ -16,10 +17,12 @@ state={
 		}
 		1936.1.1.13 = {
 			owner = WST	
-		}		
+		}
 	}
 	
 	provinces={
 		11981 
 	}
+
+	local_supplies=0.0 
 }

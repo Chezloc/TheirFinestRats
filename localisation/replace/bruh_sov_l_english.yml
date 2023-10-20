@@ -299,6 +299,7 @@
   SOV_last_stand_of_the_ussr:0 "Last Stand of the Soviet Union"
   SOV_major_cities_lost:0 "§GMajor City Status§!"
   SOV_major_cities_lost_desc:0 "§YLosing Major cities will provide a supply consumption buff. \n\nLosing 2 of the following cities will give you £supply_consumption_texticon §G-20% §WSupply Consumption§Y:\nLeningrad\nMoscow\nStalingrad\n\nLosing any of the following will give you £supply_consumption_texticon §G-2.5% §WSupply Consumption §Yper location:\nKazan\nSaratov\nYaroslavl\nAzerbaijan"
+  SOV_ilyushin_design_bureau_organization_CAS_department:0 "Ilyushin Design Bureau: CAS"
   # LENINGRAD_SOV:0 "§GLeningrad§!"
   # LENINGRAD_NOT_SOV:0 "§RLeningrad§!"
   # MOSCOW_SOV:0 "§GMoscow§!"

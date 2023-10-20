@@ -7,7 +7,7 @@ state=
 	resources = {
 		rubber = 200
 	}
-	
+
 	state_category = town
 	history={
 		set_state_flag = ASN_ALLIES_controls
@@ -40,4 +40,6 @@ state=
 	provinces={
 		1221 1288 7275 7323 7351 10165 10236 10265 12236 
 	}
+
+	local_supplies=0.0 
 }

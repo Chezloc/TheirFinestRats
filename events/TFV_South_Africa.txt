@@ -63,12 +63,18 @@ country_event = {
 				transfer_state = 548
 				transfer_state = 771
 				transfer_state = 770
+				transfer_state = 903
+				transfer_state = 904
+				transfer_state = 905
 				#Belgian Congo
 				transfer_state = 295
 				transfer_state = 538
 				transfer_state = 718
 				transfer_state = 769
 				transfer_state = 768
+				transfer_state = 890
+				transfer_state = 888
+				transfer_state = 889
 
 				give_resource_rights = { receiver = ENG state = 542 }
 				give_resource_rights = { receiver = ENG state = 771 }

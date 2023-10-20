@@ -13,7 +13,7 @@ state={
 	}
 
 	history={
-				owner = USA
+		owner = USA
 		1936.1.1.13 = {
 			owner = WST
 		}
@@ -28,4 +28,6 @@ state={
 	provinces={
 		1862 4521 4607 4736 4799 4816 7756 7827 7879 10422 10591 12134 12399 12425 
 	}
+
+	local_supplies=0.0 
 }

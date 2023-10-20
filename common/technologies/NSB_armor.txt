@@ -16,6 +16,8 @@ technologies = {
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
 
+		show_equipment_icon = yes
+
 		enable_equipments = {
 			light_tank_chassis_1
 		}
@@ -77,7 +79,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1936
 		}
 	}
@@ -105,7 +109,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1939
 		}
 	}
@@ -129,7 +135,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1941
 		}
 	}
@@ -161,7 +169,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1938
 		}
 	}
@@ -190,7 +200,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1941
 		}
 	}
@@ -214,7 +226,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1943
 		}
 	}
@@ -254,6 +268,7 @@ technologies = {
 	# 	categories = {
 	# 		armor
 	# 		cat_heavy_armor
+	# 		mio_cat_tech_heavy_armor_and_modules
 	#		year_1936
 	# 	}
 	# }
@@ -289,7 +304,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1940
 		}
 	}
@@ -326,7 +343,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1941
 		}
 	}
@@ -355,7 +374,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1943
 		}
 	}
@@ -379,6 +400,10 @@ technologies = {
 	
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 			year_1938
 		}
 	}
@@ -398,6 +423,10 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
 			year_1942
 		}
 	}
@@ -446,7 +475,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1936
 		}
 	}
@@ -476,7 +507,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1940
 		}
 	}
@@ -496,7 +529,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1941
 		}
 	}
@@ -527,7 +562,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1936
 		}
 	}
@@ -553,7 +590,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1938
 		}
 	}
@@ -586,7 +625,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1940
 		}
 	}
@@ -614,7 +655,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1942
 		}
 	}
@@ -634,7 +677,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1943
 		}
 	}
@@ -663,7 +708,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1942
 		}
 	}
@@ -683,7 +730,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
 			year_1944
 		}
 	}
@@ -737,7 +786,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1938
 		}
 	}
@@ -761,7 +812,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1941
 		}
 	}
@@ -813,7 +866,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1940
 		}
 	}
@@ -838,7 +893,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1941
 		}
 	}
@@ -862,7 +919,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 			year_1942
 		}
 	}
@@ -923,7 +982,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1936
 		}
 	}
@@ -950,7 +1011,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1940
 		}
 	}
@@ -968,7 +1031,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1941
 		}
 	}
@@ -993,7 +1058,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1938
 		}
 	}
@@ -1021,7 +1088,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1940
 		}
 	}
@@ -1049,7 +1118,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1943
 		}
 	}
@@ -1072,7 +1143,9 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
+			mio_cat_tech_light_armor_and_modules
 			year_1945
 		}
 	}

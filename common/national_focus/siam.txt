@@ -917,17 +917,16 @@ focus_tree = {
             controls_state  = 432
 			controls_state  = 434
             controls_state  = 324
-            controls_state  = 835
+            controls_state  = 935
         }
 
 		completion_reward = {
-                add_state_core = 288
-                add_state_core = 640
-                add_state_core = 432
-                add_state_core = 434
-                add_state_core = 324
-                add_state_core = 835
-           
+            add_state_core = 288
+            add_state_core = 640
+            add_state_core = 432
+			add_state_core = 434
+            add_state_core = 324
+            add_state_core = 935
 		}
 	}
 

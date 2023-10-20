@@ -33,7 +33,7 @@ focus_tree = {
 	}
 	default = no
 	
-	continuous_focus_position = { x = 1675 y = 800 }
+	continuous_focus_position = { x = 1575 y = 800 }
 
 	shared_focus = COM_commonwealth_command
 	
@@ -820,8 +820,20 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = rsaf_enfield
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ENG_rsaf_enfield_organization
+				mio:ENG_rsaf_enfield_organization = {
+					add_mio_size = 2
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = rsaf_enfield
+			}
 		}
 	}
 	
@@ -1136,6 +1148,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			add_ideas = ENG_special_air_service_idea
+			add_potential_special_forces_tree = yes
 			# Royal_Commandos_increase_double = yes
 		}
 	}
@@ -2560,25 +2573,25 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 4
-					province = 13309
+					province = 13321
 					instant_build = yes
 				}
 				set_building_level = {
 					type = bunker
 					level = 4
-					province = 13310
+					province = 13322
 					instant_build = yes
 				}
 				set_building_level = {
 					type = coastal_bunker
 					level = 4
-					province = 13309
+					province = 13321
 					instant_build = yes
 				}
 				set_building_level = {
 					type = coastal_bunker
 					level = 4
-					province = 13310
+					province = 13322
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2650,7 +2663,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			836 = {
+			936 = {
 				add_building_construction = {
 					type = anti_air_building
 					level = 1
@@ -2672,7 +2685,7 @@ focus_tree = {
 			118 = { is_owned_and_controlled_by = ENG }
 		} 
 		icon = GFX_goal_generic_construct_military
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = ENG_fortify_the_med
 		cost = 5
@@ -2720,7 +2733,7 @@ focus_tree = {
 		id = ENG_fortify_suez
 		prerequisite = { focus = ENG_fortify_the_med }
 		icon = GFX_goal_generic_defence
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ENG_fortify_the_med
 		cost = 5
@@ -2737,7 +2750,7 @@ focus_tree = {
 					}
 				}
 			}
-			836 = {
+			936 = {
 				CONTROLLER = {
 					OR = {
 						tag = ENG
@@ -2757,9 +2770,15 @@ focus_tree = {
 					province = 4076
 					instant_build = yes
 				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 4076
+					instant_build = yes
+				}
 				set_building_level = {
 					type = air_base
-					level = 8
+					level = 5
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2767,9 +2786,82 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				
 			}
-			836 = {
+			446 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 12049
+					instant_build = yes
+				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 12049
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 4073
+					instant_build = yes
+				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 4073
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+			947 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 1155
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 9947
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 1155
+					instant_build = yes
+				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 1155
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 9947
+					instant_build = yes
+				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 9947
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+			936 = {
 				set_building_level = {
 					type = bunker
 					level = 4
@@ -2779,13 +2871,13 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 4
-					province = 13304
+					province = 13291
 					instant_build = yes
 				}
 				set_building_level = {
 					type = bunker
 					level = 3
-					province = 13285
+					province = 13295
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2798,13 +2890,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 3
-					province = 13282
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 3
-					province = 13303
+					province = 13334
 					instant_build = yes
 				}
 				set_building_level = {
@@ -2816,7 +2902,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 3
-					province = 13302
+					province = 13290
 					instant_build = yes
 				}
 				set_building_level = {
@@ -2834,7 +2920,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 3
-					province = 13278
+					province = 13285
 					instant_build = yes
 				}
 				set_building_level = {
@@ -2846,12 +2932,138 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 3
-					province = 13277
+					province = 13283
 					instant_build = yes
-				}		
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 13289
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 13334
+					instant_build = yes
+				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 13334
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = anti_air_building
 					level = 2
+					instant_build = yes
+				}
+			}
+			447 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 7091
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 10073
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 10005
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 12002
+					instant_build = yes
+				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 12002
+					instant_build = yes
+				}
+			}
+			453 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 10099
+					instant_build = yes
+				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 10099
+					instant_build = yes
+				}
+			}
+			454 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 4206
+					instant_build = yes
+				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 4206
+					instant_build = yes
+				}
+			}
+			883 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 3
+					province = 12725
+					instant_build = yes
+				}
+				add_building_construction= {
+					type = bunker
+					level = 1
+					province = 12725
+					instant_build = yes
+				}
+			}
+			907 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 7011
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 12004
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 4143
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 7188
+					instant_build = yes
+				}
+			}
+			445 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 1544
 					instant_build = yes
 				}
 			}
@@ -2870,8 +3082,12 @@ focus_tree = {
 			factor = 1
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
-			843 = {
+			936 = {
 				CONTROLLER = {
 					OR = {
 						tag = ENG
@@ -2879,7 +3095,7 @@ focus_tree = {
 					}
 				}
 			}
-			446 = {
+			907 = {
 				CONTROLLER = {
 					NOT = {
 						OR = {
@@ -2894,7 +3110,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			843 = {
+			946 = {
 				set_building_level = {
 					type = air_base
 					level = 20
@@ -2971,7 +3187,7 @@ focus_tree = {
 			116 = { is_owned_and_controlled_by = ENG }
 		}		
 		icon = GFX_goal_generic_construct_military
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = ENG_fortify_the_med
 		cost = 5

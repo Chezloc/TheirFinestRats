@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = germany
+add_namespace = AAT_germany
 
 # country_event = {
 # 	id = germany.mefoair
@@ -55,6 +56,12 @@ country_event = {
 			}
 		}
 		153 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		848 = {
 			if = {
 				limit = { is_owned_by = AUS }
 				add_core_of = GER
@@ -3978,6 +3985,7 @@ country_event = {
 		ITA = { 
 			transfer_state = 735
 			transfer_state = 1
+			transfer_state = 851
 		}
 	}
 
@@ -3988,6 +3996,7 @@ country_event = {
 		ITA = { 
 			transfer_state = 735
 			transfer_state = 1
+			transfer_state = 851
 			transfer_state = 32
 			transfer_state = 21
 			
@@ -5224,7 +5233,7 @@ country_event = {
 			base = 100
 		}
 		set_province_name = { id = 3529 name = "Hindenburg"}
-		set_province_name = { id = 13306 name = "Ludendorff"}
+		set_province_name = { id = 13319 name = "Ludendorff"}
 		set_province_name = { id = 149 name = "East Ludendorff"}
 		set_global_flag = GER_cities_renamed
 	}
@@ -5548,6 +5557,12 @@ country_event = {
 						add_core_of = GER
 					}
 				}
+				848 = {
+					if = {
+						limit = { is_owned_by = AUS }
+						add_core_of = GER
+					}
+				}
 				AUS = {
 					every_unit_leader = {
 						set_nationality = GER
@@ -5667,6 +5682,21 @@ country_event = {
 					}
 				}
 				add_state_core = 153
+			}
+			if = {
+				limit = {
+					848 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 848
 			}
 		}
 	}

@@ -109,7 +109,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = -0.25
-				consumer_goods_factor = 0.02
+				consumer_goods_factor = 0.08
 				
 			}
 		}
@@ -253,7 +253,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				# consumer_goods_factor = -0.05
+				# consumer_goods_factor = -0.15
 				industrial_capacity_factory = 0.025
 				production_speed_buildings_factor = 0.05
 			}		
@@ -298,7 +298,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}		
 		
 		}
@@ -318,7 +318,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}		
 		
 		}
@@ -341,7 +341,7 @@ ideas = {
 				MONTHLY_POPULATION = -0.33
 				conscription_factor = -0.33
 				political_power_factor = -0.25
-				# consumer_goods_factor = -0.05
+				# consumer_goods_factor = -0.15
 				global_building_slots_factor = 0.10
 			}
 		}
@@ -364,7 +364,7 @@ ideas = {
 				MONTHLY_POPULATION = -0.33 #-0.5
 				conscription_factor = -0.33 #-0.50
 				political_power_factor = -0.25 #-0.40
-				# consumer_goods_factor = -0.05
+				# consumer_goods_factor = -0.15
 				global_building_slots_factor = 0.10
 			}
 		}
@@ -387,7 +387,7 @@ ideas = {
 				MONTHLY_POPULATION = -0.1
 				conscription_factor = -0.1
 				political_power_factor = -0.1
-				# consumer_goods_factor = -0.05
+				# consumer_goods_factor = -0.15
 				global_building_slots_factor = 0.10
 			}
 		}
@@ -407,7 +407,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				# consumer_goods_factor = -0.05
+				# consumer_goods_factor = -0.15
 				global_building_slots_factor = 0.10
 			}
 		}

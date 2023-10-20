@@ -11,12 +11,12 @@ state={
 		set_state_flag = USA_split_china_region_state_western
 		owner = CHI
 		add_core_of = CHI
+		#add_core_of = PRC
 		victory_points = {
 			4999 6
 		}
 		buildings = {
 			infrastructure = 1
-			
 
 		}
 		1936.1.1.13 = {
@@ -24,4 +24,6 @@ state={
 		}
 
 	}
+
+	local_supplies=1.0 
 }

@@ -9,11 +9,11 @@ state={
 	resources={
 		aluminium=120
 	}
-	history = {
+	history={
 		set_state_flag = SOV_controls
 		owner = SOV
 		victory_points = {
-			13306 20
+			13319 20
 		}
 		victory_points = {
 			149 20
@@ -24,7 +24,7 @@ state={
 			industrial_complex = 3
 			dockyard = 4
 			air_base = 10
-			13306 = {
+			13319 ={
 				naval_base = 10
 				coastal_bunker = 5
 				bunker = 4
@@ -42,6 +42,8 @@ state={
 	}
 
 	provinces={
-		79 149 3151 6174 11068 13306 13307
+		79 149 3151 6174 11068 13319 13320
 	}
+
+	local_supplies=11.0 
 }

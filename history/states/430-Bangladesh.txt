@@ -6,8 +6,9 @@ state={
 		rubber = 125
 	}
 	history={
-				owner = RAJ      1936.1.1.13 = {
-            owner = WST 	
+		owner = RAJ
+		1936.1.1.13 = {
+			owner = WST 	
 		}	
 		victory_points = {
 			11929 1 
@@ -32,4 +33,6 @@ state={
 	manpower=31973300
 	buildings_max_level_factor=1.000
 	state_category=town
+
+	local_supplies=0.0 
 }

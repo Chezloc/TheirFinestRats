@@ -1,10 +1,12 @@
 sub_units = {
 	military_police = {
+		abbreviation = "MP"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
 		active = no
+		affects_speed = no
 
 		type = {
 			infantry
@@ -18,6 +20,10 @@ sub_units = {
 			category_army
 		}
 
+		battalion_mult = {
+			category = category_all_infantry
+			default_morale = 0.1
+		}
 	
 		combat_width = 0
 	

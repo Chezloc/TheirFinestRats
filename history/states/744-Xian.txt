@@ -7,6 +7,7 @@ state={
 
 	history={
 		owner = CHI
+		#add_core_of = PRC
 		add_core_of = CHI
 		victory_points = {
 			7418 5 
@@ -17,10 +18,12 @@ state={
 			industrial_complex = 1
 		}
 		1936.1.1.13 = {
-			owner = WST	
+			owner = WST
 		}
 	}
 	manpower=9000000
 	buildings_max_level_factor=1.000
 	state_category = town
+
+	local_supplies=0.0 
 }

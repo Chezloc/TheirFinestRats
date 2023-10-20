@@ -8,11 +8,12 @@ state=
 	history=
 	{
 		set_state_flag = USA_split_china_region_state_taiwan
-				owner = JAP
+		owner = JAP
         1936.1.1.13 = {
             owner = WST 	
 		}	
 		add_core_of = CHI
+		#add_core_of = PRC
 		set_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
 		buildings = {
 			infrastructure = 5
@@ -33,4 +34,6 @@ state=
 	provinces={
 		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
 		}
+
+	local_supplies=0.0 
 }

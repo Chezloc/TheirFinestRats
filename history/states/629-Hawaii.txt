@@ -7,7 +7,8 @@ state={
 	history={
 		add_dynamic_modifier = { modifier = USA_islands_local_supply }
 		set_state_flag = USA_controls
-				owner = USA
+		owner = USA
+		#add_core_of = HAW
 		1936.1.1.13 = {
 			owner = WST
 		}
@@ -25,9 +26,14 @@ state={
 		victory_points = {
 			4180 15
 		 }
+		victory_points = {
+			12021 3
+		 }
 	}
 
 	provinces={
 		4180 7112 7195 10048 12021 
 	}
+
+	local_supplies=0.0 
 }

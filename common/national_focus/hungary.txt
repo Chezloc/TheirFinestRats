@@ -2763,8 +2763,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = fiat
+			# custom_effect_tooltip = available_designer
+			# show_ideas_tooltip = fiat
 		}
 	}
 	
@@ -3058,8 +3058,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = HUN_femaru_fegyver_es_gepgyar
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = HUN_femaru_fegyver_es_gepgyar_organization
+				mio:HUN_femaru_fegyver_es_gepgyar_organization = {
+					add_mio_size = 2
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = HUN_femaru_fegyver_es_gepgyar
+			}
 		}
 	}
 	
@@ -3279,8 +3291,20 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = HUN_naval_warfare
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = HUN_ganz_danubius
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = HUN_ganz_danubius_organization
+				mio:HUN_ganz_danubius_organization = {
+					add_mio_size = 2
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = HUN_ganz_danubius
+			}
 		}
 	}
 
