@@ -243,10 +243,10 @@ focus_tree = {
 	focus = {
 		id = NOR_weathering_the_storm_to_come
 		icon = GFX_focus_NOR_weathering_the_storm_to_come
-		prerequisite = { focus = NOR_continue_nygaardsvold_government focus = NOR_vote_of_no_confidence }
+		prerequisite = { focus = NOR_arrest_quisling focus = NOR_vote_of_no_confidence }
 		x = -4
 		y = 1
-		relative_position_id = NOR_continue_nygaardsvold_government 
+		relative_position_id = NOR_arrest_quisling 
 
 		cost = 5
 
@@ -2635,11 +2635,11 @@ focus_tree = {
 		
 		icon = GFX_focus_NOR_arrest_quisling
 		
-		prerequisite = { focus = NOR_replace_laake }
+		prerequisite = { focus = NOR_continue_nygaardsvold_government }
 
 		x = 0
 		y = 1
-		relative_position_id = NOR_replace_laake
+		relative_position_id = NOR_continue_nygaardsvold_government
 		
 		cost = 5
 		
@@ -2705,11 +2705,11 @@ focus_tree = {
 	focus = {
 		id = NOR_reform_the_army
 		icon = GFX_focus_chi_army_reform
-		prerequisite = { focus = NOR_arrest_quisling }
+		prerequisite = { focus = NOR_replace_laake }
 
 		x = 0
 		y = 1
-		relative_position_id = NOR_arrest_quisling
+		relative_position_id = NOR_replace_laake
 		cost = 10
 		available = {
 		}
@@ -2842,10 +2842,10 @@ focus_tree = {
 	focus = {
 		id = NOR_broken_gun_policies
 		icon = GFX_focus_NOR_broken_gun_policies
-		prerequisite = { focus = NOR_continue_nygaardsvold_government }
+		prerequisite = { focus = NOR_arrest_quisling }
 		x = -1
 		y = 1
-		relative_position_id = NOR_continue_nygaardsvold_government 
+		relative_position_id = NOR_arrest_quisling 
 
 		cost = 10
 
@@ -2880,10 +2880,10 @@ focus_tree = {
 	focus = {
 		id = NOR_leaving_the_hard_thirties_behind
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = NOR_continue_nygaardsvold_government }
+		prerequisite = { focus = NOR_arrest_quisling }
 		x = 2
 		y = 1
-		relative_position_id = NOR_continue_nygaardsvold_government 
+		relative_position_id = NOR_arrest_quisling 
 
 		cost = 10
 
@@ -4072,15 +4072,15 @@ focus_tree = {
 	focus = {
 		id = NOR_fascist_invasion_of_norway
 		icon = GFX_focus_generic_attack_norway
-		prerequisite = { focus = NOR_continue_nygaardsvold_government }
+		prerequisite = { focus = NOR_arrest_quisling }
 
 		x = 10
-		y = 4
-		relative_position_id = NOR_continue_nygaardsvold_government
+		y = 3
+		relative_position_id = NOR_arrest_quisling
 		
 		offset = {
-			x = -1
-			y = -3
+			x = -5
+			y = -2
 			trigger = {
 				has_hide_rule = yes
 				has_completed_focus = NOR_arrest_quisling
@@ -4089,6 +4089,7 @@ focus_tree = {
 
 		cost = 10
 		available = {
+			always = no
 			custom_trigger_tooltip = {
 				tooltip = NOR_invasion_focus_TT
 				if = {
@@ -4351,9 +4352,9 @@ focus_tree = {
 		icon = GFX_focus_NOR_quislings_coup
 		prerequisite = { focus = NOR_nasjonal_samling focus = NOR_fascist_invasion_of_norway }
 
-		x = -1
-		y = 2
-		relative_position_id = NOR_nasjonal_samling
+		x = 0
+		y = 1
+		relative_position_id = NOR_fascist_invasion_of_norway
 		cost = 1
 
 
@@ -4388,6 +4389,7 @@ focus_tree = {
 			}
 		}
 		available = {
+			always = no
 			NOT = { 
 				has_global_flag = NOR_quislings_coup_happened 
 				has_completed_focus = NOR_arrest_quisling
@@ -4453,6 +4455,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
+			always = no
 			if = {
 				limit = {
 					has_variable = NOR_cw_democratic_norway
@@ -4496,6 +4499,7 @@ focus_tree = {
 		relative_position_id = NOR_quislings_coup
 		cost = 5
 		available = {
+			always = no
 			if = {
 				limit = {
 					has_variable = NOR_cw_democratic_norway
@@ -7297,7 +7301,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -8
+			x = 0
 			y = 0
 			trigger = {
 				has_hide_rule = yes
