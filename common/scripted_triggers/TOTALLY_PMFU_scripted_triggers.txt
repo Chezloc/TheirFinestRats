@@ -172,6 +172,7 @@ europe_dday_coastline = {
 		state = 167
 		state = 168
 		state = 173
+		state = 851
 	}
 }
 

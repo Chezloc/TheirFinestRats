@@ -188,18 +188,20 @@ political_actions = {
 
 		}		
 		timeout_effect = {
-            559 = {
-				set_demilitarized_zone = yes
-
-			}     
-            550 = {
-				set_demilitarized_zone = yes
-
-			}          
-			271 = {
-				set_demilitarized_zone = yes
-
-			}
+			550 = { set_demilitarized_zone = yes }
+			842 = { set_demilitarized_zone = yes }
+			841 = { set_demilitarized_zone = yes }
+			843 = { set_demilitarized_zone = yes }
+			908 = { set_demilitarized_zone = yes }
+			840 = { set_demilitarized_zone = yes }
+			839 = { set_demilitarized_zone = yes }
+			838 = { set_demilitarized_zone = yes }
+			837 = { set_demilitarized_zone = yes }
+			271 = { set_demilitarized_zone = yes }
+			836 = { set_demilitarized_zone = yes }
+			835 = { set_demilitarized_zone = yes }
+			844 = { set_demilitarized_zone = yes }
+			559 = { set_demilitarized_zone = yes }
 		}
 	}	
 	
@@ -453,37 +455,65 @@ operations = {
 		}
 
 		visible = {
-			550 = {
-				CONTROLLER = {
-					OR = {
-						tag = ITA
-						is_subject_of = ITA
-					}
-				}
-			}
-			271 = {
-				CONTROLLER = {
-					OR = {
-						tag = ITA
-						is_subject_of = ITA
-					}
-				}
-			}
-			559 = {
-				CONTROLLER = {
-					OR = {
-						tag = ITA
-						is_subject_of = ITA
-					}
-				}
-			}
+			# 550 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ITA
+			# 			is_subject_of = ITA
+			# 		}
+			# 	}
+			# }
+			# 271 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ITA
+			# 			is_subject_of = ITA
+			# 		}
+			# 	}
+			# }
+			# 559 = {
+			# 	CONTROLLER = {
+			# 		OR = {
+			# 			tag = ITA
+			# 			is_subject_of = ITA
+			# 		}
+			# 	}
+			# }
+			550 = { is_controlled_by_ROOT_or_ally = yes }
+			842 = { is_controlled_by_ROOT_or_ally = yes }
+			841 = { is_controlled_by_ROOT_or_ally = yes }
+			843 = { is_controlled_by_ROOT_or_ally = yes }
+			908 = { is_controlled_by_ROOT_or_ally = yes }
+			840 = { is_controlled_by_ROOT_or_ally = yes }
+			839 = { is_controlled_by_ROOT_or_ally = yes }
+			838 = { is_controlled_by_ROOT_or_ally = yes }
+			837 = { is_controlled_by_ROOT_or_ally = yes }
+			271 = { is_controlled_by_ROOT_or_ally = yes }
+			836 = { is_controlled_by_ROOT_or_ally = yes }
+			835 = { is_controlled_by_ROOT_or_ally = yes }
+			844 = { is_controlled_by_ROOT_or_ally = yes }
+			559 = { is_controlled_by_ROOT_or_ally = yes }
 		}
 		
 		complete_effect = {
 			add_political_power = 100
 			ETH = {
+				# transfer_state = 550
+				# transfer_state = 271
+				# transfer_state = 559
 				transfer_state = 550
+				transfer_state = 842
+				transfer_state = 841
+				transfer_state = 843
+				transfer_state = 908
+				transfer_state = 840
+				transfer_state = 839
+				transfer_state = 838
+				transfer_state = 837
 				transfer_state = 271
+				transfer_state = 836
+				transfer_state = 835
+				transfer_state = 844
 				transfer_state = 559
 				set_cosmetic_tag = ETH_ITA
 				create_country_leader = {

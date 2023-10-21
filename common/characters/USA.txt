@@ -893,6 +893,14 @@ characters={
 			traits  = {
 				financial_expert 
 			}
+			available = {
+				NOT = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+					}
+				}
+			}
 		}
 		name="USA_henry_morgenthau"
 		portraits={
@@ -1010,22 +1018,29 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
+				# if  = {
+				# 	limit  = {
+				# 		has_dlc = "Man the Guns"
+				# 	}
+				# 	not  = {
+				# 		has_autonomy_state  = autonomy_supervised_state
+				# 	}
+				# }
+				OR = {
+					has_idea = isolation
+					has_idea = undisturbed_isolation
 				}
 			}
-			traits  = {
-				democratic_reformer 
-			}
-			do_effect  = {
-				not  = {
-					has_government  = democratic 
-				}
+			# traits  = {
+			# 	democratic_reformer 
+			# }
+			# do_effect  = {
+			# 	not  = {
+			# 		has_government  = democratic 
+			# 	}
+			# }
+			modifier = {
+				consumer_goods_factor = -0.05
 			}
 			ai_will_do  = {
 				factor  = 0.000

@@ -82,6 +82,17 @@ ideas = {
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
 			}
+
+			on_add = {
+				if = {
+					limit = {
+						tag = USA
+					}
+					USA_harold_ickes = {
+						retire = yes
+					}
+				}
+			}
 			
 			default = yes
 			
@@ -119,6 +130,17 @@ ideas = {
 				fuel_gain_factor = -0.25
 			}
 			
+			on_add = {
+				if = {
+					limit = {
+						tag = USA
+					}
+					USA_harold_ickes = {
+						retire = yes
+					}
+				}
+			}
+
 			cancel_if_invalid = no
 
 		}
@@ -155,6 +177,17 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				conversion_cost_civ_to_mil_factor= -0.1
 				fuel_gain_factor = -0.1
+			}
+
+			on_add = {
+				if = {
+					limit = {
+						tag = USA
+					}
+					USA_harold_ickes = {
+						retire = yes
+					}
+				}
 			}
 			
 			cancel_if_invalid = no
@@ -209,6 +242,17 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.2
 			}
+
+			on_add = {
+				if = {
+					limit = {
+						tag = USA
+					}
+					USA_harold_ickes = {
+						retire = yes
+					}
+				}
+			}
 			
 			cancel_if_invalid = no
 
@@ -258,6 +302,17 @@ ideas = {
 				conscription = -0.02
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.3
+			}
+
+			on_add = {
+				if = {
+					limit = {
+						tag = USA
+					}
+					USA_harold_ickes = {
+						retire = yes
+					}
+				}
 			}
 			
 			cancel_if_invalid = no

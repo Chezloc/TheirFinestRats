@@ -168,6 +168,22 @@ JAP_mitsubishi_organization = {
 			}
 		}
 	}
+
+	add_trait = { 
+		token = JAP_mio_range_improvements
+		name = JAP_mio_range_improvements
+		icon = GFX_generic_mio_trait_icon_air_agility
+		special_trait_background = yes
+
+		position = { x=8 y=0 }
+		
+		available = {
+		}
+
+		equipment_bonus = {
+			air_range = 0.50
+		}
+	}
 } 
 
 # JAP_aichi_organization = {
@@ -182,7 +198,7 @@ JAP_mitsubishi_organization = {
 # }
 
 JAP_nakajima_organization = {
-	include = generic_heavy_aircraft_organization
+	include = generic_medium_aircraft_organization
 	icon = GFX_idea_nakajima
 	allowed = {	
 		tag = JAP

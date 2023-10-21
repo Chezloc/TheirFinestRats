@@ -109,6 +109,27 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 2000
+	producer = IRE
+}
+add_equipment_to_stockpile = {
+	type = squad_equipment_0
+	amount = 400
+	producer = IRE
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 750
+	producer = IRE
+}
+add_equipment_to_stockpile = {
+	type = horse_equipment
+	amount = 500
+	producer = IRE
+}
+
 set_variable = { COM_poster_center_icon_frame = 1 }
 
 set_convoys = 70

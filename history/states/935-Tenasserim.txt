@@ -12,6 +12,9 @@ state={
 	history={
 		add_core_of = WST
 		owner = RAJ
+		1936.1.1.13 = {
+			owner = WST
+		}
 		victory_points = {
 			1296 1 
 		}
