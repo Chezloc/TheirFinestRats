@@ -645,7 +645,6 @@ NDefines.NSupply.FLOATING_HARBOR_DECAY_NO_CONTROL_PENALTY = 1.0 -- If adjacent l
 NDefines.NSupply.NAVAL_BASE_FLOW = 15
 NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 5
 
-
 NDefines.NGraphics.WEATHER_DISTANCE_CUTOFF = 1200 -- At what distance weather effects are hidden
 NDefines.NGraphics.WEATHER_DISTANCE_FADE_LENGTH = 400 -- How far the fade out distance should be
 NDefines.NGraphics.WEATHER_ZOOM_IN_CUTOFF = 1 -- At what distance weather effects are faded out the most when zooming in
@@ -654,6 +653,23 @@ NDefines.NGraphics.WEATHER_ZOOM_IN_FADE_FACTOR = 0.0 -- How much the weather eff
 NDefines.NGraphics.WEATHER_PLAYBACK_RATE = 0.25 -- Playback rate at maximum distance
 NDefines.NGraphics.WEATHER_PLAYBACK_RATE_CUTOFF = 400 -- Playback rate maximum distance
 NDefines.NGraphics.WEATHER_PLAYBACK_RATE_LENGTH = 200 -- For how long to fade between normal playback rate and maximum distance playback rate
+
+NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.1					-- Cost in Political Power daily generation when one MIO is assigned to a research slot. If 0, cost is entirely disabled.
+NDefines.NIndustrialOrganisation.ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY = 0.0		-- Cost in Political Power daily generation when one MIO is assigned to a production line. If 0, cost is entirely disabled.
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 1000					-- Funds needed for a MIO to increment its size and get points to unlock traits
+NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 0.8 			-- How much each level mutliplies the funds for size up 
+NDefines.NIndustrialOrganisation.UNLOCKED_TRAITS_PER_SIZE_UP = 1			-- Number of points for unlocking traits obtained when the MIO increments its size
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0 		-- 5 in vanilla. Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
+NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 500     -- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
+NDefines.NIndustrialOrganisation.FUNDS_FOR_CREATING_EQUIPMENT_VARIANT = 0		-- Funds added to MIO when a new variant is created with the Design Team assigned to it
+NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.1		-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
+NDefines.NIndustrialOrganisation.MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 100		-- Max funds generated per manufacturer per day. Set to 0 for no Maximum.
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_RESEARCH_BONUS = 0.05				-- Research bonus for applying a Design Team that matches the technology
+NDefines.NIndustrialOrganisation.ENABLE_TASK_CAPACITY = false					-- Enable limited task capacity for MIOs
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_TASK_CAPACITY = 0				-- Default start task capacity for each MIO (may be overriden in DB)
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_POLICY_ATTACH_COST = 25		-- Default start attach cost in PP for policies
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 180	-- Default start cooldown in days after attaching a policy
+NDefines.NIndustrialOrganisation.LEGACY_COST_FACTOR_SCALE = 1.0					-- Multiplier to use when legacy Designer cost factors is applied to MIOs (<IdeaGroup>_cost_factor)
 
 -- EXPERIMENTAL GRAPHICS
 

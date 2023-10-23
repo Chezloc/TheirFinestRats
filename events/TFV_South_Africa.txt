@@ -171,6 +171,30 @@ country_event = {
 		} else = {
 			548 = { add_claim_by = SAF }
 		}
+		if = {
+			limit = {
+				903 = {	is_fully_controlled_by = ENG }
+			}
+			transfer_state = 903
+		} else = {
+			903 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
+				905 = {	is_fully_controlled_by = ENG }
+			}
+			transfer_state = 905
+		} else = {
+			905 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
+				904 = {	is_fully_controlled_by = ENG }
+			}
+			transfer_state = 904
+		} else = {
+			904 = { add_claim_by = SAF }
+		}
 
 		#Belgian Congo
 		if = {
@@ -207,11 +231,35 @@ country_event = {
 		}
 		if = {
 			limit = {
+				888 = {	is_fully_controlled_by = BEL }
+			}
+			transfer_state = 888
+		} else = {
+			888 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
+				889 = {	is_fully_controlled_by = BEL }
+			}
+			transfer_state = 889
+		} else = {
+			889 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
 				768 = {	is_fully_controlled_by = BEL }
 			}
 			transfer_state = 768
 		} else = {
 			768 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
+				890 = {	is_fully_controlled_by = BEL }
+			}
+			transfer_state = 890
+		} else = {
+			890 = { add_claim_by = SAF }
 		}
 
 		hidden_effect = {
@@ -301,6 +349,30 @@ country_event = {
 		} else = {
 			548 = { add_claim_by = SAF }
 		}
+		if = {
+			limit = {
+				903 = {	is_fully_controlled_by = ENG }
+			}
+			transfer_state = 903
+		} else = {
+			903 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
+				905 = {	is_fully_controlled_by = ENG }
+			}
+			transfer_state = 905
+		} else = {
+			905 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
+				904 = {	is_fully_controlled_by = ENG }
+			}
+			transfer_state = 904
+		} else = {
+			904 = { add_claim_by = SAF }
+		}
 
 		#Belgian Congo
 		if = {
@@ -337,11 +409,35 @@ country_event = {
 		}
 		if = {
 			limit = {
+				888 = {	is_fully_controlled_by = BEL }
+			}
+			transfer_state = 888
+		} else = {
+			888 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
+				889 = {	is_fully_controlled_by = BEL }
+			}
+			transfer_state = 889
+		} else = {
+			889 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
 				768 = {	is_fully_controlled_by = BEL }
 			}
 			transfer_state = 768
 		} else = {
 			768 = { add_claim_by = SAF }
+		}
+		if = {
+			limit = {
+				890 = {	is_fully_controlled_by = BEL }
+			}
+			transfer_state = 890
+		} else = {
+			890 = { add_claim_by = SAF }
 		}
 
 		effect_tooltip = {

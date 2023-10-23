@@ -134,9 +134,9 @@ unplanned_offensive = { # on Province
 }
 
 night = { # On province. Multiplied by amount of darkness.
-	naval_hit_chance = -0.25
-	carrier_traffic = -0.75 
 	air_bombing_targetting = -0.5
+	carrier_traffic = -0.75 
+	naval_hit_chance = -0.25
 	naval_retreat_speed = 0.1
 }
 

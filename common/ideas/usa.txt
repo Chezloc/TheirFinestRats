@@ -907,6 +907,7 @@ ideas = {
 				join_faction_tension = 0.25
 				send_volunteers_tension = 0.5
 				guarantee_tension = 0.5
+				embargo_threshold_factor = 1.5
 			}
 		}
 		USA_neutrality_idea = {
@@ -1120,7 +1121,7 @@ ideas = {
 			}
 		}
 		USA_war_department = {	
-			picture = generic_manpower_bonus
+			picture = usa_war_department
 			allowed = {
 				always = no
 			}
@@ -1152,7 +1153,7 @@ ideas = {
 			}
 		}
 		USA_state_funds_refused = {
-			picture = mex_callistas
+			picture = MEX_callistas
 			allowed = {
 				always = no
 			}

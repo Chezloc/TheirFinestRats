@@ -1068,6 +1068,7 @@ ideas = {
 				#lend_lease_tension = 0.50
 				send_volunteers_tension = 100.0
 				guarantee_tension = 10.0
+				embargo_threshold_factor = 2.5
 				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
 				ai_get_ally_desire_factor = -1000
 			}
@@ -1664,7 +1665,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = SPR tag = HOL tag = HUN tag = ROM tag = BUL tag = YUG tag = FIN tag = MON tag = SIA tag = BUL tag = RAJ tag = VIC tag = IRE tag = BRA } }
 				NOT = {
-					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
+					has_allowed_idea_with_traits = { idea = tank_manufacturer limit = 1 }
 				}
 				NOT = {
 					AND = {
@@ -1713,7 +1714,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = SWE tag = HUN tag = CZE } }
 				NOT = {
-					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
+					has_allowed_idea_with_traits = { idea = naval_manufacturer limit = 1 }
 				}
 				NOT = {
 					AND = {
@@ -1759,7 +1760,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
-					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
+					has_allowed_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
 				}
 				if = {
 					limit = {
@@ -1800,7 +1801,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = ROM } }
 				NOT = {
-					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
+					has_allowed_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
 				}
 				if = {
 					limit = {
@@ -1841,7 +1842,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM } }
 				NOT = {
-					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
+					has_allowed_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
 				}
 				if = {
 					limit = {
@@ -1882,7 +1883,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = YUG } }
 				NOT = {
-					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
+					has_allowed_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
 				}
 				if = {
 					limit = {
@@ -1922,7 +1923,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN } }
 				NOT = {
-					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+					has_allowed_idea_with_traits = { idea = industrial_concern limit = 1 }
 				}
 				NOT = {
 					AND = {
@@ -1934,6 +1935,12 @@ ideas = {
 					AND = {
 						OR = { tag = MEX tag = HOL }
 						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = ICE tag = DEN }
+						has_dlc = "Arms Against Tyranny"
 					}
 				}
 			}
@@ -1955,7 +1962,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = FIN } }
 				NOT = {
-					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+					has_allowed_idea_with_traits = { idea = electronics_concern limit = 1 }
 				}
 				NOT = {
 					AND = {
@@ -1970,6 +1977,12 @@ ideas = {
 					AND = {
 						OR = { tag = HOL tag = MEX }
 						has_dlc = "Man the Guns"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = FIN tag = ICE tag = SWE }
+						has_dlc = "Arms Against Tyranny"
 					}
 				}
 			}
@@ -1996,7 +2009,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
-					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
+					has_allowed_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
 				}
 				NOT = {
 					AND = {
@@ -2029,7 +2042,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN } }
 				NOT = {
-					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+					has_allowed_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
 				}
 				NOT = {
 					AND = {
@@ -2062,7 +2075,7 @@ ideas = {
 			allowed = {
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
-					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+					has_allowed_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
 				}
 				NOT = {
 					AND = {

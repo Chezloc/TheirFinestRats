@@ -1066,7 +1066,7 @@ leader_traits = {
 	coffee_oligarch = {
 		random = no
 
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 		production_speed_buildings_factor = 0.1
 		
 		ai_will_do = {
@@ -1915,7 +1915,7 @@ leader_traits = {
 		political_power_factor = -0.1
 		stability_factor = 0.05
 		neutrality_drift = 0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 		
 		ai_will_do = {
 			factor = 1
@@ -1946,7 +1946,7 @@ leader_traits = {
 	humble = {
 		random = no
 		neutrality_drift = 0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 		
 		ai_will_do = {
 			factor = 1
@@ -2268,6 +2268,7 @@ leader_traits = {
 		political_power_factor = -0.15
 		justify_war_goal_time = 0.15
 		subversive_activites_upkeep = -0.3
+		max_command_power = 30
 		
 		ai_will_do = {
 			factor = 1
@@ -2278,7 +2279,10 @@ leader_traits = {
 		random = no
 		justify_war_goal_time = 0.15
 		subversive_activites_upkeep = -0.5
+		max_command_power = 50
+
 		drift_defence_factor = 0.15
+		command_power_gain_mult = 0.15
 
 		ai_will_do = {
 			factor = 1
@@ -2417,7 +2421,7 @@ leader_traits = {
 
 	the_silver_president = { #Juan Andreu
 		random = no
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 		fascism_acceptance = 50
 		ai_will_do = {
 			factor = 1
@@ -2707,8 +2711,11 @@ leader_traits = {
 	red_army_organizer = { # Trotsky's trait if invited to join the Mexican government. Combines effects of Genius Army Organizer and Communist Revolutionary
 		sprite = 12
 		army_org_factor = 0.12
+		experience_gain_army = @chief_experience_gain_high
 		communism_drift = 0.1
 		
+		command_cap = @tier3
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -2748,14 +2755,14 @@ leader_traits = {
 		random = no
 		trade_laws_cost_factor = -0.33
 		economy_cost_factor = -0.33
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 	}
 
 	strict_austerity_adherent = {
 		random = no
 		stability_factor = -0.15
 		economy_cost_factor = 0.5
-		consumer_goods_factor = -0.1
+		consumer_goods_factor = -0.30
 	}
 
 	defeatist = {
@@ -2889,7 +2896,7 @@ leader_traits = {
 
 	disgraced_monarch = {
 		random = no
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 		stability_factor = -0.1
 	}
 
@@ -4877,7 +4884,8 @@ leader_traits = {
 	SWI_weapons_designer = { #Unlocks Expand Arms Industry 
 		random = no 
 		sprite = 10
-		production_factory_max_efficiency_factor = 0.1 
+		production_factory_max_efficiency_factor = 0.1
+		neutrality_drift = 0.03 
 		materiel_manufacturer_cost_factor = -0.75
 		research_speed_factor = 0.1
 	}
@@ -6345,9 +6353,9 @@ leader_traits = {
 	labor_defense_organizer = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 		army_core_defence_factor = 0.05
-		experience_gain_army_factor = 0.05 #TODO
+		experience_gain_army_factor = 0.05
 		research_speed_factor = -0.03
 	}
 
@@ -6366,7 +6374,7 @@ leader_traits = {
 		random = no
 		research_speed_factor = 0.03
 		stability_factor = 0.1
-		compliance_gain = 0.1
+		compliance_gain = 0.05
 		political_power_factor = -0.1
 		drift_defence_factor = -0.1
 	}
@@ -6411,7 +6419,7 @@ leader_traits = {
 	emigre_connections = {
 		random = no
 		weekly_manpower = 2000
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.10
 	}
 
 	desperate_gambit = {
@@ -6752,7 +6760,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		fascism_drift = 0.1
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.10
 		opinion_gain_monthly_same_ideology_factor = 0.15
 	}
 
@@ -6774,7 +6782,7 @@ leader_traits = {
 	driver_of_the_faithful = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.03
+		consumer_goods_factor = -0.10
 		industrial_capacity_factory = 0.05
 	}
 
@@ -7218,7 +7226,7 @@ leader_traits = {
 	finance_graduate = {
 		sprite = 10
 		random = no
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.10
 		
 		ai_will_do = {
 			factor = 2
@@ -7329,6 +7337,7 @@ leader_traits = {
 
 		war_support_factor = 0.1
 		neutrality_drift = 0.1
+		weekly_bombing_war_support = 0.001
 		
 		ai_will_do = {
 			factor = 1
@@ -7340,7 +7349,7 @@ leader_traits = {
 		sprite = 10
 
 		stability_factor = 0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 		
 		ai_will_do = {
 			factor = 1
@@ -7375,8 +7384,8 @@ leader_traits = {
 		random = no
 		sprite = 10
 
-		consumer_goods_factor = -0.1
-		resistance_growth_on_our_occupied_states = 0.1 
+		consumer_goods_factor = -0.30
+		resistance_growth_on_our_occupied_states = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -7478,7 +7487,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.10
 		stability_factor = 0.05
 		conscription = 0.005
 		
@@ -7577,7 +7586,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		fascism_drift = 0.1
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 	}
 
 	leftist_freemason = {
@@ -7650,14 +7659,14 @@ leader_traits = {
 		sprite = 13
 		trade_laws_cost_factor = -0.25
 		economy_cost_factor = -0.25
-		neutrality_drift = 0.05
-		fascism_drift = 0.05
+		neutrality_drift = -0.05
+		fascism_drift = -0.05
 	}
 
 	agricultural_capitalist = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 		neutrality_drift = 0.05
 	}
 
@@ -7719,7 +7728,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		fascism_drift = 0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 	}
 
 	subservient_ultranationalist = {
@@ -7752,7 +7761,7 @@ leader_traits = {
 		resistance_target = -0.05
 	}
 
-	marxist_fundementalist = {
+	marxist_fundamentalist = {
 		random = no
 		sprite = 13
 		communism_drift = 0.1
@@ -7946,7 +7955,7 @@ leader_traits = {
 	staunch_aristocrat = {
 		random = no
 		sprite = 13
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.20
 		drift_defence_factor = 0.15
 	}
 	
@@ -8104,12 +8113,15 @@ leader_traits = {
 
 	council_of_theorists = {
 		sprite = 14
-		experience_gain_army = 0.02 #TODO
-		experience_gain_air = 0.02 #TODO
-		experience_gain_navy = 0.02 #TODO
+		experience_gain_army = 0.03
+		experience_gain_air = 0.03
+		experience_gain_navy = 0.03
+		land_doctrine_cost_factor = -0.05
+		air_doctrine_cost_factor = -0.05
+		naval_doctrine_cost_factor = -0.05
 		
 		ai_will_do = {
-			factor = 500
+			factor = 3
 		}
 	}
 	

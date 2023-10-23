@@ -3106,6 +3106,7 @@ technologies = {
 	}
 
 	fortress_construction = {
+		allow = { always = no } #Only obtained through Focus
 		enable_building = {
 			building = fortress
 			level = 2

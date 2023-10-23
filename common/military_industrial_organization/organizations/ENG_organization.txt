@@ -483,38 +483,6 @@ ENG_supermarine_organization = {
 			naval_strike_targetting = 0.1
 		}
 	}
-
-	add_trait = { 
-		token = ENG_mio_trait_elliptical_wings
-		name = ENG_mio_trait_elliptical_wings
-		icon = GFX_generic_mio_trait_icon_defense
-		special_trait_background = yes
-
-		position = { x=0 y=1 }
-		relative_position_id = generic_mio_trait_cantilever_wing_structure
-
-		any_parent = { generic_mio_trait_cantilever_wing_structure }
-
-		equipment_bonus = {
-			air_defence = 0.1	
-		}
-	}
-
-	add_trait = { 
-		token = ENG_mio_trait_supercharger
-		name = ENG_mio_trait_supercharger
-		icon = GFX_generic_mio_trait_icon_defense
-		special_trait_background = yes
-
-		position = { x=1 y=1 }
-		relative_position_id = generic_mio_trait_fuel_injection_engines
-
-		all_parents = { generic_mio_trait_fuel_injection_engines generic_mio_trait_high_octane_fuels }
-
-		equipment_bonus = {
-			air_defence = 0.1	
-		}
-	}
 }
 
 ENG_hawker_organization = {
@@ -791,6 +759,8 @@ ENG_royal_arsenal_organization = {
 	allowed = {
 		OR = {
 			tag = ENG
+			tag = AST
+			tag = CAN
 			AND = {
 				OR = {
 					original_TAG = LAT

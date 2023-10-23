@@ -477,7 +477,7 @@ focus_tree = {
 				path = { 11234 9331 320 9234 11109 117 6197 79 6174 }
 			}
 			build_railway = {
-				path = { 6174 3151 }
+				path = { 6174 13319 }
 			}
 			build_railway = {
 				path = { 11068 9197 }
@@ -887,7 +887,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = SOV_tolkach
+			# add_ideas = SOV_tolkach
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_equipment_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_soviet_economy_global_building_slots_factor = 0.20 tooltip = global_building_slots_factor_tt }
 		}
 	}
 	
@@ -1082,7 +1086,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = SOV_rubber_refining
+			# add_ideas = SOV_rubber_refining
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_production_speed_synthetic_refinery_factor = 0.15 tooltip = production_speed_synthetic_refinery_factor_tt }
 			add_tech_bonus = {
 				name = "Rubber Refining"
 				bonus = 1
@@ -1184,7 +1190,7 @@ focus_tree = {
 		cost = 1
 		
 		bypass = {
-			NOT = { has_idea = SOV_2_5_plan }
+			# NOT = { has_idea = SOV_2_5_plan }
 		}
 
 		completion_reward = {
@@ -1205,7 +1211,12 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = SOV_2_plan_tt
-			remove_ideas = SOV_2_5_plan
+			# remove_ideas = SOV_2_5_plan
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_political_power_gain = 0.20 tooltip = political_power_gain_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = -0.05 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_industrial_complex_factor = -0.15 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_bunker_factor = 0.25 tooltip = production_speed_bunker_factor_tt }
 			if = {
 				limit = {
 					date < 1937.8.1
@@ -1240,9 +1251,19 @@ focus_tree = {
 		cost = 1
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = SOV_3_5_plan
-				days = 1825
+			# add_timed_idea = {
+			# 	idea = SOV_3_5_plan
+			# 	days = 1825
+			# }
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_political_power_gain = -0.10 tooltip = political_power_gain_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = 0.15 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_bunker_factor = -0.25 tooltip = production_speed_bunker_factor_tt }
+			set_variable = { SOV_3_5_plan_duration = 1825 tooltip = modification_length_tt }
+			hidden_effect = {
+				SOV = {
+					country_event = { id = generic.43 days = SOV_3_5_plan_duration }
+				}
 			}
 		}
 	}
@@ -1257,7 +1278,11 @@ focus_tree = {
 		cost = 2
 
 		completion_reward = {
-			add_ideas = SOV_pcdi_idea
+			# add_ideas = SOV_pcdi_idea
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 	focus = {
@@ -1283,10 +1308,22 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SOV_3_5_plan
-				add_idea = SOV_3_5_plan_ger
-			}
+			# swap_ideas = {
+			# 	remove_idea = SOV_3_5_plan
+			# 	add_idea = SOV_3_5_plan_ger
+			# }
+			# production_speed_arms_factory_factor = 0.25
+				# consumer_goods_factor = -0.15
+				# industrial_capacity_factory = 0.15
+				# production_factory_efficiency_gain_factor = 0.10
+				# production_factory_max_efficiency_factor = 0.05
+			set_country_flag = SOV_germans_are_coming_flag
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_factory_efficiency_gain_factor = 0.10 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_soviet_economy_industrial_capacity_factory = 0.15 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = 0.25 tooltip = production_speed_arms_factory_factor_tt }
 
 			# if = {
 			# 	limit = { has_country_flag = RG_armored_division_medium }
@@ -1364,9 +1401,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas =	{
-				 SOV_women_idea
-			} 
+			# add_ideas =	{
+			# 	SOV_women_idea
+			# } 
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_conscription = 0.01 tooltip = conscription_tt }
+			add_to_variable = { SOV_soviet_economy_consumer_goods_factor = -0.03 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { SOV_soviet_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			
 		}
 	}
 	
@@ -1555,7 +1597,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
-			add_ideas = SOV_war_mob
+			# add_ideas = SOV_war_mob
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_local_resources_factor = 0.10 tooltip = local_resources_factor_tt }
+			add_to_variable = { SOV_soviet_economy_conscription = 0.02 tooltip = conscription_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = 0.2 tooltip = production_speed_arms_factory_factor_tt }
+			
 
 			# if = {
 			# 	limit = { has_country_flag = RG_armored_division_medium }
@@ -2037,8 +2084,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_ideas = SOV_guards_ideas
-
+			# add_ideas = SOV_guards_ideas
+			custom_effect_tooltip = SOV_modify_red_army_ns_intro # tooltip
+			add_to_variable = { SOV_the_red_army_experience_gain_army_unit_factor = 0.1 tooltip = experience_gain_army_unit_factor_tt }
 			# if = {
 			# 	limit = { has_country_flag = RG_armored_division_medium }
 			# 	SOV_increase_RG_cap_medium_double = yes
@@ -2148,7 +2196,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = SOV_technical_assistance
+			# add_ideas = SOV_technical_assistance
+			# production_factory_efficiency_gain_factor = 0.1
+			# 	production_factory_max_efficiency_factor = 0.05
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
 		}
 	}
 
@@ -3971,7 +4024,12 @@ focus_tree = {
 
 		completion_reward = {
 			# add_timed_idea = { idea = SOV_coordinate_industry_idea days = 270 }
-			add_ideas = SOV_coordinate_industry_idea
+			# add_ideas = SOV_coordinate_industry_idea
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_equipment_line_change_production_efficiency_factor = 0.2 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_buildings_factor = 0.10 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { SOV_soviet_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
 			add_offsite_building = { type = industrial_complex level = 15 }
 			add_offsite_building = { type = arms_factory level = 15 }
 		}
@@ -4019,7 +4077,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = SOV_gulag_workers
+			# add_ideas = SOV_gulag_workers
+			SOV_eco_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_soviet_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
 			custom_effect_tooltip = SOV_penal_battalions_spawn_tt
 			add_offsite_building = { type = industrial_complex level = 30 }
 			add_offsite_building = { type = arms_factory level = 30 }
@@ -6639,6 +6699,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA}
 
 		completion_reward = {
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = SOV_the_agitprop_dynamic_modifier
+				}
+			}
 			add_political_power = 25
 			add_popularity = {
 				ideology = communism
@@ -6668,8 +6733,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = SOV_collectivist_propaganda
 			add_political_power = 120
+
+			# add_ideas = SOV_collectivist_propaganda
+			SOV_agitprop_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_agitprop_local_resources_factor = 0.05 tooltip = local_resources_factor_tt }
+			add_to_variable = { SOV_agitprop_stability_factor = 0.2 tooltip = stability_factor_tt }
+			add_to_variable = { SOV_agitprop_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_for_the_motherland
 			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
@@ -6692,7 +6763,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = militarized_schools
+			# add_ideas = militarized_schools
+			# conscription = 0.005
+			# 	experience_gain_factor = 0.25
+			# 	army_morale_factor = 0.05
+			SOV_agitprop_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_agitprop_experience_gain_factor = 0.25 tooltip = experience_gain_factor_tt }
+			add_to_variable = { SOV_agitprop_conscription = 0.005 tooltip = conscription_tt }
+			add_to_variable = { SOV_agitprop_army_morale_factor = 0.05 tooltip = army_morale_factor_factor_tt }
 		}
 	}
 
@@ -6712,7 +6790,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = SOV_positive
+			# add_ideas = SOV_positive
+			SOV_agitprop_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_agitprop_mobilization_speed = 0.5 tooltip = mobilization_speed_tt }
+			add_to_variable = { SOV_agitprop_stability_weekly = 0.001 tooltip = stability_weekly_tt }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_heroes_forward
 			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
@@ -6735,7 +6816,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = SOV_stakhanovite
+			# add_ideas = SOV_stakhanovite
+			SOV_agitprop_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_agitprop_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { SOV_agitprop_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
 		}
 	}
 	
@@ -6754,7 +6838,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = socialist_science_focus
+			# add_ideas = socialist_science_focus
+			SOV_agitprop_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_agitprop_conscription = 0.02 tooltip = conscription_tt }
 		}
 	}
 
@@ -6773,7 +6859,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = progress_cult_focus
+			# add_ideas = progress_cult_focus
+			SOV_agitprop_modifier_tt = yes # tooltip
+			add_to_variable = { SOV_agitprop_research_speed_factor = 0.10 tooltip = research_speed_factor_tt }
 			add_tech_bonus = {
 				name = CAN_cmp_truck
 				ahead_reduction = 0.5
@@ -6876,7 +6964,9 @@ focus_tree = {
 					available_to_spy_master = yes
 					nationalities = { SOV GER }
 				}
-				add_ideas = SOV_soviet_atomic_bomb_project_ns
+				# add_ideas = SOV_soviet_atomic_bomb_project_ns
+				SOV_agitprop_modifier_tt = yes # tooltip
+				add_to_variable = { SOV_agitprop_operative_slot = 1 tooltip = operative_slot_tt }
 			}
 			custom_effect_tooltip = SOV_soviet_atomic_bomb_project_unlock_operation_tt
 		}

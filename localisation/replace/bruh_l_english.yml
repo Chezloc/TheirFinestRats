@@ -1,5 +1,6 @@
 ﻿l_english:
  insert_extra_line_here:0 "\n\n"
+ insert_extra_line_here_but_less:0 "\n"
  #### EVENTS ####
  DOD_romania.501.t:0 "Romania asks for ceasefire"
  DOD_romania.501.d:0 "Romanian envoys of the new King Michael have approached us asking for a ceasefire, promising to help us in the war against the Germans."
@@ -245,6 +246,9 @@
  undisturbed_isolation:0 "Undisturbed Isolation"
  undisturbed_isolation_desc:0 "Still recovering from the Great Depression and the Dust Bowl famine, the nation is slowly rebuilding its infrastructure. America's industries are in most cases working at half capacity, and will keep doing so unless major events rouse the nation from torpor."
  isolation:0 "Isolation"
+ 
+ ### MIO ###
+ generic_mio_trait_large_scale_production:0 "Large Scale Production"
 #  civilian_economy:0 "Civilian Economy"
 #  low_economic_mobilisation:0 "Early Mobilization"
 #  partial_economic_mobilisation:0 "Partial Mobilization"
@@ -409,7 +413,7 @@
  modifier_experience_gain_sh_battleship_training_factor:0 "Super Heavy Battleship Training Factor"
  modifier_experience_gain_sh_battleship_combat_factor:0 "Super Heavy Battleship Combat Factor"
  dockyard_cg_mod:0 "§YDockyard Consumer Goods§!"
- dockyard_cg_mod_desc:0 "§WFor every £dockyard_texticon §R10§! §YNaval Dockyards§! (rounded), you will get £consumer_goods_texticon Consumer Goods Factories: §Y0.5%§! to prevent spamming naval dockyards, this does §RNOT§! apply when you are in the §BLondon Naval Treaty§!"
+ dockyard_cg_mod_desc:0 "§WFor every £dockyard_texticon §R10§! §YNaval Dockyards§! (rounded), you will get £consumer_goods_texticon Expected number of factories put on Consumer Goods: §Y0.5%§! to prevent spamming naval dockyards, this does §RNOT§! apply when you are in the §BLondon Naval Treaty§!"
 
 officer_training_flag:0 "Officer Training in Progress"
 superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General with §Y"Engineer Officer"§! the trait §Y"Engineer"§!"
@@ -1605,6 +1609,8 @@ fifty_cas_dmg_reduction:0 "From focus"
  ALB_neutrality_DEF:0 "The Albanian Kingdom"
  POL_neutrality:0 "Second Polish Republic"
  POL_neutrality_DEF:0 "The Second Polish Republic"
+ SAF_autonomy_dominion:0 "Union of South Africa"
+ SAF_autonomy_dominion_DEF:0 "The Union of South Africa"
 
  artillery2:0 "Artillery II"
  artillery3:0 "Artillery III"

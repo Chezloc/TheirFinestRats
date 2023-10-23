@@ -78,7 +78,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			remove_ideas = ENG_great_depression_1
+			# remove_ideas = ENG_great_depression_1
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.20 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { ENG_british_economy_industrial_capacity_factory = 0.10 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.10 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { ENG_british_economy_production_speed_buildings_factor = 0.10 tooltip = production_speed_buildings_factor_tt }
 		}
 	}
 	
@@ -111,7 +116,11 @@ focus_tree = {
 		}	
 		completion_reward = {
 			custom_effect_tooltip = shadow_scheme_focus_tt
-			add_ideas = ENG_shadow_scheme_idea
+			# add_ideas = ENG_shadow_scheme_idea
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_economy_conversion_cost_civ_to_mil_factor = -0.2 tooltip = conversion_cost_civ_to_mil_factor_tt }
+			add_to_variable = { ENG_british_economy_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			
 			# add_to_variable= { ENG.shadow_civs1 = 2 }
 			# random_owned_controlled_state= {
 			# 	limit= {
@@ -192,10 +201,15 @@ focus_tree = {
  		completion_reward = {
 			custom_effect_tooltip = shadow_scheme_focus_conv_tt
 			custom_effect_tooltip = ENG_shadow_scheme_2_focus_tt
-			swap_ideas = {
-				add_idea = ENG_shadow_scheme_idea2
-				remove_idea = ENG_shadow_scheme_idea
-			}
+			# swap_ideas = {
+			# 	add_idea = ENG_shadow_scheme_idea2
+			# 	remove_idea = ENG_shadow_scheme_idea
+			# }
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ENG_shadow_scheme_2_tt
+			add_to_variable = { ENG_british_economy_industry_air_damage_factor = -0.1 }
+			add_to_variable = { ENG_british_economy_industry_repair_factor = 0.1 }
+			
 			for_each_scope_loop = {
 				array = ENG.starting_core_states
 		
@@ -245,6 +259,9 @@ focus_tree = {
 					}
 				}
 			}
+
+
+			
 		}
 	}
 	
@@ -260,7 +277,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_british_fighter_discount
+			hidden_effect = {
+				add_ideas = ENG_british_fighter_discount
+			}
+			ENG_airforce_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ENG_air_production_group_5_ftt
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = ENG_air_production_prop
 		}
@@ -342,7 +363,12 @@ focus_tree = {
 	 	}	
 	 	completion_reward = {
 	 		air_experience = 50
-	 		add_ideas = ENG_fighter_com
+	 		# add_ideas = ENG_fighter_com
+			#  army_bonus_air_superiority_factor = 0.05
+			#  air_interception_attack_factor = 0.05
+			ENG_airforce_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.05 tooltip = air_interception_attack_factor_tt }
+			add_to_variable = { ENG_british_airforce_army_bonus_air_superiority_factor = 0.05 tooltip = army_bonus_air_superiority_factor_tt }
 	 	}
 	 }
 	
@@ -387,8 +413,17 @@ focus_tree = {
 	 	}	
 	 	completion_reward = {
 	 		air_experience = 50
-	 		add_ideas = ENG_bomber_com
-			add_ideas = ENG_coastal_com
+	 		# add_ideas = ENG_bomber_com
+			#  air_night_penalty = -0.10
+			#  air_range_factor = 0.05
+			# add_ideas = ENG_coastal_com
+			# air_weather_penalty = -0.10
+			# naval_strike_targetting_factor = 0.05
+			ENG_airforce_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_airforce_air_range_factor = 0.05 tooltip = air_range_factor_tt }
+			add_to_variable = { ENG_british_airforce_air_night_penalty = -0.10 tooltip = air_night_penalty_tt }
+			add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt }
+			add_to_variable = { ENG_british_airforce_air_weather_penalty = -0.10 tooltip = air_weather_penalty_tt }	
 	 	}
 	 }
 
@@ -427,10 +462,19 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_raf_idea
-			remove_ideas = ENG_bomber_com
-			remove_ideas = ENG_coastal_com
-			remove_ideas = ENG_fighter_com
+			# remove_ideas = ENG_bomber_com
+			# remove_ideas = ENG_coastal_com
+			# remove_ideas = ENG_fighter_com
+			# add_ideas = ENG_raf_idea
+			ENG_airforce_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_airforce_air_range_factor = 0.05 tooltip = air_range_factor_tt }
+			add_to_variable = { ENG_british_airforce_naval_strike_targetting_factor = 0.025 tooltip = naval_strike_targetting_factor_tt }
+			add_to_variable = { ENG_british_airforce_air_home_defence_factor = 0.2 tooltip = air_home_defence_factor_tt }
+			add_to_variable = { ENG_british_airforce_air_interception_attack_factor = 0.025 tooltip = air_interception_attack_factor_tt }
+			add_to_variable = { ENG_british_airforce_army_bonus_air_superiority_factor = 0.05 tooltip = army_bonus_air_superiority_factor_tt }
+			add_to_variable = { ENG_british_airforce_air_night_penalty = -0.05 tooltip = air_night_penalty_tt }
+			add_to_variable = { ENG_british_airforce_air_weather_penalty = -0.05 tooltip = air_weather_penalty_tt }
+			
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = ENG_wings_victory_prop
 		}
@@ -490,10 +534,14 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ENG_british_fighter_discount2
-				remove_idea = ENG_british_fighter_discount
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = ENG_british_fighter_discount2
+					remove_idea = ENG_british_fighter_discount
+				}
 			}
+			ENG_airforce_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ENG_air_production_group_5_ftt
 		}
 	}
 	
@@ -622,7 +670,9 @@ focus_tree = {
 		}	
 		
 		completion_reward = {
-			add_ideas = british_austerity_idea
+			# add_ideas = british_austerity_idea
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
 			add_research_slot = 1
 			add_to_variable= { ENG.shadow_civs1 = 4 }
 			random_owned_controlled_state= {
@@ -1004,7 +1054,12 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_expand_army
+			# add_ideas = ENG_expand_army
+			# training_time_army_factor = -0.2
+			# mobilization_laws_cost_factor = -0.25
+			ENG_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_army_training_time_army_factor = -0.2 tooltip = training_time_army_factor_tt }
+			add_to_variable = { ENG_british_army_mobilization_laws_cost_factor = -0.25 tooltip = mobilization_laws_cost_factor_tt }
 		}
 	}
 	
@@ -1147,7 +1202,10 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_special_air_service_idea
+			# add_ideas = ENG_special_air_service_idea
+			ENG_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_army_special_forces_cap = 0.02 tooltip = special_forces_cap_tt }
+			add_to_variable = { ENG_british_army_special_forces_training_time_factor = -0.1 tooltip = special_forces_training_time_factor_tt }
 			add_potential_special_forces_tree = yes
 			# Royal_Commandos_increase_double = yes
 		}
@@ -1369,7 +1427,9 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_expand_the_repair_yards
+			# add_ideas = ENG_expand_the_repair_yards
+			ENG_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_navy_repair_speed_factor = 0.20 tooltip = repair_speed_factor_tt }
 			131 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1448,7 +1508,10 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_refitting_yards
+			# add_ideas = ENG_refitting_yards
+			ENG_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
+			add_to_variable = { ENG_british_navy_refit_ic_cost = -0.1 tooltip = refit_ic_cost_tt }
 		}
 	}
 	
@@ -1498,7 +1561,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_secure_the_imperial_shipping_routes
+			hidden_effect = {
+				add_ideas = ENG_secure_the_imperial_shipping_routes
+			}
+			ENG_navy_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ENG_secure_the_imperial_shipping_routes_10_ftt
 			add_tech_bonus = {
 				name = shp_bonus
 				bonus = 0.50
@@ -1568,7 +1635,11 @@ focus_tree = {
 				uses = 3
 				category = convoy_defense_tree
 			}
-			add_ideas = ENG_merchant_navy
+			hidden_effect = {
+				add_ideas = ENG_merchant_navy
+			}
+			ENG_navy_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ENG_merchant_navy_10_ftt
 		}
 	}
 	
@@ -1684,7 +1755,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_watu_idea
+			# add_ideas = ENG_watu_idea
+			ENG_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_navy_navy_submarine_detection_factor = 0.1 tooltip = navy_submarine_detection_factor_tt }
+			add_to_variable = { ENG_british_navy_convoy_escort_efficiency = 0.2 tooltip = convoy_escort_efficiency_tt }
+
 			add_tech_bonus = {
 				name = shp_bonus
 				bonus = 0.50
@@ -1754,7 +1829,10 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_fortify_the_empire_2
+			# add_ideas = ENG_fortify_the_empire_2
+			ENG_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_army_production_speed_bunker_factor = 0.1 tooltip = production_speed_bunker_factor_tt }
+			add_to_variable = { ENG_british_army_production_speed_coastal_bunker_factor = 0.1 tooltip = production_speed_coastal_bunker_factor_tt }
 		}
 	}
 
@@ -2776,11 +2854,11 @@ focus_tree = {
 					province = 4076
 					instant_build = yes
 				}
-				set_building_level = {
-					type = air_base
-					level = 5
-					instant_build = yes
-				}
+				# set_building_level = {
+				# 	type = air_base
+				# 	level = 5
+				# 	instant_build = yes
+				# }
 				add_building_construction = {
 					type = anti_air_building
 					level = 2
@@ -3265,7 +3343,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_ideas = { ENG_colonial_elite }
+			# add_ideas = { ENG_colonial_elite }
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_economy_research_speed_factor = 0.07 tooltip = research_speed_factor_tt }
 		}
 	}
 	
@@ -3598,7 +3678,7 @@ focus_tree = {
 			add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
 
 			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
-			custom_effect_tooltip = ENG_imperial_conference_tt
+			# custom_effect_tooltip = ENG_imperial_conference_tt
 		}
 	}
 
@@ -3690,7 +3770,10 @@ focus_tree = {
 		cost = 4
 		
 		completion_reward = {
-			add_ideas = ENG_service_overseas_idea
+			# add_ideas = ENG_service_overseas_idea
+			ENG_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_army_heat_attrition = -0.25 tooltip = heat_attrition_tt }
+			add_to_variable = { ENG_british_army_acclimatization_hot_climate_gain_factor = 0.50 tooltip = acclimatization_hot_climate_gain_factor_tt }
 		}
 	}
 	
@@ -3711,7 +3794,9 @@ focus_tree = {
 		cost = 4
 		
 		completion_reward = {
-			add_ideas = ENG_imperial_conscription_idea
+			# add_ideas = ENG_imperial_conscription_idea
+			ENG_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_army_non_core_manpower = 0.05 tooltip = non_core_manpower_tt }
 		}
 	}
 
@@ -3808,7 +3893,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
-			add_ideas = ENG_prepare_for_the_inevitable_idea
+			# add_ideas = ENG_prepare_for_the_inevitable_idea
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { ENG_british_economy_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 	
@@ -3898,7 +3986,10 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_prepare_for_the_inevitable_idea_docks
+			# add_ideas = ENG_prepare_for_the_inevitable_idea_docks
+			ENG_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { ENG_british_economy_production_speed_dockyard_factor = 0.05 tooltip = production_speed_dockyard_factor_tt }
 			# GER = {
 			# 	add_opinion_modifier = { target = ENG modifier = embargo }
 			# 	add_opinion_modifier = { target = ENG modifier = sanctions_relations }  
@@ -4014,7 +4105,10 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			remove_ideas = ENG_the_war_to_end_all_wars
+			# remove_ideas = ENG_the_war_to_end_all_wars
+			ENG_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_army_conscription_factor = 0.30 tooltip = conscription_factor_tt }
+			add_to_variable = { ENG_british_army_war_support_factor = 0.05 tooltip = war_support_factor_tt }
 			set_rule = { can_send_volunteers = yes }
 		}
 	}
@@ -4044,7 +4138,16 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_ideas = ENG_war_cabinet_idea
+			# add_ideas = ENG_war_cabinet_idea
+			ENG_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_army_trade_laws_cost_factor = -0.25 tooltip = trade_laws_cost_factor_tt }
+			add_to_variable = { ENG_british_army_economy_cost_factor = -0.25 tooltip = economy_cost_factor_tt }
+			add_to_variable = { ENG_british_army_political_advisor_cost_factor = -0.25 tooltip = political_advisor_cost_factor_tt }
+			add_to_variable = { ENG_british_army_army_chief_cost_factor = -0.25 tooltip = army_chief_cost_factor_tt }
+			add_to_variable = { ENG_british_army_navy_chief_cost_factor = -0.25 tooltip = navy_chief_cost_factor_tt }
+			add_to_variable = { ENG_british_army_air_chief_cost_factor = -0.25 tooltip = air_chief_cost_factor_tt }
+			add_to_variable = { ENG_british_army_high_command_cost_factor = -0.25 tooltip = high_command_cost_factor_tt }
+
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = ENG_dig_victory_prop
 		}
@@ -4425,7 +4528,11 @@ focus_tree = {
 			army_experience = 10
 			navy_experience = 10
 			air_experience = 10
-			add_ideas = ENG_chiefs_of_staff_committee_idea
+			# add_ideas = ENG_chiefs_of_staff_committee_idea
+			ENG_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ENG_british_army_planning_speed = 0.1 tooltip = planning_speed_tt }
+			add_to_variable = { ENG_british_army_max_command_power = 25 tooltip = max_command_power_tt }
+			add_to_variable = { ENG_british_army_command_power_gain_mult = 0.1 tooltip = command_power_gain_mult_tt }
 		}
 	}
 	

@@ -241,6 +241,46 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NOR_arrest_quisling
+		
+		icon = GFX_focus_NOR_arrest_quisling
+		
+		prerequisite = { focus = NOR_continue_nygaardsvold_government }
+
+		x = 0
+		y = 1
+		relative_position_id = NOR_continue_nygaardsvold_government
+		
+		cost = 5
+		
+		available = {
+			has_character = NOR_vidkun_quisling	
+		}
+
+		bypass = {
+			has_completed_focus = NOR_fascist_invasion_of_norway 
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes		
+
+		completion_reward = {
+			remove_ideas = { NOR_anti_communist_sentiment_ns }
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.15 
+			}
+			retire_character = NOR_vidkun_quisling
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {
 		id = NOR_weathering_the_storm_to_come
 		icon = GFX_focus_NOR_weathering_the_storm_to_come
 		prerequisite = { focus = NOR_arrest_quisling focus = NOR_vote_of_no_confidence }
@@ -2627,46 +2667,6 @@ focus_tree = {
 			country_event = {
 				id = AAT_norway_allied.4
 			}
-		}
-	}
-
-	focus = {
-		id = NOR_arrest_quisling
-		
-		icon = GFX_focus_NOR_arrest_quisling
-		
-		prerequisite = { focus = NOR_continue_nygaardsvold_government }
-
-		x = 0
-		y = 1
-		relative_position_id = NOR_continue_nygaardsvold_government
-		
-		cost = 5
-		
-		available = {
-			has_character = NOR_vidkun_quisling	
-		}
-
-		bypass = {
-			has_completed_focus = NOR_fascist_invasion_of_norway 
-		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_POLITICAL }
-
-		available_if_capitulated = yes		
-
-		completion_reward = {
-			remove_ideas = { NOR_anti_communist_sentiment_ns }
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.2
-			}
-			add_popularity = {
-				ideology = democratic 
-				popularity = 0.15 
-			}
-			retire_character = NOR_vidkun_quisling
-			mark_focus_tree_layout_dirty = yes
 		}
 	}
 

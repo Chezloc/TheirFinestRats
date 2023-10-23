@@ -877,7 +877,7 @@ add_ideas = {
 	home_of_revolution
 	trotskyite_plot_nsb
 	SOV_politicized_military
-	SOV_2_5_plan
+	# SOV_2_5_plan
 	SOV_bad_rail
 	russian_closed_eco
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
@@ -887,6 +887,14 @@ add_ideas = {
 	no_grinding
 	SOV_no_wargoal_before_august_41
 }
+add_dynamic_modifier = {
+	modifier = SOV_the_economy_dynamic_peace_modifier
+}
+# INITIALIZE ECONOMIC MODIFIER
+set_variable = { SOV_soviet_economy_production_speed_industrial_complex_factor = 0.15 }
+set_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = 0.05 }
+set_variable = { SOV_soviet_economy_political_power_gain = -0.2 }
+set_variable = { SOV_soviet_economy_production_speed_bunker_factor = -0.25 }
 
 1939.1.1 = {
 

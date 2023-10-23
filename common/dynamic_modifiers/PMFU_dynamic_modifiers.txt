@@ -106,3 +106,140 @@ gibraltar_defences = {
 	dig_in_speed_factor = 0.5
 	max_dig_in_factor = 0.25
 }
+
+SOV_the_economy_dynamic_peace_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_third_five_year_plan_civilian
+	
+	production_speed_industrial_complex_factor = SOV_soviet_economy_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = SOV_soviet_economy_production_speed_arms_factory_factor
+	political_power_gain = SOV_soviet_economy_political_power_gain
+	production_speed_bunker_factor = SOV_soviet_economy_production_speed_bunker_factor
+	line_change_production_efficiency_factor = SOV_soviet_economy_equipment_line_change_production_efficiency_factor
+	production_factory_efficiency_gain_factor = SOV_soviet_economy_production_factory_efficiency_gain_factor
+	global_building_slots_factor = SOV_soviet_economy_global_building_slots_factor
+	production_speed_synthetic_refinery_factor = SOV_soviet_economy_production_speed_synthetic_refinery_factor
+	production_factory_start_efficiency_factor = SOV_soviet_economy_production_factory_start_efficiency_factor
+	conscription = SOV_soviet_economy_conscription
+	consumer_goods_factor = SOV_soviet_economy_consumer_goods_factor
+	industrial_capacity_factory = SOV_soviet_economy_industrial_capacity_factory
+	local_resources_factor = SOV_soviet_economy_local_resources_factor
+	production_speed_buildings_factor = SOV_soviet_economy_production_speed_buildings_factor
+	production_factory_max_efficiency_factor = SOV_soviet_economy_production_factory_max_efficiency_factor
+}
+
+SOV_the_economy_dynamic_war_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_SOV_third_five_year_plan_military
+	
+	production_speed_industrial_complex_factor = SOV_soviet_economy_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = SOV_soviet_economy_production_speed_arms_factory_factor
+	political_power_gain = SOV_soviet_economy_political_power_gain
+	production_speed_bunker_factor = SOV_soviet_economy_production_speed_bunker_factor
+	line_change_production_efficiency_factor = SOV_soviet_economy_equipment_line_change_production_efficiency_factor
+	production_factory_efficiency_gain_factor = SOV_soviet_economy_production_factory_efficiency_gain_factor
+	global_building_slots_factor = SOV_soviet_economy_global_building_slots_factor
+	production_speed_synthetic_refinery_factor = SOV_soviet_economy_production_speed_synthetic_refinery_factor
+	production_factory_start_efficiency_factor = SOV_soviet_economy_production_factory_start_efficiency_factor
+	conscription = SOV_soviet_economy_conscription
+	consumer_goods_factor = SOV_soviet_economy_consumer_goods_factor
+	industrial_capacity_factory = SOV_soviet_economy_industrial_capacity_factory
+	local_resources_factor = SOV_soviet_economy_local_resources_factor
+	production_speed_buildings_factor = SOV_soviet_economy_production_speed_buildings_factor
+	production_factory_max_efficiency_factor = SOV_soviet_economy_production_factory_max_efficiency_factor
+}
+
+SOV_the_agitprop_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_reserve_divisions
+	
+	mobilization_speed = SOV_agitprop_mobilization_speed
+	stability_weekly = SOV_agitprop_stability_weekly
+	production_factory_max_efficiency_factor = SOV_agitprop_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = SOV_agitprop_production_factory_efficiency_gain_factor
+	conscription = SOV_agitprop_conscription
+	research_speed_factor = SOV_agitprop_research_speed_factor
+	operative_slot = SOV_agitprop_operative_slot
+	stability_factor = SOV_agitprop_stability_factor
+	production_speed_buildings_factor = SOV_agitprop_production_speed_buildings_factor
+	local_resources_factor = SOV_agitprop_local_resources_factor
+	experience_gain_factor = SOV_agitprop_experience_gain_factor
+	army_morale_factor = SOV_agitprop_army_morale_factor
+}
+
+ENG_economy_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_man_five_year_plan_industry
+
+	consumer_goods_factor = ENG_british_economy_consumer_goods_factor
+	industrial_capacity_factory = ENG_british_economy_industrial_capacity_factory
+	industrial_capacity_dockyard = ENG_british_economy_industrial_capacity_dockyard
+	production_speed_buildings_factor = ENG_british_economy_production_speed_buildings_factor
+	conversion_cost_civ_to_mil_factor = ENG_british_economy_conversion_cost_civ_to_mil_factor
+	industry_air_damage_factor = ENG_british_economy_industry_air_damage_factor
+	industry_repair_factor = ENG_british_economy_industry_repair_factor
+	research_speed_factor = ENG_british_economy_research_speed_factor
+	production_speed_arms_factory_factor = ENG_british_economy_production_speed_arms_factory_factor
+	production_speed_dockyard_factor = ENG_british_economy_production_speed_dockyard_factor
+}
+
+ENG_army_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_eng_chiefs_of_staff_committee
+
+	conscription_factor = ENG_british_army_conscription_factor
+	war_support_factor = ENG_british_army_war_support_factor
+	training_time_army_factor = ENG_british_army_training_time_army_factor
+	mobilization_laws_cost_factor = ENG_british_army_mobilization_laws_cost_factor
+	special_forces_cap = ENG_british_army_special_forces_cap
+	special_forces_training_time_factor = ENG_british_army_special_forces_training_time_factor
+	heat_attrition = ENG_british_army_heat_attrition
+	acclimatization_hot_climate_gain_factor = ENG_british_army_acclimatization_hot_climate_gain_factor
+	non_core_manpower = ENG_british_army_non_core_manpower
+	political_advisor_cost_factor = ENG_british_army_political_advisor_cost_factor
+	trade_laws_cost_factor = ENG_british_army_trade_laws_cost_factor
+	economy_cost_factor = ENG_british_army_economy_cost_factor
+	high_command_cost_factor = ENG_british_army_high_command_cost_factor
+	air_chief_cost_factor = ENG_british_army_air_chief_cost_factor
+	army_chief_cost_factor = ENG_british_army_army_chief_cost_factor
+	navy_chief_cost_factor = ENG_british_army_navy_chief_cost_factor
+	planning_speed = ENG_british_army_planning_speed
+	max_command_power = ENG_british_army_max_command_power
+	command_power_gain_mult = ENG_british_army_command_power_gain_mult
+	production_speed_bunker_factor = ENG_british_army_production_speed_bunker_factor
+	production_speed_coastal_bunker_factor = ENG_british_army_production_speed_coastal_bunker_factor
+}
+
+ENG_air_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_raf
+
+	air_interception_attack_factor = ENG_british_airforce_air_interception_attack_factor
+	army_bonus_air_superiority_factor = ENG_british_airforce_army_bonus_air_superiority_factor
+	air_range_factor = ENG_british_airforce_air_range_factor
+	air_night_penalty = ENG_british_airforce_air_night_penalty
+	naval_strike_targetting_factor = ENG_british_airforce_naval_strike_targetting_factor
+	air_weather_penalty = ENG_british_airforce_air_weather_penalty
+	air_home_defence_factor = ENG_british_airforce_air_home_defence_factor
+	custom_modifier_tooltip = ENG_british_airforce_aircaft_production_group_tt
+}
+
+ENG_navy_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_navy_bonus
+
+	repair_speed_factor = ENG_british_navy_repair_speed_factor
+	refit_speed = ENG_british_navy_refit_speed
+	refit_ic_cost = ENG_british_navy_refit_ic_cost
+	navy_submarine_detection_factor = ENG_british_navy_navy_submarine_detection_factor
+	convoy_escort_efficiency = ENG_british_navy_convoy_escort_efficiency
+	custom_modifier_tooltip = ENG_british_navy_secure_the_imperial_shipping_routes_tt
+	custom_modifier_tooltip = ENG_british_navy_merchant_navy_tt
+}

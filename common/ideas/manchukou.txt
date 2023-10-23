@@ -140,6 +140,26 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+
+		MAN_five_equal_peoples_idea_l = {
+			name = MAN_five_equal_peoples_idea
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = 5_peoples
+			
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
 		
 		MAN_manchu_court = {
 

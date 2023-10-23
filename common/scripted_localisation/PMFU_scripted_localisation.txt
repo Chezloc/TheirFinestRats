@@ -1,4 +1,250 @@
 defined_text = { # global
+	name = ENG_army_dynam_mod_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = ENG_military_training_act
+				}
+			}
+		}
+		localization_key = "ENG_modify_army_the_war_to_end_all_wars" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_military_training_act
+			}
+		}
+		localization_key = "ENG_modify_army_army" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_air_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ENG_modify_air_airforce" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ENG_modify_navy_navy" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_british_navy_merchant_navy_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = ENG_merchant_fleet
+				}
+			}
+		}
+		localization_key = "ENG_merchant_navy_0_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_merchant_fleet
+			}
+		}
+		localization_key = "ENG_merchant_navy_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_british_navy_secure_the_imperial_shipping_routes_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = ENG_secure_shipping
+				}
+			}
+		}
+		localization_key = "ENG_secure_the_imperial_shipping_routes_0_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_secure_shipping
+			}
+		}
+		localization_key = "ENG_secure_the_imperial_shipping_routes_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_british_airforce_aircaft_production_group_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = ENG_air_production_group
+					has_completed_focus = ENG_air_ministry_production
+				}
+			}
+		}
+		localization_key = "ENG_air_production_group_0_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_air_production_group
+				NOT = {
+					has_completed_focus = ENG_air_ministry_production
+				}
+			}
+		}
+		localization_key = "ENG_air_production_group_5_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_air_production_group
+				has_completed_focus = ENG_air_ministry_production
+			}
+		}
+		localization_key = "ENG_air_production_group_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ENG_modify_economy_great_depression" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = limited_rearmament_focus
+				NOT = {
+					has_completed_focus = shadow_scheme_focus
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ENG_modify_economy_british" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = shadow_scheme_focus
+				has_war = no
+			}
+		}
+		localization_key = "ENG_modify_economy_shadow_scheme" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_war = yes
+			}
+		}
+		localization_key = "ENG_modify_economy_war" 
+	}
+}
+
+defined_text = { # global
+	name = SOV_agitprop_dynam_mod_sl
+	text = {
+		trigger = {
+			SOV = {
+				OR = {
+					NOT = {
+						has_completed_focus = SOV_collectivist_propaganda
+						has_completed_focus = SOV_positive_heroism
+					}
+				}
+			}
+		}
+		localization_key = "SOV_modify_agitprop_agitprop" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_completed_focus = SOV_collectivist_propaganda
+			}
+		}
+		localization_key = "SOV_modify_agitprop_collectivist" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_completed_focus = SOV_positive_heroism
+			}
+		}
+		localization_key = "SOV_modify_agitprop_positive_heroism" 
+	}
+}
+
+defined_text = { # global
+	name = SOV_eco_dynam_mod_sl
+	text = {
+		trigger = {
+			SOV = {
+				OR = {
+					has_war_with = GER
+					has_war_with = ITA
+					has_war_with = JAP
+				}
+			}
+		}
+		localization_key = "SOV_modify_soviet_economy_war" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_completed_focus = SOV_germans_are_coming
+			}
+		}
+		localization_key = "SOV_modify_soviet_economy_germans_are_coming" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					has_completed_focus = SOV_finish_2_plan
+					NOT = {
+						has_completed_focus = SOV_germans_are_coming
+					}
+				}
+			}
+		}
+		localization_key = "SOV_modify_soviet_economy_2_plan" 
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_completed_focus = SOV_finish_2_plan
+				NOT = {
+					has_completed_focus = SOV_germans_are_coming
+				}
+			}
+		}
+		localization_key = "SOV_modify_soviet_economy_3_plan" 
+	}
+}
+
+defined_text = { # global
 	name = malay_barrier_spirit_sl
 	text = {
 		trigger = {

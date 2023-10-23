@@ -813,6 +813,10 @@ political_actions = {
 			SAF = {
 				transfer_state = 540
 				transfer_state = 544
+				transfer_state = 892
+				transfer_state = 891
+				transfer_state = 896
+				transfer_state = 897
 			}
 			RAJ = {
 				transfer_state = 321
