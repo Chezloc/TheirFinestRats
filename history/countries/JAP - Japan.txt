@@ -11,17 +11,61 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	JAP_hirohito
-	JAP_zaibatsus
+	# JAP_zaibatsus
 	JAP_duplicate_research_efforts
-	JAP_militarism
+	# JAP_militarism
 	JAP_radical_ija
-	JAP_bushido_spirit
-	JAP_gekokoju
+	# JAP_bushido_spirit
+	# JAP_gekokoju
 	JAP_island_hopping8
 	volunteer_minimum_major
 	# JAP_no_equipment_capture
 	peace_training
 	no_grinding
+}
+
+### DYNAMIC MODIFIERS ###
+add_dynamic_modifier = {
+	modifier = JAP_economy_dynamic_modifier
+}
+# zaibatsus
+add_to_variable = { JAP_japanese_economy_political_power_cost = 0.25 tooltip = political_power_cost_tt }
+add_to_variable = { JAP_japanese_economy_trade_laws_cost_factor = 0.25 tooltip = trade_laws_cost_factor_tt }
+add_to_variable = { JAP_japanese_economy_economy_cost_factor = 0.25 tooltip = economy_cost_factor_tt }
+add_to_variable = { JAP_japanese_economy_production_speed_industrial_complex_factor = 0.0 tooltip = production_speed_industrial_complex_factor_tt } # 0 cause militarism gives -10%
+add_to_variable = { JAP_japanese_economy_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
+add_to_variable = { JAP_japanese_economy_production_speed_dockyard_factor = 0.1 tooltip = production_speed_dockyard_factor_tt }
+add_to_variable = { JAP_japanese_economy_consumer_goods_factor = 0.15 tooltip = consumer_goods_factor_tt }
+
+add_dynamic_modifier = {
+	modifier = JAP_army_dynamic_modifier
+}
+# unyielding spirit
+add_to_variable = { JAP_japanese_army_minimum_training_level = 0.20 tooltip = minimum_training_level_tt }
+add_to_variable = { JAP_japanese_army_training_time_army_factor = 0.40 tooltip = training_time_army_factor_tt }
+add_to_variable = { JAP_japanese_army_attrition = -0.2 tooltip = attrition_tt }
+add_to_variable = { JAP_japanese_army_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tt }
+add_to_variable = { JAP_japanese_army_no_supply_grace = 24 tooltip = no_supply_grace_tt }
+add_to_variable = { JAP_japanese_army_experience_loss_factor = -0.1 tooltip = experience_loss_factor_tt }
+add_to_variable = { JAP_japanese_army_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
+add_to_variable = { JAP_japanese_army_naval_invasion_capacity = 5 tooltip = naval_invasion_capacity_tt }
+# gekokoju
+add_to_variable = { JAP_japanese_army_max_planning = -0.25 tooltip = max_planning_tt }
+add_to_variable = { JAP_japanese_army_planning_speed = -0.5 tooltip = planning_speed_tt }
+add_to_variable = { JAP_japanese_army_max_dig_in = -5 tooltip = max_dig_in_tt }
+# militarism
+add_to_variable = { JAP_japanese_army_war_support_factor = 0.2 tooltip = war_support_factor_tt }
+add_to_variable = { JAP_japanese_army_mobilization_laws_cost_factor = -0.25 tooltip = mobilization_laws_cost_factor_tt }
+add_to_variable = { JAP_japanese_army_justify_war_goal_time = -0.2 tooltip = justify_war_goal_time_tt }
+add_to_variable = { JAP_japanese_army_research_speed_factor = -0.05 tooltip = research_speed_factor_tt }
+add_to_variable = { JAP_japanese_army_army_morale_factor = 0.05 tooltip = army_morale_factor_tt }
+
+add_dynamic_modifier = {
+	modifier = JAP_navy_and_air_dynamic_modifier
+}
+
+set_rule = {
+	can_join_factions = no
 }
 
 set_variable = {

@@ -71,10 +71,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
-			swap_ideas = {
-				add_idea = JAP_gekokoju2
-				remove_idea = JAP_gekokoju
-			}
+			# swap_ideas = {
+			# 	add_idea = JAP_gekokoju2
+			# 	remove_idea = JAP_gekokoju
+			# }
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_planning_speed = 0.25 tooltip = planning_speed_tt }
+			add_to_variable = { JAP_japanese_army_max_planning = 0.15 tooltip = max_planning_tt }
+			add_to_variable = { JAP_japanese_army_max_dig_in = 2.5 tooltip = max_dig_in_tt }
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
@@ -120,10 +124,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
-			swap_ideas = {
-				add_idea = JAP_militarism_showa
-				remove_idea = JAP_militarism
-			}
+			# swap_ideas = {
+			# 	add_idea = JAP_militarism_showa
+			# 	remove_idea = JAP_militarism
+			# }
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_army_morale_factor = -0.05 tooltip = army_morale_factor_tt }
+			add_to_variable = { JAP_japanese_army_war_support_factor = -0.1 tooltip = war_support_factor_tt }
+			add_to_variable = { JAP_japanese_army_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+			add_to_variable = { JAP_japanese_army_justify_war_goal_time = 0.1 tooltip = justify_war_goal_time_tt }
+			add_to_variable = { JAP_japanese_army_mobilization_laws_cost_factor = 0.1 tooltip = mobilization_laws_cost_factor_tt }
+			JAP_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_economy_production_speed_industrial_complex_factor = 0.2 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 	}
 	
@@ -140,7 +152,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
-			remove_ideas = JAP_gekokoju2
+			# remove_ideas = JAP_gekokoju2
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_planning_speed = 0.25 tooltip = planning_speed_tt }
+			add_to_variable = { JAP_japanese_army_max_planning = 0.1 tooltip = max_planning_tt }
+			add_to_variable = { JAP_japanese_army_max_dig_in = 2.5 tooltip = max_dig_in_tt }
 		}
 	}
 	
@@ -157,10 +173,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
-			swap_ideas = {
-				add_idea = JAP_toseiha2
-				remove_idea = JAP_toseiha
-			}
+			# swap_ideas = {
+			# 	add_idea = JAP_toseiha2
+			# 	remove_idea = JAP_toseiha
+			# }
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_high_command_cost_factor = -0.25 tooltip = high_command_cost_factor_tt }
+			add_to_variable = { JAP_japanese_army_army_chief_cost_factor = -0.25 tooltip = army_chief_cost_factor_tt }
 		}
 	}
 	
@@ -177,7 +196,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		completion_reward = {
-			add_ideas = JAP_supremacy_of_technology
+			hidden_effect = {
+				add_ideas = JAP_supremacy_of_technology
+			}
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = JAP_supremacy_of_technology_5_tt
 		}
 	}
 	
@@ -317,10 +340,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			swap_ideas = {
-				add_idea = JAP_militarism_shogunate
-				remove_idea = JAP_militarism
-			}
+			# swap_ideas = {
+			# 	add_idea = JAP_militarism_shogunate
+			# 	remove_idea = JAP_militarism
+			# }
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_army_morale_factor = 0.05 tooltip = army_morale_factor_tt }
+			add_to_variable = { JAP_japanese_army_war_support_factor = 0.1 tooltip = war_support_factor_tt }
+			add_to_variable = { JAP_japanese_army_research_speed_factor = -0.05 tooltip = research_speed_factor_tt }
+			add_to_variable = { JAP_japanese_army_mobilization_laws_cost_factor = -0.10 tooltip = mobilization_laws_cost_factor_tt }
+			JAP_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_economy_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 	
@@ -372,10 +402,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			swap_ideas = {
-				add_idea = JAP_gekokoju2
-				remove_idea = JAP_gekokoju
-			}
+			# swap_ideas = {
+			# 	add_idea = JAP_gekokoju2
+			# 	remove_idea = JAP_gekokoju
+			# }
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_planning_speed = 0.25 tooltip = planning_speed_tt }
+			add_to_variable = { JAP_japanese_army_max_planning = 0.15 tooltip = max_planning_tt }
+			add_to_variable = { JAP_japanese_army_max_dig_in = 2.5 tooltip = max_dig_in_tt }
 		}
 	}
 	
@@ -399,7 +433,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_ideas = state_shintoism
+			# add_ideas = state_shintoism
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_conscription = 0.02 tooltip = conscription_tt }
+			add_to_variable = { JAP_japanese_army_experience_gain_army = -0.10 tooltip = resistance_target_tt }
 		}
 	}
 	
@@ -423,7 +460,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			remove_ideas = JAP_gekokoju2
+			# remove_ideas = JAP_gekokoju2
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_planning_speed = 0.25 tooltip = planning_speed_tt }
+			add_to_variable = { JAP_japanese_army_max_planning = 0.1 tooltip = max_planning_tt }
+			add_to_variable = { JAP_japanese_army_max_dig_in = 2.5 tooltip = max_dig_in_tt }
 		}
 	}
 	
@@ -447,10 +488,18 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			swap_ideas = {
-				add_idea = JAP_bushido_spirit2
-				remove_idea = JAP_bushido_spirit
-			}
+			# swap_ideas = {
+			# 	add_idea = JAP_bushido_spirit2
+			# 	remove_idea = JAP_bushido_spirit
+			# }
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_training_time_army_factor = 0.40 tooltip = training_time_army_factor_tt }
+			add_to_variable = { JAP_japanese_army_attrition = -0.05 tooltip = attrition_tt }
+			add_to_variable = { JAP_japanese_army_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tt }
+			add_to_variable = { JAP_japanese_army_experience_loss_factor = -0.1 tooltip = experience_loss_factor_tt }
+			add_to_variable = { JAP_japanese_army_no_supply_grace = 24 tooltip = no_supply_grace_tt }
+			add_to_variable = { JAP_japanese_army_minimum_training_level = 0.05 tooltip = minimum_training_level_tt }
+			custom_effect_tooltip = insert_extra_line_here
 			every_army_leader = {
 				limit = {  has_trait = JAP_samurai_lineage }  
 				remove_unit_leader_trait = JAP_samurai_lineage
@@ -479,7 +528,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_ideas = JAP_mil_government
+			# add_ideas = JAP_mil_government
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_experience_gain_army = 0.05 tooltip = experience_gain_army_tt }
+			add_to_variable = { JAP_japanese_army_military_leader_cost_factor = -0.50 tooltip = military_leader_cost_factor_tt }
+			add_to_variable = { JAP_japanese_army_political_advisor_cost_factor = 0.25 tooltip = political_advisor_cost_factor_tt }
 		}
 	}
 	
@@ -703,7 +756,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			add_ideas = JAP_austerity_idea
+			# add_ideas = JAP_austerity_idea
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_consumer_goods_factor = -0.09 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { JAP_japanese_economy_navy_fuel_consumption_factor = -0.1 tooltip = navy_fuel_consumption_factor_tt }
+			add_to_variable = { JAP_japanese_economy_air_fuel_consumption_factor = -0.1 tooltip = air_fuel_consumption_factor_tt }
 		}
 	}
 	
@@ -846,12 +903,14 @@ focus_tree = {
 					country_event = wtt_manchukou.12
 				}
 			}
-		
-			add_ideas = JAP_liaison_conference
+			
 			every_army_leader = {
 				add_planning = 1
 				add_logistics = 1
 			}
+			# add_ideas = JAP_liaison_conference
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_army_leader_start_planning_level = 1 tooltip = army_leader_start_planning_level_tt }
 		}
 	}
 	
@@ -1824,7 +1883,9 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			add_ideas = JAP_indochina_terrain_training
+			# add_ideas = JAP_indochina_terrain_training
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_terrain_penalty_reduction = 0.05 tooltip = terrain_penalty_reduction_tt }
 			hidden_effect = {
 				every_army_leader={
 					add_trait = {
@@ -1873,7 +1934,12 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			add_ideas = JAP_mid_war_military_bonus
+			# add_ideas = JAP_mid_war_military_bonus
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_invasion_preparation = -0.1 tooltip = invasion_preparation_tt }
+			add_to_variable = { JAP_japanese_army_naval_invasion_capacity = 10 tooltip = naval_invasion_capacity_tt }
+			add_to_variable = { JAP_japanese_army_amphibious_invasion = 0.1 tooltip = amphibious_invasion_tt }
+			add_to_variable = { JAP_japanese_army_extra_marine_supply_grace = 72 tooltip = extra_marine_supply_grace_tt }
 		}
 	}
 
@@ -2615,7 +2681,10 @@ focus_tree = {
 		cancel_if_invalid = yes
 
 		completion_reward = {
-			add_ideas = JAP_late_war_military_bonus
+			# add_ideas = JAP_late_war_military_bonus
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tt }
+			add_to_variable = { JAP_japanese_army_no_supply_grace = 48 tooltip = no_supply_grace_tt }
 		}
 	}
 
@@ -2638,7 +2707,9 @@ focus_tree = {
 
 		completion_reward = {
 			# custom_effect_tooltip = JAP_late_war_intel_tt
-			add_ideas = JAP_late_war_intel
+			# add_ideas = JAP_late_war_intel
+			JAP_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_economy_production_speed_radar_station_factor = 0.25 tooltip = production_speed_radar_station_factor_tt }
 			add_tech_bonus = {
 				name = USA_naval_radar
 				uses = 2
@@ -3469,7 +3540,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = JAP_strike_south_tt
+			# custom_effect_tooltip = JAP_strike_south_tt
 			unlock_decision_tooltip = JAP_pressure_france
 		}
 	}
@@ -3535,7 +3606,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SIA = { country_event = generic.5 }
+			# SIA = { country_event = generic.5 }
+			ROOT = {
+				add_to_faction = SIA
+			}
 			add_ai_strategy = {
 				type = protect
 				id = "SIA"
@@ -3565,8 +3639,10 @@ focus_tree = {
 				uses = 2
 				category = infantry_weapons
 			}
-			add_ideas = JAP_expand_the_army
 			add_potential_special_forces_tree = yes
+			# add_ideas = JAP_expand_the_army
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_training_time_army_factor = -0.3 tooltip = training_time_army_factor_tt }
 		}
 	}
 	
@@ -3585,15 +3661,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = JAP_expand_the_snlf
 			add_tech_bonus = {
 				name = JAP_lessons
 				bonus = 0.50
 				uses = 2
 				category = marine_tech
 				category = tp_tech
-				add_potential_special_forces_tree = yes
 			}
+			add_potential_special_forces_tree = yes
+			# add_ideas = JAP_expand_the_snlf
+			JAP_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 	
@@ -4265,10 +4343,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = JAP_zaibatsus
-				add_idea = JAP_guide_the_zaibatsus
-			}
+			# swap_ideas = {
+			# 	remove_idea = JAP_zaibatsus
+			# 	add_idea = JAP_guide_the_zaibatsus
+			# }
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_industrial_complex_factor = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_dockyard_factor = 0.05 tooltip = production_speed_dockyard_factor_tt }
 		}
 	}
 	
@@ -4365,10 +4447,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = JAP_guide_the_zaibatsus2
-				remove_idea = JAP_guide_the_zaibatsus
-			}
+			# swap_ideas = {
+			# 	add_idea = JAP_guide_the_zaibatsus2
+			# 	remove_idea = JAP_guide_the_zaibatsus
+			# }
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_consumer_goods_factor = -0.10 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { JAP_japanese_economy_global_building_slots_factor = 0.1 tooltip = global_building_slots_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 	
@@ -4411,7 +4497,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = YUG_idea_expanded_mining_industry 
+			# add_ideas = YUG_idea_expanded_mining_industry 
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_local_resources_factor = 0.10 tooltip = local_resources_factor_tt }
 		}
 	}
 	
@@ -4611,10 +4699,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = JAP_zaibatsus
-				add_idea = JAP_zaibatsus_challenged
-			}
+			# swap_ideas = {
+			# 	remove_idea = JAP_zaibatsus
+			# 	add_idea = JAP_zaibatsus_challenged
+			# }
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_consumer_goods_factor = -0.01 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { JAP_japanese_economy_political_power_cost = -0.25 tooltip = political_power_cost_tt }
+			add_to_variable = { JAP_japanese_economy_stability_factor = -0.1 tooltip = stability_factor_tt }
+			add_to_variable = { JAP_japanese_economy_trade_laws_cost_factor = -0.25 tooltip = trade_laws_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_economy_cost_factor = -0.25 tooltip = economy_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_industrial_complex_factor = -0.1 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 	}
 	
@@ -4648,11 +4743,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = JAP_zaibatsus_challenged3
-				remove_idea = JAP_zaibatsus_challenged
-			}
 			add_research_slot = 1
+			# swap_ideas = {
+			# 	add_idea = JAP_zaibatsus_challenged3
+			# 	remove_idea = JAP_zaibatsus_challenged
+			# }
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { JAP_japanese_economy_stability_factor = 0.09 tooltip = stability_factor_tt }
+			add_to_variable = { JAP_japanese_economy_trade_laws_cost_factor = -0.05 tooltip = trade_laws_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_economy_cost_factor = -0.05 tooltip = economy_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_arms_factory_factor = -0.06 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_dockyard_factor = -0.06 tooltip = production_speed_dockyard_factor_tt }
 		}
 	}
 	
@@ -4686,7 +4788,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			JAP_emperors_economy_upgrade = yes
+			# JAP_emperors_economy_upgrade = yes
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_consumer_goods_factor = -0.025 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { JAP_japanese_economy_stability_factor = -0.01 tooltip = stability_factor_tt }
+			add_to_variable = { JAP_japanese_economy_trade_laws_cost_factor = -0.05 tooltip = trade_laws_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_economy_cost_factor = -0.05 tooltip = economy_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_arms_factory_factor = 0.04 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_dockyard_factor = 0.04 tooltip = production_speed_dockyard_factor_tt }
 		}
 	}
 	
@@ -4720,7 +4829,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			JAP_emperors_economy_upgrade = yes
+			# JAP_emperors_economy_upgrade = yes
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_consumer_goods_factor = -0.025 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { JAP_japanese_economy_stability_factor = -0.01 tooltip = stability_factor_tt }
+			add_to_variable = { JAP_japanese_economy_trade_laws_cost_factor = -0.05 tooltip = trade_laws_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_economy_cost_factor = -0.05 tooltip = economy_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_arms_factory_factor = 0.04 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_dockyard_factor = 0.04 tooltip = production_speed_dockyard_factor_tt }
 			528 = {
 				add_resource = {
 					type = aluminium
@@ -4764,7 +4880,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			JAP_emperors_economy_upgrade = yes
+			# JAP_emperors_economy_upgrade = yes
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_consumer_goods_factor = -0.025 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { JAP_japanese_economy_stability_factor = -0.01 tooltip = stability_factor_tt }
+			add_to_variable = { JAP_japanese_economy_trade_laws_cost_factor = -0.05 tooltip = trade_laws_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_economy_cost_factor = -0.05 tooltip = economy_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_arms_factory_factor = 0.04 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_dockyard_factor = 0.04 tooltip = production_speed_dockyard_factor_tt }
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -4822,7 +4945,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			JAP_emperors_economy_upgrade = yes
+			# JAP_emperors_economy_upgrade = yes
+			JAP_economy_dynamic_modifier_tt = yes #tooltip
+			add_to_variable = { JAP_japanese_economy_consumer_goods_factor = -0.025 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { JAP_japanese_economy_stability_factor = -0.01 tooltip = stability_factor_tt }
+			add_to_variable = { JAP_japanese_economy_trade_laws_cost_factor = -0.05 tooltip = trade_laws_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_economy_cost_factor = -0.05 tooltip = economy_cost_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_arms_factory_factor = 0.04 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { JAP_japanese_economy_production_speed_dockyard_factor = 0.04 tooltip = production_speed_dockyard_factor_tt }
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -5271,7 +5401,9 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_ideas = JAP_first_air_fleet
+			# add_ideas = JAP_first_air_fleet
+			JAP_navy_and_air_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_navy_air_forces_sortie_efficiency = 0.2 tooltip = sortie_efficiency_tt }
 			add_tech_bonus = {
 				name = JAP_carrier_warfare_experiments
 				bonus = 1
@@ -5380,7 +5512,10 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			add_ideas = JAP_asw_training
+			# add_ideas = JAP_asw_training
+			JAP_navy_and_air_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_navy_air_forces_navy_submarine_detection_factor = 0.1 tooltip = navy_submarine_detection_factor_tt }
+			add_to_variable = { JAP_japanese_navy_air_forces_convoy_escort_efficiency = 0.2 tooltip = convoy_escort_efficiency_tt }
 		}
 	}
 	
@@ -5395,7 +5530,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_ideas = the_long_lance
+			# add_ideas = the_long_lance
+			JAP_navy_and_air_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { JAP_japanese_navy_air_forces_naval_torpedo_screen_penetration_factor = 0.25 tooltip = naval_torpedo_screen_penetration_factor_tt }
 		}
 	}
 	
@@ -5654,7 +5791,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			remove_ideas = JAP_duplicate_research_efforts
+			hidden_effect = {
+				remove_ideas = JAP_duplicate_research_efforts
+			}
+			JAP_navy_and_air_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = JAP_duplicate_research_effort_10_tt
 		}
 	}
 

@@ -301,6 +301,29 @@
   krupp_tank:0 "Krupp"
   krupp_tank_desc:1 "Krupp focuses on heavy industry and armaments production"
 
+  ### DYNAMIC MODIIFERS ###
+  GER_economy_dynamic_modifier:0 "[GER_economy_dynam_mod_sl]"
+  GER_modify_german_economy_ns_intro:0 "Modify §Y$GER_economy_dynamic_modifier$§! by"
+  GER_modify_economy_mefo:0 "MEFO Bills"
+  GER_modify_economy_extra_mefo:0 "Expand MEFO"
+  GER_modify_economy_expanded_mefo_const_focus:0 "Expanded MEFO: Construction Focus"
+  GER_modify_economy_expanded_mefo_extra_invest_const_focus:0 "Expanded MEFO: Extra Investments (Construction Focus)"
+  GER_modify_economy_war_economy:0 "German War Economy"
+
+  GER_army_dynamic_modifier:0 "[GER_army_dynam_mod_sl]"
+  GER_modify_german_army_ns_intro:0 "Modify §Y$GER_army_dynamic_modifier$§! by"
+  GER_modify_army_general_staff:0 "General Staff"
+  GER_modify_army_improved_general_staff:0 "Improved General Staff"
+  GER_modify_army_volksturm:0 "Volksturm"
+
+  GER_air_dynamic_modifier:0 "[GER_air_dynam_mod_sl]"
+  GER_modify_german_airforce_ns_intro:0 "Modify §Y$GER_air_dynamic_modifier$§! by"
+  GER_modify_air_luftwaffe:0 "Luftwaffe"
+
+  GER_navy_dynamic_modifier:0 "[GER_navy_dynam_mod_sl]"
+  GER_modify_german_navy_ns_intro:0 "Modify §Y$GER_navy_dynamic_modifier$§! by"
+  GER_modify_navy_kriegsmarine:0 "Kriegsmarine"
+
   #### TRAITS ####
   schacht:0 "Reichsbank President"
   goring:0 "Guns over Butter"

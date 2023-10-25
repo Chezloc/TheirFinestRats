@@ -143,39 +143,39 @@ sub_units = {
 		forest = {
 		    attack = -0.1
 			movement = -0.2
-			defence = -0.1
+			defence = -0.15
 		}
 		hills = {
 			attack = 0.025
-			defence = -0.15
+			defence = -0.3
 			movement = 0.05
 		}
 		mountain = 	{
 		    attack = -0.2
 			movement = -0.25
-			defence = -0.35
+			defence = -0.5
 		}
 		jungle = {
 		    attack = 0.05
-			defence = -0.15
+			defence = -0.2
 			movement = 0.05
 		}
 		marsh = {
 		    attack = 0.025
-			defence = -0.15
+			defence = -0.2
 			movement = 0.05
 		}
 		urban = {
 			attack = -0.3
-			defence = -0.75
+			defence = -0.9
 		}
 		dense_urban = {
 			attack = -0.4
-			defence = -0.85
+			defence = -1
 		}
 		town = {
 			attack = -0.2
-			defence = -0.45
+			defence = -0.6
 		}
 		river = { 
 			attack = -0.05
@@ -249,34 +249,34 @@ sub_units = {
 		hills = {
 			attack = -0.2
 			movement = -0.3
-			defence = -0.3
+			defence = -0.5
 		}
 		mountain = 	{
 		    attack = -0.35
 			movement = -0.35
-			defence = -0.45
+			defence = -0.7
 		}
 		jungle = {
 		    attack = -0.275
 			movement = -0.375
-			defence = -0.3
+			defence = -0.35
 		}
 		marsh = {
 		    attack = -0.3
 			movement = -0.25
-			defence = -0.4
+			defence = -0.45
 		}
 		urban = {
 			attack = -0.5
-			defence = -0.85
+			defence = -1
 		}
 		dense_urban = {
 			attack = -0.6
-			defence = -0.95
+			defence = -1.1
 		}
 		town = {
 			attack = -0.2
-			defence = -0.45
+			defence = -0.6
 		}
 		river = { 
 			attack = -0.2
@@ -350,34 +350,34 @@ sub_units = {
 		hills = {
 		    attack = -0.35
 			movement = -0.3
-			defence = -0.45
+			defence = -0.7
 		}
 		mountain = 	{
 		    attack = -0.45
 			movement = -0.6
-			defence = -0.55
+			defence = -0.7
 		}
 		jungle = {
 		    attack = -0.4
 			movement = -0.45
-			defence = -0.5
+			defence = -0.55
 		}
 		marsh = {
 		    attack = -0.45
 			movement = -0.4
-			defence = -0.525
+			defence = -0.675
 		}
 		town = {
 			attack = -0.3
-			defence = -0.5
+			defence = -0.65
 		}
 		urban = {
 			attack = -0.6
-			defence = -0.95
+			defence = -1.1
 		}
 		dense_urban = {
 			attack = -0.8
-			defence = -1
+			defence = -1.15
 		}
 		river = { 
 			attack = -0.4

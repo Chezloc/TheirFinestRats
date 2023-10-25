@@ -197,6 +197,7 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
 
+### DYNAMIC MODIFIER ###
 add_dynamic_modifier = {
 	modifier = ENG_economy_dynamic_modifier
 }
@@ -210,14 +211,6 @@ add_dynamic_modifier = {
 }
 set_variable = { ENG_british_army_conscription_factor = -0.30 tooltip = conscription_factor_tt }
 set_variable = { ENG_british_army_war_support_factor = -0.05 tooltip = war_support_factor_tt }
-
-add_dynamic_modifier = {
-	modifier = ENG_air_dynamic_modifier
-}
-
-add_dynamic_modifier = {
-	modifier = ENG_navy_dynamic_modifier
-}
 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment

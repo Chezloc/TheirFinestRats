@@ -659,10 +659,10 @@ NDefines.NIndustrialOrganisation.ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY 
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP = 1000					-- Funds needed for a MIO to increment its size and get points to unlock traits
 NDefines.NIndustrialOrganisation.FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 0.8 			-- How much each level mutliplies the funds for size up 
 NDefines.NIndustrialOrganisation.UNLOCKED_TRAITS_PER_SIZE_UP = 1			-- Number of points for unlocking traits obtained when the MIO increments its size
-NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0 		-- 5 in vanilla. Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 1 		-- 5 in vanilla. Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
 NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 500     -- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
 NDefines.NIndustrialOrganisation.FUNDS_FOR_CREATING_EQUIPMENT_VARIANT = 0		-- Funds added to MIO when a new variant is created with the Design Team assigned to it
-NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.1		-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
+NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.05		-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
 NDefines.NIndustrialOrganisation.MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 100		-- Max funds generated per manufacturer per day. Set to 0 for no Maximum.
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_RESEARCH_BONUS = 0.05				-- Research bonus for applying a Design Team that matches the technology
 NDefines.NIndustrialOrganisation.ENABLE_TASK_CAPACITY = false					-- Enable limited task capacity for MIOs

@@ -198,7 +198,7 @@ JAP_mitsubishi_organization = {
 # }
 
 JAP_nakajima_organization = {
-	include = generic_medium_aircraft_organization
+	include = generic_naval_aircraft_organization
 	icon = GFX_idea_nakajima
 	allowed = {	
 		tag = JAP
@@ -207,7 +207,7 @@ JAP_nakajima_organization = {
 }
 
 JAP_yokosuka_organization = {
-	include = generic_naval_aircraft_organization 
+	include = generic_medium_aircraft_organization
 	icon = GFX_idea_yokosuka
 	allowed = {	
 		tag = JAP

@@ -37,6 +37,50 @@ ENG_navy_dynamic_modifier_tt = {
 	custom_effect_tooltip = ENG_modify_british_navy_ns_intro
 }
 
+JAP_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = JAP_modify_japanese_economy_ns_intro
+}
+
+JAP_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = JAP_modify_japanese_army_ns_intro
+}
+
+JAP_navy_and_air_dynamic_modifier_tt = {
+	custom_effect_tooltip = JAP_modify_japanese_naval_air_ns_intro
+}
+
+ITA_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = ITA_modify_italian_economy_ns_intro
+}
+
+ITA_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = ITA_modify_italian_army_ns_intro
+}
+
+ITA_airforce_dynamic_modifier_tt = {
+	custom_effect_tooltip = ITA_modify_italian_airforce_ns_intro
+}
+
+ITA_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = ITA_modify_italian_navy_ns_intro
+}
+
+GER_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = GER_modify_german_economy_ns_intro
+}
+
+GER_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = GER_modify_german_army_ns_intro
+}
+
+GER_airforce_dynamic_modifier_tt = {
+	custom_effect_tooltip = GER_modify_german_airforce_ns_intro
+}
+
+GER_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = GER_modify_german_navy_ns_intro
+}
+
 anti_cross_faction_trade_axis = {
 	add_opinion_modifier = {
 		target = GER

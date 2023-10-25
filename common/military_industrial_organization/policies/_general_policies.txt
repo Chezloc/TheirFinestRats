@@ -1,7 +1,8 @@
 mio_policy_general_ruthless_contracts = {
 	icon = GFX_mio_policy_ruthless_contracts
 	allowed = { always = yes  }
-	available = { has_mio_size > 5}
+	# available = { has_mio_size > 5}
+	available = { always = yes }
 	organization_modifier = {
 		military_industrial_organization_funds_gain = 0.1
 	}
@@ -21,6 +22,9 @@ mio_policy_general_assembly_line_optimisers = {
 			has_mio_equipment_type = large_plane_airframe
 			has_mio_equipment_type = transport_plane_equipment
 			has_mio_equipment_type = amerikabomber_equipment
+			has_mio_equipment_type = mio_cat_eq_all_light_tank
+			has_mio_equipment_type = mio_cat_eq_all_medium_tank
+			has_mio_equipment_type = mio_cat_eq_all_heavy_tank
 			has_mio_equipment_type = armor
 			has_mio_equipment_type = motorized
 			has_mio_equipment_type = mechanized
@@ -32,6 +36,9 @@ mio_policy_general_assembly_line_optimisers = {
 			has_mio_equipment_type = infantry
 			has_mio_equipment_type = railway_gun
 			has_mio_equipment_type = train
+			has_mio_equipment_type = sf_equipment
+			has_mio_equipment_type = radio_equipment
+			has_mio_equipment_type = support_equipment
 		} 
 	}
 	available = { has_mio_size > 5}
@@ -69,9 +76,10 @@ mio_policy_general_mechanical_genius  = {
 mio_policy_general_experimental_development_teams = {
 	icon = GFX_mio_policy_experimental_development_teams
 	allowed = { always = yes }
-	available = { has_mio_size > 5}
+	# available = { has_mio_size > 5}
+	available = { always = yes }
 	organization_modifier = {
-		military_industrial_organization_research_bonus = 0.2
+		military_industrial_organization_research_bonus = 0.1 #0.2
 	}
 }
 

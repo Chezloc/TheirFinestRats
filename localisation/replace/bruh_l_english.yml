@@ -246,15 +246,27 @@
  undisturbed_isolation:0 "Undisturbed Isolation"
  undisturbed_isolation_desc:0 "Still recovering from the Great Depression and the Dust Bowl famine, the nation is slowly rebuilding its infrastructure. America's industries are in most cases working at half capacity, and will keep doing so unless major events rouse the nation from torpor."
  isolation:0 "Isolation"
- 
- ### MIO ###
- generic_mio_trait_large_scale_production:0 "Large Scale Production"
-#  civilian_economy:0 "Civilian Economy"
+ #  civilian_economy:0 "Civilian Economy"
 #  low_economic_mobilisation:0 "Early Mobilization"
 #  partial_economic_mobilisation:0 "Partial Mobilization"
 #  war_economy:0 "General Mobilization"
 #  tot_economic_mobilisation:0 "Total Mobilization"
- 
+
+ ### MIO ###
+ generic_mio_initial_trait_multi_role_aircraft_designer:0 "Heavy Fighter Designer"
+ generic_mio_trait_large_scale_production:0 "Large Scale Production"
+ generic_mio_trait_liquid_cooled_engines:0 "Accelerated Research"
+ generic_mio_trait_advanced_aerodynamics:0 "Mass Production"
+ generic_mio_trait_ongoing_developmental_upgrades:0 "High Agility Planes"
+ generic_mio_trait_maritime_duties:0 "Large Fuel Tanks"
+ generic_mio_trait_bigger_engines:0 "Ongoing Developmental Upgrades"
+ generic_mio_trait_strafing_techniques_mp:0 "Mass Production"
+ generic_mio_trait_tactical_bombers_lr:0 "Improved Production Lines"
+ generic_mio_trait_medium_airframe_c:0 "Reinforced Airframe"
+ generic_mio_trait_belly_shackles_c:0 "Simplified Components"
+ generic_mio_trait_fighter_specialization_c:0 "Air Attack Specialization"
+ generic_mio_trait_bomber_specialization:0 "Production Specialization"
+
  academy_weekly_manpower_tooltip:0 "£manpower_texticon  Weekly Manpower §G+§![?scaled_weekly_manpower|0+]"
  academy_weekly_training_speed_tooltip_gain:0 "£training_speed_texticon  Weekly Training time §Y-0.5%§!"
  academy_weekly_training_speed_tooltip_current:0 "Current Effect:\n £training_speed_texticon  Training time §Y[?academy_weekly_training_speed_result|1%]§!" 

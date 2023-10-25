@@ -12,8 +12,8 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = generic_navy_bonus
-			modifier={refit_speed=0.05
-			}
+			# modifier={refit_speed=0.05
+			# }
 			equipment_bonus = {
 				capital_ship = {
 					build_cost_ic = -0.1 instant = yes
@@ -188,18 +188,18 @@ ideas = {
 		}
 		
 		GER_good_weather_army = {
-		allowed = {
-			original_tag = GER
-		
-		}
+			allowed = {
+				original_tag = GER
+			
+			}
 
-		removal_cost = 1
+			removal_cost = 1
 
-		picture = can_wartime_prices_and_trade_board
-		
-		modifier = {
-			acclimatization_cold_climate_gain_factor = -9.99
-		}
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+				acclimatization_cold_climate_gain_factor = -9.99
+			}
 		
 		}
 
@@ -3583,6 +3583,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				# MIO
+				# military_industrial_organization_design_team_assign_cost = -1
+				# military_industrial_organization_design_team_change_cost = -1
+				# military_industrial_organization_industrial_manufacturer_assign_cost = -1
+				# UNITS
 				unit_amphibious_armor_design_cost_factor = -1
 				unit_amphibious_light_armor_design_cost_factor = -1
 				unit_amphibious_medium_armor_design_cost_factor = -1

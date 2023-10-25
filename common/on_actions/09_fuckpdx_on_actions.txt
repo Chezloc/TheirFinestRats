@@ -548,11 +548,14 @@ on_actions = {
 				}
 				ENG = { annex_country = { target = BEL transfer_troops = no } }
 				SAF = {
+					transfer_state = 295
 					transfer_state = 538
 					transfer_state = 718
-					transfer_state = 295
-					transfer_state = 768
 					transfer_state = 769
+					transfer_state = 768
+					transfer_state = 890
+					transfer_state = 888
+					transfer_state = 889
 				}
 			}
 		}

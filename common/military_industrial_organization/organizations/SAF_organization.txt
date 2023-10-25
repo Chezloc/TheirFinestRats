@@ -30,6 +30,20 @@ SAF_cope_organization = {
             has_completed_focus = SAF_queen_of_the_desert
         }
     }
+
+    add_trait = { 
+		token = SAF_mio_trait_expanded_production_facilities
+		name = ENG_mio_trait_expanded_production_facilities
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_technology
+		special_trait_background = yes
+
+		position = { x=0 y=0 }
+
+		production_bonus = {
+			production_cost_factor = -0.10
+		}
+		
+	}
 }
 
 

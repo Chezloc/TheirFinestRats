@@ -1,4 +1,456 @@
 defined_text = { # global
+	name = GER_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			GER = {
+				NOT = {
+					has_completed_focus = GER_expand_mefo
+					has_completed_focus = GER_rearm_slow
+					has_completed_focus = GER_rearm_slow3
+				}
+				has_war = no
+			}
+		}
+		localization_key = "GER_modify_economy_mefo" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_expand_mefo
+				NOT = {
+					has_completed_focus = GER_rearm_slow
+					has_completed_focus = GER_rearm_slow3
+				}
+				has_war = no
+			}
+		}
+		localization_key = "GER_modify_economy_extra_mefo" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_expand_mefo
+				has_completed_focus = GER_rearm_slow
+				NOT = {
+					has_completed_focus = GER_rearm_slow3
+				}
+				has_war = no
+			}
+		}
+		localization_key = "GER_modify_economy_expanded_mefo_const_focus" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_expand_mefo
+				has_completed_focus = GER_rearm_slow
+				has_completed_focus = GER_rearm_slow3
+				has_war = no
+			}
+		}
+		localization_key = "GER_modify_economy_expanded_mefo_extra_invest_const_focus" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_war = yes
+			}
+		}
+		localization_key = "GER_modify_economy_war_economy" 
+	}
+}
+
+defined_text = { # global
+	name = GER_army_dynam_mod_sl
+	text = {
+		trigger = {
+			GER = {
+				NOT = {
+					has_completed_focus = GER_volksturm
+					has_completed_focus = GER_improved_command
+				}
+			}
+		}
+		localization_key = "GER_modify_army_general_staff" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_improved_command
+				NOT = {
+					has_completed_focus = GER_volksturm
+				}
+			}
+		}
+		localization_key = "GER_modify_army_improved_general_staff" 
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_volksturm
+			}
+		}
+		localization_key = "GER_modify_army_volksturm" 
+	}
+}
+
+defined_text = { # global
+	name = GER_air_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "GER_modify_air_luftwaffe" 
+	}
+}
+
+defined_text = { # global
+	name = GER_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "GER_modify_navy_kriegsmarine" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_increase_trade
+					has_completed_focus = ITA_autarky
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ITA_modify_economy_inflexible" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_increase_trade
+				NOT = {
+					has_completed_focus = ITA_autarky
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ITA_modify_economy_italian_economy" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_autarky
+				NOT = {
+					has_completed_focus = ITA_increase_trade
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ITA_modify_economy_autarky" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_war = yes
+			}
+		}
+		localization_key = "ITA_modify_economy_war_economy" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_german_investments_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_german_investments
+				}
+			}
+		}
+		localization_key = "ITA_german_investments_0_tt" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_german_investments
+			}
+		}
+		localization_key = "ITA_german_investments_25_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_army_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ITA_modify_army_regio_esercito" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_air_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ITA_modify_air_regia_aeronautica" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_technical_assistance_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_technical_assistance
+				}
+			}
+		}
+		localization_key = "ITA_outdated_industry_10_nega_tt" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_technical_assistance
+			}
+		}
+		localization_key = "ITA_outdated_industry_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_naval_air_coordination_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_naval_air_coordination
+				}
+			}
+		}
+		localization_key = "ITA_naval_air_coordination_0_tt" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_naval_air_coordination
+			}
+		}
+		localization_key = "ITA_naval_air_coordination_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_license_the_airframe_sl
+	text = {
+		trigger = {
+			ITA = {
+				NOT = {
+					has_completed_focus = ITA_license_the_airframe
+				}
+			}
+		}
+		localization_key = "ITA_license_the_airframe_0_tt" 
+	}
+	text = {
+		trigger = {
+			ITA = {
+				has_completed_focus = ITA_license_the_airframe
+			}
+		}
+		localization_key = "ITA_license_the_airframe_5_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ITA_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "ITA_modify_navy_regia_marina" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			JAP = {
+				NOT = {
+					has_completed_focus = JAP_guide_the_zaibatsus
+					has_completed_focus = JAP_challenge_the_zaibatsus
+				}
+			}
+		}
+		localization_key = "JAP_modify_economy_zaibatsus" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_guide_the_zaibatsus
+				NOT = {
+					has_completed_focus = JAP_challenge_the_zaibatsus
+				}
+			}
+		}
+		localization_key = "JAP_modify_economy_guide_zaibatsus" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_challenge_the_zaibatsus
+				NOT = {
+					has_completed_focus = JAP_guide_the_zaibatsus
+					has_completed_focus = JAP_imperial_economy
+				}
+			}
+		}
+		localization_key = "JAP_modify_economy_zaibatsus_challenged" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_challenge_the_zaibatsus
+				has_completed_focus = JAP_imperial_economy
+				NOT = {
+					has_completed_focus = JAP_guide_the_zaibatsus
+				}
+			}
+		}
+		localization_key = "JAP_modify_economy_challenge_the_zaibatsus" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_army_dynam_mod_sl
+	text = {
+		trigger = {
+			JAP = {
+				NOT = {
+					has_completed_focus = JAP_combat_militarism
+				}
+			}
+		}
+		localization_key = "JAP_modify_army_militarism" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_combat_militarism
+			}
+		}
+		localization_key = "JAP_modify_army_unyielding_spirit" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_technlogical_supremacy_effect_sl
+	text = {
+		trigger = {
+			JAP = {
+				NOT = {
+					has_completed_focus = JAP_technlogical_supremacy
+				}
+			}
+		}
+		localization_key = "JAP_supremacy_of_technology_0_tt" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_technlogical_supremacy
+			}
+		}
+		localization_key = "JAP_supremacy_of_technology_5_tt" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_air_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "JAP_modify_navy_air_navy_air" 
+	}
+}
+
+defined_text = { # global
+	name = JAP_duplicate_research_effort_sl
+	text = {
+		trigger = {
+			JAP = {
+				has_completed_focus = JAP_unified_fighter_development
+			}
+		}
+		localization_key = "JAP_duplicate_research_effort_0_tt" 
+	}
+	text = {
+		trigger = {
+			JAP = {
+				NOT = {
+					has_completed_focus = JAP_unified_fighter_development
+				}
+			}
+		}
+		localization_key = "JAP_duplicate_research_effort_nega_10_tt" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = limited_rearmament_focus
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ENG_modify_economy_great_depression" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = limited_rearmament_focus
+				NOT = {
+					has_completed_focus = shadow_scheme_focus
+				}
+				has_war = no
+			}
+		}
+		localization_key = "ENG_modify_economy_british" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = shadow_scheme_focus
+				has_war = no
+			}
+		}
+		localization_key = "ENG_modify_economy_shadow_scheme" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_war = yes
+			}
+		}
+		localization_key = "ENG_modify_economy_war" 
+	}
+}
+
+defined_text = { # global
 	name = ENG_army_dynam_mod_sl
 	text = {
 		trigger = {
@@ -27,6 +479,41 @@ defined_text = { # global
 			always = yes
 		}
 		localization_key = "ENG_modify_air_airforce" 
+	}
+}
+
+defined_text = { # global
+	name = ENG_british_airforce_aircaft_production_group_sl
+	text = {
+		trigger = {
+			ENG = {
+				NOT = {
+					has_completed_focus = ENG_air_production_group
+					has_completed_focus = ENG_air_ministry_production
+				}
+			}
+		}
+		localization_key = "ENG_air_production_group_0_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_air_production_group
+				NOT = {
+					has_completed_focus = ENG_air_ministry_production
+				}
+			}
+		}
+		localization_key = "ENG_air_production_group_5_tt" 
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_completed_focus = ENG_air_production_group
+				has_completed_focus = ENG_air_ministry_production
+			}
+		}
+		localization_key = "ENG_air_production_group_10_tt" 
 	}
 }
 
@@ -81,85 +568,6 @@ defined_text = { # global
 			}
 		}
 		localization_key = "ENG_secure_the_imperial_shipping_routes_10_tt" 
-	}
-}
-
-defined_text = { # global
-	name = ENG_british_airforce_aircaft_production_group_sl
-	text = {
-		trigger = {
-			ENG = {
-				NOT = {
-					has_completed_focus = ENG_air_production_group
-					has_completed_focus = ENG_air_ministry_production
-				}
-			}
-		}
-		localization_key = "ENG_air_production_group_0_tt" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = ENG_air_production_group
-				NOT = {
-					has_completed_focus = ENG_air_ministry_production
-				}
-			}
-		}
-		localization_key = "ENG_air_production_group_5_tt" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = ENG_air_production_group
-				has_completed_focus = ENG_air_ministry_production
-			}
-		}
-		localization_key = "ENG_air_production_group_10_tt" 
-	}
-}
-
-defined_text = { # global
-	name = ENG_economy_dynam_mod_sl
-	text = {
-		trigger = {
-			ENG = {
-				NOT = {
-					has_completed_focus = limited_rearmament_focus
-				}
-				has_war = no
-			}
-		}
-		localization_key = "ENG_modify_economy_great_depression" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = limited_rearmament_focus
-				NOT = {
-					has_completed_focus = shadow_scheme_focus
-				}
-				has_war = no
-			}
-		}
-		localization_key = "ENG_modify_economy_british" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_completed_focus = shadow_scheme_focus
-				has_war = no
-			}
-		}
-		localization_key = "ENG_modify_economy_shadow_scheme" 
-	}
-	text = {
-		trigger = {
-			ENG = {
-				has_war = yes
-			}
-		}
-		localization_key = "ENG_modify_economy_war" 
 	}
 }
 
@@ -223,9 +631,7 @@ defined_text = { # global
 			SOV = {
 				NOT = {
 					has_completed_focus = SOV_finish_2_plan
-					NOT = {
-						has_completed_focus = SOV_germans_are_coming
-					}
+					has_completed_focus = SOV_germans_are_coming
 				}
 			}
 		}

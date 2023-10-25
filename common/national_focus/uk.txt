@@ -99,6 +99,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = ENG_air_dynamic_modifier
+				}
+			}
 			air_experience = 25
 		}
 	}
@@ -507,8 +512,9 @@ focus_tree = {
 	focus = {
 		id = ENG_air_ministry
 		icon = GFX_focus_eng_the_sun_never_sets
-		prerequisite = { focus = ENG_raf }
-		prerequisite = { focus = ENG_air_production_group }
+		prerequisite = { focus = ENG_raf focus = ENG_air_production_group }
+		# prerequisite = { focus = ENG_raf }
+		# prerequisite = { focus = ENG_air_production_group }
 		available = { has_completed_focus = ENG_war_cabinet }
 		x = -2
 		y = 1
@@ -1110,8 +1116,9 @@ focus_tree = {
 	focus = {
 		id = ENG_war_office
 		icon = GFX_focus_eng_the_sun_never_sets
-		prerequisite = { focus = ENG_cruiser_tanks focus = ENG_infantry_tanks }
-		prerequisite = { focus = ENG_learn_from_war }
+		prerequisite = { focus = ENG_cruiser_tanks focus = ENG_infantry_tanks focus = ENG_learn_from_war }
+		# prerequisite = { focus = ENG_cruiser_tanks focus = ENG_infantry_tanks }
+		# prerequisite = { focus = ENG_learn_from_war }
 		
 		available = { has_completed_focus = ENG_war_cabinet }
 		x = -1
@@ -1291,6 +1298,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = ENG_navy_dynamic_modifier
+				}
+			}
 			navy_experience = 50
 		}
 	}
@@ -1478,7 +1490,7 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = shp_bonus
-				bonus = 0.50
+				bonus = 1 #0.50
 				uses = 2
 				technology = basic_medium_battery
 				technology = improved_medium_battery
@@ -1489,9 +1501,10 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = shp_bonus
-				bonus = 0.75
+				bonus = 1 #0.75
 				uses = 1
 				category = bb_tech
+				category = bc_tech
 			}
 		}
 	}
@@ -1646,10 +1659,11 @@ focus_tree = {
 	focus = {
 		id = ENG_admiralty
 		icon = GFX_focus_eng_the_sun_never_sets
-		prerequisite = { focus = ENG_merchant_fleet }
-		prerequisite = { focus = ENG_secure_shipping }
-		prerequisite = { focus = ENG_refitting_effort }
-		prerequisite = { focus = ENG_repair_yards }
+		prerequisite = { focus = ENG_merchant_fleet focus = ENG_secure_shipping focus = ENG_refitting_effort focus = ENG_repair_yards }
+		# prerequisite = { focus = ENG_merchant_fleet }
+		# prerequisite = { focus = ENG_secure_shipping }
+		# prerequisite = { focus = ENG_refitting_effort }
+		# prerequisite = { focus = ENG_repair_yards }
 		available = { has_completed_focus = ENG_war_cabinet }
 		x = -4
 		y = 1

@@ -68,7 +68,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			remove_ideas = ITA_inflexible_economy
+			# remove_ideas = ITA_inflexible_economy
+			ITA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_economy_trade_laws_cost_factor = -3.0 tooltip = trade_laws_cost_factor_tt }
 		}
 	}
 	
@@ -89,7 +91,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_europe_trade
+			# add_ideas = ITA_europe_trade
+			ITA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_economy_production_speed_buildings_factor = 0.025 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { ITA_italian_economy_research_speed_factor = 0.025 tooltip = research_speed_factor_tt }
 		}
 	}
 	
@@ -656,7 +661,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_german_investments
+			hidden_effect = {
+				add_ideas = ITA_german_investments
+			}
+			ITA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_economy_consumer_goods_factor = -0.09 tooltip = consumer_goods_factor_tt }
+			custom_effect_tooltip = ITA_german_investments_25_ftt
 		}
 	}
 
@@ -701,7 +711,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_ind_econ_1
+			# add_ideas = ITA_ind_econ_1
+			ITA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_economy_local_resources_factor = 0.05 tooltip = local_resources_factor_tt }
+			add_to_variable = { ITA_italian_economy_production_speed_synthetic_refinery_factor = 0.1 tooltip = production_speed_synthetic_refinery_factor_tt }
+			add_to_variable = { ITA_italian_economy_production_speed_steel_refinery_factor = 0.1 tooltip = production_speed_steel_refinery_factor_tt }
 		}
 	}
 	
@@ -722,10 +736,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ITA_ind_econ_1
-				add_idea = ITA_ind_econ_2
-			}
+			# swap_ideas = {
+			# 	remove_idea = ITA_ind_econ_1
+			# 	add_idea = ITA_ind_econ_2
+			# }
+			ITA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_economy_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
 		}
 	}
 	
@@ -1737,7 +1753,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_mobilized_naval_workers
+			# add_ideas = ITA_mobilized_naval_workers
+			ITA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 	
@@ -2253,7 +2271,9 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = ITA_farming
+			# add_ideas = ITA_farming
+			ITA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_economy_monthly_population = 0.25 tooltip = monthly_population_tt }
 		}
 	}
 	
@@ -2326,7 +2346,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_nationalisation
+			# add_ideas = ITA_nationalisation
+			ITA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_economy_global_building_slots_factor = 0.20 tooltip = global_building_slots_factor_tt }
+			add_to_variable = { ITA_italian_economy_industry_repair_factor = 0.2 tooltip = industry_repair_factor_tt }
+			add_to_variable = { ITA_italian_economy_economy_cost_factor = -0.33 tooltip = economy_cost_factor_tt }
 		}
 	}
 	
@@ -2579,7 +2603,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			add_ideas = ITA_bayonets
+			# add_ideas = ITA_bayonets
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_mobilization_speed = 0.25 tooltip = mobilization_speed_tt }
+			add_to_variable = { ITA_italian_army_army_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt }
+			add_to_variable = { ITA_italian_army_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
+			add_to_variable = { ITA_italian_army_minimum_training_level = -0.1 tooltip = minimum_training_level_tt }
 		}
 	}
 	
@@ -3607,10 +3636,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_old_guard_old
-				remove_idea = ITA_old_guard_base
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_old_guard_old
+			# 	remove_idea = ITA_old_guard_base
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_max_planning = 0.10 tooltip = max_planning_tt }
+			add_to_variable = { ITA_italian_army_max_dig_in = 2.5 tooltip = max_dig_in_tt }
+			add_to_variable = { ITA_italian_army_cat_grand_battle_plan_cost_factor = -0.05 tooltip = cat_grand_battle_plan_cost_factor_tt }
 		}
 	}
 	
@@ -3682,7 +3715,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_WW1_Tactics
+			# add_ideas = ITA_WW1_Tactics
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_army_morale_factor = 0.05 tooltip = army_morale_factor_tt }
+			add_to_variable = { ITA_italian_army_dig_in_speed_factor = 0.1 tooltip = dig_in_speed_factor_tt }
 		}
 	}
 	focus = {
@@ -3702,7 +3738,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_shock_tactics
+			# add_ideas = ITA_shock_tactics
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_terrain_penalty_reduction = 0.05 tooltip = terrain_penalty_reduction_tt }
+			add_to_variable = { ITA_italian_army_breakthrough_factor = 0.05 tooltip = breakthrough_factor_tt }
 			hidden_effect = {
 				every_army_leader={
 					add_trait = {
@@ -3754,10 +3793,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_shock_tactics2
-				remove_idea = ITA_shock_tactics
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_shock_tactics2
+			# 	remove_idea = ITA_shock_tactics
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_land_night_attack = 0.05 tooltip = land_night_attack_tt }
+			add_to_variable = { ITA_italian_army_cas_damage_reduction = 0.05 tooltip = cas_damage_reduction_tt }
 		}
 	}
 	focus = {
@@ -3778,10 +3820,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_old_guard_ref_1
-				remove_idea = ITA_old_guard_base
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_old_guard_ref_1
+			# 	remove_idea = ITA_old_guard_base
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_planning_speed = 0.05 tooltip = planning_speed_tt }
+			add_to_variable = { ITA_italian_army_max_planning = -0.1 tooltip = max_planning_tt }
+			add_to_variable = { ITA_italian_army_cat_superior_firepower_cost_factor = -0.35 tooltip = cat_superior_firepower_cost_factor_tt }
+			add_to_variable = { ITA_italian_army_cat_grand_battle_plan_cost_factor = 0.35 tooltip = cat_grand_battle_plan_cost_factor_tt }
 		}
 	}
 	
@@ -3824,10 +3871,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_old_guard_ref_2
-				remove_idea = ITA_old_guard_ref_1
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_old_guard_ref_2
+			# 	remove_idea = ITA_old_guard_ref_1
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_planning_speed = 0.10 tooltip = planning_speed_tt }
+			add_to_variable = { ITA_italian_army_max_planning = 0.15 tooltip = max_planning_tt }
+			add_to_variable = { ITA_italian_army_max_dig_in = -1.5 tooltip = max_dig_in_tt }
+			add_to_variable = { ITA_italian_army_fascism_drift = 0.1 tooltip = fascism_drift_tt }
+			add_to_variable = { ITA_italian_army_cat_superior_firepower_cost_factor = -0.15 tooltip = cat_superior_firepower_cost_factor_tt }
 			create_field_marshal = {
 				name = "Benito Mussolini"
 				picture = "Portrait_Italy_Benito_Mussolini.dds"
@@ -3859,7 +3912,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_blackshirts
+			# add_ideas = ITA_blackshirts
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_conscription = 0.01 tooltip = conscription_tt }
+			add_to_variable = { ITA_italian_army_resistance_damage_to_garrison = -0.2 tooltip = resistance_damage_to_garrison_tt }
 			hidden_effect = {
 				load_oob = ITA_blackshirts
 			}
@@ -3901,10 +3957,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_legions
-				remove_idea = ITA_blackshirts
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_legions
+			# 	remove_idea = ITA_blackshirts
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_non_core_manpower = 0.15 tooltip = non_core_manpower_tt }
+			add_to_variable = { ITA_italian_army_training_time_army_factor = -0.25 tooltip = training_time_army_factor_tt }
+			add_to_variable = { ITA_italian_army_conscription = 0.01 tooltip = conscription_tt }
+			add_to_variable = { ITA_italian_army_resistance_damage_to_garrison = -0.05 tooltip = resistance_damage_to_garrison_tt }
 		}
 	}
 	
@@ -3930,10 +3991,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_old_guard_ino_1
-				remove_idea = ITA_old_guard_base
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_old_guard_ino_1
+			# 	remove_idea = ITA_old_guard_base
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_planning_speed = 0.15 tooltip = planning_speed_tt }
+			add_to_variable = { ITA_italian_army_max_planning = -0.1 tooltip = max_planning_tt }
+			add_to_variable = { ITA_italian_army_max_dig_in = -2.5 tooltip = max_dig_in_tt }
+			add_to_variable = { ITA_italian_army_cat_mobile_warfare_cost_factor = -0.30 tooltip = cat_superior_firepower_cost_factor_tt }
+			add_to_variable = { ITA_italian_army_cat_grand_battle_plan_cost_factor = 0.35 tooltip = cat_grand_battle_plan_cost_factor_tt }
 			# add_timed_idea = {
 			# 	idea = ITA_reforming
 			# 	days = 180
@@ -3968,10 +4035,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ITA_old_guard_ino_1
-				add_idea = ITA_old_guard_ino_2
-			}
+			# swap_ideas = {
+			# 	remove_idea = ITA_old_guard_ino_1
+			# 	add_idea = ITA_old_guard_ino_2
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_planning_speed = 0.20 tooltip = planning_speed_tt }
 			# add_timed_idea = {
 			# 	idea = ITA_reforming
 			# 	days = 180
@@ -4001,7 +4070,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_general_staff_idea
+			# add_ideas = ITA_general_staff_idea
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_army_org_factor = 0.025 tooltip = army_org_factor_tt }
+			add_to_variable = { ITA_italian_army_planning_speed = 0.10 tooltip = planning_speed_tt }
 			# add_timed_idea = {
 			# 	idea = ITA_reforming
 			# 	days = 180
@@ -4030,7 +4102,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			remove_ideas = ITA_incompetent_officers
+			# remove_ideas = ITA_incompetent_officers
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_army_attack_factor = 0.1 tooltip = army_attack_factor_tt }
+			add_to_variable = { ITA_italian_army_army_defence_factor = 0.1 tooltip = army_defence_factor_tt }
 			# add_timed_idea = {
 			# 	idea = ITA_reforming
 			# 	days = 180
@@ -4090,10 +4165,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_new_army_idea
-				remove_idea = ITA_general_staff_idea
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_new_army_idea
+			# 	remove_idea = ITA_general_staff_idea
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_experience_gain_army_unit_factor = 0.10 tooltip = experience_gain_army_unit_factor_tt }
+			add_to_variable = { ITA_italian_army_army_org_factor = 0.025 tooltip = army_org_factor_tt }
+			add_to_variable = { ITA_italian_army_military_leader_cost_factor = -0.50 tooltip = military_leader_cost_factor_tt }
+			add_to_variable = { ITA_italian_army_army_leader_start_level = 1 tooltip = army_leader_start_level_tt }
+			add_to_variable = { ITA_italian_army_experience_loss_factor = -0.1 tooltip = experience_loss_factor_tt }
 			every_army_leader = {
 				add_skill_level = 1
 			}
@@ -4117,7 +4198,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_arditi_legacy
+			# add_ideas = ITA_arditi_legacy
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_army_infantry_attack_factor = 0.05 tooltip = army_infantry_attack_factor_tt }
 		}
 	}
 	
@@ -4224,10 +4307,13 @@ focus_tree = {
 				uses = 1
 				category = mountaineers_tech
 			}
-			swap_ideas = {
-				add_idea = ITA_arditi_legacy2
-				remove_idea = ITA_arditi_legacy
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_arditi_legacy2
+			# 	remove_idea = ITA_arditi_legacy
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_special_forces_attack_factor = 0.05 tooltip = special_forces_attack_factor_tt }
+			add_to_variable = { ITA_italian_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 
@@ -4339,10 +4425,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_arditi_legacy3
-				remove_idea = ITA_arditi_legacy2
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_arditi_legacy3
+			# 	remove_idea = ITA_arditi_legacy2
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_max_planning = 0.05 tooltip = max_planning_tt }
 		}
 	}
 	
@@ -4429,8 +4517,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			remove_ideas = ITA_incompetent_officers
 			army_experience = -150
+			# remove_ideas = ITA_incompetent_officers
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_army_attack_factor = 0.1 tooltip = army_attack_factor_tt }
+			add_to_variable = { ITA_italian_army_army_defence_factor = 0.1 tooltip = army_defence_factor_tt }
 		}
 	}
 	
@@ -4623,7 +4714,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_csir_idea
+			# add_ideas = ITA_csir_idea
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_winter_attrition_factor = -0.05 tooltip = winter_attrition_factor_tt }
+			add_to_variable = { ITA_italian_army_acclimatization_cold_climate_gain_factor = 0.1 tooltip = acclimatization_cold_climate_gain_factor_tt }
 		}
 	}
 	
@@ -4665,10 +4759,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ITA_armir_idea
-				remove_idea = ITA_csir_idea
-			}
+			# swap_ideas = {
+			# 	add_idea = ITA_armir_idea
+			# 	remove_idea = ITA_csir_idea
+			# }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_army_winter_attrition_factor = -0.1 tooltip = winter_attrition_factor_tt }
+			add_to_variable = { ITA_italian_army_acclimatization_cold_climate_gain_factor = 0.15 tooltip = acclimatization_cold_climate_gain_factor_tt }
 		}
 	}
 	
@@ -4687,6 +4784,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = ITA_navy_dynamic_modifier
+				}
+			}
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
@@ -4815,7 +4917,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = cv_bonus
 				bonus = 0.75
-				ahead_reduction = 0.5
+				# ahead_reduction = 0.5
 				uses = 1
 				category = bb_tech
 			}
@@ -5050,13 +5152,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_xmas
+			# add_ideas = ITA_xmas
 			add_tech_bonus = {
 				name = doc_bonus
 				bonus = 0.50
 				uses = 1
 				category = marine_tech
 			}
+			ITA_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_navy_naval_torpedo_screen_penetration_factor = 0.10 tooltip = naval_torpedo_screen_penetration_factor_tt }
+			ITA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = {  ITA_italian_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 	
@@ -5076,13 +5182,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = ITA_idea_esploratori
+			# add_ideas = ITA_idea_esploratori
 			add_tech_bonus = {
 				name = ITA_escort_effort
 				bonus = 1.0
 				uses = 1
 				category = cl_tech
 			}
+			ITA_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_navy_naval_speed_factor = 0.05 tooltip = naval_speed_factor_tt }
+			add_to_variable = { ITA_italian_navy_refit_speed = 0.2 tooltip = refit_speed_tt }
+			add_to_variable = { ITA_italian_navy_refit_ic_cost = -0.1 tooltip = refit_ic_cost_tt }
 		}
 	}
 
@@ -5340,13 +5450,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = ITA_naval_air
 			add_tech_bonus = {
 				name = air_bonus
 				bonus = 0.75
 				uses = 2
 				category = naval_air
 			}
+			hidden_effect = {
+				add_ideas = ITA_naval_air
+			}
+			ITA_airforce_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { ITA_italian_airforce_naval_strike_targetting_factor = 0.1 tooltip = naval_strike_targetting_factor_tt }
+			add_to_variable = { ITA_italian_airforce_sortie_efficiency = 0.1 tooltip = sortie_efficiency_tt }
+			custom_effect_tooltip = ITA_naval_air_coordination_10_ftt
 		}
 	}
 
@@ -5399,7 +5515,11 @@ focus_tree = {
 					}
 				}
 			}
-			add_ideas = ITA_naval_strike
+			hidden_effect = {
+				add_ideas = ITA_naval_strike
+			}
+			ITA_airforce_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ITA_license_the_airframe_5_tt
 		}
 	}
 	
@@ -5532,10 +5652,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas  = {
-				remove_idea = ITA_outdated_industry
-				add_idea = ITA_outdated_industry_2
+			hidden_effect = {
+				swap_ideas  = {
+					remove_idea = ITA_outdated_industry
+					add_idea = ITA_outdated_industry_2
+				}
 			}
+			ITA_airforce_dynamic_modifier_tt = yes # tooltip
+			custom_effect_tooltip = ITA_outdated_industry_10_ftt
 			air_experience = -125
 		}
 	}

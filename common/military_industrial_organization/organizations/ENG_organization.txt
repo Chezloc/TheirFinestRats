@@ -464,25 +464,25 @@ ENG_supermarine_organization = {
 		relative_position_id = generic_mio_trait_fuel_injection_engines
 	}
 
-	add_trait = { 
-		token = ENG_mio_trait_seaplane_origins
-		name = ENG_mio_trait_seaplane_origins
-		icon = GFX_generic_mio_trait_icon_detection
-		special_trait_background = yes
+	# add_trait = { 
+	# 	token = ENG_mio_trait_seaplane_origins
+	# 	name = ENG_mio_trait_seaplane_origins
+	# 	icon = GFX_generic_mio_trait_icon_detection
+	# 	special_trait_background = yes
 
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_minimum_weapon_requirements
+	# 	position = { x=2 y=0 }
+	# 	relative_position_id = generic_mio_trait_minimum_weapon_requirements
 
-		#any_parent = { generic_mio_trait_super_heavy_shells generic_mio_trait_semi_armor_piercing_shells generic_mio_trait_high_velocity_guns }
+	# 	#any_parent = { generic_mio_trait_super_heavy_shells generic_mio_trait_semi_armor_piercing_shells generic_mio_trait_high_velocity_guns }
 
-		limit_to_equipment_type = { mio_cat_eq_all_small_plane mio_cat_eq_all_large_plane }
+	# 	limit_to_equipment_type = { mio_cat_eq_all_small_plane mio_cat_eq_all_large_plane }
 
-		equipment_bonus = {
-			sub_detection = 0.05
-			surface_detection = 0.05
-			naval_strike_targetting = 0.1
-		}
-	}
+	# 	equipment_bonus = {
+	# 		sub_detection = 0.05
+	# 		surface_detection = 0.05
+	# 		naval_strike_targetting = 0.1
+	# 	}
+	# }
 }
 
 ENG_hawker_organization = {
@@ -761,6 +761,7 @@ ENG_royal_arsenal_organization = {
 			tag = ENG
 			tag = AST
 			tag = CAN
+			tag = SAF
 			AND = {
 				OR = {
 					original_TAG = LAT

@@ -384,6 +384,45 @@
   ITA_military_construction:0 "Italian Military Construction"
   ITA_mobilized_naval_workers:0 "Mobilized Naval Workers"
   SPA_spanish_civil_war_commitments_2:0 "Spanish Civil War Commitments (No Asia)"
+  
+  ### DYNAMIC MODIFIERS ###
+  ITA_economy_dynamic_modifier:0 "[ITA_economy_dynam_mod_sl]"
+  ITA_modify_italian_economy_ns_intro:0 "Modify §Y$ITA_economy_dynamic_modifier$§! by"
+  ITA_modify_economy_inflexible:0 "Inflexible Economy"
+  ITA_modify_economy_italian_economy:0 "Economia Italiana"
+  ITA_modify_economy_autarky:0 "Italian Autarky"
+  ITA_modify_economy_war_economy:0 "Italian War Economy"
+  ITA_german_investments_tt:0 "[ITA_german_investments_sl]"
+  ITA_german_investments_0_tt:0 ""
+  ITA_german_investments_25_tt:0 "([GER.GetFlag]§Y[GER.GetName]§!)£trade_texticon  Target country trade cost: §G-25.00%§!"
+  ITA_german_investments_25_ftt:0 "  ([GER.GetFlag]§Y[GER.GetName]§!)£trade_texticon  Target country trade cost: §G-25.00%§!"
+
+  ITA_army_dynamic_modifier:0 "[ITA_army_dynam_mod_sl]"
+  ITA_modify_italian_army_ns_intro:0 "Modify §Y$ITA_army_dynamic_modifier$§! by"
+  ITA_modify_army_regio_esercito:0 "Regio Esercito"
+
+  ITA_air_dynamic_modifier:0 "[ITA_air_dynam_mod_sl]"
+  ITA_modify_italian_airforce_ns_intro:0 "Modify §Y$ITA_air_dynamic_modifier$§! by"
+  ITA_modify_air_regia_aeronautica:0 "Regia Aeronautica"
+  ITA_outdated_industry_10_nega_tt:0 "§YFighter§!:\n  £speed_air_texticon  Agility: §G+10%§!\n   £attacker_speed_texticon  Speed: §R-10%§!"
+  ITA_outdated_industry_0_tt:0 ""
+  ITA_outdated_industry_10_tt:0 " §YFighter§!: £speed_air_texticon  Agility: §G+10%§!"
+  ITA_outdated_industry_10_ftt:0 " §YFighter§!: £attacker_speed_texticon  Speed: §G+10%§!"
+  ITA_outdated_industry_tt:0 "[ITA_technical_assistance_sl]"
+  
+  ITA_naval_air_coordination_0_tt:0 ""
+  ITA_naval_air_coordination_10_tt:0 "§YNaval Bomber§!: £attack_texticon  Naval Attack: §G+10%§!"
+  ITA_naval_air_coordination_10_ftt:0 " §YNaval Bomber§!: £attack_texticon  Naval Attack: §G+10%§!"
+  ITA_naval_air_coordination_tt:0 "[ITA_naval_air_coordination_sl]"
+
+  ITA_license_the_airframe_0_tt:0 ""
+  ITA_license_the_airframe_5_tt:0 "§YNaval Bomber§!:\n £production_cost  Production Cost: §G-5.00%§!\n£attack_texticon  Naval Attack: §G+5%§!"
+  ITA_license_the_airframe_5_ftt:0 "§YNaval Bomber§!:\n £production_cost  Production Cost: §G-5.00%§!\n£attack_texticon  Naval Attack: §G+5%§!"
+  ITA_license_the_airframe_tt:0 "[ITA_license_the_airframe_sl]"
+  
+  ITA_navy_dynamic_modifier:0 "[ITA_navy_dynam_mod_sl]"
+  ITA_modify_italian_navy_ns_intro:0 "Modify §Y$ITA_navy_dynamic_modifier$§! by"
+  ITA_modify_navy_regia_marina:0 "Regia Marina"
 
   #### DECISIONS ####
   ITA_search_for_oil:0 "Search for Oil"

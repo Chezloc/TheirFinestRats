@@ -1,5 +1,5 @@
 ﻿l_english:
- loading_screen_text:
+#  loading_screen_text:
  LOADING_DATABASES:0 "Redefining the Meta"
  LOADING_MAP_SPRITES:0 "Screaming at New Players"
  LOAD_GFX_PDXMAP_SHADERS:0 "Rebalancing Heavy Tanks"

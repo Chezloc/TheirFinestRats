@@ -807,6 +807,27 @@ on_actions = {
 		effect = {
 			every_country = {
 				limit = {
+					NOT = {
+						OR = {
+							tag = FRA
+							tag = USA
+							tag = ENG
+							tag = GER
+							tag = ITA
+							tag = SOV
+							tag = JAP
+						}
+					}
+				}
+				add_ideas = minor_funds_gain
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
 					is_playable_country = yes
 				}
 				create_intelligence_agency = yes

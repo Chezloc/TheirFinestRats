@@ -2,6 +2,22 @@ ideas = {
 
 	hidden_ideas = {
 
+		minor_funds_gain = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				military_industrial_organization_funds_gain = 1
+			}
+		}
+
 		no_guarantees = {
 
 			cancel = {

@@ -59,7 +59,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GER_grosraumwirtschaft
+			# add_ideas = GER_grosraumwirtschaft
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_infrastructure_factor = 0.2 tooltip = production_speed_infrastructure_factor_tt }
 		}
 	}
 
@@ -86,7 +88,9 @@ focus_tree = {
 				technology = excavation4
 				technology = excavation5
 			}
-			add_ideas = GER_autarky_idea
+			# add_ideas = GER_autarky_idea
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_local_resources_factor = 0.10 tooltip = local_resources_factor_tt }
 		}
 	}
 	
@@ -106,8 +110,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GER_synth_oil
+			# add_ideas = GER_synth_oil
 			set_country_flag = ger_synth_oil
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_fuel_gain_factor_from_states = 0.40 tooltip = fuel_gain_factor_from_states_tt }
 		}
 	}
 	
@@ -397,7 +403,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GER_expand_mefo
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -413,6 +418,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			# add_ideas = GER_expand_mefo
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_mefo_political_power_gain = -0.25 tooltip = political_power_gain_tt }
+			add_to_variable = { GER_german_economy_mefo_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { GER_german_economy_mefo_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { GER_german_economy_mefo_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 	
@@ -615,16 +626,13 @@ focus_tree = {
 		
 		available = {
 			has_idea = GER_mefo_bills_1
+			has_idea = GER_expand_mefo
 			# has_idea = GER_hjalmar_schacht
 		}
 		complete_tooltip = {
 		}
 		
 		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_expand_mefo_slow
-				remove_idea = GER_expand_mefo
-			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -640,6 +648,15 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			# swap_ideas = {
+			# 	add_idea = GER_expand_mefo_slow
+			# 	remove_idea = GER_expand_mefo
+			# }
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_mefo_political_power_gain = -0.05 tooltip = political_power_gain_tt }
+			add_to_variable = { GER_german_economy_mefo_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { GER_german_economy_mefo_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { GER_german_economy_mefo_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 	
@@ -711,15 +728,12 @@ focus_tree = {
 		available_if_capitulated = no
 		available = {
 			has_idea = GER_mefo_bills_1
+			has_idea = GER_expand_mefo_slow
 		}
 		complete_tooltip = {
 		}
 		
 		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_expand_mefo_slow_2
-				remove_idea = GER_expand_mefo_slow
-			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -735,6 +749,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			# swap_ideas = {
+			# 	add_idea = GER_expand_mefo_slow_2
+			# 	remove_idea = GER_expand_mefo_slow
+			# }
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_mefo_political_power_gain = -0.2 tooltip = political_power_gain_tt }
+			add_to_variable = { GER_german_economy_mefo_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { GER_german_economy_mefo_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 	
@@ -1153,7 +1175,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = GER_oade
+			# add_ideas = GER_oade
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { GER_german_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { GER_german_economy_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt }
 		}
 	}
 	
@@ -1175,7 +1201,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = GER_rad
+			# add_ideas = GER_rad
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { GER_german_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_training_time_army_factor = -0.1 tooltip = training_time_army_factor_tt }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = GER_reichsarbeit_prop
 		}
@@ -1225,10 +1256,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_rad_mil
-				remove_idea = GER_rad
-			}
+			# swap_ideas = {
+			# 	add_idea = GER_rad_mil
+			# 	remove_idea = GER_rad
+			# }
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_training_time_army_factor = -0.1 tooltip = training_time_army_factor_tt }
+			add_to_variable = { GER_german_army_max_dig_in = 5 tooltip = max_dig_in_tt }
 		}
 	}
 	
@@ -1254,10 +1288,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_rad_civ
-				remove_idea = GER_rad
-			}
+			# swap_ideas = {
+			# 	add_idea = GER_rad_civ
+			# 	remove_idea = GER_rad
+			# }
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+			add_to_variable = { GER_german_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 	
@@ -1648,8 +1685,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = { modifier = GER_air_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = GER_air_dynamic_modifier }
+				}
+			}
 			air_experience = 50
-			add_ideas = GER_cas
+			# add_ideas = GER_cas
+			GER_airforce_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_airforce_air_cas_present_factor = 0.10 tooltip = air_cas_present_factor_tt }
 		}
 	}
 
@@ -1694,7 +1743,19 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
-			add_ideas = GER_fast_bombers 
+			# add_ideas = GER_fast_bombers 
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = { modifier = GER_air_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = GER_air_dynamic_modifier }
+				}
+			}
+			GER_airforce_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_airforce_air_strategic_bomber_bombing_factor = 0.15 tooltip = air_strategic_bomber_bombing_factor_tt }
 		}
 	}
 	
@@ -1785,7 +1846,14 @@ focus_tree = {
 		completion_reward = { 
 			air_experience = 50
 
-			add_ideas = GER_luft_2_idea
+			# add_ideas = GER_luft_2_idea
+			GER_airforce_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_airforce_air_ace_generation_chance_factor = 0.5 tooltip = air_ace_generation_chance_factor_tt }
+			add_to_variable = { GER_german_airforce_air_training_xp_gain_factor = 0.25 tooltip = air_training_xp_gain_factor_tt }
+			add_to_variable = { GER_german_airforce_army_bonus_air_superiority_factor = 0.1 tooltip = army_bonus_air_superiority_factor_tt }
+			add_to_variable = { GER_german_airforce_air_cas_present_factor = 0.1 tooltip = air_cas_present_factor_tt }
+			add_to_variable = { GER_german_airforce_air_mission_xp_gain_factor = 0.1 tooltip = air_mission_xp_gain_factor_tt }
+
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 1.0
@@ -1950,7 +2018,11 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 10
-			add_ideas = GER_auftragstaktik
+			# add_ideas = GER_auftragstaktik
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_experience_gain_army_unit_factor = 0.10 tooltip = experience_gain_army_unit_factor_tt }
+			add_to_variable = { GER_german_army_army_morale_factor = 0.05 tooltip = army_morale_factor_tt }
+			add_to_variable = { GER_german_army_experience_loss_factor = -0.15 tooltip = experience_loss_factor_tt }
 		}
 	}
 	
@@ -2378,7 +2450,10 @@ focus_tree = {
 		}
 			
 		completion_reward = {
-			add_ideas = GER_abwehr_idea
+			# add_ideas = GER_abwehr_idea
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_intelligence_agency_defense = 1 tooltip = intelligence_agency_defense_tt }
+			add_to_variable = { GER_german_army_operative_slot = 2 tooltip = operative_slot_tt }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = GER_intel_prop
 		}
@@ -2401,10 +2476,12 @@ focus_tree = {
 		}
 			
 		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_abwehr_idea2
-				remove_idea = GER_abwehr_idea
-			}
+			# swap_ideas = {
+			# 	add_idea = GER_abwehr_idea2
+			# 	remove_idea = GER_abwehr_idea
+			# }
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_operative_slot = 1 tooltip = operative_slot_tt }
 		}
 	}
 	
@@ -3479,7 +3556,9 @@ focus_tree = {
 				days = 150
 			}
 							
-			remove_ideas = GER_good_weather_army
+			# remove_ideas = GER_good_weather_army
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_acclimatization_cold_climate_gain_factor = 9.99 tooltip = acclimatization_cold_climate_gain_factor_tt }
 			
 			activate_mission = GER_barbarossa_mission_moscow
 			activate_mission = GER_barbarossa_mission_kiev
@@ -3660,7 +3739,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GER_ostwall_idea
+			# add_ideas = GER_ostwall_idea
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_max_dig_in = 2 tooltip = max_dig_in_tt }
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_bunker_factor = 0.25 tooltip = production_speed_bunker_factor_tt }
 			custom_effect_tooltip = GER_ostwall_forts
 			custom_effect_tooltip = GER_ostwall_forts_2
 			if = {
@@ -4919,8 +5002,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GER_swiss_gold
 			add_offsite_building = { type = arms_factory level = 5 }
+			# add_ideas = GER_swiss_gold
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_consumer_goods_factor = -0.12 tooltip = consumer_goods_factor_tt }
 		}
 	}
 
@@ -5023,8 +5108,11 @@ focus_tree = {
  			hidden_effect = {
  				set_global_flag = form_greater_german_reich_flag
  			}
-			add_ideas = triumphant_will
 			add_political_power = 200
+			# add_ideas = triumphant_will
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_stability_factor = 0.10 tooltip = stability_factor_tt }
+			add_to_variable = { GER_german_economy_war_support_factor = 0.10 tooltip = war_support_factor_tt }
 		}
 	}
 	
@@ -5220,7 +5308,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GER_atlantikwall_idea
+			# add_ideas = GER_atlantikwall_idea
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_speed_coastal_bunker_factor = 0.3 tooltip = production_speed_coastal_bunker_factor_tt }
+			add_to_variable = { GER_german_economy_production_speed_anti_air_building_factor = 0.3 tooltip = production_speed_anti_air_building_factor_tt }
 			custom_effect_tooltip = atlantikwall_tooltip
 			custom_effect_tooltip = atlantikwall_tooltip_2
 			hidden_effect = {
@@ -6119,10 +6210,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_general_staff2
-				remove_idea = general_staff
-			}
+			# swap_ideas = {
+			# 	add_idea = GER_general_staff2
+			# 	remove_idea = general_staff
+			# }
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_army_org_Factor = 0.05 tooltip = army_org_factor_tt }
+			add_to_variable = { GER_german_army_max_planning = 0.10 tooltip = max_planning_tt }
+			add_to_variable = { GER_german_army_max_command_power = 25 tooltip = max_command_power_tt }
+			add_to_variable = { GER_german_army_command_power_gain_mult = 0.2 tooltip = command_power_gain_mult_tt }
 		}
 	}
 	
@@ -6198,7 +6294,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = GER_mob_reich
+			# add_ideas = GER_mob_reich
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { GER_german_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { GER_german_economy_industry_repair_factor = 0.2 tooltip = industry_repair_factor_tt }
+			add_to_variable = { GER_german_economy_industry_free_repair_factor = 0.2 tooltip = industry_free_repair_factor_tt }
+			
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_conscription = 0.01 tooltip = conscription_tt }
 		}
 	}
 	
@@ -6328,7 +6432,9 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-			add_ideas = GER_simplified_designs_idea
+			# add_ideas = GER_simplified_designs_idea
+			GER_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_economy_production_lack_of_resource_penalty_factor = -0.33 tooltip = production_lack_of_resource_penalty_factor_tt }
 		}
 	}
 
@@ -6432,7 +6538,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = GER_ensieg_prop
-			add_ideas = GER_volksturm_idea
+			# add_ideas = GER_volksturm_idea
+			GER_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_army_conscription = 0.01 tooltip = conscription_tt }
+			add_to_variable = { GER_german_army_army_core_defence_factor = 0.1 tooltip = army_core_defence_factor_tt }
+			add_to_variable = { GER_german_army_army_core_attack_factor = 0.1 tooltip = army_core_attack_factor_tt }
 			set_technology = {
 				militia_tech = 1
 			}
@@ -7099,7 +7209,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = { modifier = GER_navy_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = GER_navy_dynamic_modifier }
+				}
+			}
 			add_ideas = GER_germaniawerft
+			GER_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_navy_refit_speed = 0.05 tooltip = refit_speed_tt }
 			58 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
@@ -7474,9 +7596,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = GER_trade_interdiction
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = { modifier = GER_navy_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = GER_navy_dynamic_modifier }
+				}
+			}
+			# add_ideas = GER_trade_interdiction
+			GER_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { GER_german_navy_convoy_raiding_efficiency_factor = 0.2 tooltip = convoy_raiding_efficiency_factor_tt }
 			add_doctrine_cost_reduction = {
-				name = ti_bonus
 				name = GER_trade_interdiction
 				cost_reduction = 0.5
 				uses = 2

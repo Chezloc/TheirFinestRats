@@ -743,36 +743,36 @@ ITA_fiat_aviazione_organization = {
 		ITA_is_northern_designer = yes
 	}
 	
-	initial_trait = {
-		equipment_bonus = {
-			naval_strike_attack = -0.1
-			maximum_speed = 0.1
-		}
-	}
+	# initial_trait = {
+	# 	equipment_bonus = {
+	# 		naval_strike_attack = -0.1
+	# 		maximum_speed = 0.1
+	# 	}
+	# }
 
-	override_trait = {
-		token = generic_mio_trait_extra_cargo_doors
+	# override_trait = {
+	# 	token = generic_mio_trait_extra_cargo_doors
 
-		position = { x=8 y=0 }
-	}
+	# 	position = { x=8 y=0 }
+	# }
 
-	add_trait = {
-		token = ITA_mio_trait_high_altitude_fighter_development
-		name = ITA_mio_trait_high_altitude_fighter_development
-		icon = GFX_generic_mio_trait_icon_air_agility
-		special_trait_background = yes
+	# add_trait = {
+	# 	token = ITA_mio_trait_high_altitude_fighter_development
+	# 	name = ITA_mio_trait_high_altitude_fighter_development
+	# 	icon = GFX_generic_mio_trait_icon_air_agility
+	# 	special_trait_background = yes
 		
-		position = { x=0 y=1 }  
-		relative_position_id = generic_mio_trait_low_drag_wings
+	# 	position = { x=0 y=1 }  
+	# 	relative_position_id = generic_mio_trait_low_drag_wings
 		
-		any_parent = { generic_mio_trait_low_drag_wings }
+	# 	any_parent = { generic_mio_trait_low_drag_wings }
 		
-		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
-		equipment_bonus = {
-			air_agility = 0.05
-			air_attack = 0.03
-		}
-	}
+	# 	limit_to_equipment_type = { mio_cat_eq_only_light_fighter }
+	# 	equipment_bonus = {
+	# 		air_agility = 0.05
+	# 		air_attack = 0.03
+	# 	}
+	# }
 
 	# add_trait = { 
 	# 	token = ITA_mio_trait_new_industrialization_program
