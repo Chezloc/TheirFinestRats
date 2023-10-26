@@ -937,43 +937,44 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = no
 	trigger = {
-	    tag = GER
-	    SWE = {
-	    	exists = yes
-	    }
-	    NOT = {
-	    	has_war_with = SWE
-	    	is_in_faction_with = SWE
-	    }
-	    OR = {
-	    	any_allied_country = {
-	    		any_controlled_state = {
-	    			is_core_of = NOR
-	    		}
-	    		OR = {
-    				NOT = { original_tag = NOR }
-					has_country_leader = { character = NOR_vidkun_quisling }  #Eff u Quisling
-	    		}
-	    	}
-	    	any_controlled_state = {
-	    		is_core_of = NOR
-	    	}
-	    	any_allied_country = {
-	    		any_controlled_state = {
-	    			is_core_of = FIN
-	    		}
-	    	}
-	    	any_controlled_state = {
-	    		is_core_of = FIN
-	    	}
-	    	AND = {
-	    		has_war_with = SOV
-	    		FIN = {
-	    			has_war_with = SOV
-	    		}
-	    		has_military_access_to = FIN
-	    	}
-	    }
+		always = no
+	    # tag = GER
+	    # SWE = {
+	    # 	exists = yes
+	    # }
+	    # NOT = {
+	    # 	has_war_with = SWE
+	    # 	is_in_faction_with = SWE
+	    # }
+	    # OR = {
+	    # 	any_allied_country = {
+	    # 		any_controlled_state = {
+	    # 			is_core_of = NOR
+	    # 		}
+	    # 		OR = {
+    	# 			NOT = { original_tag = NOR }
+		# 			has_country_leader = { character = NOR_vidkun_quisling }  #Eff u Quisling
+	    # 		}
+	    # 	}
+	    # 	any_controlled_state = {
+	    # 		is_core_of = NOR
+	    # 	}
+	    # 	any_allied_country = {
+	    # 		any_controlled_state = {
+	    # 			is_core_of = FIN
+	    # 		}
+	    # 	}
+	    # 	any_controlled_state = {
+	    # 		is_core_of = FIN
+	    # 	}
+	    # 	AND = {
+	    # 		has_war_with = SOV
+	    # 		FIN = {
+	    # 			has_war_with = SOV
+	    # 		}
+	    # 		has_military_access_to = FIN
+	    # 	}
+	    # }
 	}
 
 	mean_time_to_happen = {

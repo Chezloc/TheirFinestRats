@@ -176,7 +176,32 @@ characters={
 			legacy_id=-1
 		}
 	}
-	
+	USA_alexander_vandegrift={
+		name="Alexander Vandegrift"
+		portraits={
+			army={
+				small="GFX_portrait_usa_alexander_vandegrift"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = alexander_vandegrift
+			ledger  = army 
+			allowed  = {
+				original_tag  = USA 
+			}
+			available = {
+				has_completed_focus = USA_expand_the_USMC
+			}
+			traits  = {
+				army_commando_3 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			cost = 150
+		}
+	}
 	USA_walter_krueger={
 		name="Walter Krueger"
 		portraits={

@@ -38,6 +38,7 @@ ideas = {
 			modifier = {
 				heat_attrition_factor = -0.25
 				acclimatization_hot_climate_gain_factor = 0.5
+				army_speed_factor = 0.15
 			}
 		}
 	

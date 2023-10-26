@@ -1,32 +1,68 @@
 USA_neutrality_level_up = {
 	if = {
-		limit = { has_idea = USA_neutrality_idea_3 }
+		limit = {
+			has_idea = USA_neutrality_idea_3
+			check_variable = { USA_american_economy_now_command_power_gain_mult = -0.1 }
+			check_variable = { USA_american_economy_now_industrial_capacity_factory = -0.15 }
+		}
 		remove_ideas = USA_neutrality_idea_3
+		add_to_variable = { USA_american_economy_now_command_power_gain_mult = 0.1 tooltip = command_power_gain_mult_factor_tt }
+		add_to_variable = { USA_american_economy_now_industrial_capacity_factory = 0.15 tooltip = industrial_capacity_factory_tt }
 	}
 	else_if = {
-		limit = { has_idea = USA_neutrality_idea_2 }
+		limit = {
+			has_idea = USA_neutrality_idea_2
+			check_variable = { USA_american_economy_now_command_power_gain_mult = -0.2 }
+			check_variable = { USA_american_economy_now_industrial_capacity_factory = -0.3 }
+		}
 		swap_ideas = {
 			remove_idea = USA_neutrality_idea_2
 			add_idea = USA_neutrality_idea_3
 		}
+		add_to_variable = { USA_american_economy_now_command_power_gain_mult = 0.1 tooltip = command_power_gain_mult_factor_tt }
+		add_to_variable = { USA_american_economy_now_industrial_capacity_factory = 0.15 tooltip = industrial_capacity_factory_tt }
 	}
 	else_if = {
-		limit = { has_idea = USA_neutrality_idea }
+		limit = {
+			has_idea = USA_neutrality_idea
+			check_variable = { USA_american_economy_now_command_power_gain_mult = -0.25 }
+			check_variable = { USA_american_economy_now_industrial_capacity_factory = -0.5 }
+		}
 		swap_ideas = {
 			remove_idea = USA_neutrality_idea
 			add_idea = USA_neutrality_idea_2
 		}
+		add_to_variable = { USA_american_economy_now_command_power_gain_mult = 0.05 tooltip = command_power_gain_mult_factor_tt }
+		add_to_variable = { USA_american_economy_now_industrial_capacity_factory = 0.2 tooltip = industrial_capacity_factory_tt }
 	}
+}
+
+USA_neutrality_clear_all = {
+	hidden_effect = {
+		remove_ideas = USA_neutrality_idea
+		remove_ideas = USA_neutrality_idea_2
+		remove_ideas = USA_neutrality_idea_3
+	}
+	custom_effect_tooltip = "Removes any Not Our War spirit effects"
+	set_variable = { USA_american_economy_now_command_power_gain_mult = 0 tooltip = command_power_gain_mult_factor_tt }
+	set_variable = { USA_american_economy_now_industrial_capacity_factory = 0 tooltip = industrial_capacity_factory_tt }
 }
 
 #Add to scripted triggers if more levels of hyper inflation is added
 USA_depression_clear_all = {
-	remove_ideas = {
-		great_depression
-		great_depression_2
-		great_depression_3
-		great_depression_4
-	}
+	# remove_ideas = {
+	# 	great_depression
+	# 	great_depression_2
+	# 	great_depression_3
+	# 	great_depression_4
+	# }
+	set_variable = { USA_american_economy_gd_political_power_cost = 0 }
+	set_variable = { USA_american_economy_gd_consumer_goods_factor = 0 }
+	set_variable = { USA_american_economy_gd_conscription_factor = 0 }
+	set_variable = { USA_american_economy_gd_join_faction_tension = 0 }
+	set_variable = { USA_american_economy_gd_local_resources_factor = 0 }
+	set_variable = { USA_american_economy_gd_industrial_capacity_factory = 0 }
+	set_variable = { USA_american_economy_gd_industrial_capacity_dockyard = 0 }
 }
 
 #Important to put HIGHEST first
@@ -34,18 +70,50 @@ USA_great_depression_level_up = {
 	# level 5 not relevant. Cannot go above.
 	custom_effect_tooltip = USA_great_depression_up_tt
 	if = {
-		limit = { has_idea = great_depression_2 }
-		swap_ideas = {
-			remove_idea = great_depression_2
-			add_idea = great_depression
+		limit = {
+			# has_idea = great_depression_2
+			check_variable = { USA_american_economy_gd_political_power_cost = 0.65 }
+			check_variable = { USA_american_economy_gd_consumer_goods_factor = 0.4 }
+			check_variable = { USA_american_economy_gd_conscription_factor = -0.4 }
+			check_variable = { USA_american_economy_gd_join_faction_tension = 0.20 }
+			check_variable = { USA_american_economy_gd_local_resources_factor = -0.20 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.2 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.15 }
 		}
+		# swap_ideas = {
+		# 	remove_idea = great_depression_2
+		# 	add_idea = great_depression
+		# }
+		USA_economy_dynamic_modifier_tt = yes # tooltip
+		add_to_variable = { USA_american_economy_gd_political_power_cost = 0.35 tooltip = political_power_cost_tt }
+		add_to_variable = { USA_american_economy_gd_local_resources_factor = -0.05 tooltip = local_resources_factor_tt }
+		add_to_variable = { USA_american_economy_gd_conscription_factor = -0.1 tooltip = conscription_factor_tt }
+		add_to_variable = { USA_american_economy_gd_consumer_goods_factor = 0.1 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.05 tooltip = industrial_capacity_factory_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.1 tooltip = industrial_capacity_dockyard_tt }
 	}
 	else_if = {
-		limit = { has_idea = great_depression_3 }
-		swap_ideas = {
-			remove_idea = great_depression_3
-			add_idea = great_depression_2
+		limit = {
+			# has_idea = great_depression_3
+			check_variable = { USA_american_economy_gd_political_power_cost = 0.25 }
+			check_variable = { USA_american_economy_gd_political_power_cost = 0.35 }
+			check_variable = { USA_american_economy_gd_conscription_factor = -0.2 }
+			check_variable = { USA_american_economy_gd_join_faction_tension = 0.20 }
+			check_variable = { USA_american_economy_gd_local_resources_factor = -0.1 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.1 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.1 }
 		}
+		# swap_ideas = {
+		# 	remove_idea = great_depression_3
+		# 	add_idea = great_depression_2
+		# }
+		USA_economy_dynamic_modifier_tt = yes # tooltip
+		add_to_variable = { USA_american_economy_gd_political_power_cost = 0.4 tooltip = political_power_cost_tt }
+		add_to_variable = { USA_american_economy_gd_local_resources_factor = -0.1 tooltip = local_resources_factor_tt }
+		add_to_variable = { USA_american_economy_gd_conscription_factor = -0.2 tooltip = conscription_factor_tt }
+		add_to_variable = { USA_american_economy_gd_consumer_goods_factor = 0.05 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.1 tooltip = industrial_capacity_factory_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.05 tooltip = industrial_capacity_dockyard_tt }
 	}
 	
 }
@@ -53,33 +121,95 @@ USA_great_depression_level_up = {
 #Important to put LOWEST first
 USA_great_depression_level_down = {
 	if = {
-		limit = { has_idea = great_depression_4 }
+		limit = {
+			# has_idea = great_depression_4
+			check_variable = { USA_american_economy_gd_political_power_cost = 0.20 }
+			check_variable = { USA_american_economy_gd_consumer_goods_factor = 0.3 }
+			check_variable = { USA_american_economy_gd_conscription_factor = -0.2 }
+			check_variable = { USA_american_economy_gd_join_faction_tension = 0.2 }
+			check_variable = { USA_american_economy_gd_local_resources_factor = -0.1 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.05 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.05 }
+		}
 		custom_effect_tooltip = USA_great_depression_down_tt
-		remove_ideas = great_depression_4
+		# remove_ideas = great_depression_4
+		USA_economy_dynamic_modifier_tt = yes # tooltip
+		add_to_variable = { USA_american_economy_gd_political_power_cost = -0.2 tooltip = political_power_cost_tt }
+		add_to_variable = { USA_american_economy_gd_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
+		add_to_variable = { USA_american_economy_gd_conscription_factor = 0.2 tooltip = conscription_factor_tt }
+		add_to_variable = { USA_american_economy_gd_consumer_goods_factor = -0.3 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+		add_to_variable = { USA_american_economy_gd_join_faction_tension = -0.20 tooltip = join_faction_tension_tt }
 	}
 	if = {
-		limit = { has_idea = great_depression_3 }
-		custom_effect_tooltip = USA_great_depression_down_tt
-		swap_ideas = {
-			remove_idea = great_depression_3
-			add_idea = great_depression_4
+		limit = {
+			# has_idea = great_depression_3
+			check_variable = { USA_american_economy_gd_political_power_cost = 0.25 }
+			check_variable = { USA_american_economy_gd_conscription_factor = -0.2 }
+			check_variable = { USA_american_economy_gd_join_faction_tension = 0.20 }
+			check_variable = { USA_american_economy_gd_local_resources_factor = -0.1 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.1 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.1 }
 		}
+		custom_effect_tooltip = USA_great_depression_down_tt
+		# swap_ideas = {
+		# 	remove_idea = great_depression_3
+		# 	add_idea = great_depression_4
+		# }
+		USA_economy_dynamic_modifier_tt = yes # tooltip
+		add_to_variable = { USA_american_economy_gd_political_power_cost = -0.05 tooltip = political_power_cost_tt }
+		add_to_variable = { USA_american_economy_gd_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 	}
 	if = {
-		limit = { has_idea = great_depression_2 }
-		custom_effect_tooltip = USA_great_depression_down_tt
-		swap_ideas = {
-			remove_idea = great_depression_2
-			add_idea = great_depression_3
+		limit = {
+			# has_idea = great_depression_2
+			check_variable = { USA_american_economy_gd_political_power_cost = 0.65 }
+			check_variable = { USA_american_economy_gd_consumer_goods_factor = 0.4 }
+			check_variable = { USA_american_economy_gd_conscription_factor = -0.4 }
+			check_variable = { USA_american_economy_gd_join_faction_tension = 0.20 }
+			check_variable = { USA_american_economy_gd_local_resources_factor = -0.20 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.2 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.15 }
 		}
+		custom_effect_tooltip = USA_great_depression_down_tt
+		# swap_ideas = {
+		# 	remove_idea = great_depression_2
+		# 	add_idea = great_depression_3
+		# }
+		USA_economy_dynamic_modifier_tt = yes # tooltip
+		add_to_variable = { USA_american_economy_gd_political_power_cost = -0.4 tooltip = political_power_cost_tt }
+		add_to_variable = { USA_american_economy_gd_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
+		add_to_variable = { USA_american_economy_gd_conscription_factor = 0.2 tooltip = conscription_factor_tt }
+		add_to_variable = { USA_american_economy_gd_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 	}
 	if = {
-		limit = { has_idea = great_depression }
-		custom_effect_tooltip = USA_great_depression_down_tt
-		swap_ideas = {
-			remove_idea = great_depression
-			add_idea = great_depression_2
+		limit = {
+			# has_idea = great_depression
+			check_variable = { USA_american_economy_gd_political_power_cost = 1 }
+			check_variable = { USA_american_economy_gd_consumer_goods_factor = 0.5 }
+			check_variable = { USA_american_economy_gd_conscription_factor = -0.5 }
+			check_variable = { USA_american_economy_gd_join_faction_tension = 0.20 }
+			check_variable = { USA_american_economy_gd_local_resources_factor = -0.25 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.25 }
+			check_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.25 }
 		}
+		custom_effect_tooltip = USA_great_depression_down_tt
+		# swap_ideas = {
+		# 	remove_idea = great_depression
+		# 	add_idea = great_depression_2
+		# }
+		USA_economy_dynamic_modifier_tt = yes # tooltip
+		add_to_variable = { USA_american_economy_gd_political_power_cost = -0.35 tooltip = political_power_cost_tt }
+		add_to_variable = { USA_american_economy_gd_local_resources_factor = 0.05 tooltip = local_resources_factor_tt }
+		add_to_variable = { USA_american_economy_gd_conscription_factor = 0.1 tooltip = conscription_factor_tt }
+		add_to_variable = { USA_american_economy_gd_consumer_goods_factor = -0.1 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+		add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
 	}
 }
 

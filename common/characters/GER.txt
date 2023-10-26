@@ -854,12 +854,26 @@ characters={
 		}
 		field_marshal={
 			traits={ organizer panzer_leader panzer_expert trickster }
-			skill=6
+			skill=5
 			attack_skill=5
 			defense_skill=5
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=10
+		}
+		advisor={
+			slot = army_chief
+			idea_token = GER_walter_model
+			allowed = {
+				original_tag = GER
+			}
+			traits  = {
+				army_chief_offensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0.1
+			}
 		}
 	}
 	GER_karl_dönitz={

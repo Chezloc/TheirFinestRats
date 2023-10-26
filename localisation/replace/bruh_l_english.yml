@@ -266,6 +266,7 @@
  generic_mio_trait_belly_shackles_c:0 "Simplified Components"
  generic_mio_trait_fighter_specialization_c:0 "Air Attack Specialization"
  generic_mio_trait_bomber_specialization:0 "Production Specialization"
+ generic_mio_trait_low_drag_wings:0 "Low Drag Wings"
 
  academy_weekly_manpower_tooltip:0 "£manpower_texticon  Weekly Manpower §G+§![?scaled_weekly_manpower|0+]"
  academy_weekly_training_speed_tooltip_gain:0 "£training_speed_texticon  Weekly Training time §Y-0.5%§!"

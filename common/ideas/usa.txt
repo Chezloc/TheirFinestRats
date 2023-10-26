@@ -1,6 +1,226 @@
 ideas = {
 
 	hidden_ideas = {
+		USA_neutrality_idea = {
+			picture = neutrality_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	command_power_gain_mult = -0.25
+			# 	industrial_capacity_factory = -0.5
+			# }
+			rule = {
+				can_join_factions = no
+			}
+		}
+		USA_neutrality_idea_2 = {
+			picture = neutrality_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	command_power_gain_mult = -0.2
+			# 	industrial_capacity_factory = -0.3
+			# }
+			rule = {
+				can_join_factions = no
+			}
+		}
+		USA_neutrality_idea_3 = {
+			picture = neutrality_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	command_power_gain_mult = -0.1
+			# 	industrial_capacity_factory = -0.15
+			# }
+			rule = {
+				can_join_factions = no
+			}
+		}
+		USA_final_table = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = SPR_anti_fascist_crusade
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	industrial_capacity_dockyard = 0.1
+			# 	industrial_capacity_factory = 0.1
+			# 	stability_factor = 0.10
+			# }
+		}
+		USA_all_in = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = eng_imperial_conscription
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	stability_weekly = -0.01
+			# 	army_attack_factor = 0.05
+			# 	army_defence_factor = 0.05
+			# 	army_speed_factor = 0.1
+			# }
+		}
+		USA_third_man = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = spr_the_popular_front
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	production_speed_buildings_factor = 0.1
+			# 	stability_factor = 0.10
+			# }
+		}
+		new_deal = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	production_speed_infrastructure_factor = 0.3
+			# 	stability_factor = 0.10
+			# }
+		}
+		USA_new_deal2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = new_deal
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	production_speed_infrastructure_factor = 0.50
+			# 	production_speed_industrial_complex_factor = 0.20
+			# 	stability_factor = 0.10
+			# }
+		}
+
+		USA_new_deal3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = new_deal
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	production_speed_infrastructure_factor = 0.50
+			# 	production_speed_industrial_complex_factor = 0.30
+			# 	stability_factor = 0.10
+			# }
+		}
+
+		USA_wilkies_new_deal = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	consumer_goods_factor = -0.075
+			# 	stability_factor = 0.05
+			# }
+		}
+		USA_landons_deal = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			# modifier = {
+			# 	political_power_gain = 0.2
+			# 	stability_factor = 0.2
+			# 	production_speed_industrial_complex_factor = 0.4
+			# 	production_speed_arms_factory_factor = -0.2
+			# }
+		}
+		
 		##### HOPPING #####
 		USA_island_hopping1 = {
 			allowed = {
@@ -910,69 +1130,6 @@ ideas = {
 				embargo_threshold_factor = 1.5
 			}
 		}
-		USA_neutrality_idea = {
-			picture = neutrality_idea
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				command_power_gain_mult = -0.25
-				industrial_capacity_factory = -0.5
-			}
-			rule = {
-				can_join_factions = no
-			}
-		}
-		USA_neutrality_idea_2 = {
-			picture = neutrality_idea
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				command_power_gain_mult = -0.2
-				industrial_capacity_factory = -0.3
-			}
-			rule = {
-				can_join_factions = no
-			}
-		}
-		USA_neutrality_idea_3 = {
-			picture = neutrality_idea
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				command_power_gain_mult = -0.1
-				industrial_capacity_factory = -0.15
-			}
-			rule = {
-				can_join_factions = no
-			}
-		}
 		# version if player went down limited intervention
 		USA_lend_lease_act_li = {
 			picture = generic_production_bonus
@@ -1504,162 +1661,6 @@ ideas = {
 				mobilization_speed = 0.5
 			}
 		}
-		USA_final_table = {
-			
-			allowed = {
-				always = no
-			}
-			
-			picture = SPR_anti_fascist_crusade
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				industrial_capacity_dockyard = 0.1
-				industrial_capacity_factory = 0.1
-				stability_factor = 0.10
-			}
-		}
-		USA_all_in = {
-			
-			allowed = {
-				always = no
-			}
-			
-			picture = eng_imperial_conscription
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stability_weekly = -0.01
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
-				army_speed_factor = 0.1
-			}
-		}
-		USA_third_man = {
-			
-			allowed = {
-				always = no
-			}
-			
-			picture = spr_the_popular_front
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_buildings_factor = 0.1
-				stability_factor = 0.10
-			}
-		}
-		new_deal = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_infrastructure_factor = 0.3
-				stability_factor = 0.10
-			}
-		}
-		USA_new_deal2 = {
-			
-			allowed = {
-				always = no
-			}
-			
-			picture = new_deal
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_infrastructure_factor = 0.50
-				production_speed_industrial_complex_factor = 0.20
-				stability_factor = 0.10
-			}
-		}
-
-		USA_new_deal3 = {
-			
-			allowed = {
-				always = no
-			}
-			
-			picture = new_deal
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_infrastructure_factor = 0.50
-				production_speed_industrial_complex_factor = 0.30
-				stability_factor = 0.10
-			}
-		}
-
-		USA_wilkies_new_deal = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = -0.075
-				stability_factor = 0.05
-			}
-		}
-		USA_landons_deal = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				political_power_gain = 0.2
-				stability_factor = 0.2
-				production_speed_industrial_complex_factor = 0.4
-				production_speed_arms_factory_factor = -0.2
-			}
-		}
 		full_employment = {
 			
 			
@@ -1742,9 +1743,9 @@ ideas = {
 
 			picture = generic_navy_bonus
 
-			modifier = {
-				naval_equipment_upgrade_xp_cost = -0.1
-			}
+			# modifier = {
+			# 	naval_equipment_upgrade_xp_cost = -0.1
+			# }
 			
 			equipment_bonus = {
 				ship_hull_heavy = {
@@ -1783,8 +1784,9 @@ ideas = {
 			equipment_bonus = {
 
 				submarine = {
-					surface_detection = 0.1 instant = yes
-					sub_visibility = -0.1 instant = yes
+					# surface_detection = 0.1 instant = yes
+					# sub_visibility = -0.1 instant = yes
+					torpedo_attack = 0.20 instant = yes
 				}
 			}
 		}

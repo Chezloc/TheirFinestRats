@@ -44,6 +44,12 @@ focus_tree = {
 		#relative_position_id =
 		cost = 10
 		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				always = no
+			}
 		}
 
 		search_filters = {}
@@ -67,6 +73,12 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				always = no
+			}
 			100 = {
 				is_owned_and_controlled_by = ROOT
 			}
@@ -200,6 +212,12 @@ focus_tree = {
 		#relative_position_id =
 		cost = 10
 		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				always = no
+			}
 			is_subject = no
 		}
 
@@ -792,6 +810,12 @@ focus_tree = {
 		#relative_position_id =
 		cost = 10
 		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				always = no
+			}
 		}
 
 		search_filters = {}

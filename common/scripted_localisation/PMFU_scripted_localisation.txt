@@ -1,4 +1,34 @@
 defined_text = { # global
+	name = USA_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "USA_modify_economy_the_great_depression" 
+	}
+}
+
+defined_text = { # global
+	name = USA_army_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "USA_modify_army_us_army" 
+	}
+}
+
+defined_text = { # global
+	name = USA_air_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "USA_modify_air_navy_us_airforce_navy" 
+	}
+}
+
+defined_text = { # global
 	name = GER_economy_dynam_mod_sl
 	text = {
 		trigger = {

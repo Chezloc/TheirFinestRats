@@ -227,45 +227,45 @@ ITA_cantiere_oto_organization = {
 	# }
 }
 
-ITA_navalmeccanica_organization = {
-	include = generic_refurbishment_repair_organization
-	icon = GFX_idea_ITA_navalmeccanica
+# ITA_navalmeccanica_organization = {
+# 	include = generic_refurbishment_repair_organization
+# 	icon = GFX_idea_ITA_navalmeccanica
 	
-	allowed = {	
-		tag = ITA 
-	}
+# 	allowed = {	
+# 		tag = ITA 
+# 	}
 	
-	available = {
-		FROM = {
-			controls_state = 117 # CAMPAGNA (Napoli)	
-		}
-		ITA_is_southern_designer = yes
-	}
+# 	available = {
+# 		FROM = {
+# 			controls_state = 117 # CAMPAGNA (Napoli)	
+# 		}
+# 		ITA_is_southern_designer = yes
+# 	}
 
-	# add_trait = { 
-	# 	token = ITA_mio_trait_new_industrialization_program
-	# 	name = ITA_new_industrialization_program
-	# 	icon = GFX_generic_mio_department_icon_ship_screen_ship_production
-	# 	special_trait_background = yes
+# 	# add_trait = { 
+# 	# 	token = ITA_mio_trait_new_industrialization_program
+# 	# 	name = ITA_new_industrialization_program
+# 	# 	icon = GFX_generic_mio_department_icon_ship_screen_ship_production
+# 	# 	special_trait_background = yes
 
-	# 	position = { x=9 y=0 }
+# 	# 	position = { x=9 y=0 }
 		
-	# 	available = {
-	# 		FROM = {
-	# 			has_completed_focus = ITA_new_industrialization_program
-	# 			has_completed_focus = ITA_modernize_the_mezzogiorno
-	# 		}
-	# 	}
+# 	# 	available = {
+# 	# 		FROM = {
+# 	# 			has_completed_focus = ITA_new_industrialization_program
+# 	# 			has_completed_focus = ITA_modernize_the_mezzogiorno
+# 	# 		}
+# 	# 	}
 
-	# 	organization_modifier = {
-	# 		military_industrial_organization_research_bonus = 0.1
-	# 	}
+# 	# 	organization_modifier = {
+# 	# 		military_industrial_organization_research_bonus = 0.1
+# 	# 	}
 
-	# 	production_bonus = {
-	# 		production_capacity_factor = 0.1
-	# 	}
-	# }
-} 
+# 	# 	production_bonus = {
+# 	# 		production_capacity_factor = 0.1
+# 	# 	}
+# 	# }
+# } 
 
 ITA_cantiere_navale_di_ancona_organization = {
 	include = generic_raider_ship_organization
@@ -307,21 +307,21 @@ ITA_cantiere_navale_di_ancona_organization = {
 	# }
 }
 
-ITA_cantieri_navali_tosi_organization = {
-	include = generic_submarine_organization
-	icon = GFX_idea_ITA_cantieri_navali_tosi
+# ITA_cantieri_navali_tosi_organization = {
+# 	include = generic_submarine_organization
+# 	icon = GFX_idea_ITA_cantieri_navali_tosi
 	
-	allowed = {	
-		tag = ITA 
-	}
+# 	allowed = {	
+# 		tag = ITA 
+# 	}
 	
-	available = {
-		FROM = {
-			controls_state = 849 # PUGLIA (Taranto)
+# 	available = {
+# 		FROM = {
+# 			controls_state = 849 # PUGLIA (Taranto)
 			
-		}
-		ITA_is_southern_designer = yes
-	}
+# 		}
+# 		ITA_is_southern_designer = yes
+# 	}
 
 	# add_trait = { 
 	# 	token = ITA_mio_trait_new_industrialization_program
@@ -346,7 +346,7 @@ ITA_cantieri_navali_tosi_organization = {
 	# 		production_capacity_factor = 0.1
 	# 	}
 	# }
-}
+# }
 
 
 
@@ -756,23 +756,23 @@ ITA_fiat_aviazione_organization = {
 	# 	position = { x=8 y=0 }
 	# }
 
-	# add_trait = {
-	# 	token = ITA_mio_trait_high_altitude_fighter_development
-	# 	name = ITA_mio_trait_high_altitude_fighter_development
-	# 	icon = GFX_generic_mio_trait_icon_air_agility
-	# 	special_trait_background = yes
+	add_trait = {
+		token = ITA_mio_trait_high_altitude_fighter_development
+		name = ITA_mio_trait_high_altitude_fighter_development
+		icon = GFX_generic_mio_trait_icon_air_agility
+		special_trait_background = yes
 		
-	# 	position = { x=0 y=1 }  
-	# 	relative_position_id = generic_mio_trait_low_drag_wings
+		position = { x=0 y=1 }  
+		relative_position_id = generic_mio_trait_low_drag_wings
 		
-	# 	any_parent = { generic_mio_trait_low_drag_wings }
+		any_parent = { generic_mio_trait_low_drag_wings }
 		
-	# 	limit_to_equipment_type = { mio_cat_eq_only_light_fighter }
-	# 	equipment_bonus = {
-	# 		air_agility = 0.05
-	# 		air_attack = 0.03
-	# 	}
-	# }
+		limit_to_equipment_type = { mio_cat_eq_only_light_fighter }
+		equipment_bonus = {
+			air_agility = 0.05
+			air_attack = 0.03
+		}
+	}
 
 	# add_trait = { 
 	# 	token = ITA_mio_trait_new_industrialization_program

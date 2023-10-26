@@ -376,10 +376,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			swap_ideas = {
-				add_idea = USA_new_deal2
-				remove_idea = new_deal
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = USA_new_deal2
+					remove_idea = new_deal
+				}
 			}
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.2 tooltip = production_speed_infrastructure_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = 0.2 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 	}
 
@@ -514,10 +519,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = USA_new_deal2
-				add_idea = USA_new_deal3
-			}
+			# swap_ideas = {
+			# 	remove_idea = USA_new_deal2
+			# 	add_idea = USA_new_deal3
+			# }
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = 0.1 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 	}
 	
@@ -555,7 +562,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = USA_labour_relations
+			# add_ideas = USA_labour_relations
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_line_change_production_efficiency_factor = 0.1 tooltip = line_change_production_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
 		}
 	}
 	
@@ -1048,11 +1060,18 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			swap_ideas = {
-				add_idea = USA_landons_deal
-				remove_idea = new_deal
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = USA_landons_deal
+					remove_idea = new_deal
+				}
 			}
-
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_political_power_gain = 0.2 tooltip = political_power_gain_tt }
+			add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = -0.3 tooltip = production_speed_infrastructure_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = -0.2 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = 0.4 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 	}
 
@@ -1141,7 +1160,9 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
-			add_ideas = USA_tackling_waste_idea
+			# add_ideas = USA_tackling_waste_idea
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
 		}
 	}
 
@@ -1163,7 +1184,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_ideas = USA_side_with_workers_union_idea
+			# add_ideas = USA_side_with_workers_union_idea
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_consumer_goods_factor = -0.06 tooltip = consumer_goods_factor_tt }
 		}
 	}
 
@@ -1661,7 +1684,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_ideas = USA_gold_standard
+			# add_ideas = USA_gold_standard
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { USA_american_economy_min_export = -0.1 tooltip = min_export_tt }
 		}
 	}
 	
@@ -1682,7 +1708,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_ideas = USA_labour_management_relations_act
+			# add_ideas = USA_labour_management_relations_act
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
 		}
 	}
 
@@ -1890,7 +1918,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_ideas = USA_side_with_big_business_idea
+			# add_ideas = USA_side_with_big_business_idea
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.075 tooltip = industrial_capacity_factory_tt }
 		}
 	}
 
@@ -1915,7 +1945,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_ideas = USA_side_with_workers_union_idea
+			# add_ideas = USA_side_with_workers_union_idea
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_consumer_goods_factor = -0.06 tooltip = consumer_goods_factor_tt }
 		}
 	}
 
@@ -1963,10 +1995,18 @@ focus_tree = {
 				limit = {
 					has_idea = USA_landons_deal
 				}
-				swap_ideas = {
-					add_idea = USA_new_deal2
-					remove_idea = USA_landons_deal
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_new_deal2
+						remove_idea = USA_landons_deal
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_political_power_gain = -0.2 tooltip = political_power_gain_tt }
+				add_to_variable = { USA_american_economy_stability_factor = -0.1 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.5 tooltip = production_speed_infrastructure_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.2 tooltip = production_speed_arms_factory_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = -0.2 tooltip = production_speed_industrial_complex_factor_tt }
 			}
 			else = {
 				USA_congress_small_support = yes
@@ -2091,28 +2131,49 @@ focus_tree = {
 				limit = {
 					has_idea = USA_new_deal2
 				}
-				swap_ideas = {
-					add_idea = USA_wilkies_new_deal
-					remove_idea = USA_new_deal2
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_wilkies_new_deal
+						remove_idea = USA_new_deal2
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_consumer_goods_factor = -0.075 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { USA_american_economy_stability_factor = -0.05 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = -0.5 tooltip = production_speed_infrastructure_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = -0.2 tooltip = production_speed_industrial_complex_factor_tt }
 			}
 			else_if = {
 				limit = {
 					has_idea = USA_landons_deal
 				}
-				swap_ideas = {
-					add_idea = USA_wilkies_new_deal
-					remove_idea = USA_landons_deal
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_wilkies_new_deal
+						remove_idea = USA_landons_deal
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_political_power_gain = -0.2 tooltip = political_power_gain_tt }
+				add_to_variable = { USA_american_economy_consumer_goods_factor = -0.075 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { USA_american_economy_stability_factor = -0.15 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.2 tooltip = production_speed_arms_factory_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = -0.4 tooltip = production_speed_industrial_complex_factor_tt }
 			}
 			else_if = {
 				limit = {
 					has_idea = new_deal
 				}
-				swap_ideas = {
-					add_idea = USA_wilkies_new_deal
-					remove_idea = new_deal
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_wilkies_new_deal
+						remove_idea = new_deal
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_consumer_goods_factor = -0.075 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { USA_american_economy_stability_factor = -0.05 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = -0.3 tooltip = production_speed_infrastructure_factor_tt }
 			}
 		}
 	}
@@ -2367,22 +2428,51 @@ focus_tree = {
 				limit = {
 					has_idea = USA_new_deal2
 				}
-				swap_ideas = {
-					add_idea = USA_all_in
-					remove_idea = USA_new_deal2
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_all_in
+						remove_idea = USA_new_deal2
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_stability_factor = -0.1 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_stability_weekly = -0.01 tooltip = stability_weekly_tt }
+				add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = -0.5 tooltip = production_speed_infrastructure_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = -0.2 tooltip = production_speed_industrial_complex_factor_tt }
+				USA_army_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_army_army_speed_factor = 0.1 tooltip = army_speed_factor_tt }
+				add_to_variable = { USA_american_army_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
+				add_to_variable = { USA_american_army_army_defence_factor = 0.05 tooltip = army_defence_factor_tt }
 			}
 			else_if = {
 				limit = {
 					has_idea = USA_wilkies_new_deal
 				}
-				swap_ideas = {
-					add_idea = USA_all_in
-					remove_idea = USA_wilkies_new_deal
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_all_in
+						remove_idea = USA_wilkies_new_deal
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_consumer_goods_factor = 0.075 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { USA_american_economy_stability_factor = -0.05 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_stability_weekly = -0.01 tooltip = stability_weekly_tt }
+				USA_army_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_army_army_speed_factor = 0.1 tooltip = army_speed_factor_tt }
+				add_to_variable = { USA_american_army_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
+				add_to_variable = { USA_american_army_army_defence_factor = 0.05 tooltip = army_defence_factor_tt }
 			}
 			else = {
-				add_ideas = USA_all_in
+				hidden_effect = {
+					add_ideas = USA_all_in
+				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_stability_weekly = -0.01 tooltip = stability_weekly_tt }
+				USA_army_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_army_army_speed_factor = 0.1 tooltip = army_speed_factor_tt }
+				add_to_variable = { USA_american_army_army_attack_factor = 0.05 tooltip = army_attack_factor_tt }
+				add_to_variable = { USA_american_army_army_defence_factor = 0.05 tooltip = army_defence_factor_tt }
 			}
 		}
 	}
@@ -2399,7 +2489,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_ideas = USA_full_mob_idea
+			# add_ideas = USA_full_mob_idea
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_stability_factor = -0.1 tooltip = stability_factor_tt }
+			add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { USA_american_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_conscription = 0.02 tooltip = conscription_tt }
 			if = {
 				limit = {
 					NOT = {
@@ -2451,22 +2547,42 @@ focus_tree = {
 				limit = {
 					has_idea = USA_new_deal2
 				}
-				swap_ideas = {
-					add_idea = USA_final_table
-					remove_idea = USA_new_deal2
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_final_table
+						remove_idea = USA_new_deal2
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+				add_to_variable = { USA_american_economy_USA_american_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
+				add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = -0.5 tooltip = production_speed_infrastructure_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = -0.2 tooltip = production_speed_industrial_complex_factor_tt }
 			}
 			else_if = {
 				limit = {
 					has_idea = USA_wilkies_new_deal
 				}
-				swap_ideas = {
-					add_idea = USA_final_table
-					remove_idea = USA_wilkies_new_deal
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_final_table
+						remove_idea = USA_wilkies_new_deal
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_consumer_goods_factor = 0.075 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { USA_american_economy_stability_factor = 0.05 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+				add_to_variable = { USA_american_economy_USA_american_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
 			}
 			else = {
-				add_ideas = USA_final_table
+				hidden_effect = {
+					add_ideas = USA_final_table
+				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+				add_to_variable = { USA_american_economy_USA_american_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
 			}
 		}
 	}
@@ -2527,22 +2643,39 @@ focus_tree = {
 				limit = {
 					has_idea = USA_new_deal2
 				}
-				swap_ideas = {
-					add_idea = USA_third_man
-					remove_idea = USA_new_deal2
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_third_man
+						remove_idea = USA_new_deal2
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = -0.5 tooltip = production_speed_infrastructure_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_industrial_complex_factor = -0.2 tooltip = production_speed_industrial_complex_factor_tt }
 			}
 			else_if = {
 				limit = {
 					has_idea = USA_wilkies_new_deal
 				}
-				swap_ideas = {
-					add_idea = USA_third_man
-					remove_idea = USA_wilkies_new_deal
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = USA_third_man
+						remove_idea = USA_wilkies_new_deal
+					}
 				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_consumer_goods_factor = 0.075 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { USA_american_economy_stability_factor = 0.05 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			}
 			else = {
-				add_ideas = USA_third_man
+				hidden_effect = {
+					add_ideas = USA_third_man
+				}
+				USA_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
+				add_to_variable = { USA_american_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			}
 		}
 	}
@@ -3253,7 +3386,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_ideas = USA_military_industrial_complex
+			# add_ideas = USA_military_industrial_complex
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_conversion_cost_civ_to_mil_factor = -0.10 tooltip = conversion_cost_civ_to_mil_factor_tt }
+			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.1 tooltip = global_building_slots_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.1 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.1 tooltip = production_speed_arms_factory_factor_tt }
 		}
 	}
 	focus = {
@@ -3276,10 +3414,19 @@ focus_tree = {
 			NOT = { has_idea = USA_neutrality_idea_3 }
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = USA_military_industrial_complex
-				add_idea = wartime_industry_focus
-			}
+			# swap_ideas = {
+			# 	remove_idea = USA_military_industrial_complex
+			# 	add_idea = wartime_industry_focus
+			# }
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_conversion_cost_civ_to_mil_factor = -0.30 tooltip = conversion_cost_civ_to_mil_factor_tt }
+			add_to_variable = { USA_american_economy_global_building_slots_factor = 0.2 tooltip = global_building_slots_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_max_efficiency_factor = 0.15 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_efficiency_gain_factor = 0.15 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { USA_american_economy_production_factory_start_efficiency_factor = 0.25 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_arms_factory_factor = 0.2 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_dockyard_factor = 0.3 tooltip = production_speed_dockyard_factor_tt }
+			add_to_variable = { USA_american_economy_production_speed_synthetic_refinery_factor = 0.25 tooltip = production_speed_synthetic_refinery_factor_tt }
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
 			random_owned_controlled_state = {
@@ -4744,7 +4891,9 @@ focus_tree = {
 
 		completion_reward = {
 			# US_Airborne_increase_double = yes
-			add_ideas = USA_airborne_divisions
+			# add_ideas = USA_airborne_divisions
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 	focus = {
@@ -4773,7 +4922,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_army_of_the_united_states
+			# add_ideas = USA_army_of_the_united_states
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_mobilization_speed = 0.5 tooltip = mobilization_speed_tt }
 			add_tech_bonus = {
 				name = USA_infantry
 				bonus = 1
@@ -4808,7 +4959,9 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			add_ideas = USA_womens_armed_service_integration_act
+			# add_ideas = USA_womens_armed_service_integration_act
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_conscription = 0.02 tooltip = conscription_tt }
 			add_tech_bonus = {
 				name = USA_infantry
 				bonus = 0.5
@@ -5081,7 +5234,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_the_pentagon
+			# add_ideas = USA_the_pentagon
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_planning_speed = 0.1 tooltip = planning_speed_tt }
+			add_to_variable = { USA_american_army_max_planning = 0.05 tooltip = max_planning_tt }
 		}
 	}
 	focus = {
@@ -5110,7 +5266,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_department_of_defense
+			# add_ideas = USA_department_of_defense
+			USA_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_army_max_command_power = 50 tooltip = max_command_power_tt }
 		}
 	}
 
@@ -5223,7 +5381,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_air_support
-		cost = 5
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -5232,6 +5390,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_cas_present_factor = 0.10 tooltip = air_cas_present_factor_tt }
 			add_tech_bonus = {
 				name = CAS_effort
 				uses = 2
@@ -5476,7 +5636,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_maritime_commission
+			# add_ideas = USA_maritime_commission
+			USA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_economy_production_speed_dockyard_factor = 0.1 tooltip = production_speed_dockyard_factor_tt }
 		}
 	}
 	
@@ -5522,7 +5684,7 @@ focus_tree = {
 		id = USA_battleship_primacy
 		icon = GFX_USA_adhere_to_mahan
 		prerequisite = { focus = USA_bureau_of_ships }
-		mutually_exclusive = { focus = USA_carrier_primacy }
+		# mutually_exclusive = { focus = USA_carrier_primacy }
 		x = -3
 		y = 1
 		relative_position_id = USA_bureau_of_ships
@@ -5537,7 +5699,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
-				bonus = 0.5
+				bonus = 0.75
 				uses = 2
 				category = bb_tech
 			}
@@ -5564,7 +5726,7 @@ focus_tree = {
 				name = USA_advanced_mahanian_doctrine
 				cost_reduction = 0.25
 				uses = 2
-				category = cat_base_strike
+				category = naval_doctrine
 			}
 		}
 	}
@@ -5595,6 +5757,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_repair_speed_factor = 0.20 tooltip = repair_speed_factor_tt }
 			638 = {
 				add_building_construction = {
 					type = naval_base
@@ -5627,7 +5791,7 @@ focus_tree = {
 		id = USA_carrier_primacy
 		icon = GFX_USA_lay_down_new_carriers
 		prerequisite = { focus = USA_bureau_of_ships }
-		mutually_exclusive = { focus = USA_battleship_primacy }
+		# mutually_exclusive = { focus = USA_battleship_primacy }
 		x = -1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
@@ -5642,7 +5806,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
-				bonus = 0.5
+				bonus = 0.75
 				uses = 2
 				category = cv_tech
 			}
@@ -5656,7 +5820,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_carrier_primacy
-		cost = 5
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -5665,12 +5829,14 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = USA_bureau_of_aeronautics
-				bonus = 0.5
-				uses = 1
-				category = light_air
-			}
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_sortie_efficiency = 0.2 tooltip = sortie_efficiency_tt }
+			# add_tech_bonus = {
+			# 	name = USA_bureau_of_aeronautics
+			# 	bonus = 0.5
+			# 	uses = 1
+			# 	category = light_air
+			# }
 		}
 	}
 	focus = {
@@ -5703,7 +5869,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_naval_radar
 				uses = 2
-				bonus = 0.5
+				bonus = 1
 				category = radar_tech
 			}
 			
@@ -5737,7 +5903,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_escort_effort
-		cost = 5
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -5746,6 +5912,9 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			USA_airforce_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { USA_american_airforce_air_navy_submarine_detection_factor = 0.1 tooltip = navy_submarine_detection_factor_tt }
+			add_to_variable = { USA_american_airforce_air_navy_convoy_escort_efficiency = 0.2 tooltip = convoy_escort_efficiency_tt }
 			navy_experience = 25
 			add_tech_bonus = {
 				name = USA_convoy_tactics
@@ -5859,7 +6028,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_fund_the_navy
-		cost = 5
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -5873,6 +6042,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
+				add_potential_special_forces_tree = yes
 				add_doctrine_cost_reduction = {
 					name = USA_expand_the_USMC
 					cost_reduction = 0.25
@@ -5889,15 +6059,24 @@ focus_tree = {
 					technology = marines3
 				}
 			}
-			create_corps_commander = {
-				name = "Alexander Vandegrift"
-				gfx = GFX_portrait_usa_alexander_vandegrift
+			# create_corps_commander = {
+			# 	name = "Alexander Vandegrift"
+			# 	gfx = GFX_portrait_usa_alexander_vandegrift
+			# 	skill = 4
+			# 	attack_skill = 4
+			# 	defense_skill = 2
+			# 	planning_skill = 3
+			# 	logistics_skill = 4
+			# 	traits = { naval_invader commando jungle_rat }
+			# }
+			add_corps_commander_role = {
+				character = USA_alexander_vandegrift
+				traits = { naval_invader commando jungle_rat }
 				skill = 4
 				attack_skill = 4
 				defense_skill = 2
 				planning_skill = 3
 				logistics_skill = 4
-				traits = { naval_invader }
 			}
 		}
 	}
@@ -5921,9 +6100,10 @@ focus_tree = {
 			# USA_Marine_Corps_increase_double = yes
 			add_tech_bonus = {
 				name = USA_amphibious_operations
-				bonus = 0.5
-				uses = 2
-				category = tp_tech 
+				bonus = 1
+				ahead_reduction = 0.5
+				uses = 1
+				technology = mtg_tank_landing_craft
 			}
 		}
 	}

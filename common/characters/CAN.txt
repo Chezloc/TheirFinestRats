@@ -112,6 +112,20 @@ characters={
 			logistics_skill=5
 			legacy_id=666
 		}
+		advisor={
+			slot = high_command
+			idea_token = CAN_thomas_victor_anderson
+			allowed = {
+				original_tag = CAN
+			}
+			traits  = {
+				army_combinedArms_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
 	}
 	CAN_charles_foulkes={
 		name="Charles Foulkes"

@@ -81,6 +81,18 @@ GER_navy_dynamic_modifier_tt = {
 	custom_effect_tooltip = GER_modify_german_navy_ns_intro
 }
 
+USA_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = USA_modify_american_economy_ns_intro
+}
+
+USA_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = USA_modify_american_army_ns_intro
+}
+
+USA_airforce_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = USA_modify_american_airforce_navy_ns_intro
+}
+
 anti_cross_faction_trade_axis = {
 	add_opinion_modifier = {
 		target = GER

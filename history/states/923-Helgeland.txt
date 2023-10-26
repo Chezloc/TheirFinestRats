@@ -4,7 +4,7 @@ state = {
 	manpower = 88812
 	
 	state_category = rural
-	impassable = yes
+	# impassable = yes # really cringe
 	
 	#resources = {
 	#	steel = 3 

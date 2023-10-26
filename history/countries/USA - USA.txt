@@ -215,14 +215,14 @@ set_popularities = {
 add_ideas = {
 	ENG_tension_vol
 	undisturbed_isolation
-	great_depression
+	# great_depression
 	disarmed_nation
 	free_trade
 	home_of_the_free
 	USA_island_hopping8
 	USA_neutrality_idea
-	new_deal
-	USA_armed_forces_desegregation
+	# new_deal
+	# USA_armed_forces_desegregation
 	bureau_of_ordnance_spirit
 	peace_training
 	no_grinding
@@ -230,7 +230,34 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
+### DYNAMIC MODIFIERS 
+add_dynamic_modifier = {
+	modifier = USA_economy_dynamic_modifier
+}
+# GREAT DEPRESSION
+add_to_variable = { USA_american_economy_gd_political_power_cost = 1 tooltip = political_power_cost_tt }
+add_to_variable = { USA_american_economy_gd_consumer_goods_factor = 0.5 tooltip = consumer_goods_factor_tt }
+add_to_variable = { USA_american_economy_gd_conscription_factor = -0.5 tooltip = conscription_factor_tt }
+add_to_variable = { USA_american_economy_gd_join_faction_tension = 0.20 tooltip = join_faction_tension_tt }
+add_to_variable = { USA_american_economy_gd_local_resources_factor = -0.25 tooltip = local_resources_factor_tt }
+add_to_variable = { USA_american_economy_gd_industrial_capacity_factory = -0.25 tooltip = industrial_capacity_factory_tt }
+add_to_variable = { USA_american_economy_gd_industrial_capacity_dockyard = -0.25 tooltip = industrial_capacity_dockyard_tt }
+# NEW DEAL
+add_to_variable = { USA_american_economy_production_speed_infrastructure_factor = 0.3 tooltip = production_speed_infrastructure_factor_tt }
+add_to_variable = { USA_american_economy_stability_factor = 0.1 tooltip = stability_factor_tt }
+# NOT OUR WAR MAJOR
+add_to_variable = { USA_american_economy_now_command_power_gain_mult = -0.25 tooltip = command_power_gain_mult_factor_tt }
+add_to_variable = { USA_american_economy_now_industrial_capacity_factory = -0.5 tooltip = industrial_capacity_factory_tt }
 
+add_dynamic_modifier = {
+	modifier = USA_army_dynamic_modifier
+}
+# ARMED FORCES DESEGREGATION
+add_to_variable = { USA_american_army_conscription_factor = -0.2 tooltip = conscription_factor_tt }
+
+add_dynamic_modifier = {
+	modifier = USA_air_navy_dynamic_modifier
+}
 
 # DIPLOMACY
 # set_autonomy = {
@@ -297,6 +324,7 @@ recruit_character = USA_marc_mitscher
 recruit_character = USA_henry_stimson
 recruit_character = USA_jimmy_doolittle
 recruit_character = USA_claire_lee_chennault
+recruit_character = USA_alexander_vandegrift
 
 create_equipment_variant = {
 	name = "M2 Light"

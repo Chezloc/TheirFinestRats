@@ -1600,10 +1600,10 @@ generic_task_force_ship_organization = {
 
 		position = { x=0 y=0 }
 		
-		mutually_exclusive = { generic_mio_trait_high_speed_cruising }
+		# mutually_exclusive = { generic_mio_trait_high_speed_cruising }
 
 		equipment_bonus = {
-			naval_range = 0.05
+			naval_range = 0.1
 			fuel_consumption = 0.05
 		}
 	}
@@ -1616,11 +1616,11 @@ generic_task_force_ship_organization = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_long_range_cruising
 		
-		mutually_exclusive = { generic_mio_trait_long_range_cruising }
+		# mutually_exclusive = { generic_mio_trait_long_range_cruising }
 		
 		equipment_bonus = {
 			naval_speed = 0.05
-			fuel_consumption = 0.05
+			# fuel_consumption = 0.05
 		}
 	}
 
@@ -1637,7 +1637,7 @@ generic_task_force_ship_organization = {
 		limit_to_equipment_type = { mio_cat_eq_all_carrier mio_cat_eq_all_cruiser }
 
 		equipment_bonus = {
-			armor_value = 0.05
+			armor_value = 0.1
 		}
 	}
 
@@ -1654,8 +1654,8 @@ generic_task_force_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_underway_replenishment_equipment }
 
 		equipment_bonus = {
-			naval_speed = 0.05
-			fuel_consumption = -0.05
+			naval_speed = 0.1
+			# fuel_consumption = -0.05
 		}
 	}
 
@@ -1672,8 +1672,8 @@ generic_task_force_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_transom_stern }
 
 		equipment_bonus = {
-			naval_range = 0.05
-			fuel_consumption = -0.05
+			# naval_range = 0.05
+			fuel_consumption = -0.15
 		}
 	}
 
@@ -1688,7 +1688,7 @@ generic_task_force_ship_organization = {
 		limit_to_equipment_type = { screen_ship carrier }
 
 		equipment_bonus = {
-			anti_air_attack = 0.05
+			anti_air_attack = 0.1
 			naval_light_gun_hit_chance_factor = 0.05
 		}
 	}
@@ -1706,7 +1706,7 @@ generic_task_force_ship_organization = {
 		limit_to_equipment_type = { mio_cat_eq_all_carrier }
 
 		equipment_bonus = {
-			anti_air_attack = 0.05
+			anti_air_attack = 0.2
 		}
 	}
 
@@ -1751,11 +1751,15 @@ generic_task_force_ship_organization = {
 
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_rapid_fire_guns
+
+		limit_to_equipment_type = {
+			capital_ship destroyer
+		}
 		
 		any_parent = { generic_mio_trait_rapid_fire_guns generic_mio_trait_high_velocity_guns }
 		
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.1
 		}
 	}
 
@@ -1804,7 +1808,7 @@ generic_task_force_ship_organization = {
 		limit_to_equipment_type = { mio_cat_eq_all_cruiser }
 
 		equipment_bonus = {
-			hg_armor_piercing = 0.05
+			hg_armor_piercing = 0.1
 		}
 	}
 }
@@ -1853,28 +1857,12 @@ generic_battle_line_ship_organization = {
 		name = generic_mio_trait_external_armor_belt
 		icon = GFX_generic_mio_trait_icon_armor_value
 
-		position = { x=0 y=0 }
+		position = { x=1 y=0 }
 
-		mutually_exclusive = { generic_mio_trait_internal_armor_belt }
-
-		equipment_bonus = {
-			armor_value = 0.05
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_internal_armor_belt
-		name = generic_mio_trait_internal_armor_belt
-		icon = GFX_generic_mio_department_icon_ship_capital_ship_armor
-
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_external_armor_belt
-
-		mutually_exclusive = { generic_mio_trait_external_armor_belt }
+		# mutually_exclusive = { generic_mio_trait_internal_armor_belt }
 
 		equipment_bonus = {
-			armor_value = 0.15
-			build_cost_ic = 0.05
+			armor_value = 0.1
 		}
 	}
 
@@ -1883,13 +1871,14 @@ generic_battle_line_ship_organization = {
 		name = generic_mio_trait_hardened_critical_components
 		icon = GFX_generic_mio_trait_icon_naval_torpedo_damage_reduction_factor
 
-		position = { x=1 y=2 }
+		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_external_armor_belt
 
-		any_parent = { generic_mio_trait_internal_armor_belt generic_mio_trait_external_armor_belt }
+		any_parent = { generic_mio_trait_external_armor_belt }
 
 		equipment_bonus = {
-			naval_torpedo_enemy_critical_chance_factor = -0.05
+			max_strength = 0.05
+			# naval_torpedo_enemy_critical_chance_factor = -0.05
 		}
 	}
 
@@ -1898,7 +1887,7 @@ generic_battle_line_ship_organization = {
 		name = generic_mio_trait_advanced_hydrodynamic_design
 		icon = GFX_generic_mio_trait_icon_maximum_speed
 
-		position = { x=-1 y=2 }
+		position = { x=-1 y=1 }
 		relative_position_id = generic_mio_trait_hardened_critical_components
 
 		any_parent = { generic_mio_trait_hardened_critical_components }
@@ -1906,7 +1895,7 @@ generic_battle_line_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_advanced_armor_design }
 
 		equipment_bonus = {
-			naval_speed = 0.05
+			naval_speed = 0.1
 		}
 	}
 
@@ -1915,7 +1904,7 @@ generic_battle_line_ship_organization = {
 		name = generic_mio_trait_advanced_armor_design
 		icon = GFX_generic_mio_trait_icon_armor_value
 
-		position = { x=1 y=2 }
+		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_hardened_critical_components
 
 		any_parent = { generic_mio_trait_hardened_critical_components }
@@ -1923,7 +1912,29 @@ generic_battle_line_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_advanced_hydrodynamic_design }
 
 		equipment_bonus = {
-			armor_value = 0.05
+			armor_value = 0.1
+			naval_speed = -0.05
+			build_cost_ic = 0.03
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_internal_armor_belt
+		name = generic_mio_trait_internal_armor_belt
+		icon = GFX_generic_mio_department_icon_ship_capital_ship_armor
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_advanced_hydrodynamic_design
+
+		any_parent = { generic_mio_trait_advanced_hydrodynamic_design generic_mio_trait_advanced_armor_design }
+
+		equipment_bonus = {
+			armor_value = 0.15
+			build_cost_ic = 0.05
+		}
+
+		production_bonus = {
+			production_resource_need_factor = 0.1
 		}
 	}
 
@@ -1932,7 +1943,7 @@ generic_battle_line_ship_organization = {
 		name = generic_mio_trait_anti_air_layout
 		icon = GFX_generic_mio_trait_icon_anti_air_attack
 
-		position = { x=4 y=0 }
+		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_external_armor_belt
 
 		equipment_bonus = {
@@ -2029,8 +2040,8 @@ generic_battle_line_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_semi_armor_piercing_shells generic_mio_trait_high_velocity_guns }
 
 		equipment_bonus = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
+			hg_attack = 0.1
+			# hg_armor_piercing = 0.05
 		}
 	}
 
@@ -2047,8 +2058,8 @@ generic_battle_line_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_super_heavy_shells generic_mio_trait_high_velocity_guns }
 
 		equipment_bonus = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_attack = 0.1
+			# lg_armor_piercing = 0.05
 		}
 	}
 
@@ -2065,9 +2076,9 @@ generic_battle_line_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_super_heavy_shells generic_mio_trait_semi_armor_piercing_shells }
 
 		equipment_bonus = {
-			lg_armor_piercing = 0.1
-			hg_armor_piercing = 0.1
-			build_cost_ic = 0.05
+			lg_armor_piercing = 0.15
+			hg_armor_piercing = 0.15
+			# build_cost_ic = 0.05
 		}
 	}
 }
@@ -2169,8 +2180,8 @@ generic_escort_ship_organization = {
 		position = { x=1 y=0 }
 
 		equipment_bonus = {
-			sub_detection = 0.05
-			sub_attack = 0.05
+			sub_detection = 0.1
+			sub_attack = 0.1
 		}
 	}
 
@@ -2185,8 +2196,9 @@ generic_escort_ship_organization = {
 		any_parent = { generic_mio_trait_submarine_hunters }
 
 		equipment_bonus = {
-			sub_detection = 0.05
-			mines_sweeping = 0.05
+			sub_detection = 0.1
+			surface_detection = 0.1
+			# mines_sweeping = 0.05
 		}
 	}
 
@@ -2202,6 +2214,7 @@ generic_escort_ship_organization = {
 
 		equipment_bonus = {
 			naval_speed = 0.05
+			surface_visibility = -0.05
 		}
 	}
 
@@ -2232,7 +2245,7 @@ generic_escort_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_escort_in_force }
 
 		equipment_bonus = {
-			anti_air_attack = 0.05
+			anti_air_attack = 0.15
 		}
 	}
 
@@ -2264,7 +2277,7 @@ generic_escort_ship_organization = {
 		any_parent = { generic_mio_trait_fleet_escorts }
 
 		equipment_bonus = {
-			anti_air_attack = 0.05
+			anti_air_attack = 0.15
 		}
 	}
 
@@ -2295,7 +2308,7 @@ generic_escort_ship_organization = {
 		any_parent = { generic_mio_trait_anti_air_ships generic_mio_trait_escort_in_force }
 
 		equipment_bonus = {
-			anti_air_attack = 0.05
+			anti_air_attack = 0.15
 		}
 	}
 
@@ -2384,11 +2397,11 @@ generic_raider_ship_organization = {
 
 		position = { x=1 y=0 }
 
-		mutually_exclusive = { generic_mio_trait_high_speed_raiding }
+		# mutually_exclusive = { generic_mio_trait_high_speed_raiding }
 
 		equipment_bonus = {
-			naval_range = 0.05
-			fuel_consumption = 0.05
+			naval_range = 0.1
+			# fuel_consumption = 0.05
 		}
 	}
 
@@ -2400,11 +2413,13 @@ generic_raider_ship_organization = {
 		position = { x=6 y=0 }
 		relative_position_id = generic_mio_trait_long_range_raiding
 
-		mutually_exclusive = { generic_mio_trait_long_range_raiding }
+		# mutually_exclusive = { generic_mio_trait_long_range_raiding }
+
+		limit_to_equipment_type = { submarine }
 
 		equipment_bonus = {
-			naval_speed = 0.05
-			fuel_consumption = 0.05
+			naval_speed = 0.1
+			# fuel_consumption = 0.05
 		}
 	}
 
@@ -2419,7 +2434,7 @@ generic_raider_ship_organization = {
 		any_parent = { generic_mio_trait_long_range_raiding }
 
 		equipment_bonus = {
-			fuel_consumption = -0.05
+			fuel_consumption = -0.1
 		}
 	}
 
@@ -2433,32 +2448,16 @@ generic_raider_ship_organization = {
 
 		any_parent = { generic_mio_trait_high_speed_raiding }
 
-		visible = {
-			has_dlc = "Man the Guns"
-		}
+		# visible = {
+		# 	has_dlc = "Man the Guns"
+		# }
+
+		limit_to_equipment_type = { submarine }
 
 		equipment_bonus = {
-			naval_speed = 0.05
-			mines_planting = 0.05
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_high_speed_operation_stores_no_mtg
-		name = generic_mio_trait_high_speed_operation_stores
-		icon = GFX_generic_mio_trait_icon_mines
-
-		position = { x=0 y=0 }
-		relative_position_id = generic_mio_trait_high_speed_operation_stores
-
-		any_parent = { generic_mio_trait_high_speed_raiding }
-
-		visible = {
-			NOT = { has_dlc = "Man the Guns" }
-		}
-
-		equipment_bonus = {
-			naval_speed = 0.05
+			naval_range = 0.1
+			# naval_speed = 0.05
+			# mines_planting = 0.05
 		}
 	}
 
@@ -2470,13 +2469,13 @@ generic_raider_ship_organization = {
 		position = { x=1 y=2 }
 		relative_position_id = generic_mio_trait_long_range_raiding
 
-		any_parent = { generic_mio_trait_long_range_raiding generic_mio_trait_high_speed_raiding }
+		any_parent = { generic_mio_trait_long_range_raiding }
 
 		limit_to_equipment_type = { capital_ship }
 
 		equipment_bonus = {
-			surface_visibility = -0.05
-			hg_attack = 0.05
+			# surface_visibility = -0.05
+			lg_attack = 0.05
 		}
 	}
 
@@ -2493,7 +2492,7 @@ generic_raider_ship_organization = {
 		limit_to_equipment_type = { capital_ship }
 
 		equipment_bonus = {
-			surface_visibility = -0.05
+			# surface_visibility = -0.05
 			hg_attack = 0.05
 		}
 	}
@@ -2503,12 +2502,12 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_high_quality_optics
 		icon = GFX_generic_mio_trait_icon_surface_detection
 
-		position = { x=1 y=1 }
-		relative_position_id = generic_mio_trait_raiding_capital_ships
+		position = { x=3 y=2 }
+		relative_position_id = generic_mio_trait_long_range_raiding
 
-		any_parent = { generic_mio_trait_raiding_capital_ships }
+		any_parent = { generic_mio_trait_long_range_raiding generic_mio_trait_high_speed_raiding }
 
-		mutually_exclusive = { generic_mio_trait_spotting_tops }
+		# mutually_exclusive = { generic_mio_trait_spotting_tops }
 
 		equipment_bonus = {
 			surface_detection = 0.05
@@ -2525,7 +2524,7 @@ generic_raider_ship_organization = {
 
 		any_parent = { generic_mio_trait_long_range_engagement_ethos }
 
-		limit_to_equipment_type = { screen_ship }
+		limit_to_equipment_type = { screen_ship capital_ship }
 
 		equipment_bonus = {
 			naval_range = 0.05
@@ -2541,12 +2540,13 @@ generic_raider_ship_organization = {
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_long_range_engagement_ethos
 
-		all_parents = { generic_mio_trait_long_range_engagement_ethos generic_mio_trait_high_quality_optics }
+		all_parents = { generic_mio_trait_long_range_engagement_ethos }
 
-		limit_to_equipment_type = { capital_ship }
+		limit_to_equipment_type = { capital_ship screen_ship }
 
 		equipment_bonus = {
-			lg_attack = 0.05
+			# lg_attack = 0.05
+			surface_visibility = -0.05
 		}
 	}
 
@@ -2555,15 +2555,16 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_raiding_cruisers
 		icon = GFX_generic_mio_trait_icon_surface_visibility
 
-		position = { x=-3 y=2 }
-		relative_position_id = generic_mio_trait_high_speed_raiding
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_raiding_capital_ships
 
-		any_parent = { generic_mio_trait_long_range_raiding generic_mio_trait_high_speed_raiding }
+		any_parent = { generic_mio_trait_raiding_capital_ships }
 
 		limit_to_equipment_type = { ship_hull_cruiser }
 
 		equipment_bonus = {
-			surface_visibility = -0.05
+			# surface_visibility = -0.05
+			lg_attack = 0.1
 		}
 	}
 
@@ -2572,15 +2573,15 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_raiding_submarines
 		icon = GFX_generic_mio_department_icon_ship_submarine_survivability
 
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_raiding_cruisers
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_high_speed_raiding
 
-		any_parent = { generic_mio_trait_high_speed_raiding generic_mio_trait_long_range_raiding }
+		any_parent = { generic_mio_trait_high_speed_raiding }
 
 		limit_to_equipment_type = { submarine }
 
 		equipment_bonus = {
-			surface_visibility = -0.05
+			# surface_visibility = -0.05
 			sub_visibility = -0.05
 		}
 	}
@@ -2590,17 +2591,18 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_spotting_tops
 		icon = GFX_generic_mio_trait_icon_surface_visibility		
 
-		position = { x=1 y=1 }
-		relative_position_id = generic_mio_trait_raiding_cruisers
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_raiding_submarines
 
-		all_parents = { generic_mio_trait_raiding_cruisers generic_mio_trait_raiding_submarines }
+		all_parents = { generic_mio_trait_raiding_submarines }
 
-		mutually_exclusive = { generic_mio_trait_high_quality_optics }
+		# mutually_exclusive = { generic_mio_trait_high_quality_optics }
 
-		limit_to_equipment_type = { capital_ship screen_ship }
+		limit_to_equipment_type = { submarine }
 
 		equipment_bonus = {
-			surface_visibility = -0.05
+			# surface_visibility = -0.05
+			surface_detection = 0.1
 		}
 	}
 
@@ -2609,13 +2611,13 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_large_torpedo_banks
 		icon = GFX_generic_mio_trait_icon_torpedo_attack
 
-		position = { x=1 y=1 }
-		relative_position_id = generic_mio_trait_raiding_submarines
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_high_quality_optics
 
-		any_parent = { generic_mio_trait_raiding_submarines }
+		any_parent = { generic_mio_trait_high_quality_optics }
 
 		equipment_bonus = {
-			torpedo_attack = 0.05
+			torpedo_attack = 0.1
 		}
 	}
 
@@ -2624,19 +2626,22 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_mass_produced_raiders
 		icon = GFX_generic_mio_department_icon_ship_general_production
 
-		position = { x=1 y=1 }
+		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_spotting_tops
 
-		all_parents = { generic_mio_trait_spotting_tops generic_mio_trait_large_torpedo_banks }
+		all_parents = { generic_mio_trait_spotting_tops }
+
+		limit_to_equipment_type = { submarine }
 
 		production_bonus = {
-			production_capacity_factor = 0.05
+			production_capacity_factor = 0.1
+			production_resource_need_factor = 0.1
 		}
 	}
 }
 
 
-#SUBMARINE MANUFACTURER - Based on Canteri Navali Tosi (ITA)
+#SUBMARINE MANUFACTURER - Based on Canteri Navali Tosi (ITA) - NOT USED
 generic_submarine_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
@@ -2962,7 +2967,7 @@ generic_submarine_organization = {
 	}
 }
 
-#BLACK SEA MANUFACTURER - Based on Black Sea Shipyard (SOV)
+#BLACK SEA MANUFACTURER - Based on Black Sea Shipyard (SOV) - NOT USED
 generic_black_sea_fleet_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_2
 
@@ -3271,7 +3276,7 @@ generic_black_sea_fleet_organization = {
 }
 
 
-
+#  - NOT USED
 generic_refurbishment_repair_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
@@ -5010,24 +5015,24 @@ generic_cas_aircraft_organization = {
 	research_categories = {	mio_cat_all_cas_and_modules }
 	
 	tree_header_text = {
-		text = mio_header_production
+		text = mio_header_weapons
 		x = 1
 	}
 
-	tree_header_text = {
-		text = mio_header_engines
-		x = 3
-	}
+	# tree_header_text = {
+	# 	text = mio_header_engines
+	# 	x = 3
+	# }
 
 	tree_header_text = {
 		text = mio_header_wings
-		x = 5
+		x = 4
 	}
 
-	tree_header_text = {
-		text = mio_header_weapons
-		x = 7
-	}
+	# tree_header_text = {
+	# 	text = mio_header_weapons
+	# 	x = 7
+	# }
 
 	initial_trait = {
 		name = generic_mio_initial_trait_cas_aircraft_designer
@@ -5038,30 +5043,18 @@ generic_cas_aircraft_organization = {
 		}
 	}
 
-	trait = {
-		token = generic_mio_trait_selectional_construction
-		name = generic_mio_trait_selectional_construction
-		icon = GFX_generic_mio_department_icon_plane_cas_line_efficiency
+	# trait = {
+	# 	token = generic_mio_trait_low_altitude_attacks
+	# 	name = generic_mio_trait_low_altitude_attacks
+	# 	icon = GFX_generic_mio_trait_icon_defense
 
-		position = { x=0 y=0 }
+	# 	position = { x=2 y=0 }
+	# 	relative_position_id = generic_mio_trait_selectional_construction
 
-		production_bonus = {
-			production_efficiency_gain_factor = 0.05
-		}
-	}
-
-	trait = {
-		token = generic_mio_trait_low_altitude_attacks
-		name = generic_mio_trait_low_altitude_attacks
-		icon = GFX_generic_mio_trait_icon_defense
-
-		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_selectional_construction
-
-		equipment_bonus = {
-			air_defence = 0.05
-		}
-	}
+	# 	equipment_bonus = {
+	# 		air_defence = 0.05
+	# 	}
+	# }
 
 	trait = {
 		token = generic_mio_trait_canopies_and_firewalls
@@ -5069,7 +5062,7 @@ generic_cas_aircraft_organization = {
 		icon = GFX_generic_mio_trait_icon_reliability
 
 		position = { x=1 y=0 }
-		relative_position_id = generic_mio_trait_selectional_construction
+		# relative_position_id = generic_mio_trait_selectional_construction
 
 		equipment_bonus = {
 			air_defence = 0.05
@@ -5098,13 +5091,29 @@ generic_cas_aircraft_organization = {
 		name = generic_mio_trait_integrated_armor_designs
 		icon = GFX_generic_mio_trait_icon_defense
 
-		position = { x=0 y=2 }
+		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_canopies_and_firewalls
 
 		all_parents = { generic_mio_trait_canopies_and_firewalls }
 
 		equipment_bonus = {
-			air_defence = 0.05
+			air_defence = 0.1
+		}
+	}
+
+	trait = {
+		token = generic_mio_trait_selectional_construction
+		name = generic_mio_trait_selectional_construction
+		icon = GFX_generic_mio_department_icon_plane_cas_line_efficiency
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_integrated_armor_designs
+
+		all_parents = { generic_mio_trait_integrated_armor_designs}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.1
+			production_efficiency_cap_factor = 0.05
 		}
 	}
 
@@ -5114,7 +5123,7 @@ generic_cas_aircraft_organization = {
 		icon = GFX_generic_mio_trait_icon_air_ground_attack		
 
 		position = { x=2 y=0 }
-		relative_position_id = generic_mio_trait_low_altitude_attacks
+		relative_position_id = generic_mio_trait_canopies_and_firewalls
 
 		mutually_exclusive = { generic_mio_trait_reinforced_wings }
 
@@ -5193,7 +5202,7 @@ generic_cas_aircraft_organization = {
 		name = generic_mio_trait_bombs
 		icon = GFX_generic_mio_trait_icon_air_ground_attack			
 
-		position = { x=0 y=2 }
+		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_air_brakes
 
 		all_parents = { generic_mio_trait_air_brakes }
@@ -5211,7 +5220,7 @@ generic_cas_aircraft_organization = {
 		name = generic_mio_trait_rockets
 		icon = GFX_generic_mio_department_icon_plane_cas_combat		
 
-		position = { x=0 y=2 }
+		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_wingborne_fuel_tanks
 
 		all_parents = { generic_mio_trait_wingborne_fuel_tanks }
@@ -5225,31 +5234,31 @@ generic_cas_aircraft_organization = {
 		}
 	}
 
-	trait = {
-		token = generic_mio_heat_bombs
-		name = generic_mio_heat_bombs
-		icon = GFX_generic_mio_trait_icon_air_ground_attack	
+	# trait = {
+	# 	token = generic_mio_heat_bombs
+	# 	name = generic_mio_heat_bombs
+	# 	icon = GFX_generic_mio_trait_icon_air_ground_attack	
 
-		position = { x=1 y=0 }
-		relative_position_id = generic_mio_trait_reinforced_wings
+	# 	position = { x=1 y=0 }
+	# 	relative_position_id = generic_mio_trait_reinforced_wings
 
-		equipment_bonus = {
-			air_ground_attack = 0.02
-		}
-	}
+	# 	equipment_bonus = {
+	# 		air_ground_attack = 0.02
+	# 	}
+	# }
 
 	trait = {
 		token = generic_mio_cluster_bombs
 		name = generic_mio_cluster_bombs
 		icon = GFX_generic_mio_trait_icon_air_ground_attack	
 
-		position = { x=0 y=2 }
-		relative_position_id = generic_mio_heat_bombs
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_bombs
 
-		all_parents = { generic_mio_heat_bombs }
+		all_parents = { generic_mio_trait_bombs generic_mio_trait_rockets }
 
 		equipment_bonus = {
-			air_ground_attack = 0.03
+			air_ground_attack = 0.05
 		}
 	}
 }
@@ -7468,7 +7477,7 @@ generic_support_equipment_organization = {
 		position = { x=-1 y=1 }
 		relative_position_id = generic_mio_trait_high_quality_material_blend
 		
-		all_parents = { generic_mio_trait_high_quality_material_blend generic_mio_trait_scrap_melting }
+		any_parent = { generic_mio_trait_high_quality_material_blend generic_mio_trait_scrap_melting }
 		
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.10

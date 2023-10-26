@@ -632,9 +632,10 @@ operations = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			remove_ideas = USA_neutrality_idea
-			remove_ideas = USA_neutrality_idea_2
-			remove_ideas = USA_neutrality_idea_3
+			# remove_ideas = USA_neutrality_idea
+			# remove_ideas = USA_neutrality_idea_2
+			# remove_ideas = USA_neutrality_idea_3
+			USA_neutrality_clear_all = yes
 			ENG = { add_to_faction = USA }
 		}
 	}
@@ -664,9 +665,10 @@ operations = {
 			factor = 1000
 		}
 		timeout_effect = {
-			remove_ideas = USA_neutrality_idea
-			remove_ideas = USA_neutrality_idea_2
-			remove_ideas = USA_neutrality_idea_3
+			# remove_ideas = USA_neutrality_idea
+			# remove_ideas = USA_neutrality_idea_2
+			# remove_ideas = USA_neutrality_idea_3
+			USA_neutrality_clear_all = yes
 			ENG = { add_to_faction = USA }
 		}
 	}
@@ -696,9 +698,10 @@ operations = {
 			factor = 1000
 		}
 		timeout_effect = {
-			remove_ideas = USA_neutrality_idea
-			remove_ideas = USA_neutrality_idea_2
-			remove_ideas = USA_neutrality_idea_3
+			# remove_ideas = USA_neutrality_idea
+			# remove_ideas = USA_neutrality_idea_2
+			# remove_ideas = USA_neutrality_idea_3
+			USA_neutrality_clear_all = yes
 			ENG = { add_to_faction = USA }
 		}
 	}

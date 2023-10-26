@@ -7520,10 +7520,11 @@ focus_tree = {
 		cost = 10
 		available = {
 			OR = {
-				has_war = no
-				GER = {
-					has_war_with = SOV
+				SOV = {
+					has_completed_focus = SOV_baltic_security
 				}
+				has_global_flag = SOV_winter_war_win
+				has_global_flag = SOV_winter_war_loss
 			}
 			is_subject = no
 			if = {

@@ -1060,10 +1060,10 @@ operations = {
 		}
 
 		available = {
-			date > 1941.1.1
+			date > 1941.5.1
 			NOT = { has_idea = ENG_crusader }
 			NOT = { has_country_flag = OPERATION_TORCH_ONGING }
-			has_full_control_of_state = 452
+			# has_full_control_of_state = 452
 		}
 
 		ai_will_do = {
@@ -1077,13 +1077,13 @@ operations = {
 		fire_only_once = yes
 
 		complete_effect = {
-			add_timed_idea = { idea = ENG_compass days = 240 }
+			add_timed_idea = { idea = ENG_compass days = 180 }
 			custom_effect_tooltip = "Our allies will get the spirit aswell"
  			hidden_effect = {
- 				FRA = { add_timed_idea = { idea = ENG_compass days = 240 } }
- 				SAF = { add_timed_idea = { idea = ENG_compass days = 240 } }
- 				CAN = { add_timed_idea = { idea = ENG_compass days = 240 } }
- 				AST = { add_timed_idea = { idea = ENG_compass days = 240 } }
+ 				FRA = { add_timed_idea = { idea = ENG_compass days = 180 } }
+ 				SAF = { add_timed_idea = { idea = ENG_compass days = 180 } }
+ 				CAN = { add_timed_idea = { idea = ENG_compass days = 180 } }
+ 				AST = { add_timed_idea = { idea = ENG_compass days = 180 } }
  			}
 			hidden_effect = {
 				every_country = {

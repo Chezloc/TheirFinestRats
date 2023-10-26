@@ -175,6 +175,19 @@
   USA_rebuilding_the_nation_idea:0 "Rebuilding the Nation"
   USA_tackling_waste_idea:0 "Tackling Waste"
 
+  ### DYNAMIC MODIFIERS ###
+  USA_economy_dynamic_modifier:0 "[USA_economy_dynam_mod_sl]"
+  USA_modify_american_economy_ns_intro:0 "Modify §Y$USA_economy_dynamic_modifier$§! by"
+  USA_modify_economy_the_great_depression:0 "The Great Depression"
+  
+  USA_army_dynamic_modifier:0 "[USA_army_dynam_mod_sl]"
+  USA_modify_american_army_ns_intro:0 "Modify §Y$USA_army_dynamic_modifier$§! by"
+  USA_modify_army_us_army:0 "United States Army"
+
+  USA_air_navy_dynamic_modifier:0 "[USA_air_navy_dynam_mod_sl]"
+  USA_modify_american_airforce_navy_ns_intro:0 "Modify §Y$USA_air_navy_dynamic_modifier$§! by"
+  USA_modify_air_navy_us_airforce_navy:0 "United States Air Force & Navy"
+
   #### CHARACTERS ####
   USA_james_byrne:0 "James F. Byrnes"
 
