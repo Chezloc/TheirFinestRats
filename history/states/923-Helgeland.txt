@@ -4,7 +4,7 @@ state = {
 	manpower = 88812
 	
 	state_category = rural
-	# impassable = yes # really cringe
+	impassable = yes # really cringe alone
 	
 	#resources = {
 	#	steel = 3 
@@ -20,9 +20,9 @@ state = {
 		# 	}
 		# 	add_core_of = SMI
 		# }
-		victory_points = {
-			3048 1
-		}
+		# victory_points = {
+		# 	3048 1
+		# }
 		buildings = {
 			infrastructure = 2
 		}

@@ -179,7 +179,13 @@
   USA_economy_dynamic_modifier:0 "[USA_economy_dynam_mod_sl]"
   USA_modify_american_economy_ns_intro:0 "Modify §Y$USA_economy_dynamic_modifier$§! by"
   USA_modify_economy_the_great_depression:0 "The Great Depression"
-  
+  USA_modify_economy_slow_recovery:0 "Slow Recovery"
+  USA_modify_economy_slow_economic_growth:0 "Slow Economic Growth"
+  USA_modify_economy_recovering_economy:0 "Recovering Economy"
+  USA_modify_economy_american_economy:0 "American Economy"
+  USA_modify_economy_mic:0 "Military Industrial Complex"
+  USA_modify_economy_wartime_industry:0 "Wartime Industry"
+
   USA_army_dynamic_modifier:0 "[USA_army_dynam_mod_sl]"
   USA_modify_american_army_ns_intro:0 "Modify §Y$USA_army_dynamic_modifier$§! by"
   USA_modify_army_us_army:0 "United States Army"

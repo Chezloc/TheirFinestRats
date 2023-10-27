@@ -5,7 +5,10 @@ USA_neutrality_level_up = {
 			check_variable = { USA_american_economy_now_command_power_gain_mult = -0.1 }
 			check_variable = { USA_american_economy_now_industrial_capacity_factory = -0.15 }
 		}
-		remove_ideas = USA_neutrality_idea_3
+		hidden_effect = {
+			remove_ideas = USA_neutrality_idea_3
+		}
+		USA_economy_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { USA_american_economy_now_command_power_gain_mult = 0.1 tooltip = command_power_gain_mult_factor_tt }
 		add_to_variable = { USA_american_economy_now_industrial_capacity_factory = 0.15 tooltip = industrial_capacity_factory_tt }
 	}
@@ -15,10 +18,13 @@ USA_neutrality_level_up = {
 			check_variable = { USA_american_economy_now_command_power_gain_mult = -0.2 }
 			check_variable = { USA_american_economy_now_industrial_capacity_factory = -0.3 }
 		}
-		swap_ideas = {
-			remove_idea = USA_neutrality_idea_2
-			add_idea = USA_neutrality_idea_3
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = USA_neutrality_idea_2
+				add_idea = USA_neutrality_idea_3
+			}
 		}
+		USA_economy_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { USA_american_economy_now_command_power_gain_mult = 0.1 tooltip = command_power_gain_mult_factor_tt }
 		add_to_variable = { USA_american_economy_now_industrial_capacity_factory = 0.15 tooltip = industrial_capacity_factory_tt }
 	}
@@ -28,10 +34,13 @@ USA_neutrality_level_up = {
 			check_variable = { USA_american_economy_now_command_power_gain_mult = -0.25 }
 			check_variable = { USA_american_economy_now_industrial_capacity_factory = -0.5 }
 		}
-		swap_ideas = {
-			remove_idea = USA_neutrality_idea
-			add_idea = USA_neutrality_idea_2
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = USA_neutrality_idea
+				add_idea = USA_neutrality_idea_2
+			}
 		}
+		USA_economy_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { USA_american_economy_now_command_power_gain_mult = 0.05 tooltip = command_power_gain_mult_factor_tt }
 		add_to_variable = { USA_american_economy_now_industrial_capacity_factory = 0.2 tooltip = industrial_capacity_factory_tt }
 	}
@@ -44,6 +53,7 @@ USA_neutrality_clear_all = {
 		remove_ideas = USA_neutrality_idea_3
 	}
 	custom_effect_tooltip = "Removes any Not Our War spirit effects"
+	USA_economy_dynamic_modifier_tt = yes # tooltip
 	set_variable = { USA_american_economy_now_command_power_gain_mult = 0 tooltip = command_power_gain_mult_factor_tt }
 	set_variable = { USA_american_economy_now_industrial_capacity_factory = 0 tooltip = industrial_capacity_factory_tt }
 }
@@ -84,6 +94,7 @@ USA_great_depression_level_up = {
 		# 	remove_idea = great_depression_2
 		# 	add_idea = great_depression
 		# }
+		set_variable = { great_depression_var = 1 }
 		USA_economy_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { USA_american_economy_gd_political_power_cost = 0.35 tooltip = political_power_cost_tt }
 		add_to_variable = { USA_american_economy_gd_local_resources_factor = -0.05 tooltip = local_resources_factor_tt }
@@ -107,6 +118,7 @@ USA_great_depression_level_up = {
 		# 	remove_idea = great_depression_3
 		# 	add_idea = great_depression_2
 		# }
+		set_variable = { great_depression_var = 2 }
 		USA_economy_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { USA_american_economy_gd_political_power_cost = 0.4 tooltip = political_power_cost_tt }
 		add_to_variable = { USA_american_economy_gd_local_resources_factor = -0.1 tooltip = local_resources_factor_tt }
@@ -133,6 +145,7 @@ USA_great_depression_level_down = {
 		}
 		custom_effect_tooltip = USA_great_depression_down_tt
 		# remove_ideas = great_depression_4
+		set_variable = { great_depression_var = 5 }
 		USA_economy_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { USA_american_economy_gd_political_power_cost = -0.2 tooltip = political_power_cost_tt }
 		add_to_variable = { USA_american_economy_gd_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
@@ -157,6 +170,7 @@ USA_great_depression_level_down = {
 		# 	remove_idea = great_depression_3
 		# 	add_idea = great_depression_4
 		# }
+		set_variable = { great_depression_var = 4 }
 		USA_economy_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { USA_american_economy_gd_political_power_cost = -0.05 tooltip = political_power_cost_tt }
 		add_to_variable = { USA_american_economy_gd_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
@@ -179,6 +193,7 @@ USA_great_depression_level_down = {
 		# 	remove_idea = great_depression_2
 		# 	add_idea = great_depression_3
 		# }
+		set_variable = { great_depression_var = 3 }
 		USA_economy_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { USA_american_economy_gd_political_power_cost = -0.4 tooltip = political_power_cost_tt }
 		add_to_variable = { USA_american_economy_gd_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
@@ -203,6 +218,7 @@ USA_great_depression_level_down = {
 		# 	remove_idea = great_depression
 		# 	add_idea = great_depression_2
 		# }
+		set_variable = { great_depression_var = 2 }
 		USA_economy_dynamic_modifier_tt = yes # tooltip
 		add_to_variable = { USA_american_economy_gd_political_power_cost = -0.35 tooltip = political_power_cost_tt }
 		add_to_variable = { USA_american_economy_gd_local_resources_factor = 0.05 tooltip = local_resources_factor_tt }

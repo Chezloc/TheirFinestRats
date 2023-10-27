@@ -93,6 +93,14 @@ USA_airforce_navy_dynamic_modifier_tt = {
 	custom_effect_tooltip = USA_modify_american_airforce_navy_ns_intro
 }
 
+CAN_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = CAN_modify_canadian_economy_ns_intro
+}
+
+CAN_army_dynamic_modifier_tt = {
+	custom_effect_tooltip = CAN_modify_canadian_army_ns_intro
+}
+
 anti_cross_faction_trade_axis = {
 	add_opinion_modifier = {
 		target = GER

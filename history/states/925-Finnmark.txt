@@ -5,6 +5,7 @@ state = {
 	manpower = 142100 # 355251
 	
 	state_category = pastoral
+	impassable = yes # what can i say, really cringe to fight here
 	
 	#resources = {
 	#	tungsten = 5
@@ -12,9 +13,9 @@ state = {
 
 	history = {
 		
-		victory_points = {
-			9116 1
-		}
+		# victory_points = {
+		# 	9116 1
+		# }
 		
 		owner = NOR
 		add_core_of = NOR

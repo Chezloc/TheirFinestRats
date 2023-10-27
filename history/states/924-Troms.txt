@@ -4,15 +4,16 @@ state = {
 	manpower = 142100 # 355251
 	
 	state_category = rural
+	impassable = yes # really cringe to fight here
 	
 	#resources = {
 	#	tungsten = 5
 	#}
 
 	history = {
-		victory_points = {
-			11050 1
-		}
+		# victory_points = {
+		# 	11050 1
+		# }
 		owner = NOR
 		add_core_of = NOR
 		# if = {

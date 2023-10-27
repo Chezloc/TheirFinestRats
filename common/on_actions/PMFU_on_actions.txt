@@ -963,6 +963,9 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						NOT = {
+							has_global_flag = sotm_barb_ended
+						}
 					}
 					every_country = {
 						limit = {
@@ -1024,6 +1027,9 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						NOT = {
+							has_global_flag = sotm_barb_ended
+						}
 					}
 					every_country = {
 						limit = {

@@ -1916,7 +1916,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-
+			has_global_flag = MAN_treaty_with_the_bandits_allowed
 		}	
 
 		cancel_if_invalid = yes

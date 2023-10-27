@@ -549,3 +549,34 @@ USA_air_navy_dynamic_modifier = {
 	sortie_efficiency = USA_american_airforce_air_navy_sortie_efficiency
 	repair_speed_factor = USA_american_airforce_air_navy_repair_speed_factor
 }
+
+CAN_economy_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_production_bonus
+
+	consumer_goods_factor = CAN_canadian_economy_consumer_goods_factor
+	foreign_subversive_activites = CAN_canadian_economy_foreign_subversive_activites
+	communism_drift = CAN_canadian_economy_communism_drift
+	fascism_drift = CAN_canadian_economy_fascism_drift
+	global_building_slots_factor = CAN_canadian_economy_global_building_slots_factor
+	min_export = CAN_canadian_economy_min_export
+	industrial_capacity_factory = CAN_canadian_economy_industrial_capacity_factory
+	industrial_capacity_dockyard = CAN_canadian_economy_industrial_capacity_dockyard
+	local_resources_factor = CAN_canadian_economy_local_resources_factor
+	stability_factor = CAN_canadian_economy_stability_factor
+	production_speed_synthetic_refinery_factor = CAN_canadian_economy_production_speed_synthetic_refinery_factor
+	production_speed_steel_refinery_factor = CAN_canadian_economy_production_speed_steel_refinery_factor
+	production_factory_efficiency_gain_factor = CAN_canadian_economy_production_factory_efficiency_gain_factor
+	production_factory_start_efficiency_factor = CAN_canadian_economy_production_factory_start_efficiency_factor
+	production_factory_max_efficiency_factor = CAN_canadian_economy_production_factory_max_efficiency_factor
+}
+
+CAN_army_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_can_send_in_the_zombies
+
+	conscription_factor = CAN_canadian_army_conscription_factor
+	conscription = CAN_canadian_army_conscription
+}

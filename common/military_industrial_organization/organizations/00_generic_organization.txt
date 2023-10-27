@@ -1604,7 +1604,7 @@ generic_task_force_ship_organization = {
 
 		equipment_bonus = {
 			naval_range = 0.1
-			fuel_consumption = 0.05
+			# fuel_consumption = 0.05
 		}
 	}
 
@@ -1838,7 +1838,7 @@ generic_battle_line_ship_organization = {
 
 	tree_header_text = {
 		text = mio_header_weapons
-		x = 5
+		x = 7
 	}
 
 	initial_trait = {
@@ -2001,7 +2001,7 @@ generic_battle_line_ship_organization = {
 		name = generic_mio_trait_combat_information_center
 		icon = GFX_generic_mio_trait_icon_max_strength
 
-		position = { x=0 y=2 }
+		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_secondary_fire_director_control
 
 		all_parents = { generic_mio_trait_hardened_critical_components generic_mio_trait_secondary_fire_director_control }
@@ -2370,13 +2370,13 @@ generic_raider_ship_organization = {
 	}
 	
 	tree_header_text = {
-		text = mio_header_long_range_focus
+		text = mio_header_surface_raiding
 		x = 1
 	}
 
 	tree_header_text = {
-		text = mio_header_high_speed_focus
-		x = 7
+		text = mio_header_submarine_raiding
+		x = 5
 	}
 
 	initial_trait = {
@@ -2410,7 +2410,7 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_high_speed_raiding
 		icon = GFX_generic_mio_trait_icon_maximum_speed
 
-		position = { x=6 y=0 }
+		position = { x=4 y=0 }
 		relative_position_id = generic_mio_trait_long_range_raiding
 
 		# mutually_exclusive = { generic_mio_trait_long_range_raiding }
@@ -2466,7 +2466,7 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_raiding_capital_ships
 		icon = GFX_generic_mio_department_icon_ship_capital_ship_weapons
 
-		position = { x=1 y=2 }
+		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_long_range_raiding
 
 		any_parent = { generic_mio_trait_long_range_raiding }
@@ -2484,7 +2484,7 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_long_range_engagement_ethos
 		icon = GFX_generic_mio_department_icon_ship_capital_ship_weapons
 
-		position = { x=-1 y=1 }
+		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_raiding_capital_ships
 
 		any_parent = { generic_mio_trait_raiding_capital_ships }
@@ -2502,7 +2502,7 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_high_quality_optics
 		icon = GFX_generic_mio_trait_icon_surface_detection
 
-		position = { x=3 y=2 }
+		position = { x=2 y=1 }
 		relative_position_id = generic_mio_trait_long_range_raiding
 
 		any_parent = { generic_mio_trait_long_range_raiding generic_mio_trait_high_speed_raiding }
@@ -2555,7 +2555,7 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_raiding_cruisers
 		icon = GFX_generic_mio_trait_icon_surface_visibility
 
-		position = { x=1 y=1 }
+		position = { x=-1 y=1 }
 		relative_position_id = generic_mio_trait_raiding_capital_ships
 
 		any_parent = { generic_mio_trait_raiding_capital_ships }
@@ -2573,7 +2573,7 @@ generic_raider_ship_organization = {
 		name = generic_mio_trait_raiding_submarines
 		icon = GFX_generic_mio_department_icon_ship_submarine_survivability
 
-		position = { x=-1 y=1 }
+		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_high_speed_raiding
 
 		any_parent = { generic_mio_trait_high_speed_raiding }

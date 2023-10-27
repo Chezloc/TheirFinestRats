@@ -473,7 +473,11 @@ ideas = {
 		russian_closed_eco = {
 		
 			picture = russian_closed_eco	
-						
+				
+			rule = {
+				can_access_market = no
+			}
+
 			cost = 100
 			removal_cost = -1
 			
@@ -525,6 +529,10 @@ ideas = {
 
 			cost = 150
 			removal_cost = -1
+
+			rule = {
+				can_access_market = no
+			}
 
 			modifier = {
 				min_export = 0.8
@@ -594,6 +602,10 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			
+			rule = {
+				can_access_market = no
+			}
+
 			modifier = {
 				min_export = 0.60
 				industrial_capacity_factory = 0.10
@@ -675,6 +687,10 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			
+			rule = {
+				can_access_market = no
+			}
+
 			modifier = {
 				min_export = 0.4
 				industrial_capacity_factory = 0.05
@@ -763,6 +779,10 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			
+			rule = {
+				can_access_market = no
+			}
+
 			modifier = {
 				min_export = 0.1
 				lend_lease_tension = 0.40
@@ -806,6 +826,10 @@ ideas = {
 			cost = 1500000
 			removal_cost = -1
 
+			rule = {
+				can_access_market = no
+			}
+			
 			rule = {
 				can_access_market = no
 				desc = can_not_access_market_closed_economy

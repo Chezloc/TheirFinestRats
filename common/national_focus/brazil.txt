@@ -652,18 +652,19 @@ focus_tree = {
 		cost = 10
 		
 		available = {
-            if = {
-				limit = {
-					has_global_flag = NO_ASIA
+        #     if = {
+		# 		limit = {
+		# 			has_global_flag = NO_ASIA
 
-				}
-                date > 1937.1.1
-			}
-			else = {
-			USA = {
-				NOT = { has_idea = great_depression }
-			}
-		}
+		# 		}
+        #         date > 1937.1.1
+		# 	}
+		# 	else = {
+		# 	USA = {
+		# 		NOT = { has_idea = great_depression }
+		# 	}
+		# }
+		date > 1937.1.1
 		}
 
 		ai_will_do = {
@@ -700,19 +701,20 @@ focus_tree = {
 		cost = 10
 		
 		available = {
-            if = {
-				limit = {
-					has_global_flag = NO_ASIA
+        #     if = {
+		# 		limit = {
+		# 			has_global_flag = NO_ASIA
 
-				}
-                date > 1938.1.1
-			}
-            else = {
-			USA = {
-				NOT = { has_idea = great_depression_2 }
-				NOT = { has_idea = great_depression }
-			}
-		}
+		# 		}
+        #         date > 1938.1.1
+		# 	}
+        #     else = {
+		# 	USA = {
+		# 		NOT = { has_idea = great_depression_2 }
+		# 		NOT = { has_idea = great_depression }
+		# 	}
+		# }
+			date > 1938.1.1
 		}
 
 		ai_will_do = {
@@ -749,22 +751,25 @@ focus_tree = {
 		cost = 10
 		
 		available = {
-			if = {
-				limit = {
-					has_global_flag = NO_ASIA
+		# 	if = {
+		# 		limit = {
+		# 			has_global_flag = NO_ASIA
 
-				}
-                ENG = {
-					has_war_with = GER
-				}
+		# 		}
+        #         ENG = {
+		# 			has_war_with = GER
+		# 		}
+		# 	}
+		# 	else = {
+		# 	USA = {
+		# 		NOT = { has_idea = great_depression_3 }
+		# 		NOT = { has_idea = great_depression_2 }
+		# 		NOT = { has_idea = great_depression }
+		# 	}
+		# }
+			ENG = {
+				has_war_with = GER
 			}
-			else = {
-			USA = {
-				NOT = { has_idea = great_depression_3 }
-				NOT = { has_idea = great_depression_2 }
-				NOT = { has_idea = great_depression }
-			}
-		}
 		}
 
 		ai_will_do = {
@@ -809,15 +814,21 @@ focus_tree = {
 				is_in_faction_with = ENG
 			}	
             else = {
-					
-			USA = {
-				NOT = { has_idea = great_depression_4 }
-				NOT = { has_idea = great_depression_3 }
-				NOT = { has_idea = great_depression_2 }
-				NOT = { has_idea = great_depression }
+				USA = {
+					NOT = { has_idea = great_depression_4 }
+					NOT = { has_idea = great_depression_3 }
+					NOT = { has_idea = great_depression_2 }
+					NOT = { has_idea = great_depression }
+					check_variable = { USA_american_economy_gd_political_power_cost = 0 }
+					check_variable = { USA_american_economy_gd_consumer_goods_factor = 0 }
+					check_variable = { USA_american_economy_gd_conscription_factor = 0 }
+					check_variable = { USA_american_economy_gd_join_faction_tension = 0 }
+					check_variable = { USA_american_economy_gd_local_resources_factor = 0 }
+					check_variable = { USA_american_economy_gd_industrial_capacity_factory = 0 }
+					check_variable = { USA_american_economy_gd_industrial_capacity_dockyard = 0 }
+				}
+				is_in_faction_with = USA
 			}
-			is_in_faction_with = USA
-		}
 		}
 
 		ai_will_do = {

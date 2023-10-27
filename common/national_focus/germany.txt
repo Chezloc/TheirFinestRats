@@ -2867,16 +2867,16 @@ focus_tree = {
 			OR = {
 				has_war_with = POL
 				is_in_faction_with = POL
-				NOT = {
-					85 = {
-						controller = {
-							original_tag = POL 
-						}
-						owner = {
-							original_tag = POL 
-						}
-					}
-				}
+				# NOT = {
+				# 	85 = {
+				# 		controller = {
+				# 			original_tag = POL 
+				# 		}
+				# 		owner = {
+				# 			original_tag = POL 
+				# 		}
+				# 	}
+				# }
 			}
 		}
 		cancel_if_invalid = no
@@ -2932,6 +2932,9 @@ focus_tree = {
 							type = annex_everything
 						}
 						add_state_core = 85
+						ENG = {
+							add_to_faction = POL
+						}
 						if = {
 							limit = {
 								ENG = {
@@ -3562,6 +3565,11 @@ focus_tree = {
 		continue_if_invalid = yes
 		cost = 2
 		completion_reward = {
+			hidden_effect = {
+				GER = {
+					country_event = { id = generic.44 days = 180 }
+				}
+			}
 			add_advisor_role = {
 				character = GER_walter_model
 				activate = yes

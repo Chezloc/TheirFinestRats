@@ -50,6 +50,7 @@ focus_tree = {
 				}
 				always = no
 			}
+			always = no
 		}
 
 		search_filters = {}
@@ -79,6 +80,7 @@ focus_tree = {
 				}
 				always = no
 			}
+			always = no
 			100 = {
 				is_owned_and_controlled_by = ROOT
 			}
@@ -219,6 +221,7 @@ focus_tree = {
 				always = no
 			}
 			is_subject = no
+			always = no
 		}
 
 		search_filters = {}
@@ -816,6 +819,7 @@ focus_tree = {
 				}
 				always = no
 			}
+			always = no
 		}
 
 		search_filters = {}
@@ -2943,6 +2947,13 @@ focus_tree = {
 		cost = 10
 		available = {
 			threat > 0.1
+			if = {
+				limit = {
+					is_ai = no
+				}
+				always = no
+			}
+			always = no
 		}
 		cancel_if_invalid = no 
 		bypass = {

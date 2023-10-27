@@ -46,6 +46,7 @@ focus_tree = {
 				}
 				always = no
 			}
+			always = no
 		}
 
 		bypass = {

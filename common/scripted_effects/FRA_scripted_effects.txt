@@ -588,4 +588,16 @@ FRA_transfer_western_africa_effect = {
 		}
 		transfer_state = 557
 	}
+	if = {
+		limit = {
+			899 = { CONTROLLER = { original_tag = VIC } }	
+		}
+		transfer_state = 899
+	}
+	if = {
+		limit = {
+			898 = { CONTROLLER = { original_tag = VIC } }	
+		}
+		transfer_state = 898
+	}
 }

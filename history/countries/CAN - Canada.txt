@@ -76,8 +76,8 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Together for Victory" }
-	add_ideas = CAN_great_depression_1
-	add_ideas = CAN_conscription_crisis
+	# add_ideas = CAN_great_depression_1
+	# add_ideas = CAN_conscription_crisis
 	set_cosmetic_tag = CAN_UK
 
 	add_to_tech_sharing_group = commonwealth_research
@@ -93,6 +93,19 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
+
+### DYNAMIC MODIFIERS ###
+add_dynamic_modifier = {
+	modifier = CAN_economy_dynamic_modifier
+}
+add_to_variable = { CAN_canadian_economy_consumer_goods_factor = 0.4 tooltip = consumer_goods_factor_tt }
+add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = -0.15 tooltip = industrial_capacity_factory_tt }
+add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = -0.15 tooltip = industrial_capacity_dockyard_tt }
+
+add_dynamic_modifier = {
+	modifier = CAN_army_dynamic_modifier
+}
+add_to_variable = { CAN_canadian_army_conscription_factor = -0.30 tooltip = conscription_factor_tt }
 
 set_politics = {
 	ruling_party = democratic

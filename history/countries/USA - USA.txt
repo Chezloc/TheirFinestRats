@@ -91,7 +91,7 @@ set_variable = { USA_Marine_Corps_increase_double = 2 }
 set_variable = { US_Airborne_division_cap = 0 }
 set_variable = { US_Airborne_increase = 1 }
 set_variable = { US_Airborne_increase_double = 2 }
-
+set_variable = { great_depression_var = 1 }
 
 set_country_flag = USA_Marine_Corps_division_standard
 set_country_flag = US_Airborne_division_standard

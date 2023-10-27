@@ -794,6 +794,25 @@ foreign_politics = {
 	# 	}
 	# }
 
+	JAP_allow_a_treaty_with_the_bandits = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = "Manchukuo will be able to do the focus 'Treaty with the Bandits' (right side focus tree)"
+			set_global_flag = MAN_treaty_with_the_bandits_allowed
+		}
+	}
+
 	JAP_transfer_indochina = {
 		icon = generic_operation
 
@@ -891,6 +910,27 @@ foreign_politics = {
 				MAN = {
 					transfer_state = PREV
 				}
+			}
+		}
+
+	}
+
+	JAP_transfer_beijing_to_manchu = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			608 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			MAN = {
+				transfer_state = 608
 			}
 		}
 

@@ -1060,7 +1060,7 @@ operations = {
 		}
 
 		available = {
-			date > 1941.5.1
+			date > 1940.5.1
 			NOT = { has_idea = ENG_crusader }
 			NOT = { has_country_flag = OPERATION_TORCH_ONGING }
 			# has_full_control_of_state = 452

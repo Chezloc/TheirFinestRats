@@ -590,18 +590,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = { has_government = democratic }
-				add_ideas = CAN_defence_of_canada_regulations_democratic
-			}
-			if = {
-				limit = { has_government = communism }
-				add_ideas = CAN_defence_of_canada_regulations_communism
-			}
-			if = {
-				limit = { has_government = fascism }
-				add_ideas = CAN_defence_of_canada_regulations_fascism
-			}
+			# if = {
+			# 	limit = { has_government = democratic }
+			# 	add_ideas = CAN_defence_of_canada_regulations_democratic
+			# }
+			# if = {
+			# 	limit = { has_government = communism }
+			#	add_ideas = CAN_defence_of_canada_regulations_communism
+			# }
+			# if = {
+			# 	limit = { has_government = fascism }
+			# 	add_ideas = CAN_defence_of_canada_regulations_fascism
+			# }
+			CAN_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_economy_foreign_subversive_activites = -0.50 tooltip = foreign_subversive_activites_tt }
+			add_to_variable = { CAN_canadian_economy_communism_drift = -0.01 tooltip = communism_drift_tt }
+			add_to_variable = { CAN_canadian_economy_fascism_drift = -0.01 tooltip = fascism_drift_tt }
 		}
 	}
 
@@ -632,7 +636,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = CAN_war_bonds_1
+			# add_ideas = CAN_war_bonds_1
+			CAN_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_economy_consumer_goods_factor = -0.09 tooltip = consumer_goods_factor_tt }
 			hidden_effect = {
 				CAN = {
 					if = { 
@@ -775,7 +781,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			add_ideas = CAN_national_resources_mobilization_act
+			# add_ideas = CAN_national_resources_mobilization_act
+			CAN_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_economy_local_resources_factor = 0.10 tooltip = local_resources_factor_tt }
+			add_to_variable = { CAN_canadian_economy_stability_factor = -0.05 tooltip = stability_factor_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+			add_to_variable = { CAN_canadian_economy_production_speed_synthetic_refinery_factor = 0.1 tooltip = production_speed_synthetic_refinery_factor_tt }
+			add_to_variable = { CAN_canadian_economy_production_speed_steel_refinery_factor = 0.1 tooltip = production_speed_steel_refinery_factor_tt }
 		}
 	}
 
@@ -807,7 +820,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = CAN_wartime_prices_and_trade_board
+			# add_ideas = CAN_wartime_prices_and_trade_board
+			CAN_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_economy_global_building_slots_factor = 0.2 tooltip = global_building_slots_factor_tt }
+			add_to_variable = { CAN_canadian_economy_min_export = -0.05 tooltip = min_export_tt }
 		}
 	}
 
@@ -839,7 +855,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = CAN_bits_and_pieces_program
+			# add_ideas = CAN_bits_and_pieces_program
+			CAN_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { CAN_canadian_economy_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 
@@ -989,10 +1010,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_great_depression_1
-				add_idea = CAN_great_depression_2		
-			}
+			# swap_ideas = {
+			# 	remove_idea = CAN_great_depression_1
+			# 	add_idea = CAN_great_depression_2		
+			# }
+			CAN_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 
@@ -1199,7 +1224,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			add_ideas = CAN_commit_to_the_war
+			# add_ideas = CAN_commit_to_the_war
+			CAN_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_army_conscription_factor = 0.05 tooltip = conscription_factor_tt }
 		}
 	}
 
@@ -1535,7 +1562,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			add_ideas = CAN_send_in_the_zombies
+			# add_ideas = CAN_send_in_the_zombies
+			CAN_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_army_conscription = 0.01 tooltip = conscription_tt }
 		}
 	}
 
@@ -1572,10 +1601,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_war_bonds_1
-				add_idea = CAN_war_bonds_2
-			}
+			# swap_ideas = {
+			# 	remove_idea = CAN_war_bonds_1
+			# 	add_idea = CAN_war_bonds_2
+			# }
+			CAN_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_economy_consumer_goods_factor = -0.06 tooltip = consumer_goods_factor_tt }
 		}
 	}
 
@@ -1722,8 +1753,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			remove_ideas = CAN_conscription_crisis
 			custom_effect_tooltip = "CAN_ANGERED_WORKERS"
+			# remove_ideas = CAN_conscription_crisis
+			CAN_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_army_conscription_factor = 0.30 tooltip = conscription_factor_tt }
 			
 			# Opens up the MTTH events tfv_canada.50 - tfv_canada.53
 		}
@@ -1758,10 +1791,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = CAN_conscription_crisis
-				add_idea = CAN_conscription_crisis_mended
-			}
+			# swap_ideas = {
+			# 	remove_idea = CAN_conscription_crisis
+			# 	add_idea = CAN_conscription_crisis_mended
+			# }
+			CAN_army_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_army_conscription_factor = 0.20 tooltip = conscription_factor_tt }
 		}
 	}
 
@@ -1794,7 +1829,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			remove_ideas = CAN_great_depression_2
+			# remove_ideas = CAN_great_depression_2
+			CAN_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_economy_consumer_goods_factor = -0.25 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -3784,10 +3823,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				add_idea = CAN_bits_and_pieces_program_1
-				remove_idea = CAN_bits_and_pieces_program
-			}
+			# swap_ideas = {
+			# 	add_idea = CAN_bits_and_pieces_program_1
+			# 	remove_idea = CAN_bits_and_pieces_program
+			# }
+			CAN_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { CAN_canadian_economy_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
+			add_to_variable = { CAN_canadian_economy_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+			add_to_variable = { CAN_canadian_economy_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_factory = 0.05 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { CAN_canadian_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 	# focus = {

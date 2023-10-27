@@ -1,10 +1,144 @@
 defined_text = { # global
-	name = USA_economy_dynam_mod_sl
+	name = CAN_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			CAN = {
+				NOT = {
+					has_completed_focus = CAN_canada_wheat_board
+					has_completed_focus = CAN_bits_and_pieces_program
+					has_completed_focus = CAN_war_fueled_economy
+					has_completed_focus = CAN_lend_lease_economy
+				}
+			}
+		}
+		localization_key = "CAN_modify_economy_the_great_depression" 
+	}
+	text = {
+		trigger = {
+			CAN = {
+				has_completed_focus = CAN_canada_wheat_board
+				NOT = {
+					has_completed_focus = CAN_bits_and_pieces_program
+					has_completed_focus = CAN_war_fueled_economy
+					has_completed_focus = CAN_lend_lease_economy
+				}
+			}
+		}
+		localization_key = "CAN_modify_economy_wheat_board" 
+	}
+	text = {
+		trigger = {
+			CAN = {
+				has_completed_focus = CAN_canada_wheat_board
+				has_completed_focus = CAN_bits_and_pieces_program
+				NOT = {
+					has_completed_focus = CAN_war_fueled_economy
+					has_completed_focus = CAN_lend_lease_economy
+				}
+			}
+		}
+		localization_key = "CAN_modify_economy_bapp" 
+	}
+	text = {
+		trigger = {
+			CAN = {
+				has_completed_focus = CAN_canada_wheat_board
+				has_completed_focus = CAN_bits_and_pieces_program
+				has_completed_focus = CAN_war_fueled_economy
+				NOT = {
+					has_completed_focus = CAN_lend_lease_economy
+				}
+			}
+		}
+		localization_key = "CAN_modify_economy_wfe" 
+	}
+	text = {
+		trigger = {
+			CAN = {
+				has_completed_focus = CAN_canada_wheat_board
+				has_completed_focus = CAN_bits_and_pieces_program
+				has_completed_focus = CAN_war_fueled_economy
+				has_completed_focus = CAN_lend_lease_economy
+			}
+		}
+		localization_key = "CAN_modify_economy_wflle" 
+	}
+}
+
+defined_text = { # global
+	name = CAN_army_dynam_mod_sl
 	text = {
 		trigger = {
 			always = yes
 		}
+		localization_key = "CAN_modify_army_canadian_armed_forces" 
+	}
+}
+
+defined_text = { # global
+	name = USA_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 1 }
+			}
+		}
 		localization_key = "USA_modify_economy_the_great_depression" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 2 }
+			}
+		}
+		localization_key = "USA_modify_economy_slow_recovery" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 3 }
+			}
+		}
+		localization_key = "USA_modify_economy_slow_economic_growth" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 4 }
+			}
+		}
+		localization_key = "USA_modify_economy_recovering_economy" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 5 }
+				NOT = {
+					has_completed_focus = USA_military_industrial_complex
+				}
+				has_war = no
+			}
+		}
+		localization_key = "USA_modify_economy_american_economy" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 5 }
+				has_completed_focus = USA_military_industrial_complex
+				has_war = no
+			}
+		}
+		localization_key = "USA_modify_economy_mic" 
+	}
+	text = {
+		trigger = {
+			USA = {
+				check_variable = { great_depression_var = 5 }
+				has_war = yes
+			}
+		}
+		localization_key = "USA_modify_economy_wartime_industry" 
 	}
 }
 
