@@ -34,16 +34,20 @@ set_research_slots = 3
 if = {
 	limit = { has_dlc = "Arms Against Tyranny" }
 	add_ideas = {
-#		SWE_historical_trade_with_Germany CUT
 		peace_training # pmfu
-		SWE_hungershield
-		SWE_severe_lack_of_ammunition
+		#SWE_historical_trade_with_Germany CUT
+		#SWE_hungershield
+		#SWE_severe_lack_of_ammunition
 		#SWE_standardized_equipment
 		SWE_gustaf_v_idea
+		neutrality_idea
+		neutrality_idea2 
+		stupid_ai
+		free_trade
 	}
 
 
-	add_dynamic_modifier = { modifier = SWE_folkhemmet }
+	# add_dynamic_modifier = { modifier = SWE_folkhemmet }s
 	set_stability = 0.43
 	set_war_support = 0.1
 }
@@ -54,6 +58,9 @@ if = {
 	add_ideas = { 
 		en_svensk_tiger 
 		neutrality_idea
+		neutrality_idea2
+		stupid_ai
+		free_trade
 	}
 	set_stability = 0.9
 	set_war_support = 0.1
@@ -647,7 +654,7 @@ if = {
 		has_dlc = "Arms Against Tyranny"
 	}
 
-	add_ideas = neutrality_idea
+	# add_ideas = neutrality_idea
 	set_variable = { hungershield_stability_threshold_1 = 0.65 } 
 	set_variable = { hungershield_stability_risk_1 = 0.12 }  #monthly risk if under _1 stability threshold 0.12
 	set_variable = { hungershield_stability_threshold_2 = 0.3 } 

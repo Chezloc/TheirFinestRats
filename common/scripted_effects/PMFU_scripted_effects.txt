@@ -101,6 +101,22 @@ CAN_army_dynamic_modifier_tt = {
 	custom_effect_tooltip = CAN_modify_canadian_army_ns_intro
 }
 
+MEX_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = MEX_modify_mexican_economy_ns_intro
+}
+
+MEX_army_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = MEX_modify_mexican_army_navy_ns_intro
+}
+
+BRA_economy_dynamic_modifier_tt = {
+	custom_effect_tooltip = BRA_modify_brazilian_economy_ns_intro
+}
+
+BRA_army_navy_dynamic_modifier_tt = {
+	custom_effect_tooltip = BRA_modify_brazilian_army_navy_ns_intro
+}
+
 anti_cross_faction_trade_axis = {
 	add_opinion_modifier = {
 		target = GER

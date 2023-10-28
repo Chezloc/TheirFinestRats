@@ -1105,7 +1105,7 @@ focus_tree = {
             controls_state = 432
             controls_state = 434
             controls_state = 324
-            controls_state = 835
+            controls_state = 935
         }
         completion_reward = {
             288 = {
@@ -1143,7 +1143,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-            835 = {
+            935 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2

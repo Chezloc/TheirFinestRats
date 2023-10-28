@@ -1401,9 +1401,6 @@ focus_tree = {
 
 		available = {
 			date > 1940.1.1
-			has_army_manpower = {
-				size > 100000
-			}
 		}	
 
 		cancel_if_invalid = yes
@@ -1412,7 +1409,6 @@ focus_tree = {
 		
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
-			remove_ideas = MAN_kwantung_veto
 		}
 	}
 

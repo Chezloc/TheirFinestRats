@@ -6188,7 +6188,7 @@ focus_tree = {
 
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
-				FIN_pact_for_continuation_war_start = yes
+				# FIN_pact_for_continuation_war_start = yes
 
 				# if = {
 				# 	limit = {
@@ -6250,7 +6250,7 @@ focus_tree = {
 					producer = GER
 				}
 			}
-			custom_effect_tooltip = FIN_pact_for_continuation_war_fin_focus_tt
+			# custom_effect_tooltip = FIN_pact_for_continuation_war_fin_focus_tt
 		}
 	}
 	
@@ -9434,7 +9434,7 @@ focus_tree = {
 						engineer = { x = 0 y = 0 }
 						recon = { x = 0 y = 1 }
 						#artillery = { x = 0 y = 2 }
-						anti_air = { x = 0 y = 3 }
+						anti_air = { x = 0 y = 2 }
 					}
 				}
 			}

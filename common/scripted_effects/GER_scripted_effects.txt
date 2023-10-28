@@ -142,6 +142,8 @@ GER_remove_mefo_bills = {
 		set_variable = { GER_german_economy_mefo_production_speed_fuel_silo_factor = 0 }
 		set_variable = { GER_german_economy_mefo_production_speed_synthetic_refinery_factor = 0 }
 		set_variable = { GER_german_economy_mefo_political_power_cost = 0 }
+
+		remove_ideas = GER_mefo_air
 	}
 	# if = {
 	# 	limit = { has_idea = GER_mefo_bills_1 }

@@ -57,9 +57,10 @@ German_historical = {
 		GER_around_maginot
 		GER_war_with_france
 		GER_avenge_versailles
+		GER_mobilise_reich
+		GER_civilian_rad
 		GER_plunder_west
 		GER_swiss_banks
-		GER_mobilise_reich
 		GER_sweden_trade
 		GER_reintegrate_east
 		GER_weserubung

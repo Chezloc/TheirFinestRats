@@ -2084,7 +2084,7 @@ focus_tree = {
 			}
 			build_railway = {
 				path = {
-					6626 11735 11564 3601
+					6626 11735 11564 13252 3601
 				}
 			}
 			build_railway = {

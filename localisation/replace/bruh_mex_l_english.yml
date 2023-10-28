@@ -332,6 +332,15 @@
  MEX_escort_fleet:0 "Convoy Protector"
  no_guarantees:0 "No Guarantees"
 
+ ### DYNAMIC MODIFIERS ###
+ MEX_economy_dynamic_modifier:0 "[MEX_economy_dynam_mod_sl]"
+ MEX_modify_mexican_economy_ns_intro:0 "Modify §Y$MEX_economy_dynamic_modifier$§! by"
+ MEX_modify_economy_mexican_economy:0 "Mexican Economy"
+ 
+ MEX_army_navy_dynamic_modifier:0 "[MEX_army_navy_dynam_mod_sl]"
+ MEX_modify_mexican_army_navy_ns_intro:0 "Modify §Y$MEX_army_navy_dynamic_modifier$§! by"
+ MEX_modify_army_navy_mexican_armed_forces:0 "Mexican Armed Forces"
+
  ### TOOLTIP ###
  general_cascar_de_patata_tt:0 "§OCascara de Patata§! §Ybecomes a skill 4 General with 4 attack, 3 defense, 6 planning, 6 logistics, and Panzer Leader, Brilliant Strategist and Fortress Buster§!"
  

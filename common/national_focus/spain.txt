@@ -1807,6 +1807,9 @@ focus_tree = {
 	focus = {
 		id = SPA_invest_in_naval_infrastructure
 		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
 		}
 		bypass = {
 		}
@@ -1883,6 +1886,9 @@ focus_tree = {
 	focus = {
 		id = SPA_expand_the_slipways
 		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
 		}
 		bypass = {
 		}
@@ -1950,7 +1956,9 @@ focus_tree = {
 	focus = {
 		id = SPA_the_spanish_navy
 		available = {
-			
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
 		}
 		bypass = {
 		}
@@ -1995,6 +2003,9 @@ focus_tree = {
 	focus = {
 		id = SPA_the_plan_imperial
 		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
 		}
 		bypass = {
 		}
@@ -2030,7 +2041,9 @@ focus_tree = {
 	focus = {
 		id = SPA_the_cruiser_plan
 		available = {
-			
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
 		}
 		bypass = {
 		}
@@ -2101,6 +2114,9 @@ focus_tree = {
 	focus = {
 		id = SPA_restart_small_scale_shipbuilding
 		available = {
+			NOT = {
+				has_completed_focus = SPA_maintain_neutrality
+			}
 		}
 		bypass = {
 		}

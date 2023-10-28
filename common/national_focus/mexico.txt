@@ -117,9 +117,13 @@ focus_tree = {
             available_if_capitulated = yes
     
             completion_reward = {
-                remove_ideas = MEX_callistas
+                # remove_ideas = MEX_callistas
 		        custom_effect_tooltip = available_political_advisor
 		    	show_ideas_tooltip = MEX_bartolome_garcia_correa
+				MEX_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_economy_political_power_factor = 0.2 tooltip = political_power_factor_tt }
+				add_to_variable = { MEX_mexican_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+                custom_effect_tooltip = available_political_advisor
             }
     }
 
@@ -274,10 +278,13 @@ focus_tree = {
                         }
                     }
                 }
-                swap_ideas = {
-                    remove_idea = MEX_callistas
-                    add_idea = MEX_plutarco_calles
-                }
+                # swap_ideas = {
+                #     remove_idea = MEX_callistas
+                #     add_idea = MEX_plutarco_calles
+                # }
+				MEX_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_economy_political_power_factor = 0.3 tooltip = political_power_factor_tt }
+				add_to_variable = { MEX_mexican_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
                 custom_effect_tooltip = available_political_advisor
                     show_ideas_tooltip = MEX_aaron_saenz
                     if = {
@@ -384,7 +391,10 @@ focus_tree = {
             available_if_capitulated = yes
     
             completion_reward = {
-                add_ideas = MEX_caudillo_private_armies
+                # add_ideas = MEX_caudillo_private_armies
+				MEX_army_navy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_army_navy_conscription = 0.01 tooltip = conscription_tt }
+				add_to_variable = { MEX_mexican_army_navy_war_support_factor = 0.05 tooltip = war_support_factor_tt }
             }
     }
     
@@ -597,7 +607,10 @@ focus_tree = {
 
 		completion_reward = {
 			MEX_increase_church_power = yes
-			add_ideas = MEX_womens_suffrage
+			# add_ideas = MEX_womens_suffrage
+			MEX_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { MEX_mexican_economy_research_speed_factor = 0.10 tooltip = research_speed_factor_tt }
+			add_to_variable = { MEX_mexican_economy_democratic_drift = 0.1 tooltip = democratic_drift_tt }
 		}
 	}
 
@@ -933,7 +946,9 @@ focus_tree = {
                     limit = {
                         has_dlc = "Death or Dishonor"
                     }
-                    add_ideas = MEX_capital_reserves
+                    # add_ideas = MEX_capital_reserves
+					MEX_economy_dynamic_modifier_tt = yes # tooltip
+					add_to_variable = { MEX_mexican_economy_license_production_speed = 0.20 tooltip = license_production_speed_tt }
                 }
                 if = {
                     limit = {
@@ -1321,10 +1336,13 @@ focus_tree = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
-				add_ideas = MEX_strike_breaking
-				add_ideas = Industrial_Development
+				# add_ideas = MEX_strike_breaking
+				# add_ideas = Industrial_Development
 				add_stability = -0.05
 			    add_political_power = 200
+				MEX_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+				add_to_variable = { MEX_mexican_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 			}
 
 	}
@@ -1738,13 +1756,15 @@ focus_tree = {
 				# 	}
 				# }
 				
-				add_ideas = More_Rescources
+				# add_ideas = More_Rescources
 
                 add_tech_bonus = {
 					bonus = 0.75
 					uses = 2
 					category = industry
 				}
+				MEX_economy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_economy_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
             }
     }
 
@@ -2886,7 +2906,9 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				add_ideas = MEX_brown_water_navy
+				# add_ideas = MEX_brown_water_navy
+				MEX_army_navy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_army_navy_convoy_escort_efficiency = 0.1 tooltip = convoy_escort_efficiency_tt }
 			}
 	}
 
@@ -3557,10 +3579,13 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				swap_ideas = {
-					remove_idea = MEX_politicised_army
-					add_idea = MEX_politicised_army_2
-				}
+				# swap_ideas = {
+				# 	remove_idea = MEX_politicised_army
+				# 	add_idea = MEX_politicised_army_2
+				# }
+				MEX_army_navy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_army_navy_military_leader_cost_factor = -1.2 tooltip = military_leader_cost_factor_tt }
+				add_to_variable = { MEX_mexican_army_navy_planning_speed = 0.4 tooltip = planning_speed_tt }
 			}
 	}
 
@@ -3839,7 +3864,9 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				add_ideas = MEX_preperation_for_the_new_year
+				# add_ideas = MEX_preperation_for_the_new_year
+				MEX_army_navy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_army_navy_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 				# Add 200 Floating Harbor mtg_floating_harbors - fuck you lennart
 			}
 	}
@@ -3909,7 +3936,9 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				add_ideas = MEX_faster_planning
+				# add_ideas = MEX_faster_planning
+				MEX_army_navy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_army_navy_naval_invasion_prep_speed = 0.1 tooltip = naval_invasion_prep_speed_tt }
 			}
 	}
 
@@ -3941,7 +3970,9 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				add_ideas = MEX_better_naval_prep_invasion
+				# add_ideas = MEX_better_naval_prep_invasion
+				MEX_army_navy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_army_navy_invasion_preparation = -0.15 tooltip = invasion_preparation_tt }
 			}
 	}
 
@@ -3972,7 +4003,9 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				add_ideas = MEX_support_offshore
+				# add_ideas = MEX_support_offshore
+				MEX_army_navy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_army_navy_shore_bombardment_bonus = 0.20 tooltip = shore_bombardment_bonus_tt }
 			}
 	}
 
@@ -4040,7 +4073,9 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				add_ideas = MEX_bigger_landings
+				# add_ideas = MEX_bigger_landings
+				MEX_army_navy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_army_navy_naval_invasion_capacity = 5 tooltip = naval_invasion_capacity_tt }
 			}
 	}
 

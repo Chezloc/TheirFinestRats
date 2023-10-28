@@ -177,7 +177,13 @@ if = {
 	}
 	set_stability = 0.5
 	add_ideas = {
-		disarmed_nation
+		# disarmed_nation
+		free_trade
+		
+		stupid_ai
+		peace_training
+		neutrality_idea
+		neutrality_idea2 
 	}
 
 	set_power_balance = {
@@ -196,14 +202,14 @@ if = {
 	set_variable = { DEN_neglected_military_mobilization_speed = -0.2 }
 	set_variable = { DEN_neglected_military_surrender_limit = -0.2}
 	set_variable = { DEN_neglected_military_planning_speed = -0.1 }
-	add_dynamic_modifier = { modifier = DEN_neglected_military_dynamic_modifier }
+	# add_dynamic_modifier = { modifier = DEN_neglected_military_dynamic_modifier }
 
 	#ECONOMIC CRISIS
 	set_variable = { DEN_economic_crisis_monthly_population = -0.1 }
 	set_variable = { DEN_economic_crisis_stability_weekly = -0.001 }
 	set_variable = { DEN_economic_crisis_neutrality_drift = 0.02 }
 	set_variable = { DEN_economic_crisis_democratic_drift = -0.05 }
-	add_dynamic_modifier = { modifier = DEN_economic_crisis_dynamic_modifier }
+	# add_dynamic_modifier = { modifier = DEN_economic_crisis_dynamic_modifier }
 
 	#INDUSTRIAL CAPABILITIES
 	set_variable = { DEN_industrial_capability_resources_to_market = 0 }
@@ -217,7 +223,7 @@ if = {
 	set_variable = { DEN_industrial_capabilities_refit_speed = 0 }
 	set_variable = { DEN_industrial_capabilities_ship_repair = 0 }
 	set_variable = { DEN_industrial_capability_local_resources = 0 }
-	add_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier }
+	# add_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier }
 
 	#WAR PREPARATIONS
 	set_variable = { DEN_war_preparations_lack_of_resource_penalty = 0 }

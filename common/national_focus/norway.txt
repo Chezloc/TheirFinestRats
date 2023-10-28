@@ -13,10 +13,10 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		modifier = {
-			add = 10
-			NOR_AAT = yes 
-		}
+		# modifier = {
+		# 	add = 10
+		# 	NOR_AAT = yes 
+		# }
 	}
 	
 	default = no

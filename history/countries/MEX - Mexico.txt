@@ -98,20 +98,33 @@ set_stability = 0.25
 set_war_support = 0.15
 set_variable = { allies_poster_center_icon_frame = 1 }
 add_ideas = {
-		MEX_callistas
-		MEX_church_power_2
-		MEX_oil_concessions
-		MEX_politicised_army
-		MEX_cedillo_tension_2
-		PACIFIC_COMMONWEALTH_controls_original
-		father_check
-		peace_training
-		no_grinding
-		no_guarantees
-		PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
-		PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
-		PACIFIC_COMMONWEALTH_controls_capitals_1
+	# MEX_callistas
+	MEX_church_power_2
+	MEX_oil_concessions
+	# MEX_politicised_army
+	MEX_cedillo_tension_2
+	PACIFIC_COMMONWEALTH_controls_original
+	father_check
+	peace_training
+	no_grinding
+	no_guarantees
+	PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
+	PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3
+	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
+
+### DYNAMIC MODIFIERS ###
+add_dynamic_modifier = {
+	modifier = MEX_economy_dynamic_modifier
+}
+add_to_variable = { MEX_mexican_economy_production_speed_buildings_factor = -0.1 tooltip = production_speed_buildings_factor_tt }
+add_to_variable = { MEX_mexican_economy_political_power_factor = -0.2 tooltip = political_power_factor_tt }
+
+add_dynamic_modifier = {
+	modifier = MEX_army_navy_dynamic_modifier
+}
+add_to_variable = { MEX_mexican_army_navy_military_leader_cost_factor = 1.0 tooltip = military_leader_cost_factor_tt }
+add_to_variable = { MEX_mexican_army_navy_planning_speed = -0.2 tooltip = planning_speed_tt }
 
 # 1939.1.1 = {
 # 	add_political_power = 1198

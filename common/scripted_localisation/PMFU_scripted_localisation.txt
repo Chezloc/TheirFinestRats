@@ -1,4 +1,44 @@
 defined_text = { # global
+	name = BRA_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "BRA_modify_economy_brazilian_economy" 
+	}
+}
+
+defined_text = { # global
+	name = BRA_army_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "BRA_modify_army_navy_brazilian_armed_forces" 
+	}
+}
+
+defined_text = { # global
+	name = MEX_economy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "MEX_modify_economy_mexican_economy" 
+	}
+}
+
+defined_text = { # global
+	name = MEX_army_navy_dynam_mod_sl
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "MEX_modify_army_navy_mexican_armed_forces" 
+	}
+}
+
+defined_text = { # global
 	name = CAN_economy_dynam_mod_sl
 	text = {
 		trigger = {

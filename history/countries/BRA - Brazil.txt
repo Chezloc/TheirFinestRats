@@ -21,9 +21,9 @@ set_variable = {
 }
 set_variable = { allies_poster_center_icon_frame = 1 }
 add_ideas = {
-	BRA_great_depression_1
-	BRA_coffee_oligarchs
-	BRA_revolution_of_1930
+	# BRA_great_depression_1
+	# BRA_coffee_oligarchs
+	# BRA_revolution_of_1930
 	neutrality_idea2
 	PACIFIC_COMMONWEALTH_controls_original
 	father_check
@@ -35,6 +35,23 @@ add_ideas = {
 	PACIFIC_COMMONWEALTH_controls_capitals_1
 }
 
+### DYNAMIC MODIFIERS ###
+add_dynamic_modifier = {
+	modifier = BRA_economy_dynamic_modifier
+}
+# GREAT DEPRESSION
+add_to_variable = { BRA_brazilian_economy_consumer_goods_factor = 0.4 tooltip = consumer_goods_factor_tt }
+add_to_variable = { BRA_brazilian_economy_local_resources_factor = -0.25 tooltip = local_resources_factor_tt }
+add_to_variable = { BRA_brazilian_economy_industrial_capacity_factory = -0.2 tooltip = industrial_capacity_factory_tt }
+add_to_variable = { BRA_brazilian_economy_industrial_capacity_dockyard = -0.2 tooltip = industrial_capacity_dockyard_tt }
+# COFFEE OLIGARCHS
+add_to_variable = { BRA_brazilian_economy_stability_factor = -0.1 tooltip = stability_factor_tt }
+add_to_variable = { BRA_brazilian_economy_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+add_to_variable = { BRA_brazilian_economy_production_speed_buildings_factor = -0.1 tooltip = production_speed_buildings_factor_tt }
+# REVOLUTION OF 1930
+add_to_variable = { BRA_brazilian_economy_stability_factor = -0.15 tooltip = stability_factor_tt }
+add_to_variable = { BRA_brazilian_economy_war_support_factor = -0.15 tooltip = war_support_factor_tt }
+add_to_variable = { BRA_brazilian_economy_political_power_cost = 0.5 tooltip = political_power_cost_tt }
 # MP_garrison_division_standard = yes
 
 if = {

@@ -118,7 +118,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = BRA_revolution_of_1930
+			# remove_ideas = BRA_revolution_of_1930
+			BRA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_economy_political_power_cost = -0.5 tooltip = political_power_cost_tt }
+			add_to_variable = { BRA_brazilian_economy_stability_factor = 0.15 tooltip = stability_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_war_support_factor = 0.15 tooltip = war_support_factor_tt }
 		}
 	}
 	
@@ -143,10 +147,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BRA_great_depression_1
-				add_idea = BRA_great_depression_2
-			}
+			# swap_ideas = {
+			# 	remove_idea = BRA_great_depression_1
+			# 	add_idea = BRA_great_depression_2
+			# }
+			BRA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_economy_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_consumer_goods_factor = -0.2 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { BRA_brazilian_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 	
@@ -171,7 +180,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = BRA_great_depression_2
+			# remove_ideas = BRA_great_depression_2
+			BRA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_economy_local_resources_factor = 0.15 tooltip = local_resources_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_consumer_goods_factor = -0.2 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
+			add_to_variable = { BRA_brazilian_economy_industrial_capacity_dockyard = 0.1 tooltip = industrial_capacity_dockyard_tt }
 		}
 	}
 	
@@ -224,7 +238,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = deterrence
+			# add_ideas = deterrences
+			BRA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_economy_production_speed_arms_factory_factor = 0.2 tooltip = production_speed_arms_factory_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_production_speed_bunker_factor = 0.2 tooltip = production_speed_bunker_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_production_speed_coastal_bunker_factor = 0.2 tooltip = production_speed_coastal_bunker_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_production_speed_anti_air_building_factor = 0.2 tooltip = production_speed_anti_air_building_factor_tt }
 		}
 	}
 
@@ -433,7 +452,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_ideas = BRA_industrialization1
+			# add_ideas = BRA_industrialization1
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -449,6 +468,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			BRA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 		}
 	}
 	
@@ -467,10 +488,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BRA_coffee_oligarchs
-				add_idea = BRA_coffee_oligarchs_2
-			}
+			# swap_ideas = {
+			# 	remove_idea = BRA_coffee_oligarchs
+			# 	add_idea = BRA_coffee_oligarchs_2
+			# }
+			BRA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_economy_consumer_goods_factor = 0.15 tooltip = consumer_goods_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_stability_factor = 0.05 tooltip = stability_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
 		}
 	}
 	
@@ -509,10 +534,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BRA_coffee_oligarchs_2
-				add_idea = BRA_coffee_oligarchs_3
-			}
+			# swap_ideas = {
+			# 	remove_idea = BRA_coffee_oligarchs_2
+			# 	add_idea = BRA_coffee_oligarchs_3
+			# }
+			BRA_economy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_economy_stability_factor = 0.05 tooltip = stability_factor_tt }
+			add_to_variable = { BRA_brazilian_economy_production_speed_industrial_complex_factor = 0.20 tooltip = production_speed_industrial_complex_factor_tt }
 		}
 	}
 
@@ -1184,8 +1212,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = BRA_special_forces_divisions
-
+			# add_ideas = BRA_special_forces_divisions
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = BRA_army_navy_dynamic_modifier
+				}
+			}
 			add_tech_bonus = {
 				name = mar_bonus
 				bonus = 0.5
@@ -1193,7 +1225,8 @@ focus_tree = {
 				category = marine_tech
 				category = mountaineers_tech
 			}
-
+			BRA_army_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_army_navy_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 	
@@ -1489,7 +1522,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = BRA_pracinhas_idea
+			# add_ideas = BRA_pracinhas_idea
+			BRA_army_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_army_navy_experience_gain_army_unit_factor = 0.2 tooltip = experience_gain_army_unit_factor_tt }
+			add_to_variable = { BRA_brazilian_army_navy_training_time_army_factor = 0.20 tooltip = training_time_army_factor_tt }
+			add_to_variable = { BRA_brazilian_army_navy_army_org_factor = 0.05 tooltip = army_org_factor_tt }
+			add_to_variable = { BRA_brazilian_army_navy_heat_attrition_factor = -0.25 tooltip = heat_attrition_factor_tt }
+			add_to_variable = { BRA_brazilian_army_navy_army_morale_factor = 0.1 tooltip = army_morale_factor_tt }
+			add_to_variable = { BRA_brazilian_army_navy_minimum_training_level = 0.1 tooltip = minimum_training_level_tt }
+			add_to_variable = { BRA_brazilian_army_navy_acclimatization_hot_climate_gain_factor = 0.5 tooltip = acclimatization_hot_climate_gain_factor_tt }
 		}
 	}
 	
@@ -1509,9 +1550,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = BRA_bandeirantes_idea
+			# add_ideas = BRA_bandeirantes_idea
 			custom_effect_tooltip = RAJ_jungle_training_effect
 			hidden_effect = { set_technology = { jungle_warfare = 1 } }
+			BRA_army_navy_dynamic_modifier_tt = yes # tooltip
+			add_to_variable = { BRA_brazilian_army_navy_heat_attrition_factor = -0.5 tooltip = heat_attrition_factor_tt }
+			add_to_variable = { BRA_brazilian_army_navy_supply_consumption_factor = -0.2 tooltip = supply_consumption_factor_tt }
+			add_to_variable = { BRA_brazilian_army_navy_no_supply_grace = 24 tooltip = no_supply_grace_tt }
+			add_to_variable = { BRA_brazilian_army_navy_acclimatization_hot_climate_gain_factor = 1.0 tooltip = acclimatization_hot_climate_gain_factor_tt }
 		}
 	}
 

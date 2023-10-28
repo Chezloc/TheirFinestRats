@@ -109,6 +109,15 @@
   BRA_pracinhas_idea:0 "Pracinhas"
   BRA_bandeirantes_idea:0 "Bandeirantes"
 
+  ### DYNAMIC MODIFIERS ###
+  BRA_economy_dynamic_modifier:0 "[BRA_economy_dynam_mod_sl]"
+  BRA_modify_brazilian_economy_ns_intro:0 "Modify §Y$BRA_economy_dynamic_modifier$§! by"
+  BRA_modify_economy_brazilian_economy:0 "Brazilian Economy"
+
+  BRA_army_navy_dynamic_modifier:0 "[BRA_army_navy_dynam_mod_sl]"
+  BRA_modify_brazilian_army_navy_ns_intro:0 "Modify §Y$BRA_army_navy_dynamic_modifier$§! by"
+  BRA_modify_army_navy_brazilian_armed_forces:0 "Brazilian Armed Forces"
+
   #### CHARACTERS ####
   BRA_washington_luis_pereira:0 "Washington Luis"
   BRA_osvaldo_aranha:0 "Osvaldo Aranha"

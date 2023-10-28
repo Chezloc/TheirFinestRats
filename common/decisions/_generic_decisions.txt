@@ -1646,8 +1646,8 @@ operations = {
 			}
 			NOT = {
 				original_tag = JAP
-				original_tag = MAN
-				original_tag = SIA
+				# original_tag = MAN
+				# original_tag = SIA
 				original_tag = CHI
 			}
 		}
