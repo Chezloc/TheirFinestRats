@@ -9,22 +9,22 @@
  #################### 
 
 
-TUR_ticaret_organization = {
-	include = generic_infantry_tank_organization
-	icon = GFX_idea_tur_koc_ticaret_as
-	allowed = {	
-		tag = TUR
-		has_dlc = "Battle for the Bosporus"
-	}
-}
-TUR_tulomsas_organization = {
-	include = generic_mobile_tank_organization
-	icon = GFX_idea_tur_tulomsas
-	allowed = {	
-		tag = TUR
-		has_dlc = "Battle for the Bosporus"
-	}
-}
+# TUR_ticaret_organization = {
+# 	include = generic_infantry_tank_organization
+# 	icon = GFX_idea_tur_koc_ticaret_as
+# 	allowed = {	
+# 		tag = TUR
+# 		has_dlc = "Battle for the Bosporus"
+# 	}
+# }
+# TUR_tulomsas_organization = {
+# 	include = generic_mobile_tank_organization
+# 	icon = GFX_idea_tur_tulomsas
+# 	allowed = {	
+# 		tag = TUR
+# 		has_dlc = "Battle for the Bosporus"
+# 	}
+# }
 
 #####################
 

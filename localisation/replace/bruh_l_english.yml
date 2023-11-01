@@ -253,6 +253,7 @@
 #  tot_economic_mobilisation:0 "Total Mobilization"
 
  ### MIO ###
+ mio_cat_eq_all_tank_variants:0 "All Tank Variants"
  generic_mio_initial_trait_multi_role_aircraft_designer:0 "Heavy Fighter Designer"
  generic_mio_trait_large_scale_production:0 "Large Scale Production"
  generic_mio_trait_liquid_cooled_engines:0 "Accelerated Research"
@@ -269,6 +270,13 @@
  generic_mio_trait_low_drag_wings:0 "Low Drag Wings"
  mio_header_surface_raiding:0 "Surface Raiding"
  mio_header_submarine_raiding:0 "Submarine Raiding"
+ generic_mio_trait_defense_focus:0 "Defensive Focus"
+ generic_mio_initial_trait_axis_medium_tank_designer:0 "Axis Medium Tank Designer"
+ generic_mio_initial_trait_comintern_medium_tank_designer:0 "Comintern Medium Tank Designer"
+ generic_mio_initial_trait_commonwealth_medium_tank_designer:0 "Commonwealth Medium Tank Designer"
+ generic_mio_initial_trait_pmfu_light_tank_designer:0 "Light Tank Designer"
+ generic_mio_initial_trait_pmfu_heavy_tank_designer:0 "Heavy Tank Designer"
+ generic_mio_initial_trait_pmfu_tank_variant_designer:0 "Tank Variant Designer"
 
  academy_weekly_manpower_tooltip:0 "£manpower_texticon  Weekly Manpower §G+§![?scaled_weekly_manpower|0+]"
  academy_weekly_training_speed_tooltip_gain:0 "£training_speed_texticon  Weekly Training time §Y-0.5%§!"

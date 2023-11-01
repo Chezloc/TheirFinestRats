@@ -1044,7 +1044,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = italian_designer_tt
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = italian_mio_tt
+			}
+			else = {
+				custom_effect_tooltip = italian_designer_tt
+			}
 		}
 	}
 
@@ -2158,7 +2166,12 @@ focus_tree = {
 		id = SPA_the_tangiers_enclave
 		available = {
 			has_global_flag = scw_over
-			has_full_control_of_state = 290
+			# OR = {
+			# 	has_full_control_of_state = 290
+			# 	VIC = {
+			# 		has_full_control_of_state = 290
+			# 	}
+			# }
 		}
 		bypass = {
 		}

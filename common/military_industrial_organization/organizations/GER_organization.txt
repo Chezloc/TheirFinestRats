@@ -10,140 +10,185 @@
 
 
 GER_porsche_organization = {
-	include = generic_heavy_tank_organization
+	include = generic_pmfu_heavy_tank_organization
 	icon = GFX_idea_porsche
 	
 	allowed = {	
 		OR = {
-			tag = GER 
-			AND = {
-				tag = MEX 
-				has_dlc = "Man the Guns"
-			}
-			NOR_AAT = yes
+			original_tag = GER
+			original_tag = FIN
+			original_tag = ITA
+			original_tag = HUN
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = SPR
+			original_tag = VIC
+			original_tag = YUG
+
+			original_tag = JAP
+			original_tag = MAN
+			original_tag = SIA
 		}
 	}
 
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
+		# IF = {
+		# 	limit = {
+		# 		FROM = { NOT = { original_tag = GER } }
+		# 	}
+		# 	FROM = { NOT = { has_war_with = GER } }
+		# }
 
-		IF = {
-			limit = {
-				FROM = { tag = MEX }
-			}
-			FROM = { is_in_faction_with = GER }
-		}
-		ELSE_IF = {
-			limit = {
-				FROM = { tag = NOR }
-			}
-			FROM = { has_completed_focus = NOR_invite_german_engineers }
-		}
+		# IF = {
+		# 	limit = {
+		# 		FROM = { tag = MEX }
+		# 	}
+		# 	FROM = { is_in_faction_with = GER }
+		# }
+		# ELSE_IF = {
+		# 	limit = {
+		# 		FROM = { tag = NOR }
+		# 	}
+		# 	FROM = { has_completed_focus = NOR_invite_german_engineers }
+		# }
 	}
 }
 
-GER_henschel_organization = {
-	include = generic_mobile_tank_organization
-	icon = GFX_idea_henschel
+GER_alkett_organization = {
+	include = generic_pmfu_light_tank_organization
+	name = Alkett
+	icon = GFX_idea_Alkett
 	
 	allowed = {	
 		OR = {
-			tag = GER 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
+			original_tag = GER
+			original_tag = FIN
+			original_tag = ITA
+			original_tag = HUN
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = SPR
+			original_tag = VIC
+			original_tag = YUG
+
+			original_tag = JAP
+			original_tag = MAN
+			original_tag = SIA
 		}
 	}
 	
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
+		# IF = {
+		# 	limit = { FROM = { original_tag = ETH } }
+		# 	FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+		# }
 	}
 
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
+		# IF = {
+		# 	limit = {
+		# 		FROM = { NOT = { original_tag = GER } }
+		# 	}
+		# 	FROM = { NOT = { has_war_with = GER } }
+		# }
 
-		IF = {
-			limit = { 
-				OR = { 
-					FROM = { original_tag = BUL }
-					FROM = { original_tag = ETH } 
-				} 
-			}
-			# custom_trigger_tooltip = {
-			# 	tooltip = has_invited_mio_tt
-			# 	FROM = {
-			# 		has_country_flag = has_invited_henschel_mio_flag
-			# 	}
-			# }
+		# IF = {
+		# 	limit = { 
+		# 		OR = { 
+		# 			FROM = { original_tag = BUL }
+		# 			FROM = { original_tag = ETH } 
+		# 		} 
+		# 	}
+		# 	# custom_trigger_tooltip = {
+		# 	# 	tooltip = has_invited_mio_tt
+		# 	# 	FROM = {
+		# 	# 		has_country_flag = has_invited_henschel_mio_flag
+		# 	# 	}
+		# 	# }
 			
-		}
-		IF = {
-			limit = { FROM = { original_tag = BUL } } 
-			FROM = { 
-				OR = {
-					is_subject = no
-					is_subject_of = GER
-				}
-				has_completed_focus = BUL_approach_germany
-				#is_in_faction_with = GER
-				#NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
+		# }
+		# IF = {
+		# 	limit = { FROM = { original_tag = BUL } } 
+		# 	FROM = { 
+		# 		OR = {
+		# 			is_subject = no
+		# 			is_subject_of = GER
+		# 		}
+		# 		has_completed_focus = BUL_approach_germany
+		# 		#is_in_faction_with = GER
+		# 		#NOT = { has_completed_focus = BUL_nationalization }
+		# 	}
+		# }
 	}
 }
 
-GER_man_organization = {
-	include = generic_medium_tank_organization
-	icon = GFX_idea_GER_MAN
+GER_nibelungenwerke_organization = {
+	include = axis_medium_tank_organization
+	name = nibelungenwerke
+	icon = GFX_idea_nibelungenwerke #GFX_idea_GER_MAN
 	
 	allowed = {	
 		OR = {
-			tag = GER 
-			AND = {
-				tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
+			original_tag = GER
+			original_tag = FIN
+			original_tag = ITA
+			original_tag = HUN
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = SPR
+			original_tag = VIC
+			original_tag = YUG
+
+			original_tag = JAP
+			original_tag = MAN
+			original_tag = SIA
 		}
 	}
 	
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
+		# IF = {
+		# 	limit = {
+		# 		FROM = { NOT = { original_tag = GER } }
+		# 	}
+		# 	FROM = { NOT = { has_war_with = GER } }
+		# }
 	}
 }
 
-#Benz 
 GER_daimler_benz_organization = {
-	include = generic_tank_organization
-	icon = GFX_idea_generic_tank_manufacturer_2 # TODO change
+	include = generic_pmfu_variant_tank_organization
+	icon = GFX_idea_daimler_Benz_AG
+	name = daimler_Benz_AG
 	
 	allowed = {	
-		tag = GER 
+		OR = {
+			original_tag = GER
+			original_tag = FIN
+			original_tag = ITA
+			original_tag = HUN
+			original_tag = ROM
+			original_tag = BUL
+			original_tag = SPR
+			original_tag = VIC
+			original_tag = YUG
+
+			original_tag = JAP
+			original_tag = MAN
+			original_tag = SIA
+		}
+	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		# IF = {
+		# 	limit = {
+		# 		FROM = { NOT = { original_tag = GER } }
+		# 	}
+		# 	FROM = { NOT = { has_war_with = GER } }
+		# }
 	}
 
 	tree_header_text = {

@@ -625,7 +625,7 @@ equipments = {
 			# tank_nsb_Heavy_engine_2_upgrade
 		}
 		maximum_speed = 4.0
-		build_cost_ic = 40
+		build_cost_ic = 36 #40
 		reliability = 0.8
 		armor_value = 80
 		defense = 10

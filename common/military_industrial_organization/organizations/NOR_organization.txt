@@ -8,36 +8,36 @@
 
  #################### 
 
-NOR_thunes_mekaniske_verksted_organization = {
-    include = generic_infantry_tank_organization
-    icon = GFX_idea_NOR_thunes_mekaniske_vaerksted
-    allowed = { 
-        tag = NOR
-        has_dlc = "Arms Against Tyranny"
-    }
+# NOR_thunes_mekaniske_verksted_organization = {
+#     include = generic_infantry_tank_organization
+#     icon = GFX_idea_NOR_thunes_mekaniske_vaerksted
+#     allowed = { 
+#         tag = NOR
+#         has_dlc = "Arms Against Tyranny"
+#     }
 
-    equipment_type = {  
-        armor
-        train_equipment
-    }
+#     equipment_type = {  
+#         armor
+#         train_equipment
+#     }
 
-    research_categories = { 
-        armor
-        train_tech
-    }
+#     research_categories = { 
+#         armor
+#         train_tech
+#     }
 
-    initial_trait = {
-        name = NOR_mio_initial_trait_mechanical_workshop
+#     initial_trait = {
+#         name = NOR_mio_initial_trait_mechanical_workshop
         
-        limit_to_equipment_type = { 
-            train_equipment
-        }
-        equipment_bonus = {
-            build_cost_ic = -0.07
-            armor_value = 0.02
-        }
-    }
-}
+#         limit_to_equipment_type = { 
+#             train_equipment
+#         }
+#         equipment_bonus = {
+#             build_cost_ic = -0.07
+#             armor_value = 0.02
+#         }
+#     }
+# }
 
 ### SOV_morozov_design_bureau_organization -> see SOV_organizations.txt 
 

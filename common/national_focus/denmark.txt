@@ -9785,11 +9785,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			mio:generic_tank_organization = {
-				add_mio_size = 1
-				add_mio_funds_gain_factor = 0.35
-				add_mio_research_bonus = 0.05
-			}
+			# mio:generic_tank_organization = {
+			# 	add_mio_size = 1
+			# 	add_mio_funds_gain_factor = 0.35
+			# 	add_mio_research_bonus = 0.05
+			# }
 
 
 			DEN_improve_haeren_NS = yes

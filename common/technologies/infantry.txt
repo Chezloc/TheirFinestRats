@@ -2214,6 +2214,33 @@ technologies = {
 		start_year = 1942
 		
 	}	
+
+	rats_of_tobruk = {
+
+		infantry = {
+			maximum_speed = 0.15
+		}
+		marine = {
+			maximum_speed = 0.15
+		}
+		mountaineers = {
+			maximum_speed = 0.15
+		}
+		paratrooper = {
+			maximum_speed = 0.15
+		}
+		marine_commando = {
+			maximum_speed = 0.15
+		}
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+		
+	}	
 	
 	arditi_tech = {
 		

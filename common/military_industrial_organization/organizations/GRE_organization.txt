@@ -9,17 +9,17 @@
  #################### 
 
 
-GRE_biamax_organization = {
-	include = generic_mobile_tank_organization
-	icon = GFX_idea_gre_biamax
-	allowed = {	
-		tag = GRE
-		has_dlc = "Battle for the Bosporus"
-	}
-	available = {
-		owner = { has_completed_focus = GRE_crack_down_on_foreign_monopolies }
-	}
-}
+# GRE_biamax_organization = {
+# 	include = generic_mobile_tank_organization
+# 	icon = GFX_idea_gre_biamax
+# 	allowed = {	
+# 		tag = GRE
+# 		has_dlc = "Battle for the Bosporus"
+# 	}
+# 	available = {
+# 		owner = { has_completed_focus = GRE_crack_down_on_foreign_monopolies }
+# 	}
+# }
 ### Foreign Subsidiaries
 
 ### ITA_fiat_organization - Greek Fiat -> see ITA_organizations.txt 

@@ -817,6 +817,7 @@ political_actions = {
 				transfer_state = 891
 				transfer_state = 896
 				transfer_state = 897
+				transfer_state = 796
 			}
 			RAJ = {
 				transfer_state = 321

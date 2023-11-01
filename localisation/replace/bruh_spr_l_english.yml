@@ -32,6 +32,7 @@
   SPA_treaty_of_lisbon:0 "Treaty of Lisbon"
   SPA_save_the_alcazar_mission_tt:0 "§YWhich gives £war_support_modifiericons_texticon 20%  War Support, £stability_texticon  20% Stability, £political_power_texticon  100 Political Power and completes the focus "Caudillo of Spain"§!"
   italian_designer_tt:0 "§YGives us access to the Italian naval designers§!"
+  italian_mio_tt:0 "§YGives us access to the Italian naval MIOs!"
   SPR_iberian_wall_tt:0 "Place level 3 §YCoastal Forts§! on the Spanish coast and place level 4 §YCoastal Forts§! on the ports on the Spanish coast"
 
   admiral_alfonso_jofre_tenorio_tt:0 "§OAlfonso Jofré Tenorio§! §Ybecomes a skill 4 Admiral with 7 attack, 6 defense, 1 maneuvering, 1 coordination, and Superior Tactician, Bold, Spotter and Battleship Adherent§!"

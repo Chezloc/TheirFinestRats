@@ -2752,6 +2752,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = AST_rats_of_tobruk_idea
+			custom_effect_tooltip = "Gives Infantry, Marines, Assault Troops, Mountaineers and Marine Commandos 15% speed"
+			set_technology = {
+				rats_of_tobruk = 1 popup = no
+			}
 		}
 	}
 

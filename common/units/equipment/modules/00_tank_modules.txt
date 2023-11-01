@@ -98,7 +98,7 @@ equipment_modules = {
 			breakthrough = 4
 		}
 		multiply_stats = {
-			maximum_speed = -0.1
+			# maximum_speed = -0.1
 		}
 		
 		multiply_stats = {
@@ -299,7 +299,7 @@ equipment_modules = {
 			hard_attack = 21 #42
 			ap_attack = 50
 			build_cost_ic = 6
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 			reliability = -0.1
 		}
 		
@@ -321,7 +321,7 @@ equipment_modules = {
 			hard_attack = 23 #46
 			ap_attack = 65
 			build_cost_ic = 7
-			maximum_speed = -0.2
+			# maximum_speed = -0.2
 			reliability = -0.15
 		}
 		
@@ -344,7 +344,7 @@ equipment_modules = {
 			hard_attack = 25 #50
 			ap_attack = 80
 			build_cost_ic = 8
-			maximum_speed = -0.2
+			# maximum_speed = -0.2
 			reliability = -0.3
 		}
 		
@@ -438,7 +438,7 @@ equipment_modules = {
 			hard_attack = 1
 			ap_attack = 5
 			build_cost_ic = 4.5
-			maximum_speed = -0.2
+			# maximum_speed = -0.2
 			reliability = -0.3
 			breakthrough = 6
 		}
@@ -463,7 +463,7 @@ equipment_modules = {
 		    defense = 1
 			ap_attack = 12
 			build_cost_ic = 4
-			maximum_speed = -0.2
+			# maximum_speed = -0.2
 			reliability = -0.25
 		}
 		
@@ -487,7 +487,7 @@ equipment_modules = {
 		    defense = 1.5
 			ap_attack = 25
 			build_cost_ic = 5
-			maximum_speed = -0.225
+			# maximum_speed = -0.225
 			reliability = -0.35
 		}
 		
@@ -511,7 +511,7 @@ equipment_modules = {
 		    defense = 1.5
 			ap_attack = 38
 			build_cost_ic = 6
-			maximum_speed = -0.25
+			# maximum_speed = -0.25
 			reliability = -0.55
 		}
 		
@@ -1507,7 +1507,7 @@ equipment_modules = {
 			armor_value = -0.25
 			breakthrough = -0.2
 			defense = -0.4
-			maximum_speed = 0.05
+			# maximum_speed = 0.05
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1535,7 +1535,7 @@ equipment_modules = {
 			armor_value = -0.25
 			breakthrough = -0.2
 			defense = -0.3
-			maximum_speed = 0.05
+			# maximum_speed = 0.05
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1697,7 +1697,7 @@ equipment_modules = {
 			armor_value = -0.5
 			breakthrough = -0.4
 			defense = -0.6
-			maximum_speed = 0.1
+			# maximum_speed = 0.1
 			air_attack = -0.2
 		}
 		dismantle_cost_ic = 1
@@ -1881,7 +1881,7 @@ equipment_modules = {
 			armor_value = -0.25
 			breakthrough = -0.2
 			defense = -0.3
-			maximum_speed = 0.05
+			# maximum_speed = 0.05
 		}
 		build_cost_resources = {
 			steel = 5
@@ -1917,7 +1917,7 @@ equipment_modules = {
 			armor_value = -0.25
 			breakthrough = -0.2
 			defense = -0.3
-			maximum_speed = 0.05
+			# maximum_speed = 0.05
 		}
 		build_cost_resources = {
 			steel = 5
@@ -2048,7 +2048,7 @@ equipment_modules = {
 			armor_value = -0.5
 			breakthrough = -0.4
 			defense = -0.6
-			maximum_speed = 0.1
+			# maximum_speed = 0.1
 			air_attack = -0.2
 		}
 		dismantle_cost_ic = 3
@@ -2085,7 +2085,7 @@ equipment_modules = {
 			armor_value = -0.5
 			breakthrough = -0.4
 			defense = -0.6
-			maximum_speed = 0.1
+			# maximum_speed = 0.1
 			air_attack = -0.2
 		}
 		dismantle_cost_ic = 3
@@ -2177,7 +2177,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			maximum_speed = -0.05
+			# maximum_speed = -0.05
 		}
 		build_cost_resources = {
 			steel = 15
@@ -2273,7 +2273,7 @@ equipment_modules = {
 			armor_value = -0.5
 			breakthrough = -0.4
 			defense = -0.6
-			maximum_speed = 0.1
+			# maximum_speed = 0.1
 			air_attack = -0.2
 		}
 		dismantle_cost_ic = 5
@@ -2713,7 +2713,7 @@ equipment_modules = {
 			build_cost_ic = 8
 		}
 		multiply_stats = {
-			maximum_speed = -0.075
+			# maximum_speed = -0.075
 		}
 		
 		build_cost_resources = {
@@ -2739,7 +2739,7 @@ equipment_modules = {
 			build_cost_ic = 9
 		}
 		multiply_stats = {
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 		}
 		
 		build_cost_resources = {
@@ -2809,7 +2809,7 @@ equipment_modules = {
 			build_cost_ic = 5
 		}
 		multiply_stats = {
-			maximum_speed = -0.05
+			# maximum_speed = -0.05
 		}
 		
 		build_cost_resources = {
@@ -2834,7 +2834,7 @@ equipment_modules = {
 			build_cost_ic = 6
 		}
 		multiply_stats = {
-			maximum_speed = -0.10
+			# maximum_speed = -0.10
 		}
 		
 		build_cost_resources = {
@@ -2859,7 +2859,7 @@ equipment_modules = {
 			build_cost_ic = 7
 		}
 		multiply_stats = {
-			maximum_speed = -0.125
+			# maximum_speed = -0.125
 		}
 		
 		build_cost_resources = {
@@ -2905,7 +2905,7 @@ equipment_modules = {
 			build_cost_ic = 8
 		}
 		multiply_stats = {
-			maximum_speed = -0.1
+			# maximum_speed = -0.1
 		}
 		
 		build_cost_resources = {
@@ -2930,7 +2930,7 @@ equipment_modules = {
 			build_cost_ic = 10
 		}
 		multiply_stats = {
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 		}
 		
 		build_cost_resources = {
@@ -3112,7 +3112,7 @@ equipment_modules = {
 			build_cost_ic = 7
 		}
 		multiply_stats = { 
-			maximum_speed = -0.10
+			# maximum_speed = -0.10
 			breakthrough = -0.10
 		 }
 		
@@ -3138,7 +3138,7 @@ equipment_modules = {
 			build_cost_ic = 8
 		}
 		multiply_stats = { 
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 			breakthrough = -0.10
 		 }
 		
@@ -3210,7 +3210,7 @@ equipment_modules = {
 			build_cost_ic = 8
 		}
 		multiply_stats = { 
-			maximum_speed = -0.10
+			# maximum_speed = -0.10
 			breakthrough = -0.10
 		}
 		
@@ -3236,7 +3236,7 @@ equipment_modules = {
 			build_cost_ic = 9
 		}
 		multiply_stats = { 
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 			breakthrough = -0.10
 		}
 		
@@ -3314,7 +3314,7 @@ equipment_modules = {
 			build_cost_ic = 10
 		}
 		multiply_stats = {
-			maximum_speed = -0.10
+			# maximum_speed = -0.10
 		}
 		
 		build_cost_resources = {
@@ -3341,7 +3341,7 @@ equipment_modules = {
 			build_cost_ic = 11
 		}
 		multiply_stats = {
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 		}
 		
 		build_cost_resources = {
@@ -3438,7 +3438,7 @@ equipment_modules = {
 			build_cost_ic = 8
 		}
 		multiply_stats = {
-			maximum_speed = -0.075
+			# maximum_speed = -0.075
 		}
 		
 		build_cost_resources = {
@@ -3463,7 +3463,7 @@ equipment_modules = {
 			build_cost_ic = 9
 		}
 		multiply_stats = {
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 		}
 		
 		build_cost_resources = {
@@ -3514,7 +3514,7 @@ equipment_modules = {
 			build_cost_ic = 14
 		}
 		multiply_stats = {
-			maximum_speed = -0.25
+			# maximum_speed = -0.25
 			breakthrough = -0.10
 		}
 		build_cost_resources = {
@@ -3540,7 +3540,7 @@ equipment_modules = {
 			build_cost_ic = 16
 		}
 		multiply_stats = {
-			maximum_speed = -0.25
+			# maximum_speed = -0.25
 			breakthrough = -0.10
 		}
 		build_cost_resources = {
@@ -3592,7 +3592,7 @@ equipment_modules = {
 			build_cost_ic = 15
 		}
 		multiply_stats = {
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 			breakthrough = -0.10
 		}
 		build_cost_resources = {
@@ -3620,7 +3620,7 @@ equipment_modules = {
 			build_cost_ic = 18
 		}
 		multiply_stats = {
-			maximum_speed = -0.25
+			# maximum_speed = -0.25
 			breakthrough = -0.10
 		}
 		build_cost_resources = {
@@ -3648,7 +3648,7 @@ equipment_modules = {
 			build_cost_ic = 21
 		}
 		multiply_stats = {
-			maximum_speed = -0.3
+			# maximum_speed = -0.3
 			breakthrough = -0.10
 		}
 		build_cost_resources = {
@@ -3674,7 +3674,7 @@ equipment_modules = {
 			build_cost_ic = 14
 		}
 		multiply_stats = {
-			maximum_speed = -0.075
+			# maximum_speed = -0.075
 		}
 		build_cost_resources = {
 			steel = 10
@@ -3699,7 +3699,7 @@ equipment_modules = {
 			build_cost_ic = 18
 		}
 		multiply_stats = {
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 		}
 		build_cost_resources = {
 			steel = 15
@@ -3724,7 +3724,7 @@ equipment_modules = {
 			build_cost_ic = 22
 		}
 		multiply_stats = {
-			maximum_speed = -0.175
+			# maximum_speed = -0.175
 		}
 		build_cost_resources = {
 			steel = 20
@@ -3772,7 +3772,7 @@ equipment_modules = {
 			build_cost_ic = 14
 		}
 		multiply_stats = {
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 			breakthrough = -0.10
 		}
 		build_cost_resources = {
@@ -3799,7 +3799,7 @@ equipment_modules = {
 			build_cost_ic = 16
 		}
 		multiply_stats = {
-			maximum_speed = -0.175
+			# maximum_speed = -0.175
 			breakthrough = -0.10
 		}
 		build_cost_resources = {
@@ -3846,7 +3846,7 @@ equipment_modules = {
 			build_cost_ic = 14
 		}
 		multiply_stats = {
-			maximum_speed = -0.15
+			# maximum_speed = -0.15
 			breakthrough = -0.10
 		}
 		build_cost_resources = {
@@ -3871,7 +3871,7 @@ equipment_modules = {
 			build_cost_ic = 4
 		}
 		multiply_stats = {
-			maximum_speed = -0.10
+			# maximum_speed = -0.10
 			breakthrough = -0.10
 		}
 		build_cost_resources = {
@@ -3892,7 +3892,7 @@ equipment_modules = {
 			build_cost_ic = 20
 		}
 		multiply_stats = {
-			maximum_speed = -0.25
+			# maximum_speed = -0.25
 		}
 		build_cost_resources = {
 			steel = 15
@@ -4008,7 +4008,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			maximum_speed = -0.1
+			# maximum_speed = -0.1
 		}
 	}
 
@@ -4024,7 +4024,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			maximum_speed = -0.1
+			# maximum_speed = -0.1
 		}
 	}
 

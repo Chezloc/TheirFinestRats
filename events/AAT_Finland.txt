@@ -5308,22 +5308,23 @@ country_event = {
 	picture = GFX_report_event_FIN_camouflaged_white_death
 
 	trigger = {
-		tag = FIN
-		FIN = {
-			NOT = {
-				has_government = communism
-			}
-		}
+		always = no
+		# tag = FIN
+		# FIN = {
+		# 	NOT = {
+		# 		has_government = communism
+		# 	}
+		# }
 
-		has_defensive_war = yes
-		has_civil_war = no
+		# has_defensive_war = yes
+		# has_civil_war = no
 		
-		is_subject = no
+		# is_subject = no
 
-		any_country = {
-			has_war_with = FIN
-			has_variable = FIN_white_death_target_country
-		}
+		# any_country = {
+		# 	has_war_with = FIN
+		# 	has_variable = FIN_white_death_target_country
+		# }
 		
 	}
 

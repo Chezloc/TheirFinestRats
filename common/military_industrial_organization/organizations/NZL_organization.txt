@@ -9,24 +9,24 @@
  #################### 
 
 
-NZL_nz_railways_organization = {
-	include = generic_mobile_tank_organization
-	name = NZL_nz_railways_organization
-	icon = GFX_idea_NZL_nz_railways
-	allowed = {
-		original_TAG = NZL
-		has_dlc = "Together for Victory"
-	}
-}
-NZL_christchurch_workshops_organization = {
-	include = generic_heavy_tank_organization
-	name = NZL_christchurch_workshops_organization
-	icon = GFX_idea_NZL_christchurch_workshops
-	allowed = {
-		original_TAG = NZL
-		has_dlc = "Together for Victory"
-	}
-}
+# NZL_nz_railways_organization = {
+# 	include = generic_mobile_tank_organization
+# 	name = NZL_nz_railways_organization
+# 	icon = GFX_idea_NZL_nz_railways
+# 	allowed = {
+# 		original_TAG = NZL
+# 		has_dlc = "Together for Victory"
+# 	}
+# }
+# NZL_christchurch_workshops_organization = {
+# 	include = generic_heavy_tank_organization
+# 	name = NZL_christchurch_workshops_organization
+# 	icon = GFX_idea_NZL_christchurch_workshops
+# 	allowed = {
+# 		original_TAG = NZL
+# 		has_dlc = "Together for Victory"
+# 	}
+# }
 
 #####################
 

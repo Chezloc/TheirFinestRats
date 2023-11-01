@@ -1,5 +1,11 @@
 spriteTypes = {	
 
+	### MIO ###
+	spriteType = {
+		name = "GFX_mio_cat_eq_all_tank_variants"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_tank_general_at.dds"
+	}	
+
 	### UNITS ###
 	SpriteType = { name = "GFX_paratroopers_medium" texturefile = "gfx/interface/technologies/infantry/r56_tech_shocktroops_01.dds" }
 	SpriteType = { name = "GFX_paratroopers2_medium" texturefile = "gfx/interface/technologies/infantry/r56_tech_shocktroops_02.dds" }

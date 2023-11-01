@@ -516,6 +516,7 @@ news_event = {
 				}
 				remove_ideas = SPR_death_before_surrender
 				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
+				add_ideas = peace_training
 				if = {
 					limit = {
 						has_idea = SPR_anarchist_public_transport

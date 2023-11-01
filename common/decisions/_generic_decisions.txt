@@ -2188,10 +2188,12 @@ operations = {
 			has_dlc = "Waking the Tiger"
 		}
 		available = {
-			has_full_control_of_state = 844
+			has_full_control_of_state = 446
+			has_full_control_of_state = 947
 			OR = {
 				NOT = {
-					owns_state = 844
+					owns_state = 446
+					owns_state = 947
 				}
 				any_enemy_country = {
 					OR = {
@@ -2214,7 +2216,7 @@ operations = {
 			any_state = {
 				is_controlled_by = ROOT
 				OR = {
-					region = 28
+					region = 232
 					region = 128
 				}
 			}
@@ -2237,14 +2239,16 @@ operations = {
 						NOT = {
 							# owns_state = 446
 							# owns_state = 453
-							owns_state = 844
+							owns_state = 446
+							owns_state = 947
 						}
 					}
 					random_country = {
 						limit = {
 							# owns_state = 446
 							# owns_state = 453
-							owns_state = 844
+							owns_state = 446
+							owns_state = 947
 						}
 						country_event = { id = generic.12 days = 1 }
 					}
@@ -2256,7 +2260,8 @@ operations = {
 			if = {
 				limit = {
 					OR = {
-						has_full_control_of_state = 844
+						has_full_control_of_state = 446
+						has_full_control_of_state = 947
 						# has_full_control_of_state = 446
 						# has_full_control_of_state = 453
 					}
@@ -2269,7 +2274,8 @@ operations = {
 				if = {
 					limit = {
 						ENG = {
-							owns_state = 844
+							has_full_control_of_state = 446
+							has_full_control_of_state = 947
 							# owns_state = 446
 							# owns_state = 453
 						}
@@ -2433,7 +2439,8 @@ special_projects = {
 		icon = GFX_decision_generic_special_project
 
 		available = {
-			has_full_control_of_state = 844
+			has_full_control_of_state = 446
+			has_full_control_of_state = 947
 			# has_full_control_of_state = 446
 			# has_full_control_of_state = 453
 			num_of_civilian_factories > 15
@@ -2456,7 +2463,8 @@ special_projects = {
 		remove_effect = {
 			if = {
 				limit = {
-					has_full_control_of_state = 844
+					has_full_control_of_state = 446
+					has_full_control_of_state = 947
 					# has_full_control_of_state = 446
 					# has_full_control_of_state = 453
 				}

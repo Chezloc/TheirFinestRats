@@ -371,9 +371,9 @@ shared_focus = {
 			limit = {
 				has_dlc = "Arms Against Tyranny"
 			}
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = COM_gloucestershire_diesel_factory_organization
-			mio:COM_gloucestershire_diesel_factory_organization = {
+			# custom_effect_tooltip = available_mio_tt
+			# show_mio_tooltip = COM_gloucestershire_diesel_factory_organization
+			mio:ENG_COM_gloucestershire_diesel_factory_organization = {
 				add_mio_size = 2
 			}
 		}
@@ -409,8 +409,8 @@ shared_focus = {
 				has_dlc = "Arms Against Tyranny"
 			}
 			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = COM_vauxhall_organization
-			mio:COM_vauxhall_organization = {
+			# show_mio_tooltip = COM_vauxhall_organization
+			mio:ENG_vauxhall_organization = {
 				add_mio_size = 2
 			}
 		}

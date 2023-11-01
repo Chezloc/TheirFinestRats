@@ -5000,7 +5000,7 @@ focus_tree = {
 					limit = {
 						OR = {
 							is_military_industrial_organization = FIN_crichton_vulcan_organization
-							is_military_industrial_organization = FIN_valtion_panssaritehdas_organization
+							# is_military_industrial_organization = FIN_valtion_panssaritehdas_organization
 							is_military_industrial_organization = FIN_valtion_lentokonetehdas_organization
 							is_military_industrial_organization = FIN_valtion_kivaaritehdas_organization
 							is_military_industrial_organization = FIN_valtion_tykkitehdas_organization
@@ -6298,7 +6298,7 @@ focus_tree = {
 					limit = {
 						OR = {
 							is_military_industrial_organization = FIN_crichton_vulcan_organization
-							is_military_industrial_organization = FIN_valtion_panssaritehdas_organization
+							# is_military_industrial_organization = FIN_valtion_panssaritehdas_organization
 							is_military_industrial_organization = FIN_valtion_lentokonetehdas_organization
 							is_military_industrial_organization = FIN_sisu_auto_organization
 						}
@@ -6499,7 +6499,7 @@ focus_tree = {
 					limit = {
 						OR = {
 							is_military_industrial_organization = FIN_crichton_vulcan_organization
-							is_military_industrial_organization = FIN_valtion_panssaritehdas_organization
+							# is_military_industrial_organization = FIN_valtion_panssaritehdas_organization
 							is_military_industrial_organization = FIN_valtion_lentokonetehdas_organization
 							is_military_industrial_organization = FIN_valtion_kivaaritehdas_organization
 							is_military_industrial_organization = FIN_valtion_tykkitehdas_organization
@@ -7834,7 +7834,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_INTERNATIONAL_TRADE }
 
 		completion_reward = {
-			mio:FIN_valtion_panssaritehdas_organization = {
+			mio:GER_nibelungenwerke_organization = {
 				add_mio_size = 1
 				add_mio_design_team_assign_cost = -0.2
 				# add_mio_design_team_change_cost = -0.2
@@ -11154,7 +11154,7 @@ focus_tree = {
 				every_military_industrial_organization = {
 					limit = {
 						OR = {
-							is_military_industrial_organization = FIN_valtion_panssaritehdas_organization
+							# is_military_industrial_organization = FIN_valtion_panssaritehdas_organization
 							is_military_industrial_organization = FIN_valtion_kivaaritehdas_organization
 							is_military_industrial_organization = FIN_valtion_tykkitehdas_organization
 							is_military_industrial_organization = FIN_sisu_auto_organization
@@ -11861,10 +11861,10 @@ focus_tree = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				mio:FIN_valtion_panssaritehdas_organization = {
-					add_mio_size = 1
-					add_mio_funds_gain_factor = 0.35
-				}
+				# mio:FIN_valtion_panssaritehdas_organization = {
+				# 	add_mio_size = 1
+				# 	add_mio_funds_gain_factor = 0.35
+				# }
 			}
 			else = {
 				if = {

@@ -72,6 +72,7 @@ british_coastline = {
 		state = 113
 		state = 134
 		state = 135
+		state = 931
 	}
 }
 
