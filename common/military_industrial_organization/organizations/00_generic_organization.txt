@@ -2597,6 +2597,8 @@ commonwealth_medium_tank_organization = {
 		
 		any_parent = { generic_mio_trait_mass_production }
 
+		mutually_exclusive = { generic_mio_trait_medium_tank_specialization	}
+
 		equipment_bonus = {
 			maximum_speed = 0.05
 			breakthrough = 0.05
@@ -2613,6 +2615,8 @@ commonwealth_medium_tank_organization = {
 		relative_position_id = generic_mio_trait_mass_production
 
 		any_parent = { generic_mio_trait_mass_production }
+
+		mutually_exclusive = { generic_mio_trait_light_tank_specialization	}
 
 		equipment_bonus = {
 			armor_value = 0.1
@@ -3254,7 +3258,7 @@ generic_pmfu_variant_tank_organization = {
 	}
 
 	equipment_type = { mio_cat_eq_all_tank_variants }
-	research_categories = { armor }
+	# research_categories = { armor }
 
 	tree_header_text = {
 		text = mio_header_armor

@@ -111,6 +111,7 @@ political_actions = {
 				limit = {
 					has_idea = AST_no_nzl_annex
 				}
+				add_manpower = -100000
 				remove_ideas = AST_no_nzl_annex
 			}
 			set_global_flag = AST_NZL_ANNEXED
