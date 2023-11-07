@@ -2412,7 +2412,7 @@ ENG_persian_corridor = {
 		complete_effect = {
 		}
 		
-		days_re_enable = 60
+		# days_re_enable = 60
 		
 		remove_effect = {
 			send_equipment = {
@@ -2506,7 +2506,7 @@ ENG_persian_corridor = {
 		complete_effect = {
 		}
 		
-		days_re_enable = 60
+		# days_re_enable = 60
 		
 		remove_effect = {
 			send_equipment = {
@@ -2600,7 +2600,7 @@ ENG_persian_corridor = {
 		complete_effect = {
 		}
 		
-		days_re_enable = 60
+		# days_re_enable = 60
 		
 		remove_effect = {
 			send_equipment = {
@@ -2694,7 +2694,7 @@ ENG_persian_corridor = {
 		complete_effect = {
 		}
 		
-		days_re_enable = 60
+		# days_re_enable = 60
 		
 		remove_effect = {
 			send_equipment = {
@@ -2788,7 +2788,7 @@ ENG_persian_corridor = {
 		complete_effect = {
 		}
 		
-		days_re_enable = 60
+		# days_re_enable = 60
 		
 		remove_effect = {
 			send_equipment = {
@@ -2870,7 +2870,7 @@ ENG_persian_corridor = {
 				}
 			}
 			has_equipment = {
-				small_plane_airframe > 500
+				small_plane_airframe > 200
 			}
 		}
 		visible = {
@@ -2882,12 +2882,12 @@ ENG_persian_corridor = {
 		complete_effect = {
 		}
 		
-		days_re_enable = 60
+		# days_re_enable = 60
 		
 		remove_effect = {
 			send_equipment = {
 				equipment = small_plane_airframe
-				amount = 500
+				amount = 200
 				target = SOV
 			}
 		}

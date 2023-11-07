@@ -10,30 +10,40 @@
 
 ### POL_pzinz_organization -> see POL_organizations.txt
 
-# ROM_leonidas_works_organization = {
-# 	include = generic_infantry_tank_organization
-# 	icon = GFX_idea_ROM_leonidas_works
-# 	allowed = { 
-# 		tag = ROM
-# 		has_dlc = "Death or Dishonor"
-# 	}
-# 	available = {
-# 		FROM = { has_completed_focus = ROM_mobile_tank_destroyers }
-# 	}
-# 	initial_trait = {
-# 		name = ROM_mio_trait_mobile_tank_destroyers
-		
-# 		limit_to_equipment_type = { 
-# 			mio_cat_eq_all_tank_destroyers
-# 		}
-		
-# 		equipment_bonus = {
-# 			reliability = 0.05
-# 			hard_attack = 0.05
-# 			ap_attack = 0.05
-# 		}
-# 	}
-# }
+ROM_leonidas_works_organization = {
+	include = generic_pmfu_variant_tank_organization
+	icon = GFX_idea_ROM_leonidas_works
+	allowed = { 
+		tag = ROM
+	}
+
+	override_trait = {
+		token = generic_mio_trait_dual_plant_main_armament_production
+		position = { x=1 y=1 }
+	}
+
+	add_trait = { 
+		token = ROM_mio_trait_mobile_tank_destroyers
+		name = ROM_mio_trait_mobile_tank_destroyers
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_dual_plant_main_armament_production
+
+		all_parents = { generic_mio_trait_dual_plant_main_armament_production }
+		limit_to_equipment_type = { mio_cat_eq_all_tank_destroyers }
+
+		available = {
+			FROM = { has_completed_focus = ROM_mobile_tank_destroyers }
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+	}
+}
 
 #####################
 

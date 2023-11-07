@@ -160,8 +160,8 @@ if = {
 		CZE_divided_nation
 		peace_training
 	}
-	give_guarantee = YUG
-	give_guarantee = ROM
+	# give_guarantee = YUG
+	# give_guarantee = ROM
 }
 
 if = {

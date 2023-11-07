@@ -2677,10 +2677,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
+			# create_wargoal = {
+			# 	type = take_state_focus
+			# 	target = GRE
+			# 	generator = { 47 } # Athens
+			# }
+			ENG = {
+				add_to_faction = GRE
+			}
+			declare_war_on = {
 				target = GRE
-				generator = { 47 } # Athens
+				type = annex_everything
+			}
+			GRE = {
+				declare_war_on_enemy_faction = yes
 			}
 
 			hidden_effect = {
@@ -2724,10 +2734,20 @@ focus_tree = {
 		completion_reward = {
 			add_state_claim = 102
 			add_state_claim = 103
-			create_wargoal = {
-				type = take_state_focus
+			# create_wargoal = {
+			# 	type = take_state_focus
+			# 	target = YUG
+			# 	generator = { 102 } # Athens
+			# }
+			ENG = {
+				add_to_faction = YUG
+			}
+			declare_war_on = {
 				target = YUG
-				generator = { 102 } # Athens
+				type = annex_everything
+			}
+			YUG = {
+				declare_war_on_enemy_faction = yes
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.192 }

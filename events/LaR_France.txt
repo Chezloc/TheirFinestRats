@@ -2648,7 +2648,7 @@ country_event = {
 					}
 				}
 			}
-			give_guarantee = AUS
+			# give_guarantee = AUS
 		}
 	}
 
@@ -2726,7 +2726,7 @@ country_event = {
 					}
 				}
 			}
-			give_guarantee = AUS
+			# give_guarantee = AUS
 		}
 	}
 
@@ -2813,7 +2813,7 @@ country_event = {
 					}
 				}
 			}
-			give_guarantee = AUS
+			# give_guarantee = AUS
 		}
 		hidden_effect = { news_event = { id = lar_news.5 days = 3 random_days = 5 } }
 	}
@@ -2860,10 +2860,10 @@ country_event = {
 			country_event = lar_franco_soviet_treaty.2
 		}
 		effect_tooltip = {
-			FRA = {
-				give_guarantee = SOV
-			}
-			give_guarantee = FRA
+			# FRA = {
+			# 	give_guarantee = SOV
+			# }
+			# give_guarantee = FRA
 		}
 	}
 
@@ -2894,8 +2894,8 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		give_guarantee = FROM
-		FROM = { give_guarantee = ROOT }
+		# give_guarantee = FROM
+		# FROM = { give_guarantee = ROOT }
 		
 	}
 }

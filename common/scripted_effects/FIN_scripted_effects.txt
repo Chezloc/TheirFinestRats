@@ -187,7 +187,7 @@ FIN_pact_for_continuation_war_start = { #To be used on FIN's scope - Used immedi
 			active = yes
 		}
 	}
-	GER = { give_guarantee = FIN }
+	# GER = { give_guarantee = FIN }
 }
 
 ### STATE CHANGES AND NAMES ###

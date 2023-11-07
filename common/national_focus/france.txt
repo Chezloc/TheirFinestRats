@@ -2856,7 +2856,7 @@ focus_tree = {
 				POL = { country_event = generic.5 }
 			}
 			else = {
-				give_guarantee = POL
+				# give_guarantee = POL
 				custom_effect_tooltip = FRA_revive_the_franco_polish_alliance_tt
 			}
 		}
@@ -3206,11 +3206,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			SOV = { country_event = lar_franco_soviet_treaty.1 }
-			effect_tooltip = {
-				SOV = { give_guarantee = ROOT }
-				give_guarantee = SOV
-			}
+			# SOV = { country_event = lar_franco_soviet_treaty.1 }
+			# effect_tooltip = {
+			# 	SOV = { give_guarantee = ROOT }
+			# 	give_guarantee = SOV
+			# }
 		}
 	}
 

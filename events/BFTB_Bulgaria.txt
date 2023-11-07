@@ -6364,7 +6364,7 @@ country_event = {
 			}
 		}
 
-		give_guarantee = FROM
+		# give_guarantee = FROM
 		diplomatic_relation = {
 			country = FROM
 			relation = non_aggression_pact
@@ -6460,7 +6460,7 @@ country_event = {
 					target = ROOT
 					modifier = BUL_strengthened_relations_with_us
 				}
-				give_guarantee = ROOT
+				# give_guarantee = ROOT
 				diplomatic_relation = {
 					country = ROOT
 					relation = non_aggression_pact
@@ -9002,7 +9002,7 @@ country_event = {
 			relation = non_aggression_pact
 			active = yes
 		}
-		give_guarantee = FROM
+		# give_guarantee = FROM
 		add_opinion_modifier = { 
 			target = FROM
 			modifier = BUL_strengthened_relations_with_us
@@ -9151,7 +9151,7 @@ country_event = {
 				relation = non_aggression_pact
 				active = yes
 			}
-			FROM = { give_guarantee = ROOT }
+			# FROM = { give_guarantee = ROOT }
 			add_opinion_modifier = { 
 				target = FROM
 				modifier = BUL_strengthened_relations_with_us
@@ -9264,7 +9264,7 @@ country_event = {
 	option = { #Ok
 		name = bftb_bulgaria_democratic_international_policies.1.a
 
-		FROM = { give_guarantee = ROOT }
+		# FROM = { give_guarantee = ROOT }
 	}
 }
 

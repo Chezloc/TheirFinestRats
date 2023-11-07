@@ -870,7 +870,7 @@ characters={
 			traits  = {
 				army_chief_offensive_2
 			}
-			cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 0.1
 			}
@@ -1444,20 +1444,20 @@ characters={
 				small="GFX_idea_generic_army_europe_3"
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = GER_franz_halder
-			allowed = {
-				original_tag = GER
-			}
-			traits  = {
-				army_chief_offensive_2 
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# advisor={
+		# 	slot = army_chief
+		# 	idea_token = GER_franz_halder
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
+		# 	traits  = {
+		# 		army_chief_offensive_2 
+		# 	}
+		# 	cost = 100
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 	GER_walther_von_brauchitsch={
 		name="GER_walther_von_brauchitsch"

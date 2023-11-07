@@ -537,7 +537,7 @@ country_event = {
 	option = { 
 		name = DOD_hungary.23.a
 		add_opinion_modifier = { target = SWE modifier = took_stand_for_us }
-		SWE = { give_guarantee = HUN } #should make Sweden want to join the war on the side of Hungary
+		# SWE = { give_guarantee = HUN } #should make Sweden want to join the war on the side of Hungary
 		add_ai_strategy = { 
     		type = alliance
      		id = "HUN"			
@@ -665,7 +665,7 @@ country_event = {
 	option = { 
 		name = DOD_hungary.27.a
 		add_opinion_modifier = { target = HUN modifier = took_stand_for_us }
-		HUN = { give_guarantee = SWE } #should make them want to join war
+		# HUN = { give_guarantee = SWE } #should make them want to join war
 		add_ai_strategy = { 
     		type = alliance
      		id = "SWE"			
@@ -2030,7 +2030,7 @@ country_event = {
 			}
 		}
 		add_threat = 1
-		give_guarantee = HUN
+		# give_guarantee = HUN
 		ROM = { country_event = { id = DOD_hungary.61 } }
 	}
 
@@ -2048,7 +2048,7 @@ country_event = {
 			}
 		}
 		add_threat = 1
-		give_guarantee = ROM
+		# give_guarantee = ROM
 		HUN = { country_event = { id = DOD_hungary.62 } }
 	}
 
@@ -2328,7 +2328,7 @@ country_event = {
 		ai_chance = {
 			factor = 70
 		}
-		give_guarantee = ROM #should make them want to join war
+		# give_guarantee = ROM #should make them want to join war
 		if = {
 			limit = {
 				is_faction_leader = yes
@@ -2375,7 +2375,7 @@ country_event = {
 		ai_chance = {
 			factor = 70 
 		}
-		give_guarantee = HUN #should make them want to join war
+		# give_guarantee = HUN #should make them want to join war
 		HUN = { country_event = { id = DOD_hungary.67 hours = 12} }
 		set_country_flag = HUN_war_support
 		add_war_support = 0.05
@@ -4437,7 +4437,7 @@ country_event = {
 			}
 		}
 		
-		SOV = { give_guarantee = CZE } 
+		# SOV = { give_guarantee = CZE } 
 		if = {
 			limit = {
 				NOT = {

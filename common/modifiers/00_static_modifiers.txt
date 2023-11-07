@@ -7,71 +7,71 @@ _test_power_balance_mod = {
 }
 
 weather_rain_light = { # on Region 
-	air_detection = -0.1
-	naval_detection = -0.1
-	naval_hit_chance = -0.05
-	naval_speed_factor = -0.05
-	naval_strike = -0.2
-	air_accidents = 0.1
-	air_mission_efficiency = -0.1
-	naval_retreat_speed = 0.05
+	# air_detection = -0.1
+	# naval_detection = -0.1
+	# naval_hit_chance = -0.05
+	# naval_speed_factor = -0.05
+	# naval_strike = -0.2
+	# air_accidents = 0.1
+	# air_mission_efficiency = -0.1
+	# naval_retreat_speed = 0.05
 
 	local_org_regain = -0.05
 }
 weather_rain_heavy = { # on Region 
-	air_detection = -0.2
-	naval_detection = -0.2
-	naval_hit_chance = -0.1
-	naval_speed_factor = -0.1
-	carrier_traffic = -0.75
-	naval_strike = -0.4
-	air_accidents = 0.3
-	air_bombing_targetting = -0.5
+	# air_detection = -0.2
+	# naval_detection = -0.2
+	# naval_hit_chance = -0.1
+	# naval_speed_factor = -0.1
+	# carrier_traffic = -0.75
+	# naval_strike = -0.4
+	# air_accidents = 0.3
+	# air_bombing_targetting = -0.5
 	local_org_regain = -0.2
-	air_mission_efficiency = -0.3
-	naval_retreat_speed = 0.1
-	positioning = -0.1
+	# air_mission_efficiency = -0.3
+	# naval_retreat_speed = 0.1
+	# positioning = -0.1
 }
 weather_snow = { # on Region 
-	air_detection = -0.4
-	naval_detection = -0.4
-	naval_hit_chance = -0.1
-	naval_speed_factor = -0.1
-	naval_strike = -0.4
-	air_accidents = 0.25
+	# air_detection = -0.4
+	# naval_detection = -0.4
+	# naval_hit_chance = -0.1
+	# naval_speed_factor = -0.1
+	# naval_strike = -0.4
+	# air_accidents = 0.25
 	local_org_regain = -0.05
-	air_mission_efficiency = -0.1
-	naval_retreat_speed = 0.05
-	positioning = -0.15
+	# air_mission_efficiency = -0.1
+	# naval_retreat_speed = 0.05
+	# positioning = -0.15
 }
 weather_blizzard = { # on Region 
-	air_detection = -0.75
-	naval_detection = -0.75
-	naval_hit_chance = -0.5
-	naval_speed_factor = -0.25
-	carrier_traffic = -1.0
-	naval_strike = -0.6
-	air_accidents = 0.5
-	air_bombing_targetting = -0.9
+	# air_detection = -0.75
+	# naval_detection = -0.75
+	# naval_hit_chance = -0.5
+	# naval_speed_factor = -0.25
+	# carrier_traffic = -1.0
+	# naval_strike = -0.6
+	# air_accidents = 0.5
+	# air_bombing_targetting = -0.9
 	local_org_regain = -0.5
-	air_mission_efficiency = -0.5
-	naval_retreat_speed = 0.15
-	positioning = -0.25
+	# air_mission_efficiency = -0.5
+	# naval_retreat_speed = 0.15
+	# positioning = -0.25
 }
 weather_sandstorm = { # on Region 
-	air_detection = -0.9
-	air_accidents = 0.6
-	naval_strike = -0.9
-	air_bombing_targetting = -1
+	# air_detection = -0.9
+	# air_accidents = 0.6
+	# naval_strike = -0.9
+	# air_bombing_targetting = -1
 	local_org_regain = -0.5
-	air_mission_efficiency = -0.5
+	# air_mission_efficiency = -0.5
 }
 
 weather_arctic_water = { # on Region 
-	navy_casualty_on_sink = 0.2
-	naval_attrition = 0.1
-	naval_retreat_speed = -0.05
-	positioning = -0.2
+	# navy_casualty_on_sink = 0.2
+	# naval_attrition = 0.1
+	# naval_retreat_speed = -0.05
+	# positioning = -0.2
 }
 
 weather_mud = { # on Province
@@ -114,7 +114,7 @@ weather_ground_snow_high = { # on Province
 	army_speed_factor = -0.4
 	local_org_regain = -0.1
 	army_attack_factor = -0.4
-	naval_retreat_speed = 0.1
+	# naval_retreat_speed = 0.1
 }
 
 flooded = { # on Province

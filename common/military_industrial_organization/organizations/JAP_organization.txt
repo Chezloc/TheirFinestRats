@@ -8,14 +8,57 @@
 
  #################### 
 
-# JAP_osaka_army_arsenal_organization = {
-# 	include = generic_tank_organization
-# 	icon = GFX_idea_osaka_army_arsenal
-# 	allowed = {	
-# 		tag = JAP
-# 		has_dlc = "Arms Against Tyranny"
-# 	}
-# } 
+JAP_osaka_army_arsenal_organization = {
+	include = axis_medium_tank_organization
+	name = osaka_army_arsenal
+	icon = GFX_idea_osaka_army_arsenal
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = MAN
+			original_tag = SIA
+		}	
+	}
+} 
+
+JAP_toyota_tank_organization = {
+	include = generic_pmfu_light_tank_organization
+	name = toyota_tank
+	icon = GFX_idea_toyota_tank
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = MAN
+			original_tag = SIA
+		}	
+	}
+} 
+
+JAP_isuzu_tank_organization = {
+	include = generic_pmfu_heavy_tank_organization
+	name = isuzu_tank
+	icon = GFX_idea_isuzu_tank
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = MAN
+			original_tag = SIA
+		}	
+	}
+} 
+
+JAP_isuzu_tank_variant_organization = {
+	include = generic_pmfu_variant_tank_organization
+	name = isuzu_tank_variant
+	icon = GFX_idea_isuzu_tank
+	allowed = {
+		OR = {
+			original_tag = JAP
+			original_tag = MAN
+			original_tag = SIA
+		}	
+	}
+} 
 
 
 #####################
@@ -33,11 +76,15 @@ JAP_kure_naval_arsenal_organization = {
 	include = generic_battle_line_ship_organization
 	icon = GFX_idea_kure_naval_arsenal
 	allowed = {	
-		tag = JAP
+		OR = {
+			tag = JAP 
+			tag = MAN 
+			tag = SIA 
+		}
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
+		JAP = {
 			OR = {
 				has_completed_focus = JAP_supremacy_of_the_battlefleet
 				#has_completed_focus = JAP_the_ultimate_battleship
@@ -50,7 +97,10 @@ JAP_yokosuka_naval_arsenal_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_yokosuka_naval_arsenal
 	allowed = {	
-		tag = JAP
+		OR = {
+			tag = JAP 
+			tag = SIA 
+		}
 		has_dlc = "Arms Against Tyranny"
 	}
 }
@@ -62,6 +112,8 @@ JAP_maizuru_naval_arsenal_organization = {
 	allowed = {	 
 		OR = {
 			tag = JAP 
+			tag = MAN 
+			tag = SIA 
 			AND = {
 				tag = ETH
 				has_dlc = "By Blood Alone"
@@ -105,7 +157,10 @@ JAP_sasebo_naval_arsenal_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_sasebo_naval_arsenal
 	allowed = {	 
-		tag = JAP
+		OR = {
+			tag = JAP
+			tag = SIA 
+		}
 		has_dlc = "Arms Against Tyranny"
 	}
 }

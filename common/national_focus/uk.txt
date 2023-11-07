@@ -4809,6 +4809,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			custom_effect_tooltip = "Will allow the UK and the USA to lend lease the USSR with decisions"
 			SOV = { add_offsite_building = { type = arms_factory level = 15 } }
 			SOV = { add_offsite_building = { type = industrial_complex level = 15 } }
 			SOV = { remove_ideas =  home_of_revolution  }

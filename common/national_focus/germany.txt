@@ -2927,14 +2927,27 @@ focus_tree = {
 						# 	generator = { 85 }
 						# 	target = POL
 						# }
+						ENG = {
+							add_to_faction = POL
+						}
+						ENG = {
+							add_to_faction = FRA
+						}
 						declare_war_on = {
 							target = POL
 							type = annex_everything
 						}
-						add_state_core = 85
-						ENG = {
-							add_to_faction = POL
+						declare_war_on = {
+							target = FRA
+							type = annex_everything
 						}
+						POL = {
+							declare_war_on_enemy_faction = yes
+						}
+						FRA = {
+							declare_war_on_enemy_faction = yes
+						}
+						add_state_core = 85
 						if = {
 							limit = {
 								ENG = {
@@ -3583,11 +3596,6 @@ focus_tree = {
 		continue_if_invalid = yes
 		cost = 2
 		completion_reward = {
-			# hidden_effect = {
-			# 	GER = {
-			# 		country_event = { id = generic.44 days = 180 }
-			# 	}
-			# }
 			add_advisor_role = {
 				character = GER_walter_model
 				activate = yes
@@ -3608,6 +3616,9 @@ focus_tree = {
 			declare_war_on = {
 				target = MON
 				type = annex_everything
+			}
+			SOV = {
+				declare_war_on_enemy_faction = yes
 			}
 			add_timed_idea = {
 				idea = GER_barbarossa
@@ -4214,6 +4225,9 @@ focus_tree = {
 					target = BEL
 					type = annex_everything
 				}
+				BEL = {
+					declare_war_on_enemy_faction = yes
+				}
 				hidden_effect = {
 					ENG = { add_to_faction = BEL }					
 				}
@@ -4227,6 +4241,9 @@ focus_tree = {
 				declare_war_on = {
 					target = HOL
 					type = annex_everything
+				}
+				HOL = {
+					declare_war_on_enemy_faction = yes
 				}
 				hidden_effect = {
 					ENG = { add_to_faction = HOL }					
@@ -8868,12 +8885,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			ITA = { give_guarantee = GER }
-			JAP = { give_guarantee = GER }
-			JAP = { give_guarantee = ITA }
-			ITA = { give_guarantee = JAP }
-			give_guarantee = JAP
-			give_guarantee = ITA
+			# ITA = { give_guarantee = GER }
+			# JAP = { give_guarantee = GER }
+			# JAP = { give_guarantee = ITA }
+			# ITA = { give_guarantee = JAP }
+			# give_guarantee = JAP
+			# give_guarantee = ITA
 			add_to_tech_sharing_group = GER_trip_research
 			ITA = { add_to_tech_sharing_group = GER_trip_research }
 			JAP = { add_to_tech_sharing_group = GER_trip_research }

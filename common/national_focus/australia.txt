@@ -1495,6 +1495,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = AST_cockatoo_doe_organization
+				mio:AST_cockatoo_doe_organization = {
+					add_mio_size = 2
+				}
+			}
 			navy_experience = 50
 			random_owned_controlled_state = {
 				prioritize = { 285 }

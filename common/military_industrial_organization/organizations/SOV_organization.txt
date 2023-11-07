@@ -374,6 +374,18 @@ SOV_kirov_organization = {
 	}
 }
 
+SOV_mytishchy_machine_building_plant_organization = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_SOV_mytishchy_machine_building_plant
+	allowed = {	
+		OR = {
+			original_tag = SOV
+			original_tag = MON
+		}
+		has_dlc = "La Resistance"
+	}
+}
+
  ######  ##     ## #### ########   ######  
 ##    ## ##     ##  ##  ##     ## ##    ## 
 ##       ##     ##  ##  ##     ## ##       
@@ -435,6 +447,7 @@ SOV_nevskoye_design_bureau_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			has_dlc = "Man the Guns"
 		}
 
 		available = {
@@ -444,16 +457,15 @@ SOV_nevskoye_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_370_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
 					add_tech_bonus = {
 						name = SOV_merge_ship_plant_2_baltic
 						bonus = 1
@@ -462,7 +474,6 @@ SOV_nevskoye_design_bureau_organization = {
 					}
 				}
 			}
-		}
 
 		limit_to_equipment_type = { mio_cat_eq_all_cruiser }
 		
@@ -486,6 +497,7 @@ SOV_nevskoye_design_bureau_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			NOT = { has_dlc = "Man the Guns" }
 		}
 
 		available = {
@@ -495,27 +507,15 @@ SOV_nevskoye_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_370_flag }
 		}
-
-		visible = {
-			NOT = { has_dlc = "Man the Guns" }
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
-				}
 			}
 		}
 
@@ -607,6 +607,7 @@ SOV_rubin_design_bureau_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			has_dlc = "Man the Guns"
 		}
 
 		available = {
@@ -616,16 +617,15 @@ SOV_rubin_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_370_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
 					add_tech_bonus = {
 						name = SOV_merge_ship_plant_2_baltic
 						bonus = 1
@@ -634,7 +634,6 @@ SOV_rubin_design_bureau_organization = {
 					}
 				}
 			}
-		}
 
 		limit_to_equipment_type = { mio_cat_eq_all_cruiser mio_cat_eq_all_destroyer ship_hull_submarine }
 		
@@ -658,6 +657,7 @@ SOV_rubin_design_bureau_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			NOT = { has_dlc = "Man the Guns" }
 		}
 
 		available = {
@@ -667,27 +667,15 @@ SOV_rubin_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_370_flag }
 		}
-
-		visible = {
-			NOT = { has_dlc = "Man the Guns" }
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
-				}
 			}
 		}
 
@@ -765,13 +753,13 @@ SOV_rubin_design_bureau_organization = {
 	}
 }
 
-# SOV_black_sea_shipyard_organization = {
-# 	include = generic_black_sea_fleet_organization
-# 	icon = GFX_idea_SOV_black_sea_shipyard
+SOV_black_sea_shipyard_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_SOV_black_sea_shipyard
 	
-# 	allowed = {	
-# 		original_tag = SOV
-# 	}
+	allowed = {	
+		original_tag = SOV
+	}
 
 # 	tree_header_text = {
 # 		text = mio_header_systems
@@ -802,182 +790,170 @@ SOV_rubin_design_bureau_organization = {
 # 		relative_position_id = generic_mio_trait_anti_air_defense
 # 	}
 
-# 	add_trait = { #MTG version
-# 		token = SOV_mio_trait_merge_mariupol_plant
-# 		name = SOV_merge_ship_plant_4_black_sea
-# 		#icon = GFX_generic_mio_department_icon_facilities
-# 		icon = GFX_generic_mio_trait_icon_mines
-# 		special_trait_background = yes
+	# add_trait = { #MTG version
+	# 	token = SOV_mio_trait_merge_mariupol_plant
+	# 	name = SOV_merge_ship_plant_4_black_sea
+	# 	#icon = GFX_generic_mio_department_icon_facilities
+	# 	icon = GFX_generic_mio_trait_icon_mines
+	# 	special_trait_background = yes
 
-# 		position = { x=@ship_1_X y=@ship_1_Y }
+	# 	position = { x=@ship_1_X y=@ship_1_Y }
 		
-# 		visible = {
-# 			FROM = { original_tag = SOV }
-# 		}
+	# 	visible = {
+	# 		FROM = { original_tag = SOV }
+	# 		has_dlc = "Man the Guns"
+	# 	}
 
-# 		available = {
-# 			FROM = {
-# 				has_full_control_of_state = 227 #STALINO
-# 			}
-# 			FROM = {
-# 				has_completed_focus = SOV_merge_naval_plants
-# 			}
-# 		}
+	# 	available = {
+	# 		FROM = {
+	# 			has_full_control_of_state = 227 #STALINO
+	# 		}
+	# 		FROM = {
+	# 			has_completed_focus = SOV_merge_naval_plants
+	# 		}
+	# 		FROM = {
+	# 			NOT = { has_country_flag = SOV_merge_mariupol_plant_flag }
+	# 		}
+	# 	}
 
-# 		on_complete = {
-# 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
-# 			FROM = {
-# 				set_country_flag = SOV_merge_mariupol_plant_flag
-# 				if = {
-# 					limit = {
-# 						has_dlc = "Man the Guns"
-# 					}
-# 					add_tech_bonus = {
-# 						name = SOV_merge_ship_plant_2_baltic
-# 						bonus = 1
-# 						uses = 1
-# 						category = naval_mines
-# 					}
-# 				}
-# 			}
-# 		}
+	# 	on_complete = {
+	# 		custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+	# 		FROM = {
+	# 			set_country_flag = SOV_merge_mariupol_plant_flag
+	# 			add_tech_bonus = {
+	# 				name = SOV_merge_ship_plant_2_baltic
+	# 				bonus = 1
+	# 				uses = 1
+	# 				category = naval_mines
+	# 			}
+	# 		}
+	# 	}
 
-# 		limit_to_equipment_type = { mio_cat_eq_all_cruiser mio_cat_eq_all_destroyer ship_hull_submarine }
+	# 	limit_to_equipment_type = { mio_cat_eq_all_cruiser mio_cat_eq_all_destroyer ship_hull_submarine }
+
+	# 	production_bonus = {
+	# 		production_cost_factor = @ship_production_capacity_factor
+	# 	}
 		
-# 		production_bonus = {
-# 			production_cost_factor = @ship_production_capacity_factor
-# 		}
+	# 	equipment_bonus = {
+	# 		mines_planting = @ship_mines_planting
+	# 	}
+	# }
 
-# 		equipment_bonus = {
-# 			mines_planting = @ship_mines_planting
-# 		}
-# 	}
+	# add_trait = { #No-MTG version
+	# 	token = SOV_mio_trait_merge_mariupol_plant_no_mtg
+	# 	name = SOV_merge_ship_plant_4_black_sea
+	# 	#icon = GFX_generic_mio_department_icon_facilities
+	# 	icon = GFX_generic_mio_trait_icon_mines
+	# 	special_trait_background = yes
 
-# 	add_trait = { #No-MTG version
-# 		token = SOV_mio_trait_merge_mariupol_plant_no_mtg
-# 		name = SOV_merge_ship_plant_4_black_sea
-# 		#icon = GFX_generic_mio_department_icon_facilities
-# 		icon = GFX_generic_mio_trait_icon_mines
-# 		special_trait_background = yes
+	# 	position = { x=@ship_1_X y=@ship_1_Y }
 
-# 		position = { x=@ship_1_X y=@ship_1_Y }
+	# 	visible = {
+	# 		FROM = { original_tag = SOV }
+	# 		NOT = { has_dlc = "Man the Guns" }
+	# 	}
 		
-# 		visible = {
-# 			FROM = { original_tag = SOV }
-# 		}
+	# 	available = {
+	# 		FROM = {
+	# 			has_full_control_of_state = 227 #STALINO
+	# 		}
+	# 		FROM = {
+	# 			has_completed_focus = SOV_merge_naval_plants
+	# 		}
+	# 		FROM = {
+	# 			NOT = { has_country_flag = SOV_merge_mariupol_plant_flag }
+	# 		}
+	# 	}
 
-# 		available = {
-# 			FROM = {
-# 				has_full_control_of_state = 227 #STALINO
-# 			}
-# 			FROM = {
-# 				has_completed_focus = SOV_merge_naval_plants
-# 			}
-# 		}
+	# 	on_complete = {
+	# 		custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+	# 		FROM = {
+	# 			set_country_flag = SOV_merge_mariupol_plant_flag
+	# 		}
+	# 	}
 
-# 		visible = {
-# 			NOT = { has_dlc = "Man the Guns" }
-# 		}
+	# 	limit_to_equipment_type = { mio_cat_eq_all_cruiser mio_cat_eq_all_destroyer ship_hull_submarine }
 
-# 		on_complete = {
-# 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
-# 			FROM = {
-# 				set_country_flag = SOV_merge_mariupol_plant_flag
-# 				if = {
-# 					limit = {
-# 						has_dlc = "Man the Guns"
-# 					}
-# 					add_tech_bonus = {
-# 						name = SOV_merge_ship_plant_2_baltic
-# 						bonus = 1
-# 						uses = 1
-# 						category = naval_mines
-# 					}
-# 				}
-# 			}
-# 		}
+	# 	production_bonus = {
+	# 		production_cost_factor = @ship_production_capacity_factor
+	# 	}
+	# }
 
-# 		limit_to_equipment_type = { mio_cat_eq_all_cruiser mio_cat_eq_all_destroyer ship_hull_submarine }
+	# add_trait = { 
+	# 	token = SOV_mio_trait_merge_leninskaya_kuznitsa_plant
+	# 	name = SOV_merge_ship_plant_2_black_sea
+	# 	#icon = GFX_generic_mio_department_icon_facilities
+	# 	icon = GFX_generic_mio_department_icon_ship_screen_ship_production
+	# 	special_trait_background = yes
 		
-# 		production_bonus = {
-# 			production_cost_factor = @ship_production_capacity_factor
-# 		}
-# 	}
+	# 	position = { x=@ship_2_X y=@ship_2_Y }
 
-# 	add_trait = { 
-# 		token = SOV_mio_trait_merge_leninskaya_kuznitsa_plant
-# 		name = SOV_merge_ship_plant_2_black_sea
-# 		#icon = GFX_generic_mio_department_icon_facilities
-# 		icon = GFX_generic_mio_department_icon_ship_screen_ship_production
-# 		special_trait_background = yes
+	# 	mutually_exclusive = { SOV_mio_trait_merge_plant_no_340 }
 
-# 		position = { x=@ship_2_X y=@ship_2_Y }
-
-# 		mutually_exclusive = { SOV_mio_trait_merge_plant_no_340 }
+	# 	visible = {
+	# 		FROM = { original_tag = SOV }
+	# 	}
 		
-# 		visible = {
-# 			FROM = { original_tag = SOV }
-# 		}
+	# 	available = {
+	# 		FROM = {
+	# 			has_full_control_of_state = 202 #KIEV
+	# 		}
+	# 		FROM = {
+	# 			has_completed_focus = SOV_merge_naval_plants
+	# 			has_completed_focus = SOV_surface_warfare
+	# 		}
+	# 		#Only exists in this MIO
+	# 	}
 
-# 		available = {
-# 			FROM = {
-# 				has_full_control_of_state = 202 #KIEV
-# 			}
-# 			FROM = {
-# 				has_completed_focus = SOV_merge_naval_plants
-# 				has_completed_focus = SOV_surface_warfare
-# 			}
-# 			#Only exists in this MIO
-# 		}
+	# 	limit_to_equipment_type = { mio_cat_eq_all_destroyer }
 
-# 		limit_to_equipment_type = { mio_cat_eq_all_destroyer }
+	# 	production_bonus = {
+	# 		production_cost_factor = @ship_destroyer_production_cost_factor
+	# 	}
+	# }
 
-# 		production_bonus = {
-# 			production_cost_factor = @ship_destroyer_production_cost_factor
-# 		}
-# 	}
+	# add_trait = { 
+	# 	token = SOV_mio_trait_merge_plant_no_340
+	# 	name = SOV_merge_ship_plant_3_black_sea
+	# 	#icon = GFX_generic_mio_department_icon_facilities
+	# 	icon = GFX_generic_mio_department_icon_ship_submarine_production
+	# 	special_trait_background = yes
 
-# 	add_trait = { 
-# 		token = SOV_mio_trait_merge_plant_no_340
-# 		name = SOV_merge_ship_plant_3_black_sea
-# 		#icon = GFX_generic_mio_department_icon_facilities
-# 		icon = GFX_generic_mio_department_icon_ship_submarine_production
-# 		special_trait_background = yes
+	# 	position = { x=@ship_3_X y=@ship_3_Y }
 
-# 		position = { x=@ship_3_X y=@ship_3_Y }
+	# 	mutually_exclusive = { SOV_mio_trait_merge_leninskaya_kuznitsa_plant }
 
-# 		mutually_exclusive = { SOV_mio_trait_merge_leninskaya_kuznitsa_plant }
-		
-# 		visible = {
-# 			FROM = { original_tag = SOV }
-# 		}
+	# 	visible = {
+	# 		FROM = { original_tag = SOV }
+	# 	}
 
-# 		available = {
-# 			FROM = {
-# 				has_full_control_of_state = 227 #STALINO
-# 			}
-# 			FROM = {
-# 				has_completed_focus = SOV_merge_naval_plants
-# 				has_completed_focus = SOV_submarine_warfare
-# 			}
-# 			#Only exists in this MIO
-# 		}
+	# 	available = {
+	# 		FROM = {
+	# 			has_full_control_of_state = 227 #STALINO
+	# 		}
+	# 		FROM = {
+	# 			has_completed_focus = SOV_merge_naval_plants
+	# 			has_completed_focus = SOV_submarine_warfare
+	# 		}
+	# 		#Only exists in this MIO
+	# 	}
 
-# 		limit_to_equipment_type = { ship_hull_submarine }
-		
-# 		production_bonus = {
-# 			production_cost_factor = @ship_submarine_production_cost_factor
-# 		}
-# 	}
-# }
-
-# SOV_sevastopol_marine_plant_organization = {
-# 	include = generic_refurbishment_repair_organization
-# 	icon = GFX_idea_SOV_sevastopol_marine_plant
+	# 	limit_to_equipment_type = { ship_hull_submarine }
 	
-# 	allowed = {	
-# 		original_tag = SOV
-# 	}
+	# 	production_bonus = {
+	# 		production_cost_factor = @ship_submarine_production_cost_factor
+	# 		}
+	# 	}
+	}
+
+SOV_sevastopol_marine_plant_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_SOV_sevastopol_marine_plant
+	
+	allowed = {	
+		original_tag = SOV
+	}
 
 # 	tree_header_text = {
 # 		text = mio_header_protection
@@ -987,14 +963,14 @@ SOV_rubin_design_bureau_organization = {
 # 	tree_header_text = {
 # 		text = mio_header_weapons
 # 		x = 7
-# 	}
+# 			}
 
 # 	override_trait = {
 # 		token = generic_mio_trait_foam_fire_extinguishers
 		
 # 		position = { x=4 y=0 }
 # 		relative_position_id = generic_mio_trait_heavy_armored_hull
-# 	}
+# 		}
 
 # 	override_trait = {
 # 		token = generic_mio_trait_counter_flooding_system
@@ -1003,138 +979,126 @@ SOV_rubin_design_bureau_organization = {
 # 		relative_position_id = generic_mio_trait_isolated_firemains
 # 	}
 
-# 	add_trait = { #MTG version
-# 		token = SOV_mio_trait_merge_mariupol_plant
-# 		name = SOV_merge_ship_plant_4_black_sea
-# 		#icon = GFX_generic_mio_department_icon_facilities
-# 		icon = GFX_generic_mio_trait_icon_mines
-# 		special_trait_background = yes
+	# add_trait = { #MTG version
+	# 	token = SOV_mio_trait_merge_mariupol_plant
+	# 	name = SOV_merge_ship_plant_4_black_sea
+	# 	#icon = GFX_generic_mio_department_icon_facilities
+	# 	icon = GFX_generic_mio_trait_icon_mines
+	# 	special_trait_background = yes
 
-# 		position = { x=@ship_1_X y=@ship_1_Y }
+	# 	position = { x=@ship_1_X y=@ship_1_Y }
 		
-# 		visible = {
-# 			FROM = { original_tag = SOV }
-# 		}
+	# 	visible = {
+	# 		FROM = { original_tag = SOV }
+	# 		has_dlc = "Man the Guns"
+	# 	}
 
-# 		available = {
-# 			FROM = {
-# 				has_full_control_of_state = 227 #STALINO
-# 			}
-# 			FROM = {
-# 				has_completed_focus = SOV_merge_naval_plants
-# 			}
-# 		}
+	# 	available = {
+	# 		FROM = {
+	# 			has_full_control_of_state = 227 #STALINO
+	# 		}
+	# 		FROM = {
+	# 			has_completed_focus = SOV_merge_naval_plants
+	# 		}
+	# 		FROM = {
+	# 			NOT = { has_country_flag = SOV_merge_mariupol_plant_flag }
+	# 		}
+	# 	}
 
-# 		on_complete = {
-# 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
-# 			FROM = {
-# 				set_country_flag = SOV_merge_mariupol_plant_flag
-# 				if = {
-# 					limit = {
-# 						has_dlc = "Man the Guns"
-# 					}
-# 					add_tech_bonus = {
-# 						name = SOV_merge_ship_plant_2_baltic
-# 						bonus = 1
-# 						uses = 1
-# 						category = naval_mines
-# 					}
-# 				}
-# 			}
-# 		}
+	# 	on_complete = {
+	# 		custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+	# 		FROM = {
+	# 			set_country_flag = SOV_merge_mariupol_plant_flag
+	# 			add_tech_bonus = {
+	# 				name = SOV_merge_ship_plant_2_baltic
+	# 				bonus = 1
+	# 				uses = 1
+	# 				category = naval_mines
+	# 			}
+	# 		}
+	# 	}
 
-# 		limit_to_equipment_type = { mio_cat_eq_all_cruiser }
+	# 	limit_to_equipment_type = { mio_cat_eq_all_cruiser }
 		
-# 		production_bonus = {
-# 			production_cost_factor = @ship_production_capacity_factor
-# 		}
+	# 	production_bonus = {
+	# 		production_cost_factor = @ship_production_capacity_factor
+	# 	}
 
-# 		equipment_bonus = {
-# 			mines_planting = @ship_mines_planting
-# 		}
-# 	}
+	# 	equipment_bonus = {
+	# 		mines_planting = @ship_mines_planting
+	# 	}
+	# }
 
-# 	add_trait = { #No-MTG version
-# 		token = SOV_mio_trait_merge_mariupol_plant_no_mtg
-# 		name = SOV_merge_ship_plant_4_black_sea
-# 		#icon = GFX_generic_mio_department_icon_facilities
-# 		icon = GFX_generic_mio_trait_icon_mines
-# 		special_trait_background = yes
+	# add_trait = { #No-MTG version
+	# 	token = SOV_mio_trait_merge_mariupol_plant_no_mtg
+	# 	name = SOV_merge_ship_plant_4_black_sea
+	# 	#icon = GFX_generic_mio_department_icon_facilities
+	# 	icon = GFX_generic_mio_trait_icon_mines
+	# 	special_trait_background = yes
 
-# 		position = { x=@ship_1_X y=@ship_1_Y }
+	# 	position = { x=@ship_1_X y=@ship_1_Y }
 		
-# 		visible = {
-# 			FROM = { original_tag = SOV }
-# 		}
+	# 	visible = {
+	# 		FROM = { original_tag = SOV }
+	# 		NOT = { has_dlc = "Man the Guns" }
+	# 	}
 
-# 		available = {
-# 			FROM = {
-# 				has_full_control_of_state = 227 #STALINO
-# 			}
-# 			FROM = {
-# 				has_completed_focus = SOV_merge_naval_plants
-# 			}
-# 		}
+	# 	available = {
+	# 		FROM = {
+	# 			has_full_control_of_state = 227 #STALINO
+	# 		}
+	# 		FROM = {
+	# 			has_completed_focus = SOV_merge_naval_plants
+	# 		}
+	# 		FROM = {
+	# 			NOT = { has_country_flag = SOV_merge_mariupol_plant_flag }
+	# 		}
+	# 	}
 
-# 		visible = {
-# 			NOT = { has_dlc = "Man the Guns" }
-# 		}
+	# 	on_complete = {
+	# 		custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
+	# 		FROM = {
+	# 			set_country_flag = SOV_merge_mariupol_plant_flag
+	# 		}
+	# 	}
 
-# 		on_complete = {
-# 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
-# 			FROM = {
-# 				set_country_flag = SOV_merge_mariupol_plant_flag
-# 				if = {
-# 					limit = {
-# 						has_dlc = "Man the Guns"
-# 					}
-# 					add_tech_bonus = {
-# 						name = SOV_merge_ship_plant_2_baltic
-# 						bonus = 1
-# 						uses = 1
-# 						category = naval_mines
-# 					}
-# 				}
-# 			}
-# 		}
-
-# 		limit_to_equipment_type = { mio_cat_eq_all_cruiser }
+	# 	limit_to_equipment_type = { mio_cat_eq_all_cruiser }
 		
-# 		production_bonus = {
-# 			production_cost_factor = @ship_production_capacity_factor
-# 		}
-# 	}
+	# 	production_bonus = {
+	# 		production_cost_factor = @ship_production_capacity_factor
+	# 	}
+	# }
 
-# 	add_trait = { 
-# 		token = SOV_mio_trait_merge_plant_no_200
-# 		name = SOV_merge_ship_plant_1_black_sea
-# 		#icon = GFX_generic_mio_department_icon_facilities
-# 		icon = GFX_generic_mio_department_icon_ship_screen_ship_production
-# 		special_trait_background = yes
+	# add_trait = { 
+	# 	token = SOV_mio_trait_merge_plant_no_200
+	# 	name = SOV_merge_ship_plant_1_black_sea
+	# 	#icon = GFX_generic_mio_department_icon_facilities
+	# 	icon = GFX_generic_mio_department_icon_ship_screen_ship_production
+	# 	special_trait_background = yes
 
-# 		position = { x=@ship_2_X y=@ship_2_Y }
+	# 	position = { x=@ship_2_X y=@ship_2_Y }
 		
-# 		visible = {
-# 			FROM = { original_tag = SOV }
-# 		}
+	# 	visible = {
+	# 		FROM = { original_tag = SOV }
+	# 	}
 
-# 		available = {
-# 			FROM = {
-# 				has_full_control_of_state = 197 #MYKOLAIV
-# 			}
-# 			FROM = {
-# 				has_completed_focus = SOV_merge_naval_plants
-# 			}
-# 			#Only exists in this MIO
-# 		}
+	# 	available = {
+	# 		FROM = {
+	# 			has_full_control_of_state = 197 #MYKOLAIV
+	# 		}
+	# 		FROM = {
+	# 			has_completed_focus = SOV_merge_naval_plants
+	# 		}
+	# 		#Only exists in this MIO
+	# 	}
 
-# 		limit_to_equipment_type = { mio_cat_eq_all_cruiser }
+	# 	limit_to_equipment_type = { mio_cat_eq_all_cruiser }
 
-# 		production_bonus = {
-# 			production_cost_factor = @ship_cruiser_production_cost_factor
-# 		}
-# 	}
-# }
+	# 	production_bonus = {
+	# 		production_cost_factor = @ship_cruiser_production_cost_factor
+	# 			}
+	# 		}
+		}
 
 
 
@@ -1153,7 +1117,7 @@ SOV_mig_design_bureau_organization = {
 	
 	allowed = {	
 		OR = {
-			tag = SOV
+			tag = SOV 
 			AND = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
@@ -1167,7 +1131,7 @@ SOV_mig_design_bureau_organization = {
 			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
 		}
 	}
-
+	
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
@@ -1190,13 +1154,16 @@ SOV_mig_design_bureau_organization = {
 		visible = {
 			FROM = { original_tag = SOV }
 		}
-
+		
 		available = {
 			FROM = {
 				has_full_control_of_state = 251 #KUYBYSHEV
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
 			}
 		}
 
@@ -1224,13 +1191,16 @@ SOV_mig_design_bureau_organization = {
 		visible = {
 			FROM = { original_tag = SOV }
 		}
-
+		
 		available = {
 			FROM = {
 				has_full_control_of_state = 219 #MOSCOW
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
 			}
 		}
 
@@ -1263,13 +1233,16 @@ SOV_mig_design_bureau_organization = {
 		visible = {
 			FROM = { original_tag = SOV }
 		}
-
+		
 		available = {
 			FROM = {
 				has_full_control_of_state = 808 #RIGA
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
 			}
 		}
 
@@ -1356,6 +1329,9 @@ SOV_ilyushin_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
+			}
 		}
 
 		on_complete = {
@@ -1389,6 +1365,9 @@ SOV_ilyushin_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
 			}
 		}
 
@@ -1428,6 +1407,9 @@ SOV_ilyushin_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
 			}
 		}
 
@@ -1514,6 +1496,9 @@ SOV_ilyushin_design_bureau_organization_CAS_department = {
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
+			}
 		}
 
 		on_complete = {
@@ -1547,6 +1532,9 @@ SOV_ilyushin_design_bureau_organization_CAS_department = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
 			}
 		}
 
@@ -1586,6 +1574,9 @@ SOV_ilyushin_design_bureau_organization_CAS_department = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
 			}
 		}
 
@@ -1638,6 +1629,9 @@ SOV_yakovlev_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
+			}
 		}
 
 		on_complete = {
@@ -1671,6 +1665,9 @@ SOV_yakovlev_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
 			}
 		}
 
@@ -1710,6 +1707,9 @@ SOV_yakovlev_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
 			}
 		}
 
@@ -1825,6 +1825,9 @@ SOV_tupolev_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
+			}
 		}
 
 		on_complete = {
@@ -1858,6 +1861,9 @@ SOV_tupolev_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
 			}
 		}
 
@@ -1897,6 +1903,9 @@ SOV_tupolev_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
 			}
 		}
 

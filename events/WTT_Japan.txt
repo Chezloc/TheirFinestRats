@@ -740,16 +740,16 @@ country_event = {
 			base = 10
 		}
 		event_target:JAP_initiator = {
-			give_guarantee = event_target:ITA_fascism
-			give_guarantee = event_target:GER_fascism
+			# give_guarantee = event_target:ITA_fascism
+			# give_guarantee = event_target:GER_fascism
 		}
 		event_target:GER_fascism = {
-			give_guarantee = event_target:ITA_fascism
-			give_guarantee = event_target:JAP_initiator
+			# give_guarantee = event_target:ITA_fascism
+			# give_guarantee = event_target:JAP_initiator
 		}
 		event_target:ITA_fascism = {
-			give_guarantee = event_target:JAP_initiator
-			give_guarantee = event_target:GER_fascism
+			# give_guarantee = event_target:JAP_initiator
+			# give_guarantee = event_target:GER_fascism
 		}
 		event_target:JAP_initiator = { country_event = { id = wtt_japan.111 hours = 6 } }
 		event_target:GER_fascism = { country_event = { id = wtt_japan.113 hours = 6 } }
@@ -782,16 +782,16 @@ country_event = {
 		}
 		effect_tooltip = {
 			event_target:JAP_initiator = {
-				give_guarantee = event_target:ITA_fascism
-				give_guarantee = event_target:GER_fascism
+				# give_guarantee = event_target:ITA_fascism
+				# give_guarantee = event_target:GER_fascism
 			}
 			event_target:GER_fascism = {
-				give_guarantee = event_target:ITA_fascism
-				give_guarantee = event_target:JAP_initiator
+				# give_guarantee = event_target:ITA_fascism
+				# give_guarantee = event_target:JAP_initiator
 			}
 			event_target:ITA_fascism = {
-				give_guarantee = event_target:JAP_initiator
-				give_guarantee = event_target:GER_fascism
+				# give_guarantee = event_target:JAP_initiator
+				# give_guarantee = event_target:GER_fascism
 			}
 		}
 		hidden_effect = {
@@ -845,16 +845,16 @@ country_event = {
 		name = excellent
 		effect_tooltip = {
 			event_target:JAP_initiator = {
-				give_guarantee = event_target:ITA_fascism
-				give_guarantee = event_target:GER_fascism
+				# give_guarantee = event_target:ITA_fascism
+				# give_guarantee = event_target:GER_fascism
 			}
 			event_target:GER_fascism = {
-				give_guarantee = event_target:ITA_fascism
-				give_guarantee = event_target:JAP_initiator
+				# give_guarantee = event_target:ITA_fascism
+				# give_guarantee = event_target:JAP_initiator
 			}
 			event_target:ITA_fascism = {
-				give_guarantee = event_target:JAP_initiator
-				give_guarantee = event_target:GER_fascism
+				# give_guarantee = event_target:JAP_initiator
+				# give_guarantee = event_target:GER_fascism
 			}
 		}
 	}

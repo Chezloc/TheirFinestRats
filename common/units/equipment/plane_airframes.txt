@@ -621,6 +621,7 @@ small_plane_airframe_4 = { #modern
 				recon_camera
 				fighter_weapon_secondary
 				cas_weapon
+				special_bombs
 				nav_bomber_weapon
 				kamikaze_bomber_weapon
 				jet_cas_weapon_extra
@@ -634,6 +635,8 @@ small_plane_airframe_4 = { #modern
 				nav_bomber_weapon
 				kamikaze_bomber_weapon
 				jet_cas_weapon_extra
+				cas_weapon
+				special_bombs
 			}
 		}
 		engine_type_slot = {

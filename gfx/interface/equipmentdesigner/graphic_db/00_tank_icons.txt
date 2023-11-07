@@ -14,7 +14,7 @@ default = {
 				"gfx/interface/technologies/tanks/usa/usa_mech_1.dds"
 				"gfx/interface/technologies/tanks/usa/usa_amtrac_1.dds"
 				"gfx/interface/technologies/tanks/jap/jap_amtrac_1.dds"
-				"gfx/interface/technologies/tanks/ger/ger_amtrac_1.dds"
+				# "gfx/interface/technologies/tanks/ger/ger_amtrac_1.dds"
 			}
 			models= {
 				"SOV_mechanized_vehicle_entity"
@@ -39,7 +39,7 @@ default = {
 				"gfx/interface/technologies/tanks/usa/usa_mech_2.dds"
 				"gfx/interface/technologies/tanks/usa/usa_amtrac_2.dds"
 				"gfx/interface/technologies/tanks/jap/jap_amtrac_2.dds"
-				"gfx/interface/technologies/tanks/ger/ger_amtrac_1.dds"
+				# "gfx/interface/technologies/tanks/ger/ger_amtrac_1.dds"
 			}
 			models= {
 				"SOV_mechanized_vehicle_entity"
@@ -64,7 +64,7 @@ default = {
 				"gfx/interface/technologies/tanks/usa/usa_amtrac_3.dds"
 				"gfx/interface/technologies/tanks/jap/jap_amtrac_1.dds"
 				"gfx/interface/technologies/tanks/jap/jap_amtrac_2.dds"
-				"gfx/interface/technologies/tanks/ger/ger_amtrac_1.dds"
+				# "gfx/interface/technologies/tanks/ger/ger_amtrac_1.dds"
 			}
 			models= {
 				"SOV_mechanized_vehicle_entity"

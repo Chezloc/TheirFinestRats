@@ -88,6 +88,12 @@ political_actions = {
 			date > 1939.1.1
 			NZL = { is_ai = yes }
 			# NOT = { 523 = {is_core_of = AST} }
+			if = {
+				limit = {
+					has_idea = AST_no_nzl_annex
+				}
+				has_manpower > 100000
+			}
 		}
 
 		ai_will_do = {

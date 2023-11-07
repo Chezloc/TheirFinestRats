@@ -868,7 +868,7 @@ country_event = {
 		name = mtg_netherlands.26.a
 		effect_tooltip = {
 			add_war_support = 0.1
-			give_guarantee = HOL
+			# give_guarantee = HOL
 		}
 		FROM = { country_event = { id = mtg_netherlands.27 } }
 	}
@@ -897,7 +897,7 @@ country_event = {
 		name = mtg_netherlands.27.a
 		USA = {
 			add_war_support = 0.1
-			give_guarantee = HOL
+			# give_guarantee = HOL
 		}
 		hidden_effect = { news_event = { id = mtg_news.52 days = 1 } }
 	}

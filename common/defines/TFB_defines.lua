@@ -318,7 +318,7 @@ NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0
 NDefines.NMilitary.GENERATE_AI_DIV_COMMAND_HISTORY_ENTRIES = false	--Should we generate history entries for the AI (may cause savegame bloat)
 NDefines.NMilitary.FIELD_OFFICER_PROMOTION_PENALTY = 0.0		--Amount of division experience lost when promoting a commander (reduced by modifiers)
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 5				-- 	cost to assign a new trait to a unit leader
-
+NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1			-- Which level a field marhal or general has to be before they can pick their preferred tactic
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.05
 NDefines.NAir.ACCIDENT_CHANCE_CARRIER_MULT = 2.0
 NDefines.NAir.ACCIDENT_CHANCE_BALANCE_MULT = 0.5
@@ -670,7 +670,7 @@ NDefines.NIndustrialOrganisation.DESIGN_TEAM_RESEARCH_BONUS = 0.05				-- Researc
 NDefines.NIndustrialOrganisation.ENABLE_TASK_CAPACITY = false					-- Enable limited task capacity for MIOs
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_TASK_CAPACITY = 0				-- Default start task capacity for each MIO (may be overriden in DB)
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_POLICY_ATTACH_COST = 25		-- Default start attach cost in PP for policies
-NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 180	-- Default start cooldown in days after attaching a policy
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 0	  --180 in vanilla	-- Default start cooldown in days after attaching a policy
 NDefines.NIndustrialOrganisation.LEGACY_COST_FACTOR_SCALE = 1.0					-- Multiplier to use when legacy Designer cost factors is applied to MIOs (<IdeaGroup>_cost_factor)
 
 -- EXPERIMENTAL GRAPHICS

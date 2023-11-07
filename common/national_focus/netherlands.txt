@@ -6441,7 +6441,7 @@ focus = {
 				effect_tooltip = {
 					USA = {
 						add_war_support = 0.1
-						give_guarantee = HOL
+						# give_guarantee = HOL
 					}
 				}
 				USA = { country_event = { id = mtg_netherlands.26 } }

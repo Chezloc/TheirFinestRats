@@ -2,6 +2,14 @@
 ##### USA ######
 ################
 
+USA_persian_corridor = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = USA
+	}
+}
+
 USA_split_china = {
 
 	priority = 5000
@@ -220,11 +228,11 @@ USA_election_campaigns = {
 
 	icon = SOV_propaganda
 
-	scripted_gui = usa_election_campaigns_ui
+	# scripted_gui = usa_election_campaigns_ui
 
 	allowed = {
 		original_tag = USA
 	}
 
-	visible_when_empty = yes
+	# visible_when_empty = yes
 }

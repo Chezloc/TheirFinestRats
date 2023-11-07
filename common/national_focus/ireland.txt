@@ -895,12 +895,6 @@ focus_tree = {
         ai_will_do = {
             factor = 1
         }
-
-		allow_branch = {
-			NOT = {
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
     
         available = {
     
@@ -919,21 +913,31 @@ focus_tree = {
         }
     
         completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = IRE_timoney_technology
-            add_ideas = IRE_timoney_technology
 			add_tech_bonus = {
 				name = IRE_Improvements_for_Armored_Cars
 				bonus = 0.75
 				uses = 2
 				category = cat_armored_car
 			}
-            # Add Armor Car Designer
-                # -15% ic
-                # 10% reliability
-                # 10% soft attack
-                # 10% hard attack
-                # 20% aa (if AC AA)
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				mio:ENG_COM_timoney_technology = {
+					add_mio_size = 2
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = IRE_timoney_technology
+				add_ideas = IRE_timoney_technology
+				# Add Armor Car Designer
+					# -15% ic
+					# 10% reliability
+					# 10% soft attack
+					# 10% hard attack
+					# 20% aa (if AC AA)
+			}
         }
     }
 

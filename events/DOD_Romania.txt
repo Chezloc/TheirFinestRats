@@ -30,7 +30,7 @@ country_event = {
 			}
 		}
 		ROM = { country_event = DOD_romania.2 }
-		give_guarantee = ROM
+		# give_guarantee = ROM
 	}
 
 	option = { #no
@@ -53,7 +53,7 @@ country_event = {
 
 	option = { #cool
 		name = DOD_romania.2.a
-		give_guarantee = POL
+		# give_guarantee = POL
 		hidden_effect = {
 			news_event = { id = news.316 days = 1 }
 		}
@@ -166,7 +166,7 @@ country_event = {
 				factor = 2
 			}
 		}
-		give_guarantee = ROM
+		# give_guarantee = ROM
 		ROM = { country_event = DOD_romania.21 }
 	}
 
@@ -227,7 +227,7 @@ country_event = {
 	
 	option = { #sure
 		name = DOD_romania.30.a
-		give_guarantee = ROM
+		# give_guarantee = ROM
 		ai_chance = {
 			factor = 70
 			modifier = {

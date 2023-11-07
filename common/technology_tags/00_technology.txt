@@ -131,6 +131,7 @@ technology_categories = {
 	jaeger_tech
 	cat_armored_car
 	land_doctrine_non_cost
+	land_doctrine_summary
 	special_forces_doctrine
 	cat_maritime_patrol
 	cat_mountaineers_doctrine

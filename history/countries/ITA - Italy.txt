@@ -196,7 +196,7 @@ if = {
 	# 	target = ETH
 	# 	type = annex_everything
 	# }
-	give_guarantee = ALB
+	# give_guarantee = ALB
 }
 
 

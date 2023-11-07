@@ -1,5 +1,217 @@
 on_actions = {
+	# POLAND GUARANTEE
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = GER
+							is_in_faction_with = GER
+							original_tag = ITA
+							original_tag = JAP
+							is_in_faction_with = JAP
+						}
+					}
+					FROM = { tag = GRE}
+				}
+				ENG = { add_to_faction = GRE }
+				GRE = {
+					declare_war_on_enemy_faction = yes
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			GER = { # sotm barb end
+				country_event = { id = generic.44 days = 2312 } #2312
+			}
+			GER = { # africa tank start
+				country_event = { id = generic.45 days = 1705 } #1705
+			}
+		}
+	}
 
+	## EGYPTIAN LABOUR
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = ENG_controls_egypt_labour
+					}
+				}
+				FROM.FROM = {  
+					set_state_flag = GER_controls_egypt_labour
+					clr_state_flag = ENG_controls_egypt_labour
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = africa_tank_production_started
+						}
+					}
+					set_global_flag = africa_tank_production_started
+					GER = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					ITA = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					SPR = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					HUN = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					ROM = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					BUL = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					YUG = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					VIC = {
+						add_ideas = GER_african_resource_tank_production
+					}
+				}
+				else = {
+					ENG = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					CAN = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					SAF = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					RAJ = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					AST = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+					NZL = {
+						remove_ideas = GER_african_resource_tank_production
+					}
+
+					GER = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					ITA = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					SPR = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					HUN = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					ROM = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					BUL = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					YUG = {
+						add_ideas = GER_african_resource_tank_production
+					}
+					VIC = {
+						add_ideas = GER_african_resource_tank_production
+					}
+				}
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = { 
+							is_in_faction_with = GER
+							tag = GER
+							tag = ITA
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG
+							tag = ENG
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = GER_controls_egypt_labour
+					}
+				}
+				FROM.FROM = {  
+					set_state_flag = ENG_controls_egypt_labour
+					clr_state_flag = GER_controls_egypt_labour
+				}
+				ENG = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				CAN = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				SAF = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				RAJ = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				AST = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				NZL = {
+					add_ideas = GER_african_resource_tank_production
+				}
+
+				GER = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				ITA = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				SPR = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				HUN = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				ROM = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				BUL = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				YUG = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+				VIC = {
+					remove_ideas = GER_african_resource_tank_production
+				}
+			}
+		}
+	}
+	
 	on_war_relation_added = {
 		effect = {
 			if = {
@@ -347,7 +559,7 @@ on_actions = {
 	on_startup = {
 		effect = {
 			SOV = {
-				country_event = startingevent.1004
+				# country_event = startingevent.1004
 			}
 		}
 	}
@@ -420,18 +632,20 @@ on_actions = {
 				limit = {
 					has_global_flag = NO_ASIA
 				}
-				559 = {
-					set_demilitarized_zone = yes
-	
-				}     
-				550 = {
-					set_demilitarized_zone = yes
-	
-				}          
-				271 = {
-					set_demilitarized_zone = yes
-	
-				}
+				550 = { set_demilitarized_zone = yes }
+				842 = { set_demilitarized_zone = yes }
+				841 = { set_demilitarized_zone = yes }
+				843 = { set_demilitarized_zone = yes }
+				908 = { set_demilitarized_zone = yes }
+				840 = { set_demilitarized_zone = yes }
+				839 = { set_demilitarized_zone = yes }
+				838 = { set_demilitarized_zone = yes }
+				837 = { set_demilitarized_zone = yes }
+				271 = { set_demilitarized_zone = yes }
+				836 = { set_demilitarized_zone = yes }
+				835 = { set_demilitarized_zone = yes }
+				844 = { set_demilitarized_zone = yes }
+				559 = { set_demilitarized_zone = yes }
 			}
 		}
 	}

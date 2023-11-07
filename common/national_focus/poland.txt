@@ -2939,7 +2939,7 @@ focus_tree = {
 					}
 					NOT = { has_war_with = LIT }
 				}
-				give_guarantee = LIT
+				# give_guarantee = LIT
 				add_opinion_modifier = {
 					target = LIT
 					modifier = baltic_security_opinion
@@ -2966,7 +2966,7 @@ focus_tree = {
 					}
 					NOT = { has_war_with = LAT }
 				}
-				give_guarantee = LAT
+				# give_guarantee = LAT
 				add_opinion_modifier = {
 					target = LAT
 					modifier = baltic_security_opinion
@@ -2993,7 +2993,7 @@ focus_tree = {
 					}
 					NOT = { has_war_with = EST }
 				}
-				give_guarantee = EST
+				# give_guarantee = EST
 				add_opinion_modifier = {
 					target = EST
 					modifier = baltic_security_opinion
@@ -3066,7 +3066,7 @@ focus_tree = {
 					}
 				}
 				else = {
-					give_guarantee = CZE
+					# give_guarantee = CZE
 				}
 				add_opinion_modifier = {
 					target = CZE

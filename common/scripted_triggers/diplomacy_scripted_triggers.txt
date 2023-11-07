@@ -514,7 +514,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 		}
 		OR = {
 			NOT = { tag = SOV }
-			has_completed_focus = SOV_war_mobilisation
+			always = no
 		}
 		OR = {
 			NOT = { 
@@ -523,7 +523,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 				}
 			}
 			FROM = {
-				has_completed_focus = SOV_war_mobilisation
+				always = no
 			}
 		}
 		is_ai = no
@@ -564,7 +564,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 		}
 		OR = {
 			NOT = { tag = SOV }
-			has_completed_focus = SOV_war_mobilisation
+			always = no
 		}
 		OR = {
 			NOT = { 
@@ -573,7 +573,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = { # send
 				}
 			}
 			FROM = {
-				has_completed_focus = SOV_war_mobilisation
+				always = no
 			}
 		}
 		is_ai = no
@@ -652,7 +652,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 		}
 		OR = {
 			NOT = { tag = SOV }
-			has_completed_focus = SOV_war_mobilisation
+			always = no
 		}
 		OR = {
 			NOT = { 
@@ -660,7 +660,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 					tag = SOV
 				}
 			}
-			has_completed_focus = SOV_war_mobilisation
+			always = no
 		}
 		FROM = {
 			is_ai = no
@@ -702,7 +702,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 		}
 		OR = {
 			NOT = { tag = SOV }
-			has_completed_focus = SOV_war_mobilisation
+			always = no
 		}
 		OR = {
 			NOT = { 
@@ -710,7 +710,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = { #request
 					tag = SOV
 				}
 			}
-			has_completed_focus = SOV_war_mobilisation
+			always = no
 		}
 		FROM = {
 			is_ai = no
@@ -854,6 +854,42 @@ DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+}
+DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
+	always = no
+	# if = {
+	# 	limit = {
+	# 		has_game_rule = {
+	# 			rule = allow_coups
+	# 			option = FREE
+	# 		}
+	# 	}
+	# 	always = yes
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_game_rule = {
+	# 			rule = allow_coups
+	# 			option = AI_ONLY
+	# 		}
+	# 	}
+	# 	custom_trigger_tooltip = {
+	# 		tooltip = RULE_COUP_AI_ONLY_TT
+	# 		FROM = { is_ai = yes }
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_game_rule = {
+	# 			rule = allow_coups
+	# 			option = BLOCKED
+	# 		}
+	# 	}
+	# 	custom_trigger_tooltip = {
+	# 		tooltip = RULE_COUP_BLOCKED_TT
+	# 		always = no
+	# 	}
+	# }
 }
 DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 	if = {
@@ -1147,6 +1183,63 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = DENMARK_IS_A_PUPPET_CALL
 			always = no
+		}
+	}
+}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			original_tag = DEN
+			has_country_flag = DEN_is_protectorate_flag
+			is_subject = yes 
+
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			original_tag = FIN
+		}
+		OR = {
+			SOV = {
+				has_completed_focus = SOV_baltic_security
+			}
+			has_global_flag = SOV_winter_war_win
+			has_global_flag = SOV_winter_war_loss
+		}
+	}
+}
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = DEN
+				has_country_flag = DEN_is_protectorate_flag
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_FACTION
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			FROM = {
+				original_tag = FIN
+			}
+		}
+		OR = {
+			SOV = {
+				has_completed_focus = SOV_baltic_security
+			}
+			has_global_flag = SOV_winter_war_win
+			has_global_flag = SOV_winter_war_loss
 		}
 	}
 }

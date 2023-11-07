@@ -98,7 +98,7 @@ COM_rsaf_enfield_organization = {
         }
     }
 
-    available = {
-        FROM = { has_completed_focus = COM_contract_enfield }
-    }
+    # available = {
+    #     FROM = { has_completed_focus = COM_contract_enfield }
+    # }
 }

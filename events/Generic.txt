@@ -2626,7 +2626,104 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = generic.45 # start of african tank production
+	title = "x"
+	desc = "x"
+	
+	picture = GFX_news_event_004
 
+	is_triggered_only = yes
+    hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = africa_tank_production_started
+				}
+			}
+			if = {
+				limit = {
+					907 = {
+						CONTROLLER = {
+							OR = {
+								tag = ENG
+								is_in_faction_with = ENG
+								is_subject_of = ENG
+								tag = SOV
+								is_in_faction_with = SOV
+								is_subject_of = SOV
+							}
+						}
+					}
+				}
+				ENG = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				CAN = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				SAF = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				RAJ = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				AST = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				NZL = {
+					add_ideas = GER_african_resource_tank_production
+				}
+			}
+			if = {
+				limit = {
+					907 = {
+						CONTROLLER = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+								is_subject_of = GER
+								tag = JAP
+								is_in_faction_with = JAP
+								is_subject_of = JAP
+							}
+						}
+					}
+				}
+				GER = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				ITA = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				SPR = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				HUN = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				ROM = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				BUL = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				YUG = {
+					add_ideas = GER_african_resource_tank_production
+				}
+				VIC = {
+					add_ideas = GER_african_resource_tank_production
+				}
+			}
+		}
+		set_global_flag = africa_tank_production_started
+	}
+	option = {
+		name = "x"
+	}
+}
 
 add_namespace = horsttool
 news_event = {

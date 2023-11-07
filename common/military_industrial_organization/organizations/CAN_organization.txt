@@ -121,12 +121,12 @@ CAN_inglis_company_organization = {
 	}
 }
 
-CAN_small_arms_limited_organization = {
-	name = CAN_small_arms_limited_organization
-	include = generic_infantry_equipment_organization
-	icon = GFX_idea_small_arms_limited
-	allowed = {
-		original_TAG = CAN
-		has_dlc = "Together for Victory"
-	}
-}
+# CAN_small_arms_limited_organization = {
+# 	name = CAN_small_arms_limited_organization
+# 	include = generic_infantry_equipment_organization
+# 	icon = GFX_idea_small_arms_limited
+# 	allowed = {
+# 		original_TAG = CAN
+# 		has_dlc = "Together for Victory"
+# 	}
+# }

@@ -2490,8 +2490,6 @@ commonwealth_medium_tank_organization = {
 	
 		all_parents = { generic_mio_trait_material_recycling }
 		
-		mutually_exclusive = { generic_mio_trait_improved_protection }
-		
 		equipment_bonus = {
 			maximum_speed = 0.05
 			breakthrough = 0.05
@@ -2525,8 +2523,6 @@ commonwealth_medium_tank_organization = {
 		relative_position_id = generic_mio_trait_hardened_critical_components
 		
 		all_parents = { generic_mio_trait_hardened_critical_components }
-		
-		mutually_exclusive= { generic_mio_trait_speed_improvements }
 
 		equipment_bonus = {
 			armor_value = 0.1
@@ -4058,59 +4054,60 @@ generic_escort_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST } }
-		NOT = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD } }
-		NOT = {
-			AND = {
-				tag = POL
-				OR = {
-					has_dlc = "Poland: United and Ready"
-					has_dlc = "No Step Back"
-				}
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { tag = AST tag = NZL tag = RAJ }
-				has_dlc = "Together for Victory"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
-				has_dlc = "Waking the Tiger"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { tag = MEX tag = HOL }
-				has_dlc = "Man the Guns"
-			}
-		}
-		NOT = {
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { tag = EST  tag = LAT }
-				has_dlc = "No Step Back"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { tag = ETH tag = SWI }
-				has_dlc = "By Blood Alone"
-			}
-		}
-		NOT = {
-			AND = {
-				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE tag = ICE }
-				has_dlc = "Arms Against Tyranny"
-			}
-		}
+		# NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST } }
+		# NOT = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD } }
+		# NOT = {
+		# 	AND = {
+		# 		tag = POL
+		# 		OR = {
+		# 			has_dlc = "Poland: United and Ready"
+		# 			has_dlc = "No Step Back"
+		# 		}
+		# 	}
+		# }
+		# NOT = {
+		# 	AND = {
+		# 		OR = { tag = AST tag = NZL tag = RAJ }
+		# 		has_dlc = "Together for Victory"
+		# 	}
+		# }
+		# NOT = {
+		# 	AND = {
+		# 		OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+		# 		has_dlc = "Waking the Tiger"
+		# 	}
+		# }
+		# NOT = {
+		# 	AND = {
+		# 		OR = { tag = MEX tag = HOL }
+		# 		has_dlc = "Man the Guns"
+		# 	}
+		# }
+		# NOT = {
+		# 	AND = {
+		# 		tag = BUL
+		# 		has_dlc = "Battle for the Bosporus"
+		# 	}
+		# }
+		# NOT = {
+		# 	AND = {
+		# 		OR = { tag = EST  tag = LAT }
+		# 		has_dlc = "No Step Back"
+		# 	}
+		# }
+		# NOT = {
+		# 	AND = {
+		# 		OR = { tag = ETH tag = SWI }
+		# 		has_dlc = "By Blood Alone"
+		# 	}
+		# }
+		# NOT = {
+		# 	AND = {
+		# 		OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE tag = ICE }
+		# 		has_dlc = "Arms Against Tyranny"
+		# 	}
+		# }
+		always = no
 	}
 
 	equipment_type = {
@@ -8669,16 +8666,9 @@ generic_artillery_organization = {
 
 	equipment_type = {
 		artillery_equipment
-		heavy_artillery_equipment
 		anti_tank_equipment
-		heavy_anti_tank_equipment
-		anti_tank_equipment_squeeze
-		dp_artillery_equipment
-		pack_artillery_equipment
 		anti_air_equipment
-		heavy_anti_air_equipment
-		rocket_artillery_equipment
-		motorized_rocket_equipment
+		mio_cat_all_artillery_at_equipment
 	}
 
 	research_categories = {
@@ -9001,7 +8991,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST tag = IRE } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -9679,7 +9669,7 @@ generic_motorized_mechanized_organization = {
 	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = ROM tag = MEX } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = ROM tag = MEX tag = NZL } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -9735,13 +9725,8 @@ generic_motorized_mechanized_organization = {
 
 	equipment_type = {
 		motorized_equipment
-		motorized_rocket_equipment
 		mechanized_equipment
-		mechanized_td_equipment
-		mechanized_spg_equipment
-		mechanized_aa_equipment
-		mechanized_amphibious_chassis
-		mechanized_utility_equipment
+		mio_cat_eq_all_mechanized_variants
 	}
 	
 	research_categories = {
@@ -9870,6 +9855,7 @@ generic_motorized_mechanized_organization = {
 		relative_position_id = generic_mio_trait_steel_cargo_bed
 
 		equipment_bonus = {
+			air_attack = 0.05
 			breakthrough = 0.03
 		}
 	}
@@ -9885,6 +9871,7 @@ generic_motorized_mechanized_organization = {
 		all_parents = { generic_mio_trait_medium_machinegun_mounts }
 
 		equipment_bonus = {
+			air_attack = 0.05
 			hardness = 0.03
 		}
 	}

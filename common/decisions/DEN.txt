@@ -7071,7 +7071,7 @@ DEN_swedish_steel_production_category = {
 			FROM = { country_event = { id =  denmark_expansion_event.300 days = 2 } }
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
-				FROM = { give_guarantee = ROOT }
+				# FROM = { give_guarantee = ROOT }
 				ROOT = {
 					give_resource_rights = {
 						receiver = FROM

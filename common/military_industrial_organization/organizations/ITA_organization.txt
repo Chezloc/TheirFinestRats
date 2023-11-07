@@ -122,7 +122,8 @@ ITA_crda_organization = {
 	allowed = {	
 		OR = {
 			tag = ITA 
-			tag = SPR
+			tag = SPR 
+			tag = YUG 
 			AND = {
 				tag = BUL 
 				has_dlc = "Battle for the Bosporus"
@@ -138,29 +139,29 @@ ITA_crda_organization = {
 			}
 			FROM = { NOT = { has_war_with = ITA } }
 		}
-		ELSE = { #original_tag = ITA
-			FROM = { controls_state = 736 } #LITORALE (Trieste) 
-			ITA_is_northern_designer = yes
-		}
+		# ELSE = { #original_tag = ITA
+		# 	FROM = { controls_state = 736 } #LITORALE (Trieste) 
+		# 	# ITA_is_northern_designer = yes
+		# }
 
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			# custom_trigger_tooltip = {
-			# 	tooltip = has_invited_mio_tt
-			# 	FROM = {
-			# 		has_country_flag = has_invited_crda_mio_flag
-			# 	}
-			# }
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ITA
-				}
-				has_completed_focus = BUL_cooperation_with_italy
-				#is_in_faction_with = ITA
-				#NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
+		# IF = {
+		# 	limit = { FROM = { original_tag = BUL } }
+		# 	# custom_trigger_tooltip = {
+		# 	# 	tooltip = has_invited_mio_tt
+		# 	# 	FROM = {
+		# 	# 		has_country_flag = has_invited_crda_mio_flag
+		# 	# 	}
+		# 	# }
+		# 	FROM = {
+		# 		OR = {
+		# 			is_subject = no
+		# 			is_subject_of = ITA
+		# 		}
+		# 		has_completed_focus = BUL_cooperation_with_italy
+		# 		#is_in_faction_with = ITA
+		# 		#NOT = { has_completed_focus = BUL_nationalization }
+		# 	}
+		# }
 
 		if = {
 			limit = {
@@ -204,15 +205,20 @@ ITA_cantiere_oto_organization = {
 	allowed = {	
 		OR = {
 			tag = ITA 
-			tag = SPR
+			tag = SPR 
+			tag = GER 
+			tag = FIN 
+			tag = ROM 
+			tag = BUL 
+			tag = YUG 
 		}
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 158 #PIEDMONT (Genova)
-		}
-		ITA_is_northern_designer = yes
+		# FROM = {
+		# 	controls_state = 158 #PIEDMONT (Genova)
+		# }
+		# ITA_is_northern_designer = yes
 
 		if = {
 			limit = {
@@ -249,45 +255,36 @@ ITA_cantiere_oto_organization = {
 	# }
 }
 
-# ITA_navalmeccanica_organization = {
-# 	include = generic_refurbishment_repair_organization
-# 	icon = GFX_idea_ITA_navalmeccanica
+ITA_navalmeccanica_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_ITA_navalmeccanica
 	
-# 	allowed = {	
-# 		tag = ITA 
-# 	}
+	allowed = {	
+		OR = {
+			tag = ITA 
+			tag = SPR 
+			tag = GER 
+			tag = FIN 
+			tag = BUL 
+		}
+	}
 	
-# 	available = {
-# 		FROM = {
-# 			controls_state = 117 # CAMPAGNA (Napoli)	
-# 		}
-# 		ITA_is_southern_designer = yes
-# 	}
+	available = {
+		# FROM = {
+		# 	controls_state = 117 # CAMPAGNA (Napoli)	
+		# }
+		# ITA_is_southern_designer = yes
 
-# 	# add_trait = { 
-# 	# 	token = ITA_mio_trait_new_industrialization_program
-# 	# 	name = ITA_new_industrialization_program
-# 	# 	icon = GFX_generic_mio_department_icon_ship_screen_ship_production
-# 	# 	special_trait_background = yes
-
-# 	# 	position = { x=9 y=0 }
-		
-# 	# 	available = {
-# 	# 		FROM = {
-# 	# 			has_completed_focus = ITA_new_industrialization_program
-# 	# 			has_completed_focus = ITA_modernize_the_mezzogiorno
-# 	# 		}
-# 	# 	}
-
-# 	# 	organization_modifier = {
-# 	# 		military_industrial_organization_research_bonus = 0.1
-# 	# 	}
-
-# 	# 	production_bonus = {
-# 	# 		production_capacity_factor = 0.1
-# 	# 	}
-# 	# }
-# } 
+		if = {
+			limit = {
+				FROM = {
+					original_tag = SPR
+				}
+			}
+			FROM = { has_completed_focus = SPA_italian_naval_designers }
+		}
+	}
+} 
 
 ITA_cantiere_navale_di_ancona_organization = {
 	include = generic_raider_ship_organization
@@ -297,14 +294,16 @@ ITA_cantiere_navale_di_ancona_organization = {
 		OR = {
 			tag = ITA 
 			tag = SPR 
+			tag = BUL 
+			tag = YUG 
 		}
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 157 # ABRUZZO (Ancona)		
-		}
-		ITA_is_southern_designer = yes
+		# FROM = {
+		# 	controls_state = 157 # ABRUZZO (Ancona)		
+		# }
+		# ITA_is_southern_designer = yes
 
 		if = {
 			limit = {
@@ -425,9 +424,9 @@ ITA_macchi_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 159 #LOMBARDIA
-			}
+			# FROM = {
+			# 	controls_state = 159 #LOMBARDIA
+			# }
 			ITA_is_northern_designer = yes
 		}
 	}
@@ -466,9 +465,9 @@ ITA_savoia_marchetti_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 159 #LOMBARDIA
-		}
+		# FROM = {
+		# 	controls_state = 159 #LOMBARDIA
+		# }
 		ITA_is_northern_designer = yes
 	}
 
@@ -588,9 +587,9 @@ ITA_caproni_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 159 #LOMBARDIA
-			}
+			# FROM = {
+			# 	controls_state = 159 #LOMBARDIA
+			# }
 			ITA_is_northern_designer = yes
 		}
 	}
@@ -629,9 +628,9 @@ ITA_piaggio_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 158 #PIEMONTE
-		}
+		# FROM = {
+		# 	controls_state = 158 #PIEMONTE
+		# }
 		ITA_is_northern_designer = yes
 	}
 
@@ -690,9 +689,9 @@ ITA_imam_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 117 #CAMPANIA (Napoli)
-			}
+			# FROM = {
+			# 	controls_state = 117 #CAMPANIA (Napoli)
+			# }
 			ITA_is_southern_designer = yes
 		}
 	}
@@ -731,9 +730,9 @@ ITA_crda_cant_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 736 #LITORALE (Trieste)
-		}
+		# FROM = {
+		# 	controls_state = 736 #LITORALE (Trieste)
+		# }
 		ITA_is_southern_designer = yes
 	}
 
@@ -771,9 +770,9 @@ ITA_fiat_aviazione_organization = {
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 158 #PIEDMONT (Torino)
-		}
+		# FROM = {
+		# 	controls_state = 158 #PIEDMONT (Torino)
+		# }
 		ITA_is_northern_designer = yes
 	}
 	
@@ -877,9 +876,9 @@ ITA_beretta_organization = {
 			FROM = { NOT = { has_war_with = ITA } }
 		}
 		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 159 #LOMBARDIA	
-			}
+			# FROM = {
+			# 	controls_state = 159 #LOMBARDIA	
+			# }
 			ITA_is_northern_designer = yes
 		}
 	}
@@ -931,29 +930,29 @@ ITA_lancia_organization = {
 			}
 			FROM = { NOT = { has_war_with = ITA } }
 		}
-		ELSE = { #original_tag = ITA
-			FROM = { controls_state = 159 } #LOMBARDIA
-			ITA_is_northern_designer = yes
-		}
+		# ELSE = { #original_tag = ITA
+		# 	FROM = { controls_state = 159 } #LOMBARDIA
+		# 	ITA_is_northern_designer = yes
+		# }
 		
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			# custom_trigger_tooltip = {
-			# 	tooltip = has_invited_mio_tt
-			# 	FROM = {
-			# 		has_country_flag = has_invited_lancia_mio_flag
-			# 	}
-			# }
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ITA
-				}
-				has_completed_focus = BUL_cooperation_with_italy
-				#is_in_faction_with = ITA
-				#NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
+		# IF = {
+		# 	limit = { FROM = { original_tag = BUL } }
+		# 	# custom_trigger_tooltip = {
+		# 	# 	tooltip = has_invited_mio_tt
+		# 	# 	FROM = {
+		# 	# 		has_country_flag = has_invited_lancia_mio_flag
+		# 	# 	}
+		# 	# }
+		# 	FROM = {
+		# 		OR = {
+		# 			is_subject = no
+		# 			is_subject_of = ITA
+		# 		}
+		# 		has_completed_focus = BUL_cooperation_with_italy
+		# 		#is_in_faction_with = ITA
+		# 		#NOT = { has_completed_focus = BUL_nationalization }
+		# 	}
+		# }
 	}
 
 	# add_trait = { 
@@ -1009,12 +1008,12 @@ ITA_breda_organization = {
 			}
 			FROM = { NOT = { has_war_with = ITA } }
 		}
-		ELSE = { #original_tag = ITA
-			FROM = {
-				controls_state = 159 #LOMBARDIA
-			}
-			ITA_is_northern_designer = yes
-		}
+		# ELSE = { #original_tag = ITA
+		# 	FROM = {
+		# 		controls_state = 159 #LOMBARDIA
+		# 	}
+		# 	ITA_is_northern_designer = yes
+		# }
 	}
 
 	# add_trait = { 
@@ -1047,14 +1046,25 @@ ITA_brescia_arsenal_organization = {
 	icon = GFX_idea_ITA_brescia_arsenal
 	
 	allowed = {	 
-		tag = ITA
+		OR = {
+			tag = ITA
+			tag = GER
+			tag = HUN
+			tag = ROM
+			tag = BUL
+			tag = YUG
+			tag = FIN
+			tag = JAP
+			tag = MAN
+			tag = SIA
+		}
 	}
 	
 	available = {
-		FROM = {
-			controls_state = 159 #LOMBARDIA
-		}
-		ITA_is_northern_designer = yes
+		# FROM = {
+		# 	controls_state = 159 #LOMBARDIA
+		# }
+		# ITA_is_northern_designer = yes
 	}
 
 	# add_trait = { 

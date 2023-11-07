@@ -677,7 +677,7 @@ country_event = {
 			}
 			set_country_flag = VIC_vichy_france_confirmed
 			GER = {
-				give_guarantee = PREV
+				# give_guarantee = PREV
 			}
 			every_unit_leader = {
 				limit = {

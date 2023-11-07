@@ -13,6 +13,7 @@ mio_policy_air_perfect_finish = {
 			has_mio_equipment_type = transport_plane_equipment
 			has_mio_equipment_type = amerikabomber_equipment
 		}
+		always = no
 	}
 	available = { has_mio_size > 5}
 	equipment_bonus = {
@@ -34,9 +35,13 @@ mio_policy_air_heavy_gantry_cranes = {
 			has_mio_equipment_type = transport_plane_equipment
 			has_mio_equipment_type = amerikabomber_equipment
 		}
+		always = no
 	}
 	available = { has_mio_size > 5}
 	production_bonus = {
+		mio_cat_eq_all_medium_plane = {
+			production_efficiency_cap_factor = 0.05
+		}
 		large_plane_airframe = {
 			production_efficiency_cap_factor = 0.05
 		}
@@ -58,6 +63,7 @@ mio_policy_air_propulsion_experimenters = {
 			has_mio_equipment_type = transport_plane_equipment
 			has_mio_equipment_type = amerikabomber_equipment
 		}
+		always = no
 	}
 	available = { has_mio_size > 5}
 	

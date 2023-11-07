@@ -101,19 +101,30 @@ AST_lysaghts_works_organization = {
 		OR = {
 			original_TAG = AST
 			original_TAG = SAF
+			original_TAG = USA
+			original_TAG = MEX
+			original_TAG = BRA
+			original_TAG = IRE
+			original_TAG = ENG
+			original_TAG = FRA
+			original_TAG = HOL
+			original_TAG = SOV
+			original_TAG = MON
+			original_TAG = RAJ
+			original_TAG = NZL
 		}
 		has_dlc = "Together for Victory"
 	}
 }
-AST_lithgow_saf_organization = {
-	name = AST_lithgow_saf_organization
-	include = generic_infantry_equipment_organization
-	icon = GFX_idea_lithgow_saf
-	allowed = {
-		OR = {
-			original_TAG = AST
-			original_TAG = SAF
-		}
-		has_dlc = "Together for Victory"
-	}
-}
+# AST_lithgow_saf_organization = {
+# 	name = AST_lithgow_saf_organization
+# 	include = generic_infantry_equipment_organization
+# 	icon = GFX_idea_lithgow_saf
+# 	allowed = {
+# 		OR = {
+# 			original_TAG = AST
+# 			original_TAG = SAF
+# 		}
+# 		has_dlc = "Together for Victory"
+# 	}
+# }

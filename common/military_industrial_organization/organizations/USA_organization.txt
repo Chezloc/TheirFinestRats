@@ -9,101 +9,96 @@
  #################### 
 
 
-# USA_marmon_herrington_organization = {
-# 	include = generic_mobile_tank_organization
-# 	icon = GFX_idea_marmon_herrington
-# 	allowed = {	
-# 		tag = USA 
+USA_marmon_herrington_organization = {
+	include = generic_pmfu_light_tank_organization
+	icon = GFX_idea_marmon_herrington
+	allowed = {	
+		tag = USA 
 
-# 	}
-# }
+	}
+}
 
-# USA_chrysler_organization = {
-# 	include = generic_medium_tank_organization
-# 	icon = GFX_idea_chrysler
+USA_chrysler_organization = {
+	include = generic_pmfu_heavy_tank_organization
+	icon = GFX_idea_chrysler
 	
-# 	allowed = {	
-# 		OR = {
-# 			tag = USA 
-# 			AND = {
-# 				tag = MEX 
-# 				has_dlc = "Man the Guns"
-# 			}
-# 			NOR_AAT = yes 
-# 		}
-# 	}
+	allowed = {	
+		OR = {
+			tag = USA 
+		}
+	}
 
-# 	available = {
-# 		# When in a Foreign MIO, countries need to be at peace with original country
-# 		IF = {
-# 			limit = {
-# 				FROM = { NOT = { original_tag = USA } }
-# 			}
-# 			FROM = { NOT = { has_war_with = USA } }
-# 		}
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		# IF = {
+		# 	limit = {
+		# 		FROM = { NOT = { original_tag = USA } }
+		# 	}
+		# 	FROM = { NOT = { has_war_with = USA } }
+		# }
 
-# 		if = {
-# 			limit = {
-# 				FROM = { tag = MEX }
-# 			}
-# 			FROM = { is_in_faction_with = USA }
-# 		} 
-# 		else_if = {
-# 			limit = {
-# 				FROM = { tag = NOR }
-# 			}
-# 			FROM = { 
-# 				has_completed_focus = NOR_invite_transnational_manufacturers
-# 			}
-# 		}
-# 	}
+		# if = {
+		# 	limit = {
+		# 		FROM = { tag = MEX }
+		# 	}
+		# 	FROM = { is_in_faction_with = USA }
+		# } 
+		# else_if = {
+		# 	limit = {
+		# 		FROM = { tag = NOR }
+		# 	}
+		# 	FROM = { 
+		# 		has_completed_focus = NOR_invite_transnational_manufacturers
+		# 	}
+		# }
+	}
 
-# 	initial_trait = {
-# 		name = USA_mio_trait_medium_tank_organization
+	# initial_trait = {
+	# 	name = USA_mio_trait_medium_tank_organization
 
-# 		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+	# 	limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
 
-# 		equipment_bonus = {
-# 			reliability = 0.1
-# 			soft_attack = 0.02
-# 			hard_attack = 0.03
-# 			defense = -0.15
-# 		}
-# 	}
+	# 	equipment_bonus = {
+	# 		reliability = 0.1
+	# 		soft_attack = 0.02
+	# 		hard_attack = 0.03
+	# 		defense = -0.15
+	# 	}
+	# }
 
-# 	add_trait = { 
-# 		token = USA_mio_trait_strict_design_specifications
-# 		name = USA_mio_trait_strict_design_specifications
-# 		icon = GFX_generic_mio_trait_icon_reliability
-# 		special_trait_background = yes
+	# add_trait = { 
+	# 	token = USA_mio_trait_strict_design_specifications
+	# 	name = USA_mio_trait_strict_design_specifications
+	# 	icon = GFX_generic_mio_trait_icon_reliability
+	# 	special_trait_background = yes
 
-# 		position = { x=2 y=1 }
-# 		relative_position_id = generic_mio_trait_simplified_turret_design
+	# 	position = { x=2 y=1 }
+	# 	relative_position_id = generic_mio_trait_simplified_turret_design
 
-# 		all_parents = { generic_mio_trait_simplified_turret_design generic_mio_trait_armor_steel_working }
-# 		limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
+	# 	all_parents = { generic_mio_trait_simplified_turret_design generic_mio_trait_armor_steel_working }
+	# 	limit_to_equipment_type = { mio_cat_eq_all_medium_tank }
 
-# 		equipment_bonus = {
-# 			reliability = 0.1
-# 		}
-# 	}
+	# 	equipment_bonus = {
+	# 		reliability = 0.1
+	# 	}
+	# }
 
-# 	add_trait = { 
-# 		token = USA_mio_trait_expanded_production_facilities
-# 		name = USA_mio_trait_expanded_production_facilities
-# 		icon = GFX_generic_mio_trait_icon_build_cost_ic
-# 		special_trait_background = yes
+	# add_trait = { 
+	# 	token = USA_mio_trait_expanded_production_facilities
+	# 	name = USA_mio_trait_expanded_production_facilities
+	# 	icon = GFX_generic_mio_trait_icon_build_cost_ic
+	# 	special_trait_background = yes
 
-# 		position = { x=0 y=1 }
-# 		relative_position_id = USA_mio_trait_strict_design_specifications
+	# 	position = { x=0 y=1 }
+	# 	relative_position_id = USA_mio_trait_strict_design_specifications
 
-# 		all_parents = { USA_mio_trait_strict_design_specifications }
-# 		production_bonus = {
-# 			production_cost_factor = -0.1
-# 			production_capacity_factor = 0.05
-# 		}
-# 	}
-# }
+	# 	all_parents = { USA_mio_trait_strict_design_specifications }
+	# 	production_bonus = {
+	# 		production_cost_factor = -0.1
+	# 		production_capacity_factor = 0.05
+	# 	}
+	# }
+}
 
 # USA_army_ordnance_department_organization = {
 # 	include = generic_medium_tank_organization
@@ -146,57 +141,74 @@
 # 	}
 # }
 
-# USA_detroit_arsenal_organization = {
-# 	name = detroit_arsenal
-# 	include = generic_tank_organization
-# 	icon = GFX_idea_generic_industrial_concern_1
-# 	allowed = {	
-# 		tag = USA
-# 	}
-# 	available = {
-# 		FROM = { has_completed_focus = USA_main_battle_tanks }
-# 	}
-# }
+USA_detroit_arsenal_organization = {
+	name = detroit_arsenal
+	include = commonwealth_medium_tank_organization
+	icon = GFX_idea_generic_industrial_concern_1
+	allowed = {	
+		tag = USA
+	}
 
-# USA_tank_destroyer_board_organization = {
-# 	name = tank_destroyer_board
-# 	include = generic_mobile_tank_organization
-# 	icon = GFX_idea_usa_tank_destroyer_board
-# 	allowed = {	
-# 		tag = USA 
-# 	}
-# 	available = {
-# 		FROM = { has_completed_focus = USA_tank_destroyer_doctrine }
-# 	}
-# 	initial_trait = {
-# 		name = ROM_mio_trait_mobile_tank_destroyers
-		
-# 		limit_to_equipment_type = { 
-# 			mio_cat_eq_all_tank_destroyers
-# 		}
-		
-# 		equipment_bonus = {
-# 			reliability = 0.05
-# 			hard_attack = 0.05
-# 			ap_attack = 0.05
-# 		}
-# 	}
+	override_trait = { 
+		token = generic_mio_trait_heavy_tank_specialization
+		name = USA_mio_trait_expanded_production_facilities
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		special_trait_background = yes
 
-# 	override_trait = {
-# 		token = generic_mio_enlarged_breech
-# 		limit_to_equipment_type = { 
-# 			mio_cat_eq_all_tank_destroyers
-# 		}
-# 		equipment_bonus = {
-# 			hard_attack = 0.05
-# 			ap_attack = 0.1
-# 		}
-# 		special_trait_background = yes
-# 	}
-# }
+		position = { x=-2 y=1 }
 
+		any_parent = { generic_mio_trait_material_recycling generic_mio_trait_hardened_critical_components }
+		all_parents = { generic_mio_trait_mass_production }
 
+		available = {
+			FROM = { has_completed_focus = USA_main_battle_tanks }
+		}
 
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+	}
+}
+
+USA_tank_destroyer_board_organization = {
+	name = tank_destroyer_board
+	include = generic_pmfu_variant_tank_organization
+	icon = GFX_idea_usa_tank_destroyer_board
+	allowed = {	
+		tag = USA 
+	}
+
+	override_trait = {
+		token = generic_mio_trait_dual_plant_main_armament_production
+		position = { x=1 y=1 }
+	}
+
+	add_trait = { 
+		token = USA_mio_trait_mobile_tank_destroyers
+		name = ROM_mio_trait_mobile_tank_destroyers
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_dual_plant_main_armament_production
+
+		all_parents = { generic_mio_trait_dual_plant_main_armament_production }
+		limit_to_equipment_type = { mio_cat_eq_all_tank_destroyers }
+
+		available = {
+			FROM = { has_completed_focus = USA_tank_destroyer_doctrine }
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+	}
+}
 
 #####################
 
@@ -213,7 +225,10 @@ USA_norfolk_naval_yard_organization = {
 	include = generic_battle_line_ship_organization
 	icon = GFX_idea_norfolk_naval_yard
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA 
+			tag = BRA 
+		}
 	}
 }
 
@@ -221,7 +236,11 @@ USA_electric_boat_company_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_electric_boat_company
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA 
+			tag = MEX 
+			tag = BRA
+		}
 	}
 }
 
@@ -229,7 +248,10 @@ USA_brooklyn_naval_yard_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_brooklyn_naval_yard
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA 
+			tag = BRA 
+		}
 	}
 }
 
@@ -237,7 +259,11 @@ USA_newport_news_shipbuilding_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_newport_news_shipbuilding
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA 
+			tag = MEX 
+			tag = BRA 
+		}
 	}
 }
 
@@ -503,30 +529,31 @@ USA_ford_motor_company_organization = {
 	allowed = {	 
 		OR = {
 			tag = USA 
-			AND = {
-				tag = POL # If Poland sets up a local one
-				OR = {
-					has_dlc = "Poland: United and Ready"
-					has_dlc = "No Step Back"
-				}
-			}
-			AND = {
-				tag = ROM
-				has_dlc = "Death or Dishonor"
-			}
-			tag = MEX # Mexican Ford
-			AND = {
-				tag = GRE # Greek Ford
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				OR = {
-					original_TAG = LAT
-					original_TAG = LIT
-					original_TAG = EST
-				}
-				has_dlc = "No Step Back"
-			}
+			original_TAG = MEX
+			# AND = {
+			# 	tag = POL # If Poland sets up a local one
+			# 	OR = {
+			# 		has_dlc = "Poland: United and Ready"
+			# 		has_dlc = "No Step Back"
+			# 	}
+			# }
+			# AND = {
+			# 	tag = ROM
+			# 	has_dlc = "Death or Dishonor"
+			# }
+			# tag = MEX # Mexican Ford
+			# AND = {
+			# 	tag = GRE # Greek Ford
+			# 	has_dlc = "Battle for the Bosporus"
+			# }
+			# AND = {
+			# 	OR = {
+			# 		original_TAG = LAT
+			# 		original_TAG = LIT
+			# 		original_TAG = EST
+			# 	}
+			# 	has_dlc = "No Step Back"
+			# }
 		}
 	}
 	
@@ -537,7 +564,6 @@ USA_ford_motor_company_organization = {
 			}
 			FROM = {
 				has_country_flag = POL_ford_motors
-				NOT = { has_completed_focus = POL_adaptive_designs }
 			}
 		}
 	}
@@ -551,24 +577,24 @@ USA_ford_motor_company_organization = {
 			FROM = { NOT = { has_war_with = USA } }
 		}
 
-		IF = {
-			limit = { FROM = { original_tag = ROM } }
-			FROM = { has_country_flag = USA_mot_chosen }
-		}
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						original_TAG = LAT
-						original_TAG = LIT
-						original_TAG = EST
-					}
-				}
-			}
-			FROM = {
-				has_completed_focus = BALTIC_ford_motors
-			}
-		}
+		# IF = {
+		# 	limit = { FROM = { original_tag = ROM } }
+		# 	FROM = { has_country_flag = USA_mot_chosen }
+		# }
+		# if = {
+		# 	limit = {
+		# 		FROM = {
+		# 			OR = {
+		# 				original_TAG = LAT
+		# 				original_TAG = LIT
+		# 				original_TAG = EST
+		# 			}
+		# 		}
+		# 	}
+		# 	FROM = {
+		# 		has_completed_focus = BALTIC_ford_motors
+		# 	}
+		# }
 	}
 	
 	initial_trait = {

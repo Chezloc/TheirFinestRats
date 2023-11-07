@@ -187,9 +187,9 @@ on_actions = {
 				country_event = { 
 					id = startingevent.1002
 				}
-				country_event = { 
-					id = startingevent.1003
-				}
+				# country_event = { 
+				# 	id = startingevent.1003
+				# }
 			}
 		}
 		effect = {
@@ -1248,13 +1248,32 @@ on_actions = {
 					transfer_state = 633
 					transfer_state = 648
 				}
-				RAJ = {
-					transfer_state = 671
-					transfer_state = 670
-					transfer_state = 286
-					transfer_state = 741
-					transfer_state = 289
-					transfer_state = 724
+				if = {
+					limit = {
+						country_exists = RAJ
+					}
+					RAJ = {
+						transfer_state = 671
+						transfer_state = 670
+						transfer_state = 286
+						transfer_state = 741
+						transfer_state = 289
+						transfer_state = 724
+						transfer_state = 868
+						transfer_state = 869
+					}
+				}
+				else = {
+					USA = {
+						transfer_state = 671
+						transfer_state = 670
+						transfer_state = 286
+						transfer_state = 741
+						transfer_state = 289
+						transfer_state = 724
+						transfer_state = 868
+						transfer_state = 869
+					}
 				}
 				USA = { set_global_flag = JAP_has_capped }
 				USA = {
@@ -1276,23 +1295,33 @@ on_actions = {
 					original_tag = SOV
 					FROM = { is_in_faction_with = GER }
 				}
-				FIN = {
-					annex_country = {
-						target = MON
-						transfer_troops = no
+				if = {
+					limit = {
+						country_exists = FIN
 					}
-					transfer_state = 213
-					transfer_state = 215
-					transfer_state = 216
-					transfer_state = 195
-					transfer_state = 722
-					transfer_state = 147
-					transfer_state = 146
+					FIN = {
+						annex_country = {
+							target = MON
+							transfer_troops = no
+						}
+						transfer_state = 213
+						transfer_state = 215
+						transfer_state = 216
+						transfer_state = 195
+						transfer_state = 722
+						transfer_state = 147
+						transfer_state = 146
+					}
 				}
-				ROM = {
-					transfer_state = 766
-					transfer_state = 78
-					transfer_state = 80
+				if = {
+					limit = {
+						country_exists = ROM
+					}
+					ROM = {
+						transfer_state = 766
+						transfer_state = 78
+						transfer_state = 80
+					}
 				}
 				GER = {
 					annex_country = {
@@ -1445,6 +1474,11 @@ on_actions = {
 					transfer_state = 164
 					transfer_state = 449
 					transfer_state = 662
+					transfer_state = 669
+					transfer_state = 290
+					transfer_state = 661
+					transfer_state = 448
+					transfer_state = 909
 					set_autonomy = {
 						target = ITA
 						autonomy_state = autonomy_puppet
@@ -1702,6 +1736,10 @@ on_actions = {
 					transfer_state = 164
 					transfer_state = 449
 					transfer_state = 662
+					transfer_state = 661
+					transfer_state = 448
+					transfer_state = 699
+					transfer_state = 290
 				}
 				POL = {
 					transfer_state = 63
@@ -1886,6 +1924,11 @@ on_actions = {
 					transfer_state = 663
 					transfer_state = 451
 					transfer_state = 164
+					transfer_state = 699
+					transfer_state = 661
+					transfer_state = 448
+					transfer_state = 290
+					transfer_state = 909
 					set_autonomy = {
 						target = ITA
 						autonomy_state = autonomy_puppet

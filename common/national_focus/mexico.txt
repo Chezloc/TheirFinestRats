@@ -4498,9 +4498,7 @@ focus_tree = {
 					limit = {
 						has_dlc = "Arms Against Tyranny"
 					}
-					custom_effect_tooltip = available_mio_tt
-					show_mio_tooltip = MEX_tga_organization
-					mio:MEX_tga_organization = {
+					mio:ENG_vauxhall_organization = {
 						add_mio_funds = 500
 					}
 				}

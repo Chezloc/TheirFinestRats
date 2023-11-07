@@ -29,6 +29,11 @@ YUG_croatia = {
 	color_ui = rgb { 230 255 122 }
 }
 
+RAJ_FREE = {
+	color = rgb { 80  165  10 }
+	color_ui = rgb { 80  165  10 }
+}
+
 INS_HOL = {
     color = rgb { 203 138 74 }
     color_ui = rgb { 203 138 74 }
@@ -82,6 +87,27 @@ BAL_UNIFIED = {
 OTT_UNIFIED = {
 	color = rgb { 178 255 102 }
 	color_ui = rgb { 178 255 102 }
+}
+
+OTT_UNIFIED_communism = { #BftB
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
+}
+OTT_UNIFIED_democratic = { #BftB
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
+}
+OTT_UNIFIED_fascism = { #BftB
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
+}
+OTT_UNIFIED_neutrality = { #BftB
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
+}
+SYR_EYALET = {
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
 }
 
 EUR_UNIFIED = {

@@ -3578,7 +3578,7 @@ focus_tree = {
 				limit = {
 					is_core_of = SIA
 				}
-				add_compliance = 75
+				add_compliance = 100
 			}
 		}
 	}
@@ -3858,6 +3858,9 @@ focus_tree = {
 			declare_war_on = {
 				target = ENG
 				type = annex_everything
+			}
+			ENG = {
+				declare_war_on_enemy_faction = yes
 			}
 			declare_war_on = {
 				target = AST

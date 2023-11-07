@@ -1134,6 +1134,12 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = when_civil_war_starts_tt
+			if = {
+				limit = {
+					NOT = { has_completed_focus = FIN_the_second_finnish_civil_war }
+				}
+				custom_effect_tooltip = when_civil_war_starts_tt
+			}
 			show_unit_leaders_tooltip = FIN_emil_vaateri
 			show_unit_leaders_tooltip = FIN_eyolf_mattsson
 			show_unit_leaders_tooltip = FIN_toivo_antikainen
@@ -5817,27 +5823,47 @@ focus_tree = {
 		relative_position_id = FIN_military_aid
 		cost = 5
 		available = {
-			any_other_country = {
-				is_in_faction_with = ROOT
+			any_core_state = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+				controller = {
+					NORDIC_is_nordic = yes
+				}
+				OR = {
+					has_resources_amount = {
+						resource = steel
+						amount > 0
+					}
+					has_resources_amount = {
+						resource = chromium
+						amount > 0
+					}
+					has_resources_amount = {
+						resource = tungsten
+						amount > 0
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 0
+					}
+				}
 			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		select_effect = {
-			country_event = { id = AAT_finland_misc_events.03 hours = 6 random_hours = 3 }
+			if = {
+				limit = {
+					is_in_faction = yes
+					is_faction_leader = no
+				}
+				set_variable = { FIN_faction_leader_recieving_resource_rights = THIS.faction_leader }
+				country_event = { id = AAT_finland_misc_events.03 hours = 6 random_hours = 3 }
+			}
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-
-				}
-				custom_effect_tooltip = FIN_mineral_wealth_development_states_tt
-			}
-			else = {
-
-			}
+			custom_effect_tooltip = FIN_mineral_wealth_development_states_tt
 
 			every_state = {
 				limit = {
@@ -5930,6 +5956,7 @@ focus_tree = {
 
 			if = {
 				limit = {
+					check_variable = { FIN_faction_leader_recieving_resource_rights = 0 compare = not_equals }
 					var:FIN_faction_leader_recieving_resource_rights = {
 						has_capitulated = no
 						is_in_faction_with = ROOT
@@ -7552,9 +7579,9 @@ focus_tree = {
 					relation = non_aggression_pact 
 					active = yes
 				}
-				GER = {
-					give_guarantee = ROOT
-				}
+				# GER = {
+				# 	give_guarantee = ROOT
+				# }
 
 				give_resource_rights = {
 					receiver = GER
@@ -11323,8 +11350,6 @@ focus_tree = {
 		available = {
 			NOT = {
 				is_justifying_wargoal_against = SWE
-				is_embargoing = SWE
-				is_embargoed_by = SWE
 			}
 			SWE = {
 				exists = yes

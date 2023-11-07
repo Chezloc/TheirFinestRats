@@ -1337,12 +1337,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
 		completion_reward = {
-			GER = {
-				give_guarantee = YUG
-			}
-			ITA = {
-				give_guarantee = YUG
-			}
+			# GER = {
+			# 	give_guarantee = YUG
+			# }
+			# ITA = {
+			# 	give_guarantee = YUG
+			# }
 			add_political_power = 150
 		}
 	}

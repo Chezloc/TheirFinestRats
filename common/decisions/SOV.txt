@@ -5842,7 +5842,7 @@ SOV_diplomacy_middle_east_decision_category = {
 						type = puppet_wargoal_focus
 					}
 					ENG = {
-						add_to_war = { targeted_alliance = SOV enemy = PER hostility_reason = asked_to_join }
+						add_to_war = { targeted_alliance = SOV enemy = PER hostility_reason = asked_to_join single_target_only = yes }
 					}
 				}
 				else = { #ENG only sees a fake
@@ -5853,7 +5853,7 @@ SOV_diplomacy_middle_east_decision_category = {
 								type = puppet_wargoal_focus
 							}
 						}
-						add_to_war = { targeted_alliance = SOV enemy = PER hostility_reason = asked_to_join }
+						add_to_war = { targeted_alliance = SOV enemy = PER hostility_reason = asked_to_join single_target_only = yes }
 					}
 
 					hidden_effect = { news_event = { id = nsb_news.104 days = 4 random_days = 2 } } #Only ENG sends the news event.
@@ -10060,7 +10060,7 @@ operations = {
 				}
 
 				FIN = {
-					surrender_progress > 0.27
+					surrender_progress > 0.25
 				}
 			}
 		}

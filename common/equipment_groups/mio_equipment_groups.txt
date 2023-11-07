@@ -1,20 +1,29 @@
 
-mio_cat_all_artillery_equipment = {
-	equipment_type = {
-		artillery_equipment
-		anti_tank_equipment
+mio_cat_all_artillery_at_equipment = {
+	equipment_type = {	
 		dp_artillery_equipment
 		pack_artillery_equipment
 		anti_tank_equipment_squeeze
-		anti_air_equipment
-		rocket_artillery_equipment
-
-		motorized_rocket_equipment
 		heavy_artillery_equipment
 		heavy_anti_tank_equipment
 		heavy_anti_air_equipment
+		motorized_rocket_equipment
+		rocket_artillery_equipment
 	}	
 }
+
+mio_cat_eq_all_mechanized_variants = {
+	equipment_type = {
+		motorized_rocket_equipment
+		mot_anti_air_equipment
+		mechanized_td_equipment
+		mechanized_spg_equipment
+		mechanized_aa_equipment
+		mechanized_amphibious_chassis
+		mechanized_utility_equipment
+	}	
+}
+
 
 ########    ###    ##    ## ##    ##     ######   ########   #######  ##     ## ########   ######  
    ##      ## ##   ###   ## ##   ##     ##    ##  ##     ## ##     ## ##     ## ##     ## ##    ## 

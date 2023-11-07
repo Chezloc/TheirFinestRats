@@ -6,6 +6,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_tank_general_at.dds"
 	}	
 
+	spriteType = {
+		name = "GFX_military_industrial_organization_armored_car_chassis"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_armored_car.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mio_cat_all_artillery_at_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_artillery.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_mio_cat_eq_all_mechanized_variants"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_motorized_rocket_equipment.dds"
+	}	
+
 	### UNITS ###
 	SpriteType = { name = "GFX_paratroopers_medium" texturefile = "gfx/interface/technologies/infantry/r56_tech_shocktroops_01.dds" }
 	SpriteType = { name = "GFX_paratroopers2_medium" texturefile = "gfx/interface/technologies/infantry/r56_tech_shocktroops_02.dds" }
