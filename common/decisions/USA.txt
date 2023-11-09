@@ -7376,6 +7376,9 @@ USA_split_china = {
 political_actions = {
 	USA_statehood_for_alaska = {
 		icon = infiltrate_state
+		allowed = {
+			original_tag = USA
+		}
 		available = {
 			463 = {
 				not = { is_core_of = ROOT }
@@ -7409,6 +7412,9 @@ political_actions = {
 	}
 	USA_statehood_for_hawaii = {
 		icon = infiltrate_state
+		allowed = {
+			original_tag = USA
+		}
 		available = {
 			629 = {
 				not = { is_core_of = ROOT }
@@ -7441,6 +7447,9 @@ political_actions = {
 	}
 	USA_statehood_for_puerto_rico = {
 		icon = infiltrate_state
+		allowed = {
+			original_tag = USA
+		}
 		available = {
 			686 = {
 				not = { is_core_of = ROOT }
