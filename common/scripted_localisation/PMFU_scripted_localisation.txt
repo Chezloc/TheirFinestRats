@@ -2012,6 +2012,15 @@ defined_text = { # global
 		}
 		localization_key = RULE_OPTION_ASSAULT_GUN_SUPPORT
 	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = assault_gun
+				option = ASSAULT_GUN_DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_ASSAULT_GUN_DISABLED
+	}
 }
 
 defined_text = { # global

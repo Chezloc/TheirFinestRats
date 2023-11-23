@@ -3469,7 +3469,9 @@ focus_tree = {
 						logistics_skill = 5
 					}
 				}
-				add_ideas = MEX_conscription_campaign
+				# add_ideas = MEX_conscription_campaign
+				MEX_army_navy_dynamic_modifier_tt = yes # tooltip
+				add_to_variable = { MEX_mexican_army_navy_conscription = 0.02 tooltip = conscription_tt }
 			}
 	}
 
@@ -3808,12 +3810,18 @@ focus_tree = {
 			available_if_capitulated = yes
 
 			completion_reward = {
-				add_tech_bonus = {
-					name = MEX_marine_upgrades
-					bonus = 0.75
+				# add_tech_bonus = {
+				# 	name = MEX_marine_upgrades
+				# 	bonus = 0.75
+				# 	uses = 2
+				# 	technology = marines2
+				# 	technology = marines3
+				# }
+				add_doctrine_cost_reduction = {
+					name = ENG_parachute_regiments
+					cost_reduction = 0.5
 					uses = 2
-					technology = marines2
-					technology = marines3
+					category = cat_marines_doctrine
 				}
 				add_tech_bonus = {
 					name = MEX_rocket_upgrades

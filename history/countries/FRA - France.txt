@@ -41,12 +41,12 @@ set_technology = {
 	tech_field_hospital = 1
 	tech_signal_company = 1
 	motorised_infantry = 1
-	tech_mountaineers = 1
+	# tech_mountaineers = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	fra_light_tank_1 = 1
 	fra_medium_tank_1 = 1
-	jaegers = 1
+	# jaegers = 1
 	
 
 	armor_tech_1 = 1

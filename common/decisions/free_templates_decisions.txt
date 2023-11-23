@@ -291,6 +291,7 @@ free_templates = {
 		# icon = generic_naval
 
 		available = {
+			has_tech = special_forces_marines
 			NOT = {
 				has_template = "11/8 Marines"
 			}
@@ -355,6 +356,7 @@ free_templates = {
 		# icon = generic_naval
 
 		available = {
+			has_tech = special_forces_mountaineers
 			NOT = {
 				has_template = "11/8 Mountaineers"
 			}
@@ -419,6 +421,7 @@ free_templates = {
 		# icon = generic_naval
 
 		available = {
+			has_tech = special_forces_paratroopers
 			NOT = {
 				has_template = "11/8 Paratroopers"
 			}

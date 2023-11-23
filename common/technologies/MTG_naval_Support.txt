@@ -444,6 +444,7 @@ technologies = {
 	   enable_equipment_modules = {
 		   ship_medium_battery_3
 		   ship_light_medium_battery_3
+		   ship_secondaries_3
 		   cat_ship_medium_battery
 	   }
 
@@ -530,6 +531,7 @@ technologies = {
 	   enable_equipment_modules = {
 		   ship_medium_battery_4
 		   ship_light_medium_battery_4
+		   ship_secondaries_4
 	   }
 	   on_research_complete = {
 		   custom_effect_tooltip = medium_battery_advice_tt

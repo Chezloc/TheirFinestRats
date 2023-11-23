@@ -39,7 +39,7 @@ sub_units = {
 		soft_attack = -0.5
 		hard_attack = -0.5
 		
-		entrenchment  = 6
+		entrenchment  = 4
 
 		battalion_mult = {
 			category = category_light_infantry
@@ -147,7 +147,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		
-		entrenchment = 2
+		entrenchment = 4
 		
 		battalion_mult = {
 			category = category_marines
@@ -267,7 +267,7 @@ sub_units = {
 	# 	soft_attack = -0.5
 	# 	hard_attack = -0.5
 		
-	# 	entrenchment  = 8
+	# 	entrenchment  = 6
 
 	# 	battalion_mult = {
 	# 		category = category_light_infantry
@@ -376,7 +376,7 @@ sub_units = {
 		soft_attack = -0.5
 		hard_attack = -0.5
 		
-		entrenchment = 6
+		entrenchment = 4
 
 		battalion_mult = {
 			category = category_light_infantry
@@ -479,7 +479,7 @@ sub_units = {
 	# 	soft_attack = -0.5
 	# 	hard_attack = -0.5
 		
-	# 	entrenchment = 8
+	# 	entrenchment = 6
 
 	# 	battalion_mult = {
 	# 		category = category_light_infantry

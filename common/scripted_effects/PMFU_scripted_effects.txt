@@ -179,8 +179,11 @@ THIS_call_all_allies_against_ROOT = {
 						} 
 						AND = {
 							original_tag = FIN
-							has_war = no
 						}
+						AND = {
+							original_tag = ITA
+							has_war = no
+						} 
 						original_tag = PREV
 					} 
 				} 

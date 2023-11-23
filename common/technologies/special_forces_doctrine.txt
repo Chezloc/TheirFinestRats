@@ -11,10 +11,14 @@ technologies = {
 		# 	supply_consumption = -0.02
 		# }
 		category_mountaineers = {
-			max_organisation = 5
+			soft_attack = 0.05
+		}
+		category_rangers = {
 			soft_attack = 0.05
 		}
 		enable_subunits = {
+			mountaineers
+			jaeger
 			rangers_support
 		}		
 		###########
@@ -39,12 +43,12 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		allow = {
-			AND = {
-				has_tech = tech_mountaineers
-				can_unlock_new_special_forces_tree = yes
-			}
-		}
+		# allow = {
+		# 	AND = {
+		# 		has_tech = tech_mountaineers
+		# 		can_unlock_new_special_forces_tree = yes
+		# 	}
+		# }
 		
 		on_research_complete = {
 			remove_potential_special_forces_tree = yes
@@ -174,6 +178,9 @@ technologies = {
 		category_mountaineers = {
 			initiative = 0.01
 		}
+		category_rangers = {
+			initiative = 0.01
+		}
 		# unit_mountaineers_design_cost_factor = -0.50
 		# unit_rangers_support_design_cost_factor = -0.50
 		
@@ -220,6 +227,9 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		category_mountaineers = {
+			defense = 0.10
+		}
+		category_rangers = {
 			defense = 0.10
 		}
 		# mountaineers = {
@@ -315,6 +325,9 @@ technologies = {
 		category_mountaineers = {
 			max_organisation = 10
 		}
+		category_rangers = {
+			max_organisation = 10
+		}
 		
 		force_use_small_tech_layout = yes
 		
@@ -361,6 +374,9 @@ technologies = {
 		category_mountaineers = {
 			soft_attack = 0.10
 		}
+		category_rangers = {
+			soft_attack = 0.10
+		}
 		
 		# mountaineers_special_forces_contribution_factor = -0.25
 		special_forces_training_time_factor = -0.20
@@ -404,6 +420,9 @@ technologies = {
 		category_mountaineers = {
 			breakthrough = 0.1
 		}
+		category_rangers = {
+			breakthrough = 0.1
+		}
 		
 		force_use_small_tech_layout = yes
 
@@ -444,12 +463,12 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
-		allow = { 
-			AND = {
-				has_tech = marines
-				can_unlock_new_special_forces_tree = yes
-			}
-		}
+		# allow = { 
+		# 	AND = {
+		# 		has_tech = marines
+		# 		can_unlock_new_special_forces_tree = yes
+		# 	}
+		# }
 		
 		on_research_complete = {
 			remove_potential_special_forces_tree = yes
@@ -468,11 +487,11 @@ technologies = {
 		# marines_special_forces_contribution_factor = -0.25
 		naval_invasion_capacity = 5
 		category_marines = {
-			max_organisation = 5
 			soft_attack = 0.05
 		}
 		
 		enable_subunits = {
+			marine
 			pioneer_support
 		}
 		
@@ -620,7 +639,7 @@ technologies = {
 		
 		# unit_marine_design_cost_factor = -0.50
 
-		marine = {
+		category_marines = {
 			max_organisation = 5
 		}
 			
@@ -1001,16 +1020,18 @@ technologies = {
 			air_defence = 0.20
 		}
 		category_paratroopers = {
-			max_organisation = 5
 			soft_attack = 0.05
 		}
-		
-		allow = { 
-			AND = {
-				has_tech = paratroopers 
-				can_unlock_new_special_forces_tree = yes
-			}
+		enable_subunits = {
+			paratrooper
 		}
+		
+		# allow = { 
+		# 	AND = {
+		# 		has_tech = paratroopers 
+		# 		can_unlock_new_special_forces_tree = yes
+		# 	}
+		# }
 		
 		on_research_complete = {
 			remove_potential_special_forces_tree = yes

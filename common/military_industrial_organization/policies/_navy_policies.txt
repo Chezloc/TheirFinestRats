@@ -23,16 +23,17 @@ mio_policy_navy_welding_specialists = {
 mio_policy_navy_space_efficient_design = {
 	icon = GFX_mio_policy_space_efficient_design
 	allowed = {
-		OR ={
-			has_mio_equipment_type = capital_ship
-			has_mio_equipment_type = screen_ship
-			has_mio_equipment_type = submarine
-			has_mio_equipment_type = carrier
-			has_mio_equipment_type = mio_cat_eq_all_carrier
-			has_mio_equipment_type = mio_cat_eq_all_cruiser
-			has_mio_equipment_type = mio_cat_eq_all_destroyer
-			has_mio_equipment_type = mio_cat_eq_all_battleship
-		}
+		# OR ={
+		# 	has_mio_equipment_type = capital_ship
+		# 	has_mio_equipment_type = screen_ship
+		# 	has_mio_equipment_type = submarine
+		# 	has_mio_equipment_type = carrier
+		# 	has_mio_equipment_type = mio_cat_eq_all_carrier
+		# 	has_mio_equipment_type = mio_cat_eq_all_cruiser
+		# 	has_mio_equipment_type = mio_cat_eq_all_destroyer
+		# 	has_mio_equipment_type = mio_cat_eq_all_battleship
+		# }
+		always = no
 	}
 	available = { has_mio_size > 0}
 	equipment_bonus = {

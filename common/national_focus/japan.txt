@@ -3639,7 +3639,7 @@ focus_tree = {
 				uses = 2
 				category = infantry_weapons
 			}
-			add_potential_special_forces_tree = yes
+			# add_potential_special_forces_tree = yes
 			# add_ideas = JAP_expand_the_army
 			JAP_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { JAP_japanese_army_training_time_army_factor = -0.3 tooltip = training_time_army_factor_tt }
@@ -3668,7 +3668,7 @@ focus_tree = {
 				category = marine_tech
 				category = tp_tech
 			}
-			add_potential_special_forces_tree = yes
+			# add_potential_special_forces_tree = yes
 			# add_ideas = JAP_expand_the_snlf
 			JAP_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { JAP_japanese_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }

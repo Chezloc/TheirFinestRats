@@ -151,7 +151,7 @@ technologies = {
 		mech_engineers = {	
 			entrenchment  = 2
 			river = {
-				attack = 0.15
+				attack = 0.25
 			}
 		}
 
@@ -240,7 +240,7 @@ technologies = {
 		mech_engineers = {	
 			entrenchment  = 2
 			river = {
-				attack = 0.15
+				attack = 0.1
 			}
 		}
 		# mech_assault_engineers = {	

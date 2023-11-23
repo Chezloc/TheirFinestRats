@@ -14277,7 +14277,7 @@ focus_tree = {
 		relative_position_id = FIN_coastal_defense
 		cost = 10
 		available = {
-			has_tech = marines
+			has_tech = special_forces_marines
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER }

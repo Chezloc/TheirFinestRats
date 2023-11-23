@@ -1245,6 +1245,7 @@ SOV_the_red_army_dynamic_modifier = { #NATIONAL SPIRIT
 	planning_speed = SOV_the_red_army_army_planning_speed
 	surrender_limit = SOV_the_red_army_surrender_limit
 	experience_gain_army_unit_factor = SOV_the_red_army_experience_gain_army_unit_factor
+	max_dig_in_factor = SOV_the_red_army_max_dig_in_factor
 }
 
 SOV_the_red_army_dynamic_modifier_alt = { #NATIONAL SPIRIT
@@ -1285,6 +1286,7 @@ SOV_the_red_army_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	planning_speed = SOV_the_red_army_army_planning_speed
 	surrender_limit = SOV_the_red_army_surrender_limit
 	experience_gain_army_unit_factor = SOV_the_red_army_experience_gain_army_unit_factor
+	max_dig_in_factor = SOV_the_red_army_max_dig_in_factor
 }
 
 SOV_the_politburo_good_dynamic_modifier = {

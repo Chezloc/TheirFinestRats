@@ -1061,7 +1061,7 @@ shared_focus = {
 		modifier = {
 			factor = 0.1
 			NOT = {
-				has_tech = tech_mountaineers # Wait for the full benefit
+				has_tech = special_forces_mountaineers # Wait for the full benefit
 			}
 		}
 		# modifier = {
@@ -1095,7 +1095,7 @@ shared_focus = {
 		}
 		if = {
 			limit = {
-				has_tech = tech_mountaineers
+				has_tech = special_forces_mountaineers
 			}
 			custom_effect_tooltip = CHI_free_mountain_template_tt
 			division_template = {

@@ -1210,10 +1210,16 @@ focus_tree = {
 		}	
 		completion_reward = {
 			# add_ideas = ENG_special_air_service_idea
+			add_doctrine_cost_reduction = {
+				name = ENG_parachute_regiments
+				cost_reduction = 0.25
+				uses = 2
+				category = special_forces_doctrine
+			}
 			ENG_army_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ENG_british_army_special_forces_cap = 0.02 tooltip = special_forces_cap_tt }
 			add_to_variable = { ENG_british_army_special_forces_training_time_factor = -0.1 tooltip = special_forces_training_time_factor_tt }
-			add_potential_special_forces_tree = yes
+			# add_potential_special_forces_tree = yes
 			# Royal_Commandos_increase_double = yes
 		}
 	}

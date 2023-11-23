@@ -1674,6 +1674,10 @@ focus_tree = {
 		ai_will_do = {
 		}
 
+		allow_branch = {
+			has_global_flag = ALLOW_KING_MICHAEL_COUP
+		}
+
 		available = {
 			is_subject = no
 			has_war_with = SOV
@@ -3003,7 +3007,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_tech = tech_mountaineers
+			has_tech = special_forces_mountaineers
 		}
 
 		bypass = {
@@ -3212,7 +3216,7 @@ focus_tree = {
 			# }
 			add_tech_bonus = {
 				name = RAJ_indian_armor
-				bonus = 1
+				bonus = 0.75
 				uses = 2
 				category = artillery
 			}

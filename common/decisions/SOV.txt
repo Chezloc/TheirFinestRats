@@ -8538,7 +8538,8 @@ SOV_great_patriotic_war = {
 		}
 
 		complete_effect = {
-			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.05 }
+			# add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.05 }
+			# add_to_variable = { SOV_the_red_army_max_dig_in_factor = 0.15 } # SOV_DIG_IN_FAC_MAYBE_CHEZ
 			add_to_variable = { SOV_the_red_army_army_morale_factor = 0.05 }
 			add_to_variable = { army_org_factor = 0.1 }
 			custom_effect_tooltip = SOV_high_command_purged_recover_ns_tt
@@ -9989,6 +9990,29 @@ operations = {
 				cost_reduction = 0.25
 				uses = 2
 				category = land_doctrine
+			}
+			hidden_effect = {
+				MON = {
+					remove_ideas = MON_brothers_war
+				}
+				if = {
+					limit = {
+						NOT = { FIN = { has_idea = peace_training } }
+					}
+					FIN = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { SOV = { has_idea = peace_training } }
+					}
+					SOV = { add_ideas = peace_training }
+				}
+				if = {
+					limit = {
+						NOT = { MON = { has_idea = peace_training } }
+					}
+					MON = { add_ideas = peace_training }
+				}
 			}
 		}
 

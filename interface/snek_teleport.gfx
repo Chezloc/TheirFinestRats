@@ -1,5 +1,13 @@
 spriteTypes = {	
 
+	### TEXTICON ###
+	spriteType = {
+		name = "GFX_unit_category_rangers_icon_small"
+		texturefile = "gfx/texticons/unit_jaegers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
 	### MIO ###
 	spriteType = {
 		name = "GFX_mio_cat_eq_all_tank_variants"
@@ -550,6 +558,16 @@ spriteTypes = {
 	}	
 
 	### TECH ###
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/secondary_battery_icn_4.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_jaegers3_medium"
 		texturefile = "gfx/interface/technologies/jaegers3.dds"

@@ -9329,7 +9329,7 @@ focus = {
 				range < SWI_centralization_bop_balanced  
 			}
 			# has_tech = paratroopers
-			has_tech = tech_mountaineers
+			has_tech = special_forces_paratroopers
 		}
 		
 		bypass = {

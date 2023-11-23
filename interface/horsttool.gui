@@ -170,14 +170,14 @@ guiTypes = {
 			scale = 0.8
 		}
 
-		buttonType = { 
-			name = "snek_tped"	
-			position = {x=460 y=250}
-			spriteType = "GFX_horst_snek"
-			pdx_tooltip = "SNEK_TP"
-			pdx_tooltip_delayed = "SNEK_TP_DELAYED"
-			scale = 0.8
-		}
+		# buttonType = { 
+		# 	name = "snek_tped"	
+		# 	position = {x=460 y=250}
+		# 	spriteType = "GFX_horst_snek"
+		# 	pdx_tooltip = "SNEK_TP"
+		# 	pdx_tooltip_delayed = "SNEK_TP_DELAYED"
+		# 	scale = 0.8
+		# }
 		
 	#  buttonType = {
 	# 	name = "pingtool"	

@@ -615,7 +615,7 @@ mountaineers_JAP = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = tech_mountaineers
+				has_tech = special_forces_mountaineers
 			}
 		}
 	}
@@ -717,7 +717,7 @@ marines_JAP = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = marines
+				has_tech = special_forces_marines
 			}
 		}
 	}
@@ -892,7 +892,7 @@ paratrooper_JAP = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = paratroopers
+				has_tech = special_forces_paratroopers
 			}
 		}
 	}

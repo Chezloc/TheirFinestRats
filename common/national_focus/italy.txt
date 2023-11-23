@@ -3807,12 +3807,18 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			# hidden_effect = {
+			# 	set_technology = {
+			# 		arditi_tech = 1
+			# 	}
+			# }
+			# custom_effect_tooltip = ITA_arditi_tt
 			hidden_effect = {
 				set_technology = {
-					arditi_tech = 1
+					arditi_tech_assault = 1
 				}
 			}
-			custom_effect_tooltip = ITA_arditi_tt
+			custom_effect_tooltip = ITA_arditi_assault_tt
 		}
 	}
 	focus = {

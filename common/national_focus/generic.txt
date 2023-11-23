@@ -232,16 +232,22 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 0.5
-				uses = 1
-				# technology = paratroopers
-				# technology = paratroopers2
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
+			# add_tech_bonus = {
+			# 	name = special_forces_bonus
+			# 	bonus = 0.5
+			# 	uses = 1
+			# 	# technology = paratroopers
+			# 	# technology = paratroopers2
+			# 	technology = marines
+			# 	technology = marines2
+			# 	technology = tech_mountaineers
+			# 	technology = tech_mountaineers2
+			# }
+			add_doctrine_cost_reduction = {
+				name = ENG_parachute_regiments
+				cost_reduction = 0.5
+				uses = 2
+				category = special_forces_doctrine
 			}
 		}
 	}

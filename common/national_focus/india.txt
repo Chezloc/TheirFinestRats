@@ -963,7 +963,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = RAJ_indian_armor
-				bonus = 1
+				bonus = 0.75
 				uses = 2
 				category = artillery
 			}
@@ -1195,7 +1195,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_tech = tech_mountaineers
+			has_tech = special_forces_mountaineers
 		}
 
 		cancel_if_invalid = yes

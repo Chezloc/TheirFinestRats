@@ -176,6 +176,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_large/unit_marine_icon.dds"
 		noOfFrames = 2
 	}
+
+	spriteType = { 
+		name = "GFX_unit_category_rangers"
+		textureFile = "gfx/interface/counters/divisions_large/unit_jaeger_icon.dds"
+		noOfFrames = 2
+	}
 	
 	spriteType = { 
 		name = "GFX_unit_category_anti_air"

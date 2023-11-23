@@ -781,12 +781,12 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	tech_logistics_company = 1
 	tech_field_hospital = 1
 	tech_signal_company = 1
-	tech_mountaineers = 1
-	marines = 1
+	# tech_mountaineers = 1
+	# marines = 1
 	motorised_infantry = 1
-	paratroopers = 1
+	# paratroopers = 1
 	gw_artillery = 1
-	jaegers = 1
+	# jaegers = 1
 	oil_processing = 1
 
 	sov_light_tank_1 = 1
@@ -1184,7 +1184,7 @@ set_variable = { SOV_soviet_economy_production_speed_bunker_factor = -0.25 }
 		infantry_weapons2 = 1
 		support_weapons = 1
 		support_weapons2 = 1
-		paratroopers = 1
+		# paratroopers = 1
 
 		#doctrines
 		pocket_defence = 1

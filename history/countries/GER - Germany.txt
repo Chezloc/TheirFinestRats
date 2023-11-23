@@ -32,10 +32,10 @@ set_technology = {
 	tech_logistics_company = 1
 	tech_field_hospital = 1
 	tech_signal_company = 1
-	tech_mountaineers = 1
-	marines = 1
-	paratroopers = 1
-	jaegers = 1
+	# tech_mountaineers = 1
+	# marines = 1
+	# paratroopers = 1
+	# jaegers = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	armored_car1 = 1
@@ -206,7 +206,7 @@ add_dynamic_modifier = {
 	modifier = GER_economy_dynamic_modifier
 }
 # MEFO
-add_to_variable = { GER_german_economy_mefo_consumer_goods_factor = -0.15 tooltip = consumer_goods_factor_tt }
+add_to_variable = { GER_german_economy_mefo_consumer_goods_factor = -0.20 tooltip = consumer_goods_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_arms_factory_factor = 0.10 tooltip = production_speed_arms_factory_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_dockyard_factor = 0.10 tooltip = production_speed_dockyard_factor_tt }
 add_to_variable = { GER_german_economy_mefo_production_speed_naval_base_factor = 0.2 tooltip = production_speed_naval_base_factor_tt }

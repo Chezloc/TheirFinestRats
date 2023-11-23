@@ -236,7 +236,7 @@ characters={
 					original_tag  = GER 
 				}
 				available  = {
-					has_completed_focus = GER_heer
+					# has_completed_focus = GER_heer
 					NOT = { has_country_flag = GER_20_jul_purge }
 				}
 				traits  = {
