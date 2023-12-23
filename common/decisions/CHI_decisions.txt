@@ -150,7 +150,7 @@ CHI_army_reform = {
 		days_remove = 180
 
 		modifier = {
-			training_time_army_factor = -0.25
+			training_time_factor = -0.25
 		}
 
 		complete_effect = {

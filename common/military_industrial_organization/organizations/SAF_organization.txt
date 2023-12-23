@@ -45,6 +45,38 @@ SAF_cope_organization = {
 		}
 		
 	}
+
+    add_trait = { 
+		token = SAF_mio_trait_faster_tanks
+		name = generic_mio_trait_speed_improvements
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+
+		position = { x=0 y=2 }
+        relative_position_id = SAF_mio_trait_expanded_production_facilities
+
+        all_parents = { SAF_mio_trait_expanded_production_facilities }
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+
+    add_trait = { 
+		token = SAF_mio_trait_even_faster_tanks
+		name = generic_mio_trait_speed_improvements
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+
+		position = { x=0 y=2 }
+        relative_position_id = SAF_mio_trait_faster_tanks
+
+        all_parents = { SAF_mio_trait_faster_tanks }
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
 }
 
 

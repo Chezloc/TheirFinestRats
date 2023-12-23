@@ -113,19 +113,19 @@ defined_text = {
 		}
 		localization_key = SWE_nordic_defense_council
 	}
-	text = {
-		trigger = {
-			var:global.nordic_faction_creator = {
-				original_tag = FIN
-				OR = {
-					has_completed_focus = FIN_united_under_the_north_star
-					has_completed_focus = FIN_northern_defense_front
-				}
+	# text = {
+	# 	trigger = {
+	# 		var:global.nordic_faction_creator = {
+	# 			original_tag = FIN
+	# 			OR = {
+	# 				has_completed_focus = FIN_united_under_the_north_star
+	# 				has_completed_focus = FIN_northern_defense_front
+	# 			}
 
-			}
-		}
-		localization_key = FIN_northern_defense_front_faction
-	}
+	# 		}
+	# 	}
+	# 	localization_key = FIN_northern_defense_front_faction
+	# }
 	text = {
 		trigger = {
 			NORDIC_democratic_alliance_viable = yes

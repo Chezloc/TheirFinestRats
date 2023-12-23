@@ -52,12 +52,12 @@ debug_decisions = { #TODO_Manu: Comment these out
 		}
 	}
 
-	# SOV_TEST_CONTINENTS = {
+	# SOV_TEST_ULTIMATE_CONTINENTS = {
 	# 	priority = 200
 
 	# 	icon = generic_prepare_civil_war
 
-	# 	allowed = { 
+	# 	allowed = {
 	# 		original_tag = SOV
 	# 	}
 
@@ -72,88 +72,46 @@ debug_decisions = { #TODO_Manu: Comment these out
 	# 	cost = 0
 
 	# 	complete_effect = {
-	# 		if = {
-	# 			limit = {
-	# 				has_game_rule = {
-	# 					rule = obsolete_focus_branches_visibility
-	# 					option = HIDE
-	# 				}
-	# 			}
-	# 			log = "HIDE obsolete focus branches"
-	# 		}
-	# 		else = {
-	# 			log = "SHOW obsolete focus branches"
-	# 		}
-	# 		every_owned_state = {
-	# 			limit = {
-	# 				is_on_continent = asia 
-	# 			}
-	# 			log = "[THIS.GetName]"
-	# 			URG = { transfer_state = PREV }
-
-	# 		}
-	# 	}
-	# }
-	# SOV_TEST_ULTIMATE_CONTINENTS_SHOW = {
-	# 	priority = 200
-
-	# 	icon = generic_prepare_civil_war
-
-	# 	allowed = { 
-	# 		original_tag = SOV
-	# 	}
-
-	# 	available = {
-	# 		always = yes
-	# 	}
-
-	# 	visible = {
-	# 		always = yes
-	# 	}
-
-	# 	cost = 0
-
-	# 	complete_effect = {
-	# 		log = "WARNING: This takes a while"
+	# 		#log = "WARNING: This takes a while"
 	# 		every_state = {
 	# 			limit = {
-	# 				is_on_continent = asia 
+	# 				is_on_continent = asia
 	# 			}
 	# 			TIB = { transfer_state = PREV }
 	# 		}
 	# 		every_state = {
 	# 			limit = {
-	# 				is_on_continent = europe 
+	# 				is_on_continent = europe
 	# 			}
 	# 			LUX = { transfer_state = PREV }
 	# 		}
 	# 		every_state = {
 	# 			limit = {
-	# 				is_on_continent = middle_east 
+	# 				is_on_continent = middle_east
 	# 			}
 	# 			YEM = { transfer_state = PREV }
 	# 		}
 	# 		every_state = {
 	# 			limit = {
-	# 				is_on_continent = africa 
+	# 				is_on_continent = africa
 	# 			}
 	# 			ETH = { transfer_state = PREV }
 	# 		}
 	# 		every_state = {
 	# 			limit = {
-	# 				is_on_continent = australia 
+	# 				is_on_continent = australia
 	# 			}
 	# 			NZL = { transfer_state = PREV }
 	# 		}
 	# 		every_state = {
 	# 			limit = {
-	# 				is_on_continent = north_america 
+	# 				is_on_continent = north_america
 	# 			}
 	# 			CAN = { transfer_state = PREV }
 	# 		}
 	# 		every_state = {
 	# 			limit = {
-	# 				is_on_continent = south_america 
+	# 				is_on_continent = south_america
 	# 			}
 	# 			PER = { transfer_state = PREV }
 	# 		}
@@ -1111,7 +1069,15 @@ SOV_paranoia_system = {
 		}
 
 		available = {
-			has_country_flag = { flag = SOV_third_moscow_trial_flag days > 365 }
+			if = {
+				limit = {
+					has_country_flag = SOV_assassinated_stalin_flag
+				}
+				has_country_flag = SOV_assassinated_stalin_flag
+			}
+			else = {
+				has_country_flag = { flag = SOV_third_moscow_trial_flag days > 365 }
+			}
 		}
 
 		visible = {
@@ -1120,7 +1086,10 @@ SOV_paranoia_system = {
 				has_idea = SOV_anti_soviet_military_thinking_banned_navy
 				has_idea = SOV_anti_soviet_military_thinking_banned_airforce
 			}
-			SOV_is_stalinist = yes
+			OR = {
+				SOV_is_stalinist = yes
+				has_country_flag = SOV_assassinated_stalin_flag
+			}
 		}
 
 		days_remove = 30
@@ -8129,7 +8098,7 @@ SOV_industry_relocation = {
 			195 = {
 				add_resource = {
 					type = aluminium
-					amount = -12
+					amount = -120
 				}				
 			}
 			custom_effect_tooltip = SOV_industry_relocation_aluminium_plant_trains_tt
@@ -9926,6 +9895,213 @@ SOV_great_patriotic_war = {
 
 operations = {
 
+	# SOV_winter_war = {
+	# 	icon = generic_operation
+
+	# 	allowed = {
+	# 		always = no
+	# 	}
+
+	# 	available = {
+	# 		146 = { is_controlled_by_ROOT_or_ally = yes }
+	# 		147 = { is_controlled_by_ROOT_or_ally = yes }
+	# 		has_war = no 
+	# 	}
+
+	# 	days_mission_timeout = 210
+	# 	fire_only_once = yes
+	# 	is_good = no
+
+	# 	timeout_effect = {
+	# 		add_war_support = -0.15
+	# 		add_stability = -0.15
+	# 		# add_timed_idea = {
+	# 		# 	idea = SOV_assure_competency
+	# 		# 	days = 150
+	# 		# }
+	# 		diplomatic_relation = {
+	# 			country = FIN
+	# 			relation = non_aggression_pact
+	# 		}
+	# 		FIN = { set_country_flag = winter_war_finished }
+	# 		white_peace = FIN
+	# 		set_global_flag =  FIN_winter_victory
+	# 		hidden_effect = {
+	# 			MON = {
+	# 				remove_ideas = MON_brothers_war
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { FIN = { has_idea = peace_training } }
+	# 				}
+	# 				FIN = { add_ideas = peace_training }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { SOV = { has_idea = peace_training } }
+	# 				}
+	# 				SOV = { add_ideas = peace_training }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { MON = { has_idea = peace_training } }
+	# 				}
+	# 				MON = { add_ideas = peace_training }
+	# 			}
+	# 		}
+	# 	}
+
+	# 	complete_effect = {
+	# 		add_war_support = 0.05
+	# 		add_stability = 0.05
+	# 		add_doctrine_cost_reduction = {
+	# 			name = doc_bonus
+	# 			cost_reduction = 0.25
+	# 			uses = 2
+	# 			category = land_doctrine
+	# 		}
+	# 		hidden_effect = {
+	# 			MON = {
+	# 				remove_ideas = MON_brothers_war
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { FIN = { has_idea = peace_training } }
+	# 				}
+	# 				FIN = { add_ideas = peace_training }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { SOV = { has_idea = peace_training } }
+	# 				}
+	# 				SOV = { add_ideas = peace_training }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { MON = { has_idea = peace_training } }
+	# 				}
+	# 				MON = { add_ideas = peace_training }
+	# 			}
+	# 		}
+	# 	}
+
+	# }
+
+	# SOV_winter_war_lessons = {
+	# 	icon = generic_operation
+
+	# 	allowed = {
+	# 		original_tag = SOV
+	# 	}
+
+	# 	visible = {
+	# 		has_active_mission = SOV_winter_war
+	# 	}
+
+	# 	available = {
+	# 		has_war_with = FIN
+	# 		casualties > 75000
+	# 	}
+
+	# 	fire_only_once = yes
+
+	# 	days_remove = 7
+
+	# 	remove_effect = {
+	# 		add_timed_idea = {
+	# 			idea = SOV_winter_war_adapt
+	# 			days = 120
+	# 		}
+	# 		# FIN = {
+	# 		# 	swap_ideas = {
+	# 		# 		remove_idea = FIN_winter_war
+	# 		# 		add_idea = FIN_winter_war_2
+	# 		# 	}
+	# 		# 	hidden_effect = {
+	# 		# 		every_army_leader={
+	# 		# 			remove_trait = {
+	# 		# 				trait = fifty_cas_dmg_reduction
+	# 		# 			}
+	# 		# 		}
+	# 		# 		every_army_leader={
+	# 		# 			add_trait = {
+	# 		# 				trait = twenty_five_cas_dmg_reduction
+	# 		# 			}
+	# 		# 		}
+	# 		# 	}
+	# 		# }
+	# 	}
+
+	# }
+
+	# SOV_winter_war_victory = {
+	# 	icon = generic_operation
+
+	# 	allowed = {
+	# 		original_tag = SOV
+	# 	}
+
+	# 	visible = {
+	# 		has_active_mission = SOV_winter_war
+	# 	}
+
+	# 	available = {
+	# 		has_war_with = FIN
+	# 		OR = {
+	# 			FIN = {
+	# 				casualties > 85000
+	# 			}
+
+	# 			FIN = {
+	# 				surrender_progress > 0.25
+	# 			}
+	# 		}
+	# 	}
+
+	# 	cancel_trigger = {
+	# 		NOT = { has_war_with = FIN }
+	# 	}
+
+	# 	days_remove = 7
+	# 	fire_only_once = yes
+
+	# 	remove_effect = {
+	# 		SOV = {
+	# 			white_peace = FIN
+	# 			transfer_state = 146
+	# 			transfer_state = 147
+	# 		}
+	# 		FIN = { set_country_flag = winter_war_finished }
+	# 		diplomatic_relation = {
+	# 			country = FIN
+	# 			relation = non_aggression_pact
+	# 		}
+	# 		hidden_effect = {
+	# 			MON = {
+	# 				remove_ideas = MON_brothers_war
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { FIN = { has_idea = peace_training } }
+	# 				}
+	# 				FIN = { add_ideas = peace_training }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { SOV = { has_idea = peace_training } }
+	# 				}
+	# 				SOV = { add_ideas = peace_training }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { MON = { has_idea = peace_training } }
+	# 				}
+	# 				MON = { add_ideas = peace_training }
+	# 			}
+	# 		}
+	# 	}
+	# }
+
 	SOV_winter_war = {
 		icon = generic_operation
 
@@ -10043,24 +10219,24 @@ operations = {
 				idea = SOV_winter_war_adapt
 				days = 120
 			}
-			# FIN = {
-			# 	swap_ideas = {
-			# 		remove_idea = FIN_winter_war
-			# 		add_idea = FIN_winter_war_2
-			# 	}
-			# 	hidden_effect = {
-			# 		every_army_leader={
-			# 			remove_trait = {
-			# 				trait = fifty_cas_dmg_reduction
-			# 			}
-			# 		}
-			# 		every_army_leader={
-			# 			add_trait = {
-			# 				trait = twenty_five_cas_dmg_reduction
-			# 			}
-			# 		}
-			# 	}
-			# }
+			FIN = {
+				swap_ideas = {
+					remove_idea = FIN_winter_war
+					add_idea = FIN_winter_war_2
+				}
+				hidden_effect = {
+					every_army_leader={
+						remove_trait = {
+							trait = fifty_cas_dmg_reduction
+						}
+					}
+					every_army_leader={
+						add_trait = {
+							trait = twenty_five_cas_dmg_reduction
+						}
+					}
+				}
+			}
 		}
 
 	}

@@ -227,10 +227,11 @@ ideas = {
 			picture = generic_infantry_bonus
 			
 			modifier = {
-				training_time_army_factor = -0.29
+				# training_time_army_factor = -0.29
+				training_time_factor = -0.90
 				air_training_xp_gain_factor = 5
 				experience_gain_navy_unit_factor = 10
-				experience_gain_army_unit_factor = 2.5
+				experience_gain_army_unit_factor = 5
 				attrition = -1
 			}
 		}
@@ -1997,7 +1998,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = FIN tag = ICE tag = SWE }
+						OR = {  tag = ICE tag = SWE } #tag = FIN
 						has_dlc = "Arms Against Tyranny"
 					}
 				}

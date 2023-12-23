@@ -60,16 +60,16 @@ characters={
 						original_tag  = SWE
 					}
 
-					on_add = {
-						if = {
-							limit = {
-								FIN = {
-									NOT = { has_completed_focus = FIN_approach_the_soviets }
-								}
-							}
-							SWE = { add_ideas =  SWE_committee_against_the_finnish_white_terror_idea } 
-						}
-					}
+					# on_add = {
+					# 	if = {
+					# 		limit = {
+					# 			FIN = {
+					# 				NOT = { has_completed_focus = FIN_approach_the_soviets }
+					# 			}
+					# 		}
+					# 		SWE = { add_ideas =  SWE_committee_against_the_finnish_white_terror_idea } 
+					# 	}
+					# }
 
 					on_remove = {  
 						if = {

@@ -367,19 +367,34 @@ bookmarks = {
 				BUL_greater_bulgaria
 			}
 		}		
-		FIN={
+		# FIN={
+		# 	minor = yes
+		# 	history = FIN_GATHERING_STORM_DESC
+		# 	ideology = neutrality
+		# 	ideas = {
+		# 		FIN_sisu_2
+		# 	}
+		# 	focuses = {
+		# 		FIN_winter_warfare
+		# 		FIN_greater_finland
+		# 		FIN_oy_alkoholiliike
+		# 	}
+		# }		
+		"FIN"={
 			minor = yes
-			history = FIN_GATHERING_STORM_DESC
+			history = "FIN_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				FIN_sisu_2
+				sisu
+				FIN_lahti
+				FIN_winter_war
 			}
 			focuses = {
-				FIN_winter_warfare
-				FIN_greater_finland
-				FIN_oy_alkoholiliike
+				FIN_winter_war
+				FIN_motti
+				FIN_finish_mannerheim
 			}
-		}			
+		}	
 		"SIA"={
 			minor = yes
 			history = "SIA_GATHERING_STORM_DESC"

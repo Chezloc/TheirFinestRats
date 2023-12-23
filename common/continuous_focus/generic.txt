@@ -350,7 +350,7 @@ continuous_focus_palette = {
 		}
 		
 		modifier = {
-			training_time_army_factor = -0.25
+			training_time_factor = -0.25
 		}
 		
 		ai_will_do = {

@@ -71,32 +71,32 @@ division_template = {
 		logistics_company  = { x = 0 y = 3 }
 	}
 }
-division_template = {
-	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
-	division_names_group = FRA_MNT_01
-	# Note: trimmed to 3x Rgts w/ arty bn added, 1939
+# division_template = {
+# 	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
+# 	division_names_group = FRA_MNT_01
+# 	# Note: trimmed to 3x Rgts w/ arty bn added, 1939
 
-	regiments = {
-		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }	
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 2 y = 1 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 2 y = 2 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 3 y = 0 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 3 y = 1 }	# Chasseurs Alpins (HOI3 elites)
-		mountaineers = { x = 3 y = 2 }	# Chasseurs Alpins (HOI3 elites)
-	}
-	support = {
-		hq_company = { x = 0 y = 0 } 
-		engineer = { x = 0 y = 1 }   
-		recon = { x = 0 y = 2 }
-		logistics_company  = { x = 0 y = 3 }
-	}
-}
+# 	regiments = {
+# 		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
+# 		mountaineers = { x = 0 y = 1 }
+# 		mountaineers = { x = 0 y = 2 }	
+# 		mountaineers = { x = 1 y = 0 }
+# 		mountaineers = { x = 1 y = 1 }
+# 		mountaineers = { x = 1 y = 2 }
+# 		mountaineers = { x = 2 y = 0 }	# Chasseurs Alpins (HOI3 elites)
+# 		mountaineers = { x = 2 y = 1 }	# Chasseurs Alpins (HOI3 elites)
+# 		mountaineers = { x = 2 y = 2 }	# Chasseurs Alpins (HOI3 elites)
+# 		mountaineers = { x = 3 y = 0 }	# Chasseurs Alpins (HOI3 elites)
+# 		mountaineers = { x = 3 y = 1 }	# Chasseurs Alpins (HOI3 elites)
+# 		mountaineers = { x = 3 y = 2 }	# Chasseurs Alpins (HOI3 elites)
+# 	}
+# 	support = {
+# 		hq_company = { x = 0 y = 0 } 
+# 		engineer = { x = 0 y = 1 }   
+# 		recon = { x = 0 y = 2 }
+# 		logistics_company  = { x = 0 y = 3 }
+# 	}
+# }
 division_template = {
 	name = "Division de Cavalerie" 	# Division de Cavalerie
 	division_names_group = FRA_CAV_01
@@ -636,7 +636,7 @@ units = {
 			name_order = 27
 		}
 		location = 778
-		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
 	division= {	# "30ème Division d'Infanterie Alpine"
@@ -645,7 +645,7 @@ units = {
 			name_order = 30
 		}
 		location = 9745
-		division_template = "Division d'Infanterie Alpine" 	# Second line, reserve equipment
+		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -676,7 +676,7 @@ units = {
 			name_order = 29
 		}
 		location = 6975
-		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
 	division= {	# "2ème Div. d'Inf. Coloniale"
@@ -698,7 +698,7 @@ units = {
 			name_order = 31
 		}
 		location = 9898
-		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
 

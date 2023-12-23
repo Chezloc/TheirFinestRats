@@ -7823,17 +7823,17 @@ country_event = {
 			limit = {
 				is_ai = yes
 			}
-			if = {
-				limit = {
-					original_tag = FIN
-				}
-				FIN_erik_heinrichs = { set_nationality = SWE }
-				FIN_vilho_petter_nenonen = { set_nationality = SWE }
-				FIN_woldemar_hagglund = { set_nationality = SWE }
-				FIN_aarne_juutilainen = { set_nationality = SWE }
-				FIN_karl_oesch = { set_nationality = SWE } 
-				FIN_wiljo_einar_tuompo = { set_nationality = SWE }
-			}
+			# if = {
+			# 	limit = {
+			# 		original_tag = FIN
+			# 	}
+			# 	FIN_erik_heinrichs = { set_nationality = SWE }
+			# 	FIN_vilho_petter_nenonen = { set_nationality = SWE }
+			# 	FIN_woldemar_hagglund = { set_nationality = SWE }
+			# 	FIN_aarne_juutilainen = { set_nationality = SWE }
+			# 	FIN_karl_oesch = { set_nationality = SWE } 
+			# 	FIN_wiljo_einar_tuompo = { set_nationality = SWE }
+			# }
 			else_if = {
 				limit = {
 					original_tag = DEN

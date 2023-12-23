@@ -1005,14 +1005,6 @@ leader_traits = {
 		research_speed_factor = 0.05
 	}
 
-	statism_adept = {
-		random = no
-		sprite = 13
-		fascism_drift = 0.05
-		political_power_factor = 0.1
-		consumer_goods_factor = -0.05
-	}
-
 	nazi_sympathizer = {
 		random = no
 		sprite = 13
@@ -1228,7 +1220,7 @@ leader_traits = {
 	paramilitary_leader = {
 		random = no
 		conscription = 0.005
-		training_time_army_factor = -0.1
+		training_time_factor = -0.1
 	}
 	
 	reorganiser = {
@@ -2398,6 +2390,7 @@ leader_traits = {
 	}
 
 	conservative_nationalist = { #Antonio de Oliveira Salazar - Vanilla
+	sprite = 13 #Needed since Iceland uses this traits in an advisor.
 		random = no
 		stability_factor = 0.1
 		production_speed_infrastructure_factor = 0.2
@@ -9568,7 +9561,7 @@ leader_traits = {
 
 	army_chief_drill_1 = { # Decreases training time for ground units
 		sprite = 18
-		training_time_army_factor = -0.05
+		training_time_factor = -0.05
 		experience_gain_army = @chief_experience_gain_low
 
 		command_cap = @tier1
@@ -9584,7 +9577,7 @@ leader_traits = {
 
 	army_chief_drill_2 = { # Decreases training time for ground units
 		sprite = 18
-		training_time_army_factor = -0.1
+		training_time_factor = -0.1
 		experience_gain_army = @chief_experience_gain_medium
 
 		command_cap = @tier2
@@ -9600,7 +9593,7 @@ leader_traits = {
 
 	army_chief_drill_3 = { # Decreases training time for ground units
 		sprite = 18
-		training_time_army_factor = -0.15
+		training_time_factor = -0.15
 		experience_gain_army = @chief_experience_gain_high
 
 		command_cap = @tier3

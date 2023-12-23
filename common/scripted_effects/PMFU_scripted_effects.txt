@@ -1066,7 +1066,7 @@ training_time_fixer = {
 		limit = {
 			is_playable_country = yes
 		}
-		set_variable = { training_time_mod_total = modifier@training_time_army_factor }
+		set_variable = { training_time_mod_total = modifier@training_time_factor } #training_time_army_factor
 		add_to_variable = { training_time_mod_total = training_time_balancer }
 		if = { limit = { check_variable = { training_time_mod_total = -0.75 } } set_variable = { training_time_balancer = 0.10 } }
 		else_if = { limit = { check_variable = { training_time_mod_total = -0.76 } } set_variable = { training_time_balancer = 0.11 } }

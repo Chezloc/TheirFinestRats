@@ -8674,7 +8674,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = SOV_expand_the_aircraft_industry }
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = SOV_expand_the_aircraft_industry
 		cost = 3
 
@@ -8698,7 +8698,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_merge_plants
 		prerequisite = { focus = SOV_modernize_aircraft_facilities }
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = SOV_modernize_aircraft_facilities
 		cost = 3
 
@@ -8755,57 +8755,57 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_increase_aircraft_production
+	# focus = {
+	# 	id = SOV_increase_aircraft_production
 
-		icon = GFX_focus_generic_aircraft_production
-		prerequisite = { focus = SOV_expand_the_aircraft_industry }
-		x = 0
-		y = 2
-		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 3
+	# 	icon = GFX_focus_generic_aircraft_production
+	# 	prerequisite = { focus = SOV_expand_the_aircraft_industry }
+	# 	x = 0
+	# 	y = 2
+	# 	relative_position_id = SOV_expand_the_aircraft_industry
+	# 	cost = 3
 
-		mutually_exclusive = { focus = SOV_intensify_pilot_training_program }
+	# 	mutually_exclusive = { focus = SOV_intensify_pilot_training_program }
 
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
+	# 	available = {
+	# 		NOT = { has_country_flag = SOV_paranoia_system_active_flag }
+	# 	}
 		
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+	# 	search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
-		completion_reward = {
-			hidden_effect = {
-				#This handles the equipment bonus that's not supported by dynamic modifiers
-				# add_ideas = SOV_increased_aircraft_production_ns_bonus
-				add_to_variable = { SOV_soviet_airforce_air_accidents_factor = 0.05 }
-			}
+	# 	completion_reward = {
+	# 		hidden_effect = {
+	# 			#This handles the equipment bonus that's not supported by dynamic modifiers
+	# 			# add_ideas = SOV_increased_aircraft_production_ns_bonus
+	# 			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = 0.05 }
+	# 		}
 
-			# hidden_effect = {
-			# 	if = { #DEFAULT COMMIE
-			# 		limit = {
-			# 			has_government = communism
-			# 		}
-			# 		#Swap dynamic modifiers to show the bonus equipment custom tooltip
-			# 		remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier }
-			# 		add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier }
-			# 	}
-			# 	else = { #ALT IDEOLOGY
-			# 		#Swap dynamic modifiers to show the bonus equipment custom tooltip
-			# 		remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier_alt }
-			# 		add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
-			# 	}
-			# }
+	# 		# hidden_effect = {
+	# 		# 	if = { #DEFAULT COMMIE
+	# 		# 		limit = {
+	# 		# 			has_government = communism
+	# 		# 		}
+	# 		# 		#Swap dynamic modifiers to show the bonus equipment custom tooltip
+	# 		# 		remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier }
+	# 		# 		add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier }
+	# 		# 	}
+	# 		# 	else = { #ALT IDEOLOGY
+	# 		# 		#Swap dynamic modifiers to show the bonus equipment custom tooltip
+	# 		# 		remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier_alt }
+	# 		# 		add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
+	# 		# 	}
+	# 		# }
 
-			custom_effect_tooltip = SOV_increase_aircraft_production_ns_tt
+	# 		custom_effect_tooltip = SOV_increase_aircraft_production_ns_tt
 
-			# add_tech_bonus = {
-			# 	name = SOV_increase_aircraft_production
-			# 	bonus = 1.0
-			# 	uses = 2
-			# 	category = light_air
-			# }
-		}
-	}
+	# 		# add_tech_bonus = {
+	# 		# 	name = SOV_increase_aircraft_production
+	# 		# 	bonus = 1.0
+	# 		# 	uses = 2
+	# 		# 	category = light_air
+	# 		# }
+	# 	}
+	# }
 
 	focus = {
 		id = SOV_foster_flying_clubs
@@ -8839,7 +8839,7 @@ focus_tree = {
 
 		icon = GFX_focus_SOV_women_in_aviation
 		prerequisite = { focus = SOV_foster_flying_clubs }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
 		cost = 3
@@ -8912,12 +8912,12 @@ focus_tree = {
 
 		icon = GFX_focus_SOV_aviation_cult
 		prerequisite = { focus = SOV_foster_flying_clubs }
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = SOV_foster_flying_clubs
 		cost = 3
 
-		mutually_exclusive = { focus = SOV_increase_aircraft_production }
+		# mutually_exclusive = { focus = SOV_increase_aircraft_production }
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -8943,7 +8943,7 @@ focus_tree = {
 
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = SOV_expand_the_aircraft_industry focus = SOV_foster_flying_clubs }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
 		cost = 3
@@ -8974,10 +8974,10 @@ focus_tree = {
 		id = SOV_ground_support
 
 		icon = GFX_focus_SOV_cas
-		prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
-		x = 0
+		prerequisite = { focus = SOV_intensify_pilot_training_program }
+		x = -1
 		y = 1
-		relative_position_id = SOV_increase_aircraft_production
+		relative_position_id = SOV_intensify_pilot_training_program
 		cost = 3
 
 		mutually_exclusive = { focus = SOV_long_range_aircraft }
@@ -9006,8 +9006,8 @@ focus_tree = {
 		id = SOV_long_range_aircraft
 
 		icon = GFX_SOV_strat_bomber_doctrine
-		prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
-		x = 0
+		prerequisite = { focus = SOV_intensify_pilot_training_program }
+		x = 1
 		y = 1
 		relative_position_id = SOV_intensify_pilot_training_program
 		cost = 3
@@ -10283,7 +10283,7 @@ focus_tree = {
 		id = SOV_expand_the_morskaya_aviatsiya
 
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
+		prerequisite = { focus = SOV_intensify_pilot_training_program }
 		prerequisite = { focus = SOV_advanced_maneuvers }
 		x = -2
 		y = 1

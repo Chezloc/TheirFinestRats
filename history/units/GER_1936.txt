@@ -136,31 +136,31 @@ division_template = {
 		logistics_company = { x = 0 y = 3 }
 	}
 }
-division_template = {
-	name = "Gebirgs-Brigade"		# Gebirgsbrigade
-	#Note: precursor to Gebirgs-Divisions
-	division_names_group = GER_Mnt_01
+# division_template = {
+# 	name = "Gebirgs-Brigade"		# Gebirgsbrigade
+# 	#Note: precursor to Gebirgs-Divisions
+# 	division_names_group = GER_Mnt_01
 
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-	    mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
+# 	regiments = {
+# 		mountaineers = { x = 0 y = 0 }
+# 	    mountaineers = { x = 0 y = 1 }
+# 		mountaineers = { x = 0 y = 2 }
+# 		mountaineers = { x = 1 y = 0 }
+# 		mountaineers = { x = 1 y = 1 }
+# 		mountaineers = { x = 1 y = 2 }
 		
-		pack_artillery_brigade = { x = 2 y = 0 }
-		pack_artillery_brigade = { x = 2 y = 1 }
+# 		pack_artillery_brigade = { x = 2 y = 0 }
+# 		pack_artillery_brigade = { x = 2 y = 1 }
 		
-	}
+# 	}
 	
-	support = {
-        recon = { x = 0 y = 0 }
-        engineer = { x = 0 y = 1 }
-		hq_company = { x = 0 y = 2 }
-		logistics_company = { x = 0 y = 3 }
-	}
-}
+# 	support = {
+#         recon = { x = 0 y = 0 }
+#         engineer = { x = 0 y = 1 }
+# 		hq_company = { x = 0 y = 2 }
+# 		logistics_company = { x = 0 y = 3 }
+# 	}
+# }
 division_template = {
 	name = "Kavallerie-Brigade"
 
@@ -180,42 +180,42 @@ division_template = {
 	}
 }
 
-division_template = {
-	name = "Fallschirmjäger-Regiment"
+# division_template = {
+# 	name = "Fallschirmjäger-Regiment"
 
-	division_names_group = GER_PAR_01
+# 	division_names_group = GER_PAR_01
 
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
+# 	regiments = {
+# 		paratrooper = { x = 0 y = 0 }
+# 		paratrooper = { x = 0 y = 1 }
+# 		paratrooper = { x = 0 y = 2 }
 		
-	}
+# 	}
 	
-	support = {
-        engineer = { x = 0 y = 0 }
-		hq_company = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-		logistics_company = { x = 0 y = 3 }
-	}
-}
+# 	support = {
+#         engineer = { x = 0 y = 0 }
+# 		hq_company = { x = 0 y = 1 }
+# 		recon = { x = 0 y = 2 }
+# 		logistics_company = { x = 0 y = 3 }
+# 	}
+# }
 
-division_template = {
-	name = "Seelande-Regiment"
+# division_template = {
+# 	name = "Seelande-Regiment"
 
-	division_names_group = GER_MAR_01
+# 	division_names_group = GER_MAR_01
 
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 1 y = 0 }
-		marine = { x = 1 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }   
-	}
-	priority = 2
-}
+# 	regiments = {
+# 		marine = { x = 0 y = 0 }
+# 		marine = { x = 0 y = 1 }
+# 		marine = { x = 1 y = 0 }
+# 		marine = { x = 1 y = 1 }
+# 	}
+# 	support = {
+# 		engineer = { x = 0 y = 0 }   
+# 	}
+# 	priority = 2
+# }
 
 units = {
 
@@ -509,15 +509,15 @@ units = {
 		start_experience_factor = 0.3
 	}			
 	division= {	
-		name = "Gebirgs-Brigade" 
+		name = "1. Gebirgs-Division" 
 		location = 692
-		division_template = "Gebirgs-Brigade" 
+		division_template = "Infanterie-Division" 
 		start_experience_factor = 0.5
 	}
 	division= {	
-		name = "Gebirgs-Brigade" 
+		name = "2. Gebirgs-Division" 
 		location = 692
-		division_template = "Gebirgs-Brigade" 
+		division_template = "Infanterie-Division" 
 		start_experience_factor = 0.5
 	}
 	division= {	

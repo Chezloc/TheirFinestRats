@@ -960,7 +960,7 @@ medium_plane_airframe_0 = { #Inter-War
 		 plane_engine_upgrade
 		 plane_armor_upgrade
 	 }
-	air_range = 1200
+	air_range = 900
 	maximum_speed = 0
 	air_agility = 15
 	air_defence = 15
@@ -981,7 +981,7 @@ medium_plane_airframe_1 = { #Basic
 		 plane_engine_upgrade
 		 plane_armor_upgrade
 	 }
-	air_range = 2200
+	air_range = 1900
 	maximum_speed = 0
 	air_agility = 30
 	air_defence = 20
@@ -1098,7 +1098,7 @@ medium_plane_airframe_2 = { #Improved
 		 plane_engine_upgrade
 		 plane_armor_upgrade
 	 }
-	air_range = 2400
+	air_range = 2100
 	maximum_speed = 0
 	air_agility = 35
 	air_defence = 22
@@ -1228,7 +1228,7 @@ medium_plane_airframe_3 = { #Advanced
 	parent = medium_plane_airframe_2
 	priority = 5
 
-	air_range = 2800
+	air_range = 2500
 	maximum_speed = 0
 	air_agility = 40
 	air_defence = 26
@@ -1359,7 +1359,7 @@ medium_plane_airframe_4 = { #Modern
 	parent = medium_plane_airframe_3
 	priority = 5
 
-	air_range = 3000
+	air_range = 2700
 	maximum_speed = 0
 	air_agility = 50
 	air_defence = 24

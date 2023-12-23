@@ -88,44 +88,44 @@ shared_focus = {
 		}
 	}
 
-	offset = {
-		x = -30
-		y = 0
-		trigger = {
-			has_focus_tree = finnish_focus
-			has_game_rule = {
-				rule = obsolete_focus_branches_visibility
-				option = HIDE
-			}
-			has_completed_focus = FIN_finnish_neutrality
-		}
-	}
+	# offset = {
+	# 	x = -30
+	# 	y = 0
+	# 	trigger = {
+	# 		has_focus_tree = finnish_focus
+	# 		has_game_rule = {
+	# 			rule = obsolete_focus_branches_visibility
+	# 			option = HIDE
+	# 		}
+	# 		has_completed_focus = FIN_finnish_neutrality
+	# 	}
+	# }
 
-	offset = {
-		x = -27
-		y = 0
-		trigger = {
-			has_focus_tree = finnish_focus
-			has_game_rule = {
-				rule = obsolete_focus_branches_visibility
-				option = HIDE
-			}
-			has_completed_focus = FIN_suomalainen_sosialismi
-		}
-	}
+	# offset = {
+	# 	x = -27
+	# 	y = 0
+	# 	trigger = {
+	# 		has_focus_tree = finnish_focus
+	# 		has_game_rule = {
+	# 			rule = obsolete_focus_branches_visibility
+	# 			option = HIDE
+	# 		}
+	# 		has_completed_focus = FIN_suomalainen_sosialismi
+	# 	}
+	# }
 
-	offset = {
-		x = -25
-		y = 0
-		trigger = {
-			has_focus_tree = finnish_focus
-			has_game_rule = {
-				rule = obsolete_focus_branches_visibility
-				option = HIDE
-			}
-			has_completed_focus = FIN_right_wing_policies
-		}
-	}
+	# offset = {
+	# 	x = -25
+	# 	y = 0
+	# 	trigger = {
+	# 		has_focus_tree = finnish_focus
+	# 		has_game_rule = {
+	# 			rule = obsolete_focus_branches_visibility
+	# 			option = HIDE
+	# 		}
+	# 		has_completed_focus = FIN_right_wing_policies
+	# 	}
+	# }
 
 	#SWEDEN
 	offset = {
@@ -346,10 +346,10 @@ shared_focus = {
 			limit = { original_tag = SWE }
 			NOT ={ has_completed_focus = SWE_central_nordic_army_command }
 		}
-		if = {
-			limit = { original_tag = FIN }
-			NOT ={ has_completed_focus = FIN_finnish_supremacy_in_the_north }
-		}
+		# if = {
+		# 	limit = { original_tag = FIN }
+		# 	NOT ={ has_completed_focus = FIN_finnish_supremacy_in_the_north }
+		# }
 	}
 	ai_will_do = {
 		base = 1

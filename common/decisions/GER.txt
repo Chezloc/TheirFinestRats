@@ -1234,6 +1234,10 @@ special_projects = {
 					OR = {
 						tag = ROOT
 						is_subject_of = ROOT
+						AND = {
+							tag = NOR
+							has_government = fascism
+						}
 					}
 				}
 			}

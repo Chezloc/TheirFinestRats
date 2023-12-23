@@ -706,6 +706,15 @@ sub_units = {
 			attack = -0.1
 			movement = -0.3
 		}
+		town = {
+			defence = -0.05
+		}
+		urban = {
+			defence = -0.1
+		}
+		dense_urban = {
+			defence = -0.15
+		}
 		river = {
 			attack = -0.1
 			movement = -0.1
@@ -805,11 +814,11 @@ sub_units = {
 		}
 		urban = {
 			attack = -0.2
-			defence = -0.15
+			defence = -0.25
 		}
 		dense_urban = {
 			attack = -0.3
-			defence = -0.25
+			defence = -0.35
 		}
 		river = {
 			attack = -0.25

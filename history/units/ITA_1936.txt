@@ -28,30 +28,30 @@ division_template = {
 	} 
 } 
 
-division_template = { 
-	name = "Divisione Alpina" 
-	division_names_group = ITA_MNT_01 
+# division_template = { 
+# 	name = "Divisione Alpina" 
+# 	division_names_group = ITA_MNT_01 
 
-	regiments = { 
-		mountaineers = { x = 0 y = 0 } 												# (elite) Alpini Regiment
-		mountaineers = { x = 0 y = 1 } 
-		mountaineers = { x = 0 y = 2 } 
-		mountaineers = { x = 1 y = 0 } 
-		mountaineers = { x = 1 y = 1 } 
-		mountaineers = { x = 1 y = 2 } 
+# 	regiments = { 
+# 		mountaineers = { x = 0 y = 0 } 												# (elite) Alpini Regiment
+# 		mountaineers = { x = 0 y = 1 } 
+# 		mountaineers = { x = 0 y = 2 } 
+# 		mountaineers = { x = 1 y = 0 } 
+# 		mountaineers = { x = 1 y = 1 } 
+# 		mountaineers = { x = 1 y = 2 } 
 		
-		pack_artillery_brigade = { x = 2 y = 0 }
-		pack_artillery_brigade = { x = 2 y = 1 }
-	} 
-	support = { 
-		hq_company = { x = 0 y = 0 } 
-		engineer = { x = 0 y = 1 }   
-		recon = { x = 0 y = 2 }
-		logistics_company  = { x = 0 y = 3 }
-	} 
+# 		pack_artillery_brigade = { x = 2 y = 0 }
+# 		pack_artillery_brigade = { x = 2 y = 1 }
+# 	} 
+# 	support = { 
+# 		hq_company = { x = 0 y = 0 } 
+# 		engineer = { x = 0 y = 1 }   
+# 		recon = { x = 0 y = 2 }
+# 		logistics_company  = { x = 0 y = 3 }
+# 	} 
 
-	priority = 2 
-} 
+# 	priority = 2 
+# } 
 
 division_template = { 
 	name = "Divisione Coloniale" 
@@ -186,7 +186,7 @@ units = {
 			name_order = 4
 		} 
 		location = 11721 
-		division_template = "Divisione Alpina" 
+		division_template = "Divisione di Fanteria"
 		start_experience_factor = 0.3 
 	} 
 
@@ -230,7 +230,7 @@ units = {
 			name_order = 1
 		}  
 		location = 9738 
-		division_template = "Divisione Alpina" 
+		division_template = "Divisione di Fanteria"
 		start_experience_factor = 0.3 
 	} 
 
@@ -250,7 +250,7 @@ units = {
 			name_order = 2
 		}  
 		location = 6780 
-		division_template = "Divisione Alpina" 
+		division_template = "Divisione di Fanteria"
 		start_experience_factor = 0.3 
 	} 
 
@@ -305,7 +305,7 @@ units = {
 			name_order = 3
 		} #  "3a Divisione Alpina 'Julia'" 
 		location = 628 
-		division_template = "Divisione Alpina" 
+		division_template = "Divisione di Fanteria"
 		start_experience_factor = 0.3 
 	} 
 
@@ -437,7 +437,7 @@ units = {
 			name_order = 5
 		} #  "5a Divisione Alpina 'Pusteria'" 
 		location = 12723 
-		division_template = "Divisione Alpina" 
+		division_template = "Divisione di Fanteria"
 		start_experience_factor = 0.3 
 	} 
 	division = { # 

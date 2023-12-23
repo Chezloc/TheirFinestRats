@@ -2928,11 +2928,6 @@ generic_pmfu_heavy_tank_organization = {
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.05
 		}
-		
-		equipment_bonus = {
-			armor_value = -0.1
-			reliability = -0.1
-		}
 	}
 
 	trait = {
@@ -2943,8 +2938,7 @@ generic_pmfu_heavy_tank_organization = {
 		position = { x=1 y=0 }
 		
 		equipment_bonus = {
-			maximum_speed = 0.03
-			reliability = 0.03
+			maximum_speed = 0.05
 		}
 	}
 
@@ -2974,8 +2968,7 @@ generic_pmfu_heavy_tank_organization = {
 		all_parents = { generic_mio_trait_advanced_barrel_forging }
 		
 		equipment_bonus = {
-			reliability = 0.04
-			maximum_speed = 0.04
+			maximum_speed = 0.05
 		}
 	}
 
@@ -2990,7 +2983,7 @@ generic_pmfu_heavy_tank_organization = {
 		all_parents = { generic_mio_trait_speed_improvements }
 		
 		equipment_bonus = {
-			reliability = 0.03
+			reliability = 0.05
 			breakthrough = 0.05
 		}
 	}
@@ -3023,7 +3016,7 @@ generic_pmfu_heavy_tank_organization = {
 		all_parents = { generic_mio_trait_wide_tracks generic_mio_trait_one_piece_hull_side_coverings }
 		
 		equipment_bonus = {
-			hardness = 0.03
+			hardness = 0.05
 			fuel_consumption = 0.05
 			build_cost_ic = 0.02
 		}
@@ -3121,13 +3114,9 @@ generic_pmfu_heavy_tank_organization = {
 		all_parents = { generic_mio_trait_sloping_armor }
 
 		mutually_exclusive = { generic_mio_trait_improved_crew_ergonomics }
-		
-		production_bonus = {
-			production_resource_need_factor = 0.05
-		}
 
 		equipment_bonus = {
-			armor_value = 0.1
+			armor_value = 0.05
 			hardness = 0.05
 			build_cost_ic = 0.05
 		}

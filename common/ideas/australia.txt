@@ -635,26 +635,26 @@ ideas = {
 	}
 
 	tank_manufacturer = {
-		new_south_wales_rc = {
+		# new_south_wales_rc = {
 			
-			picture = generic_tank_manufacturer_1
+		# 	picture = generic_tank_manufacturer_1
 
 
-			allowed = {
-				original_TAG = AST
-				has_dlc = "Together for Victory"
-			}
+		# 	allowed = {
+		# 		original_TAG = AST
+		# 		has_dlc = "Together for Victory"
+		# 	}
 			
 
 			
-			research_bonus = {
-				armor = 0.15
-			}
+		# 	research_bonus = {
+		# 		armor = 0.15
+		# 	}
 			
-			traits = { fast_tank_manufacturer }
+		# 	traits = { fast_tank_manufacturer }
 			
-			modifier = { tank_manufacturer_cost_factor = -1 }
-		}
+		# 	modifier = { tank_manufacturer_cost_factor = -1 }
+		# }
 
 	}
 

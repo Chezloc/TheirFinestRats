@@ -85,34 +85,34 @@ division_template = {
 	}
 	division_cap = 0 
 }
-division_template = {
-	name = "Gornostrelkovaya Diviziya"		# Mountain Division
-	division_names_group = SOV_MNT_01
+# division_template = {
+# 	name = "Gornostrelkovaya Diviziya"		# Mountain Division
+# 	division_names_group = SOV_MNT_01
 
-	regiments = {
-		mountaineers = { x = 0 y = 0 }	
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }	
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }	
-		mountaineers = { x = 2 y = 1 }	
-		mountaineers = { x = 2 y = 2 }	
-		mountaineers = { x = 3 y = 0 }	
-		mountaineers = { x = 3 y = 1 }	
-		mountaineers = { x = 3 y = 2 }	
+# 	regiments = {
+# 		mountaineers = { x = 0 y = 0 }	
+# 		mountaineers = { x = 0 y = 1 }
+# 		mountaineers = { x = 0 y = 2 }	
+# 		mountaineers = { x = 1 y = 0 }
+# 		mountaineers = { x = 1 y = 1 }
+# 		mountaineers = { x = 1 y = 2 }
+# 		mountaineers = { x = 2 y = 0 }	
+# 		mountaineers = { x = 2 y = 1 }	
+# 		mountaineers = { x = 2 y = 2 }	
+# 		mountaineers = { x = 3 y = 0 }	
+# 		mountaineers = { x = 3 y = 1 }	
+# 		mountaineers = { x = 3 y = 2 }	
 		
-		pack_artillery_brigade = { x = 4 y = 0 }
-		pack_artillery_brigade = { x = 4 y = 1 }
-	}
-	support = {
-		hq_company = { x = 0 y = 0 } 
-		engineer = { x = 0 y = 1 }   
-		recon = { x = 0 y = 2 }
-		logistics_company  = { x = 0 y = 3 }
-	}
-}
+# 		pack_artillery_brigade = { x = 4 y = 0 }
+# 		pack_artillery_brigade = { x = 4 y = 1 }
+# 	}
+# 	support = {
+# 		hq_company = { x = 0 y = 0 } 
+# 		engineer = { x = 0 y = 1 }   
+# 		recon = { x = 0 y = 2 }
+# 		logistics_company  = { x = 0 y = 3 }
+# 	}
+# }
 
 division_template = {
 	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
@@ -180,15 +180,15 @@ division_template = {
 		logistics_company  = { x = 0 y = 3 }
 	}
 }
-division_template = {
-	name = "Vozdushno-Desantnaya Brigada"			# Airborne Brigade
-	division_names_group = SOV_PAR_01
+# division_template = {
+# 	name = "Vozdushno-Desantnaya Brigada"			# Airborne Brigade
+# 	division_names_group = SOV_PAR_01
 
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-	}
-}
+# 	regiments = {
+# 		paratrooper = { x = 0 y = 0 }
+# 		paratrooper = { x = 0 y = 1 }
+# 	}
+# }
 
 ### Note: OOB abstracts away the following:
 #	Marine Brigade (3x marine bn), 2 Brigades: Leningrad, Sevastopol
@@ -350,7 +350,7 @@ units = {
 			name_order = 72
 		}
 		location = 13319
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
 
@@ -939,7 +939,7 @@ units = {
 			name_order = 58
 		}
 		location = 9493
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
 
@@ -1312,7 +1312,7 @@ units = {
 			name_order = 60
 		}
 		location = 741
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
 
@@ -1427,7 +1427,7 @@ units = {
 			name_order = 23
 		}
 		location = 3580
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
 
@@ -1506,7 +1506,7 @@ units = {
 			name_order = 9
 		}
 		location = 3656
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
 
@@ -1517,7 +1517,7 @@ units = {
 			name_order = 20
 		}
 		location = 6669
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
 
@@ -1528,7 +1528,7 @@ units = {
 			name_order = 47
 		}
 		location = 12441
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
 
@@ -1542,7 +1542,7 @@ units = {
 			name_order = 63
 		}
 		location = 3564
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
@@ -1554,7 +1554,7 @@ units = {
 			name_order = 76
 		}
 		location = 6997
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
@@ -1566,7 +1566,7 @@ units = {
 			name_order = 77
 		}
 		location = 4660
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
@@ -1703,7 +1703,7 @@ units = {
 			name_order = 28
 		}
 		location = 9417
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.90
 
@@ -1779,7 +1779,7 @@ units = {
 			name_order = 68
 		}
 		location = 4923
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -1791,7 +1791,7 @@ units = {
 			name_order = 83
 		}
 		location = 12805
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5

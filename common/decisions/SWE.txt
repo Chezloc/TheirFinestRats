@@ -70,6 +70,7 @@ operations = {
 
 }
 
+
 SWE_hungershield_cat = {
 
 	SWE_hungershield_dummy = { #To warn
@@ -1293,6 +1294,7 @@ SWE_politics = {
 
 
 			has_country_leader_with_trait = SWE_the_great
+
 			
 		}
 		
@@ -1301,6 +1303,7 @@ SWE_politics = {
 			has_country_leader = {
 				character = SWE_king_gustaf_v
 			}
+			NOT = { has_country_leader_with_trait = SWE_the_eternal }
 		}
 
 		complete_effect = {
@@ -1468,6 +1471,7 @@ SWE_politics = {
 			}
 			NOT = {
 				has_country_leader_with_trait = SWE_the_great
+				has_country_leader_with_trait = SWE_the_eternal
 			}
 		}
 
