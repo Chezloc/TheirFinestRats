@@ -218,6 +218,10 @@ focus_tree = {
 			
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		complete_tooltip = {
 			every_owned_state = {
 				limit = { 
@@ -383,7 +387,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 2
+		x = 0
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -500,7 +504,7 @@ focus_tree = {
 	focus = {
 		id = FRA_invest_in_west_africa
 		icon = GFX_FRA_invest_in_west_africa
-		x = 0
+		x = -2
 		y = 1
 		offset = {
 			x = 0
@@ -566,7 +570,7 @@ focus_tree = {
 	focus = {
 		id = FRA_invest_in_indochina
 		icon = GFX_FRA_invest_in_indochina
-		x = 2
+		x = 0
 		y = 1
 		offset = {
 			x = 0
@@ -624,7 +628,7 @@ focus_tree = {
 	focus = {
 		id = FRA_invest_in_syria
 		icon = GFX_FRA_invest_in_syria
-		x = 4
+		x = 2
 		y = 1
 		offset = {
 			x = 0
@@ -685,7 +689,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = FRA_algerie_france focus = FRA_invest_in_west_africa focus = FRA_invest_in_indochina focus = FRA_invest_in_syria }
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = FRA_algerie_france
 		cost = 5
@@ -2902,7 +2906,7 @@ focus_tree = {
 	 	prerequisite = {
 	 		focus = FRA_buy_time
 	 	}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = FRA_buy_time
 		cost = 6
@@ -2973,6 +2977,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = FRA_buy_time
 		cost = 6
+
+		allow_branch = {
+			always = no
+		}
 
 		available_if_capitulated = yes
 

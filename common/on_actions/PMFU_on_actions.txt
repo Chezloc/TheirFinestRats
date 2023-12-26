@@ -693,8 +693,16 @@ on_actions = {
 
 	on_startup = {
 		effect = {
-			every_country = {
-				add_dynamic_modifier = { modifier = dockyard_cg_mod }
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = dockyard_cg
+						option = ENABLED
+					}
+				}
+				every_country = {
+					add_dynamic_modifier = { modifier = dockyard_cg_mod }
+				}
 			}
 		}
 	}
@@ -1308,21 +1316,37 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
-			every_country = {
+			if = {
 				limit = {
-					is_playable_country = yes
+					has_game_rule = {
+						rule = dockyard_cg
+						option = ENABLED
+					}
 				}
-				dockyard_cg_calculation = yes
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					dockyard_cg_calculation = yes
+				}
 			}
 		}
 	}
 	on_weekly = {
 		effect = {
-			every_country = {
+			if = {
 				limit = {
-					is_playable_country = yes
+					has_game_rule = {
+						rule = dockyard_cg
+						option = ENABLED
+					}
 				}
-				dockyard_cg_calculation = yes
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					dockyard_cg_calculation = yes
+				}
 			}
 		}
 	}

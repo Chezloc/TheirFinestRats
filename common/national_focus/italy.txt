@@ -2640,11 +2640,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			remove_ideas = ITA_neutrality_idea
-			add_to_tech_sharing_group = axis_research
-			GER = {
-				add_to_faction = ROOT
+			# remove_ideas = ITA_neutrality_idea
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = vittoria_mutilata
+					add_idea = vittoria_mutilata2
+				}
 			}
+			add_to_tech_sharing_group = axis_research
+			# GER = {
+			# 	add_to_faction = ROOT
+			# }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = ITA_vincere_prop
 		}

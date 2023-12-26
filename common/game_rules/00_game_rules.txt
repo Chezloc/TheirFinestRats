@@ -65,6 +65,21 @@ air_minors = {
 	}
 }
 
+dockyard_cg = {
+	name = "RULE_DOCK_CG"
+	group = "RULE_GROUP_TFB"
+	default = {
+		name = "ENABLED"
+		text = "RULE_OPTION_ENABLED"
+		desc = "RULE_OPTION_DOCK_CG_ENABLED_DESC"
+	}
+	option = {
+		name = "DISABLED"
+		text = "RULE_OPTION_DISABLED"
+		desc = "RULE_OPTION_DOCK_CG_DISABLED_DESC"
+	}
+}
+
 minor_agents = {
 	name = "RULE_MINOR_AGENTS"
 	group = "RULE_GROUP_TFB"

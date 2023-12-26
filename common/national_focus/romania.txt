@@ -258,8 +258,8 @@ focus_tree = {
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 1
-		y = 3
-		relative_position_id = ROM_trade_treaty_with_germany
+		y = 1
+		relative_position_id = ROM_invite_german_advisors
 
 		cost = 10
 
@@ -301,6 +301,10 @@ focus_tree = {
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 5
+
+		allow_branch = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -350,10 +354,10 @@ focus_tree = {
 	focus = {
 		id = ROM_german_romanian_oil_exploitation_company
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = ROM_join_axis }
-		x = 0
-		y = 4
-		relative_position_id = ROM_trade_treaty_with_germany
+		prerequisite = { focus = ROM_invite_german_advisors }
+		x = -1
+		y = 1
+		relative_position_id = ROM_invite_german_advisors
 
 
 		cost = 10

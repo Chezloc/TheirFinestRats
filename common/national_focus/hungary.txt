@@ -913,6 +913,10 @@ focus_tree = {
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
 		cost = 5
+
+		allow_branch = {
+			always = no
+		}
 		
 		historical_ai = { 
 			date > 1940.2.1
@@ -985,10 +989,10 @@ focus_tree = {
 	focus = {
 		id = HUN_german_cooperation
 		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = HUN_join_axis }
-		x = 1
-		y = 3
-		relative_position_id = HUN_renounce_the_treaty_of_trianon
+		prerequisite = { focus = HUN_joint_aluminum_mining_company }
+		x = 0
+		y = 1
+		relative_position_id = HUN_joint_aluminum_mining_company
 		cost = 5
 		ai_will_do = {
 

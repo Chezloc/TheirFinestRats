@@ -3977,8 +3977,8 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
 		completion_reward = {
-			BEL = {
-				country_event = generic.5
+			ROOT = {
+				add_to_faction = BEL
 			}
 		}
 	}
@@ -4009,7 +4009,7 @@ focus_tree = {
 			# add_ideas = ENG_prepare_for_the_inevitable_idea_docks
 			ENG_economy_dynamic_modifier_tt = yes # tooltip
 			add_to_variable = { ENG_british_economy_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
-			add_to_variable = { ENG_british_economy_production_speed_dockyard_factor = 0.05 tooltip = production_speed_dockyard_factor_tt }
+			add_to_variable = { ENG_british_economy_production_speed_dockyard_factor = 0.1 tooltip = production_speed_dockyard_factor_tt }
 			# GER = {
 			# 	add_opinion_modifier = { target = ENG modifier = embargo }
 			# 	add_opinion_modifier = { target = ENG modifier = sanctions_relations }  

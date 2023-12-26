@@ -1641,6 +1641,44 @@ defined_text = { # global
 }
 
 defined_text = { # global
+	name = mio_status_sl
+	text = {
+		trigger = {
+			has_aat = yes
+		}
+		localization_key = RULE_OPTION_MIOS
+	}
+	text = {
+		trigger = {
+			has_aat = no
+		}
+		localization_key = RULE_OPTION_DESIGNERS
+	}
+}
+
+defined_text = { # global
+	name = dockyard_cg_rule_sl
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = dockyard_cg
+				option = ENABLED
+			}
+		}
+		localization_key = RULE_OPTION_ENABLED
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = dockyard_cg
+				option = DISABLED
+			}
+		}
+		localization_key = RULE_OPTION_DISABLED
+	}
+}
+
+defined_text = { # global
 	name = air_minors_rule_sl
 	text = {
 		trigger = {

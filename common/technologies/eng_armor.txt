@@ -279,6 +279,7 @@ technologies = {
 			NOT = {
 				OR = {
 					tag = CAN
+					tag = SAF
 					tag = AST
 					tag = NZL
 				}
@@ -794,7 +795,10 @@ technologies = {
 	can_medium_tank_1 = {
 	
 		allow_branch = {
-			tag = CAN
+			OR = {
+				tag = CAN
+				tag = SAF
+			}
 		}
 
 		enable_equipments = {
