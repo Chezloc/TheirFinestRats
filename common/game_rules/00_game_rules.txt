@@ -98,12 +98,12 @@ minor_agents = {
 assault_gun = {
 	name = "RULE_ASSAULT_GUNS"
 	group = "RULE_GROUP_TFB"
-	default = {
+	option = {
 		name = "ASSAULT_GUN_DISABLED"
 		text = "RULE_OPTION_ASSAULT_GUN_DISABLED"
 		desc = "RULE_OPTION_ASSAULT_GUN_DISABLED_DESC"
 	}
-	option = {
+	default = {
 		name = "ASSAULT_GUN_LINE"
 		text = "RULE_OPTION_ASSAULT_GUN_LINE"
 		desc = "RULE_OPTION_ASSAULT_GUN_LINE_DESC"
