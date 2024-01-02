@@ -266,12 +266,72 @@ foreign_politics = {
 			set_global_flag = MON_annexed
 			add_offsite_building = {
 				type = industrial_complex
-				level = 35
+				level = 60 #35
 			}
 			add_offsite_building = {
 				type = arms_factory
 				level = 60
 			}
+            add_resource = {
+                type = chromium
+                amount = 144
+                state = 516
+            }
+			add_resource = {
+                type = chromium
+                amount = 144
+                state = 878
+            }
+			add_resource = {
+                type = chromium
+                amount = 144
+                state = 876
+            }
+            add_resource = {
+                type = tungsten
+                amount = 234
+                state = 516
+            }
+			add_resource = {
+                type = tungsten
+                amount = 234
+                state = 878
+            }
+			add_resource = {
+                type = tungsten
+                amount = 234
+                state = 876
+            }
+			add_resource = {
+                type = steel
+                amount = 207
+                state = 516
+            }
+			add_resource = {
+                type = steel
+                amount = 207
+                state = 878
+            }
+			add_resource = {
+                type = steel
+                amount = 207
+                state = 876
+            }
+			add_resource = {
+                type = aluminium
+                amount = 40
+                state = 516
+            }
+			add_resource = {
+                type = aluminium
+                amount = 40
+                state = 878
+            }
+			add_resource = {
+                type = aluminium
+                amount = 40
+                state = 876
+            }
 		}
 	}
 
@@ -314,6 +374,66 @@ foreign_politics = {
 			add_offsite_building = {
 				type = arms_factory
 				level = 80
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 516
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 878
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 876
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 516
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 878
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 876
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 516
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 878
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 876
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 516
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 878
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 876
 			}
 			custom_effect_tooltip = "You will get given equipment if you have it researched, the tanks, mechanized, 1939 infanty weapons, 1938 squad weapons etc."
 			create_equipment_variant = {
@@ -451,6 +571,66 @@ foreign_politics = {
 				type = arms_factory
 				level = 80
 			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 516
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 878
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 876
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 516
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 878
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 876
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 516
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 878
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 876
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 516
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 878
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 876
+			}
 			custom_effect_tooltip = "You will get given equipment if you have it researched, the tanks, mechanized, 1939 infanty weapons, 1938 squad weapons etc."
 			create_equipment_variant = {
 				name = "BT-7 - [MON]"
@@ -564,6 +744,66 @@ foreign_politics = {
 				type = arms_factory
 				level = 80
 			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 516
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 878
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 876
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 516
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 878
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 876
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 516
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 878
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 876
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 516
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 878
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 876
+			}
 			custom_effect_tooltip = "You will get given equipment if you have it researched, the tanks, mechanized, 1939 infanty weapons, 1938 squad weapons etc."
 			create_equipment_variant = {
 				name = "BT-7 - [MON]"
@@ -676,6 +916,66 @@ foreign_politics = {
 			add_offsite_building = {
 				type = arms_factory
 				level = 80
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 516
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 878
+			}
+			add_resource = {
+				type = chromium
+				amount = 144
+				state = 876
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 516
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 878
+			}
+			add_resource = {
+				type = tungsten
+				amount = 234
+				state = 876
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 516
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 878
+			}
+			add_resource = {
+				type = steel
+				amount = 207
+				state = 876
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 516
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 878
+			}
+			add_resource = {
+				type = aluminium
+				amount = 40
+				state = 876
 			}
 			custom_effect_tooltip = "You will get given equipment if you have it researched, 1939 AT, 1941 AT, 1939 infanty weapons, 1938 squad weapons etc."
 			create_equipment_variant = {
